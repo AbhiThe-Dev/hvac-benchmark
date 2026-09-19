@@ -86,7 +86,11 @@ def generate_blueprint(
     claimed = set(true_edges)
     events: list[CorruptionEvent] = []
 
-    true_edges_order = list(true_edges)
+    # sorted(), not list(): set iteration order depends on the per-process
+    # string hash seed, which made the same corruption_seed pick different
+    # corruptions in different processes (unreproducible across runs, and
+    # different between parallel workers and a serial run).
+    true_edges_order = sorted(true_edges)
     rng.shuffle(true_edges_order)
     false_order = list(false_candidate_pairs)
     rng.shuffle(false_order)

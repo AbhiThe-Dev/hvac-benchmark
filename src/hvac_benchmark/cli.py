@@ -22,6 +22,18 @@ def main() -> None:
         "--quick", action="store_true", help="smoke-test settings: fewer seeds and one noise level"
     )
     parser.add_argument("--seeds", type=int, default=None, help="override number of seeds")
+    parser.add_argument(
+        "--workers", type=int, default=1,
+        help="parallel worker processes (one unit = one topology/relation; each loads its own Brick ontology)",
+    )
+    parser.add_argument(
+        "--no-checkpoint", action="store_true",
+        help="do not write/read per-unit checkpoints under <results-dir>/checkpoints",
+    )
+    parser.add_argument(
+        "--fresh", action="store_true",
+        help="ignore existing checkpoints and recompute (use after code changes that affect trial outcomes)",
+    )
     args = parser.parse_args()
 
     config = DEFAULT_CONFIG
@@ -37,6 +49,9 @@ def main() -> None:
         skip_download=args.skip_download,
         run_ablations_flag=not args.no_ablations,
         run_troubleshooting_flag=not args.no_troubleshooting,
+        workers=args.workers,
+        checkpoint=not args.no_checkpoint,
+        fresh=args.fresh,
     )
 
 

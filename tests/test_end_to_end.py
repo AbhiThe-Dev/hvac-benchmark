@@ -48,13 +48,26 @@ def test_full_pipeline_smoke(tmp_path):
     project's populated cache), a couple of seeds, one noise level, no
     ablations -- then check the report's required language and that plots
     were actually written to disk."""
+    import shutil
+
     from conftest import REPO_ROOT
+
+    # Use only the LBNL + ontology files from the project cache. The full
+    # cache also holds the 45 MORTAR buildings, several with candidate
+    # universes in the thousands, which turns this smoke test into the full
+    # (hours-long) benchmark; MORTAR groups whose files are absent are
+    # recorded as exclusions, which this test tolerates.
+    small_cache = tmp_path / "cache"
+    small_cache.mkdir()
+    for f in (REPO_ROOT / "data_cache").iterdir():
+        if not f.name.startswith("mortar__"):
+            shutil.copy(f, small_cache / f.name)
 
     config = dataclasses.replace(DEFAULT_CONFIG, n_seeds=1, noise_levels=(0.0,))
     results_dir = tmp_path / "results"
     pipeline_module.run_pipeline(
         results_dir=str(results_dir),
-        cache_dir=str(REPO_ROOT / "data_cache"),
+        cache_dir=str(small_cache),
         config=config,
         skip_download=True,
         run_ablations_flag=False,

@@ -23,6 +23,7 @@ from .graph.building_grouping import MORTAR_CORPUS_GROUPS, REAL_CORPUS_GROUPS, m
 from .graph.inventory import TopologyInventory, flag_duplicates, inventory_topology
 from .graph.networkx_build import TopologyGraph, build_topology_graph
 from .graph.synthetic import make_all_synthetic_graphs
+from .parallel import ExecOptions, Unit, run_units
 
 logger = logging.getLogger(__name__)
 
@@ -210,44 +211,69 @@ def build_inventories(
     return flag_duplicates(inventories)
 
 
+def _main_grid_unit(
+    ontology: BrickOntology, tg: TopologyGraph, relation: str, config: BenchmarkConfig
+) -> list[TrialResult]:
+    seeds = range(config.base_seed, config.base_seed + config.n_seeds)
+    experiments = ["independent", "structured"] if relation == "feeds" else ["independent"]
+    results: list[TrialResult] = []
+    for experiment in experiments:
+        for policy in POLICIES:
+            for noise in config.noise_levels:
+                for seed in seeds:
+                    results.append(
+                        run_trial(
+                            tg,
+                            relation,
+                            ontology,
+                            experiment,
+                            policy,
+                            noise,
+                            seed,
+                            config,
+                            prior_kind="sparse",
+                            lam=config.default_lambda if experiment == "structured" else None,
+                        )
+                    )
+    return results
+
+
 def run_main_grid(
     bundles: list[Bundle],
     ontology: BrickOntology,
     config: BenchmarkConfig,
     availabilities: dict[tuple[str, str], RelationAvailability],
+    exec_opts: ExecOptions | None = None,
 ) -> list[TrialResult]:
-    results: list[TrialResult] = []
-    seeds = range(config.base_seed, config.base_seed + config.n_seeds)
-
+    units = []
     for b in bundles:
-        tg = b.tg
         for relation in RELATIONS:
-            avail = availabilities[(tg.building_id, relation)]
+            avail = availabilities[(b.tg.building_id, relation)]
             if not avail.available:
                 continue
-            experiments = ["independent", "structured"] if relation == "feeds" else ["independent"]
-            logger.info(
-                "main grid: %s / %s (n_candidates=%d, %d trials so far)",
-                tg.building_id, relation, avail.n_candidates, len(results),
+            # trial cost is ~O(n^2) in universe size; feeds also runs two experiments
+            cost = float(avail.n_candidates) ** 2 * (2 if relation == "feeds" else 1)
+            units.append(
+                Unit(f"main__{b.tg.building_id}__{relation}", _main_grid_unit, (b.tg, relation, config), cost)
             )
-            for experiment in experiments:
-                for policy in POLICIES:
-                    for noise in config.noise_levels:
-                        for seed in seeds:
-                            results.append(
-                                run_trial(
-                                    tg,
-                                    relation,
-                                    ontology,
-                                    experiment,
-                                    policy,
-                                    noise,
-                                    seed,
-                                    config,
-                                    prior_kind="sparse",
-                                    lam=config.default_lambda if experiment == "structured" else None,
-                                )
-                            )
+    return [r for unit_results in run_units(units, ontology, config, exec_opts, "main grid") for r in unit_results]
+
+
+def _ablation_unit(ontology: BrickOntology, tg: TopologyGraph, config: BenchmarkConfig) -> list[TrialResult]:
+    results: list[TrialResult] = []
+    seeds = range(config.base_seed, config.base_seed + config.n_seeds)
+    for noise in config.noise_levels:
+        for seed in seeds:
+            results.append(
+                run_trial(tg, "feeds", ontology, "independent", "active", noise, seed, config, prior_kind="uniform")
+            )
+    other_lams = [l for l in config.lambda_sensitivity if l != config.default_lambda]
+    for lam in other_lams:
+        for noise in config.noise_levels:
+            for seed in seeds:
+                results.append(
+                    run_trial(tg, "feeds", ontology, "structured", "active", noise, seed, config, lam=lam)
+                )
     return results
 
 
@@ -256,33 +282,21 @@ def run_ablations(
     ontology: BrickOntology,
     config: BenchmarkConfig,
     availabilities: dict[tuple[str, str], RelationAvailability],
+    exec_opts: ExecOptions | None = None,
 ) -> list[TrialResult]:
     """Uniform-prior ablation and lambda sensitivity, on a representative
     subset of feeds-eligible topologies (see ABLATION_TOPOLOGIES) to bound
     total runtime; both ablations use the active policy only, since they
     probe the inference/prior setup rather than policy comparison."""
-    results: list[TrialResult] = []
-    seeds = range(config.base_seed, config.base_seed + config.n_seeds)
-    subset = [b for b in bundles if b.tg.building_id in ABLATION_TOPOLOGIES]
-
-    for b in subset:
-        tg = b.tg
-        avail = availabilities.get((tg.building_id, "feeds"))
+    units = []
+    for b in bundles:
+        if b.tg.building_id not in ABLATION_TOPOLOGIES:
+            continue
+        avail = availabilities.get((b.tg.building_id, "feeds"))
         if not avail or not avail.available:
             continue
-        for noise in config.noise_levels:
-            for seed in seeds:
-                results.append(
-                    run_trial(tg, "feeds", ontology, "independent", "active", noise, seed, config, prior_kind="uniform")
-                )
-        other_lams = [l for l in config.lambda_sensitivity if l != config.default_lambda]
-        for lam in other_lams:
-            for noise in config.noise_levels:
-                for seed in seeds:
-                    results.append(
-                        run_trial(tg, "feeds", ontology, "structured", "active", noise, seed, config, lam=lam)
-                    )
-    return results
+        units.append(Unit(f"ablation__{b.tg.building_id}", _ablation_unit, (b.tg, config), float(avail.n_candidates) ** 2))
+    return [r for unit_results in run_units(units, ontology, config, exec_opts, "ablations") for r in unit_results]
 
 
 def trial_to_dict(r: TrialResult) -> dict:
@@ -309,11 +323,20 @@ def run_pipeline(
     skip_download: bool = False,
     run_ablations_flag: bool = True,
     run_troubleshooting_flag: bool = True,
+    workers: int = 1,
+    checkpoint: bool = False,
+    fresh: bool = False,
 ) -> None:
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     config = config or BenchmarkConfig()
     results_path = Path(results_dir)
     results_path.mkdir(parents=True, exist_ok=True)
+    exec_opts = ExecOptions(
+        workers=workers,
+        checkpoint_dir=(results_path / "checkpoints") if checkpoint else None,
+        cache_dir=str(cache_dir),
+        fresh=fresh,
+    )
 
     cache = FileCache(cache_dir)
     logger.info("loading Brick ontology")
@@ -365,14 +388,14 @@ def run_pipeline(
 
     logger.info("running main grid")
     t0 = time.time()
-    main_results = run_main_grid(bundles, ontology, config, availabilities)
+    main_results = run_main_grid(bundles, ontology, config, availabilities, exec_opts)
     logger.info("main grid: %d trials in %.1fs", len(main_results), time.time() - t0)
 
     ablation_results: list[TrialResult] = []
     if run_ablations_flag:
         logger.info("running ablations")
         t0 = time.time()
-        ablation_results = run_ablations(bundles, ontology, config, availabilities)
+        ablation_results = run_ablations(bundles, ontology, config, availabilities, exec_opts)
         logger.info("ablations: %d trials in %.1fs", len(ablation_results), time.time() - t0)
 
     save_trajectories(main_results, results_path / "trajectories")
@@ -387,7 +410,7 @@ def run_pipeline(
         logger.info("running troubleshooting-against-a-blueprint grid")
         t0 = time.time()
         troubleshooting_results, blueprints_by_building = run_troubleshooting_grid(
-            bundles, ontology, config, availabilities
+            bundles, ontology, config, availabilities, exec_opts
         )
         logger.info("troubleshooting grid: %d trials in %.1fs", len(troubleshooting_results), time.time() - t0)
         save_troubleshooting_trajectories(troubleshooting_results, results_path / "trajectories_troubleshooting")
