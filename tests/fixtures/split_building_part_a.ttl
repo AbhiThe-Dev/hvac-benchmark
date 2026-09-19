@@ -1,0 +1,5 @@
+@prefix bldg: <bldg-x#> .
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+
+bldg:AHU_1 a brick:AHU .
+bldg:VAV_1 a brick:VAV .

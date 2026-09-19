@@ -1,0 +1,74 @@
+{
+  "sdahu": {
+    "member_files": [
+      "22338283__LBNL_FDD_Data_Sets_SDAHU_ttl.ttl"
+    ],
+    "config_type": "experimental",
+    "evidence": "Figshare article 22338283 'LBNL FDD Dataset SDAHU' (DOI 10.6084/m9.figshare.22338283.v1): single Brick file, single-duct AHU testbed. Only the RTU article splits Exp/Sim by filename; no such split is present here, so treated as the (real, experimental) testbed model.",
+    "status": "confirmed"
+  },
+  "ddahu": {
+    "member_files": [
+      "22338250__LBNL_FDD_Data_Sets_DDAHU_ttl.ttl"
+    ],
+    "config_type": "experimental",
+    "evidence": "Figshare article 22338250 'LBNL FDD Data Sets DDAHU' (DOI 10.6084/m9.figshare.22338250.v1): single Brick file, dual-duct AHU testbed.",
+    "status": "confirmed"
+  },
+  "rtu_exp": {
+    "member_files": [
+      "22338265__LBNL_FDD_Data_Sets_RTU_Exp.ttl"
+    ],
+    "config_type": "experimental",
+    "evidence": "Figshare article 22338265 'LBNL FDD Data Sets RTU' (DOI 10.6084/m9.figshare.22338265.v1), file 'LBNL_FDD_Data_Sets_RTU_Exp.ttl': filename marks this the experimental RTU model. Kept separate from RTU_Sim per plan instruction to preserve distinct documented configurations.",
+    "status": "confirmed"
+  },
+  "rtu_sim": {
+    "member_files": [
+      "22338265__LBNL_FDD_Data_Sets_RTU_Sim.ttl"
+    ],
+    "config_type": "simulated",
+    "evidence": "Figshare article 22338265 'LBNL FDD Data Sets RTU' (DOI 10.6084/m9.figshare.22338265.v1), file 'LBNL_FDD_Data_Sets_RTU_Sim.ttl': filename marks this the simulated RTU model. Kept separate from RTU_Exp per plan instruction to preserve distinct documented configurations.",
+    "status": "confirmed"
+  },
+  "fcu": {
+    "member_files": [
+      "22338256__LBNL_FDD_Data_Sets_FCU_ttl.ttl"
+    ],
+    "config_type": "experimental",
+    "evidence": "Figshare article 22338256 'LBNL FDD Data Sets FCU' (DOI 10.6084/m9.figshare.22338256.v1): single Brick file, fan coil unit testbed.",
+    "status": "confirmed"
+  },
+  "chiller_plant": {
+    "member_files": [
+      "22338244__LBNL_FDD_Data_Sets_Chiller_Plant.ttl"
+    ],
+    "config_type": "experimental",
+    "evidence": "Figshare article 22338244 'LBNL FDD Data Sets Chiller Plant' (DOI 10.6084/m9.figshare.22338244.v1): single Brick file, chiller plant testbed. Contains no `feeds` triples; usable only for hasPoint/hasPart evaluation (documented in results.md as feeds-unavailable).",
+    "status": "confirmed"
+  },
+  "boiler_plant": {
+    "member_files": [
+      "22338238__LBNL_FDD_Data_Sets_Boiler_Plant_ttl.ttl"
+    ],
+    "config_type": "experimental",
+    "evidence": "Figshare article 22338238 'LBNL FDD Data Sets Boiler Plant' (DOI 10.6084/m9.figshare.22338238.v1): single Brick file, boiler plant testbed. Contains no `feeds` triples; usable only for hasPoint/hasPart evaluation (documented in results.md as feeds-unavailable).",
+    "status": "confirmed"
+  },
+  "pfpu": {
+    "member_files": [
+      "22344280__LBNL_FDD_Data_Sets_PFPU_ttl.ttl"
+    ],
+    "config_type": "experimental",
+    "evidence": "Figshare article 22344280 'LBNL FDD PFPU Data Sets' (DOI 10.6084/m9.figshare.22344280.v1): single Brick file, parallel fan-powered terminal unit testbed.",
+    "status": "confirmed"
+  },
+  "sfpu": {
+    "member_files": [
+      "22344283__LBNL_FDD_Data_Sets_SFPU_ttl.ttl"
+    ],
+    "config_type": "experimental",
+    "evidence": "Figshare article 22344283 'LBNL FDD SFPU Data Sets' (DOI 10.6084/m9.figshare.22344283.v1): single Brick file, series fan-powered terminal unit testbed.",
+    "status": "confirmed"
+  }
+}

@@ -1,0 +1,6 @@
+@prefix bldg: <bldg-x#> .
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+
+bldg:AHU_1 brick:feeds bldg:VAV_1 .
+bldg:Zone_1 a brick:HVAC_Zone .
+bldg:VAV_1 brick:feeds bldg:Zone_1 .

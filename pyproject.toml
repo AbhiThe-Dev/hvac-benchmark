@@ -1,0 +1,34 @@
+[project]
+name = "hvac-benchmark"
+version = "0.1.0"
+description = "Benchmark comparing information-gain topology discovery against random, traversal-heuristic, and rule-based policies on real Brick HVAC models"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "rdflib>=7.0",
+    "networkx>=3.2",
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "pyyaml>=6.0",
+    "requests>=2.31",
+]
+
+[project.scripts]
+hvac-benchmark = "hvac_benchmark.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hvac_benchmark"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: full end-to-end runs; excluded by default with -m 'not slow'"]

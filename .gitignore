@@ -1,0 +1,26 @@
+# environments and caches
+.venv/
+**/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.claude/
+
+# logs
+*.log
+
+# separate git repo (AbhiDa-Dev/physics-hvac-pipeline)
+/physics_pipeline/
+
+# downloaded source data: regenerable via `hvac-benchmark`, and the MORTAR
+# building models have UNCONFIRMED redistribution terms (see
+# src/hvac_benchmark/data/mortar.py) so they must not be committed
+/data_cache/
+
+# large regenerable run outputs (keep summary docs/plots/config)
+/results/trajectories/
+/results/trajectories_ablation/
+/results/trajectories_troubleshooting/
+/symptom_pipeline/output/runs/
+/symptom_pipeline/output/test_runs/

@@ -1,0 +1,34 @@
+{
+  "n_seeds": 30,
+  "base_seed": 20240601,
+  "noise_levels": [
+    0.0,
+    0.05,
+    0.15
+  ],
+  "retirement_confidence": 0.99,
+  "max_repeats_noiseless": 1,
+  "max_repeats_noisy": 10,
+  "reconstruction_threshold": 0.5,
+  "primary_precision": 0.9,
+  "primary_recall": 0.9,
+  "secondary_precision": 0.95,
+  "secondary_recall": 0.95,
+  "default_lambda": 1.0,
+  "lambda_sensitivity": [
+    0.0,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "structured_enumeration_cap": 20,
+  "n_synthetic_graphs": 10,
+  "relations": [
+    "feeds",
+    "hasPoint",
+    "hasPart"
+  ],
+  "primary_relation": "feeds",
+  "results_dir": "results",
+  "cache_dir": "data_cache"
+}
