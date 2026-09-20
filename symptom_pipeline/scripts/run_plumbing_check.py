@@ -31,6 +31,7 @@ from __future__ import annotations
 import json
 import subprocess
 import sys
+from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -43,7 +44,7 @@ from hvac_benchmark.graph.networkx_build import TopologyGraph  # noqa: E402
 from symptom_pipeline.benchmark_adapter import run_symptom_troubleshooting_trial  # noqa: E402
 from symptom_pipeline.calibration import CALIBRATION_VERSION, EventValidationRecord, fit_calibrator, select_suspect_prefix  # noqa: E402
 from symptom_pipeline.contracts import CandidateDiscrepancyPrediction, PredictionRecord  # noqa: E402
-from symptom_pipeline.features import extract_candidate_features  # noqa: E402
+from symptom_pipeline.features import NUMERIC_FEATURE_FIELDS, extract_candidate_features  # noqa: E402
 from symptom_pipeline.models import GBM_MODEL_VERSION, train_gbm  # noqa: E402
 from symptom_pipeline.questions import QUESTIONNAIRE_VERSION  # noqa: E402
 
@@ -161,6 +162,16 @@ def main() -> None:
     model = train_gbm(all_features, all_labels)
     print(f"trained GBM ({model.version}) on {len(all_features)} rows -- features -> models wiring OK")
 
+    importances = sorted(
+        zip(model.vectorizer.get_feature_names_out(), model.classifier.feature_importances_),
+        key=lambda kv: kv[1],
+        reverse=True,
+    )
+    nonzero_importances = [(name, round(float(v), 4)) for name, v in importances if v > 0]
+    print("GBM feature_importances_ (non-zero, descending):")
+    for name, v in nonzero_importances:
+        print(f"  {name}: {v}")
+
     # --- step 4: sanity floor on the CLEAN report of the clearest-deviation event ---
     sanity_record = next(
         (r for r, _ in per_record if r.event.event_id == SANITY_EVENT_ID and r.report.reporting_error_seed is None),
@@ -217,18 +228,35 @@ def main() -> None:
             "before calibration/benchmark-adapter steps, per design."
         )
 
-    if degenerate_scores:
+    # Feature-level ties are a separate question from the model's score
+    # tiers: the model can (and here does) collapse to fewer score values
+    # than there are distinct feature vectors.
+    feature_key = lambda f: (f.source_type, f.target_type) + tuple(getattr(f, n) for n in NUMERIC_FEATURE_FIELDS)
+    group_sizes = Counter(feature_key(f) for f in sanity_features)
+    true_group_sizes = {
+        pair: group_sizes[feature_key(f)]
+        for f in sanity_features
+        for pair in true_pairs
+        if (f.source_id, f.target_id) == pair
+    }
+    print(
+        f"distinct feature vectors: {len(group_sizes)} of {n_candidates} candidates "
+        f"(largest tie groups: {sorted(group_sizes.values(), reverse=True)[:4]}); "
+        f"true pairs' tie-group sizes: {list(true_group_sizes.values())}"
+    )
+    true_pairs_tied = any(size > 1 for size in true_group_sizes.values())
+    if true_pairs_tied:
         print(
-            f"\nFINDING (not a wiring bug -- verified by direct inspection): raw scores collapse to only "
-            f"{len(distinct_scores)} distinct values across {n_candidates} candidates. Root cause: coil/pump "
-            "nodes have no `location` attribute and are BFS-unreachable from any reported zone in the "
-            "current extraction (no `feeds`/`hasPart` path connects a coil to a zone), so every coil under "
-            "the same pump produces an IDENTICAL feature vector -- the model can separate the pump/coil "
-            "candidate FAMILY from everything else, but has zero signal to distinguish individual coils "
-            "within it. Both true pairs land in the top tier (confirmed above), which is what this sanity "
-            "floor checks for; it does NOT mean per-candidate ranking within that tier is meaningful. "
-            "This is a real feature-coverage gap in features.py for pump/coil candidates specifically, "
-            "recorded in CHANGELOG.md, not something this script can or should silently paper over."
+            f"\nFINDING (not a wiring bug -- verified by direct inspection): the true pairs share feature "
+            f"vectors with siblings (tie groups {list(true_group_sizes.values())}), so within-tier rank is a guess. "
+            "`n_indistinguishable_siblings` reports this to the model but cannot break the tie. See CHANGELOG.md."
+        )
+    elif degenerate_scores:
+        print(
+            f"\nNOTE: raw scores take only {len(distinct_scores)} distinct values, but the true pairs are each "
+            f"uniquely identified by their features (tie groups {list(true_group_sizes.values())}), so this is a "
+            "saturated near-0/1 classifier rather than missing per-coil signal. In this data the reported zone is "
+            "always the moved coil's own zone (see CHANGELOG 0.2.3), so this is not evidence of generalization."
         )
 
     # --- step 5: leave-one-event-out calibration + suspect-prefix selection ---
@@ -389,6 +417,10 @@ def main() -> None:
             "n_distinct_raw_score_values": len(distinct_scores),
             "distinct_raw_score_values": distinct_scores,
             "feature_degeneracy_finding": degenerate_scores,
+            "gbm_nonzero_feature_importances": dict(nonzero_importances),
+            "n_distinct_feature_vectors": len(group_sizes),
+            "largest_feature_tie_groups": sorted(group_sizes.values(), reverse=True)[:6],
+            "true_pair_tie_group_sizes": {str(pair): size for pair, size in true_group_sizes.items()},
             "passed": sanity_passed,
         },
         "leave_one_event_out": {
@@ -423,15 +455,12 @@ def main() -> None:
             "(a second qualifying archetype, or a second rewire_kind that doesn't destroy equipment) -- "
             "neither exists today.",
             (
-                f"Raw model scores collapse to only {len(distinct_scores)} distinct values across "
-                f"{n_candidates} candidates (see sanity_floor above): coil/pump nodes have no `location` "
-                "and are BFS-unreachable from any reported zone in the current extraction, so every coil "
-                "under the same pump gets an identical feature vector. The model separates the pump/coil "
-                "candidate FAMILY correctly but cannot rank individual coils within it -- any per-candidate "
-                "coverage/ranking number from the leave-one-event-out step is not meaningful for this "
-                "candidate family until features.py gains a per-coil distinguishing feature; this was "
-                "diagnosed directly (not assumed) after an initial naive top-10-rank check appeared to "
-                "fail and was investigated rather than either dismissed or accepted at face value."
+                f"Raw model scores take {len(distinct_scores)} distinct values across {n_candidates} candidates; "
+                f"features distinguish {len(group_sizes)} groups and the true pairs' feature tie groups have sizes "
+                f"{list(true_group_sizes.values())}. In all 4 events the reported zone (the max-deviation zone) is the "
+                "moved coil's own zone, so 'coil whose VAV feeds the reported zone' separates the true pairs "
+                "perfectly; that is a property of how reports are built here, not evidence it holds when a "
+                "report names a different zone."
             ),
         ],
     }

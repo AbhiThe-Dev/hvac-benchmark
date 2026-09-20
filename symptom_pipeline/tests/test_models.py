@@ -29,6 +29,7 @@ def _synthetic_features_and_labels(n: int = 60, seed: int = 0):
                 reachable_from_report=True,
                 shares_location_with_report=False,
                 n_other_spaces_named=0,
+                n_indistinguishable_siblings=0,
                 direction_too_hot=True,
                 direction_too_cold=False,
                 direction_alternating=False,

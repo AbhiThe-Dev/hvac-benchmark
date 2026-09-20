@@ -3,7 +3,8 @@ compatible candidate connection.
 
 Computed strictly from: endpoint types, blueprint-claimed status, path
 distance from reported locations through documented `feeds`/`hasPart`
-relationships, shared location, and structured answers. Never uses the
+relationships, shared location, how many other candidates are structurally
+indistinguishable from this one, and structured answers. Never uses the
 actual (private) graph, injected fault metadata, corruption targets,
 simulation handles, or building identifiers -- those would leak ground
 truth into a feature the model could key on.
@@ -17,6 +18,7 @@ documented edge must not make its candidate impossible to rank.
 
 from __future__ import annotations
 
+from collections import Counter
 from dataclasses import dataclass, fields
 
 import networkx as nx
@@ -52,6 +54,12 @@ class CandidateFeatures:
     reachable_from_report: bool
     shares_location_with_report: bool
     n_other_spaces_named: int
+    # How many OTHER candidates in the same universe are indistinguishable
+    # from this one on every structural feature (same endpoint types,
+    # relation, claimed status, distances, shared-location). 0 means this
+    # candidate is uniquely identified by its structure; N means it is one
+    # of N+1 interchangeable siblings and any rank among them is a guess.
+    n_indistinguishable_siblings: int
 
     direction_too_hot: bool
     direction_too_cold: bool
@@ -120,6 +128,27 @@ def extract_candidate_features(
     distances = bfs_distances(tg, answers.reported_locations)
     report_locations = {tg.node_location(loc) for loc in answers.reported_locations if tg.node_location(loc)}
 
+    def structural_signature(c: Candidate) -> tuple:
+        d_source = distances.get(c.source, UNREACHABLE_DISTANCE)
+        d_target = distances.get(c.target, UNREACHABLE_DISTANCE)
+        shares_location = bool(report_locations) and (
+            tg.node_location(c.source) in report_locations or tg.node_location(c.target) in report_locations
+        )
+        return (
+            c.relation,
+            tg.node_type(c.source),
+            tg.node_type(c.target),
+            (c.source, c.target) in claimed_pairs,
+            d_source,
+            d_target,
+            shares_location,
+        )
+
+    # Deliberately built from the same structural inputs as the features
+    # above and never from node ids, so it cannot leak identity: it only
+    # reports how many other candidates share this one's feature values.
+    signature_counts = Counter(structural_signature(c) for c in candidates)
+
     out: list[CandidateFeatures] = []
     for c in candidates:
         d_source = distances.get(c.source, UNREACHABLE_DISTANCE)
@@ -143,6 +172,7 @@ def extract_candidate_features(
                 reachable_from_report=bool(finite),
                 shares_location_with_report=shares_location,
                 n_other_spaces_named=len(answers.other_spaces_affected),
+                n_indistinguishable_siblings=signature_counts[structural_signature(c)] - 1,
                 direction_too_hot=answers.direction == ProblemDirection.TOO_HOT,
                 direction_too_cold=answers.direction == ProblemDirection.TOO_COLD,
                 direction_alternating=answers.direction == ProblemDirection.ALTERNATING,

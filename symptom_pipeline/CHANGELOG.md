@@ -1,5 +1,134 @@
 # Changelog
 
+## 0.2.3 -- real fix: VAV reheat coil -> terminal `hasPart` edge in `physics_pipeline`
+
+First change to `physics_pipeline` by this project. **Cause confirmed:**
+`extract_topology` walked each AirLoop's demand side and emitted
+`AHU -feeds-> terminal -feeds-> zone`, plus AHU-owned coils/fans as
+`hasPart`, but never followed `AirTerminal:SingleDuct:VAV:Reheat` to its
+`reheatCoil()`. The coil only appeared later, from the plant-loop walk, as
+the target of `pump -feeds-> coil`. Not a missing Brick relation or type
+mapping: `_brick_equipment_type` already handled it.
+
+**Precedent, not invention:** AHU coils/fans -> AHU and (uncommitted,
+pre-existing work) PTAC/PTHP coils -> unit are both `part -hasPart->
+whole`. The new edge is `coil -hasPart-> VAV terminal`, same direction.
+`physics_pipeline`'s existing uncommitted changes (`extract.py` PTAC/PTHP
+walk and `add_zone_node` refactor; `buildings.py`, `faults.py`, `rewire.py`)
+were read first: none touches reheat-coil extraction (`rewire.py` only
+handles reheat coils on the corruption side), so this adds to `extract.py`
+without overlapping. Those uncommitted changes remain uncommitted; this
+edit is in the same working tree.
+
+**Change:** 9 lines in `extract.py`, scoped to
+`OS_AirTerminal_SingleDuct_VAV_Reheat` only.
+
+**Regression checks (all 10 buildings, before/after diff of node, feeds and
+hasPart counts, node types and candidate count):** the only differences are
+`sys07_vav_reheat` and `sys05_vav_reheat_dx`, each +10 `hasPart` edges.
+Node counts, `feeds` counts and candidate universes are all unchanged
+(sys07: 94, as I had predicted it would probably change -- it did not,
+because the coils were already nodes and `hasPart` is not a `feeds`
+candidate tier). `physics_pipeline` has no pytest suite (`tests/` is
+empty); its only check is `scripts/test_extract.py`, a smoke script, which
+still reports 100% feeds-candidate coverage (sys07 32/32). Its
+`results_physics/` was NOT regenerated and may show old `hasPart` counts for
+sys05/sys07.
+
+**Downstream re-verification:**
+- `generate_causal_batch.py`: output summary byte-identical to before
+  (universe 94, 4 succeeded / 2 failed, same deviations and pairs).
+- `symptom_pipeline` `pytest -m "not slow"`: 191 passed; `-m physics`:
+  3 passed. Root `hvac_benchmark` suite: 247 passed. No `hvac_benchmark`
+  fixture or recorded result references `sys07`/`sys05` (its results are
+  real LBNL buildings), so `uv run hvac-benchmark` was not re-run.
+- `run_plumbing_check.py` (sanity event): feature tie groups for the true
+  pairs went from 10 to 1 (each true pair is now uniquely identified);
+  distinct feature vectors 19 -> 21. True pairs now rank #1 and #2 (was #3
+  and #13) and are the only 2 candidates in the top score tier. Repeated
+  with true leave-one-event-out models (never trained on the held-out
+  event): in all 4 folds the true pairs are exactly the top tier of size 2.
+  Leave-one-event-out `select_suspect_prefix`: k 14 -> 2 (universe fraction
+  0.149 -> 0.021).
+- GBM `feature_importances_`: `target_distance_from_report` 0.327,
+  `min_endpoint_distance_from_report` 0.315, `target_type=Heating_Coil`
+  0.139, `source_type=Pump` 0.107, `n_indistinguishable_siblings` 0.065,
+  `shares_location_with_report` 0.047; everything else 0 (including
+  `is_claimed`). So the new signal is used, mainly through distance.
+- "Raw scores collapse to 2 levels" **persists** (0.99996 vs 1e-6), but its
+  meaning changed: the top level is now exactly the 2 true pairs, i.e. a
+  saturated near-0/1 classifier on separable data, not missing signal.
+  No hyperparameters were touched.
+
+**Why this is not evidence of generalization:** in all 4 events the
+reported zone (chosen as the max-deviation zone) is exactly the zone served
+by the moved coil's own VAV, so "coil whose VAV feeds the reported zone"
+(coil at distance 2) separates the true pairs by construction. A report
+naming a neighboring zone, or a symptom that appears elsewhere, is not
+covered by this data. One building, 4 events, still.
+
+**Scope note for future work (measured, not fixed):** the same
+"terminal coil has no ownership edge" gap exists for exactly the VAV:Reheat
+buildings, sys05 and sys07 (10 coils each, now fixed). `sys06`/`sys08`
+(ParallelPIU with electric reheat) do not put their reheat coils into the
+graph at all; `AirTerminal:ConstantVolume:Reheat` and `SeriesPIU:Reheat`
+are mapped as terminals but their coils are not walked either. Not touched.
+Coils still have no `location` attribute (only terminals and zones do).
+
+## 0.2.2 -- coil feature-coverage gap: diagnosed, corrected, partially mitigated
+
+Diagnosed on `sys07_vav_reheat_2e31bf24-...` (94 candidates) against the
+real documented graph before changing anything. **The 0.2.1 explanation
+was wrong in two ways:**
+
+- Coils are *not* BFS-unreachable. Distances are 3-5, so
+  `reachable_from_report` is true for every coil. What is true is that
+  coils have no `location` (so `shares_location_with_report` is false).
+- Feature vectors are *not* identical across all coils. The features
+  separate the 94 candidates into 19 distinct vectors (tie groups of
+  20, 12, 10, 10, 5, 5, 5, 4x5, 1x7). The pump/coil family is 24
+  candidates: 4 groups.
+
+**Actual structure (real extraction):** the documented graph has 32
+`feeds` and only 3 `hasPart` edges. `hasPart` links only the AHU's own
+coils/fan to `Air Loop HVAC 1` (direction part -> whole). The 10
+terminal reheat coils (`Coil Heating Water 3..12`) have exactly one
+relation each: `pump -feeds-> coil`. There is no coil -> VAV/zone/loop
+edge, so they can only be reached from a zone *through the pump*
+(zone -> VAV -> AHU -> AHU heating coil -> pump -> terminal coil = 5
+hops, the same for all ten). That distance is real but carries no
+per-coil information. Both true discordant pairs are of this kind, each
+in a tie group of 10 (9 indistinguishable siblings).
+
+**Direction (a), walking through the coil's owning AHU/loop, is not
+available from the documented graph:** the owning relation for terminal
+reheat coils does not exist in it (it is an extractor gap in
+`physics_pipeline.extract`, which does not emit VAV -> reheat-coil
+edges). Fixing it means changing the extraction, not `features.py`. Not
+done here: it changes the documented graph every other component sees.
+
+**Direction (b) implemented:** `CandidateFeatures.n_indistinguishable_siblings`
+(also in `NUMERIC_FEATURE_FIELDS`) counts other candidates in the universe
+with the same relation, endpoint types, claimed status, both distances and
+shared-location flag. It uses no node ids, so the identity-leakage
+exclusion of `source_id`/`target_id` is untouched. It tells the model when
+it is guessing among siblings; it cannot break the tie.
+`tests/test_features.py` gains a fixture reproducing the real coil shape
+(AHU-owned coil via `hasPart` vs terminal coils with only a pump edge),
+asserting identical structural fields for the terminal coils, sibling
+count 1 for them and 0 for the AHU coil.
+
+**Re-run of `scripts/run_plumbing_check.py`: no change in ranking.** Raw
+scores are still 2 distinct values; true pairs still rank #3 and #13 (tier
+1 of 2) on the sanity event. The tie was not resolved, so the true pairs
+do not separate by rank. Note the 2-value collapse is also on the model
+side (the GBM uses 2 score levels though the features give 19 groups), and
+that was not investigated or tuned here. The script's finding text and
+`plumbing_check_summary.json` now report feature-level tie groups
+(19 vectors; true pairs in groups of 10) instead of the incorrect
+"unreachable" claim. This says nothing about generalization: one building.
+The route to a real fix is the extractor edge for terminal reheat coils.
+
 ## 0.2.1 -- end-to-end plumbing check (integration only, no model-quality claim)
 
 `scripts/run_plumbing_check.py` wires `features.py -> models.py ->
@@ -43,10 +172,9 @@ with 20 other tied candidates). Fixed the sanity check itself to test tier
 membership (by distinct score value) instead of raw rank, which is what
 was actually diagnostic here; the naive rank cutoff would have blocked a
 correctly-wired pipeline over a real, explainable modeling limitation.
-**This feature-coverage gap in `features.py` (pump/coil candidates have no
-per-candidate distinguishing signal) is a genuine, unresolved limitation,
-not fixed in this pass** -- recorded here and in `plumbing_check_summary
-.json`'s disclaimers, not silently smoothed over.
+**The feature-coverage gap in `features.py` was diagnosed further in 0.2.2
+(below); the root-cause statement above ("BFS-unreachable", "identical
+feature vector") turned out to be partly wrong -- see that entry.**
 
 ### Result (real, from `output/plumbing_check_summary.json`)
 
