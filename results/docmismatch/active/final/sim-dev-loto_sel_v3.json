@@ -1,0 +1,9134 @@
+{
+ "config": {
+  "variant": "sel",
+  "ctx": "oat",
+  "tau": 0.95,
+  "nmax": 24,
+  "seed": 2026,
+  "policies": [
+   "active",
+   "random",
+   "traversal",
+   "traversal_block",
+   "frozen"
+  ],
+  "calibrate_beta": true,
+  "sim_reps": [
+   0,
+   1
+  ],
+  "sim_settings": [
+   "visit",
+   "hist"
+  ],
+  "sim_primary": "visit",
+  "real_episode_seed": 2026,
+  "real_n_wrong": 30,
+  "real_n_right": 10,
+  "layer": {
+   "nominal": 0.95,
+   "q": 0.1,
+   "lam": 3.0,
+   "min_clusters": 6,
+   "slot_min_clusters": 6,
+   "per_slot": true,
+   "features": null,
+   "use_slot_power": true
+  },
+  "boot": 1000,
+  "resolvable_conf": 0.95
+ },
+ "info": {
+  "sys03_psz_ac": {
+   "beta": {
+    "ahu_sat": 1.0,
+    "ahu_vav": 1.0,
+    "branch_coil": 0.1,
+    "coil_ahu": 1.0,
+    "coil_vav": 1.0,
+    "loop_branch": 0.2,
+    "loop_pump": 1.0,
+    "loop_source": 0.35,
+    "vav_dat": 1.0,
+    "vav_zone": 1.0
+   },
+   "n_outer": 2320,
+   "n_inner": 13940
+  },
+  "sys07_vav_reheat": {
+   "beta": {
+    "ahu_sat": 0.7,
+    "ahu_vav": 0.5,
+    "branch_coil": 0.1,
+    "coil_ahu": 1.0,
+    "coil_vav": 1.0,
+    "loop_branch": 0.2,
+    "loop_pump": 1.0,
+    "loop_source": 0.35,
+    "vav_dat": 1.0,
+    "vav_zone": 0.1
+   },
+   "n_outer": 1480,
+   "n_inner": 14780
+  },
+  "vav_2ahu_2loops": {
+   "beta": {
+    "ahu_sat": 0.5,
+    "ahu_vav": 0.35,
+    "branch_coil": 0.1,
+    "coil_ahu": 1.0,
+    "coil_vav": 1.0,
+    "loop_branch": 0.2,
+    "loop_pump": 1.0,
+    "loop_source": 0.5,
+    "vav_dat": 1.0,
+    "vav_zone": 0.1
+   },
+   "n_outer": 2400,
+   "n_inner": 13860
+  },
+  "vav_3ahu_2loops": {
+   "beta": {
+    "ahu_sat": 0.7,
+    "ahu_vav": 0.35,
+    "branch_coil": 0.1,
+    "coil_ahu": 1.0,
+    "coil_vav": 1.0,
+    "loop_branch": 0.2,
+    "loop_pump": 1.0,
+    "loop_source": 0.5,
+    "vav_dat": 1.0,
+    "vav_zone": 0.1
+   },
+   "n_outer": 2280,
+   "n_inner": 13980
+  },
+  "dev_E": {
+   "beta": {
+    "ahu_sat": 0.7,
+    "ahu_vav": 0.5,
+    "branch_coil": 0.1,
+    "coil_ahu": 1.0,
+    "coil_vav": 1.0,
+    "loop_branch": 0.2,
+    "loop_pump": 1.0,
+    "loop_source": 0.35,
+    "vav_dat": 1.0,
+    "vav_zone": 1.0
+   },
+   "n_outer": 1380,
+   "n_inner": 14880
+  },
+  "dev_F": {
+   "beta": {
+    "ahu_sat": 0.7,
+    "ahu_vav": 0.5,
+    "branch_coil": 0.1,
+    "coil_ahu": 1.0,
+    "coil_vav": 1.0,
+    "loop_branch": 0.2,
+    "loop_pump": 1.0,
+    "loop_source": 0.35,
+    "vav_dat": 1.0,
+    "vav_zone": 0.7
+   },
+   "n_outer": 2080,
+   "n_inner": 14180
+  },
+  "dev_G": {
+   "beta": {
+    "ahu_sat": 0.7,
+    "ahu_vav": 0.5,
+    "branch_coil": 0.1,
+    "coil_ahu": 1.0,
+    "coil_vav": 1.0,
+    "loop_branch": 0.1,
+    "loop_pump": 1.0,
+    "loop_source": 0.35,
+    "vav_dat": 1.0,
+    "vav_zone": 1.0
+   },
+   "n_outer": 2240,
+   "n_inner": 14020
+  },
+  "dev_H": {
+   "beta": {
+    "ahu_sat": 0.7,
+    "ahu_vav": 0.5,
+    "branch_coil": 0.1,
+    "coil_ahu": 1.0,
+    "coil_vav": 1.0,
+    "loop_branch": 0.2,
+    "loop_pump": 0.7,
+    "loop_source": 0.35,
+    "vav_dat": 1.0,
+    "vav_zone": 0.7
+   },
+   "n_outer": 2080,
+   "n_inner": 14180
+  }
+ },
+ "eval": {
+  "legacy": {
+   "policies": [
+    "active",
+    "frozen",
+    "random",
+    "traversal",
+    "traversal_block"
+   ],
+   "n_episodes": 1626,
+   "n_clusters": 331,
+   "C1": {
+    "random": {
+     "n_pairs": 0
+    },
+    "traversal_block": {
+     "n_pairs": 88,
+     "saved": [
+      2.548529411764706,
+      1.6999622252747255,
+      3.5939526602429828
+     ],
+     "cov_diff": [
+      -0.16476997578692493,
+      -0.24493776980309134,
+      -0.08918881282990432
+     ],
+     "cov_active": 0.08080811138014528,
+     "cov_base": 0.24557808716707022,
+     "status": "FAIL"
+    },
+    "traversal": {
+     "n_pairs": 62,
+     "saved": [
+      2.3558441558441556,
+      0.0896969696969697,
+      3.2730434782608695
+     ],
+     "cov_diff": [
+      -0.042436440677966106,
+      -0.08564778403137296,
+      -0.003174006197066929
+     ],
+     "cov_active": 0.08080811138014528,
+     "cov_base": 0.12324455205811138,
+     "status": "FAIL"
+    },
+    "frozen": {
+     "n_pairs": 62,
+     "saved": [
+      0.1092436974789916,
+      0.011847527472527476,
+      0.2393382352941176
+     ],
+     "cov_diff": [
+      0.03304176755447942,
+      0.013911814256783017,
+      0.053029900139535305
+     ],
+     "cov_active": 0.08080811138014528,
+     "cov_base": 0.04776634382566586,
+     "status": "PASS"
+    }
+   },
+   "C2": {
+    "all": {
+     "all": {
+      "n": 1626,
+      "answered": 132,
+      "clusters": 46,
+      "acc": [
+       0.9473201243492266,
+       0.8869059729554558,
+       0.991935294441772
+      ],
+      "acc_plain": 0.946969696969697,
+      "coverage": [
+       0.08080811138014528,
+       0.053909916082322415,
+       0.1129453219440185
+      ],
+      "flag_rate": 0.9191918886198547,
+      "status": "INCONCLUSIVE"
+     }
+    },
+    "season": {
+     "s0": {
+      "n": 406,
+      "answered": 32,
+      "clusters": 23,
+      "acc": [
+       0.9372886566246541,
+       0.8263649317987627,
+       1.0
+      ],
+      "acc_plain": 0.9375,
+      "coverage": [
+       0.07894098233352748,
+       0.04201561475819696,
+       0.12486328077754817
+      ],
+      "flag_rate": 0.9210590176664726,
+      "status": "INCONCLUSIVE"
+     },
+     "s1": {
+      "n": 405,
+      "answered": 34,
+      "clusters": 25,
+      "acc": [
+       0.940728816039807,
+       0.8331223727690953,
+       1.0
+      ],
+      "acc_plain": 0.9411764705882353,
+      "coverage": [
+       0.08340249975588321,
+       0.04908129200107529,
+       0.12167947628127453
+      ],
+      "flag_rate": 0.9165975002441168,
+      "status": "INCONCLUSIVE"
+     },
+     "s2": {
+      "n": 414,
+      "answered": 38,
+      "clusters": 31,
+      "acc": [
+       0.948012232415902,
+       0.8679980343252747,
+       1.0
+      ],
+      "acc_plain": 0.9473684210526315,
+      "coverage": [
+       0.09159663865546219,
+       0.060152281275801425,
+       0.12984167528911808
+      ],
+      "flag_rate": 0.9084033613445378,
+      "status": "INCONCLUSIVE"
+     },
+     "s3": {
+      "n": 401,
+      "answered": 28,
+      "clusters": 21,
+      "acc": [
+       0.9646337062432334,
+       0.8742831720708958,
+       1.0
+      ],
+      "acc_plain": 0.9642857142857143,
+      "coverage": [
+       0.06896465903434544,
+       0.03952466565896068,
+       0.10149010579513403
+      ],
+      "flag_rate": 0.9310353409656545,
+      "status": "INCONCLUSIVE"
+     }
+    },
+    "family": {
+     "clean": {
+      "n": 800,
+      "answered": 46,
+      "clusters": 15,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.9782608695652174,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "parallel_peer_swap": {
+      "n": 160,
+      "answered": 6,
+      "clusters": 2,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "plant_loop_mapping": {
+      "n": 82,
+      "answered": 16,
+      "clusters": 8,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "same_medium_branch": {
+      "n": 160,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "sensor_mapping": {
+      "n": 160,
+      "answered": 39,
+      "clusters": 11,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.9743589743589743,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "vav_zone_swap": {
+      "n": 160,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "wrong_ahu_mapping": {
+      "n": 104,
+      "answered": 25,
+      "clusters": 10,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.8,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     }
+    },
+    "slot": {
+     "ahu_sat": {
+      "n": 56,
+      "answered": 4,
+      "clusters": 2,
+      "acc": [
+       0.75,
+       0.5,
+       1.0
+      ],
+      "acc_plain": 0.75,
+      "coverage": [
+       0.07142857142857142,
+       0.0,
+       0.19449404761904754
+      ],
+      "flag_rate": 0.9285714285714286,
+      "status": "insufficient"
+     },
+     "ahu_vav": {
+      "n": 208,
+      "answered": 55,
+      "clusters": 16,
+      "acc": [
+       0.909090909090909,
+       0.7394752469608363,
+       1.0
+      ],
+      "acc_plain": 0.9090909090909091,
+      "coverage": [
+       0.2644230769230769,
+       0.10532949379262109,
+       0.5423828124999999
+      ],
+      "flag_rate": 0.7355769230769231,
+      "status": "FAIL"
+     },
+     "branch_coil": {
+      "n": 302,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "coil_ahu": {
+      "n": 104,
+      "answered": 6,
+      "clusters": 2,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       0.057692307692307696,
+       0.0,
+       0.2
+      ],
+      "flag_rate": 0.9423076923076923,
+      "status": "insufficient"
+     },
+     "coil_vav": {
+      "n": 192,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "loop_branch": {
+      "n": 160,
+      "answered": 29,
+      "clusters": 15,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       0.18089430894308944,
+       0.09114857325043837,
+       0.28938135312732083
+      ],
+      "flag_rate": 0.8191056910569106,
+      "status": "PASS"
+     },
+     "loop_pump": {
+      "n": 12,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "loop_source": {
+      "n": 8,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "vav_dat": {
+      "n": 264,
+      "answered": 38,
+      "clusters": 11,
+      "acc": [
+       0.9736842105263158,
+       0.8863102721823549,
+       1.0
+      ],
+      "acc_plain": 0.9736842105263158,
+      "coverage": [
+       0.14393939393939392,
+       0.0651015625,
+       0.25587693798449607
+      ],
+      "flag_rate": 0.8560606060606061,
+      "status": "INCONCLUSIVE"
+     },
+     "vav_zone": {
+      "n": 320,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     }
+    },
+    "cell": {
+     "s0|clean|ahu_sat": {
+      "n": 5,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|ahu_vav": {
+      "n": 31,
+      "answered": 10,
+      "clusters": 3,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|branch_coil": {
+      "n": 37,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|coil_ahu": {
+      "n": 15,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|coil_vav": {
+      "n": 29,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|loop_branch": {
+      "n": 21,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|loop_pump": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|loop_source": {
+      "n": 2,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|vav_dat": {
+      "n": 29,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|vav_zone": {
+      "n": 34,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|parallel_peer_swap|coil_ahu": {
+      "n": 12,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|parallel_peer_swap|coil_vav": {
+      "n": 26,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|parallel_peer_swap|loop_pump": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|parallel_peer_swap|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|plant_loop_mapping|loop_branch": {
+      "n": 20,
+      "answered": 3,
+      "clusters": 3,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|same_medium_branch|branch_coil": {
+      "n": 40,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|sensor_mapping|ahu_sat": {
+      "n": 10,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|sensor_mapping|vav_dat": {
+      "n": 31,
+      "answered": 10,
+      "clusters": 8,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|vav_zone_swap|vav_zone": {
+      "n": 36,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|wrong_ahu_mapping|ahu_vav": {
+      "n": 25,
+      "answered": 6,
+      "clusters": 6,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.6666666666666666,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|ahu_sat": {
+      "n": 9,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|ahu_vav": {
+      "n": 20,
+      "answered": 6,
+      "clusters": 3,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|branch_coil": {
+      "n": 34,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|coil_ahu": {
+      "n": 14,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|coil_vav": {
+      "n": 18,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|loop_branch": {
+      "n": 23,
+      "answered": 5,
+      "clusters": 3,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|loop_pump": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|vav_dat": {
+      "n": 30,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|vav_zone": {
+      "n": 47,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|parallel_peer_swap|coil_ahu": {
+      "n": 17,
+      "answered": 3,
+      "clusters": 2,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|parallel_peer_swap|coil_vav": {
+      "n": 20,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|parallel_peer_swap|loop_pump": {
+      "n": 3,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|parallel_peer_swap|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|plant_loop_mapping|loop_branch": {
+      "n": 22,
+      "answered": 5,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|same_medium_branch|branch_coil": {
+      "n": 38,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|sensor_mapping|ahu_sat": {
+      "n": 5,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|sensor_mapping|vav_dat": {
+      "n": 34,
+      "answered": 6,
+      "clusters": 6,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|vav_zone_swap|vav_zone": {
+      "n": 41,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|wrong_ahu_mapping|ahu_vav": {
+      "n": 28,
+      "answered": 7,
+      "clusters": 5,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.8571428571428571,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|ahu_sat": {
+      "n": 8,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|ahu_vav": {
+      "n": 35,
+      "answered": 10,
+      "clusters": 6,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|branch_coil": {
+      "n": 33,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|coil_ahu": {
+      "n": 10,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|coil_vav": {
+      "n": 26,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|loop_branch": {
+      "n": 18,
+      "answered": 6,
+      "clusters": 5,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|loop_pump": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|vav_dat": {
+      "n": 38,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|vav_zone": {
+      "n": 34,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|parallel_peer_swap|coil_ahu": {
+      "n": 13,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|parallel_peer_swap|coil_vav": {
+      "n": 23,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|parallel_peer_swap|loop_pump": {
+      "n": 3,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|parallel_peer_swap|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|plant_loop_mapping|loop_branch": {
+      "n": 18,
+      "answered": 4,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|same_medium_branch|branch_coil": {
+      "n": 42,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|sensor_mapping|ahu_sat": {
+      "n": 9,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|sensor_mapping|vav_dat": {
+      "n": 32,
+      "answered": 8,
+      "clusters": 7,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|vav_zone_swap|vav_zone": {
+      "n": 36,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|wrong_ahu_mapping|ahu_vav": {
+      "n": 33,
+      "answered": 8,
+      "clusters": 7,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.875,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|ahu_sat": {
+      "n": 6,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|ahu_vav": {
+      "n": 18,
+      "answered": 4,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|branch_coil": {
+      "n": 38,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|coil_ahu": {
+      "n": 13,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|coil_vav": {
+      "n": 23,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|loop_branch": {
+      "n": 16,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|loop_pump": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|vav_dat": {
+      "n": 35,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|vav_zone": {
+      "n": 45,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|parallel_peer_swap|coil_ahu": {
+      "n": 10,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|parallel_peer_swap|coil_vav": {
+      "n": 27,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|parallel_peer_swap|loop_pump": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|parallel_peer_swap|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|plant_loop_mapping|loop_branch": {
+      "n": 22,
+      "answered": 4,
+      "clusters": 3,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|same_medium_branch|branch_coil": {
+      "n": 40,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|sensor_mapping|ahu_sat": {
+      "n": 4,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|sensor_mapping|vav_dat": {
+      "n": 35,
+      "answered": 13,
+      "clusters": 8,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|vav_zone_swap|vav_zone": {
+      "n": 47,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|wrong_ahu_mapping|ahu_vav": {
+      "n": 18,
+      "answered": 4,
+      "clusters": 3,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.75,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     }
+    }
+   },
+   "C3": {
+    "a_buckets": {
+     "season=s0": {
+      "episodes": 406,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=s1": {
+      "episodes": 405,
+      "resolvable": 3,
+      "resolvable_share": 0.007407407407407408,
+      "binding": false,
+      "coverage_of_resolvable": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=s2": {
+      "episodes": 414,
+      "resolvable": 1,
+      "resolvable_share": 0.0024154589371980675,
+      "binding": false,
+      "coverage_of_resolvable": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=s3": {
+      "episodes": 401,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=ahu_sat": {
+      "episodes": 56,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=ahu_vav": {
+      "episodes": 208,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=branch_coil": {
+      "episodes": 302,
+      "resolvable": 4,
+      "resolvable_share": 0.013245033112582781,
+      "binding": false,
+      "coverage_of_resolvable": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=coil_ahu": {
+      "episodes": 104,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=coil_vav": {
+      "episodes": 192,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=loop_branch": {
+      "episodes": 160,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=loop_pump": {
+      "episodes": 12,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=loop_source": {
+      "episodes": 8,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=vav_dat": {
+      "episodes": 264,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=vav_zone": {
+      "episodes": 320,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     }
+    },
+    "b_necessity": {
+     "flagged_bad_share": [
+      0.9972802196897607,
+      0.9915032090069049,
+      1.0
+     ],
+     "answered_bad_share": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "margin": [
+      -0.002719780310239339,
+      -0.008496790993095105,
+      0.0
+     ],
+     "status": "FAIL",
+     "n_flagged": 1494,
+     "n_answered": 132
+    },
+    "c_cost": {
+     "overall_resolvable_lost": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "resolvable_total": 4,
+     "by_bucket": {
+      "season=s0": {
+       "lost": null
+      },
+      "season=s1": {
+       "lost": 1.0
+      },
+      "season=s2": {
+       "lost": 1.0
+      },
+      "season=s3": {
+       "lost": null
+      },
+      "slot=ahu_sat": {
+       "lost": null
+      },
+      "slot=ahu_vav": {
+       "lost": null
+      },
+      "slot=branch_coil": {
+       "lost": 1.0
+      },
+      "slot=coil_ahu": {
+       "lost": null
+      },
+      "slot=coil_vav": {
+       "lost": null
+      },
+      "slot=loop_branch": {
+       "lost": null
+      },
+      "slot=loop_pump": {
+       "lost": null
+      },
+      "slot=loop_source": {
+       "lost": null
+      },
+      "slot=vav_dat": {
+       "lost": null
+      },
+      "slot=vav_zone": {
+       "lost": null
+      }
+     }
+    },
+    "status_a": "n/a",
+    "status": "FAIL"
+   },
+   "C4": {
+    "table": [
+     {
+      "cell": "s0|clean|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 5,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 10,
+      "episodes": 31,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 37,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 15,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 29,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 21,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 2,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 29,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 34,
+      "ok": false
+     },
+     {
+      "cell": "s0|parallel_peer_swap|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 12,
+      "ok": false
+     },
+     {
+      "cell": "s0|parallel_peer_swap|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 26,
+      "ok": false
+     },
+     {
+      "cell": "s0|parallel_peer_swap|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s0|parallel_peer_swap|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s0|plant_loop_mapping|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 3,
+      "episodes": 20,
+      "ok": false
+     },
+     {
+      "cell": "s0|same_medium_branch|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 40,
+      "ok": false
+     },
+     {
+      "cell": "s0|sensor_mapping|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 10,
+      "ok": false
+     },
+     {
+      "cell": "s0|sensor_mapping|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 10,
+      "episodes": 31,
+      "ok": false
+     },
+     {
+      "cell": "s0|vav_zone_swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 36,
+      "ok": false
+     },
+     {
+      "cell": "s0|wrong_ahu_mapping|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 6,
+      "episodes": 25,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 9,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 6,
+      "episodes": 20,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 34,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 14,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 18,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 5,
+      "episodes": 23,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 30,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 47,
+      "ok": false
+     },
+     {
+      "cell": "s1|parallel_peer_swap|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 3,
+      "episodes": 17,
+      "ok": false
+     },
+     {
+      "cell": "s1|parallel_peer_swap|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 20,
+      "ok": false
+     },
+     {
+      "cell": "s1|parallel_peer_swap|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 3,
+      "ok": false
+     },
+     {
+      "cell": "s1|parallel_peer_swap|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s1|plant_loop_mapping|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 5,
+      "episodes": 22,
+      "ok": false
+     },
+     {
+      "cell": "s1|same_medium_branch|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 38,
+      "ok": false
+     },
+     {
+      "cell": "s1|sensor_mapping|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 5,
+      "ok": false
+     },
+     {
+      "cell": "s1|sensor_mapping|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 6,
+      "episodes": 34,
+      "ok": false
+     },
+     {
+      "cell": "s1|vav_zone_swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 41,
+      "ok": false
+     },
+     {
+      "cell": "s1|wrong_ahu_mapping|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 7,
+      "episodes": 28,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 8,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 10,
+      "episodes": 35,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 33,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 10,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 26,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 6,
+      "episodes": 18,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 38,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 34,
+      "ok": false
+     },
+     {
+      "cell": "s2|parallel_peer_swap|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 13,
+      "ok": false
+     },
+     {
+      "cell": "s2|parallel_peer_swap|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 23,
+      "ok": false
+     },
+     {
+      "cell": "s2|parallel_peer_swap|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 3,
+      "ok": false
+     },
+     {
+      "cell": "s2|parallel_peer_swap|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s2|plant_loop_mapping|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 4,
+      "episodes": 18,
+      "ok": false
+     },
+     {
+      "cell": "s2|same_medium_branch|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 42,
+      "ok": false
+     },
+     {
+      "cell": "s2|sensor_mapping|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 9,
+      "ok": false
+     },
+     {
+      "cell": "s2|sensor_mapping|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 8,
+      "episodes": 32,
+      "ok": false
+     },
+     {
+      "cell": "s2|vav_zone_swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 36,
+      "ok": false
+     },
+     {
+      "cell": "s2|wrong_ahu_mapping|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 8,
+      "episodes": 33,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 6,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 4,
+      "episodes": 18,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 38,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 13,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 23,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 16,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 35,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 45,
+      "ok": false
+     },
+     {
+      "cell": "s3|parallel_peer_swap|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 10,
+      "ok": false
+     },
+     {
+      "cell": "s3|parallel_peer_swap|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 27,
+      "ok": false
+     },
+     {
+      "cell": "s3|parallel_peer_swap|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s3|parallel_peer_swap|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s3|plant_loop_mapping|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 4,
+      "episodes": 22,
+      "ok": false
+     },
+     {
+      "cell": "s3|same_medium_branch|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 40,
+      "ok": false
+     },
+     {
+      "cell": "s3|sensor_mapping|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 4,
+      "ok": false
+     },
+     {
+      "cell": "s3|sensor_mapping|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 13,
+      "episodes": 35,
+      "ok": false
+     },
+     {
+      "cell": "s3|vav_zone_swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 47,
+      "ok": false
+     },
+     {
+      "cell": "s3|wrong_ahu_mapping|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 4,
+      "episodes": 18,
+      "ok": false
+     }
+    ],
+    "violations": [
+     "s0|clean|ahu_sat",
+     "s0|clean|ahu_vav",
+     "s0|clean|branch_coil",
+     "s0|clean|coil_ahu",
+     "s0|clean|coil_vav",
+     "s0|clean|loop_branch",
+     "s0|clean|loop_pump",
+     "s0|clean|loop_source",
+     "s0|clean|vav_dat",
+     "s0|clean|vav_zone",
+     "s0|parallel_peer_swap|coil_ahu",
+     "s0|parallel_peer_swap|coil_vav",
+     "s0|parallel_peer_swap|loop_pump",
+     "s0|parallel_peer_swap|loop_source",
+     "s0|plant_loop_mapping|loop_branch",
+     "s0|same_medium_branch|branch_coil",
+     "s0|sensor_mapping|ahu_sat",
+     "s0|sensor_mapping|vav_dat",
+     "s0|vav_zone_swap|vav_zone",
+     "s0|wrong_ahu_mapping|ahu_vav",
+     "s1|clean|ahu_sat",
+     "s1|clean|ahu_vav",
+     "s1|clean|branch_coil",
+     "s1|clean|coil_ahu",
+     "s1|clean|coil_vav",
+     "s1|clean|loop_branch",
+     "s1|clean|loop_pump",
+     "s1|clean|vav_dat",
+     "s1|clean|vav_zone",
+     "s1|parallel_peer_swap|coil_ahu",
+     "s1|parallel_peer_swap|coil_vav",
+     "s1|parallel_peer_swap|loop_pump",
+     "s1|parallel_peer_swap|loop_source",
+     "s1|plant_loop_mapping|loop_branch",
+     "s1|same_medium_branch|branch_coil",
+     "s1|sensor_mapping|ahu_sat",
+     "s1|sensor_mapping|vav_dat",
+     "s1|vav_zone_swap|vav_zone",
+     "s1|wrong_ahu_mapping|ahu_vav",
+     "s2|clean|ahu_sat",
+     "s2|clean|ahu_vav",
+     "s2|clean|branch_coil",
+     "s2|clean|coil_ahu",
+     "s2|clean|coil_vav",
+     "s2|clean|loop_branch",
+     "s2|clean|loop_pump",
+     "s2|clean|loop_source",
+     "s2|clean|vav_dat",
+     "s2|clean|vav_zone",
+     "s2|parallel_peer_swap|coil_ahu",
+     "s2|parallel_peer_swap|coil_vav",
+     "s2|parallel_peer_swap|loop_pump",
+     "s2|parallel_peer_swap|loop_source",
+     "s2|plant_loop_mapping|loop_branch",
+     "s2|same_medium_branch|branch_coil",
+     "s2|sensor_mapping|ahu_sat",
+     "s2|sensor_mapping|vav_dat",
+     "s2|vav_zone_swap|vav_zone",
+     "s2|wrong_ahu_mapping|ahu_vav",
+     "s3|clean|ahu_sat",
+     "s3|clean|ahu_vav",
+     "s3|clean|branch_coil",
+     "s3|clean|coil_ahu",
+     "s3|clean|coil_vav",
+     "s3|clean|loop_branch",
+     "s3|clean|loop_pump",
+     "s3|clean|loop_source",
+     "s3|clean|vav_dat",
+     "s3|clean|vav_zone",
+     "s3|parallel_peer_swap|coil_ahu",
+     "s3|parallel_peer_swap|coil_vav",
+     "s3|parallel_peer_swap|loop_pump",
+     "s3|parallel_peer_swap|loop_source",
+     "s3|plant_loop_mapping|loop_branch",
+     "s3|same_medium_branch|branch_coil",
+     "s3|sensor_mapping|ahu_sat",
+     "s3|sensor_mapping|vav_dat",
+     "s3|vav_zone_swap|vav_zone",
+     "s3|wrong_ahu_mapping|ahu_vav"
+    ],
+    "status": "FAIL",
+    "n_not_supported": 79,
+    "n_cells": 79
+   },
+   "calibration_answered": {
+    "bins": [
+     {
+      "lo": 0.95,
+      "hi": 1.0,
+      "n": 132,
+      "mean_conf": 0.9789006411366719,
+      "acc": 0.9542467138523761
+     }
+    ],
+    "ece": 0.024653927284295718,
+    "n": 132
+   },
+   "calibration_crossed": {
+    "bins": [
+     {
+      "lo": 0.95,
+      "hi": 1.0,
+      "n": 784,
+      "mean_conf": 0.9752962957407629,
+      "acc": 0.8628635958317876
+     }
+    ],
+    "ece": 0.11243269990897531,
+    "n": 784
+   },
+   "by_policy": {
+    "active": {
+     "coverage": [
+      0.08080811138014528,
+      0.053909916082322415,
+      0.1129453219440185
+     ],
+     "acc": [
+      0.9473201243492266,
+      0.8869059729554558,
+      0.991935294441772
+     ],
+     "readings_answered": [
+      3.2843781597573303,
+      2.1865071918081123,
+      4.3784955383047235
+     ]
+    },
+    "frozen": {
+     "coverage": [
+      0.04776634382566586,
+      0.024457780876797872,
+      0.07710951765598988
+     ],
+     "acc": [
+      0.9239640096312255,
+      0.8112391369101765,
+      1.0
+     ],
+     "readings_answered": [
+      3.031428571428571,
+      1.6147220443875376,
+      3.790956336462451
+     ]
+    },
+    "random": {
+     "coverage": [
+      0.01165859564164649,
+      0.001274956222206862,
+      0.027584895591602234
+     ],
+     "acc": [
+      0.6800363447559707,
+      0.22222222222222224,
+      0.9096142344497606
+     ],
+     "readings_answered": [
+      11.176136363636363,
+      2.4,
+      11.95782039141414
+     ]
+    },
+    "traversal": {
+     "coverage": [
+      0.12324455205811138,
+      0.08946486362704034,
+      0.16261332930145397
+     ],
+     "acc": [
+      0.9358300589390962,
+      0.8441776087754813,
+      0.9951435686753535
+     ],
+     "readings_answered": [
+      6.147882231404958,
+      4.7155141893896015,
+      7.738283750119765
+     ]
+    },
+    "traversal_block": {
+     "coverage": [
+      0.24557808716707022,
+      0.17741934005358004,
+      0.31944118621029416
+     ],
+     "acc": [
+      0.9579363807786638,
+      0.9001645693536527,
+      0.9944154885295473
+     ],
+     "readings_answered": [
+      6.290998038130691,
+      4.053603585945064,
+      8.474141594935203
+     ]
+    }
+   },
+   "C2_overall_status": "INCONCLUSIVE"
+  },
+  "new": {
+   "policies": [
+    "active",
+    "frozen",
+    "random",
+    "traversal",
+    "traversal_block"
+   ],
+   "n_episodes": 1626,
+   "n_clusters": 331,
+   "C1": {
+    "random": {
+     "n_pairs": 0
+    },
+    "traversal_block": {
+     "n_pairs": 0
+    },
+    "traversal": {
+     "n_pairs": 0
+    },
+    "frozen": {
+     "n_pairs": 0
+    }
+   },
+   "C2": {
+    "all": {
+     "all": {
+      "n": 1626,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     }
+    },
+    "season": {
+     "s0": {
+      "n": 406,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "s1": {
+      "n": 405,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "s2": {
+      "n": 414,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "s3": {
+      "n": 401,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     }
+    },
+    "family": {
+     "clean": {
+      "n": 800,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "parallel_peer_swap": {
+      "n": 160,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "plant_loop_mapping": {
+      "n": 82,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "same_medium_branch": {
+      "n": 160,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "sensor_mapping": {
+      "n": 160,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "vav_zone_swap": {
+      "n": 160,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "wrong_ahu_mapping": {
+      "n": 104,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     }
+    },
+    "slot": {
+     "ahu_sat": {
+      "n": 56,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "ahu_vav": {
+      "n": 208,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "branch_coil": {
+      "n": 302,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "coil_ahu": {
+      "n": 104,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "coil_vav": {
+      "n": 192,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "loop_branch": {
+      "n": 160,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "loop_pump": {
+      "n": 12,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "loop_source": {
+      "n": 8,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "vav_dat": {
+      "n": 264,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "vav_zone": {
+      "n": 320,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     }
+    },
+    "cell": {
+     "s0|clean|ahu_sat": {
+      "n": 5,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|ahu_vav": {
+      "n": 31,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|branch_coil": {
+      "n": 37,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|coil_ahu": {
+      "n": 15,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|coil_vav": {
+      "n": 29,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|loop_branch": {
+      "n": 21,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|loop_pump": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|loop_source": {
+      "n": 2,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|vav_dat": {
+      "n": 29,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|vav_zone": {
+      "n": 34,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|parallel_peer_swap|coil_ahu": {
+      "n": 12,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|parallel_peer_swap|coil_vav": {
+      "n": 26,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|parallel_peer_swap|loop_pump": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|parallel_peer_swap|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|plant_loop_mapping|loop_branch": {
+      "n": 20,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|same_medium_branch|branch_coil": {
+      "n": 40,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|sensor_mapping|ahu_sat": {
+      "n": 10,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|sensor_mapping|vav_dat": {
+      "n": 31,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|vav_zone_swap|vav_zone": {
+      "n": 36,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|wrong_ahu_mapping|ahu_vav": {
+      "n": 25,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|ahu_sat": {
+      "n": 9,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|ahu_vav": {
+      "n": 20,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|branch_coil": {
+      "n": 34,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|coil_ahu": {
+      "n": 14,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|coil_vav": {
+      "n": 18,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|loop_branch": {
+      "n": 23,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|loop_pump": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|vav_dat": {
+      "n": 30,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|vav_zone": {
+      "n": 47,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|parallel_peer_swap|coil_ahu": {
+      "n": 17,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|parallel_peer_swap|coil_vav": {
+      "n": 20,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|parallel_peer_swap|loop_pump": {
+      "n": 3,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|parallel_peer_swap|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|plant_loop_mapping|loop_branch": {
+      "n": 22,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|same_medium_branch|branch_coil": {
+      "n": 38,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|sensor_mapping|ahu_sat": {
+      "n": 5,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|sensor_mapping|vav_dat": {
+      "n": 34,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|vav_zone_swap|vav_zone": {
+      "n": 41,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|wrong_ahu_mapping|ahu_vav": {
+      "n": 28,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|ahu_sat": {
+      "n": 8,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|ahu_vav": {
+      "n": 35,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|branch_coil": {
+      "n": 33,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|coil_ahu": {
+      "n": 10,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|coil_vav": {
+      "n": 26,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|loop_branch": {
+      "n": 18,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|loop_pump": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|vav_dat": {
+      "n": 38,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|vav_zone": {
+      "n": 34,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|parallel_peer_swap|coil_ahu": {
+      "n": 13,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|parallel_peer_swap|coil_vav": {
+      "n": 23,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|parallel_peer_swap|loop_pump": {
+      "n": 3,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|parallel_peer_swap|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|plant_loop_mapping|loop_branch": {
+      "n": 18,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|same_medium_branch|branch_coil": {
+      "n": 42,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|sensor_mapping|ahu_sat": {
+      "n": 9,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|sensor_mapping|vav_dat": {
+      "n": 32,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|vav_zone_swap|vav_zone": {
+      "n": 36,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|wrong_ahu_mapping|ahu_vav": {
+      "n": 33,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|ahu_sat": {
+      "n": 6,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|ahu_vav": {
+      "n": 18,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|branch_coil": {
+      "n": 38,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|coil_ahu": {
+      "n": 13,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|coil_vav": {
+      "n": 23,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|loop_branch": {
+      "n": 16,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|loop_pump": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|vav_dat": {
+      "n": 35,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|vav_zone": {
+      "n": 45,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|parallel_peer_swap|coil_ahu": {
+      "n": 10,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|parallel_peer_swap|coil_vav": {
+      "n": 27,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|parallel_peer_swap|loop_pump": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|parallel_peer_swap|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|plant_loop_mapping|loop_branch": {
+      "n": 22,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|same_medium_branch|branch_coil": {
+      "n": 40,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|sensor_mapping|ahu_sat": {
+      "n": 4,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|sensor_mapping|vav_dat": {
+      "n": 35,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|vav_zone_swap|vav_zone": {
+      "n": 47,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|wrong_ahu_mapping|ahu_vav": {
+      "n": 18,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     }
+    }
+   },
+   "C3": {
+    "a_buckets": {
+     "season=s0": {
+      "episodes": 406,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=s1": {
+      "episodes": 405,
+      "resolvable": 3,
+      "resolvable_share": 0.007407407407407408,
+      "binding": false,
+      "coverage_of_resolvable": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=s2": {
+      "episodes": 414,
+      "resolvable": 1,
+      "resolvable_share": 0.0024154589371980675,
+      "binding": false,
+      "coverage_of_resolvable": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=s3": {
+      "episodes": 401,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=ahu_sat": {
+      "episodes": 56,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=ahu_vav": {
+      "episodes": 208,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=branch_coil": {
+      "episodes": 302,
+      "resolvable": 4,
+      "resolvable_share": 0.013245033112582781,
+      "binding": false,
+      "coverage_of_resolvable": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=coil_ahu": {
+      "episodes": 104,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=coil_vav": {
+      "episodes": 192,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=loop_branch": {
+      "episodes": 160,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=loop_pump": {
+      "episodes": 12,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=loop_source": {
+      "episodes": 8,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=vav_dat": {
+      "episodes": 264,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=vav_zone": {
+      "episodes": 320,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     }
+    },
+    "b_necessity": {
+     "flagged_bad_share": [
+      0.9975,
+      0.9921047423968893,
+      1.0
+     ],
+     "answered_bad_share": [
+      null,
+      null,
+      null
+     ],
+     "margin": [
+      null,
+      null,
+      null
+     ],
+     "status": "FAIL",
+     "n_flagged": 1626,
+     "n_answered": 0
+    },
+    "c_cost": {
+     "overall_resolvable_lost": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "resolvable_total": 4,
+     "by_bucket": {
+      "season=s0": {
+       "lost": null
+      },
+      "season=s1": {
+       "lost": 1.0
+      },
+      "season=s2": {
+       "lost": 1.0
+      },
+      "season=s3": {
+       "lost": null
+      },
+      "slot=ahu_sat": {
+       "lost": null
+      },
+      "slot=ahu_vav": {
+       "lost": null
+      },
+      "slot=branch_coil": {
+       "lost": 1.0
+      },
+      "slot=coil_ahu": {
+       "lost": null
+      },
+      "slot=coil_vav": {
+       "lost": null
+      },
+      "slot=loop_branch": {
+       "lost": null
+      },
+      "slot=loop_pump": {
+       "lost": null
+      },
+      "slot=loop_source": {
+       "lost": null
+      },
+      "slot=vav_dat": {
+       "lost": null
+      },
+      "slot=vav_zone": {
+       "lost": null
+      }
+     }
+    },
+    "status_a": "n/a",
+    "status": "FAIL"
+   },
+   "C4": {
+    "table": [
+     {
+      "cell": "s0|clean|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 5,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 31,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 37,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 15,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 29,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 21,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 2,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 29,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 34,
+      "ok": false
+     },
+     {
+      "cell": "s0|parallel_peer_swap|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 12,
+      "ok": false
+     },
+     {
+      "cell": "s0|parallel_peer_swap|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 26,
+      "ok": false
+     },
+     {
+      "cell": "s0|parallel_peer_swap|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s0|parallel_peer_swap|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s0|plant_loop_mapping|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 20,
+      "ok": false
+     },
+     {
+      "cell": "s0|same_medium_branch|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 40,
+      "ok": false
+     },
+     {
+      "cell": "s0|sensor_mapping|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 10,
+      "ok": false
+     },
+     {
+      "cell": "s0|sensor_mapping|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 31,
+      "ok": false
+     },
+     {
+      "cell": "s0|vav_zone_swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 36,
+      "ok": false
+     },
+     {
+      "cell": "s0|wrong_ahu_mapping|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 25,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 9,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 20,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 34,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 14,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 18,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 23,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 30,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 47,
+      "ok": false
+     },
+     {
+      "cell": "s1|parallel_peer_swap|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 17,
+      "ok": false
+     },
+     {
+      "cell": "s1|parallel_peer_swap|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 20,
+      "ok": false
+     },
+     {
+      "cell": "s1|parallel_peer_swap|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 3,
+      "ok": false
+     },
+     {
+      "cell": "s1|parallel_peer_swap|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s1|plant_loop_mapping|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 22,
+      "ok": false
+     },
+     {
+      "cell": "s1|same_medium_branch|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 38,
+      "ok": false
+     },
+     {
+      "cell": "s1|sensor_mapping|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 5,
+      "ok": false
+     },
+     {
+      "cell": "s1|sensor_mapping|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 34,
+      "ok": false
+     },
+     {
+      "cell": "s1|vav_zone_swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 41,
+      "ok": false
+     },
+     {
+      "cell": "s1|wrong_ahu_mapping|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 28,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 8,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 35,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 33,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 10,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 26,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 18,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 38,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 34,
+      "ok": false
+     },
+     {
+      "cell": "s2|parallel_peer_swap|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 13,
+      "ok": false
+     },
+     {
+      "cell": "s2|parallel_peer_swap|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 23,
+      "ok": false
+     },
+     {
+      "cell": "s2|parallel_peer_swap|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 3,
+      "ok": false
+     },
+     {
+      "cell": "s2|parallel_peer_swap|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s2|plant_loop_mapping|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 18,
+      "ok": false
+     },
+     {
+      "cell": "s2|same_medium_branch|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 42,
+      "ok": false
+     },
+     {
+      "cell": "s2|sensor_mapping|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 9,
+      "ok": false
+     },
+     {
+      "cell": "s2|sensor_mapping|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 32,
+      "ok": false
+     },
+     {
+      "cell": "s2|vav_zone_swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 36,
+      "ok": false
+     },
+     {
+      "cell": "s2|wrong_ahu_mapping|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 33,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 6,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 18,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 38,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 13,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 23,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 16,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 35,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 45,
+      "ok": false
+     },
+     {
+      "cell": "s3|parallel_peer_swap|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 10,
+      "ok": false
+     },
+     {
+      "cell": "s3|parallel_peer_swap|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 27,
+      "ok": false
+     },
+     {
+      "cell": "s3|parallel_peer_swap|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s3|parallel_peer_swap|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s3|plant_loop_mapping|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 22,
+      "ok": false
+     },
+     {
+      "cell": "s3|same_medium_branch|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 40,
+      "ok": false
+     },
+     {
+      "cell": "s3|sensor_mapping|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 4,
+      "ok": false
+     },
+     {
+      "cell": "s3|sensor_mapping|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 35,
+      "ok": false
+     },
+     {
+      "cell": "s3|vav_zone_swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 47,
+      "ok": false
+     },
+     {
+      "cell": "s3|wrong_ahu_mapping|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 18,
+      "ok": false
+     }
+    ],
+    "violations": [
+     "s0|clean|ahu_sat",
+     "s0|clean|ahu_vav",
+     "s0|clean|branch_coil",
+     "s0|clean|coil_ahu",
+     "s0|clean|coil_vav",
+     "s0|clean|loop_branch",
+     "s0|clean|loop_pump",
+     "s0|clean|loop_source",
+     "s0|clean|vav_dat",
+     "s0|clean|vav_zone",
+     "s0|parallel_peer_swap|coil_ahu",
+     "s0|parallel_peer_swap|coil_vav",
+     "s0|parallel_peer_swap|loop_pump",
+     "s0|parallel_peer_swap|loop_source",
+     "s0|plant_loop_mapping|loop_branch",
+     "s0|same_medium_branch|branch_coil",
+     "s0|sensor_mapping|ahu_sat",
+     "s0|sensor_mapping|vav_dat",
+     "s0|vav_zone_swap|vav_zone",
+     "s0|wrong_ahu_mapping|ahu_vav",
+     "s1|clean|ahu_sat",
+     "s1|clean|ahu_vav",
+     "s1|clean|branch_coil",
+     "s1|clean|coil_ahu",
+     "s1|clean|coil_vav",
+     "s1|clean|loop_branch",
+     "s1|clean|loop_pump",
+     "s1|clean|vav_dat",
+     "s1|clean|vav_zone",
+     "s1|parallel_peer_swap|coil_ahu",
+     "s1|parallel_peer_swap|coil_vav",
+     "s1|parallel_peer_swap|loop_pump",
+     "s1|parallel_peer_swap|loop_source",
+     "s1|plant_loop_mapping|loop_branch",
+     "s1|same_medium_branch|branch_coil",
+     "s1|sensor_mapping|ahu_sat",
+     "s1|sensor_mapping|vav_dat",
+     "s1|vav_zone_swap|vav_zone",
+     "s1|wrong_ahu_mapping|ahu_vav",
+     "s2|clean|ahu_sat",
+     "s2|clean|ahu_vav",
+     "s2|clean|branch_coil",
+     "s2|clean|coil_ahu",
+     "s2|clean|coil_vav",
+     "s2|clean|loop_branch",
+     "s2|clean|loop_pump",
+     "s2|clean|loop_source",
+     "s2|clean|vav_dat",
+     "s2|clean|vav_zone",
+     "s2|parallel_peer_swap|coil_ahu",
+     "s2|parallel_peer_swap|coil_vav",
+     "s2|parallel_peer_swap|loop_pump",
+     "s2|parallel_peer_swap|loop_source",
+     "s2|plant_loop_mapping|loop_branch",
+     "s2|same_medium_branch|branch_coil",
+     "s2|sensor_mapping|ahu_sat",
+     "s2|sensor_mapping|vav_dat",
+     "s2|vav_zone_swap|vav_zone",
+     "s2|wrong_ahu_mapping|ahu_vav",
+     "s3|clean|ahu_sat",
+     "s3|clean|ahu_vav",
+     "s3|clean|branch_coil",
+     "s3|clean|coil_ahu",
+     "s3|clean|coil_vav",
+     "s3|clean|loop_branch",
+     "s3|clean|loop_pump",
+     "s3|clean|loop_source",
+     "s3|clean|vav_dat",
+     "s3|clean|vav_zone",
+     "s3|parallel_peer_swap|coil_ahu",
+     "s3|parallel_peer_swap|coil_vav",
+     "s3|parallel_peer_swap|loop_pump",
+     "s3|parallel_peer_swap|loop_source",
+     "s3|plant_loop_mapping|loop_branch",
+     "s3|same_medium_branch|branch_coil",
+     "s3|sensor_mapping|ahu_sat",
+     "s3|sensor_mapping|vav_dat",
+     "s3|vav_zone_swap|vav_zone",
+     "s3|wrong_ahu_mapping|ahu_vav"
+    ],
+    "status": "FAIL",
+    "n_not_supported": 79,
+    "n_cells": 79
+   },
+   "calibration_answered": {
+    "bins": [],
+    "ece": null,
+    "n": 0
+   },
+   "calibration_crossed": {
+    "bins": [
+     {
+      "lo": 0.5,
+      "hi": 0.6,
+      "n": 17,
+      "mean_conf": 0.535414200329166,
+      "acc": 0.7569444444444445
+     },
+     {
+      "lo": 0.6,
+      "hi": 0.7,
+      "n": 5,
+      "mean_conf": 0.6867981089683024,
+      "acc": 0.6
+     },
+     {
+      "lo": 0.7,
+      "hi": 0.8,
+      "n": 42,
+      "mean_conf": 0.7542674594166064,
+      "acc": 0.8247482571649885
+     },
+     {
+      "lo": 0.8,
+      "hi": 0.9,
+      "n": 114,
+      "mean_conf": 0.8563468292245822,
+      "acc": 0.9134650973425125
+     },
+     {
+      "lo": 0.9,
+      "hi": 0.95,
+      "n": 16,
+      "mean_conf": 0.944880659127417,
+      "acc": 0.7671303451828955
+     },
+     {
+      "lo": 0.95,
+      "hi": 1.0,
+      "n": 51,
+      "mean_conf": 0.9936962768517291,
+      "acc": 0.979822684194436
+     }
+    ],
+    "ece": 0.06956421460725311,
+    "n": 245
+   },
+   "by_policy": {
+    "active": {
+     "coverage": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "acc": [
+      null,
+      null,
+      null
+     ],
+     "readings_answered": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "frozen": {
+     "coverage": [
+      0.002421307506053269,
+      0.0,
+      0.007937034230137677
+     ],
+     "acc": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "readings_answered": [
+      1.0,
+      0.0,
+      1.0
+     ]
+    },
+    "random": {
+     "coverage": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "acc": [
+      null,
+      null,
+      null
+     ],
+     "readings_answered": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "traversal": {
+     "coverage": [
+      0.006717615012106538,
+      0.0016671201803688783,
+      0.012731143173751212
+     ],
+     "acc": [
+      0.9069610272583916,
+      0.5913509237658542,
+      1.0
+     ],
+     "readings_answered": [
+      13.020833333333334,
+      3.0991666666666666,
+      17.4
+     ]
+    },
+    "traversal_block": {
+     "coverage": [
+      0.006717615012106538,
+      0.0016671201803688783,
+      0.012731143173751212
+     ],
+     "acc": [
+      0.9069610272583916,
+      0.5913509237658542,
+      1.0
+     ],
+     "readings_answered": [
+      13.020833333333334,
+      3.0991666666666666,
+      17.4
+     ]
+    }
+   },
+   "C2_overall_status": "insufficient"
+  },
+  "none": {
+   "policies": [
+    "active",
+    "frozen",
+    "random",
+    "traversal",
+    "traversal_block"
+   ],
+   "n_episodes": 1626,
+   "n_clusters": 331,
+   "C1": {
+    "random": {
+     "n_pairs": 422,
+     "saved": [
+      9.145253342321087,
+      8.201904654242822,
+      9.96673336241948
+     ],
+     "cov_diff": [
+      0.21233958837772393,
+      0.16956954912187436,
+      0.2533677618680317
+     ],
+     "cov_active": 0.48238650121065374,
+     "cov_base": 0.2700469128329298,
+     "status": "PASS"
+    },
+    "traversal_block": {
+     "n_pairs": 516,
+     "saved": [
+      3.5817606747496047,
+      1.8602331758247026,
+      5.3884118968817925
+     ],
+     "cov_diff": [
+      0.16158141646489105,
+      0.12558297475845867,
+      0.20269925385591625
+     ],
+     "cov_active": 0.48238650121065374,
+     "cov_base": 0.3208050847457627,
+     "status": "PASS"
+    },
+    "traversal": {
+     "n_pairs": 510,
+     "saved": [
+      3.5884080085078836,
+      1.8895761868523429,
+      5.380326095033781
+     ],
+     "cov_diff": [
+      0.16591707021791768,
+      0.12982606424743254,
+      0.20711613585173536
+     ],
+     "cov_active": 0.48238650121065374,
+     "cov_base": 0.31646943099273606,
+     "status": "PASS"
+    },
+    "frozen": {
+     "n_pairs": 754,
+     "saved": [
+      0.6383372767731396,
+      0.3769115021800838,
+      0.9542483580741484
+     ],
+     "cov_diff": [
+      0.008533595641646463,
+      -0.0013564915957399836,
+      0.019428143351790845
+     ],
+     "cov_active": 0.48238650121065374,
+     "cov_base": 0.4738529055690073,
+     "status": "PASS"
+    }
+   },
+   "C2": {
+    "all": {
+     "all": {
+      "n": 1626,
+      "answered": 784,
+      "clusters": 190,
+      "acc": [
+       0.8643435050084547,
+       0.8093342202112485,
+       0.9135961667491856
+      ],
+      "acc_plain": 0.8635204081632653,
+      "coverage": [
+       0.48238650121065374,
+       0.4078315208070937,
+       0.5539606069435933
+      ],
+      "flag_rate": 0.5176134987893463,
+      "status": "FAIL"
+     }
+    },
+    "season": {
+     "s0": {
+      "n": 406,
+      "answered": 204,
+      "clusters": 121,
+      "acc": [
+       0.8919271462389489,
+       0.8287581090102913,
+       0.9457124530399682
+      ],
+      "acc_plain": 0.8921568627450981,
+      "coverage": [
+       0.5023053775965831,
+       0.4190599116370851,
+       0.583710868351074
+      ],
+      "flag_rate": 0.4976946224034169,
+      "status": "FAIL"
+     },
+     "s1": {
+      "n": 405,
+      "answered": 183,
+      "clusters": 112,
+      "acc": [
+       0.8813481445444471,
+       0.8109896764887111,
+       0.9366281119838646
+      ],
+      "acc_plain": 0.8797814207650273,
+      "coverage": [
+       0.45160384728053904,
+       0.3700674566191807,
+       0.5296666956625246
+      ],
+      "flag_rate": 0.548396152719461,
+      "status": "FAIL"
+     },
+     "s2": {
+      "n": 414,
+      "answered": 214,
+      "clusters": 129,
+      "acc": [
+       0.813786565547129,
+       0.7212730512744089,
+       0.892930003419876
+      ],
+      "acc_plain": 0.8130841121495327,
+      "coverage": [
+       0.5170868347338935,
+       0.43678789794837675,
+       0.5966856841421847
+      ],
+      "flag_rate": 0.4829131652661065,
+      "status": "FAIL"
+     },
+     "s3": {
+      "n": 401,
+      "answered": 183,
+      "clusters": 113,
+      "acc": [
+       0.8757117558915679,
+       0.8012844903875751,
+       0.9361701059142751
+      ],
+      "acc_plain": 0.8743169398907104,
+      "coverage": [
+       0.4567570930811349,
+       0.3791246656317814,
+       0.5359181474609556
+      ],
+      "flag_rate": 0.5432429069188651,
+      "status": "FAIL"
+     }
+    },
+    "family": {
+     "clean": {
+      "n": 800,
+      "answered": 397,
+      "clusters": 93,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.9143576826196473,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "parallel_peer_swap": {
+      "n": 160,
+      "answered": 124,
+      "clusters": 32,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.7741935483870968,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "plant_loop_mapping": {
+      "n": 82,
+      "answered": 21,
+      "clusters": 10,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "same_medium_branch": {
+      "n": 160,
+      "answered": 16,
+      "clusters": 11,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "sensor_mapping": {
+      "n": 160,
+      "answered": 151,
+      "clusters": 32,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.7350993377483444,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "vav_zone_swap": {
+      "n": 160,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "wrong_ahu_mapping": {
+      "n": 104,
+      "answered": 75,
+      "clusters": 12,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.9333333333333333,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     }
+    },
+    "slot": {
+     "ahu_sat": {
+      "n": 56,
+      "answered": 38,
+      "clusters": 11,
+      "acc": [
+       0.9210526315789473,
+       0.7916617298578199,
+       1.0
+      ],
+      "acc_plain": 0.9210526315789473,
+      "coverage": [
+       0.6785714285714286,
+       0.42493055555555553,
+       0.8959374999999998
+      ],
+      "flag_rate": 0.3214285714285714,
+      "status": "FAIL"
+     },
+     "ahu_vav": {
+      "n": 208,
+      "answered": 153,
+      "clusters": 19,
+      "acc": [
+       0.9673202614379085,
+       0.8499678043431179,
+       1.0
+      ],
+      "acc_plain": 0.9673202614379085,
+      "coverage": [
+       0.7355769230769231,
+       0.39541207107843135,
+       0.8621852224993232
+      ],
+      "flag_rate": 0.26442307692307687,
+      "status": "INCONCLUSIVE"
+     },
+     "branch_coil": {
+      "n": 302,
+      "answered": 35,
+      "clusters": 20,
+      "acc": [
+       0.7289156626506024,
+       0.4588416806805728,
+       0.9489910558304274
+      ],
+      "acc_plain": 0.7428571428571429,
+      "coverage": [
+       0.11690140845070422,
+       0.06405066023876978,
+       0.19942818694463424
+      ],
+      "flag_rate": 0.8830985915492958,
+      "status": "FAIL"
+     },
+     "coil_ahu": {
+      "n": 104,
+      "answered": 57,
+      "clusters": 16,
+      "acc": [
+       0.9122807017543859,
+       0.8014815343273642,
+       1.0
+      ],
+      "acc_plain": 0.9122807017543859,
+      "coverage": [
+       0.5480769230769231,
+       0.4,
+       0.6756681839402428
+      ],
+      "flag_rate": 0.45192307692307687,
+      "status": "FAIL"
+     },
+     "coil_vav": {
+      "n": 192,
+      "answered": 170,
+      "clusters": 47,
+      "acc": [
+       0.7352941176470588,
+       0.6445048617754089,
+       0.8184259524705404
+      ],
+      "acc_plain": 0.7352941176470589,
+      "coverage": [
+       0.8854166666666667,
+       0.8260366344605475,
+       0.9375
+      ],
+      "flag_rate": 0.11458333333333326,
+      "status": "FAIL"
+     },
+     "loop_branch": {
+      "n": 160,
+      "answered": 51,
+      "clusters": 20,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       0.32035647279549717,
+       0.19899625083448613,
+       0.48673929164689134
+      ],
+      "flag_rate": 0.6796435272045028,
+      "status": "PASS"
+     },
+     "loop_pump": {
+      "n": 12,
+      "answered": 12,
+      "clusters": 3,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "flag_rate": 0.0,
+      "status": "insufficient"
+     },
+     "loop_source": {
+      "n": 8,
+      "answered": 4,
+      "clusters": 1,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       0.5,
+       0.5,
+       0.5
+      ],
+      "flag_rate": 0.5,
+      "status": "insufficient"
+     },
+     "vav_dat": {
+      "n": 264,
+      "answered": 264,
+      "clusters": 53,
+      "acc": [
+       0.8484848484848485,
+       0.7576576239673084,
+       0.9537097953216375
+      ],
+      "acc_plain": 0.8484848484848485,
+      "coverage": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "flag_rate": 0.0,
+      "status": "FAIL"
+     },
+     "vav_zone": {
+      "n": 320,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     }
+    },
+    "cell": {
+     "s0|clean|ahu_sat": {
+      "n": 5,
+      "answered": 3,
+      "clusters": 2,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.6666666666666666,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|ahu_vav": {
+      "n": 31,
+      "answered": 25,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|branch_coil": {
+      "n": 37,
+      "answered": 9,
+      "clusters": 6,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.7777777777777778,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|coil_ahu": {
+      "n": 15,
+      "answered": 6,
+      "clusters": 5,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.5,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|coil_vav": {
+      "n": 29,
+      "answered": 29,
+      "clusters": 19,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|loop_branch": {
+      "n": 21,
+      "answered": 5,
+      "clusters": 5,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|loop_pump": {
+      "n": 1,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|loop_source": {
+      "n": 2,
+      "answered": 2,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|vav_dat": {
+      "n": 29,
+      "answered": 29,
+      "clusters": 21,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.9655172413793104,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|clean|vav_zone": {
+      "n": 34,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|parallel_peer_swap|coil_ahu": {
+      "n": 12,
+      "answered": 11,
+      "clusters": 5,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|parallel_peer_swap|coil_vav": {
+      "n": 26,
+      "answered": 19,
+      "clusters": 12,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.6842105263157895,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|parallel_peer_swap|loop_pump": {
+      "n": 1,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|parallel_peer_swap|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|plant_loop_mapping|loop_branch": {
+      "n": 20,
+      "answered": 4,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|same_medium_branch|branch_coil": {
+      "n": 40,
+      "answered": 4,
+      "clusters": 3,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|sensor_mapping|ahu_sat": {
+      "n": 10,
+      "answered": 7,
+      "clusters": 5,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|sensor_mapping|vav_dat": {
+      "n": 31,
+      "answered": 31,
+      "clusters": 20,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.7741935483870968,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|vav_zone_swap|vav_zone": {
+      "n": 36,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s0|wrong_ahu_mapping|ahu_vav": {
+      "n": 25,
+      "answered": 18,
+      "clusters": 7,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.8888888888888888,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|ahu_sat": {
+      "n": 9,
+      "answered": 6,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|ahu_vav": {
+      "n": 20,
+      "answered": 15,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|branch_coil": {
+      "n": 34,
+      "answered": 4,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.5,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|coil_ahu": {
+      "n": 14,
+      "answered": 4,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|coil_vav": {
+      "n": 18,
+      "answered": 18,
+      "clusters": 13,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.8333333333333334,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|loop_branch": {
+      "n": 23,
+      "answered": 9,
+      "clusters": 6,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|loop_pump": {
+      "n": 1,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|vav_dat": {
+      "n": 30,
+      "answered": 30,
+      "clusters": 19,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.9666666666666667,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|clean|vav_zone": {
+      "n": 47,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|parallel_peer_swap|coil_ahu": {
+      "n": 17,
+      "answered": 11,
+      "clusters": 5,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|parallel_peer_swap|coil_vav": {
+      "n": 20,
+      "answered": 12,
+      "clusters": 9,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.5,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|parallel_peer_swap|loop_pump": {
+      "n": 3,
+      "answered": 3,
+      "clusters": 2,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|parallel_peer_swap|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|plant_loop_mapping|loop_branch": {
+      "n": 22,
+      "answered": 6,
+      "clusters": 5,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|same_medium_branch|branch_coil": {
+      "n": 38,
+      "answered": 4,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|sensor_mapping|ahu_sat": {
+      "n": 5,
+      "answered": 4,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.75,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|sensor_mapping|vav_dat": {
+      "n": 34,
+      "answered": 34,
+      "clusters": 21,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.7647058823529411,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|vav_zone_swap|vav_zone": {
+      "n": 41,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s1|wrong_ahu_mapping|ahu_vav": {
+      "n": 28,
+      "answered": 22,
+      "clusters": 7,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.9545454545454546,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|ahu_sat": {
+      "n": 8,
+      "answered": 5,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|ahu_vav": {
+      "n": 35,
+      "answered": 25,
+      "clusters": 7,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|branch_coil": {
+      "n": 33,
+      "answered": 2,
+      "clusters": 2,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|coil_ahu": {
+      "n": 10,
+      "answered": 2,
+      "clusters": 2,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|coil_vav": {
+      "n": 26,
+      "answered": 26,
+      "clusters": 19,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.5769230769230769,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|loop_branch": {
+      "n": 18,
+      "answered": 8,
+      "clusters": 7,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|loop_pump": {
+      "n": 1,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|loop_source": {
+      "n": 1,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|vav_dat": {
+      "n": 38,
+      "answered": 38,
+      "clusters": 22,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|clean|vav_zone": {
+      "n": 34,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|parallel_peer_swap|coil_ahu": {
+      "n": 13,
+      "answered": 12,
+      "clusters": 5,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|parallel_peer_swap|coil_vav": {
+      "n": 23,
+      "answered": 21,
+      "clusters": 15,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.5714285714285714,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|parallel_peer_swap|loop_pump": {
+      "n": 3,
+      "answered": 3,
+      "clusters": 2,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|parallel_peer_swap|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|plant_loop_mapping|loop_branch": {
+      "n": 18,
+      "answered": 5,
+      "clusters": 5,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|same_medium_branch|branch_coil": {
+      "n": 42,
+      "answered": 4,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|sensor_mapping|ahu_sat": {
+      "n": 9,
+      "answered": 6,
+      "clusters": 5,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.8333333333333334,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|sensor_mapping|vav_dat": {
+      "n": 32,
+      "answered": 32,
+      "clusters": 19,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.5625,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|vav_zone_swap|vav_zone": {
+      "n": 36,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s2|wrong_ahu_mapping|ahu_vav": {
+      "n": 33,
+      "answered": 23,
+      "clusters": 9,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.9565217391304348,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|ahu_sat": {
+      "n": 6,
+      "answered": 5,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|ahu_vav": {
+      "n": 18,
+      "answered": 13,
+      "clusters": 5,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|branch_coil": {
+      "n": 38,
+      "answered": 4,
+      "clusters": 2,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.25,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|coil_ahu": {
+      "n": 13,
+      "answered": 3,
+      "clusters": 2,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|coil_vav": {
+      "n": 23,
+      "answered": 23,
+      "clusters": 15,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.8695652173913043,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|loop_branch": {
+      "n": 16,
+      "answered": 8,
+      "clusters": 7,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|loop_pump": {
+      "n": 1,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|loop_source": {
+      "n": 1,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|vav_dat": {
+      "n": 35,
+      "answered": 35,
+      "clusters": 19,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|clean|vav_zone": {
+      "n": 45,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|parallel_peer_swap|coil_ahu": {
+      "n": 10,
+      "answered": 8,
+      "clusters": 5,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|parallel_peer_swap|coil_vav": {
+      "n": 27,
+      "answered": 22,
+      "clusters": 15,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.6818181818181818,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|parallel_peer_swap|loop_pump": {
+      "n": 1,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|parallel_peer_swap|loop_source": {
+      "n": 1,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|plant_loop_mapping|loop_branch": {
+      "n": 22,
+      "answered": 6,
+      "clusters": 5,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|same_medium_branch|branch_coil": {
+      "n": 40,
+      "answered": 4,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|sensor_mapping|ahu_sat": {
+      "n": 4,
+      "answered": 2,
+      "clusters": 2,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|sensor_mapping|vav_dat": {
+      "n": 35,
+      "answered": 35,
+      "clusters": 21,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.7428571428571429,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|vav_zone_swap|vav_zone": {
+      "n": 47,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     },
+     "s3|wrong_ahu_mapping|ahu_vav": {
+      "n": 18,
+      "answered": 12,
+      "clusters": 4,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": 0.9166666666666666,
+      "coverage": [
+       null,
+       null,
+       null
+      ],
+      "flag_rate": null,
+      "status": "insufficient"
+     }
+    }
+   },
+   "C3": {
+    "a_buckets": {
+     "season=s0": {
+      "episodes": 406,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=s1": {
+      "episodes": 405,
+      "resolvable": 3,
+      "resolvable_share": 0.007407407407407408,
+      "binding": false,
+      "coverage_of_resolvable": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=s2": {
+      "episodes": 414,
+      "resolvable": 1,
+      "resolvable_share": 0.0024154589371980675,
+      "binding": false,
+      "coverage_of_resolvable": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=s3": {
+      "episodes": 401,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=ahu_sat": {
+      "episodes": 56,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=ahu_vav": {
+      "episodes": 208,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=branch_coil": {
+      "episodes": 302,
+      "resolvable": 4,
+      "resolvable_share": 0.013245033112582781,
+      "binding": false,
+      "coverage_of_resolvable": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=coil_ahu": {
+      "episodes": 104,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=coil_vav": {
+      "episodes": 192,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=loop_branch": {
+      "episodes": 160,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=loop_pump": {
+      "episodes": 12,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=loop_source": {
+      "episodes": 8,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=vav_dat": {
+      "episodes": 264,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=vav_zone": {
+      "episodes": 320,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     }
+    },
+    "b_necessity": {
+     "flagged_bad_share": [
+      0.995170141416622,
+      0.9845680267336091,
+      1.0
+     ],
+     "answered_bad_share": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "margin": [
+      -0.004829858583378033,
+      -0.015431973266390921,
+      0.0
+     ],
+     "status": "FAIL",
+     "n_flagged": 842,
+     "n_answered": 784
+    },
+    "c_cost": {
+     "overall_resolvable_lost": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "resolvable_total": 4,
+     "by_bucket": {
+      "season=s0": {
+       "lost": null
+      },
+      "season=s1": {
+       "lost": 1.0
+      },
+      "season=s2": {
+       "lost": 1.0
+      },
+      "season=s3": {
+       "lost": null
+      },
+      "slot=ahu_sat": {
+       "lost": null
+      },
+      "slot=ahu_vav": {
+       "lost": null
+      },
+      "slot=branch_coil": {
+       "lost": 1.0
+      },
+      "slot=coil_ahu": {
+       "lost": null
+      },
+      "slot=coil_vav": {
+       "lost": null
+      },
+      "slot=loop_branch": {
+       "lost": null
+      },
+      "slot=loop_pump": {
+       "lost": null
+      },
+      "slot=loop_source": {
+       "lost": null
+      },
+      "slot=vav_dat": {
+       "lost": null
+      },
+      "slot=vav_zone": {
+       "lost": null
+      }
+     }
+    },
+    "status_a": "n/a",
+    "status": "FAIL"
+   },
+   "C4": {
+    "table": [
+     {
+      "cell": "s0|clean|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 3,
+      "episodes": 5,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 25,
+      "episodes": 31,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 9,
+      "episodes": 37,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 6,
+      "episodes": 15,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 29,
+      "episodes": 29,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 5,
+      "episodes": 21,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 2,
+      "episodes": 2,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 29,
+      "episodes": 29,
+      "ok": false
+     },
+     {
+      "cell": "s0|clean|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 34,
+      "ok": false
+     },
+     {
+      "cell": "s0|parallel_peer_swap|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 11,
+      "episodes": 12,
+      "ok": false
+     },
+     {
+      "cell": "s0|parallel_peer_swap|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 19,
+      "episodes": 26,
+      "ok": false
+     },
+     {
+      "cell": "s0|parallel_peer_swap|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s0|parallel_peer_swap|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s0|plant_loop_mapping|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 4,
+      "episodes": 20,
+      "ok": false
+     },
+     {
+      "cell": "s0|same_medium_branch|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 4,
+      "episodes": 40,
+      "ok": false
+     },
+     {
+      "cell": "s0|sensor_mapping|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 7,
+      "episodes": 10,
+      "ok": false
+     },
+     {
+      "cell": "s0|sensor_mapping|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 31,
+      "episodes": 31,
+      "ok": false
+     },
+     {
+      "cell": "s0|vav_zone_swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 36,
+      "ok": false
+     },
+     {
+      "cell": "s0|wrong_ahu_mapping|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 18,
+      "episodes": 25,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 6,
+      "episodes": 9,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 15,
+      "episodes": 20,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 4,
+      "episodes": 34,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 4,
+      "episodes": 14,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 18,
+      "episodes": 18,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 9,
+      "episodes": 23,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 30,
+      "episodes": 30,
+      "ok": false
+     },
+     {
+      "cell": "s1|clean|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 47,
+      "ok": false
+     },
+     {
+      "cell": "s1|parallel_peer_swap|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 11,
+      "episodes": 17,
+      "ok": false
+     },
+     {
+      "cell": "s1|parallel_peer_swap|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 12,
+      "episodes": 20,
+      "ok": false
+     },
+     {
+      "cell": "s1|parallel_peer_swap|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 3,
+      "episodes": 3,
+      "ok": false
+     },
+     {
+      "cell": "s1|parallel_peer_swap|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s1|plant_loop_mapping|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 6,
+      "episodes": 22,
+      "ok": false
+     },
+     {
+      "cell": "s1|same_medium_branch|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 4,
+      "episodes": 38,
+      "ok": false
+     },
+     {
+      "cell": "s1|sensor_mapping|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 4,
+      "episodes": 5,
+      "ok": false
+     },
+     {
+      "cell": "s1|sensor_mapping|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 34,
+      "episodes": 34,
+      "ok": false
+     },
+     {
+      "cell": "s1|vav_zone_swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 41,
+      "ok": false
+     },
+     {
+      "cell": "s1|wrong_ahu_mapping|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 22,
+      "episodes": 28,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 5,
+      "episodes": 8,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 25,
+      "episodes": 35,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 2,
+      "episodes": 33,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 2,
+      "episodes": 10,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 26,
+      "episodes": 26,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 8,
+      "episodes": 18,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 38,
+      "episodes": 38,
+      "ok": false
+     },
+     {
+      "cell": "s2|clean|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 34,
+      "ok": false
+     },
+     {
+      "cell": "s2|parallel_peer_swap|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 12,
+      "episodes": 13,
+      "ok": false
+     },
+     {
+      "cell": "s2|parallel_peer_swap|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 21,
+      "episodes": 23,
+      "ok": false
+     },
+     {
+      "cell": "s2|parallel_peer_swap|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 3,
+      "episodes": 3,
+      "ok": false
+     },
+     {
+      "cell": "s2|parallel_peer_swap|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s2|plant_loop_mapping|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 5,
+      "episodes": 18,
+      "ok": false
+     },
+     {
+      "cell": "s2|same_medium_branch|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 4,
+      "episodes": 42,
+      "ok": false
+     },
+     {
+      "cell": "s2|sensor_mapping|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 6,
+      "episodes": 9,
+      "ok": false
+     },
+     {
+      "cell": "s2|sensor_mapping|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 32,
+      "episodes": 32,
+      "ok": false
+     },
+     {
+      "cell": "s2|vav_zone_swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 36,
+      "ok": false
+     },
+     {
+      "cell": "s2|wrong_ahu_mapping|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 23,
+      "episodes": 33,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 5,
+      "episodes": 6,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 13,
+      "episodes": 18,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 4,
+      "episodes": 38,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 3,
+      "episodes": 13,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 23,
+      "episodes": 23,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 8,
+      "episodes": 16,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 35,
+      "episodes": 35,
+      "ok": false
+     },
+     {
+      "cell": "s3|clean|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 45,
+      "ok": false
+     },
+     {
+      "cell": "s3|parallel_peer_swap|coil_ahu",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 8,
+      "episodes": 10,
+      "ok": false
+     },
+     {
+      "cell": "s3|parallel_peer_swap|coil_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 22,
+      "episodes": 27,
+      "ok": false
+     },
+     {
+      "cell": "s3|parallel_peer_swap|loop_pump",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 1,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s3|parallel_peer_swap|loop_source",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 1,
+      "ok": false
+     },
+     {
+      "cell": "s3|plant_loop_mapping|loop_branch",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 6,
+      "episodes": 22,
+      "ok": false
+     },
+     {
+      "cell": "s3|same_medium_branch|branch_coil",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 4,
+      "episodes": 40,
+      "ok": false
+     },
+     {
+      "cell": "s3|sensor_mapping|ahu_sat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 2,
+      "episodes": 4,
+      "ok": false
+     },
+     {
+      "cell": "s3|sensor_mapping|vav_dat",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 35,
+      "episodes": 35,
+      "ok": false
+     },
+     {
+      "cell": "s3|vav_zone_swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 0,
+      "episodes": 47,
+      "ok": false
+     },
+     {
+      "cell": "s3|wrong_ahu_mapping|ahu_vav",
+      "c2": "insufficient",
+      "flag_rate": null,
+      "answered": 12,
+      "episodes": 18,
+      "ok": false
+     }
+    ],
+    "violations": [
+     "s0|clean|ahu_sat",
+     "s0|clean|ahu_vav",
+     "s0|clean|branch_coil",
+     "s0|clean|coil_ahu",
+     "s0|clean|coil_vav",
+     "s0|clean|loop_branch",
+     "s0|clean|loop_pump",
+     "s0|clean|loop_source",
+     "s0|clean|vav_dat",
+     "s0|clean|vav_zone",
+     "s0|parallel_peer_swap|coil_ahu",
+     "s0|parallel_peer_swap|coil_vav",
+     "s0|parallel_peer_swap|loop_pump",
+     "s0|parallel_peer_swap|loop_source",
+     "s0|plant_loop_mapping|loop_branch",
+     "s0|same_medium_branch|branch_coil",
+     "s0|sensor_mapping|ahu_sat",
+     "s0|sensor_mapping|vav_dat",
+     "s0|vav_zone_swap|vav_zone",
+     "s0|wrong_ahu_mapping|ahu_vav",
+     "s1|clean|ahu_sat",
+     "s1|clean|ahu_vav",
+     "s1|clean|branch_coil",
+     "s1|clean|coil_ahu",
+     "s1|clean|coil_vav",
+     "s1|clean|loop_branch",
+     "s1|clean|loop_pump",
+     "s1|clean|vav_dat",
+     "s1|clean|vav_zone",
+     "s1|parallel_peer_swap|coil_ahu",
+     "s1|parallel_peer_swap|coil_vav",
+     "s1|parallel_peer_swap|loop_pump",
+     "s1|parallel_peer_swap|loop_source",
+     "s1|plant_loop_mapping|loop_branch",
+     "s1|same_medium_branch|branch_coil",
+     "s1|sensor_mapping|ahu_sat",
+     "s1|sensor_mapping|vav_dat",
+     "s1|vav_zone_swap|vav_zone",
+     "s1|wrong_ahu_mapping|ahu_vav",
+     "s2|clean|ahu_sat",
+     "s2|clean|ahu_vav",
+     "s2|clean|branch_coil",
+     "s2|clean|coil_ahu",
+     "s2|clean|coil_vav",
+     "s2|clean|loop_branch",
+     "s2|clean|loop_pump",
+     "s2|clean|loop_source",
+     "s2|clean|vav_dat",
+     "s2|clean|vav_zone",
+     "s2|parallel_peer_swap|coil_ahu",
+     "s2|parallel_peer_swap|coil_vav",
+     "s2|parallel_peer_swap|loop_pump",
+     "s2|parallel_peer_swap|loop_source",
+     "s2|plant_loop_mapping|loop_branch",
+     "s2|same_medium_branch|branch_coil",
+     "s2|sensor_mapping|ahu_sat",
+     "s2|sensor_mapping|vav_dat",
+     "s2|vav_zone_swap|vav_zone",
+     "s2|wrong_ahu_mapping|ahu_vav",
+     "s3|clean|ahu_sat",
+     "s3|clean|ahu_vav",
+     "s3|clean|branch_coil",
+     "s3|clean|coil_ahu",
+     "s3|clean|coil_vav",
+     "s3|clean|loop_branch",
+     "s3|clean|loop_pump",
+     "s3|clean|loop_source",
+     "s3|clean|vav_dat",
+     "s3|clean|vav_zone",
+     "s3|parallel_peer_swap|coil_ahu",
+     "s3|parallel_peer_swap|coil_vav",
+     "s3|parallel_peer_swap|loop_pump",
+     "s3|parallel_peer_swap|loop_source",
+     "s3|plant_loop_mapping|loop_branch",
+     "s3|same_medium_branch|branch_coil",
+     "s3|sensor_mapping|ahu_sat",
+     "s3|sensor_mapping|vav_dat",
+     "s3|vav_zone_swap|vav_zone",
+     "s3|wrong_ahu_mapping|ahu_vav"
+    ],
+    "status": "FAIL",
+    "n_not_supported": 79,
+    "n_cells": 79
+   },
+   "calibration_answered": {
+    "bins": [
+     {
+      "lo": 0.95,
+      "hi": 1.0,
+      "n": 784,
+      "mean_conf": 0.9752962957407629,
+      "acc": 0.8628635958317876
+     }
+    ],
+    "ece": 0.11243269990897531,
+    "n": 784
+   },
+   "calibration_crossed": {
+    "bins": [
+     {
+      "lo": 0.95,
+      "hi": 1.0,
+      "n": 784,
+      "mean_conf": 0.9752962957407629,
+      "acc": 0.8628635958317876
+     }
+    ],
+    "ece": 0.11243269990897531,
+    "n": 784
+   },
+   "by_policy": {
+    "active": {
+     "coverage": [
+      0.48238650121065374,
+      0.4078315208070937,
+      0.5539606069435933
+     ],
+     "acc": [
+      0.8643435050084547,
+      0.8093342202112485,
+      0.9135961667491856
+     ],
+     "readings_answered": [
+      4.07476291826945,
+      3.5894272466593216,
+      4.601820460572628
+     ]
+    },
+    "frozen": {
+     "coverage": [
+      0.4738529055690073,
+      0.3978742203768071,
+      0.5458483870553561
+     ],
+     "acc": [
+      0.8400176289114146,
+      0.7740336592416368,
+      0.8936582320659954
+     ],
+     "readings_answered": [
+      4.477562371746409,
+      3.928044453767688,
+      5.081647499259512
+     ]
+    },
+    "random": {
+     "coverage": [
+      0.2700469128329298,
+      0.22354847410273834,
+      0.3188925379661932
+     ],
+     "acc": [
+      0.9198697652524278,
+      0.8869975089315414,
+      0.9480399151259276
+     ],
+     "readings_answered": [
+      12.263003320880033,
+      11.35962909887559,
+      13.139925512307293
+     ]
+    },
+    "traversal": {
+     "coverage": [
+      0.31646943099273606,
+      0.24633607981224245,
+      0.3905542785583943
+     ],
+     "acc": [
+      0.9538453446058063,
+      0.906135466908377,
+      0.987862483256297
+     ],
+     "readings_answered": [
+      6.584802514691814,
+      4.840901371163567,
+      8.285880003269895
+     ]
+    },
+    "traversal_block": {
+     "coverage": [
+      0.3208050847457627,
+      0.25006619597041685,
+      0.3968329620291057
+     ],
+     "acc": [
+      0.9564173443779838,
+      0.908513333828389,
+      0.9896233785892159
+     ],
+     "readings_answered": [
+      6.597870452528838,
+      4.871401223602047,
+      8.374019542804875
+     ]
+    }
+   },
+   "C2_overall_status": "FAIL"
+  },
+  "secondary_hist": {
+   "legacy": {
+    "coverage": [
+     0.0388044794188862,
+     0.02080647042894714,
+     0.061059492130212736
+    ],
+    "acc": [
+     0.8107791903907651,
+     0.596887909985626,
+     0.9632761743765361
+    ]
+   },
+   "new": {
+    "coverage": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "acc": [
+     null,
+     null,
+     null
+    ]
+   },
+   "none": {
+    "coverage": [
+     0.5709503631961259,
+     0.5012414305528037,
+     0.6403168697399114
+    ],
+    "acc": [
+     0.8011047380752961,
+     0.7405569026178975,
+     0.8614375293147396
+    ]
+   }
+  }
+ }
+}

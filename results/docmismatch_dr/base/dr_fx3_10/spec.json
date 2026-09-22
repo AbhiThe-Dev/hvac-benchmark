@@ -1,0 +1,132 @@
+{
+ "id": "dr_fx3_10",
+ "role": "train",
+ "suite": "full_x3",
+ "climate": "chicago_amy2012",
+ "n_ahu": 1,
+ "n_vav": 6,
+ "floors": 1,
+ "nx": 2,
+ "ny": 3,
+ "tile_w": 8.2,
+ "tile_d": 7.2,
+ "floor_h": 3.07,
+ "north_axis": 47.0,
+ "wwr": 0.32,
+ "infiltration": 0.00064,
+ "lights_wm2": 6.9,
+ "equip_wm2": 13.6,
+ "people_m2": 0.047,
+ "oa_per_area": 0.00042,
+ "zone_load_sigma": 0.49,
+ "zone_shifts": [
+  -1,
+  0,
+  1
+ ],
+ "occ": {
+  "start": 8.4,
+  "end": 20.5,
+  "night_frac": 0.23,
+  "weekend_frac": 0.01
+ },
+ "setpoints": {
+  "heat": 22.9,
+  "cool": 26.7,
+  "heat_setback": 18.9,
+  "cool_setback": 29.7
+ },
+ "min_flow_frac": 0.32,
+ "heat_sizing_factor": 1.38,
+ "cool_sizing_factor": 1.01,
+ "group_mode": "block",
+ "group_sizes": [
+  6
+ ],
+ "sat_pattern": "single",
+ "ahu_sat": [
+  13.42
+ ],
+ "fan_dp": [
+  763.0
+ ],
+ "economizer": [
+  true
+ ],
+ "n_hw": 1,
+ "n_chw": 1,
+ "ahu_hw": [
+  0
+ ],
+ "ahu_chw": [
+  0
+ ],
+ "hw_t": [
+  75.3
+ ],
+ "hw_dt": [
+  13.3
+ ],
+ "chw_t": [
+  8.0
+ ],
+ "chw_dt": [
+  4.5
+ ],
+ "geometry_seed": 860014,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "chicago_amy2012",
+  "temp_offset": 2.04,
+  "solar_scale": 0.869
+ },
+ "reheat": "hydronic",
+ "electric_zones": null,
+ "sat_strategy": [
+  "constant"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 7.9,
+   "oa_high": 22.2,
+   "span": 3.31
+  }
+ ],
+ "sp_reset": [
+  true
+ ],
+ "econ_type": [
+  "fixed_enth"
+ ],
+ "econ_limit_db": [
+  21.1
+ ],
+ "econ_limit_enth": [
+  47739.0
+ ],
+ "min_oa_scale": 1.78,
+ "night_oa": 0.03,
+ "boiler_eff": 0.82,
+ "chiller_cop": 5.9,
+ "fan_eff": 0.579,
+ "sensor_level": "wide",
+ "profile_seed": 249564,
+ "distractors": [
+  {
+   "type": "stuck_sensor",
+   "seed": 850476,
+   "window": 5
+  },
+  {
+   "type": "flow_gain_error",
+   "seed": 589466,
+   "window": null
+  },
+  {
+   "type": "dropout_burst",
+   "seed": 954776,
+   "window": null
+  }
+ ],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

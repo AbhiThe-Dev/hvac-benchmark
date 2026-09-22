@@ -1,0 +1,120 @@
+{
+ "id": "dr_ful_01",
+ "role": "train",
+ "suite": "full",
+ "climate": "oakland",
+ "n_ahu": 1,
+ "n_vav": 6,
+ "floors": 1,
+ "nx": 2,
+ "ny": 3,
+ "tile_w": 6.5,
+ "tile_d": 9.5,
+ "floor_h": 3.77,
+ "north_axis": 30.0,
+ "wwr": 0.16,
+ "infiltration": 0.00117,
+ "lights_wm2": 5.8,
+ "equip_wm2": 10.4,
+ "people_m2": 0.034,
+ "oa_per_area": 0.00023,
+ "zone_load_sigma": 0.34,
+ "zone_shifts": [
+  0
+ ],
+ "occ": {
+  "start": 8.4,
+  "end": 21.1,
+  "night_frac": 0.09,
+  "weekend_frac": 0.49
+ },
+ "setpoints": {
+  "heat": 21.0,
+  "cool": 24.4,
+  "heat_setback": 16.8,
+  "cool_setback": 28.8
+ },
+ "min_flow_frac": 0.23,
+ "heat_sizing_factor": 1.2,
+ "cool_sizing_factor": 1.15,
+ "group_mode": "stripe",
+ "group_sizes": [
+  6
+ ],
+ "sat_pattern": "single",
+ "ahu_sat": [
+  13.97
+ ],
+ "fan_dp": [
+  602.0
+ ],
+ "economizer": [
+  false
+ ],
+ "n_hw": 1,
+ "n_chw": 1,
+ "ahu_hw": [
+  0
+ ],
+ "ahu_chw": [
+  0
+ ],
+ "hw_t": [
+  78.2
+ ],
+ "hw_dt": [
+  12.9
+ ],
+ "chw_t": [
+  8.5
+ ],
+ "chw_dt": [
+  5.2
+ ],
+ "geometry_seed": 565581,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "oakland",
+  "temp_offset": 0.57,
+  "solar_scale": 0.887
+ },
+ "reheat": "hydronic",
+ "electric_zones": null,
+ "sat_strategy": [
+  "constant"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 5.2,
+   "oa_high": 18.4,
+   "span": 1.61
+  }
+ ],
+ "sp_reset": [
+  false
+ ],
+ "econ_type": [
+  "none"
+ ],
+ "econ_limit_db": [
+  24.2
+ ],
+ "econ_limit_enth": [
+  53548.0
+ ],
+ "min_oa_scale": 1.23,
+ "night_oa": 0.0,
+ "boiler_eff": 0.804,
+ "chiller_cop": 5.75,
+ "fan_eff": 0.672,
+ "sensor_level": "wide",
+ "profile_seed": 384540,
+ "distractors": [
+  {
+   "type": "dropout_burst",
+   "seed": 630324,
+   "window": 1
+  }
+ ],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

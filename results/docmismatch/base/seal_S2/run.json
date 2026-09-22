@@ -1,0 +1,10 @@
+{
+ "returncode": 0,
+ "severe": 0,
+ "fatal": 0,
+ "seconds": 9.4,
+ "climate": "blue_canyon",
+ "ok": true,
+ "n_hours": 8760,
+ "n_series": 197
+}

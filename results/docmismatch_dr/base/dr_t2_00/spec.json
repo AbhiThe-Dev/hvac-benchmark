@@ -1,0 +1,114 @@
+{
+ "id": "dr_t2_00",
+ "role": "test",
+ "suite": "T2_regime",
+ "climate": "chicago_tmy3",
+ "n_ahu": 1,
+ "n_vav": 12,
+ "floors": 1,
+ "nx": 3,
+ "ny": 4,
+ "tile_w": 9.7,
+ "tile_d": 9.1,
+ "floor_h": 3.26,
+ "north_axis": 10.0,
+ "wwr": 0.27,
+ "infiltration": 0.00091,
+ "lights_wm2": 7.0,
+ "equip_wm2": 16.5,
+ "people_m2": 0.024,
+ "oa_per_area": 0.00038,
+ "zone_load_sigma": 0.33,
+ "zone_shifts": [
+  0
+ ],
+ "occ": {
+  "start": 6.0,
+  "end": 17.9,
+  "night_frac": 0.28,
+  "weekend_frac": 0.31
+ },
+ "setpoints": {
+  "heat": 21.3,
+  "cool": 22.8,
+  "heat_setback": 16.1,
+  "cool_setback": 27.0
+ },
+ "min_flow_frac": 0.17,
+ "heat_sizing_factor": 1.16,
+ "cool_sizing_factor": 1.37,
+ "group_mode": "stripe",
+ "group_sizes": [
+  12
+ ],
+ "sat_pattern": "single",
+ "ahu_sat": [
+  14.09
+ ],
+ "fan_dp": [
+  352.0
+ ],
+ "economizer": [
+  true
+ ],
+ "n_hw": 1,
+ "n_chw": 1,
+ "ahu_hw": [
+  0
+ ],
+ "ahu_chw": [
+  0
+ ],
+ "hw_t": [
+  61.5
+ ],
+ "hw_dt": [
+  16.4
+ ],
+ "chw_t": [
+  8.7
+ ],
+ "chw_dt": [
+  5.6
+ ],
+ "geometry_seed": 280548,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "chicago_tmy3",
+  "temp_offset": -2.82,
+  "solar_scale": 0.957
+ },
+ "reheat": "hydronic",
+ "electric_zones": null,
+ "sat_strategy": [
+  "constant"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 8.3,
+   "oa_high": 21.0,
+   "span": 2.29
+  }
+ ],
+ "sp_reset": [
+  true
+ ],
+ "econ_type": [
+  "fixed_enth"
+ ],
+ "econ_limit_db": [
+  24.5
+ ],
+ "econ_limit_enth": [
+  53795.0
+ ],
+ "min_oa_scale": 1.07,
+ "night_oa": 0.0,
+ "boiler_eff": 0.883,
+ "chiller_cop": 4.9,
+ "fan_eff": 0.684,
+ "sensor_level": "estimated",
+ "profile_seed": 444239,
+ "distractors": [],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

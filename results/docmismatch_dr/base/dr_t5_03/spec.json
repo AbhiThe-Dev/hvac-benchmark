@@ -1,0 +1,116 @@
+{
+ "id": "dr_t5_03",
+ "role": "test",
+ "suite": "T5_climate",
+ "climate": "arcata",
+ "n_ahu": 1,
+ "n_vav": 6,
+ "floors": 1,
+ "nx": 2,
+ "ny": 3,
+ "tile_w": 9.7,
+ "tile_d": 7.8,
+ "floor_h": 3.18,
+ "north_axis": 26.0,
+ "wwr": 0.31,
+ "infiltration": 0.0009,
+ "lights_wm2": 9.2,
+ "equip_wm2": 10.1,
+ "people_m2": 0.076,
+ "oa_per_area": 0.0007,
+ "zone_load_sigma": 0.47,
+ "zone_shifts": [
+  -1,
+  0,
+  1
+ ],
+ "occ": {
+  "start": 9.8,
+  "end": 20.1,
+  "night_frac": 0.04,
+  "weekend_frac": 0.48
+ },
+ "setpoints": {
+  "heat": 22.4,
+  "cool": 24.0,
+  "heat_setback": 17.2,
+  "cool_setback": 27.5
+ },
+ "min_flow_frac": 0.41,
+ "heat_sizing_factor": 1.14,
+ "cool_sizing_factor": 1.04,
+ "group_mode": "block",
+ "group_sizes": [
+  6
+ ],
+ "sat_pattern": "single",
+ "ahu_sat": [
+  14.84
+ ],
+ "fan_dp": [
+  649.0
+ ],
+ "economizer": [
+  false
+ ],
+ "n_hw": 1,
+ "n_chw": 1,
+ "ahu_hw": [
+  0
+ ],
+ "ahu_chw": [
+  0
+ ],
+ "hw_t": [
+  60.2
+ ],
+ "hw_dt": [
+  17.2
+ ],
+ "chw_t": [
+  7.6
+ ],
+ "chw_dt": [
+  5.2
+ ],
+ "geometry_seed": 69436,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "arcata",
+  "temp_offset": 1.02,
+  "solar_scale": 1.156
+ },
+ "reheat": "hydronic",
+ "electric_zones": null,
+ "sat_strategy": [
+  "constant"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 5.9,
+   "oa_high": 19.7,
+   "span": 2.09
+  }
+ ],
+ "sp_reset": [
+  false
+ ],
+ "econ_type": [
+  "none"
+ ],
+ "econ_limit_db": [
+  21.2
+ ],
+ "econ_limit_enth": [
+  50031.0
+ ],
+ "min_oa_scale": 0.96,
+ "night_oa": 0.0,
+ "boiler_eff": 0.805,
+ "chiller_cop": 5.13,
+ "fan_eff": 0.638,
+ "sensor_level": "estimated",
+ "profile_seed": 416795,
+ "distractors": [],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

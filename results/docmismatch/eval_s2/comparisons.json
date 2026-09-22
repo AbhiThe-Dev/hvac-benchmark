@@ -1,0 +1,702 @@
+{
+ "loto/finetuned_ev/hard_observable": {
+  "auroc_a": 0.8942307692307693,
+  "auroc_b": 0.9052197802197802,
+  "delta": -0.01098901098901095,
+  "ci95": [
+   -0.04070727310455728,
+   0.011203786390426887
+  ],
+  "n_groups": 102
+ },
+ "spec_C/finetuned_ev/hard_observable": {
+  "auroc_a": 0.9375,
+  "auroc_b": 0.9519230769230769,
+  "delta": -0.014423076923076872,
+  "ci95": [
+   -0.06013690476190481,
+   0.016377980364656423
+  ],
+  "n_groups": 33
+ },
+ "loto/finetuned_ev/hard": {
+  "auroc_a": 0.809375,
+  "auroc_b": 0.8010416666666667,
+  "delta": 0.008333333333333304,
+  "ci95": [
+   -0.02271787075854304,
+   0.048975658844080006
+  ],
+  "n_groups": 120
+ },
+ "spec_C/finetuned_ev/hard": {
+  "auroc_a": 0.8607142857142858,
+  "auroc_b": 0.8642857142857143,
+  "delta": -0.0035714285714285587,
+  "ci95": [
+   -0.051215277777777776,
+   0.029602396514161272
+  ],
+  "n_groups": 40
+ },
+ "loto/finetuned_ev/hard_not_observable": {
+  "auroc_a": 0.5431034482758621,
+  "auroc_b": 0.47413793103448276,
+  "delta": 0.06896551724137934,
+  "ci95": [
+   -0.04308344305464117,
+   0.19273800754648912
+  ],
+  "n_groups": 55
+ },
+ "spec_C/finetuned_ev/hard_not_observable": {
+  "auroc_a": 0.6388888888888888,
+  "auroc_b": 0.6111111111111112,
+  "delta": 0.02777777777777768,
+  "ci95": [
+   -0.09390625,
+   0.2
+  ],
+  "n_groups": 16
+ },
+ "loto/finetuned_ev/hard_degree_preserving": {
+  "auroc_a": 0.8051075268817204,
+  "auroc_b": 0.7956989247311828,
+  "delta": 0.009408602150537626,
+  "ci95": [
+   -0.0356313445120475,
+   0.07163923678981961
+  ],
+  "n_groups": 93
+ },
+ "spec_C/finetuned_ev/hard_degree_preserving": {
+  "auroc_a": 0.9347826086956522,
+  "auroc_b": 0.9293478260869565,
+  "delta": 0.005434782608695676,
+  "ci95": [
+   -0.027804487179487188,
+   0.04204545454545459
+  ],
+  "n_groups": 28
+ },
+ "loto/finetuned_ev/hard_observable_dp": {
+  "auroc_a": 0.8784722222222222,
+  "auroc_b": 0.8958333333333334,
+  "delta": -0.01736111111111116,
+  "ci95": [
+   -0.06448340321453533,
+   0.01042563436356829
+  ],
+  "n_groups": 83
+ },
+ "spec_C/finetuned_ev/hard_observable_dp": {
+  "auroc_a": 1.0,
+  "auroc_b": 1.0,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 25
+ },
+ "loto/frozen_ev/hard_observable": {
+  "auroc_a": 0.8804945054945055,
+  "auroc_b": 0.8983516483516484,
+  "delta": -0.017857142857142905,
+  "ci95": [
+   -0.04388388951381079,
+   0.0055110190356092185
+  ],
+  "n_groups": 102
+ },
+ "spec_C/frozen_ev/hard_observable": {
+  "auroc_a": 0.9278846153846154,
+  "auroc_b": 0.9278846153846154,
+  "delta": 0.0,
+  "ci95": [
+   -0.02400793650793653,
+   0.020441437444543065
+  ],
+  "n_groups": 33
+ },
+ "loto/frozen_ev/hard": {
+  "auroc_a": 0.8104166666666667,
+  "auroc_b": 0.8208333333333333,
+  "delta": -0.01041666666666663,
+  "ci95": [
+   -0.040556493105093544,
+   0.013817208114626113
+  ],
+  "n_groups": 120
+ },
+ "spec_C/frozen_ev/hard": {
+  "auroc_a": 0.8464285714285714,
+  "auroc_b": 0.8607142857142858,
+  "delta": -0.014285714285714346,
+  "ci95": [
+   -0.057161654135338365,
+   0.014717023172905585
+  ],
+  "n_groups": 40
+ },
+ "loto/frozen_ev/hard_not_observable": {
+  "auroc_a": 0.5905172413793104,
+  "auroc_b": 0.5775862068965517,
+  "delta": 0.012931034482758674,
+  "ci95": [
+   -0.046839171234785905,
+   0.06759350393700791
+  ],
+  "n_groups": 55
+ },
+ "spec_C/frozen_ev/hard_not_observable": {
+  "auroc_a": 0.6111111111111112,
+  "auroc_b": 0.6666666666666666,
+  "delta": -0.05555555555555547,
+  "ci95": [
+   -0.19704545454545447,
+   0.0
+  ],
+  "n_groups": 16
+ },
+ "loto/frozen_ev/hard_degree_preserving": {
+  "auroc_a": 0.7983870967741935,
+  "auroc_b": 0.8145161290322581,
+  "delta": -0.016129032258064613,
+  "ci95": [
+   -0.04998681043057097,
+   0.008285728523021786
+  ],
+  "n_groups": 93
+ },
+ "spec_C/frozen_ev/hard_degree_preserving": {
+  "auroc_a": 0.9456521739130435,
+  "auroc_b": 0.9510869565217391,
+  "delta": -0.005434782608695676,
+  "ci95": [
+   -0.029746031746031677,
+   0.0
+  ],
+  "n_groups": 28
+ },
+ "loto/frozen_ev/hard_observable_dp": {
+  "auroc_a": 0.8576388888888888,
+  "auroc_b": 0.8819444444444444,
+  "delta": -0.02430555555555558,
+  "ci95": [
+   -0.05510792375852622,
+   0.0022363514942400973
+  ],
+  "n_groups": 83
+ },
+ "spec_C/frozen_ev/hard_observable_dp": {
+  "auroc_a": 1.0,
+  "auroc_b": 1.0,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 25
+ },
+ "loto/finetuned_struct/hard_observable": {
+  "auroc_a": 0.5274725274725275,
+  "auroc_b": 0.5274725274725275,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 102
+ },
+ "spec_C/finetuned_struct/hard_observable": {
+  "auroc_a": 0.6538461538461539,
+  "auroc_b": 0.6538461538461539,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 33
+ },
+ "loto/finetuned_struct/hard": {
+  "auroc_a": 0.5458333333333333,
+  "auroc_b": 0.5458333333333333,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 120
+ },
+ "spec_C/finetuned_struct/hard": {
+  "auroc_a": 0.6714285714285714,
+  "auroc_b": 0.6714285714285714,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 40
+ },
+ "loto/finetuned_struct/hard_not_observable": {
+  "auroc_a": 0.603448275862069,
+  "auroc_b": 0.603448275862069,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 55
+ },
+ "spec_C/finetuned_struct/hard_not_observable": {
+  "auroc_a": 0.7222222222222222,
+  "auroc_b": 0.7222222222222222,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 16
+ },
+ "loto/finetuned_struct/hard_degree_preserving": {
+  "auroc_a": 0.5,
+  "auroc_b": 0.5,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 93
+ },
+ "spec_C/finetuned_struct/hard_degree_preserving": {
+  "auroc_a": 0.5,
+  "auroc_b": 0.5,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 28
+ },
+ "loto/finetuned_struct/hard_observable_dp": {
+  "auroc_a": 0.5,
+  "auroc_b": 0.5,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 83
+ },
+ "spec_C/finetuned_struct/hard_observable_dp": {
+  "auroc_a": 0.5,
+  "auroc_b": 0.5,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 25
+ },
+ "loto/frozen_struct/hard_observable": {
+  "auroc_a": 0.5274725274725275,
+  "auroc_b": 0.5274725274725275,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 102
+ },
+ "spec_C/frozen_struct/hard_observable": {
+  "auroc_a": 0.6538461538461539,
+  "auroc_b": 0.6538461538461539,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 33
+ },
+ "loto/frozen_struct/hard": {
+  "auroc_a": 0.5458333333333333,
+  "auroc_b": 0.5458333333333333,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 120
+ },
+ "spec_C/frozen_struct/hard": {
+  "auroc_a": 0.6714285714285714,
+  "auroc_b": 0.6714285714285714,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 40
+ },
+ "loto/frozen_struct/hard_not_observable": {
+  "auroc_a": 0.603448275862069,
+  "auroc_b": 0.603448275862069,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 55
+ },
+ "spec_C/frozen_struct/hard_not_observable": {
+  "auroc_a": 0.7222222222222222,
+  "auroc_b": 0.7222222222222222,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 16
+ },
+ "loto/frozen_struct/hard_degree_preserving": {
+  "auroc_a": 0.5,
+  "auroc_b": 0.5,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 93
+ },
+ "spec_C/frozen_struct/hard_degree_preserving": {
+  "auroc_a": 0.5,
+  "auroc_b": 0.5,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 28
+ },
+ "loto/frozen_struct/hard_observable_dp": {
+  "auroc_a": 0.5,
+  "auroc_b": 0.5,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 83
+ },
+ "spec_C/frozen_struct/hard_observable_dp": {
+  "auroc_a": 0.5,
+  "auroc_b": 0.5,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "n_groups": 25
+ },
+ "loto/pretrained_ft_vs_evidence_only/hard_observable": {
+  "auroc_a": 0.8942307692307693,
+  "auroc_b": 0.9175824175824175,
+  "delta": -0.02335164835164827,
+  "ci95": [
+   -0.07627256037411856,
+   0.01017416668996199
+  ],
+  "n_groups": 102
+ },
+ "spec_C/pretrained_ft_vs_evidence_only/hard_observable": {
+  "auroc_a": 0.9375,
+  "auroc_b": 0.7019230769230769,
+  "delta": 0.23557692307692313,
+  "ci95": [
+   0.051930675287356357,
+   0.4285714285714285
+  ],
+  "n_groups": 33
+ },
+ "loto/pretrained_ft_vs_evidence_only/hard": {
+  "auroc_a": 0.809375,
+  "auroc_b": 0.8291666666666667,
+  "delta": -0.019791666666666763,
+  "ci95": [
+   -0.07975147467036772,
+   0.01140372616250436
+  ],
+  "n_groups": 120
+ },
+ "spec_C/pretrained_ft_vs_evidence_only/hard": {
+  "auroc_a": 0.8607142857142858,
+  "auroc_b": 0.6642857142857143,
+  "delta": 0.1964285714285715,
+  "ci95": [
+   0.019537815126050354,
+   0.42109375000000004
+  ],
+  "n_groups": 40
+ },
+ "loto/pretrained_ft_vs_evidence_only/hard_not_observable": {
+  "auroc_a": 0.5431034482758621,
+  "auroc_b": 0.5517241379310345,
+  "delta": -0.008620689655172376,
+  "ci95": [
+   -0.09699278359992645,
+   0.09657409032409031
+  ],
+  "n_groups": 55
+ },
+ "spec_C/pretrained_ft_vs_evidence_only/hard_not_observable": {
+  "auroc_a": 0.6388888888888888,
+  "auroc_b": 0.5555555555555556,
+  "delta": 0.08333333333333326,
+  "ci95": [
+   -0.3180059523809524,
+   0.4752129120879121
+  ],
+  "n_groups": 16
+ },
+ "loto/pretrained_ft_vs_evidence_only/hard_degree_preserving": {
+  "auroc_a": 0.8051075268817204,
+  "auroc_b": 0.8252688172043011,
+  "delta": -0.02016129032258074,
+  "ci95": [
+   -0.06460621332932145,
+   0.024523316589736686
+  ],
+  "n_groups": 93
+ },
+ "spec_C/pretrained_ft_vs_evidence_only/hard_degree_preserving": {
+  "auroc_a": 0.9347826086956522,
+  "auroc_b": 0.8695652173913043,
+  "delta": 0.0652173913043479,
+  "ci95": [
+   -0.07486890589569169,
+   0.19273504273504294
+  ],
+  "n_groups": 28
+ },
+ "loto/pretrained_ft_vs_evidence_only/hard_observable_dp": {
+  "auroc_a": 0.8784722222222222,
+  "auroc_b": 0.90625,
+  "delta": -0.02777777777777779,
+  "ci95": [
+   -0.0761803853827716,
+   0.01188159879336346
+  ],
+  "n_groups": 83
+ },
+ "spec_C/pretrained_ft_vs_evidence_only/hard_observable_dp": {
+  "auroc_a": 1.0,
+  "auroc_b": 0.9097222222222222,
+  "delta": 0.09027777777777779,
+  "ci95": [
+   0.0,
+   0.2561108653987912
+  ],
+  "n_groups": 25
+ },
+ "loto/pretrained_frozen_vs_evidence_only/hard_observable": {
+  "auroc_a": 0.8804945054945055,
+  "auroc_b": 0.9175824175824175,
+  "delta": -0.03708791208791207,
+  "ci95": [
+   -0.09394291279592451,
+   0.007933171511260672
+  ],
+  "n_groups": 102
+ },
+ "spec_C/pretrained_frozen_vs_evidence_only/hard_observable": {
+  "auroc_a": 0.9278846153846154,
+  "auroc_b": 0.7019230769230769,
+  "delta": 0.22596153846153855,
+  "ci95": [
+   0.033121141975308646,
+   0.42889880952380965
+  ],
+  "n_groups": 33
+ },
+ "loto/pretrained_frozen_vs_evidence_only/hard": {
+  "auroc_a": 0.8104166666666667,
+  "auroc_b": 0.8291666666666667,
+  "delta": -0.018750000000000044,
+  "ci95": [
+   -0.08720706770120273,
+   0.03218615076413239
+  ],
+  "n_groups": 120
+ },
+ "spec_C/pretrained_frozen_vs_evidence_only/hard": {
+  "auroc_a": 0.8464285714285714,
+  "auroc_b": 0.6642857142857143,
+  "delta": 0.18214285714285716,
+  "ci95": [
+   -0.007234555984555958,
+   0.37890151515151516
+  ],
+  "n_groups": 40
+ },
+ "loto/pretrained_frozen_vs_evidence_only/hard_not_observable": {
+  "auroc_a": 0.5905172413793104,
+  "auroc_b": 0.5517241379310345,
+  "delta": 0.03879310344827591,
+  "ci95": [
+   -0.0737171052631579,
+   0.14227856045359133
+  ],
+  "n_groups": 55
+ },
+ "spec_C/pretrained_frozen_vs_evidence_only/hard_not_observable": {
+  "auroc_a": 0.6111111111111112,
+  "auroc_b": 0.5555555555555556,
+  "delta": 0.05555555555555558,
+  "ci95": [
+   -0.3136160714285714,
+   0.4404464285714288
+  ],
+  "n_groups": 16
+ },
+ "loto/pretrained_frozen_vs_evidence_only/hard_degree_preserving": {
+  "auroc_a": 0.7983870967741935,
+  "auroc_b": 0.8252688172043011,
+  "delta": -0.026881720430107614,
+  "ci95": [
+   -0.09514127219636133,
+   0.03407065573990004
+  ],
+  "n_groups": 93
+ },
+ "spec_C/pretrained_frozen_vs_evidence_only/hard_degree_preserving": {
+  "auroc_a": 0.9456521739130435,
+  "auroc_b": 0.8695652173913043,
+  "delta": 0.07608695652173914,
+  "ci95": [
+   -0.06264204545454545,
+   0.21396520146520154
+  ],
+  "n_groups": 28
+ },
+ "loto/pretrained_frozen_vs_evidence_only/hard_observable_dp": {
+  "auroc_a": 0.8576388888888888,
+  "auroc_b": 0.90625,
+  "delta": -0.04861111111111116,
+  "ci95": [
+   -0.113236719718258,
+   0.008131824316034795
+  ],
+  "n_groups": 83
+ },
+ "spec_C/pretrained_frozen_vs_evidence_only/hard_observable_dp": {
+  "auroc_a": 1.0,
+  "auroc_b": 0.9097222222222222,
+  "delta": 0.09027777777777779,
+  "ci95": [
+   0.0,
+   0.2561108653987912
+  ],
+  "n_groups": 25
+ },
+ "loto/evidence_vs_struct/hard_observable": {
+  "auroc_a": 0.9175824175824175,
+  "auroc_b": 0.5,
+  "delta": 0.41758241758241754,
+  "ci95": [
+   0.3205129288490789,
+   0.48844742482301745
+  ],
+  "n_groups": 102
+ },
+ "spec_C/evidence_vs_struct/hard_observable": {
+  "auroc_a": 0.7019230769230769,
+  "auroc_b": 0.5,
+  "delta": 0.20192307692307687,
+  "ci95": [
+   0.006018518518518549,
+   0.37939548744146445
+  ],
+  "n_groups": 33
+ },
+ "loto/evidence_vs_struct/hard": {
+  "auroc_a": 0.8291666666666667,
+  "auroc_b": 0.5,
+  "delta": 0.3291666666666667,
+  "ci95": [
+   0.22771141553231233,
+   0.40097983767893663
+  ],
+  "n_groups": 120
+ },
+ "spec_C/evidence_vs_struct/hard": {
+  "auroc_a": 0.6642857142857143,
+  "auroc_b": 0.5,
+  "delta": 0.16428571428571426,
+  "ci95": [
+   -0.031328125,
+   0.3125
+  ],
+  "n_groups": 40
+ },
+ "loto/evidence_vs_struct/hard_not_observable": {
+  "auroc_a": 0.5517241379310345,
+  "auroc_b": 0.5,
+  "delta": 0.051724137931034475,
+  "ci95": [
+   -0.14034920634920636,
+   0.1926965309493732
+  ],
+  "n_groups": 55
+ },
+ "spec_C/evidence_vs_struct/hard_not_observable": {
+  "auroc_a": 0.5555555555555556,
+  "auroc_b": 0.5,
+  "delta": 0.05555555555555558,
+  "ci95": [
+   -0.2892755681818181,
+   0.3126041666666667
+  ],
+  "n_groups": 16
+ },
+ "loto/evidence_vs_struct/hard_degree_preserving": {
+  "auroc_a": 0.8252688172043011,
+  "auroc_b": 0.5,
+  "delta": 0.3252688172043011,
+  "ci95": [
+   0.21077003438312325,
+   0.4209007328298852
+  ],
+  "n_groups": 93
+ },
+ "spec_C/evidence_vs_struct/hard_degree_preserving": {
+  "auroc_a": 0.8695652173913043,
+  "auroc_b": 0.5,
+  "delta": 0.3695652173913043,
+  "ci95": [
+   0.21268274853801164,
+   0.48888888888888893
+  ],
+  "n_groups": 28
+ },
+ "loto/evidence_vs_struct/hard_observable_dp": {
+  "auroc_a": 0.90625,
+  "auroc_b": 0.5,
+  "delta": 0.40625,
+  "ci95": [
+   0.2932856739076547,
+   0.4981067961165049
+  ],
+  "n_groups": 83
+ },
+ "spec_C/evidence_vs_struct/hard_observable_dp": {
+  "auroc_a": 0.9097222222222222,
+  "auroc_b": 0.5,
+  "delta": 0.4097222222222222,
+  "ci95": [
+   0.24388913460120892,
+   0.5
+  ],
+  "n_groups": 25
+ }
+}

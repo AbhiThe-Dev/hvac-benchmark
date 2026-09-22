@@ -56,7 +56,7 @@ class _Session:
         pass
 
 
-def test_fetch_caches_with_unconfirmed_license_and_pinned_revision(tmp_path, monkeypatch):
+def test_fetch_caches_with_confirmed_commercial_license_and_pinned_revision(tmp_path, monkeypatch):
     session = _Session()
     monkeypatch.setattr(mortar.requests, "Session", lambda: session)
     cache = FileCache(tmp_path)
@@ -68,8 +68,8 @@ def test_fetch_caches_with_unconfirmed_license_and_pinned_revision(tmp_path, mon
 
     prov = models[0].provenance
     assert prov.source == "mortar_huggingface"
-    assert prov.license is None  # unconfirmed, never asserted
-    assert "UNCONFIRMED" in prov.citation
+    assert prov.license == "commercial-use-confirmed-via-correspondence"
+    assert "COMMERCIAL USE CONFIRMED" in prov.citation
     assert prov.source_revision == mortar.HF_REVISION
     assert len(prov.sha256) == 64
 

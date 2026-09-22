@@ -1,0 +1,185 @@
+{
+ "id": "dr_t6_07",
+ "role": "test",
+ "suite": "T6_compound",
+ "climate": "palm_springs",
+ "n_ahu": 4,
+ "n_vav": 16,
+ "floors": 1,
+ "nx": 4,
+ "ny": 4,
+ "tile_w": 8.5,
+ "tile_d": 6.6,
+ "floor_h": 3.8,
+ "north_axis": 73.0,
+ "wwr": 0.33,
+ "infiltration": 0.00036,
+ "lights_wm2": 7.4,
+ "equip_wm2": 5.0,
+ "people_m2": 0.02,
+ "oa_per_area": 0.00093,
+ "zone_load_sigma": 0.11,
+ "zone_shifts": [
+  0
+ ],
+ "occ": {
+  "start": 7.2,
+  "end": 18.0,
+  "night_frac": 0.12,
+  "weekend_frac": 0.1
+ },
+ "setpoints": {
+  "heat": 22.9,
+  "cool": 27.3,
+  "heat_setback": 18.0,
+  "cool_setback": 30.0
+ },
+ "min_flow_frac": 0.32,
+ "heat_sizing_factor": 1.1,
+ "cool_sizing_factor": 1.31,
+ "group_mode": "stripe",
+ "group_sizes": [
+  4,
+  3,
+  4,
+  5
+ ],
+ "sat_pattern": "mixed",
+ "ahu_sat": [
+  14.14,
+  14.27,
+  12.23,
+  15.35
+ ],
+ "fan_dp": [
+  743.0,
+  626.0,
+  898.0,
+  481.0
+ ],
+ "economizer": [
+  true,
+  true,
+  true,
+  true
+ ],
+ "n_hw": 2,
+ "n_chw": 3,
+ "ahu_hw": [
+  1,
+  0,
+  1,
+  1
+ ],
+ "ahu_chw": [
+  2,
+  1,
+  2,
+  0
+ ],
+ "hw_t": [
+  71.1,
+  79.0
+ ],
+ "hw_dt": [
+  20.5,
+  22.1
+ ],
+ "chw_t": [
+  8.1,
+  8.7,
+  7.6
+ ],
+ "chw_dt": [
+  5.1,
+  7.2,
+  5.7
+ ],
+ "geometry_seed": 707087,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "palm_springs",
+  "temp_offset": 2.85,
+  "solar_scale": 1.242
+ },
+ "reheat": "mixed",
+ "electric_zones": [
+  false,
+  true,
+  false,
+  false,
+  false,
+  true,
+  false,
+  true,
+  true,
+  false,
+  false,
+  true,
+  true,
+  false,
+  false,
+  false
+ ],
+ "sat_strategy": [
+  "tod_reset",
+  "tod_reset",
+  "tod_reset",
+  "warmest"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 11.3,
+   "oa_high": 18.9,
+   "span": 2.4
+  },
+  {
+   "oa_low": 10.9,
+   "oa_high": 19.3,
+   "span": 3.96
+  },
+  {
+   "oa_low": 9.2,
+   "oa_high": 22.8,
+   "span": 2.89
+  },
+  {
+   "oa_low": 7.3,
+   "oa_high": 20.8,
+   "span": 2.11
+  }
+ ],
+ "sp_reset": [
+  false,
+  true,
+  false,
+  false
+ ],
+ "econ_type": [
+  "diff_enth",
+  "diff_db",
+  "diff_db",
+  "diff_enth"
+ ],
+ "econ_limit_db": [
+  25.2,
+  21.6,
+  23.7,
+  22.4
+ ],
+ "econ_limit_enth": [
+  45597.0,
+  58489.0,
+  46863.0,
+  46211.0
+ ],
+ "min_oa_scale": 0.79,
+ "night_oa": 0.22,
+ "boiler_eff": 0.846,
+ "chiller_cop": 5.95,
+ "fan_eff": 0.68,
+ "sensor_level": "estimated",
+ "profile_seed": 207743,
+ "distractors": [],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

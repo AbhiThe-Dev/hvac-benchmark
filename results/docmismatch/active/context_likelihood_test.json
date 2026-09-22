@@ -1,0 +1,884 @@
+{
+ "sim cross-building (LOTO) [full]|ahu_sat|M": [
+  -4.219412202427613,
+  -5.714939930837232,
+  -2.69491755501537,
+  1536
+ ],
+ "sim cross-building (LOTO) [full]|ahu_sat|X": [
+  -3.4370714056295855,
+  -4.00917112846363,
+  -2.835680839368145,
+  9408
+ ],
+ "sim cross-building (LOTO) [full]|ahu_vav|M": [
+  0.006961928107808964,
+  0.002376364718569184,
+  0.012857521054630708,
+  4170
+ ],
+ "sim cross-building (LOTO) [full]|ahu_vav|X": [
+  -3.3152919048635927,
+  -3.8656717763762676,
+  -2.760728552973071,
+  11787
+ ],
+ "sim cross-building (LOTO) [full]|branch_coil|M": [
+  0.07180772475560875,
+  -0.0559818624484062,
+  0.2854196097473732,
+  5520
+ ],
+ "sim cross-building (LOTO) [full]|branch_coil|X": [
+  0.022261405617311842,
+  0.012575269969689672,
+  0.030711154847680527,
+  50570
+ ],
+ "sim cross-building (LOTO) [full]|coil_ahu|M": [
+  -0.10562168823342549,
+  -0.17601219009614788,
+  -0.049641046579203325,
+  4438
+ ],
+ "sim cross-building (LOTO) [full]|coil_ahu|X": [
+  -0.5547183621540986,
+  -0.5973955321075893,
+  -0.5100181299775043,
+  27834
+ ],
+ "sim cross-building (LOTO) [full]|coil_vav|M": [
+  -0.25714645497375316,
+  -0.42638267263894075,
+  -0.08855684843799808,
+  4156
+ ],
+ "sim cross-building (LOTO) [full]|coil_vav|X": [
+  -0.033903402786501696,
+  -0.04845561837118741,
+  -0.01906327267764048,
+  37404
+ ],
+ "sim cross-building (LOTO) [full]|loop_branch|M": [
+  0.06386681836692766,
+  -0.05094406929026221,
+  0.20279558485474503,
+  4860
+ ],
+ "sim cross-building (LOTO) [full]|loop_branch|X": [
+  -0.13079446751230894,
+  -0.27057460272109557,
+  0.006907499182689214,
+  3527
+ ],
+ "sim cross-building (LOTO) [full]|loop_pump|M": [
+  0.09644569135215053,
+  -0.03734717105723481,
+  0.23400288903416724,
+  1117
+ ],
+ "sim cross-building (LOTO) [full]|loop_pump|X": [
+  -1.132980598633584,
+  -1.5908464897856316,
+  -0.6433842627956484,
+  898
+ ],
+ "sim cross-building (LOTO) [full]|loop_source|M": [
+  -0.2202852429894284,
+  -0.6810429308930562,
+  0.04325143099404978,
+  1279
+ ],
+ "sim cross-building (LOTO) [full]|loop_source|X": [
+  -0.49135303297683103,
+  -0.7465330076294754,
+  -0.1991171879138529,
+  1035
+ ],
+ "sim cross-building (LOTO) [full]|vav_dat|M": [
+  0.15260966930988373,
+  0.10090475927892444,
+  0.19794156119468298,
+  5699
+ ],
+ "sim cross-building (LOTO) [full]|vav_dat|X": [
+  -0.4477464307450595,
+  -0.5743551851401704,
+  -0.3278725098852672,
+  51291
+ ],
+ "sim cross-building (LOTO) [full]|vav_zone|M": [
+  -0.12007501106097128,
+  -0.26294318905820974,
+  0.0030709305432282874,
+  2199
+ ],
+ "sim cross-building (LOTO) [full]|vav_zone|X": [
+  -0.08724916279754345,
+  -0.11092387535132849,
+  -0.062058209736568205,
+  18925
+ ],
+ "sim cross-building (LOTO) [full]|ALL": [
+  -0.48636818964510686,
+  -0.5393232502013304,
+  -0.4331273754475963,
+  247653
+ ],
+ "sim same-building, held-out season [full]|ahu_sat|M": [
+  -0.14009942082068555,
+  -0.22594351088029227,
+  -0.05712673167855012,
+  1913
+ ],
+ "sim same-building, held-out season [full]|ahu_sat|X": [
+  -0.38526734697499115,
+  -0.5004385494855619,
+  -0.27645657716519023,
+  13665
+ ],
+ "sim same-building, held-out season [full]|ahu_vav|M": [
+  -0.0037459323049381563,
+  -0.00827773510960461,
+  0.0004973391528111242,
+  3095
+ ],
+ "sim same-building, held-out season [full]|ahu_vav|X": [
+  0.016463659078709586,
+  0.010653085981030598,
+  0.021511166693963475,
+  11778
+ ],
+ "sim same-building, held-out season [full]|branch_coil|M": [
+  0.17971220157821952,
+  0.024764263101005247,
+  0.3980892743461468,
+  5520
+ ],
+ "sim same-building, held-out season [full]|branch_coil|X": [
+  0.03935504642047252,
+  0.035890534723473005,
+  0.042347729367575776,
+  50570
+ ],
+ "sim same-building, held-out season [full]|coil_ahu|M": [
+  0.038281064558047216,
+  0.010543221021559092,
+  0.06356775291727955,
+  4162
+ ],
+ "sim same-building, held-out season [full]|coil_ahu|X": [
+  0.03536894591508625,
+  0.028069882956590665,
+  0.04377400998334403,
+  27834
+ ],
+ "sim same-building, held-out season [full]|coil_vav|M": [
+  0.10496421058528561,
+  0.08468800278840127,
+  0.12860602646572575,
+  4156
+ ],
+ "sim same-building, held-out season [full]|coil_vav|X": [
+  0.05591614608911971,
+  0.05089194411889944,
+  0.06084469853814772,
+  37404
+ ],
+ "sim same-building, held-out season [full]|loop_branch|M": [
+  0.050962096615746355,
+  -0.04191770911601632,
+  0.185684157642625,
+  3521
+ ],
+ "sim same-building, held-out season [full]|loop_branch|X": [
+  0.08562261888401598,
+  -0.02438827974443507,
+  0.20912928273610795,
+  3509
+ ],
+ "sim same-building, held-out season [full]|loop_pump|M": [
+  0.8651203337474377,
+  0.23163323172213263,
+  1.625052923917051,
+  917
+ ],
+ "sim same-building, held-out season [full]|loop_pump|X": [
+  0.5866998720285473,
+  0.07648379769273575,
+  1.4447223414469803,
+  880
+ ],
+ "sim same-building, held-out season [full]|loop_source|M": [
+  0.19738374576496187,
+  0.0814338104699785,
+  0.36703507816556363,
+  1035
+ ],
+ "sim same-building, held-out season [full]|loop_source|X": [
+  0.16013841422468503,
+  0.08226760510053491,
+  0.24672457527654404,
+  1035
+ ],
+ "sim same-building, held-out season [full]|vav_dat|M": [
+  0.029388256375751428,
+  0.004861103987545217,
+  0.05614648498206361,
+  5699
+ ],
+ "sim same-building, held-out season [full]|vav_dat|X": [
+  -0.06019870243201381,
+  -0.08820858308822736,
+  -0.030665590616041127,
+  51291
+ ],
+ "sim same-building, held-out season [full]|vav_zone|M": [
+  0.005847513195978552,
+  -0.014599984185801206,
+  0.026586352033875476,
+  2195
+ ],
+ "sim same-building, held-out season [full]|vav_zone|X": [
+  0.018883571642505884,
+  0.010964171092894935,
+  0.027431690051165757,
+  18889
+ ],
+ "sim same-building, held-out season [full]|ALL": [
+  0.003662533044921052,
+  -0.005141378255502326,
+  0.016306161418847304,
+  249068
+ ],
+ "real, held-out season [full]|vav_pwr|M": [
+  0.10965562564252801,
+  0.04957472865841919,
+  0.1742149633131338,
+  1041
+ ],
+ "real, held-out season [full]|vav_pwr|X": [
+  -0.07271019932929751,
+  -0.09199046603440611,
+  -0.05217962615587097,
+  9489
+ ],
+ "real, held-out season [full]|vav_sat|M": [
+  0.10965562564252801,
+  0.05310830255382157,
+  0.17520375774499156,
+  1041
+ ],
+ "real, held-out season [full]|vav_sat|X": [
+  -0.07271019932930013,
+  -0.09556217664576092,
+  -0.051881598831411586,
+  9489
+ ],
+ "real, held-out season [full]|vav_zone|M": [
+  -0.046502428013560665,
+  -0.09448520428242167,
+  -0.00586392977542203,
+  1310
+ ],
+ "real, held-out season [full]|vav_zone|X": [
+  0.007236081191696331,
+  -0.005836834245101114,
+  0.020222370898888564,
+  11987
+ ],
+ "real, held-out season [full]|ALL": [
+  -0.032766843022865505,
+  -0.041811731164954034,
+  -0.023039966200327142,
+  34357
+ ],
+ "sim cross-building (LOTO) [mean-only]|ahu_sat|M": [
+  -1.7731171209978676,
+  -2.3145853711896924,
+  -1.252572699662592,
+  1536
+ ],
+ "sim cross-building (LOTO) [mean-only]|ahu_sat|X": [
+  -1.9419367729793293,
+  -2.3278138523824254,
+  -1.5767677364447643,
+  9408
+ ],
+ "sim cross-building (LOTO) [mean-only]|ahu_vav|M": [
+  0.0070974495620124015,
+  0.0025993283467390118,
+  0.012669467136626655,
+  4170
+ ],
+ "sim cross-building (LOTO) [mean-only]|ahu_vav|X": [
+  -3.2191396422755862,
+  -3.832631430921044,
+  -2.589764483567806,
+  11787
+ ],
+ "sim cross-building (LOTO) [mean-only]|branch_coil|M": [
+  -0.01044396927379078,
+  -0.04883430752327837,
+  0.03551239898844766,
+  5520
+ ],
+ "sim cross-building (LOTO) [mean-only]|branch_coil|X": [
+  0.022750493503882127,
+  0.015838434086606554,
+  0.02981027619480729,
+  50570
+ ],
+ "sim cross-building (LOTO) [mean-only]|coil_ahu|M": [
+  -0.018657948222678054,
+  -0.047733009047641065,
+  0.00480845159582715,
+  4438
+ ],
+ "sim cross-building (LOTO) [mean-only]|coil_ahu|X": [
+  -0.43432767555969853,
+  -0.4838703919609795,
+  -0.3864442462309906,
+  27834
+ ],
+ "sim cross-building (LOTO) [mean-only]|coil_vav|M": [
+  -0.19879671329584514,
+  -0.33810579084514547,
+  -0.07220824365018828,
+  4156
+ ],
+ "sim cross-building (LOTO) [mean-only]|coil_vav|X": [
+  -0.029708967692715173,
+  -0.04539170902931156,
+  -0.013636935575060667,
+  37404
+ ],
+ "sim cross-building (LOTO) [mean-only]|loop_branch|M": [
+  -0.00871265650568215,
+  -0.02191947028889596,
+  0.00929270740011614,
+  4860
+ ],
+ "sim cross-building (LOTO) [mean-only]|loop_branch|X": [
+  -0.06863965384094767,
+  -0.12223287729688216,
+  -0.02704131211076555,
+  3527
+ ],
+ "sim cross-building (LOTO) [mean-only]|loop_pump|M": [
+  -0.0021654380244712557,
+  -0.07011813527841974,
+  0.06844927434518541,
+  1117
+ ],
+ "sim cross-building (LOTO) [mean-only]|loop_pump|X": [
+  -0.417599218982562,
+  -0.6136259375009296,
+  -0.22193060705084175,
+  898
+ ],
+ "sim cross-building (LOTO) [mean-only]|loop_source|M": [
+  -0.09192648498254258,
+  -0.2676843014340315,
+  0.023258326036013757,
+  1279
+ ],
+ "sim cross-building (LOTO) [mean-only]|loop_source|X": [
+  -0.3756518271851876,
+  -0.55750413320138,
+  -0.18861443396516248,
+  1035
+ ],
+ "sim cross-building (LOTO) [mean-only]|vav_dat|M": [
+  0.16682351690525812,
+  0.11578183904260304,
+  0.2075677024906253,
+  5699
+ ],
+ "sim cross-building (LOTO) [mean-only]|vav_dat|X": [
+  0.04551838362602444,
+  0.022247383387931235,
+  0.06618970336887774,
+  51291
+ ],
+ "sim cross-building (LOTO) [mean-only]|vav_zone|M": [
+  -0.22953670408690308,
+  -0.42106018903875636,
+  -0.08175077894969082,
+  2199
+ ],
+ "sim cross-building (LOTO) [mean-only]|vav_zone|X": [
+  -0.14228189914845168,
+  -0.1766618763435279,
+  -0.11395144145272645,
+  18925
+ ],
+ "sim cross-building (LOTO) [mean-only]|ALL": [
+  -0.29478496674329585,
+  -0.3395715230360592,
+  -0.2612065669214126,
+  247653
+ ],
+ "sim same-building, held-out season [mean-only]|ahu_sat|M": [
+  -0.04150409238509446,
+  -0.09051967032624693,
+  0.011391331275792373,
+  1913
+ ],
+ "sim same-building, held-out season [mean-only]|ahu_sat|X": [
+  0.15308453708776062,
+  0.13174992001308702,
+  0.17355737096738996,
+  13665
+ ],
+ "sim same-building, held-out season [mean-only]|ahu_vav|M": [
+  -0.0021043847111699133,
+  -0.004310898438323331,
+  -0.00017335598993902882,
+  3095
+ ],
+ "sim same-building, held-out season [mean-only]|ahu_vav|X": [
+  0.004211810022067181,
+  0.0013091347651812673,
+  0.007188660455979218,
+  11778
+ ],
+ "sim same-building, held-out season [mean-only]|branch_coil|M": [
+  0.017325572834258385,
+  -0.0073729147797180926,
+  0.05527923179630213,
+  5520
+ ],
+ "sim same-building, held-out season [mean-only]|branch_coil|X": [
+  0.016307394413979596,
+  0.01362622877699141,
+  0.019216049103421222,
+  50570
+ ],
+ "sim same-building, held-out season [mean-only]|coil_ahu|M": [
+  0.019738537466080473,
+  0.002965035248596583,
+  0.035162839720448875,
+  4162
+ ],
+ "sim same-building, held-out season [mean-only]|coil_ahu|X": [
+  0.003331653194724595,
+  -0.004193225632571983,
+  0.011544668029736692,
+  27834
+ ],
+ "sim same-building, held-out season [mean-only]|coil_vav|M": [
+  0.0888431873481414,
+  0.07186827772301332,
+  0.10765842757664708,
+  4156
+ ],
+ "sim same-building, held-out season [mean-only]|coil_vav|X": [
+  0.008780737272926676,
+  0.0054732405469831895,
+  0.011992152063227842,
+  37404
+ ],
+ "sim same-building, held-out season [mean-only]|loop_branch|M": [
+  0.0003844336990629365,
+  -0.02713865846818941,
+  0.03776438349326936,
+  3521
+ ],
+ "sim same-building, held-out season [mean-only]|loop_branch|X": [
+  0.0034488160753537614,
+  -0.027334011271897427,
+  0.046498619120690435,
+  3509
+ ],
+ "sim same-building, held-out season [mean-only]|loop_pump|M": [
+  0.4527859626402309,
+  0.11427982925810407,
+  0.8993552548063605,
+  917
+ ],
+ "sim same-building, held-out season [mean-only]|loop_pump|X": [
+  0.24748163855690272,
+  0.06823442943726094,
+  0.4901373989873835,
+  880
+ ],
+ "sim same-building, held-out season [mean-only]|loop_source|M": [
+  0.10203704505704941,
+  0.02205401936242092,
+  0.19865812621435938,
+  1035
+ ],
+ "sim same-building, held-out season [mean-only]|loop_source|X": [
+  0.10786058319554288,
+  0.0010450556651281256,
+  0.22387716377988195,
+  1035
+ ],
+ "sim same-building, held-out season [mean-only]|vav_dat|M": [
+  0.05538855960071781,
+  0.041553407555212064,
+  0.07099918197401348,
+  5699
+ ],
+ "sim same-building, held-out season [mean-only]|vav_dat|X": [
+  0.0513828853092294,
+  0.04495705284538707,
+  0.05765173360442789,
+  51291
+ ],
+ "sim same-building, held-out season [mean-only]|vav_zone|M": [
+  -0.012960555968362273,
+  -0.02890807276705999,
+  3.132524062437019e-05,
+  2195
+ ],
+ "sim same-building, held-out season [mean-only]|vav_zone|X": [
+  0.016555544064828794,
+  0.011315754462986152,
+  0.020906934887590788,
+  18889
+ ],
+ "sim same-building, held-out season [mean-only]|ALL": [
+  0.031909145020826674,
+  0.028864933978326214,
+  0.03501914991660366,
+  249068
+ ],
+ "real, held-out season [mean-only]|vav_pwr|M": [
+  0.06925145108019466,
+  0.017723568544949532,
+  0.12122529752990041,
+  1041
+ ],
+ "real, held-out season [mean-only]|vav_pwr|X": [
+  -0.001164077438659583,
+  -0.010853284502491851,
+  0.010600625818671739,
+  9489
+ ],
+ "real, held-out season [mean-only]|vav_sat|M": [
+  0.06925145108019466,
+  0.01771211063634943,
+  0.12596670363684123,
+  1041
+ ],
+ "real, held-out season [mean-only]|vav_sat|X": [
+  -0.0011640774386604007,
+  -0.012047005295595848,
+  0.009042432885606699,
+  9489
+ ],
+ "real, held-out season [mean-only]|vav_zone|M": [
+  -0.02764997282603848,
+  -0.0711586830365333,
+  0.013792248884817239,
+  1310
+ ],
+ "real, held-out season [mean-only]|vav_zone|X": [
+  -0.005779388950606052,
+  -0.01595263082997816,
+  0.00415156548228791,
+  11987
+ ],
+ "real, held-out season [mean-only]|ALL": [
+  0.0004828902338693937,
+  -0.005610636804575505,
+  0.008108968588984099,
+  34357
+ ],
+ "sim cross-building (LOTO) [OAT-only]|ahu_sat|M": [
+  -0.012401137196333812,
+  -0.032712996748023394,
+  0.009388765700241346,
+  1536
+ ],
+ "sim cross-building (LOTO) [OAT-only]|ahu_sat|X": [
+  -0.0012618863550245506,
+  -0.002944291605908001,
+  0.00032874035509181386,
+  9408
+ ],
+ "sim cross-building (LOTO) [OAT-only]|ahu_vav|M": [
+  0.001085398498717261,
+  0.0003222403788158845,
+  0.0019946318982456894,
+  4170
+ ],
+ "sim cross-building (LOTO) [OAT-only]|ahu_vav|X": [
+  0.003844003815168192,
+  0.0018297032873510197,
+  0.005600556179582642,
+  11787
+ ],
+ "sim cross-building (LOTO) [OAT-only]|branch_coil|M": [
+  -0.00041499886813850545,
+  -0.01701010027587342,
+  0.018991299554131223,
+  5520
+ ],
+ "sim cross-building (LOTO) [OAT-only]|branch_coil|X": [
+  0.012205852329619581,
+  0.009876436928358835,
+  0.014330731267233313,
+  50570
+ ],
+ "sim cross-building (LOTO) [OAT-only]|coil_ahu|M": [
+  0.007242171191649821,
+  -0.0005245198306198471,
+  0.013922671145771934,
+  4438
+ ],
+ "sim cross-building (LOTO) [OAT-only]|coil_ahu|X": [
+  0.013575943011011914,
+  0.009163754616686354,
+  0.017928362411986563,
+  27834
+ ],
+ "sim cross-building (LOTO) [OAT-only]|coil_vav|M": [
+  0.05104780274207057,
+  0.036509785937162705,
+  0.0664614576171689,
+  4156
+ ],
+ "sim cross-building (LOTO) [OAT-only]|coil_vav|X": [
+  0.011947301398857515,
+  0.009476054117945052,
+  0.014216930689518134,
+  37404
+ ],
+ "sim cross-building (LOTO) [OAT-only]|loop_branch|M": [
+  0.0038637254814127627,
+  -0.015386007367524915,
+  0.025059435313911013,
+  4860
+ ],
+ "sim cross-building (LOTO) [OAT-only]|loop_branch|X": [
+  -0.02977071641868034,
+  -0.061924444245973695,
+  -0.00146416488507347,
+  3527
+ ],
+ "sim cross-building (LOTO) [OAT-only]|loop_pump|M": [
+  -0.04784249871546484,
+  -0.17052830644505323,
+  0.049455463624415295,
+  1117
+ ],
+ "sim cross-building (LOTO) [OAT-only]|loop_pump|X": [
+  -0.38293888748726845,
+  -0.5762400665271318,
+  -0.20806153389943732,
+  898
+ ],
+ "sim cross-building (LOTO) [OAT-only]|loop_source|M": [
+  -0.10950733555125063,
+  -0.22901946222568423,
+  -0.01977860325475093,
+  1279
+ ],
+ "sim cross-building (LOTO) [OAT-only]|loop_source|X": [
+  -0.2891642824523112,
+  -0.4986332367783483,
+  -0.09727740192662751,
+  1035
+ ],
+ "sim cross-building (LOTO) [OAT-only]|vav_dat|M": [
+  -0.009721150976865834,
+  -0.02660770852947049,
+  0.006269807165349686,
+  5699
+ ],
+ "sim cross-building (LOTO) [OAT-only]|vav_dat|X": [
+  -0.036606647784257026,
+  -0.042291423678707106,
+  -0.03101312948767659,
+  51291
+ ],
+ "sim cross-building (LOTO) [OAT-only]|vav_zone|M": [
+  -0.011988137585196085,
+  -0.021714528222227684,
+  -0.00230297123548334,
+  2199
+ ],
+ "sim cross-building (LOTO) [OAT-only]|vav_zone|X": [
+  -0.007460284692957328,
+  -0.010547697536365622,
+  -0.004757842631883461,
+  18925
+ ],
+ "sim cross-building (LOTO) [OAT-only]|ALL": [
+  -0.005332090779636855,
+  -0.007758148871920734,
+  -0.002760105660573533,
+  247653
+ ],
+ "sim same-building, held-out season [OAT-only]|ahu_sat|M": [
+  -0.035884932857370516,
+  -0.08480126621394118,
+  0.010114191676719118,
+  1913
+ ],
+ "sim same-building, held-out season [OAT-only]|ahu_sat|X": [
+  0.147331209914717,
+  0.12810846929298744,
+  0.16579439731504192,
+  13665
+ ],
+ "sim same-building, held-out season [OAT-only]|ahu_vav|M": [
+  -0.0019208149157988695,
+  -0.0038161483841475463,
+  -0.00021670881255999403,
+  3095
+ ],
+ "sim same-building, held-out season [OAT-only]|ahu_vav|X": [
+  -0.001963026733249751,
+  -0.006354671374467214,
+  0.001660264383085385,
+  11778
+ ],
+ "sim same-building, held-out season [OAT-only]|branch_coil|M": [
+  0.01976493653056144,
+  -0.010924732331659021,
+  0.057308621231400174,
+  5520
+ ],
+ "sim same-building, held-out season [OAT-only]|branch_coil|X": [
+  0.010398041169042525,
+  0.008037867161607103,
+  0.013020526533222596,
+  50570
+ ],
+ "sim same-building, held-out season [OAT-only]|coil_ahu|M": [
+  0.007380558673912976,
+  -0.014301234682706776,
+  0.027419274057231456,
+  4162
+ ],
+ "sim same-building, held-out season [OAT-only]|coil_ahu|X": [
+  -0.0013994129540043662,
+  -0.009789004875516304,
+  0.006619624385010619,
+  27834
+ ],
+ "sim same-building, held-out season [OAT-only]|coil_vav|M": [
+  0.06092102039015818,
+  0.046196183672518314,
+  0.07538773885223703,
+  4156
+ ],
+ "sim same-building, held-out season [OAT-only]|coil_vav|X": [
+  0.0034433194923749588,
+  0.0007908238504068889,
+  0.0060562473965822304,
+  37404
+ ],
+ "sim same-building, held-out season [OAT-only]|loop_branch|M": [
+  0.005247252404364753,
+  -0.020431147522696102,
+  0.039271372281418845,
+  3521
+ ],
+ "sim same-building, held-out season [OAT-only]|loop_branch|X": [
+  0.012911778259212182,
+  -0.017238728315960464,
+  0.05672003994947509,
+  3509
+ ],
+ "sim same-building, held-out season [OAT-only]|loop_pump|M": [
+  0.4579064201286543,
+  0.08680827879697654,
+  1.0327041739647502,
+  917
+ ],
+ "sim same-building, held-out season [OAT-only]|loop_pump|X": [
+  0.25045577655860357,
+  0.08421318426335707,
+  0.5086029019714884,
+  880
+ ],
+ "sim same-building, held-out season [OAT-only]|loop_source|M": [
+  0.09930253177858862,
+  0.023989412422513106,
+  0.19224007669116489,
+  1035
+ ],
+ "sim same-building, held-out season [OAT-only]|loop_source|X": [
+  0.11795942584663374,
+  0.009569673662280096,
+  0.22705230981224314,
+  1035
+ ],
+ "sim same-building, held-out season [OAT-only]|vav_dat|M": [
+  0.05726388029404855,
+  0.04173232422788705,
+  0.07120948024946536,
+  5699
+ ],
+ "sim same-building, held-out season [OAT-only]|vav_dat|X": [
+  0.04457462303402932,
+  0.03843456100312565,
+  0.05121679605936177,
+  51291
+ ],
+ "sim same-building, held-out season [OAT-only]|vav_zone|M": [
+  -0.01569659203444902,
+  -0.02728438176815141,
+  -0.00611204368478966,
+  2195
+ ],
+ "sim same-building, held-out season [OAT-only]|vav_zone|X": [
+  0.0018237121443291813,
+  -0.002650075832706498,
+  0.0056583143340362,
+  18889
+ ],
+ "sim same-building, held-out season [OAT-only]|ALL": [
+  0.025960041759488087,
+  0.022636609338422223,
+  0.02900442649154401,
+  249068
+ ],
+ "real, held-out season [OAT-only]|vav_pwr|M": [
+  0.03676280456411909,
+  0.011475561141870037,
+  0.06750422131788977,
+  1041
+ ],
+ "real, held-out season [OAT-only]|vav_pwr|X": [
+  0.04868399150927036,
+  0.040698108746701725,
+  0.05662150503173046,
+  9489
+ ],
+ "real, held-out season [OAT-only]|vav_sat|M": [
+  0.03676280456411909,
+  0.00852917431482085,
+  0.06300814091812852,
+  1041
+ ],
+ "real, held-out season [OAT-only]|vav_sat|X": [
+  0.04868399150927041,
+  0.04025997615844789,
+  0.05555291895331561,
+  9489
+ ],
+ "real, held-out season [OAT-only]|vav_zone|M": [
+  -0.008537345793994754,
+  -0.022995327447568038,
+  0.007127299092455193,
+  1310
+ ],
+ "real, held-out season [OAT-only]|vav_zone|X": [
+  -0.016564563660419966,
+  -0.025090845160411178,
+  -0.010026795745393943,
+  11987
+ ],
+ "real, held-out season [OAT-only]|ALL": [
+  0.02301486166946596,
+  0.018827015852207453,
+  0.027004060858791104,
+  34357
+ ]
+}

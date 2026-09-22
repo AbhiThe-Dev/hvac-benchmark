@@ -1,0 +1,116 @@
+{
+ "id": "dr_t5_01",
+ "role": "test",
+ "suite": "T5_climate",
+ "climate": "blue_canyon",
+ "n_ahu": 1,
+ "n_vav": 12,
+ "floors": 2,
+ "nx": 2,
+ "ny": 3,
+ "tile_w": 8.1,
+ "tile_d": 6.8,
+ "floor_h": 3.7,
+ "north_axis": 3.0,
+ "wwr": 0.3,
+ "infiltration": 0.0012,
+ "lights_wm2": 4.7,
+ "equip_wm2": 16.5,
+ "people_m2": 0.077,
+ "oa_per_area": 0.00079,
+ "zone_load_sigma": 0.43,
+ "zone_shifts": [
+  -1,
+  0,
+  1
+ ],
+ "occ": {
+  "start": 9.6,
+  "end": 21.9,
+  "night_frac": 0.28,
+  "weekend_frac": 0.57
+ },
+ "setpoints": {
+  "heat": 20.5,
+  "cool": 23.0,
+  "heat_setback": 14.5,
+  "cool_setback": 25.4
+ },
+ "min_flow_frac": 0.46,
+ "heat_sizing_factor": 1.19,
+ "cool_sizing_factor": 1.19,
+ "group_mode": "stripe",
+ "group_sizes": [
+  12
+ ],
+ "sat_pattern": "single",
+ "ahu_sat": [
+  15.39
+ ],
+ "fan_dp": [
+  494.0
+ ],
+ "economizer": [
+  true
+ ],
+ "n_hw": 1,
+ "n_chw": 1,
+ "ahu_hw": [
+  0
+ ],
+ "ahu_chw": [
+  0
+ ],
+ "hw_t": [
+  61.2
+ ],
+ "hw_dt": [
+  19.2
+ ],
+ "chw_t": [
+  6.1
+ ],
+ "chw_dt": [
+  5.0
+ ],
+ "geometry_seed": 352184,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "blue_canyon",
+  "temp_offset": 2.78,
+  "solar_scale": 0.824
+ },
+ "reheat": "hydronic",
+ "electric_zones": null,
+ "sat_strategy": [
+  "oa_reset"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 6.6,
+   "oa_high": 22.2,
+   "span": 3.78
+  }
+ ],
+ "sp_reset": [
+  false
+ ],
+ "econ_type": [
+  "fixed_db"
+ ],
+ "econ_limit_db": [
+  18.8
+ ],
+ "econ_limit_enth": [
+  47585.0
+ ],
+ "min_oa_scale": 1.37,
+ "night_oa": 0.0,
+ "boiler_eff": 0.889,
+ "chiller_cop": 5.1,
+ "fan_eff": 0.635,
+ "sensor_level": "estimated",
+ "profile_seed": 219193,
+ "distractors": [],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

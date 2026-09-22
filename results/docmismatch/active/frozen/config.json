@@ -1,0 +1,40 @@
+{
+ "boot": 2000,
+ "calibrate_beta": true,
+ "ctx": "oat",
+ "layer": {
+  "features": null,
+  "lam": 3.0,
+  "lb_floor": 0.9,
+  "min_clusters": 6,
+  "nominal": 0.95,
+  "per_slot": true,
+  "q": 0.1,
+  "slot_min_clusters": 6,
+  "use_slot_power": true
+ },
+ "nmax": 24,
+ "policies": [
+  "active",
+  "random",
+  "traversal",
+  "traversal_block",
+  "frozen"
+ ],
+ "real_episode_seed": 2026,
+ "real_n_right": 10,
+ "real_n_wrong": 30,
+ "resolvable_conf": 0.95,
+ "seed": 2026,
+ "sim_primary": "visit",
+ "sim_reps": [
+  0,
+  1
+ ],
+ "sim_settings": [
+  "visit",
+  "hist"
+ ],
+ "tau": 0.95,
+ "variant": "sel_slice"
+}

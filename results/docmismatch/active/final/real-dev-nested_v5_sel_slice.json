@@ -1,0 +1,2518 @@
+{
+ "config": {
+  "variant": "sel_slice",
+  "ctx": "oat",
+  "tau": 0.95,
+  "nmax": 24,
+  "seed": 2026,
+  "policies": [
+   "active",
+   "random",
+   "traversal",
+   "traversal_block",
+   "frozen"
+  ],
+  "calibrate_beta": true,
+  "sim_reps": [
+   0,
+   1
+  ],
+  "sim_settings": [
+   "visit",
+   "hist"
+  ],
+  "sim_primary": "visit",
+  "real_episode_seed": 2026,
+  "real_n_wrong": 30,
+  "real_n_right": 10,
+  "layer": {
+   "nominal": 0.95,
+   "q": 0.1,
+   "lb_floor": 0.9,
+   "lam": 3.0,
+   "min_clusters": 6,
+   "slot_min_clusters": 6,
+   "per_slot": true,
+   "features": null,
+   "use_slot_power": true
+  },
+  "boot": 1000,
+  "resolvable_conf": 0.95
+ },
+ "info": {
+  "0": {
+   "beta": {
+    "vav_zone": 0.35,
+    "vav_sat": 0.7,
+    "vav_pwr": 0.7
+   },
+   "n_outer": 7200,
+   "n_inner": 10800
+  },
+  "1": {
+   "beta": {
+    "vav_zone": 1.0,
+    "vav_sat": 0.7,
+    "vav_pwr": 0.7
+   },
+   "n_outer": 3600,
+   "n_inner": 14400
+  },
+  "2": {
+   "beta": {
+    "vav_zone": 1.0,
+    "vav_sat": 0.7,
+    "vav_pwr": 0.7
+   },
+   "n_outer": 3600,
+   "n_inner": 14400
+  },
+  "3": {
+   "beta": {
+    "vav_zone": 1.0,
+    "vav_sat": 0.2,
+    "vav_pwr": 0.2
+   },
+   "n_outer": 3600,
+   "n_inner": 14400
+  }
+ },
+ "eval": {
+  "legacy": {
+   "policies": [
+    "active",
+    "frozen",
+    "random",
+    "traversal",
+    "traversal_block"
+   ],
+   "n_episodes": 3600,
+   "n_clusters": 30,
+   "C1": {
+    "random": {
+     "n_pairs": 0
+    },
+    "traversal_block": {
+     "n_pairs": 0
+    },
+    "traversal": {
+     "n_pairs": 0
+    },
+    "frozen": {
+     "n_pairs": 1,
+     "saved": [
+      null,
+      null,
+      null
+     ],
+     "cov_diff": [
+      -0.0005555555555555556,
+      -0.0011111111111111111,
+      0.0
+     ],
+     "cov_active": 0.00018518518518518518,
+     "cov_base": 0.0007407407407407407,
+     "status": "FAIL"
+    }
+   },
+   "C2": {
+    "all": {
+     "all": {
+      "n": 3600,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       0.00018518518518518518,
+       0.0,
+       0.0005555555555555556
+      ],
+      "flag_rate": 0.9998148148148148,
+      "status": "insufficient"
+     }
+    },
+    "season": {
+     "fall": {
+      "n": 1440,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "spring": {
+      "n": 720,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       0.000925925925925926,
+       0.0,
+       0.0031746031746031746
+      ],
+      "flag_rate": 0.9990740740740741,
+      "status": "insufficient"
+     },
+     "summer": {
+      "n": 720,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "winter": {
+      "n": 720,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     }
+    },
+    "family": {
+     "VAV power point swap": {
+      "n": 1200,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "VAV supply-temp point swap": {
+      "n": 1200,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       0.0005555555555555556,
+       0.0,
+       0.0016666666666666668
+      ],
+      "flag_rate": 0.9994444444444445,
+      "status": "insufficient"
+     },
+     "VAV-zone swap": {
+      "n": 1200,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     }
+    },
+    "slot": {
+     "vav_pwr": {
+      "n": 1200,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "vav_sat": {
+      "n": 1200,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       0.0005555555555555556,
+       0.0,
+       0.0016666666666666668
+      ],
+      "flag_rate": 0.9994444444444445,
+      "status": "insufficient"
+     },
+     "vav_zone": {
+      "n": 1200,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     }
+    },
+    "cell": {
+     "fall|VAV power point swap|vav_pwr": {
+      "n": 480,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "fall|VAV supply-temp point swap|vav_sat": {
+      "n": 480,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "fall|VAV-zone swap|vav_zone": {
+      "n": 480,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "spring|VAV power point swap|vav_pwr": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "spring|VAV supply-temp point swap|vav_sat": {
+      "n": 240,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       0.002777777777777778,
+       0.0,
+       0.009523809523809525
+      ],
+      "flag_rate": 0.9972222222222222,
+      "status": "insufficient"
+     },
+     "spring|VAV-zone swap|vav_zone": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "summer|VAV power point swap|vav_pwr": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "summer|VAV supply-temp point swap|vav_sat": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "summer|VAV-zone swap|vav_zone": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "winter|VAV power point swap|vav_pwr": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "winter|VAV supply-temp point swap|vav_sat": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "winter|VAV-zone swap|vav_zone": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     }
+    }
+   },
+   "C3": {
+    "a_buckets": {
+     "season=fall": {
+      "episodes": 1440,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=spring": {
+      "episodes": 720,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=summer": {
+      "episodes": 720,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=winter": {
+      "episodes": 720,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=vav_pwr": {
+      "episodes": 1200,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=vav_sat": {
+      "episodes": 1200,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=vav_zone": {
+      "episodes": 1200,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     }
+    },
+    "b_necessity": {
+     "flagged_bad_share": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "answered_bad_share": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "margin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "status": "FAIL",
+     "n_flagged": 3599,
+     "n_answered": 1
+    },
+    "c_cost": {
+     "overall_resolvable_lost": [
+      null,
+      null,
+      null
+     ],
+     "resolvable_total": 0,
+     "by_bucket": {
+      "season=fall": {
+       "lost": null
+      },
+      "season=spring": {
+       "lost": null
+      },
+      "season=summer": {
+       "lost": null
+      },
+      "season=winter": {
+       "lost": null
+      },
+      "slot=vav_pwr": {
+       "lost": null
+      },
+      "slot=vav_sat": {
+       "lost": null
+      },
+      "slot=vav_zone": {
+       "lost": null
+      }
+     }
+    },
+    "status_a": "n/a",
+    "status": "FAIL"
+   },
+   "C4": {
+    "table": [
+     {
+      "cell": "fall|VAV power point swap|vav_pwr",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 480,
+      "ok": true
+     },
+     {
+      "cell": "fall|VAV supply-temp point swap|vav_sat",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 480,
+      "ok": true
+     },
+     {
+      "cell": "fall|VAV-zone swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 480,
+      "ok": true
+     },
+     {
+      "cell": "spring|VAV power point swap|vav_pwr",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "spring|VAV supply-temp point swap|vav_sat",
+      "c2": "insufficient",
+      "flag_rate": 0.9972222222222222,
+      "answered": 1,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "spring|VAV-zone swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "summer|VAV power point swap|vav_pwr",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "summer|VAV supply-temp point swap|vav_sat",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "summer|VAV-zone swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "winter|VAV power point swap|vav_pwr",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "winter|VAV supply-temp point swap|vav_sat",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "winter|VAV-zone swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     }
+    ],
+    "violations": [],
+    "status": "PASS",
+    "n_not_supported": 12,
+    "n_cells": 12
+   },
+   "calibration_answered": {
+    "bins": [
+     {
+      "lo": 0.95,
+      "hi": 1.0,
+      "n": 1,
+      "mean_conf": 0.9536090741220404,
+      "acc": 1.0
+     }
+    ],
+    "ece": 0.046390925877959566,
+    "n": 1
+   },
+   "calibration_crossed": {
+    "bins": [
+     {
+      "lo": 0.95,
+      "hi": 1.0,
+      "n": 428,
+      "mean_conf": 0.9642504878562095,
+      "acc": 0.9524732620320855
+     }
+    ],
+    "ece": 0.011777225824123994,
+    "n": 428
+   },
+   "by_policy": {
+    "active": {
+     "coverage": [
+      0.00018518518518518518,
+      0.0,
+      0.0005555555555555556
+     ],
+     "acc": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "readings_answered": [
+      4.5,
+      0.0,
+      4.5
+     ]
+    },
+    "frozen": {
+     "coverage": [
+      0.0007407407407407407,
+      0.00018518518518518518,
+      0.0014814814814814814
+     ],
+     "acc": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "readings_answered": [
+      7.0,
+      4.0,
+      10.0
+     ]
+    },
+    "random": {
+     "coverage": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "acc": [
+      null,
+      null,
+      null
+     ],
+     "readings_answered": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "traversal": {
+     "coverage": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "acc": [
+      null,
+      null,
+      null
+     ],
+     "readings_answered": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "traversal_block": {
+     "coverage": [
+      0.0005555555555555556,
+      0.0,
+      0.0016666666666666668
+     ],
+     "acc": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "readings_answered": [
+      5.666666666666667,
+      0.0,
+      5.666666666666667
+     ]
+    }
+   },
+   "C2_overall_status": "insufficient"
+  },
+  "new": {
+   "policies": [
+    "active",
+    "frozen",
+    "random",
+    "traversal",
+    "traversal_block"
+   ],
+   "n_episodes": 3600,
+   "n_clusters": 30,
+   "C1": {
+    "random": {
+     "n_pairs": 0
+    },
+    "traversal_block": {
+     "n_pairs": 0
+    },
+    "traversal": {
+     "n_pairs": 0
+    },
+    "frozen": {
+     "n_pairs": 0
+    }
+   },
+   "C2": {
+    "all": {
+     "all": {
+      "n": 3600,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     }
+    },
+    "season": {
+     "fall": {
+      "n": 1440,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "spring": {
+      "n": 720,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "summer": {
+      "n": 720,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "winter": {
+      "n": 720,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     }
+    },
+    "family": {
+     "VAV power point swap": {
+      "n": 1200,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "VAV supply-temp point swap": {
+      "n": 1200,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "VAV-zone swap": {
+      "n": 1200,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     }
+    },
+    "slot": {
+     "vav_pwr": {
+      "n": 1200,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "vav_sat": {
+      "n": 1200,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "vav_zone": {
+      "n": 1200,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     }
+    },
+    "cell": {
+     "fall|VAV power point swap|vav_pwr": {
+      "n": 480,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "fall|VAV supply-temp point swap|vav_sat": {
+      "n": 480,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "fall|VAV-zone swap|vav_zone": {
+      "n": 480,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "spring|VAV power point swap|vav_pwr": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "spring|VAV supply-temp point swap|vav_sat": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "spring|VAV-zone swap|vav_zone": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "summer|VAV power point swap|vav_pwr": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "summer|VAV supply-temp point swap|vav_sat": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "summer|VAV-zone swap|vav_zone": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "winter|VAV power point swap|vav_pwr": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "winter|VAV supply-temp point swap|vav_sat": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "winter|VAV-zone swap|vav_zone": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     }
+    }
+   },
+   "C3": {
+    "a_buckets": {
+     "season=fall": {
+      "episodes": 1440,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=spring": {
+      "episodes": 720,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=summer": {
+      "episodes": 720,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=winter": {
+      "episodes": 720,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=vav_pwr": {
+      "episodes": 1200,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=vav_sat": {
+      "episodes": 1200,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=vav_zone": {
+      "episodes": 1200,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     }
+    },
+    "b_necessity": {
+     "flagged_bad_share": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "answered_bad_share": [
+      null,
+      null,
+      null
+     ],
+     "margin": [
+      null,
+      null,
+      null
+     ],
+     "status": "FAIL",
+     "n_flagged": 3600,
+     "n_answered": 0
+    },
+    "c_cost": {
+     "overall_resolvable_lost": [
+      null,
+      null,
+      null
+     ],
+     "resolvable_total": 0,
+     "by_bucket": {
+      "season=fall": {
+       "lost": null
+      },
+      "season=spring": {
+       "lost": null
+      },
+      "season=summer": {
+       "lost": null
+      },
+      "season=winter": {
+       "lost": null
+      },
+      "slot=vav_pwr": {
+       "lost": null
+      },
+      "slot=vav_sat": {
+       "lost": null
+      },
+      "slot=vav_zone": {
+       "lost": null
+      }
+     }
+    },
+    "status_a": "n/a",
+    "status": "FAIL"
+   },
+   "C4": {
+    "table": [
+     {
+      "cell": "fall|VAV power point swap|vav_pwr",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 480,
+      "ok": true
+     },
+     {
+      "cell": "fall|VAV supply-temp point swap|vav_sat",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 480,
+      "ok": true
+     },
+     {
+      "cell": "fall|VAV-zone swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 480,
+      "ok": true
+     },
+     {
+      "cell": "spring|VAV power point swap|vav_pwr",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "spring|VAV supply-temp point swap|vav_sat",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "spring|VAV-zone swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "summer|VAV power point swap|vav_pwr",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "summer|VAV supply-temp point swap|vav_sat",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "summer|VAV-zone swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "winter|VAV power point swap|vav_pwr",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "winter|VAV supply-temp point swap|vav_sat",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "winter|VAV-zone swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     }
+    ],
+    "violations": [],
+    "status": "PASS",
+    "n_not_supported": 12,
+    "n_cells": 12
+   },
+   "calibration_answered": {
+    "bins": [],
+    "ece": null,
+    "n": 0
+   },
+   "calibration_crossed": {
+    "bins": [],
+    "ece": null,
+    "n": 0
+   },
+   "by_policy": {
+    "active": {
+     "coverage": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "acc": [
+      null,
+      null,
+      null
+     ],
+     "readings_answered": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "frozen": {
+     "coverage": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "acc": [
+      null,
+      null,
+      null
+     ],
+     "readings_answered": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "random": {
+     "coverage": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "acc": [
+      null,
+      null,
+      null
+     ],
+     "readings_answered": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "traversal": {
+     "coverage": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "acc": [
+      null,
+      null,
+      null
+     ],
+     "readings_answered": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "traversal_block": {
+     "coverage": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "acc": [
+      null,
+      null,
+      null
+     ],
+     "readings_answered": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "C2_overall_status": "insufficient"
+  },
+  "none": {
+   "policies": [
+    "active",
+    "frozen",
+    "random",
+    "traversal",
+    "traversal_block"
+   ],
+   "n_episodes": 3600,
+   "n_clusters": 30,
+   "C1": {
+    "random": {
+     "n_pairs": 24,
+     "saved": [
+      12.584033613445378,
+      4.7857142857142865,
+      16.14390756302521
+     ],
+     "cov_diff": [
+      0.1011111111111111,
+      0.06648148148148147,
+      0.1374074074074074
+     ],
+     "cov_active": 0.11185185185185184,
+     "cov_base": 0.01074074074074074,
+     "status": "PASS"
+    },
+    "traversal_block": {
+     "n_pairs": 93,
+     "saved": [
+      3.6508241758241757,
+      1.5974623086988677,
+      6.350004961825614
+     ],
+     "cov_diff": [
+      0.07055555555555554,
+      0.0412962962962963,
+      0.10149999999999998
+     ],
+     "cov_active": 0.11185185185185184,
+     "cov_base": 0.041296296296296296,
+     "status": "PASS"
+    },
+    "traversal": {
+     "n_pairs": 0
+    },
+    "frozen": {
+     "n_pairs": 369,
+     "saved": [
+      0.9175644954037758,
+      0.32429805990237975,
+      1.4910894317902241
+     ],
+     "cov_diff": [
+      0.00740740740740739,
+      -0.0011157407407407474,
+      0.017037037037037045
+     ],
+     "cov_active": 0.11185185185185184,
+     "cov_base": 0.10444444444444445,
+     "status": "PASS"
+    }
+   },
+   "C2": {
+    "all": {
+     "all": {
+      "n": 3600,
+      "answered": 428,
+      "clusters": 27,
+      "acc": [
+       0.9536423841059603,
+       0.9106103560410239,
+       0.9901655694743383
+      ],
+      "acc_plain": 0.9579439252336449,
+      "coverage": [
+       0.11185185185185184,
+       0.07405092592592592,
+       0.1509259259259259
+      ],
+      "flag_rate": 0.8881481481481481,
+      "status": "PASS"
+     }
+    },
+    "season": {
+     "fall": {
+      "n": 1440,
+      "answered": 343,
+      "clusters": 11,
+      "acc": [
+       0.9778270509977826,
+       0.9513876216545012,
+       0.997227233676976
+      ],
+      "acc_plain": 0.9825072886297376,
+      "coverage": [
+       0.2087962962962963,
+       0.14062433226495727,
+       0.2655833333333333
+      ],
+      "flag_rate": 0.7912037037037036,
+      "status": "PASS"
+     },
+     "spring": {
+      "n": 720,
+      "answered": 32,
+      "clusters": 6,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       0.046296296296296294,
+       0.03518518518518519,
+       0.05740740740740741
+      ],
+      "flag_rate": 0.9537037037037037,
+      "status": "PASS"
+     },
+     "summer": {
+      "n": 720,
+      "answered": 6,
+      "clusters": 6,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       0.016666666666666666,
+       0.016666666666666666,
+       0.016666666666666666
+      ],
+      "flag_rate": 0.9833333333333333,
+      "status": "insufficient"
+     },
+     "winter": {
+      "n": 720,
+      "answered": 47,
+      "clusters": 4,
+      "acc": [
+       0.7882352941176471,
+       0.6571428571428573,
+       0.925
+      ],
+      "acc_plain": 0.7446808510638298,
+      "coverage": [
+       0.0787037037037037,
+       0.0027678571428571435,
+       0.17777777777777778
+      ],
+      "flag_rate": 0.9212962962962963,
+      "status": "insufficient"
+     }
+    },
+    "family": {
+     "VAV power point swap": {
+      "n": 1200,
+      "answered": 224,
+      "clusters": 23,
+      "acc": [
+       0.975,
+       0.9528985507246377,
+       0.9954343088418431
+      ],
+      "acc_plain": 0.9732142857142857,
+      "coverage": [
+       0.17777777777777778,
+       0.11109722222222222,
+       0.255
+      ],
+      "flag_rate": 0.8222222222222222,
+      "status": "PASS"
+     },
+     "VAV supply-temp point swap": {
+      "n": 1200,
+      "answered": 150,
+      "clusters": 12,
+      "acc": [
+       0.9728260869565217,
+       0.9282044198895028,
+       1.0
+      ],
+      "acc_plain": 0.98,
+      "coverage": [
+       0.10222222222222223,
+       0.055,
+       0.1527777777777778
+      ],
+      "flag_rate": 0.8977777777777778,
+      "status": "PASS"
+     },
+     "VAV-zone swap": {
+      "n": 1200,
+      "answered": 54,
+      "clusters": 12,
+      "acc": [
+       0.85,
+       0.7420841001104161,
+       0.9836131676361715
+      ],
+      "acc_plain": 0.8333333333333334,
+      "coverage": [
+       0.05555555555555555,
+       0.022222222222222223,
+       0.10055555555555556
+      ],
+      "flag_rate": 0.9444444444444444,
+      "status": "FAIL"
+     }
+    },
+    "slot": {
+     "vav_pwr": {
+      "n": 1200,
+      "answered": 224,
+      "clusters": 23,
+      "acc": [
+       0.975,
+       0.9528985507246377,
+       0.9954343088418431
+      ],
+      "acc_plain": 0.9732142857142857,
+      "coverage": [
+       0.17777777777777778,
+       0.11109722222222222,
+       0.255
+      ],
+      "flag_rate": 0.8222222222222222,
+      "status": "PASS"
+     },
+     "vav_sat": {
+      "n": 1200,
+      "answered": 150,
+      "clusters": 12,
+      "acc": [
+       0.9728260869565217,
+       0.9282044198895028,
+       1.0
+      ],
+      "acc_plain": 0.98,
+      "coverage": [
+       0.10222222222222223,
+       0.055,
+       0.1527777777777778
+      ],
+      "flag_rate": 0.8977777777777778,
+      "status": "PASS"
+     },
+     "vav_zone": {
+      "n": 1200,
+      "answered": 54,
+      "clusters": 12,
+      "acc": [
+       0.85,
+       0.7420841001104161,
+       0.9836131676361715
+      ],
+      "acc_plain": 0.8333333333333334,
+      "coverage": [
+       0.05555555555555555,
+       0.022222222222222223,
+       0.10055555555555556
+      ],
+      "flag_rate": 0.9444444444444444,
+      "status": "FAIL"
+     }
+    },
+    "cell": {
+     "fall|VAV power point swap|vav_pwr": {
+      "n": 480,
+      "answered": 194,
+      "clusters": 11,
+      "acc": [
+       0.9774436090225564,
+       0.9541265807091496,
+       1.0
+      ],
+      "acc_plain": 0.979381443298969,
+      "coverage": [
+       0.36944444444444446,
+       0.2538333333333333,
+       0.4615625
+      ],
+      "flag_rate": 0.6305555555555555,
+      "status": "PASS"
+     },
+     "fall|VAV supply-temp point swap|vav_sat": {
+      "n": 480,
+      "answered": 144,
+      "clusters": 10,
+      "acc": [
+       0.9825581395348838,
+       0.9426659725624693,
+       1.0
+      ],
+      "acc_plain": 0.9930555555555556,
+      "coverage": [
+       0.23888888888888887,
+       0.15274621212121214,
+       0.3183379629629629
+      ],
+      "flag_rate": 0.7611111111111111,
+      "status": "PASS"
+     },
+     "fall|VAV-zone swap|vav_zone": {
+      "n": 480,
+      "answered": 5,
+      "clusters": 2,
+      "acc": [
+       0.9230769230769231,
+       0.8999999999999999,
+       1.0
+      ],
+      "acc_plain": 0.8,
+      "coverage": [
+       0.018055555555555554,
+       0.0,
+       0.049999999999999996
+      ],
+      "flag_rate": 0.9819444444444444,
+      "status": "insufficient"
+     },
+     "spring|VAV power point swap|vav_pwr": {
+      "n": 240,
+      "answered": 16,
+      "clusters": 5,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       0.044444444444444446,
+       0.022222222222222223,
+       0.0625
+      ],
+      "flag_rate": 0.9555555555555556,
+      "status": "PASS"
+     },
+     "spring|VAV supply-temp point swap|vav_sat": {
+      "n": 240,
+      "answered": 1,
+      "clusters": 1,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       0.002777777777777778,
+       0.0,
+       0.009523809523809525
+      ],
+      "flag_rate": 0.9972222222222222,
+      "status": "insufficient"
+     },
+     "spring|VAV-zone swap|vav_zone": {
+      "n": 240,
+      "answered": 15,
+      "clusters": 6,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       0.09166666666666666,
+       0.060000000000000005,
+       0.11666666666666667
+      ],
+      "flag_rate": 0.9083333333333333,
+      "status": "PASS"
+     },
+     "summer|VAV power point swap|vav_pwr": {
+      "n": 240,
+      "answered": 6,
+      "clusters": 6,
+      "acc": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "acc_plain": 1.0,
+      "coverage": [
+       0.05,
+       0.05,
+       0.05
+      ],
+      "flag_rate": 0.95,
+      "status": "insufficient"
+     },
+     "summer|VAV supply-temp point swap|vav_sat": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "summer|VAV-zone swap|vav_zone": {
+      "n": 240,
+      "answered": 0,
+      "clusters": 0,
+      "acc": [
+       null,
+       null,
+       null
+      ],
+      "acc_plain": null,
+      "coverage": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "flag_rate": 1.0,
+      "status": "insufficient"
+     },
+     "winter|VAV power point swap|vav_pwr": {
+      "n": 240,
+      "answered": 8,
+      "clusters": 1,
+      "acc": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "acc_plain": 0.75,
+      "coverage": [
+       0.05555555555555556,
+       0.0,
+       0.19999999999999998
+      ],
+      "flag_rate": 0.9444444444444444,
+      "status": "insufficient"
+     },
+     "winter|VAV supply-temp point swap|vav_sat": {
+      "n": 240,
+      "answered": 5,
+      "clusters": 1,
+      "acc": [
+       0.8181818181818181,
+       0.8181818181818181,
+       0.8181818181818182
+      ],
+      "acc_plain": 0.6,
+      "coverage": [
+       0.030555555555555558,
+       0.0,
+       0.11
+      ],
+      "flag_rate": 0.9694444444444444,
+      "status": "insufficient"
+     },
+     "winter|VAV-zone swap|vav_zone": {
+      "n": 240,
+      "answered": 34,
+      "clusters": 4,
+      "acc": [
+       0.7407407407407407,
+       0.6571428571428571,
+       0.9531250000000002
+      ],
+      "acc_plain": 0.7647058823529411,
+      "coverage": [
+       0.15,
+       0.008303571428571431,
+       0.35
+      ],
+      "flag_rate": 0.85,
+      "status": "insufficient"
+     }
+    }
+   },
+   "C3": {
+    "a_buckets": {
+     "season=fall": {
+      "episodes": 1440,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=spring": {
+      "episodes": 720,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=summer": {
+      "episodes": 720,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "season=winter": {
+      "episodes": 720,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=vav_pwr": {
+      "episodes": 1200,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=vav_sat": {
+      "episodes": 1200,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     },
+     "slot=vav_zone": {
+      "episodes": 1200,
+      "resolvable": 0,
+      "resolvable_share": 0.0,
+      "binding": false,
+      "coverage_of_resolvable": [
+       null,
+       null,
+       null
+      ],
+      "status": "n/a (resolvable share < 30%)"
+     }
+    },
+    "b_necessity": {
+     "flagged_bad_share": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "answered_bad_share": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "margin": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "status": "FAIL",
+     "n_flagged": 3172,
+     "n_answered": 428
+    },
+    "c_cost": {
+     "overall_resolvable_lost": [
+      null,
+      null,
+      null
+     ],
+     "resolvable_total": 0,
+     "by_bucket": {
+      "season=fall": {
+       "lost": null
+      },
+      "season=spring": {
+       "lost": null
+      },
+      "season=summer": {
+       "lost": null
+      },
+      "season=winter": {
+       "lost": null
+      },
+      "slot=vav_pwr": {
+       "lost": null
+      },
+      "slot=vav_sat": {
+       "lost": null
+      },
+      "slot=vav_zone": {
+       "lost": null
+      }
+     }
+    },
+    "status_a": "n/a",
+    "status": "FAIL"
+   },
+   "C4": {
+    "table": [
+     {
+      "cell": "fall|VAV-zone swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": 0.9819444444444444,
+      "answered": 5,
+      "episodes": 480,
+      "ok": true
+     },
+     {
+      "cell": "spring|VAV supply-temp point swap|vav_sat",
+      "c2": "insufficient",
+      "flag_rate": 0.9972222222222222,
+      "answered": 1,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "summer|VAV power point swap|vav_pwr",
+      "c2": "insufficient",
+      "flag_rate": 0.95,
+      "answered": 6,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "summer|VAV supply-temp point swap|vav_sat",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "summer|VAV-zone swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": 1.0,
+      "answered": 0,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "winter|VAV power point swap|vav_pwr",
+      "c2": "insufficient",
+      "flag_rate": 0.9444444444444444,
+      "answered": 8,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "winter|VAV supply-temp point swap|vav_sat",
+      "c2": "insufficient",
+      "flag_rate": 0.9694444444444444,
+      "answered": 5,
+      "episodes": 240,
+      "ok": true
+     },
+     {
+      "cell": "winter|VAV-zone swap|vav_zone",
+      "c2": "insufficient",
+      "flag_rate": 0.85,
+      "answered": 34,
+      "episodes": 240,
+      "ok": false
+     }
+    ],
+    "violations": [
+     "winter|VAV-zone swap|vav_zone"
+    ],
+    "status": "FAIL",
+    "n_not_supported": 8,
+    "n_cells": 12
+   },
+   "calibration_answered": {
+    "bins": [
+     {
+      "lo": 0.95,
+      "hi": 1.0,
+      "n": 428,
+      "mean_conf": 0.9642504878562095,
+      "acc": 0.9524732620320855
+     }
+    ],
+    "ece": 0.011777225824123994,
+    "n": 428
+   },
+   "calibration_crossed": {
+    "bins": [
+     {
+      "lo": 0.95,
+      "hi": 1.0,
+      "n": 428,
+      "mean_conf": 0.9642504878562095,
+      "acc": 0.9524732620320855
+     }
+    ],
+    "ece": 0.011777225824123994,
+    "n": 428
+   },
+   "by_policy": {
+    "active": {
+     "coverage": [
+      0.11185185185185184,
+      0.07405092592592592,
+      0.1509259259259259
+     ],
+     "acc": [
+      0.9536423841059603,
+      0.9106103560410239,
+      0.9901655694743383
+     ],
+     "readings_answered": [
+      9.526537433155081,
+      8.712671539455346,
+      10.536032415954649
+     ]
+    },
+    "frozen": {
+     "coverage": [
+      0.10444444444444445,
+      0.06962962962962962,
+      0.14075
+     ],
+     "acc": [
+      0.9503546099290779,
+      0.9056899641577061,
+      0.9880484874810807
+     ],
+     "readings_answered": [
+      9.158525073746313,
+      8.294287770612335,
+      10.033989783614725
+     ]
+    },
+    "random": {
+     "coverage": [
+      0.01074074074074074,
+      0.005370370370370371,
+      0.017222222222222222
+     ],
+     "acc": [
+      0.8448275862068967,
+      0.6325901593514117,
+      1.0
+     ],
+     "readings_answered": [
+      19.228744939271255,
+      17.247008547008548,
+      21.03571656923639
+     ]
+    },
+    "traversal": {
+     "coverage": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "acc": [
+      null,
+      null,
+      null
+     ],
+     "readings_answered": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "traversal_block": {
+     "coverage": [
+      0.041296296296296296,
+      0.02925925925925926,
+      0.055
+     ],
+     "acc": [
+      0.9641255605381166,
+      0.9173381542699726,
+      0.9943835830212234
+     ],
+     "readings_answered": [
+      13.248417721518987,
+      11.829924536970477,
+      15.094538472540044
+     ]
+    }
+   },
+   "C2_overall_status": "PASS"
+  }
+ }
+}

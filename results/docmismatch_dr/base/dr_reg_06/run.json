@@ -1,0 +1,10 @@
+{
+ "returncode": 0,
+ "severe": 0,
+ "fatal": 0,
+ "seconds": 18.1,
+ "climate": "dr_reg_06_wx",
+ "ok": true,
+ "n_hours": 8760,
+ "n_series": 190
+}

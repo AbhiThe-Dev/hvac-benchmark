@@ -1,0 +1,134 @@
+{
+ "id": "dr_t2_04",
+ "role": "test",
+ "suite": "T2_regime",
+ "climate": "sterling_va",
+ "n_ahu": 2,
+ "n_vav": 6,
+ "floors": 1,
+ "nx": 2,
+ "ny": 3,
+ "tile_w": 6.3,
+ "tile_d": 9.1,
+ "floor_h": 3.55,
+ "north_axis": 39.0,
+ "wwr": 0.36,
+ "infiltration": 0.00113,
+ "lights_wm2": 8.3,
+ "equip_wm2": 11.5,
+ "people_m2": 0.034,
+ "oa_per_area": 0.00022,
+ "zone_load_sigma": 0.48,
+ "zone_shifts": [
+  -1,
+  0,
+  1
+ ],
+ "occ": {
+  "start": 5.1,
+  "end": 19.6,
+  "night_frac": 0.09,
+  "weekend_frac": 0.32
+ },
+ "setpoints": {
+  "heat": 19.8,
+  "cool": 23.9,
+  "heat_setback": 14.3,
+  "cool_setback": 28.4
+ },
+ "min_flow_frac": 0.33,
+ "heat_sizing_factor": 1.36,
+ "cool_sizing_factor": 1.23,
+ "group_mode": "block",
+ "group_sizes": [
+  4,
+  2
+ ],
+ "sat_pattern": "all_separate",
+ "ahu_sat": [
+  15.2,
+  13.96
+ ],
+ "fan_dp": [
+  967.0,
+  399.0
+ ],
+ "economizer": [
+  true,
+  false
+ ],
+ "n_hw": 1,
+ "n_chw": 2,
+ "ahu_hw": [
+  0,
+  0
+ ],
+ "ahu_chw": [
+  0,
+  1
+ ],
+ "hw_t": [
+  77.0
+ ],
+ "hw_dt": [
+  16.5
+ ],
+ "chw_t": [
+  7.2,
+  7.8
+ ],
+ "chw_dt": [
+  7.9,
+  4.3
+ ],
+ "geometry_seed": 470302,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "sterling_va",
+  "temp_offset": 1.66,
+  "solar_scale": 1.033
+ },
+ "reheat": "hydronic",
+ "electric_zones": null,
+ "sat_strategy": [
+  "constant",
+  "oa_reset"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 7.3,
+   "oa_high": 20.4,
+   "span": 2.75
+  },
+  {
+   "oa_low": 8.9,
+   "oa_high": 22.5,
+   "span": 2.08
+  }
+ ],
+ "sp_reset": [
+  true,
+  false
+ ],
+ "econ_type": [
+  "fixed_db",
+  "none"
+ ],
+ "econ_limit_db": [
+  19.4,
+  25.9
+ ],
+ "econ_limit_enth": [
+  46844.0,
+  45362.0
+ ],
+ "min_oa_scale": 1.46,
+ "night_oa": 0.66,
+ "boiler_eff": 0.862,
+ "chiller_cop": 4.51,
+ "fan_eff": 0.57,
+ "sensor_level": "estimated",
+ "profile_seed": 730745,
+ "distractors": [],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

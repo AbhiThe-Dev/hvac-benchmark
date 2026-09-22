@@ -1,0 +1,134 @@
+{
+ "id": "dr_t1_01",
+ "role": "test",
+ "suite": "T1_in_range",
+ "climate": "sanfrancisco",
+ "n_ahu": 2,
+ "n_vav": 8,
+ "floors": 1,
+ "nx": 2,
+ "ny": 4,
+ "tile_w": 6.7,
+ "tile_d": 6.3,
+ "floor_h": 3.66,
+ "north_axis": 28.0,
+ "wwr": 0.23,
+ "infiltration": 0.00052,
+ "lights_wm2": 9.8,
+ "equip_wm2": 5.2,
+ "people_m2": 0.031,
+ "oa_per_area": 0.00025,
+ "zone_load_sigma": 0.19,
+ "zone_shifts": [
+  -1,
+  0,
+  1
+ ],
+ "occ": {
+  "start": 8.7,
+  "end": 18.8,
+  "night_frac": 0.09,
+  "weekend_frac": 0.13
+ },
+ "setpoints": {
+  "heat": 20.3,
+  "cool": 23.8,
+  "heat_setback": 17.2,
+  "cool_setback": 27.6
+ },
+ "min_flow_frac": 0.37,
+ "heat_sizing_factor": 1.27,
+ "cool_sizing_factor": 1.12,
+ "group_mode": "stripe",
+ "group_sizes": [
+  4,
+  4
+ ],
+ "sat_pattern": "all_separate",
+ "ahu_sat": [
+  12.73,
+  13.81
+ ],
+ "fan_dp": [
+  695.0,
+  614.0
+ ],
+ "economizer": [
+  false,
+  false
+ ],
+ "n_hw": 2,
+ "n_chw": 1,
+ "ahu_hw": [
+  0,
+  1
+ ],
+ "ahu_chw": [
+  0,
+  0
+ ],
+ "hw_t": [
+  73.4,
+  79.7
+ ],
+ "hw_dt": [
+  17.6,
+  16.9
+ ],
+ "chw_t": [
+  7.6
+ ],
+ "chw_dt": [
+  6.7
+ ],
+ "geometry_seed": 906483,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "sanfrancisco",
+  "temp_offset": 0.0,
+  "solar_scale": 1.0
+ },
+ "reheat": "hydronic",
+ "electric_zones": null,
+ "sat_strategy": [
+  "constant",
+  "constant"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 6.3,
+   "oa_high": 23.6,
+   "span": 1.52
+  },
+  {
+   "oa_low": 11.1,
+   "oa_high": 23.7,
+   "span": 1.93
+  }
+ ],
+ "sp_reset": [
+  true,
+  false
+ ],
+ "econ_type": [
+  "none",
+  "none"
+ ],
+ "econ_limit_db": [
+  20.8,
+  25.3
+ ],
+ "econ_limit_enth": [
+  60304.0,
+  56823.0
+ ],
+ "min_oa_scale": 1.0,
+ "night_oa": 1.0,
+ "boiler_eff": 0.833,
+ "chiller_cop": 4.37,
+ "fan_eff": 0.605,
+ "sensor_level": "estimated",
+ "profile_seed": 800699,
+ "distractors": [],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

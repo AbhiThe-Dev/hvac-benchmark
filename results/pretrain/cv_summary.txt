@@ -1,0 +1,10 @@
+
+[all] held-out-building MRR / Hits@1 / Hits@3   (n edge-sides)
+  feeds     gnn: 0.353/0.220/0.390  type_prior: 0.207/0.134/0.213  random: 0.054/0.015/0.043   (n=1874)
+  hasPart   gnn: 0.291/0.151/0.331  type_prior: 0.078/0.033/0.061  random: 0.036/0.007/0.022   (n=1960)
+  hasPoint  gnn: 0.165/0.086/0.161  type_prior: 0.089/0.051/0.084  random: 0.038/0.010/0.029   (n=5082)
+
+[within_type] held-out-building MRR / Hits@1 / Hits@3   (n edge-sides)
+  feeds     gnn: 0.291/0.146/0.331  type_prior: 0.151/0.065/0.162  random: 0.151/0.065/0.162   (n=1707)
+  hasPart   gnn: 0.275/0.124/0.323  type_prior: 0.152/0.064/0.178  random: 0.152/0.064/0.178   (n=1885)
+  hasPoint  gnn: 0.204/0.091/0.214  type_prior: 0.089/0.029/0.082  random: 0.089/0.029/0.082   (n=4819)

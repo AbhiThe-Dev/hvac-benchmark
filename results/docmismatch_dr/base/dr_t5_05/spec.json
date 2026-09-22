@@ -1,0 +1,148 @@
+{
+ "id": "dr_t5_05",
+ "role": "test",
+ "suite": "T5_climate",
+ "climate": "arcata",
+ "n_ahu": 3,
+ "n_vav": 8,
+ "floors": 1,
+ "nx": 2,
+ "ny": 4,
+ "tile_w": 7.9,
+ "tile_d": 9.2,
+ "floor_h": 3.19,
+ "north_axis": 59.0,
+ "wwr": 0.33,
+ "infiltration": 0.00118,
+ "lights_wm2": 13.3,
+ "equip_wm2": 6.8,
+ "people_m2": 0.119,
+ "oa_per_area": 0.00051,
+ "zone_load_sigma": 0.28,
+ "zone_shifts": [
+  0
+ ],
+ "occ": {
+  "start": 7.7,
+  "end": 20.7,
+  "night_frac": 0.35,
+  "weekend_frac": 0.21
+ },
+ "setpoints": {
+  "heat": 21.0,
+  "cool": 22.6,
+  "heat_setback": 16.7,
+  "cool_setback": 26.9
+ },
+ "min_flow_frac": 0.31,
+ "heat_sizing_factor": 1.13,
+ "cool_sizing_factor": 1.27,
+ "group_mode": "stripe",
+ "group_sizes": [
+  2,
+  4,
+  2
+ ],
+ "sat_pattern": "mixed",
+ "ahu_sat": [
+  12.76,
+  12.6,
+  13.89
+ ],
+ "fan_dp": [
+  759.0,
+  468.0,
+  748.0
+ ],
+ "economizer": [
+  true,
+  true,
+  false
+ ],
+ "n_hw": 1,
+ "n_chw": 2,
+ "ahu_hw": [
+  0,
+  0,
+  0
+ ],
+ "ahu_chw": [
+  1,
+  1,
+  0
+ ],
+ "hw_t": [
+  63.1
+ ],
+ "hw_dt": [
+  16.8
+ ],
+ "chw_t": [
+  8.2,
+  5.7
+ ],
+ "chw_dt": [
+  4.2,
+  5.4
+ ],
+ "geometry_seed": 796230,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "arcata",
+  "temp_offset": -4.76,
+  "solar_scale": 1.062
+ },
+ "reheat": "hydronic",
+ "electric_zones": null,
+ "sat_strategy": [
+  "oa_reset",
+  "oa_reset",
+  "constant"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 10.3,
+   "oa_high": 19.5,
+   "span": 1.84
+  },
+  {
+   "oa_low": 11.9,
+   "oa_high": 24.2,
+   "span": 2.58
+  },
+  {
+   "oa_low": 11.5,
+   "oa_high": 24.2,
+   "span": 1.92
+  }
+ ],
+ "sp_reset": [
+  false,
+  true,
+  false
+ ],
+ "econ_type": [
+  "fixed_db",
+  "fixed_db",
+  "none"
+ ],
+ "econ_limit_db": [
+  25.5,
+  22.3,
+  21.9
+ ],
+ "econ_limit_enth": [
+  64695.0,
+  62066.0,
+  55414.0
+ ],
+ "min_oa_scale": 1.09,
+ "night_oa": 0.0,
+ "boiler_eff": 0.887,
+ "chiller_cop": 3.93,
+ "fan_eff": 0.568,
+ "sensor_level": "estimated",
+ "profile_seed": 188391,
+ "distractors": [],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

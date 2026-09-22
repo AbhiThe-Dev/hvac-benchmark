@@ -1,0 +1,132 @@
+{
+ "id": "dr_t2_06",
+ "role": "test",
+ "suite": "T2_regime",
+ "climate": "golden",
+ "n_ahu": 2,
+ "n_vav": 8,
+ "floors": 2,
+ "nx": 2,
+ "ny": 2,
+ "tile_w": 7.6,
+ "tile_d": 9.0,
+ "floor_h": 3.76,
+ "north_axis": 33.0,
+ "wwr": 0.32,
+ "infiltration": 0.00041,
+ "lights_wm2": 15.6,
+ "equip_wm2": 16.4,
+ "people_m2": 0.077,
+ "oa_per_area": 0.0001,
+ "zone_load_sigma": 0.17,
+ "zone_shifts": [
+  -1,
+  0,
+  1
+ ],
+ "occ": {
+  "start": 5.5,
+  "end": 18.3,
+  "night_frac": 0.19,
+  "weekend_frac": 0.6
+ },
+ "setpoints": {
+  "heat": 23.0,
+  "cool": 26.7,
+  "heat_setback": 19.3,
+  "cool_setback": 30.4
+ },
+ "min_flow_frac": 0.4,
+ "heat_sizing_factor": 1.27,
+ "cool_sizing_factor": 1.28,
+ "group_mode": "block",
+ "group_sizes": [
+  4,
+  4
+ ],
+ "sat_pattern": "all_twin",
+ "ahu_sat": [
+  15.24,
+  15.49
+ ],
+ "fan_dp": [
+  586.0,
+  870.0
+ ],
+ "economizer": [
+  false,
+  false
+ ],
+ "n_hw": 1,
+ "n_chw": 1,
+ "ahu_hw": [
+  0,
+  0
+ ],
+ "ahu_chw": [
+  0,
+  0
+ ],
+ "hw_t": [
+  74.0
+ ],
+ "hw_dt": [
+  23.6
+ ],
+ "chw_t": [
+  7.5
+ ],
+ "chw_dt": [
+  8.0
+ ],
+ "geometry_seed": 805856,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "golden",
+  "temp_offset": 0.84,
+  "solar_scale": 1.055
+ },
+ "reheat": "hydronic",
+ "electric_zones": null,
+ "sat_strategy": [
+  "oa_reset",
+  "oa_reset"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 5.3,
+   "oa_high": 20.5,
+   "span": 1.97
+  },
+  {
+   "oa_low": 9.9,
+   "oa_high": 20.1,
+   "span": 1.13
+  }
+ ],
+ "sp_reset": [
+  true,
+  false
+ ],
+ "econ_type": [
+  "none",
+  "none"
+ ],
+ "econ_limit_db": [
+  23.5,
+  19.3
+ ],
+ "econ_limit_enth": [
+  46575.0,
+  54088.0
+ ],
+ "min_oa_scale": 1.08,
+ "night_oa": 0.0,
+ "boiler_eff": 0.89,
+ "chiller_cop": 3.21,
+ "fan_eff": 0.592,
+ "sensor_level": "estimated",
+ "profile_seed": 719334,
+ "distractors": [],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

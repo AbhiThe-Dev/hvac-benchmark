@@ -1,0 +1,34 @@
+{
+  "vav_zone": {
+    "0": {
+      "slot": "vav_zone",
+      "k": 0,
+      "validated": true,
+      "point_bal_acc": 0.516398028710921,
+      "lb_bal_acc": 0.5001117796685368,
+      "n_days": 30,
+      "n_rows": 7646,
+      "reason": "ok"
+    },
+    "1": {
+      "slot": "vav_zone",
+      "k": 1,
+      "validated": true,
+      "point_bal_acc": 0.53306585740697,
+      "lb_bal_acc": 0.5228608168967012,
+      "n_days": 30,
+      "n_rows": 12442,
+      "reason": "ok"
+    },
+    "2": {
+      "slot": "vav_zone",
+      "k": 2,
+      "validated": false,
+      "point_bal_acc": 0.3221513169811977,
+      "lb_bal_acc": 0.3073834195617114,
+      "n_days": 30,
+      "n_rows": 7646,
+      "reason": "day-cluster lower-bound balanced accuracy 0.307 does not clear chance (0.5)"
+    }
+  }
+}

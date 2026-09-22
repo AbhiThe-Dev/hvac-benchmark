@@ -1,0 +1,140 @@
+{
+ "id": "dr_fx3_09",
+ "role": "train",
+ "suite": "full_x3",
+ "climate": "sacramento",
+ "n_ahu": 2,
+ "n_vav": 12,
+ "floors": 3,
+ "nx": 2,
+ "ny": 2,
+ "tile_w": 9.0,
+ "tile_d": 8.6,
+ "floor_h": 3.98,
+ "north_axis": 31.0,
+ "wwr": 0.44,
+ "infiltration": 0.00091,
+ "lights_wm2": 13.8,
+ "equip_wm2": 4.9,
+ "people_m2": 0.039,
+ "oa_per_area": 0.00077,
+ "zone_load_sigma": 0.36,
+ "zone_shifts": [
+  -1,
+  0,
+  1
+ ],
+ "occ": {
+  "start": 7.1,
+  "end": 20.3,
+  "night_frac": 0.3,
+  "weekend_frac": 0.24
+ },
+ "setpoints": {
+  "heat": 20.5,
+  "cool": 24.7,
+  "heat_setback": 17.4,
+  "cool_setback": 29.4
+ },
+ "min_flow_frac": 0.26,
+ "heat_sizing_factor": 1.1,
+ "cool_sizing_factor": 1.2,
+ "group_mode": "stripe",
+ "group_sizes": [
+  4,
+  8
+ ],
+ "sat_pattern": "mixed",
+ "ahu_sat": [
+  13.68,
+  13.59
+ ],
+ "fan_dp": [
+  680.0,
+  920.0
+ ],
+ "economizer": [
+  true,
+  false
+ ],
+ "n_hw": 2,
+ "n_chw": 1,
+ "ahu_hw": [
+  1,
+  0
+ ],
+ "ahu_chw": [
+  0,
+  0
+ ],
+ "hw_t": [
+  72.8,
+  72.5
+ ],
+ "hw_dt": [
+  13.8,
+  20.6
+ ],
+ "chw_t": [
+  8.5
+ ],
+ "chw_dt": [
+  5.0
+ ],
+ "geometry_seed": 317144,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "sacramento",
+  "temp_offset": -2.91,
+  "solar_scale": 1.106
+ },
+ "reheat": "electric",
+ "electric_zones": null,
+ "sat_strategy": [
+  "oa_reset",
+  "oa_reset"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 9.7,
+   "oa_high": 24.5,
+   "span": 2.95
+  },
+  {
+   "oa_low": 6.6,
+   "oa_high": 18.7,
+   "span": 3.03
+  }
+ ],
+ "sp_reset": [
+  false,
+  true
+ ],
+ "econ_type": [
+  "fixed_db",
+  "none"
+ ],
+ "econ_limit_db": [
+  19.6,
+  20.4
+ ],
+ "econ_limit_enth": [
+  63524.0,
+  56108.0
+ ],
+ "min_oa_scale": 1.78,
+ "night_oa": 0.07,
+ "boiler_eff": 0.904,
+ "chiller_cop": 3.99,
+ "fan_eff": 0.711,
+ "sensor_level": "wide",
+ "profile_seed": 643490,
+ "distractors": [
+  {
+   "type": "stuck_sensor",
+   "seed": 670291,
+   "window": null
+  }
+ ],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

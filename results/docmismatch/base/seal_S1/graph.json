@@ -1,0 +1,3072 @@
+{
+ "topology_id": "seal_S1",
+ "nodes": [
+  {
+   "id": "Zone-14",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 1",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 1",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "Zone-6",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 10",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 10",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "Zone-1",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 11",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 11",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "Zone-13",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 12",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 12",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "Zone-3",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 13",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 13",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "Zone-9",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 14",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 14",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "Zone-15",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 15",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 15",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "Zone-5",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 16",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 16",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "Zone-16",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 2",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 2",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "Zone-4",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 3",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 3",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "Zone-7",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 4",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 4",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "Zone-8",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 5",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 5",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "Zone-12",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 6",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 6",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "Zone-10",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 7",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 7",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "Zone-2",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 8",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 8",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "Zone-11",
+   "kind": "Zone",
+   "brick_type": "HVAC_Zone",
+   "os_name": "Thermal Zone 9",
+   "series": {
+    "temp": [
+     "var",
+     "THERMAL ZONE 9",
+     "Zone Mean Air Temperature"
+    ]
+   },
+   "story": "Story 1",
+   "floor_area_m2": 57.6
+  },
+  {
+   "id": "HWL-1",
+   "kind": "HWL",
+   "brick_type": "Hot_Water_Loop",
+   "os_name": "Hot Water Loop 1",
+   "series": {
+    "t_sup": [
+     "node",
+     "NODE 18",
+     "System Node Temperature"
+    ],
+    "t_ret": [
+     "node",
+     "NODE 17",
+     "System Node Temperature"
+    ],
+    "flow": [
+     "node",
+     "NODE 20",
+     "System Node Mass Flow Rate"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Pump-1",
+   "kind": "Pump",
+   "brick_type": "Hot_Water_Pump",
+   "os_name": "HW Pump 1",
+   "series": {
+    "flow": [
+     "var",
+     "HW PUMP 1",
+     "Pump Mass Flow Rate"
+    ],
+    "kw": [
+     "var",
+     "HW PUMP 1",
+     "Pump Electricity Rate"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Boiler-2",
+   "kind": "Boiler",
+   "brick_type": "Boiler",
+   "os_name": "HW Boiler 1",
+   "series": {
+    "rate": [
+     "var",
+     "HW BOILER 1",
+     "Boiler Heating Rate"
+    ],
+    "t_out": [
+     "var",
+     "HW BOILER 1",
+     "Boiler Outlet Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-22",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of AHU 1 Heating Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 71",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 71",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 72",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-19",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 1 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 77",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 77",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 78",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-7",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 2 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 81",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 81",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 82",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-4",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 5 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 86",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 86",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 87",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-18",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 6 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 91",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 91",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 92",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-16",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 9 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 96",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 96",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 97",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-2",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 13 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 101",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 101",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 102",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-10",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of AHU 3 Heating Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 138",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 138",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 139",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-21",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 7 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 144",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 144",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 145",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-6",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 11 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 148",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 148",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 149",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-23",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 15 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 153",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 153",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 154",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "HWL-2",
+   "kind": "HWL",
+   "brick_type": "Hot_Water_Loop",
+   "os_name": "Hot Water Loop 2",
+   "series": {
+    "t_sup": [
+     "node",
+     "NODE 30",
+     "System Node Temperature"
+    ],
+    "t_ret": [
+     "node",
+     "NODE 29",
+     "System Node Temperature"
+    ],
+    "flow": [
+     "node",
+     "NODE 32",
+     "System Node Mass Flow Rate"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Pump-4",
+   "kind": "Pump",
+   "brick_type": "Hot_Water_Pump",
+   "os_name": "HW Pump 2",
+   "series": {
+    "flow": [
+     "var",
+     "HW PUMP 2",
+     "Pump Mass Flow Rate"
+    ],
+    "kw": [
+     "var",
+     "HW PUMP 2",
+     "Pump Electricity Rate"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Boiler-1",
+   "kind": "Boiler",
+   "brick_type": "Boiler",
+   "os_name": "HW Boiler 2",
+   "series": {
+    "rate": [
+     "var",
+     "HW BOILER 2",
+     "Boiler Heating Rate"
+    ],
+    "t_out": [
+     "var",
+     "HW BOILER 2",
+     "Boiler Outlet Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-12",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of AHU 2 Heating Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 112",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 112",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 113",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-5",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 3 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 118",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 118",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 119",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-11",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 10 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 122",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 122",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 123",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-15",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 14 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 127",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 127",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 128",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "HWL-3",
+   "kind": "HWL",
+   "brick_type": "Hot_Water_Loop",
+   "os_name": "Hot Water Loop 3",
+   "series": {
+    "t_sup": [
+     "node",
+     "NODE 42",
+     "System Node Temperature"
+    ],
+    "t_ret": [
+     "node",
+     "NODE 41",
+     "System Node Temperature"
+    ],
+    "flow": [
+     "node",
+     "NODE 44",
+     "System Node Mass Flow Rate"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Pump-2",
+   "kind": "Pump",
+   "brick_type": "Hot_Water_Pump",
+   "os_name": "HW Pump 3",
+   "series": {
+    "flow": [
+     "var",
+     "HW PUMP 3",
+     "Pump Mass Flow Rate"
+    ],
+    "kw": [
+     "var",
+     "HW PUMP 3",
+     "Pump Electricity Rate"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Boiler-3",
+   "kind": "Boiler",
+   "brick_type": "Boiler",
+   "os_name": "HW Boiler 3",
+   "series": {
+    "rate": [
+     "var",
+     "HW BOILER 3",
+     "Boiler Heating Rate"
+    ],
+    "t_out": [
+     "var",
+     "HW BOILER 3",
+     "Boiler Outlet Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-8",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of AHU 4 Heating Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 164",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 164",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 165",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-20",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 4 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 170",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 170",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 171",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-24",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 8 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 174",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 174",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 175",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-3",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 12 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 179",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 179",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 180",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "Branch-17",
+   "kind": "Branch",
+   "brick_type": "Hot_Water_Valve",
+   "os_name": "branch of VAV Thermal Zone 16 Reheat Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 184",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 184",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 185",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "hot_water"
+  },
+  {
+   "id": "CHWL-1",
+   "kind": "CHWL",
+   "brick_type": "Chilled_Water_Loop",
+   "os_name": "Chilled Water Loop 1",
+   "series": {
+    "t_sup": [
+     "node",
+     "NODE 54",
+     "System Node Temperature"
+    ],
+    "t_ret": [
+     "node",
+     "NODE 53",
+     "System Node Temperature"
+    ],
+    "flow": [
+     "node",
+     "NODE 56",
+     "System Node Mass Flow Rate"
+    ]
+   },
+   "medium": "chilled_water"
+  },
+  {
+   "id": "Pump-3",
+   "kind": "Pump",
+   "brick_type": "Chilled_Water_Pump",
+   "os_name": "CHW Pump 1",
+   "series": {
+    "flow": [
+     "var",
+     "CHW PUMP 1",
+     "Pump Mass Flow Rate"
+    ],
+    "kw": [
+     "var",
+     "CHW PUMP 1",
+     "Pump Electricity Rate"
+    ]
+   },
+   "medium": "chilled_water"
+  },
+  {
+   "id": "Chiller-1",
+   "kind": "Chiller",
+   "brick_type": "Chiller",
+   "os_name": "CHW Chiller 1",
+   "series": {
+    "rate": [
+     "var",
+     "CHW CHILLER 1",
+     "Chiller Evaporator Cooling Rate"
+    ],
+    "t_out": [
+     "var",
+     "CHW CHILLER 1",
+     "Chiller Evaporator Outlet Temperature"
+    ]
+   },
+   "medium": "chilled_water"
+  },
+  {
+   "id": "Branch-1",
+   "kind": "Branch",
+   "brick_type": "Chilled_Water_Valve",
+   "os_name": "branch of AHU 1 Cooling Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 74",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 74",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 75",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "chilled_water"
+  },
+  {
+   "id": "Branch-14",
+   "kind": "Branch",
+   "brick_type": "Chilled_Water_Valve",
+   "os_name": "branch of AHU 2 Cooling Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 115",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 115",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 116",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "chilled_water"
+  },
+  {
+   "id": "Branch-13",
+   "kind": "Branch",
+   "brick_type": "Chilled_Water_Valve",
+   "os_name": "branch of AHU 3 Cooling Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 141",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 141",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 142",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "chilled_water"
+  },
+  {
+   "id": "Branch-9",
+   "kind": "Branch",
+   "brick_type": "Chilled_Water_Valve",
+   "os_name": "branch of AHU 4 Cooling Coil",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 167",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 167",
+     "System Node Temperature"
+    ],
+    "t_out": [
+     "node",
+     "NODE 168",
+     "System Node Temperature"
+    ]
+   },
+   "medium": "chilled_water"
+  },
+  {
+   "id": "AHU-2",
+   "kind": "AHU",
+   "brick_type": "AHU",
+   "os_name": "AHU 1",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 66",
+     "System Node Mass Flow Rate"
+    ],
+    "sat": [
+     "node",
+     "NODE 66",
+     "System Node Temperature"
+    ],
+    "mat": [
+     "node",
+     "NODE 70",
+     "System Node Temperature"
+    ]
+   }
+  },
+  {
+   "id": "Fan-3",
+   "kind": "Fan",
+   "brick_type": "Fan",
+   "os_name": "AHU 1 Fan",
+   "series": {
+    "kw": [
+     "var",
+     "AHU 1 FAN",
+     "Fan Electricity Rate"
+    ]
+   }
+  },
+  {
+   "id": "Coil-7",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "AHU 1 Heating Coil",
+   "series": {
+    "rate": [
+     "var",
+     "AHU 1 HEATING COIL",
+     "Heating Coil Heating Rate"
+    ],
+    "t_air_out": [
+     "node",
+     "NODE 76",
+     "System Node Temperature"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "Coil-11",
+   "kind": "Coil",
+   "brick_type": "Cooling_Coil",
+   "os_name": "AHU 1 Cooling Coil",
+   "series": {
+    "rate": [
+     "var",
+     "AHU 1 COOLING COIL",
+     "Cooling Coil Total Cooling Rate"
+    ],
+    "rate_s": [
+     "var",
+     "AHU 1 COOLING COIL",
+     "Cooling Coil Sensible Cooling Rate"
+    ],
+    "t_air_out": [
+     "node",
+     "NODE 66",
+     "System Node Temperature"
+    ]
+   },
+   "coil_type": "Coil_Cooling_Water",
+   "medium": "chilled_water"
+  },
+  {
+   "id": "SAT-2",
+   "kind": "SAT",
+   "brick_type": "Supply_Air_Temperature_Sensor",
+   "os_name": "AHU 1",
+   "series": {
+    "value": [
+     "node",
+     "NODE 66",
+     "System Node Temperature"
+    ]
+   },
+   "host": "AHU-2"
+  },
+  {
+   "id": "VAV-8",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 1",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 80",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 80",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 69",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 1 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-23",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 1 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 1 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-16",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 1",
+   "series": {
+    "value": [
+     "node",
+     "NODE 69",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-8"
+  },
+  {
+   "id": "VAV-2",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 2",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 85",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 85",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 83",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 2 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-18",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 2 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 2 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-15",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 2",
+   "series": {
+    "value": [
+     "node",
+     "NODE 83",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-2"
+  },
+  {
+   "id": "VAV-7",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 5",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 90",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 90",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 88",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 5 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-13",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 5 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 5 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-11",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 5",
+   "series": {
+    "value": [
+     "node",
+     "NODE 88",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-7"
+  },
+  {
+   "id": "VAV-12",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 6",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 95",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 95",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 93",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 6 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-19",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 6 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 6 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-7",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 6",
+   "series": {
+    "value": [
+     "node",
+     "NODE 93",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-12"
+  },
+  {
+   "id": "VAV-6",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 9",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 100",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 100",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 98",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 9 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-29",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 9 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 9 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-3",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 9",
+   "series": {
+    "value": [
+     "node",
+     "NODE 98",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-6"
+  },
+  {
+   "id": "VAV-16",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 13",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 105",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 105",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 103",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 13 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-4",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 13 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 13 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-14",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 13",
+   "series": {
+    "value": [
+     "node",
+     "NODE 103",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-16"
+  },
+  {
+   "id": "AHU-3",
+   "kind": "AHU",
+   "brick_type": "AHU",
+   "os_name": "AHU 2",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 107",
+     "System Node Mass Flow Rate"
+    ],
+    "sat": [
+     "node",
+     "NODE 107",
+     "System Node Temperature"
+    ],
+    "mat": [
+     "node",
+     "NODE 111",
+     "System Node Temperature"
+    ]
+   }
+  },
+  {
+   "id": "Fan-1",
+   "kind": "Fan",
+   "brick_type": "Fan",
+   "os_name": "AHU 2 Fan",
+   "series": {
+    "kw": [
+     "var",
+     "AHU 2 FAN",
+     "Fan Electricity Rate"
+    ]
+   }
+  },
+  {
+   "id": "Coil-21",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "AHU 2 Heating Coil",
+   "series": {
+    "rate": [
+     "var",
+     "AHU 2 HEATING COIL",
+     "Heating Coil Heating Rate"
+    ],
+    "t_air_out": [
+     "node",
+     "NODE 117",
+     "System Node Temperature"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "Coil-16",
+   "kind": "Coil",
+   "brick_type": "Cooling_Coil",
+   "os_name": "AHU 2 Cooling Coil",
+   "series": {
+    "rate": [
+     "var",
+     "AHU 2 COOLING COIL",
+     "Cooling Coil Total Cooling Rate"
+    ],
+    "rate_s": [
+     "var",
+     "AHU 2 COOLING COIL",
+     "Cooling Coil Sensible Cooling Rate"
+    ],
+    "t_air_out": [
+     "node",
+     "NODE 107",
+     "System Node Temperature"
+    ]
+   },
+   "coil_type": "Coil_Cooling_Water",
+   "medium": "chilled_water"
+  },
+  {
+   "id": "SAT-3",
+   "kind": "SAT",
+   "brick_type": "Supply_Air_Temperature_Sensor",
+   "os_name": "AHU 2",
+   "series": {
+    "value": [
+     "node",
+     "NODE 107",
+     "System Node Temperature"
+    ]
+   },
+   "host": "AHU-3"
+  },
+  {
+   "id": "VAV-10",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 3",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 121",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 121",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 110",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 3 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-33",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 3 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 3 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-1",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 3",
+   "series": {
+    "value": [
+     "node",
+     "NODE 110",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-10"
+  },
+  {
+   "id": "VAV-11",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 10",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 126",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 126",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 124",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 10 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-2",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 10 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 10 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-13",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 10",
+   "series": {
+    "value": [
+     "node",
+     "NODE 124",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-11"
+  },
+  {
+   "id": "VAV-15",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 14",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 131",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 131",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 129",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 14 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-22",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 14 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 14 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-10",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 14",
+   "series": {
+    "value": [
+     "node",
+     "NODE 129",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-15"
+  },
+  {
+   "id": "AHU-4",
+   "kind": "AHU",
+   "brick_type": "AHU",
+   "os_name": "AHU 3",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 133",
+     "System Node Mass Flow Rate"
+    ],
+    "sat": [
+     "node",
+     "NODE 133",
+     "System Node Temperature"
+    ],
+    "mat": [
+     "node",
+     "NODE 137",
+     "System Node Temperature"
+    ]
+   }
+  },
+  {
+   "id": "Fan-4",
+   "kind": "Fan",
+   "brick_type": "Fan",
+   "os_name": "AHU 3 Fan",
+   "series": {
+    "kw": [
+     "var",
+     "AHU 3 FAN",
+     "Fan Electricity Rate"
+    ]
+   }
+  },
+  {
+   "id": "Coil-1",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "AHU 3 Heating Coil",
+   "series": {
+    "rate": [
+     "var",
+     "AHU 3 HEATING COIL",
+     "Heating Coil Heating Rate"
+    ],
+    "t_air_out": [
+     "node",
+     "NODE 143",
+     "System Node Temperature"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "Coil-3",
+   "kind": "Coil",
+   "brick_type": "Cooling_Coil",
+   "os_name": "AHU 3 Cooling Coil",
+   "series": {
+    "rate": [
+     "var",
+     "AHU 3 COOLING COIL",
+     "Cooling Coil Total Cooling Rate"
+    ],
+    "rate_s": [
+     "var",
+     "AHU 3 COOLING COIL",
+     "Cooling Coil Sensible Cooling Rate"
+    ],
+    "t_air_out": [
+     "node",
+     "NODE 133",
+     "System Node Temperature"
+    ]
+   },
+   "coil_type": "Coil_Cooling_Water",
+   "medium": "chilled_water"
+  },
+  {
+   "id": "SAT-4",
+   "kind": "SAT",
+   "brick_type": "Supply_Air_Temperature_Sensor",
+   "os_name": "AHU 3",
+   "series": {
+    "value": [
+     "node",
+     "NODE 133",
+     "System Node Temperature"
+    ]
+   },
+   "host": "AHU-4"
+  },
+  {
+   "id": "VAV-1",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 7",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 147",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 147",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 136",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 7 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-9",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 7 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 7 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-8",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 7",
+   "series": {
+    "value": [
+     "node",
+     "NODE 136",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-1"
+  },
+  {
+   "id": "VAV-3",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 11",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 152",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 152",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 150",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 11 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-35",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 11 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 11 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-4",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 11",
+   "series": {
+    "value": [
+     "node",
+     "NODE 150",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-3"
+  },
+  {
+   "id": "VAV-14",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 15",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 157",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 157",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 155",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 15 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-31",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 15 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 15 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-5",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 15",
+   "series": {
+    "value": [
+     "node",
+     "NODE 155",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-14"
+  },
+  {
+   "id": "AHU-1",
+   "kind": "AHU",
+   "brick_type": "AHU",
+   "os_name": "AHU 4",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 159",
+     "System Node Mass Flow Rate"
+    ],
+    "sat": [
+     "node",
+     "NODE 159",
+     "System Node Temperature"
+    ],
+    "mat": [
+     "node",
+     "NODE 163",
+     "System Node Temperature"
+    ]
+   }
+  },
+  {
+   "id": "Fan-2",
+   "kind": "Fan",
+   "brick_type": "Fan",
+   "os_name": "AHU 4 Fan",
+   "series": {
+    "kw": [
+     "var",
+     "AHU 4 FAN",
+     "Fan Electricity Rate"
+    ]
+   }
+  },
+  {
+   "id": "Coil-37",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "AHU 4 Heating Coil",
+   "series": {
+    "rate": [
+     "var",
+     "AHU 4 HEATING COIL",
+     "Heating Coil Heating Rate"
+    ],
+    "t_air_out": [
+     "node",
+     "NODE 169",
+     "System Node Temperature"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "Coil-17",
+   "kind": "Coil",
+   "brick_type": "Cooling_Coil",
+   "os_name": "AHU 4 Cooling Coil",
+   "series": {
+    "rate": [
+     "var",
+     "AHU 4 COOLING COIL",
+     "Cooling Coil Total Cooling Rate"
+    ],
+    "rate_s": [
+     "var",
+     "AHU 4 COOLING COIL",
+     "Cooling Coil Sensible Cooling Rate"
+    ],
+    "t_air_out": [
+     "node",
+     "NODE 159",
+     "System Node Temperature"
+    ]
+   },
+   "coil_type": "Coil_Cooling_Water",
+   "medium": "chilled_water"
+  },
+  {
+   "id": "SAT-1",
+   "kind": "SAT",
+   "brick_type": "Supply_Air_Temperature_Sensor",
+   "os_name": "AHU 4",
+   "series": {
+    "value": [
+     "node",
+     "NODE 159",
+     "System Node Temperature"
+    ]
+   },
+   "host": "AHU-1"
+  },
+  {
+   "id": "VAV-9",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 4",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 173",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 173",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 162",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 4 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-25",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 4 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 4 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-2",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 4",
+   "series": {
+    "value": [
+     "node",
+     "NODE 162",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-9"
+  },
+  {
+   "id": "VAV-5",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 8",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 178",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 178",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 176",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 8 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-36",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 8 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 8 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-12",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 8",
+   "series": {
+    "value": [
+     "node",
+     "NODE 176",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-5"
+  },
+  {
+   "id": "VAV-4",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 12",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 183",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 183",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 181",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 12 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-5",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 12 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 12 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-6",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 12",
+   "series": {
+    "value": [
+     "node",
+     "NODE 181",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-4"
+  },
+  {
+   "id": "VAV-13",
+   "kind": "VAV",
+   "brick_type": "VAV",
+   "os_name": "VAV Thermal Zone 16",
+   "series": {
+    "flow": [
+     "node",
+     "NODE 188",
+     "System Node Mass Flow Rate"
+    ],
+    "t_in": [
+     "node",
+     "NODE 188",
+     "System Node Temperature"
+    ],
+    "t_dis": [
+     "node",
+     "NODE 186",
+     "System Node Temperature"
+    ],
+    "reheat": [
+     "var",
+     "VAV THERMAL ZONE 16 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "terminal_type": "AirTerminal_SingleDuct_VAV_Reheat"
+  },
+  {
+   "id": "Coil-8",
+   "kind": "Coil",
+   "brick_type": "Heating_Coil",
+   "os_name": "VAV Thermal Zone 16 Reheat Coil",
+   "series": {
+    "rate": [
+     "var",
+     "VAV THERMAL ZONE 16 REHEAT COIL",
+     "Heating Coil Heating Rate"
+    ]
+   },
+   "coil_type": "Coil_Heating_Water",
+   "medium": "hot_water"
+  },
+  {
+   "id": "DAT-9",
+   "kind": "DAT",
+   "brick_type": "Discharge_Air_Temperature_Sensor",
+   "os_name": "VAV Thermal Zone 16",
+   "series": {
+    "value": [
+     "node",
+     "NODE 186",
+     "System Node Temperature"
+    ]
+   },
+   "host": "VAV-13"
+  },
+  {
+   "id": "ENV",
+   "kind": "Weather",
+   "brick_type": "Weather_Station",
+   "os_name": "outdoor",
+   "series": {
+    "oat": [
+     "var",
+     "ENVIRONMENT",
+     "Site Outdoor Air Drybulb Temperature"
+    ]
+   }
+  }
+ ],
+ "edges": [
+  {
+   "src": "HWL-1",
+   "dst": "Pump-1",
+   "rel": "hasPart"
+  },
+  {
+   "src": "HWL-1",
+   "dst": "Boiler-2",
+   "rel": "hasPart"
+  },
+  {
+   "src": "HWL-1",
+   "dst": "Branch-22",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-1",
+   "dst": "Branch-19",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-1",
+   "dst": "Branch-7",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-1",
+   "dst": "Branch-4",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-1",
+   "dst": "Branch-18",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-1",
+   "dst": "Branch-16",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-1",
+   "dst": "Branch-2",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-1",
+   "dst": "Branch-10",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-1",
+   "dst": "Branch-21",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-1",
+   "dst": "Branch-6",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-1",
+   "dst": "Branch-23",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-2",
+   "dst": "Pump-4",
+   "rel": "hasPart"
+  },
+  {
+   "src": "HWL-2",
+   "dst": "Boiler-1",
+   "rel": "hasPart"
+  },
+  {
+   "src": "HWL-2",
+   "dst": "Branch-12",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-2",
+   "dst": "Branch-5",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-2",
+   "dst": "Branch-11",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-2",
+   "dst": "Branch-15",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-3",
+   "dst": "Pump-2",
+   "rel": "hasPart"
+  },
+  {
+   "src": "HWL-3",
+   "dst": "Boiler-3",
+   "rel": "hasPart"
+  },
+  {
+   "src": "HWL-3",
+   "dst": "Branch-8",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-3",
+   "dst": "Branch-20",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-3",
+   "dst": "Branch-24",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-3",
+   "dst": "Branch-3",
+   "rel": "feeds"
+  },
+  {
+   "src": "HWL-3",
+   "dst": "Branch-17",
+   "rel": "feeds"
+  },
+  {
+   "src": "CHWL-1",
+   "dst": "Pump-3",
+   "rel": "hasPart"
+  },
+  {
+   "src": "CHWL-1",
+   "dst": "Chiller-1",
+   "rel": "hasPart"
+  },
+  {
+   "src": "CHWL-1",
+   "dst": "Branch-1",
+   "rel": "feeds"
+  },
+  {
+   "src": "CHWL-1",
+   "dst": "Branch-14",
+   "rel": "feeds"
+  },
+  {
+   "src": "CHWL-1",
+   "dst": "Branch-13",
+   "rel": "feeds"
+  },
+  {
+   "src": "CHWL-1",
+   "dst": "Branch-9",
+   "rel": "feeds"
+  },
+  {
+   "src": "Fan-3",
+   "dst": "AHU-2",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Coil-7",
+   "dst": "AHU-2",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-22",
+   "dst": "Coil-7",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-11",
+   "dst": "AHU-2",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-1",
+   "dst": "Coil-11",
+   "rel": "feeds"
+  },
+  {
+   "src": "AHU-2",
+   "dst": "SAT-2",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-2",
+   "dst": "VAV-8",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-8",
+   "dst": "Zone-14",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-23",
+   "dst": "VAV-8",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-19",
+   "dst": "Coil-23",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-8",
+   "dst": "DAT-16",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-2",
+   "dst": "VAV-2",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-2",
+   "dst": "Zone-16",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-18",
+   "dst": "VAV-2",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-7",
+   "dst": "Coil-18",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-2",
+   "dst": "DAT-15",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-2",
+   "dst": "VAV-7",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-7",
+   "dst": "Zone-8",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-13",
+   "dst": "VAV-7",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-4",
+   "dst": "Coil-13",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-7",
+   "dst": "DAT-11",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-2",
+   "dst": "VAV-12",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-12",
+   "dst": "Zone-12",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-19",
+   "dst": "VAV-12",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-18",
+   "dst": "Coil-19",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-12",
+   "dst": "DAT-7",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-2",
+   "dst": "VAV-6",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-6",
+   "dst": "Zone-11",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-29",
+   "dst": "VAV-6",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-16",
+   "dst": "Coil-29",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-6",
+   "dst": "DAT-3",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-2",
+   "dst": "VAV-16",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-16",
+   "dst": "Zone-3",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-4",
+   "dst": "VAV-16",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-2",
+   "dst": "Coil-4",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-16",
+   "dst": "DAT-14",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "Fan-1",
+   "dst": "AHU-3",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Coil-21",
+   "dst": "AHU-3",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-12",
+   "dst": "Coil-21",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-16",
+   "dst": "AHU-3",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-14",
+   "dst": "Coil-16",
+   "rel": "feeds"
+  },
+  {
+   "src": "AHU-3",
+   "dst": "SAT-3",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-3",
+   "dst": "VAV-10",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-10",
+   "dst": "Zone-4",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-33",
+   "dst": "VAV-10",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-5",
+   "dst": "Coil-33",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-10",
+   "dst": "DAT-1",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-3",
+   "dst": "VAV-11",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-11",
+   "dst": "Zone-6",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-2",
+   "dst": "VAV-11",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-11",
+   "dst": "Coil-2",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-11",
+   "dst": "DAT-13",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-3",
+   "dst": "VAV-15",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-15",
+   "dst": "Zone-9",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-22",
+   "dst": "VAV-15",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-15",
+   "dst": "Coil-22",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-15",
+   "dst": "DAT-10",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "Fan-4",
+   "dst": "AHU-4",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Coil-1",
+   "dst": "AHU-4",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-10",
+   "dst": "Coil-1",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-3",
+   "dst": "AHU-4",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-13",
+   "dst": "Coil-3",
+   "rel": "feeds"
+  },
+  {
+   "src": "AHU-4",
+   "dst": "SAT-4",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-4",
+   "dst": "VAV-1",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-1",
+   "dst": "Zone-10",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-9",
+   "dst": "VAV-1",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-21",
+   "dst": "Coil-9",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-1",
+   "dst": "DAT-8",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-4",
+   "dst": "VAV-3",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-3",
+   "dst": "Zone-1",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-35",
+   "dst": "VAV-3",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-6",
+   "dst": "Coil-35",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-3",
+   "dst": "DAT-4",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-4",
+   "dst": "VAV-14",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-14",
+   "dst": "Zone-15",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-31",
+   "dst": "VAV-14",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-23",
+   "dst": "Coil-31",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-14",
+   "dst": "DAT-5",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "Fan-2",
+   "dst": "AHU-1",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Coil-37",
+   "dst": "AHU-1",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-8",
+   "dst": "Coil-37",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-17",
+   "dst": "AHU-1",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-9",
+   "dst": "Coil-17",
+   "rel": "feeds"
+  },
+  {
+   "src": "AHU-1",
+   "dst": "SAT-1",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-1",
+   "dst": "VAV-9",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-9",
+   "dst": "Zone-7",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-25",
+   "dst": "VAV-9",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-20",
+   "dst": "Coil-25",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-9",
+   "dst": "DAT-2",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-1",
+   "dst": "VAV-5",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-5",
+   "dst": "Zone-2",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-36",
+   "dst": "VAV-5",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-24",
+   "dst": "Coil-36",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-5",
+   "dst": "DAT-12",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-1",
+   "dst": "VAV-4",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-4",
+   "dst": "Zone-13",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-5",
+   "dst": "VAV-4",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-3",
+   "dst": "Coil-5",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-4",
+   "dst": "DAT-6",
+   "rel": "hasPoint"
+  },
+  {
+   "src": "AHU-1",
+   "dst": "VAV-13",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-13",
+   "dst": "Zone-5",
+   "rel": "feeds"
+  },
+  {
+   "src": "Coil-8",
+   "dst": "VAV-13",
+   "rel": "hasPart"
+  },
+  {
+   "src": "Branch-17",
+   "dst": "Coil-8",
+   "rel": "feeds"
+  },
+  {
+   "src": "VAV-13",
+   "dst": "DAT-9",
+   "rel": "hasPoint"
+  }
+ ]
+}

@@ -1,0 +1,186 @@
+{
+ "all_lb0.90": {
+  "coverage": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "acc": [
+   null,
+   null,
+   null
+  ],
+  "status": "insufficient",
+  "C3": "FAIL",
+  "C4": "PASS",
+  "c4_viol": 0,
+  "n_cells_notpass": 12,
+  "c1": {
+   "random": null,
+   "traversal_block": null,
+   "traversal": null,
+   "frozen": null
+  }
+ },
+ "all_lb0.85": {
+  "coverage": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "acc": [
+   null,
+   null,
+   null
+  ],
+  "status": "insufficient",
+  "C3": "FAIL",
+  "C4": "PASS",
+  "c4_viol": 0,
+  "n_cells_notpass": 12,
+  "c1": {
+   "random": null,
+   "traversal_block": null,
+   "traversal": null,
+   "frozen": null
+  }
+ },
+ "all_nominal0.93_lb0.85": {
+  "coverage": [
+   0.003148148148148148,
+   0.0007407407407407407,
+   0.005925925925925926
+  ],
+  "acc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "status": "PASS",
+  "C3": "FAIL",
+  "C4": "PASS",
+  "c4_viol": 0,
+  "n_cells_notpass": 11,
+  "c1": {
+   "random": null,
+   "traversal_block": null,
+   "traversal": null,
+   "frozen": "FAIL"
+  }
+ },
+ "core_lb0.90": {
+  "coverage": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "acc": [
+   null,
+   null,
+   null
+  ],
+  "status": "insufficient",
+  "C3": "FAIL",
+  "C4": "PASS",
+  "c4_viol": 0,
+  "n_cells_notpass": 12,
+  "c1": {
+   "random": null,
+   "traversal_block": null,
+   "traversal": null,
+   "frozen": null
+  }
+ },
+ "margin_only": {
+  "coverage": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "acc": [
+   null,
+   null,
+   null
+  ],
+  "status": "insufficient",
+  "C3": "FAIL",
+  "C4": "PASS",
+  "c4_viol": 0,
+  "n_cells_notpass": 12,
+  "c1": {
+   "random": null,
+   "traversal_block": null,
+   "traversal": null,
+   "frozen": null
+  }
+ },
+ "all_perslot_off": {
+  "coverage": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "acc": [
+   null,
+   null,
+   null
+  ],
+  "status": "insufficient",
+  "C3": "FAIL",
+  "C4": "PASS",
+  "c4_viol": 0,
+  "n_cells_notpass": 12,
+  "c1": {
+   "random": null,
+   "traversal_block": null,
+   "traversal": null,
+   "frozen": null
+  }
+ },
+ "all_q0.2": {
+  "coverage": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "acc": [
+   null,
+   null,
+   null
+  ],
+  "status": "insufficient",
+  "C3": "FAIL",
+  "C4": "PASS",
+  "c4_viol": 0,
+  "n_cells_notpass": 12,
+  "c1": {
+   "random": null,
+   "traversal_block": null,
+   "traversal": null,
+   "frozen": null
+  }
+ },
+ "all_lam30": {
+  "coverage": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "acc": [
+   null,
+   null,
+   null
+  ],
+  "status": "insufficient",
+  "C3": "FAIL",
+  "C4": "PASS",
+  "c4_viol": 0,
+  "n_cells_notpass": 12,
+  "c1": {
+   "random": null,
+   "traversal_block": null,
+   "traversal": null,
+   "frozen": null
+  }
+ }
+}

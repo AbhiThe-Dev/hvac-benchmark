@@ -1,0 +1,150 @@
+{
+ "id": "dr_t3_01",
+ "role": "test",
+ "suite": "T3_control",
+ "climate": "los_angeles",
+ "n_ahu": 3,
+ "n_vav": 9,
+ "floors": 1,
+ "nx": 3,
+ "ny": 3,
+ "tile_w": 7.1,
+ "tile_d": 7.2,
+ "floor_h": 3.93,
+ "north_axis": 49.0,
+ "wwr": 0.17,
+ "infiltration": 0.00098,
+ "lights_wm2": 9.6,
+ "equip_wm2": 3.6,
+ "people_m2": 0.1,
+ "oa_per_area": 0.00069,
+ "zone_load_sigma": 0.38,
+ "zone_shifts": [
+  -1,
+  0,
+  1
+ ],
+ "occ": {
+  "start": 9.8,
+  "end": 19.1,
+  "night_frac": 0.03,
+  "weekend_frac": 0.15
+ },
+ "setpoints": {
+  "heat": 22.5,
+  "cool": 26.6,
+  "heat_setback": 16.7,
+  "cool_setback": 30.3
+ },
+ "min_flow_frac": 0.28,
+ "heat_sizing_factor": 1.34,
+ "cool_sizing_factor": 1.34,
+ "group_mode": "stripe",
+ "group_sizes": [
+  2,
+  4,
+  3
+ ],
+ "sat_pattern": "mixed",
+ "ahu_sat": [
+  15.18,
+  15.29,
+  14.04
+ ],
+ "fan_dp": [
+  393.0,
+  521.0,
+  358.0
+ ],
+ "economizer": [
+  true,
+  true,
+  true
+ ],
+ "n_hw": 1,
+ "n_chw": 2,
+ "ahu_hw": [
+  0,
+  0,
+  0
+ ],
+ "ahu_chw": [
+  0,
+  1,
+  1
+ ],
+ "hw_t": [
+  69.5
+ ],
+ "hw_dt": [
+  17.7
+ ],
+ "chw_t": [
+  5.6,
+  8.0
+ ],
+ "chw_dt": [
+  6.8,
+  6.2
+ ],
+ "geometry_seed": 801363,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "los_angeles",
+  "temp_offset": 2.79,
+  "solar_scale": 0.893
+ },
+ "reheat": "hydronic",
+ "electric_zones": null,
+ "sat_strategy": [
+  "tod_reset",
+  "tod_reset",
+  "tod_reset"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 9.3,
+   "oa_high": 24.9,
+   "span": 3.75
+  },
+  {
+   "oa_low": 5.9,
+   "oa_high": 21.8,
+   "span": 2.94
+  },
+  {
+   "oa_low": 9.2,
+   "oa_high": 19.1,
+   "span": 1.37
+  }
+ ],
+ "sp_reset": [
+  true,
+  false,
+  false
+ ],
+ "econ_type": [
+  "diff_db",
+  "diff_enth",
+  "diff_db"
+ ],
+ "econ_limit_db": [
+  21.5,
+  19.0,
+  22.2
+ ],
+ "econ_limit_enth": [
+  53270.0,
+  54310.0,
+  59304.0
+ ],
+ "min_oa_scale": 1.25,
+ "night_oa": 0.0,
+ "boiler_eff": 0.786,
+ "chiller_cop": 5.57,
+ "fan_eff": 0.591,
+ "sensor_level": "estimated",
+ "profile_seed": 7221,
+ "distractors": [],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

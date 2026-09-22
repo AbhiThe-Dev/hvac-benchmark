@@ -1,0 +1,10 @@
+{
+ "returncode": 0,
+ "severe": 0,
+ "fatal": 0,
+ "seconds": 14.9,
+ "climate": "dr_t5_01_wx",
+ "ok": true,
+ "n_hours": 8760,
+ "n_series": 151
+}

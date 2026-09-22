@@ -39,7 +39,9 @@ no archive is ever downloaded in full. See
 
 Nine Brick files are extracted across the eight archives (one archive
 contains both a simulated- and an experimental-system model, kept as
-separate, separately-labeled configurations rather than merged). File
+separate, separately-labeled configurations rather than merged). Only one
+of the nine (`rtu_exp`) describes a real physical system; the rest are
+simulation models (evidence in `graph/building_grouping.py`). File
 checksums, source URLs, license/citation metadata, and the file-to-building
 grouping evidence are written to `results/provenance.json` and
 `results/file_to_building.json` on every run.
@@ -138,7 +140,8 @@ results/       Generated on each run (not committed)
 
 ## Limitations (see also `results/results.md`)
 
-- Real-topology count is small (a handful of distinct LBNL testbeds); this
+- Real-topology count is small (**one** real LBNL testbed; the other
+  eight LBNL files are simulation models, see `graph/building_grouping.py`); this
   is a case study, not a statistically powered benchmark, and 30 seeds are
   variability *within* a topology, not additional buildings.
 - Closed-world approximation: unasserted relationships are treated as
@@ -146,3 +149,51 @@ results/       Generated on each run (not committed)
   can still omit real, physically-present connections.
 - The traversal-heuristic baseline encodes a modeled assumption about
   unaided search order, not observed technician behavior.
+
+## Self-supervised connection pretraining (`hvac_benchmark.pretrain`)
+
+Learns a reusable "what does a plausible HVAC connection look like"
+representation from the real, unlabeled corpus (45 MORTAR buildings + the ORNL
+FRP `rtu_exp` testbed = 46 real systems; no fault labels). Needs the optional torch extra: `uv sync --extra pretrain`.
+
+```
+uv run hvac-pretrain --folds 5 --epochs 40 --out-dir results/pretrain
+```
+
+**Task.** Hide 20% of each building's `feeds` / `hasPart` / `hasPoint` edges
+(from message passing and degree features too), encode the remainder with a
+2-layer relational GNN over Brick class-hierarchy features, and train to rank
+each hidden edge above corrupted ones (half same-Brick-class "hard" negatives,
+half same-category negatives; true edges never used as negatives).
+
+**Corpus.** Only systems confirmed physical are "real": the 45 MORTAR
+buildings and `rtu_exp` (ORNL's Flexible Research Platform, a lab testbed).
+The other seven LBNL files (`sdahu`, `ddahu`, `rtu_sim`, `fcu`, `pfpu`, `sfpu`,
+`chiller_plant`, `boiler_plant`) are simulation models per the documentation
+inside each Figshare archive; the evidence is tabulated in
+`graph/building_grouping.py`. `--include-simulated` adds them to *training
+only* as a labeled ablation; evaluation is always on real held-out
+buildings. Duplicates (`mortar_bldg30` == `mortar_smc`, `pfpu` == `sfpu`) are
+found by WL hash and always share a CV fold.
+
+**Outputs** (`results/pretrain/`): `encoder/` (weights, config, vocab,
+metadata), `node_embeddings.npz`, `cv_report.json`, `cv_summary.txt`.
+
+**Reuse.**
+
+```python
+from hvac_benchmark.pretrain.model import load_pretrained
+from hvac_benchmark.pretrain.data import example_from_topology
+
+model = load_pretrained("results/pretrain/encoder")
+ex = example_from_topology(topology_graph, ontology, model.vocab, rdf_graph)  # rdf_graph optional
+h = model.encode(ex)                                # (N, 64) node embeddings
+logit = model.score(h, src_idx, dst_idx, rel=0)     # rel index into pretrain.data.RELATIONS
+feats = model.edge_features(h, src_idx, dst_idx)    # (E, 256) for a downstream classifier
+```
+
+**Evaluation** is grouped 5-fold over buildings (train on other buildings,
+score held-out ones) against a type-pair-frequency baseline and random, with
+exact tie-aware metrics. `within_type` ranks only among nodes of the true
+endpoint's Brick class, isolating structure from class compatibility.
+See the module docstring in `pretrain/evaluate.py`.

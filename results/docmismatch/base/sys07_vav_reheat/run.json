@@ -1,0 +1,10 @@
+{
+ "returncode": 0,
+ "severe": 0,
+ "fatal": 0,
+ "seconds": 6.9,
+ "climate": "chicago",
+ "ok": true,
+ "n_hours": 8760,
+ "n_series": 131
+}

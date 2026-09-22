@@ -1,0 +1,10 @@
+{
+ "returncode": 0,
+ "severe": 0,
+ "fatal": 0,
+ "seconds": 19.4,
+ "climate": "dr_fx3_14_wx",
+ "ok": true,
+ "n_hours": 8760,
+ "n_series": 183
+}

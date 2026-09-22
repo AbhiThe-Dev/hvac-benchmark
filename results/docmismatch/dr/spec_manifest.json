@@ -1,0 +1,114 @@
+{
+ "spec_sha256": "7d63d3c260dff060d40878027622e33cfe590491f65c811201e2af342e7806d8",
+ "written_utc": "2026-09-21T22:43:30Z",
+ "spec_py_sha256": "bb384c46fb6001500ec5cf9511ef88cc49878742268799ef0d3ab9df7dc00382",
+ "status": "spec_written_before_any_dr_simulation",
+ "suites": {
+  "T1_in_range": [
+   "dr_t1_00",
+   "dr_t1_01",
+   "dr_t1_02",
+   "dr_t1_03",
+   "dr_t1_04",
+   "dr_t1_05",
+   "dr_t1_06",
+   "dr_t1_07"
+  ],
+  "T2_regime": [
+   "dr_t2_00",
+   "dr_t2_01",
+   "dr_t2_02",
+   "dr_t2_03",
+   "dr_t2_04",
+   "dr_t2_05",
+   "dr_t2_06",
+   "dr_t2_07"
+  ],
+  "T3_control": [
+   "dr_t3_00",
+   "dr_t3_01",
+   "dr_t3_02",
+   "dr_t3_03",
+   "dr_t3_04",
+   "dr_t3_05",
+   "dr_t3_06",
+   "dr_t3_07"
+  ],
+  "T4_topology": [
+   "dr_t4_00",
+   "dr_t4_01",
+   "dr_t4_02",
+   "dr_t4_03",
+   "dr_t4_04",
+   "dr_t4_05",
+   "dr_t4_06",
+   "dr_t4_07"
+  ],
+  "T5_climate": [
+   "dr_t5_00",
+   "dr_t5_01",
+   "dr_t5_02",
+   "dr_t5_03",
+   "dr_t5_04",
+   "dr_t5_05",
+   "dr_t5_06",
+   "dr_t5_07"
+  ],
+  "T6_compound": [
+   "dr_t6_00",
+   "dr_t6_01",
+   "dr_t6_02",
+   "dr_t6_03",
+   "dr_t6_04",
+   "dr_t6_05",
+   "dr_t6_06",
+   "dr_t6_07"
+  ],
+  "full": [
+   "dr_ful_00",
+   "dr_ful_01",
+   "dr_ful_02",
+   "dr_ful_03",
+   "dr_ful_04",
+   "dr_ful_05",
+   "dr_ful_06",
+   "dr_ful_07"
+  ],
+  "full_x3": [
+   "dr_fx3_00",
+   "dr_fx3_01",
+   "dr_fx3_02",
+   "dr_fx3_03",
+   "dr_fx3_04",
+   "dr_fx3_05",
+   "dr_fx3_06",
+   "dr_fx3_07",
+   "dr_fx3_08",
+   "dr_fx3_09",
+   "dr_fx3_10",
+   "dr_fx3_11",
+   "dr_fx3_12",
+   "dr_fx3_13",
+   "dr_fx3_14",
+   "dr_fx3_15",
+   "dr_fx3_16",
+   "dr_fx3_17",
+   "dr_fx3_18",
+   "dr_fx3_19",
+   "dr_fx3_20",
+   "dr_fx3_21",
+   "dr_fx3_22",
+   "dr_fx3_23"
+  ],
+  "regime": [
+   "dr_reg_00",
+   "dr_reg_01",
+   "dr_reg_02",
+   "dr_reg_03",
+   "dr_reg_04",
+   "dr_reg_05",
+   "dr_reg_06",
+   "dr_reg_07"
+  ]
+ }
+}

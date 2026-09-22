@@ -1,0 +1,114 @@
+{
+ "id": "dr_reg_04",
+ "role": "train",
+ "suite": "regime",
+ "climate": "los_angeles",
+ "n_ahu": 1,
+ "n_vav": 8,
+ "floors": 2,
+ "nx": 2,
+ "ny": 2,
+ "tile_w": 6.5,
+ "tile_d": 9.8,
+ "floor_h": 3.66,
+ "north_axis": 68.0,
+ "wwr": 0.18,
+ "infiltration": 0.00032,
+ "lights_wm2": 13.7,
+ "equip_wm2": 15.5,
+ "people_m2": 0.106,
+ "oa_per_area": 7e-05,
+ "zone_load_sigma": 0.29,
+ "zone_shifts": [
+  0
+ ],
+ "occ": {
+  "start": 8.3,
+  "end": 16.9,
+  "night_frac": 0.2,
+  "weekend_frac": 0.4
+ },
+ "setpoints": {
+  "heat": 22.1,
+  "cool": 26.1,
+  "heat_setback": 17.9,
+  "cool_setback": 29.4
+ },
+ "min_flow_frac": 0.3,
+ "heat_sizing_factor": 1.26,
+ "cool_sizing_factor": 1.01,
+ "group_mode": "block",
+ "group_sizes": [
+  8
+ ],
+ "sat_pattern": "single",
+ "ahu_sat": [
+  14.81
+ ],
+ "fan_dp": [
+  924.0
+ ],
+ "economizer": [
+  true
+ ],
+ "n_hw": 1,
+ "n_chw": 1,
+ "ahu_hw": [
+  0
+ ],
+ "ahu_chw": [
+  0
+ ],
+ "hw_t": [
+  80.0
+ ],
+ "hw_dt": [
+  19.7
+ ],
+ "chw_t": [
+  6.4
+ ],
+ "chw_dt": [
+  4.7
+ ],
+ "geometry_seed": 513764,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "los_angeles",
+  "temp_offset": -1.54,
+  "solar_scale": 0.918
+ },
+ "reheat": "hydronic",
+ "electric_zones": null,
+ "sat_strategy": [
+  "oa_reset"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 5.9,
+   "oa_high": 20.9,
+   "span": 2.91
+  }
+ ],
+ "sp_reset": [
+  true
+ ],
+ "econ_type": [
+  "fixed_enth"
+ ],
+ "econ_limit_db": [
+  21.6
+ ],
+ "econ_limit_enth": [
+  57353.0
+ ],
+ "min_oa_scale": 0.7,
+ "night_oa": 0.0,
+ "boiler_eff": 0.903,
+ "chiller_cop": 3.16,
+ "fan_eff": 0.692,
+ "sensor_level": "legacy",
+ "profile_seed": 626601,
+ "distractors": [],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

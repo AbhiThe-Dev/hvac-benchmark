@@ -1,0 +1,9 @@
+# Is vav_zone's zero real-DEV honest coverage fixable? (Addendum 6)
+
+sim-calibrated beta = 0.1; real-calibrated beta (pooled, 8 repeats x 4 seasons) = 0.35 -- essentially the same value (loss curve is flat near the sim-calibrated point and rises sharply above beta=1), so tempering is NOT the bottleneck: the current calibration already transfers reasonably.
+
+Unlimited reading budget within ONE visit day (random order, no EIG bias): max |p-0.5| across 200 episodes = 0.102 -- the posterior never even reaches 0.8 confidence, let alone 0.95, no matter how much of that day's evidence is read. NOT a budget problem.
+
+Pooling ALL 32 real DEV days for the SAME candidate pair (far more evidence than any realistic single visit): max |p-0.5| across 100 pairs = 0.348 (7% reach 0.8 confidence) -- real, measurable improvement over one day, but STILL zero pairs reach 0.95 even with the entire real DEV dataset.
+
+**Conclusion: none of the three standard levers (confidence tempering, reading budget, evidence-window length) fixes this. The honest-confidence layer's refusal to answer `vav_zone` cases on real data is CORRECT, not a defect -- the evidence itself (without true per-box airflow) does not carry enough signal to support a 95%-confidence verdict, regardless of how much of it is available. This is the same shape of limit as a weak-biomarker diagnostic test or a degraded forensic sample against a large suspect pool: per-observation information too low relative to the hypothesis space, fixable only by better evidence or a smaller hypothesis space, never by more of the same weak evidence. It directly supports, rather than substitutes for, Addendum 5's missing-measurement recommendation.**

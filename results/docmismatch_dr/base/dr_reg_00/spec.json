@@ -1,0 +1,134 @@
+{
+ "id": "dr_reg_00",
+ "role": "train",
+ "suite": "regime",
+ "climate": "chicago_tmy3",
+ "n_ahu": 2,
+ "n_vav": 6,
+ "floors": 1,
+ "nx": 2,
+ "ny": 3,
+ "tile_w": 7.9,
+ "tile_d": 8.0,
+ "floor_h": 3.64,
+ "north_axis": 14.0,
+ "wwr": 0.42,
+ "infiltration": 0.00031,
+ "lights_wm2": 15.3,
+ "equip_wm2": 10.4,
+ "people_m2": 0.059,
+ "oa_per_area": 0.00064,
+ "zone_load_sigma": 0.39,
+ "zone_shifts": [
+  0
+ ],
+ "occ": {
+  "start": 9.6,
+  "end": 22.0,
+  "night_frac": 0.23,
+  "weekend_frac": 0.22
+ },
+ "setpoints": {
+  "heat": 21.1,
+  "cool": 22.9,
+  "heat_setback": 16.1,
+  "cool_setback": 27.7
+ },
+ "min_flow_frac": 0.33,
+ "heat_sizing_factor": 1.25,
+ "cool_sizing_factor": 1.08,
+ "group_mode": "block",
+ "group_sizes": [
+  3,
+  3
+ ],
+ "sat_pattern": "mixed",
+ "ahu_sat": [
+  14.26,
+  14.47
+ ],
+ "fan_dp": [
+  444.0,
+  392.0
+ ],
+ "economizer": [
+  false,
+  true
+ ],
+ "n_hw": 2,
+ "n_chw": 2,
+ "ahu_hw": [
+  0,
+  1
+ ],
+ "ahu_chw": [
+  1,
+  0
+ ],
+ "hw_t": [
+  81.4,
+  64.1
+ ],
+ "hw_dt": [
+  19.4,
+  14.0
+ ],
+ "chw_t": [
+  6.9,
+  5.5
+ ],
+ "chw_dt": [
+  7.6,
+  5.0
+ ],
+ "geometry_seed": 691857,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "chicago_tmy3",
+  "temp_offset": 3.36,
+  "solar_scale": 0.85
+ },
+ "reheat": "hydronic",
+ "electric_zones": null,
+ "sat_strategy": [
+  "constant",
+  "constant"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 6.2,
+   "oa_high": 19.6,
+   "span": 3.84
+  },
+  {
+   "oa_low": 8.5,
+   "oa_high": 21.2,
+   "span": 1.58
+  }
+ ],
+ "sp_reset": [
+  false,
+  true
+ ],
+ "econ_type": [
+  "none",
+  "fixed_enth"
+ ],
+ "econ_limit_db": [
+  18.7,
+  25.3
+ ],
+ "econ_limit_enth": [
+  48257.0,
+  50044.0
+ ],
+ "min_oa_scale": 1.01,
+ "night_oa": 0.0,
+ "boiler_eff": 0.763,
+ "chiller_cop": 4.88,
+ "fan_eff": 0.552,
+ "sensor_level": "legacy",
+ "profile_seed": 367386,
+ "distractors": [],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

@@ -1,0 +1,184 @@
+{
+  "wrong_ahu_mapping": {
+    "rows": 20,
+    "base_topologies": 3,
+    "distinct_target_connections": 17,
+    "distinct_components": 31,
+    "distinct_changed_members": 17,
+    "distinct_replacement_endpoints": 13,
+    "distinct_actual_to_documented_substitutions": 32,
+    "distinct_leakage_groups": 9,
+    "observable": {
+      "true": 20
+    },
+    "subtypes": {
+      "retarget": 8,
+      "swap": 12
+    },
+    "degree_preserving_rows": 12,
+    "candidates_proposed": 75,
+    "candidates_passing_hard_filter": 41
+  },
+  "vav_zone_swap": {
+    "rows": 20,
+    "base_topologies": 4,
+    "distinct_target_connections": 32,
+    "distinct_components": 64,
+    "distinct_changed_members": 32,
+    "distinct_replacement_endpoints": 32,
+    "distinct_actual_to_documented_substitutions": 40,
+    "distinct_leakage_groups": 12,
+    "observable": {
+      "true": 9,
+      "false": 6,
+      "ambiguous": 5
+    },
+    "subtypes": {
+      "swap": 20
+    },
+    "degree_preserving_rows": 20,
+    "candidates_proposed": 180,
+    "candidates_passing_hard_filter": 36
+  },
+  "plant_loop_mapping": {
+    "rows": 20,
+    "base_topologies": 2,
+    "distinct_target_connections": 21,
+    "distinct_components": 27,
+    "distinct_changed_members": 21,
+    "distinct_replacement_endpoints": 6,
+    "distinct_actual_to_documented_substitutions": 21,
+    "distinct_leakage_groups": 20,
+    "observable": {
+      "true": 12,
+      "ambiguous": 4,
+      "false": 4
+    },
+    "subtypes": {
+      "retarget": 19,
+      "swap": 1
+    },
+    "degree_preserving_rows": 1,
+    "candidates_proposed": 28,
+    "candidates_passing_hard_filter": 22
+  },
+  "sensor_mapping": {
+    "rows": 20,
+    "base_topologies": 4,
+    "distinct_target_connections": 40,
+    "distinct_components": 80,
+    "distinct_changed_members": 40,
+    "distinct_replacement_endpoints": 40,
+    "distinct_actual_to_documented_substitutions": 40,
+    "distinct_leakage_groups": 20,
+    "observable": {
+      "true": 20
+    },
+    "subtypes": {
+      "vav_dat": 15,
+      "ahu_sat": 5
+    },
+    "degree_preserving_rows": 20,
+    "candidates_proposed": 229,
+    "candidates_passing_hard_filter": 222
+  },
+  "same_medium_branch": {
+    "rows": 20,
+    "base_topologies": 3,
+    "distinct_target_connections": 31,
+    "distinct_components": 62,
+    "distinct_changed_members": 31,
+    "distinct_replacement_endpoints": 31,
+    "distinct_actual_to_documented_substitutions": 40,
+    "distinct_leakage_groups": 11,
+    "observable": {
+      "true": 20
+    },
+    "subtypes": {
+      "branch_coil": 20
+    },
+    "degree_preserving_rows": 20,
+    "candidates_proposed": 203,
+    "candidates_passing_hard_filter": 52
+  },
+  "parallel_peer_swap": {
+    "rows": 20,
+    "base_topologies": 4,
+    "distinct_target_connections": 35,
+    "distinct_components": 67,
+    "distinct_changed_members": 35,
+    "distinct_replacement_endpoints": 32,
+    "distinct_actual_to_documented_substitutions": 40,
+    "distinct_leakage_groups": 16,
+    "observable": {
+      "true": 16,
+      "false": 3,
+      "ambiguous": 1
+    },
+    "subtypes": {
+      "coil_ahu": 9,
+      "coil_vav": 10,
+      "loop_source": 1
+    },
+    "degree_preserving_rows": 20,
+    "candidates_proposed": 241,
+    "candidates_passing_hard_filter": 76
+  },
+  "easy_cross_medium_loop": {
+    "rows": 10,
+    "base_topologies": 3,
+    "distinct_target_connections": 10,
+    "distinct_components": 20,
+    "distinct_changed_members": 10,
+    "distinct_replacement_endpoints": 7,
+    "distinct_actual_to_documented_substitutions": 10,
+    "distinct_leakage_groups": 10,
+    "observable": {
+      "n/a": 10
+    },
+    "subtypes": {
+      "cross_medium_loop": 10
+    },
+    "degree_preserving_rows": 0,
+    "candidates_proposed": 0,
+    "candidates_passing_hard_filter": 0
+  },
+  "easy_missing_link": {
+    "rows": 10,
+    "base_topologies": 4,
+    "distinct_target_connections": 10,
+    "distinct_components": 20,
+    "distinct_changed_members": 10,
+    "distinct_replacement_endpoints": 0,
+    "distinct_actual_to_documented_substitutions": 0,
+    "distinct_leakage_groups": 10,
+    "observable": {
+      "n/a": 10
+    },
+    "subtypes": {
+      "missing_link": 10
+    },
+    "degree_preserving_rows": 0,
+    "candidates_proposed": 0,
+    "candidates_passing_hard_filter": 0
+  },
+  "easy_dual_parent": {
+    "rows": 10,
+    "base_topologies": 4,
+    "distinct_target_connections": 10,
+    "distinct_components": 20,
+    "distinct_changed_members": 10,
+    "distinct_replacement_endpoints": 10,
+    "distinct_actual_to_documented_substitutions": 10,
+    "distinct_leakage_groups": 10,
+    "observable": {
+      "n/a": 10
+    },
+    "subtypes": {
+      "dual_parent": 10
+    },
+    "degree_preserving_rows": 0,
+    "candidates_proposed": 0,
+    "candidates_passing_hard_filter": 0
+  }
+}

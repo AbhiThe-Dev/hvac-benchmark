@@ -1,0 +1,966 @@
+{
+ "coverage_requirements": {
+  "dev": "an n_ahu=1 and an n_ahu=3 building; near-twin (<=0.3 K) AND well-separated (>=1 K) AHU SAT pairs; a building with >=2 loops of some medium",
+  "sealed": "an n_ahu=4 building; >=2 buildings with >12 VAVs; near-twin AND separated SAT pairs; a building with >=3 loops of a medium; a building with night>0.10 or weekend>0.20"
+ },
+ "ranges": {
+  "dev": {
+   "chw_dt": [
+    5.0,
+    7.0
+   ],
+   "chw_t": [
+    6.0,
+    8.0
+   ],
+   "climates": [
+    "sterling_va",
+    "sanfrancisco",
+    "sacramento",
+    "chicago_amy2012",
+    "golden"
+   ],
+   "cool_sf": [
+    1.05,
+    1.3
+   ],
+   "cool_sp": [
+    23.5,
+    25.5
+   ],
+   "equip": [
+    5.0,
+    12.0
+   ],
+   "fan_dp": [
+    400.0,
+    800.0
+   ],
+   "floor_h": [
+    3.0,
+    4.0
+   ],
+   "heat_sf": [
+    1.1,
+    1.3
+   ],
+   "heat_sp": [
+    20.0,
+    22.0
+   ],
+   "hw_dt": [
+    11.0,
+    20.0
+   ],
+   "hw_t": [
+    65.0,
+    82.0
+   ],
+   "infiltration": [
+    0.0002,
+    0.0006
+   ],
+   "lights": [
+    6.0,
+    12.0
+   ],
+   "max_loops": 2,
+   "min_flow": [
+    0.25,
+    0.4
+   ],
+   "n_ahu": [
+    1,
+    2,
+    3
+   ],
+   "n_vav": [
+    6,
+    12
+   ],
+   "night": [
+    0.02,
+    0.1
+   ],
+   "north": [
+    0.0,
+    90.0
+   ],
+   "oa_area": [
+    0.0,
+    0.0003
+   ],
+   "occ_end": [
+    17.0,
+    19.0
+   ],
+   "occ_start": [
+    7.0,
+    9.0
+   ],
+   "people": [
+    0.03,
+    0.08
+   ],
+   "sat": [
+    12.0,
+    14.0
+   ],
+   "tile_d": [
+    6.0,
+    10.0
+   ],
+   "tile_w": [
+    6.0,
+    10.0
+   ],
+   "weekend": [
+    0.0,
+    0.2
+   ],
+   "wwr": [
+    0.15,
+    0.4
+   ],
+   "zone_sigma": [
+    0.1,
+    0.3
+   ]
+  },
+  "sealed": {
+   "chw_dt": [
+    4.0,
+    8.0
+   ],
+   "chw_t": [
+    5.5,
+    9.0
+   ],
+   "climates": [
+    "tampa",
+    "palm_springs",
+    "arcata",
+    "blue_canyon",
+    "chicago_amy2013"
+   ],
+   "cool_sf": [
+    1.0,
+    1.4
+   ],
+   "cool_sp": [
+    23.0,
+    26.5
+   ],
+   "equip": [
+    3.0,
+    20.0
+   ],
+   "fan_dp": [
+    350.0,
+    1000.0
+   ],
+   "floor_h": [
+    2.8,
+    4.8
+   ],
+   "heat_sf": [
+    1.05,
+    1.4
+   ],
+   "heat_sp": [
+    19.0,
+    23.0
+   ],
+   "hw_dt": [
+    11.0,
+    25.0
+   ],
+   "hw_t": [
+    60.0,
+    82.0
+   ],
+   "infiltration": [
+    0.0001,
+    0.001
+   ],
+   "lights": [
+    4.0,
+    16.0
+   ],
+   "max_loops": 3,
+   "min_flow": [
+    0.15,
+    0.5
+   ],
+   "n_ahu": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "n_vav": [
+    8,
+    16
+   ],
+   "night": [
+    0.02,
+    0.3
+   ],
+   "north": [
+    0.0,
+    90.0
+   ],
+   "oa_area": [
+    0.0,
+    0.0006
+   ],
+   "occ_end": [
+    17.0,
+    22.0
+   ],
+   "occ_start": [
+    5.0,
+    9.0
+   ],
+   "people": [
+    0.02,
+    0.12
+   ],
+   "sat": [
+    11.5,
+    15.5
+   ],
+   "tile_d": [
+    5.0,
+    14.0
+   ],
+   "tile_w": [
+    5.0,
+    14.0
+   ],
+   "weekend": [
+    0.0,
+    0.6
+   ],
+   "wwr": [
+    0.1,
+    0.6
+   ],
+   "zone_sigma": [
+    0.1,
+    0.5
+   ]
+  }
+ },
+ "sealed_extensions": [
+  "climate: hot-humid (tampa), hot-dry (palm_springs), cool-marine (arcata), mountain (blue_canyon) and a different weather year of chicago (dev uses other climates and AMY 2012)",
+  "n_ahu up to 4 (dev max 3)",
+  "n_vav up to 16 (dev max 12)",
+  "plant loops up to 3 per medium (dev max 2)",
+  "internal loads (lights/equipment/people), window ratio, infiltration, zone-load spread and setpoints beyond dev ranges",
+  "occupancy schedules: earlier start, later end, high night and weekend fractions (near-24/7 use)",
+  "zone size / floor height and SAT setpoint spread wider; min-flow fraction and sizing factors wider"
+ ],
+ "seeds": {
+  "dev": 20260921,
+  "dev_attempts": 1,
+  "sealed": 20260922,
+  "sealed_attempts": 3
+ },
+ "spec_version": 1,
+ "topologies": [
+  {
+   "ahu_chw": [
+    0
+   ],
+   "ahu_hw": [
+    0
+   ],
+   "ahu_sat": [
+    13.96
+   ],
+   "chw_dt": [
+    6.6
+   ],
+   "chw_t": [
+    6.4
+   ],
+   "climate": "sterling_va",
+   "cool_sizing_factor": 1.1,
+   "economizer": [
+    true
+   ],
+   "equip_wm2": 10.5,
+   "fan_dp": [
+    530.0
+   ],
+   "floor_h": 3.6,
+   "floors": 1,
+   "geometry_seed": 421701,
+   "group_mode": "stripe",
+   "group_sizes": [
+    6
+   ],
+   "heat_sizing_factor": 1.23,
+   "hw_dt": [
+    19.7
+   ],
+   "hw_t": [
+    79.0
+   ],
+   "id": "dev_E",
+   "infiltration": 0.00022,
+   "lights_wm2": 10.4,
+   "min_flow_frac": 0.39,
+   "n_ahu": 1,
+   "n_chw": 1,
+   "n_hw": 1,
+   "n_vav": 6,
+   "north_axis": 81.0,
+   "nx": 2,
+   "ny": 3,
+   "oa_per_area": 0.00016,
+   "occ": {
+    "end": 17.3,
+    "night_frac": 0.09,
+    "start": 7.5,
+    "weekend_frac": 0.06
+   },
+   "people_m2": 0.055,
+   "role": "dev",
+   "sat_pattern": "single",
+   "seed_attempt": 1,
+   "setpoints": {
+    "cool": 24.4,
+    "cool_setback": 29.0,
+    "heat": 21.7,
+    "heat_setback": 16.3
+   },
+   "tile_d": 8.9,
+   "tile_w": 9.5,
+   "wwr": 0.3,
+   "zone_load_sigma": 0.15,
+   "zone_shifts": [
+    0
+   ]
+  },
+  {
+   "ahu_chw": [
+    0,
+    1
+   ],
+   "ahu_hw": [
+    0,
+    1
+   ],
+   "ahu_sat": [
+    12.84,
+    13.06
+   ],
+   "chw_dt": [
+    5.9,
+    5.6
+   ],
+   "chw_t": [
+    7.2,
+    6.9
+   ],
+   "climate": "sacramento",
+   "cool_sizing_factor": 1.16,
+   "economizer": [
+    false,
+    true
+   ],
+   "equip_wm2": 9.8,
+   "fan_dp": [
+    799.0,
+    416.0
+   ],
+   "floor_h": 3.16,
+   "floors": 1,
+   "geometry_seed": 976471,
+   "group_mode": "stripe",
+   "group_sizes": [
+    3,
+    3
+   ],
+   "heat_sizing_factor": 1.2,
+   "hw_dt": [
+    18.6,
+    18.8
+   ],
+   "hw_t": [
+    65.5,
+    75.3
+   ],
+   "id": "dev_F",
+   "infiltration": 0.00046,
+   "lights_wm2": 9.9,
+   "min_flow_frac": 0.4,
+   "n_ahu": 2,
+   "n_chw": 2,
+   "n_hw": 2,
+   "n_vav": 6,
+   "north_axis": 4.0,
+   "nx": 2,
+   "ny": 3,
+   "oa_per_area": 0.00014,
+   "occ": {
+    "end": 17.6,
+    "night_frac": 0.06,
+    "start": 7.7,
+    "weekend_frac": 0.09
+   },
+   "people_m2": 0.072,
+   "role": "dev",
+   "sat_pattern": "mixed",
+   "seed_attempt": 1,
+   "setpoints": {
+    "cool": 25.2,
+    "cool_setback": 29.8,
+    "heat": 20.9,
+    "heat_setback": 16.4
+   },
+   "tile_d": 8.4,
+   "tile_w": 9.0,
+   "wwr": 0.16,
+   "zone_load_sigma": 0.23,
+   "zone_shifts": [
+    -1,
+    0,
+    1
+   ]
+  },
+  {
+   "ahu_chw": [
+    0,
+    1,
+    0
+   ],
+   "ahu_hw": [
+    1,
+    1,
+    0
+   ],
+   "ahu_sat": [
+    13.75,
+    13.89,
+    12.27
+   ],
+   "chw_dt": [
+    6.7,
+    6.0
+   ],
+   "chw_t": [
+    6.8,
+    7.7
+   ],
+   "climate": "sanfrancisco",
+   "cool_sizing_factor": 1.12,
+   "economizer": [
+    true,
+    true,
+    true
+   ],
+   "equip_wm2": 9.3,
+   "fan_dp": [
+    436.0,
+    449.0,
+    752.0
+   ],
+   "floor_h": 3.04,
+   "floors": 1,
+   "geometry_seed": 821038,
+   "group_mode": "stripe",
+   "group_sizes": [
+    2,
+    2,
+    2
+   ],
+   "heat_sizing_factor": 1.13,
+   "hw_dt": [
+    19.0,
+    16.9
+   ],
+   "hw_t": [
+    73.6,
+    71.6
+   ],
+   "id": "dev_G",
+   "infiltration": 0.00045,
+   "lights_wm2": 11.3,
+   "min_flow_frac": 0.33,
+   "n_ahu": 3,
+   "n_chw": 2,
+   "n_hw": 2,
+   "n_vav": 6,
+   "north_axis": 40.0,
+   "nx": 2,
+   "ny": 3,
+   "oa_per_area": 0.00013,
+   "occ": {
+    "end": 18.0,
+    "night_frac": 0.1,
+    "start": 8.3,
+    "weekend_frac": 0.16
+   },
+   "people_m2": 0.055,
+   "role": "dev",
+   "sat_pattern": "mixed",
+   "seed_attempt": 1,
+   "setpoints": {
+    "cool": 23.9,
+    "cool_setback": 27.4,
+    "heat": 21.2,
+    "heat_setback": 15.7
+   },
+   "tile_d": 6.1,
+   "tile_w": 7.2,
+   "wwr": 0.2,
+   "zone_load_sigma": 0.12,
+   "zone_shifts": [
+    -1,
+    0,
+    1
+   ]
+  },
+  {
+   "ahu_chw": [
+    0,
+    1
+   ],
+   "ahu_hw": [
+    0,
+    0
+   ],
+   "ahu_sat": [
+    12.47,
+    12.2
+   ],
+   "chw_dt": [
+    5.6,
+    6.0
+   ],
+   "chw_t": [
+    6.2,
+    6.5
+   ],
+   "climate": "golden",
+   "cool_sizing_factor": 1.2,
+   "economizer": [
+    false,
+    true
+   ],
+   "equip_wm2": 6.9,
+   "fan_dp": [
+    585.0,
+    546.0
+   ],
+   "floor_h": 3.44,
+   "floors": 2,
+   "geometry_seed": 276195,
+   "group_mode": "block",
+   "group_sizes": [
+    6,
+    6
+   ],
+   "heat_sizing_factor": 1.25,
+   "hw_dt": [
+    11.7
+   ],
+   "hw_t": [
+    65.7
+   ],
+   "id": "dev_H",
+   "infiltration": 0.00035,
+   "lights_wm2": 11.4,
+   "min_flow_frac": 0.36,
+   "n_ahu": 2,
+   "n_chw": 2,
+   "n_hw": 1,
+   "n_vav": 12,
+   "north_axis": 54.0,
+   "nx": 2,
+   "ny": 3,
+   "oa_per_area": 8e-05,
+   "occ": {
+    "end": 17.7,
+    "night_frac": 0.04,
+    "start": 8.3,
+    "weekend_frac": 0.0
+   },
+   "people_m2": 0.056,
+   "role": "dev",
+   "sat_pattern": "all_twin",
+   "seed_attempt": 1,
+   "setpoints": {
+    "cool": 25.5,
+    "cool_setback": 29.7,
+    "heat": 21.8,
+    "heat_setback": 18.2
+   },
+   "tile_d": 7.6,
+   "tile_w": 7.0,
+   "wwr": 0.39,
+   "zone_load_sigma": 0.14,
+   "zone_shifts": [
+    -1,
+    0,
+    1
+   ]
+  },
+  {
+   "ahu_chw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "ahu_hw": [
+    0,
+    1,
+    0,
+    2
+   ],
+   "ahu_sat": [
+    13.14,
+    15.1,
+    11.77,
+    12.77
+   ],
+   "chw_dt": [
+    7.5
+   ],
+   "chw_t": [
+    6.1
+   ],
+   "climate": "chicago_amy2013",
+   "cool_sizing_factor": 1.32,
+   "economizer": [
+    true,
+    false,
+    false,
+    false
+   ],
+   "equip_wm2": 4.3,
+   "fan_dp": [
+    709.0,
+    631.0,
+    757.0,
+    955.0
+   ],
+   "floor_h": 4.46,
+   "floors": 1,
+   "geometry_seed": 145547,
+   "group_mode": "stripe",
+   "group_sizes": [
+    6,
+    3,
+    3,
+    4
+   ],
+   "heat_sizing_factor": 1.31,
+   "hw_dt": [
+    22.0,
+    22.6,
+    21.2
+   ],
+   "hw_t": [
+    75.0,
+    74.1,
+    71.8
+   ],
+   "id": "seal_S1",
+   "infiltration": 0.00096,
+   "lights_wm2": 7.1,
+   "min_flow_frac": 0.33,
+   "n_ahu": 4,
+   "n_chw": 1,
+   "n_hw": 3,
+   "n_vav": 16,
+   "north_axis": 30.0,
+   "nx": 4,
+   "ny": 4,
+   "oa_per_area": 0.00014,
+   "occ": {
+    "end": 17.8,
+    "night_frac": 0.19,
+    "start": 8.9,
+    "weekend_frac": 0.54
+   },
+   "people_m2": 0.098,
+   "role": "sealed",
+   "sat_pattern": "all_separate",
+   "seed_attempt": 3,
+   "setpoints": {
+    "cool": 24.1,
+    "cool_setback": 26.7,
+    "heat": 20.9,
+    "heat_setback": 16.7
+   },
+   "tile_d": 9.0,
+   "tile_w": 6.4,
+   "wwr": 0.59,
+   "zone_load_sigma": 0.31,
+   "zone_shifts": [
+    0
+   ]
+  },
+  {
+   "ahu_chw": [
+    0,
+    0,
+    0
+   ],
+   "ahu_hw": [
+    0,
+    1,
+    2
+   ],
+   "ahu_sat": [
+    13.88,
+    12.02,
+    15.37
+   ],
+   "chw_dt": [
+    5.1
+   ],
+   "chw_t": [
+    7.4
+   ],
+   "climate": "blue_canyon",
+   "cool_sizing_factor": 1.06,
+   "economizer": [
+    true,
+    true,
+    false
+   ],
+   "equip_wm2": 11.0,
+   "fan_dp": [
+    808.0,
+    539.0,
+    578.0
+   ],
+   "floor_h": 2.97,
+   "floors": 1,
+   "geometry_seed": 692702,
+   "group_mode": "stripe",
+   "group_sizes": [
+    2,
+    5,
+    5
+   ],
+   "heat_sizing_factor": 1.08,
+   "hw_dt": [
+    17.0,
+    13.0,
+    16.2
+   ],
+   "hw_t": [
+    71.4,
+    73.4,
+    71.1
+   ],
+   "id": "seal_S2",
+   "infiltration": 0.00016,
+   "lights_wm2": 4.0,
+   "min_flow_frac": 0.21,
+   "n_ahu": 3,
+   "n_chw": 1,
+   "n_hw": 3,
+   "n_vav": 12,
+   "north_axis": 3.0,
+   "nx": 3,
+   "ny": 4,
+   "oa_per_area": 9e-05,
+   "occ": {
+    "end": 21.8,
+    "night_frac": 0.28,
+    "start": 6.6,
+    "weekend_frac": 0.39
+   },
+   "people_m2": 0.04,
+   "role": "sealed",
+   "sat_pattern": "all_separate",
+   "seed_attempt": 3,
+   "setpoints": {
+    "cool": 24.8,
+    "cool_setback": 28.3,
+    "heat": 22.8,
+    "heat_setback": 18.2
+   },
+   "tile_d": 5.6,
+   "tile_w": 8.2,
+   "wwr": 0.48,
+   "zone_load_sigma": 0.16,
+   "zone_shifts": [
+    -1,
+    0,
+    1
+   ]
+  },
+  {
+   "ahu_chw": [
+    0,
+    0,
+    0
+   ],
+   "ahu_hw": [
+    0,
+    0,
+    0
+   ],
+   "ahu_sat": [
+    13.36,
+    13.54,
+    13.47
+   ],
+   "chw_dt": [
+    7.1
+   ],
+   "chw_t": [
+    6.4
+   ],
+   "climate": "arcata",
+   "cool_sizing_factor": 1.28,
+   "economizer": [
+    false,
+    false,
+    true
+   ],
+   "equip_wm2": 12.0,
+   "fan_dp": [
+    829.0,
+    915.0,
+    692.0
+   ],
+   "floor_h": 3.05,
+   "floors": 2,
+   "geometry_seed": 370916,
+   "group_mode": "stripe",
+   "group_sizes": [
+    4,
+    6,
+    2
+   ],
+   "heat_sizing_factor": 1.07,
+   "hw_dt": [
+    17.9
+   ],
+   "hw_t": [
+    65.3
+   ],
+   "id": "seal_S3",
+   "infiltration": 0.00024,
+   "lights_wm2": 10.3,
+   "min_flow_frac": 0.37,
+   "n_ahu": 3,
+   "n_chw": 1,
+   "n_hw": 1,
+   "n_vav": 12,
+   "north_axis": 49.0,
+   "nx": 2,
+   "ny": 3,
+   "oa_per_area": 0.00011,
+   "occ": {
+    "end": 21.7,
+    "night_frac": 0.12,
+    "start": 6.2,
+    "weekend_frac": 0.35
+   },
+   "people_m2": 0.075,
+   "role": "sealed",
+   "sat_pattern": "all_twin",
+   "seed_attempt": 3,
+   "setpoints": {
+    "cool": 26.3,
+    "cool_setback": 30.6,
+    "heat": 21.8,
+    "heat_setback": 15.8
+   },
+   "tile_d": 10.7,
+   "tile_w": 5.8,
+   "wwr": 0.12,
+   "zone_load_sigma": 0.37,
+   "zone_shifts": [
+    0
+   ]
+  },
+  {
+   "ahu_chw": [
+    0
+   ],
+   "ahu_hw": [
+    0
+   ],
+   "ahu_sat": [
+    12.03
+   ],
+   "chw_dt": [
+    7.3
+   ],
+   "chw_t": [
+    7.0
+   ],
+   "climate": "tampa",
+   "cool_sizing_factor": 1.04,
+   "economizer": [
+    false
+   ],
+   "equip_wm2": 16.3,
+   "fan_dp": [
+    457.0
+   ],
+   "floor_h": 4.79,
+   "floors": 1,
+   "geometry_seed": 810784,
+   "group_mode": "block",
+   "group_sizes": [
+    15
+   ],
+   "heat_sizing_factor": 1.11,
+   "hw_dt": [
+    21.2
+   ],
+   "hw_t": [
+    75.4
+   ],
+   "id": "seal_S4",
+   "infiltration": 0.0006,
+   "lights_wm2": 4.4,
+   "min_flow_frac": 0.21,
+   "n_ahu": 1,
+   "n_chw": 1,
+   "n_hw": 1,
+   "n_vav": 15,
+   "north_axis": 56.0,
+   "nx": 3,
+   "ny": 5,
+   "oa_per_area": 0.00037,
+   "occ": {
+    "end": 20.3,
+    "night_frac": 0.14,
+    "start": 8.4,
+    "weekend_frac": 0.53
+   },
+   "people_m2": 0.031,
+   "role": "sealed",
+   "sat_pattern": "single",
+   "seed_attempt": 3,
+   "setpoints": {
+    "cool": 24.5,
+    "cool_setback": 28.2,
+    "heat": 22.5,
+    "heat_setback": 17.2
+   },
+   "tile_d": 13.3,
+   "tile_w": 8.4,
+   "wwr": 0.3,
+   "zone_load_sigma": 0.23,
+   "zone_shifts": [
+    0
+   ]
+  }
+ ],
+ "written_before_simulation": true
+}

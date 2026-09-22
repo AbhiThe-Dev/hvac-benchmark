@@ -1,0 +1,4593 @@
+{
+ "summary": {
+  "existing": {
+   "buildings": 8,
+   "hard": 165,
+   "clean": 64,
+   "easy": 46,
+   "observable": {
+    "true": 123,
+    "ambiguous": 18,
+    "false": 24
+   },
+   "generation_counts": {
+    "sys03_psz_ac": {
+     "wrong_ahu_mapping": {
+      "proposed": 45,
+      "plausible": 18,
+      "audited": 18,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 45,
+      "plausible": 12,
+      "audited": 12,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 90,
+      "plausible": 90,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "parallel_peer_swap": {
+      "proposed": 90,
+      "plausible": 31,
+      "audited": 31,
+      "picked": 4
+     }
+    },
+    "sys07_vav_reheat": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 45,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 45,
+      "plausible": 41,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 55,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 45,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     }
+    },
+    "vav_2ahu_2loops": {
+     "wrong_ahu_mapping": {
+      "proposed": 10,
+      "plausible": 9,
+      "audited": 9,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 45,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 13,
+      "plausible": 12,
+      "audited": 12,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 46,
+      "plausible": 45,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 67,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 51,
+      "plausible": 17,
+      "audited": 17,
+      "picked": 4
+     }
+    },
+    "vav_3ahu_2loops": {
+     "wrong_ahu_mapping": {
+      "proposed": 20,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 45,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 15,
+      "plausible": 10,
+      "audited": 10,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 48,
+      "plausible": 46,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 81,
+      "plausible": 23,
+      "audited": 23,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 55,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     }
+    },
+    "dev_E": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 21,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     }
+    },
+    "dev_F": {
+     "wrong_ahu_mapping": {
+      "proposed": 6,
+      "plausible": 6,
+      "audited": 6,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 9,
+      "plausible": 9,
+      "audited": 9,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 16,
+      "plausible": 16,
+      "audited": 16,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 29,
+      "plausible": 19,
+      "audited": 19,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 21,
+      "plausible": 19,
+      "audited": 19,
+      "picked": 4
+     }
+    },
+    "dev_G": {
+     "wrong_ahu_mapping": {
+      "proposed": 12,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 13,
+      "plausible": 7,
+      "audited": 7,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 18,
+      "plausible": 18,
+      "audited": 18,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 39,
+      "plausible": 39,
+      "audited": 39,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 25,
+      "plausible": 21,
+      "audited": 21,
+      "picked": 4
+     }
+    },
+    "dev_H": {
+     "wrong_ahu_mapping": {
+      "proposed": 12,
+      "plausible": 12,
+      "audited": 12,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 56,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 1,
+      "plausible": 1,
+      "audited": 1,
+      "picked": 1
+     },
+     "sensor_mapping": {
+      "proposed": 67,
+      "plausible": 67,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 92,
+      "plausible": 48,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 70,
+      "plausible": 50,
+      "audited": 40,
+      "picked": 4
+     }
+    }
+   }
+  },
+  "T1_in_range": {
+   "buildings": 8,
+   "hard": 164,
+   "clean": 64,
+   "easy": 48,
+   "observable": {
+    "true": 121,
+    "ambiguous": 19,
+    "false": 24
+   },
+   "generation_counts": {
+    "dr_t1_00": {
+     "wrong_ahu_mapping": {
+      "proposed": 8,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 1,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 29,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 46,
+      "plausible": 27,
+      "audited": 27,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 32,
+      "plausible": 27,
+      "audited": 27,
+      "picked": 4
+     }
+    },
+    "dr_t1_01": {
+     "wrong_ahu_mapping": {
+      "proposed": 8,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 26,
+      "audited": 26,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 10,
+      "plausible": 10,
+      "audited": 10,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 29,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 46,
+      "plausible": 40,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 32,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     }
+    },
+    "dr_t1_02": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 26,
+      "audited": 26,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 28,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 36,
+      "plausible": 17,
+      "audited": 17,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 28,
+      "plausible": 17,
+      "audited": 17,
+      "picked": 4
+     }
+    },
+    "dr_t1_03": {
+     "wrong_ahu_mapping": {
+      "proposed": 12,
+      "plausible": 12,
+      "audited": 12,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 44,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 67,
+      "plausible": 67,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 92,
+      "plausible": 49,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 68,
+      "plausible": 44,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t1_04": {
+     "wrong_ahu_mapping": {
+      "proposed": 8,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 22,
+      "audited": 22,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 1,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 29,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 46,
+      "plausible": 25,
+      "audited": 25,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 32,
+      "plausible": 25,
+      "audited": 25,
+      "picked": 4
+     }
+    },
+    "dr_t1_05": {
+     "wrong_ahu_mapping": {
+      "proposed": 12,
+      "plausible": 12,
+      "audited": 12,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 63,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 14,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 67,
+      "plausible": 67,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 92,
+      "plausible": 63,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 70,
+      "plausible": 63,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t1_06": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 66,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 66,
+      "plausible": 66,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 78,
+      "plausible": 57,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 66,
+      "plausible": 57,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t1_07": {
+     "wrong_ahu_mapping": {
+      "proposed": 12,
+      "plausible": 7,
+      "audited": 7,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 13,
+      "plausible": 11,
+      "audited": 11,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 18,
+      "plausible": 18,
+      "audited": 18,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 39,
+      "plausible": 39,
+      "audited": 39,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 25,
+      "plausible": 22,
+      "audited": 22,
+      "picked": 4
+     }
+    }
+   }
+  },
+  "T2_regime": {
+   "buildings": 8,
+   "hard": 149,
+   "clean": 64,
+   "easy": 48,
+   "observable": {
+    "true": 108,
+    "ambiguous": 26,
+    "false": 15
+   },
+   "generation_counts": {
+    "dr_t2_00": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 59,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 66,
+      "plausible": 66,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 78,
+      "plausible": 53,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 66,
+      "plausible": 53,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t2_01": {
+     "wrong_ahu_mapping": {
+      "proposed": 12,
+      "plausible": 6,
+      "audited": 6,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 4,
+      "plausible": 2,
+      "audited": 2,
+      "picked": 2
+     },
+     "sensor_mapping": {
+      "proposed": 18,
+      "plausible": 18,
+      "audited": 18,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 39,
+      "plausible": 31,
+      "audited": 31,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 23,
+      "plausible": 16,
+      "audited": 16,
+      "picked": 4
+     }
+    },
+    "dr_t2_02": {
+     "wrong_ahu_mapping": {
+      "proposed": 8,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 29,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 46,
+      "plausible": 20,
+      "audited": 20,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 30,
+      "plausible": 20,
+      "audited": 20,
+      "picked": 4
+     }
+    },
+    "dr_t2_03": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 9,
+      "audited": 9,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 21,
+      "plausible": 6,
+      "audited": 6,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 15,
+      "plausible": 6,
+      "audited": 6,
+      "picked": 4
+     }
+    },
+    "dr_t2_04": {
+     "wrong_ahu_mapping": {
+      "proposed": 6,
+      "plausible": 3,
+      "audited": 3,
+      "picked": 3
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 13,
+      "audited": 13,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 1,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 16,
+      "plausible": 16,
+      "audited": 16,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 29,
+      "plausible": 21,
+      "audited": 21,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 19,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     }
+    },
+    "dr_t2_05": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 52,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 66,
+      "plausible": 66,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 78,
+      "plausible": 31,
+      "audited": 31,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 66,
+      "plausible": 31,
+      "audited": 31,
+      "picked": 4
+     }
+    },
+    "dr_t2_06": {
+     "wrong_ahu_mapping": {
+      "proposed": 8,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 29,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 46,
+      "plausible": 22,
+      "audited": 22,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 30,
+      "plausible": 22,
+      "audited": 22,
+      "picked": 4
+     }
+    },
+    "dr_t2_07": {
+     "wrong_ahu_mapping": {
+      "proposed": 24,
+      "plausible": 24,
+      "audited": 24,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 46,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 69,
+      "plausible": 69,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 108,
+      "plausible": 55,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 72,
+      "plausible": 51,
+      "audited": 40,
+      "picked": 4
+     }
+    }
+   }
+  },
+  "T3_control": {
+   "buildings": 8,
+   "hard": 166,
+   "clean": 64,
+   "easy": 48,
+   "observable": {
+    "true": 102,
+    "ambiguous": 27,
+    "false": 37
+   },
+   "generation_counts": {
+    "dr_t3_00": {
+     "wrong_ahu_mapping": {
+      "proposed": 12,
+      "plausible": 12,
+      "audited": 12,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 59,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 1,
+      "plausible": 1,
+      "audited": 1,
+      "picked": 1
+     },
+     "sensor_mapping": {
+      "proposed": 67,
+      "plausible": 67,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 92,
+      "plausible": 61,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 70,
+      "plausible": 50,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t3_01": {
+     "wrong_ahu_mapping": {
+      "proposed": 18,
+      "plausible": 18,
+      "audited": 18,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 36,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 4,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 39,
+      "plausible": 39,
+      "audited": 39,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 69,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 44,
+      "plausible": 22,
+      "audited": 22,
+      "picked": 4
+     }
+    },
+    "dr_t3_02": {
+     "wrong_ahu_mapping": {
+      "proposed": 12,
+      "plausible": 7,
+      "audited": 7,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 9,
+      "plausible": 9,
+      "audited": 9,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 18,
+      "plausible": 18,
+      "audited": 18,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 39,
+      "plausible": 24,
+      "audited": 24,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 23,
+      "plausible": 22,
+      "audited": 22,
+      "picked": 4
+     }
+    },
+    "dr_t3_03": {
+     "wrong_ahu_mapping": {
+      "proposed": 9,
+      "plausible": 9,
+      "audited": 9,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 36,
+      "plausible": 21,
+      "audited": 21,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 37,
+      "plausible": 37,
+      "audited": 37,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 56,
+      "plausible": 34,
+      "audited": 34,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 38,
+      "plausible": 34,
+      "audited": 34,
+      "picked": 4
+     }
+    },
+    "dr_t3_04": {
+     "wrong_ahu_mapping": {
+      "proposed": 18,
+      "plausible": 18,
+      "audited": 18,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 36,
+      "plausible": 33,
+      "audited": 33,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 4,
+      "plausible": 1,
+      "audited": 1,
+      "picked": 1
+     },
+     "sensor_mapping": {
+      "proposed": 39,
+      "plausible": 39,
+      "audited": 39,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 69,
+      "plausible": 35,
+      "audited": 35,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 44,
+      "plausible": 27,
+      "audited": 27,
+      "picked": 4
+     }
+    },
+    "dr_t3_05": {
+     "wrong_ahu_mapping": {
+      "proposed": 12,
+      "plausible": 12,
+      "audited": 12,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 62,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 14,
+      "plausible": 13,
+      "audited": 13,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 67,
+      "plausible": 67,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 92,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 70,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     }
+    },
+    "dr_t3_06": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 44,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 66,
+      "plausible": 66,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 78,
+      "plausible": 44,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 66,
+      "plausible": 44,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t3_07": {
+     "wrong_ahu_mapping": {
+      "proposed": 24,
+      "plausible": 24,
+      "audited": 24,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 55,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 69,
+      "plausible": 69,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 108,
+      "plausible": 37,
+      "audited": 37,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 72,
+      "plausible": 37,
+      "audited": 37,
+      "picked": 4
+     }
+    }
+   }
+  },
+  "T4_topology": {
+   "buildings": 8,
+   "hard": 192,
+   "clean": 64,
+   "easy": 48,
+   "observable": {
+    "true": 141,
+    "ambiguous": 30,
+    "false": 21
+   },
+   "generation_counts": {
+    "dr_t4_00": {
+     "wrong_ahu_mapping": {
+      "proposed": 54,
+      "plausible": 52,
+      "audited": 40,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 153,
+      "plausible": 93,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 31,
+      "plausible": 21,
+      "audited": 21,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 159,
+      "plausible": 158,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 72,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 97,
+      "plausible": 55,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t4_01": {
+     "wrong_ahu_mapping": {
+      "proposed": 54,
+      "plausible": 54,
+      "audited": 40,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 153,
+      "plausible": 131,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 33,
+      "plausible": 27,
+      "audited": 27,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 159,
+      "plausible": 159,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 111,
+      "plausible": 49,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 96,
+      "plausible": 62,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t4_02": {
+     "wrong_ahu_mapping": {
+      "proposed": 54,
+      "plausible": 54,
+      "audited": 40,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 153,
+      "plausible": 123,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 29,
+      "plausible": 18,
+      "audited": 18,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 159,
+      "plausible": 159,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 51,
+      "plausible": 11,
+      "audited": 11,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 105,
+      "plausible": 39,
+      "audited": 39,
+      "picked": 4
+     }
+    },
+    "dr_t4_03": {
+     "wrong_ahu_mapping": {
+      "proposed": 54,
+      "plausible": 53,
+      "audited": 40,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 153,
+      "plausible": 121,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 35,
+      "plausible": 27,
+      "audited": 27,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 159,
+      "plausible": 156,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 126,
+      "plausible": 43,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 101,
+      "plausible": 51,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t4_04": {
+     "wrong_ahu_mapping": {
+      "proposed": 54,
+      "plausible": 54,
+      "audited": 40,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 153,
+      "plausible": 110,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 31,
+      "plausible": 25,
+      "audited": 25,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 159,
+      "plausible": 159,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 84,
+      "plausible": 38,
+      "audited": 38,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 96,
+      "plausible": 76,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t4_05": {
+     "wrong_ahu_mapping": {
+      "proposed": 54,
+      "plausible": 54,
+      "audited": 40,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 153,
+      "plausible": 112,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 38,
+      "plausible": 24,
+      "audited": 24,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 159,
+      "plausible": 158,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 72,
+      "plausible": 32,
+      "audited": 32,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 97,
+      "plausible": 47,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t4_06": {
+     "wrong_ahu_mapping": {
+      "proposed": 48,
+      "plausible": 46,
+      "audited": 40,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 120,
+      "plausible": 96,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 30,
+      "plausible": 22,
+      "audited": 22,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 126,
+      "plausible": 126,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 72,
+      "plausible": 9,
+      "audited": 9,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 76,
+      "plausible": 26,
+      "audited": 26,
+      "picked": 4
+     }
+    },
+    "dr_t4_07": {
+     "wrong_ahu_mapping": {
+      "proposed": 45,
+      "plausible": 45,
+      "audited": 40,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 105,
+      "plausible": 90,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 30,
+      "plausible": 23,
+      "audited": 23,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 111,
+      "plausible": 111,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 42,
+      "plausible": 19,
+      "audited": 19,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 75,
+      "plausible": 56,
+      "audited": 40,
+      "picked": 4
+     }
+    }
+   }
+  },
+  "T5_climate": {
+   "buildings": 8,
+   "hard": 148,
+   "clean": 64,
+   "easy": 48,
+   "observable": {
+    "true": 89,
+    "ambiguous": 23,
+    "false": 36
+   },
+   "generation_counts": {
+    "dr_t5_00": {
+     "wrong_ahu_mapping": {
+      "proposed": 24,
+      "plausible": 22,
+      "audited": 22,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 61,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 69,
+      "plausible": 69,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 108,
+      "plausible": 56,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 72,
+      "plausible": 55,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t5_01": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 61,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 66,
+      "plausible": 66,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 78,
+      "plausible": 22,
+      "audited": 22,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 66,
+      "plausible": 22,
+      "audited": 22,
+      "picked": 4
+     }
+    },
+    "dr_t5_02": {
+     "wrong_ahu_mapping": {
+      "proposed": 16,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 22,
+      "audited": 22,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 2,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 31,
+      "plausible": 31,
+      "audited": 31,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 58,
+      "plausible": 7,
+      "audited": 7,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 36,
+      "plausible": 7,
+      "audited": 7,
+      "picked": 4
+     }
+    },
+    "dr_t5_03": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 10,
+      "audited": 10,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 21,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     }
+    },
+    "dr_t5_04": {
+     "wrong_ahu_mapping": {
+      "proposed": 16,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 24,
+      "audited": 24,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 13,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 31,
+      "plausible": 31,
+      "audited": 31,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 58,
+      "plausible": 30,
+      "audited": 30,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 38,
+      "plausible": 18,
+      "audited": 18,
+      "picked": 4
+     }
+    },
+    "dr_t5_05": {
+     "wrong_ahu_mapping": {
+      "proposed": 16,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 20,
+      "audited": 20,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 2,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 31,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 58,
+      "plausible": 43,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 36,
+      "plausible": 31,
+      "audited": 31,
+      "picked": 4
+     }
+    },
+    "dr_t5_06": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 25,
+      "audited": 25,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 28,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 36,
+      "plausible": 13,
+      "audited": 13,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 28,
+      "plausible": 13,
+      "audited": 13,
+      "picked": 4
+     }
+    },
+    "dr_t5_07": {
+     "wrong_ahu_mapping": {
+      "proposed": 8,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 26,
+      "audited": 26,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 1,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 29,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 46,
+      "plausible": 32,
+      "audited": 32,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 32,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     }
+    }
+   }
+  },
+  "T6_compound": {
+   "buildings": 8,
+   "hard": 190,
+   "clean": 64,
+   "easy": 48,
+   "observable": {
+    "true": 124,
+    "ambiguous": 23,
+    "false": 43
+   },
+   "generation_counts": {
+    "dr_t6_00": {
+     "wrong_ahu_mapping": {
+      "proposed": 48,
+      "plausible": 48,
+      "audited": 40,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 120,
+      "plausible": 94,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 29,
+      "plausible": 19,
+      "audited": 19,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 126,
+      "plausible": 126,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 51,
+      "plausible": 27,
+      "audited": 27,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 80,
+      "plausible": 46,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t6_01": {
+     "wrong_ahu_mapping": {
+      "proposed": 54,
+      "plausible": 37,
+      "audited": 37,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 153,
+      "plausible": 130,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 28,
+      "plausible": 2,
+      "audited": 2,
+      "picked": 2
+     },
+     "sensor_mapping": {
+      "proposed": 159,
+      "plausible": 159,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 72,
+      "plausible": 35,
+      "audited": 35,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 93,
+      "plausible": 36,
+      "audited": 36,
+      "picked": 4
+     }
+    },
+    "dr_t6_02": {
+     "wrong_ahu_mapping": {
+      "proposed": 48,
+      "plausible": 45,
+      "audited": 40,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 120,
+      "plausible": 76,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 27,
+      "plausible": 19,
+      "audited": 19,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 126,
+      "plausible": 115,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 42,
+      "plausible": 11,
+      "audited": 11,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 89,
+      "plausible": 42,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t6_03": {
+     "wrong_ahu_mapping": {
+      "proposed": 45,
+      "plausible": 44,
+      "audited": 40,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 105,
+      "plausible": 89,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 31,
+      "plausible": 16,
+      "audited": 16,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 111,
+      "plausible": 111,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 97,
+      "plausible": 58,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 75,
+      "plausible": 53,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t6_04": {
+     "wrong_ahu_mapping": {
+      "proposed": 48,
+      "plausible": 35,
+      "audited": 35,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 120,
+      "plausible": 77,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 22,
+      "plausible": 19,
+      "audited": 19,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 126,
+      "plausible": 125,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 111,
+      "plausible": 35,
+      "audited": 35,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 85,
+      "plausible": 37,
+      "audited": 37,
+      "picked": 4
+     }
+    },
+    "dr_t6_05": {
+     "wrong_ahu_mapping": {
+      "proposed": 54,
+      "plausible": 53,
+      "audited": 40,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 153,
+      "plausible": 131,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 22,
+      "plausible": 12,
+      "audited": 12,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 159,
+      "plausible": 153,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 111,
+      "plausible": 37,
+      "audited": 37,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 96,
+      "plausible": 51,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_t6_06": {
+     "wrong_ahu_mapping": {
+      "proposed": 45,
+      "plausible": 43,
+      "audited": 40,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 105,
+      "plausible": 79,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 20,
+      "plausible": 12,
+      "audited": 12,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 111,
+      "plausible": 111,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 34,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 81,
+      "plausible": 19,
+      "audited": 19,
+      "picked": 4
+     }
+    },
+    "dr_t6_07": {
+     "wrong_ahu_mapping": {
+      "proposed": 48,
+      "plausible": 42,
+      "audited": 40,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 120,
+      "plausible": 49,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 21,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 126,
+      "plausible": 126,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 97,
+      "plausible": 53,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 80,
+      "plausible": 44,
+      "audited": 40,
+      "picked": 4
+     }
+    }
+   }
+  },
+  "full": {
+   "buildings": 8,
+   "hard": 148,
+   "clean": 64,
+   "easy": 48,
+   "observable": {
+    "true": 111,
+    "ambiguous": 14,
+    "false": 23
+   },
+   "generation_counts": {
+    "dr_ful_00": {
+     "wrong_ahu_mapping": {
+      "proposed": 12,
+      "plausible": 12,
+      "audited": 12,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 38,
+      "audited": 38,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 15,
+      "plausible": 13,
+      "audited": 13,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 67,
+      "plausible": 67,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 92,
+      "plausible": 42,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 72,
+      "plausible": 42,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_ful_01": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 13,
+      "audited": 13,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 21,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     }
+    },
+    "dr_ful_02": {
+     "wrong_ahu_mapping": {
+      "proposed": 8,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 25,
+      "audited": 25,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 10,
+      "plausible": 7,
+      "audited": 7,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 29,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 46,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 32,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     }
+    },
+    "dr_ful_03": {
+     "wrong_ahu_mapping": {
+      "proposed": 16,
+      "plausible": 11,
+      "audited": 11,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 17,
+      "audited": 17,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 2,
+      "plausible": 2,
+      "audited": 2,
+      "picked": 2
+     },
+     "sensor_mapping": {
+      "proposed": 31,
+      "plausible": 31,
+      "audited": 31,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 6,
+      "plausible": 2,
+      "audited": 2,
+      "picked": 2
+     },
+     "parallel_peer_swap": {
+      "proposed": 36,
+      "plausible": 24,
+      "audited": 24,
+      "picked": 4
+     }
+    },
+    "dr_ful_04": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 54,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 66,
+      "plausible": 66,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "parallel_peer_swap": {
+      "proposed": 66,
+      "plausible": 37,
+      "audited": 37,
+      "picked": 4
+     }
+    },
+    "dr_ful_05": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "parallel_peer_swap": {
+      "proposed": 15,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     }
+    },
+    "dr_ful_06": {
+     "wrong_ahu_mapping": {
+      "proposed": 8,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 24,
+      "audited": 24,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 29,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 46,
+      "plausible": 24,
+      "audited": 24,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 30,
+      "plausible": 24,
+      "audited": 24,
+      "picked": 4
+     }
+    },
+    "dr_ful_07": {
+     "wrong_ahu_mapping": {
+      "proposed": 18,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 36,
+      "plausible": 32,
+      "audited": 32,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 39,
+      "plausible": 39,
+      "audited": 39,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 69,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 42,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     }
+    }
+   }
+  },
+  "full_x3": {
+   "buildings": 24,
+   "hard": 420,
+   "clean": 192,
+   "easy": 144,
+   "observable": {
+    "true": 283,
+    "ambiguous": 57,
+    "false": 80
+   },
+   "generation_counts": {
+    "dr_fx3_00": {
+     "wrong_ahu_mapping": {
+      "proposed": 12,
+      "plausible": 12,
+      "audited": 12,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 49,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 1,
+      "plausible": 1,
+      "audited": 1,
+      "picked": 1
+     },
+     "sensor_mapping": {
+      "proposed": 67,
+      "plausible": 67,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 92,
+      "plausible": 55,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 70,
+      "plausible": 46,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_fx3_01": {
+     "wrong_ahu_mapping": {
+      "proposed": 8,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 1,
+      "plausible": 1,
+      "audited": 1,
+      "picked": 1
+     },
+     "sensor_mapping": {
+      "proposed": 29,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 2,
+      "plausible": 1,
+      "audited": 1,
+      "picked": 1
+     },
+     "parallel_peer_swap": {
+      "proposed": 32,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     }
+    },
+    "dr_fx3_02": {
+     "wrong_ahu_mapping": {
+      "proposed": 24,
+      "plausible": 24,
+      "audited": 24,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 44,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 69,
+      "plausible": 69,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 108,
+      "plausible": 42,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 72,
+      "plausible": 35,
+      "audited": 35,
+      "picked": 4
+     }
+    },
+    "dr_fx3_03": {
+     "wrong_ahu_mapping": {
+      "proposed": 18,
+      "plausible": 10,
+      "audited": 10,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 36,
+      "plausible": 23,
+      "audited": 23,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 39,
+      "plausible": 39,
+      "audited": 39,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 69,
+      "plausible": 35,
+      "audited": 35,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 42,
+      "plausible": 22,
+      "audited": 22,
+      "picked": 4
+     }
+    },
+    "dr_fx3_04": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 11,
+      "audited": 11,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 21,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 15,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     }
+    },
+    "dr_fx3_05": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 61,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 66,
+      "plausible": 66,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "parallel_peer_swap": {
+      "proposed": 66,
+      "plausible": 39,
+      "audited": 39,
+      "picked": 4
+     }
+    },
+    "dr_fx3_06": {
+     "wrong_ahu_mapping": {
+      "proposed": 9,
+      "plausible": 9,
+      "audited": 9,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 36,
+      "plausible": 33,
+      "audited": 33,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 37,
+      "plausible": 37,
+      "audited": 37,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 2,
+      "plausible": 2,
+      "audited": 2,
+      "picked": 2
+     },
+     "parallel_peer_swap": {
+      "proposed": 38,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     }
+    },
+    "dr_fx3_07": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 26,
+      "audited": 26,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 28,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "parallel_peer_swap": {
+      "proposed": 28,
+      "plausible": 21,
+      "audited": 21,
+      "picked": 4
+     }
+    },
+    "dr_fx3_08": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 28,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 36,
+      "plausible": 20,
+      "audited": 20,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 28,
+      "plausible": 20,
+      "audited": 20,
+      "picked": 4
+     }
+    },
+    "dr_fx3_09": {
+     "wrong_ahu_mapping": {
+      "proposed": 12,
+      "plausible": 12,
+      "audited": 12,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 58,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 1,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 67,
+      "plausible": 67,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 2,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "parallel_peer_swap": {
+      "proposed": 70,
+      "plausible": 42,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_fx3_10": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 10,
+      "audited": 10,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 21,
+      "plausible": 11,
+      "audited": 11,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 15,
+      "plausible": 11,
+      "audited": 11,
+      "picked": 4
+     }
+    },
+    "dr_fx3_11": {
+     "wrong_ahu_mapping": {
+      "proposed": 18,
+      "plausible": 18,
+      "audited": 18,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 36,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 39,
+      "plausible": 39,
+      "audited": 39,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 69,
+      "plausible": 42,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 42,
+      "plausible": 33,
+      "audited": 33,
+      "picked": 4
+     }
+    },
+    "dr_fx3_12": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 66,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 66,
+      "plausible": 66,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "parallel_peer_swap": {
+      "proposed": 66,
+      "plausible": 20,
+      "audited": 20,
+      "picked": 4
+     }
+    },
+    "dr_fx3_13": {
+     "wrong_ahu_mapping": {
+      "proposed": 12,
+      "plausible": 7,
+      "audited": 7,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 2,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 18,
+      "plausible": 18,
+      "audited": 18,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 6,
+      "plausible": 5,
+      "audited": 5,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 23,
+      "plausible": 11,
+      "audited": 11,
+      "picked": 4
+     }
+    },
+    "dr_fx3_14": {
+     "wrong_ahu_mapping": {
+      "proposed": 24,
+      "plausible": 24,
+      "audited": 24,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 51,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 69,
+      "plausible": 69,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 108,
+      "plausible": 33,
+      "audited": 33,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 72,
+      "plausible": 33,
+      "audited": 33,
+      "picked": 4
+     }
+    },
+    "dr_fx3_15": {
+     "wrong_ahu_mapping": {
+      "proposed": 8,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 19,
+      "audited": 19,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 1,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 29,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 46,
+      "plausible": 19,
+      "audited": 19,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 32,
+      "plausible": 19,
+      "audited": 19,
+      "picked": 4
+     }
+    },
+    "dr_fx3_16": {
+     "wrong_ahu_mapping": {
+      "proposed": 9,
+      "plausible": 9,
+      "audited": 9,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 36,
+      "plausible": 18,
+      "audited": 18,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 11,
+      "plausible": 5,
+      "audited": 5,
+      "picked": 4
+     },
+     "sensor_mapping": {
+      "proposed": 37,
+      "plausible": 37,
+      "audited": 37,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 56,
+      "plausible": 29,
+      "audited": 29,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 40,
+      "plausible": 24,
+      "audited": 24,
+      "picked": 4
+     }
+    },
+    "dr_fx3_17": {
+     "wrong_ahu_mapping": {
+      "proposed": 16,
+      "plausible": 11,
+      "audited": 11,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 26,
+      "audited": 26,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 4,
+      "plausible": 1,
+      "audited": 1,
+      "picked": 1
+     },
+     "sensor_mapping": {
+      "proposed": 31,
+      "plausible": 31,
+      "audited": 31,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 6,
+      "plausible": 4,
+      "audited": 4,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 38,
+      "plausible": 19,
+      "audited": 19,
+      "picked": 4
+     }
+    },
+    "dr_fx3_18": {
+     "wrong_ahu_mapping": {
+      "proposed": 18,
+      "plausible": 18,
+      "audited": 18,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 36,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 39,
+      "plausible": 38,
+      "audited": 38,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 6,
+      "plausible": 2,
+      "audited": 2,
+      "picked": 2
+     },
+     "parallel_peer_swap": {
+      "proposed": 42,
+      "plausible": 23,
+      "audited": 23,
+      "picked": 4
+     }
+    },
+    "dr_fx3_19": {
+     "wrong_ahu_mapping": {
+      "proposed": 12,
+      "plausible": 11,
+      "audited": 11,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 18,
+      "plausible": 18,
+      "audited": 18,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 6,
+      "plausible": 6,
+      "audited": 6,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 21,
+      "plausible": 19,
+      "audited": 19,
+      "picked": 4
+     }
+    },
+    "dr_fx3_20": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 42,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 66,
+      "plausible": 66,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 78,
+      "plausible": 47,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 66,
+      "plausible": 47,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_fx3_21": {
+     "wrong_ahu_mapping": {
+      "proposed": 16,
+      "plausible": 12,
+      "audited": 12,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 26,
+      "audited": 26,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 2,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 31,
+      "plausible": 31,
+      "audited": 31,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 58,
+      "plausible": 33,
+      "audited": 33,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 36,
+      "plausible": 16,
+      "audited": 16,
+      "picked": 4
+     }
+    },
+    "dr_fx3_22": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 36,
+      "plausible": 36,
+      "audited": 36,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 36,
+      "plausible": 36,
+      "audited": 36,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "parallel_peer_swap": {
+      "proposed": 36,
+      "plausible": 27,
+      "audited": 27,
+      "picked": 4
+     }
+    },
+    "dr_fx3_23": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 36,
+      "plausible": 26,
+      "audited": 26,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 36,
+      "plausible": 36,
+      "audited": 36,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "parallel_peer_swap": {
+      "proposed": 36,
+      "plausible": 23,
+      "audited": 23,
+      "picked": 4
+     }
+    }
+   }
+  },
+  "regime": {
+   "buildings": 8,
+   "hard": 156,
+   "clean": 64,
+   "easy": 48,
+   "observable": {
+    "true": 101,
+    "ambiguous": 20,
+    "false": 35
+   },
+   "generation_counts": {
+    "dr_reg_00": {
+     "wrong_ahu_mapping": {
+      "proposed": 6,
+      "plausible": 6,
+      "audited": 6,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 14,
+      "audited": 14,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 9,
+      "plausible": 1,
+      "audited": 1,
+      "picked": 1
+     },
+     "sensor_mapping": {
+      "proposed": 16,
+      "plausible": 16,
+      "audited": 16,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 29,
+      "plausible": 19,
+      "audited": 19,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 21,
+      "plausible": 20,
+      "audited": 20,
+      "picked": 4
+     }
+    },
+    "dr_reg_01": {
+     "wrong_ahu_mapping": {
+      "proposed": 9,
+      "plausible": 9,
+      "audited": 9,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 36,
+      "plausible": 36,
+      "audited": 36,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 12,
+      "plausible": 1,
+      "audited": 1,
+      "picked": 1
+     },
+     "sensor_mapping": {
+      "proposed": 37,
+      "plausible": 37,
+      "audited": 37,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 56,
+      "plausible": 25,
+      "audited": 25,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 42,
+      "plausible": 25,
+      "audited": 25,
+      "picked": 4
+     }
+    },
+    "dr_reg_02": {
+     "wrong_ahu_mapping": {
+      "proposed": 12,
+      "plausible": 12,
+      "audited": 12,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 64,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 67,
+      "plausible": 67,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 92,
+      "plausible": 66,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 68,
+      "plausible": 66,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_reg_03": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 12,
+      "audited": 12,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 21,
+      "plausible": 13,
+      "audited": 13,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 15,
+      "plausible": 13,
+      "audited": 13,
+      "picked": 4
+     }
+    },
+    "dr_reg_04": {
+     "wrong_ahu_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "vav_zone_swap": {
+      "proposed": 28,
+      "plausible": 25,
+      "audited": 25,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 28,
+      "plausible": 28,
+      "audited": 28,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 36,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 28,
+      "plausible": 8,
+      "audited": 8,
+      "picked": 4
+     }
+    },
+    "dr_reg_05": {
+     "wrong_ahu_mapping": {
+      "proposed": 24,
+      "plausible": 23,
+      "audited": 23,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 46,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 0,
+      "plausible": 0,
+      "audited": 0,
+      "picked": 0
+     },
+     "sensor_mapping": {
+      "proposed": 69,
+      "plausible": 69,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 108,
+      "plausible": 50,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 72,
+      "plausible": 46,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_reg_06": {
+     "wrong_ahu_mapping": {
+      "proposed": 24,
+      "plausible": 24,
+      "audited": 24,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 66,
+      "plausible": 58,
+      "audited": 40,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 4,
+      "plausible": 1,
+      "audited": 1,
+      "picked": 1
+     },
+     "sensor_mapping": {
+      "proposed": 69,
+      "plausible": 69,
+      "audited": 40,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 108,
+      "plausible": 58,
+      "audited": 40,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 74,
+      "plausible": 57,
+      "audited": 40,
+      "picked": 4
+     }
+    },
+    "dr_reg_07": {
+     "wrong_ahu_mapping": {
+      "proposed": 6,
+      "plausible": 6,
+      "audited": 6,
+      "picked": 4
+     },
+     "vav_zone_swap": {
+      "proposed": 15,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     },
+     "plant_loop_mapping": {
+      "proposed": 1,
+      "plausible": 1,
+      "audited": 1,
+      "picked": 1
+     },
+     "sensor_mapping": {
+      "proposed": 16,
+      "plausible": 16,
+      "audited": 16,
+      "picked": 4
+     },
+     "same_medium_branch": {
+      "proposed": 29,
+      "plausible": 23,
+      "audited": 23,
+      "picked": 4
+     },
+     "parallel_peer_swap": {
+      "proposed": 19,
+      "plausible": 15,
+      "audited": 15,
+      "picked": 4
+     }
+    }
+   }
+  }
+ },
+ "audit": {
+  "existing": {
+   "wrong_ahu_mapping": {
+    "rows": 24,
+    "unique_physical_simulations": 6,
+    "base_topologies": 6,
+    "distinct_physical_targets": 28,
+    "distinct_actual_to_documented_pairs": 28,
+    "distinct_leakage_groups": 24,
+    "observable": {
+     "true": 24
+    },
+    "degree_preserving_rows": 4
+   },
+   "vav_zone_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 8,
+    "distinct_physical_targets": 58,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 26,
+    "observable": {
+     "true": 8,
+     "ambiguous": 8,
+     "false": 16
+    },
+    "degree_preserving_rows": 32
+   },
+   "plant_loop_mapping": {
+    "rows": 17,
+    "unique_physical_simulations": 5,
+    "base_topologies": 5,
+    "distinct_physical_targets": 21,
+    "distinct_actual_to_documented_pairs": 21,
+    "distinct_leakage_groups": 16,
+    "observable": {
+     "true": 12,
+     "false": 2,
+     "ambiguous": 3
+    },
+    "degree_preserving_rows": 5
+   },
+   "sensor_mapping": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 8,
+    "distinct_physical_targets": 62,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 30,
+    "observable": {
+     "true": 30,
+     "ambiguous": 1,
+     "false": 1
+    },
+    "degree_preserving_rows": 32
+   },
+   "same_medium_branch": {
+    "rows": 28,
+    "unique_physical_simulations": 7,
+    "base_topologies": 7,
+    "distinct_physical_targets": 52,
+    "distinct_actual_to_documented_pairs": 56,
+    "distinct_leakage_groups": 24,
+    "observable": {
+     "true": 24,
+     "ambiguous": 2,
+     "false": 2
+    },
+    "degree_preserving_rows": 28
+   },
+   "parallel_peer_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 8,
+    "distinct_physical_targets": 60,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 28,
+    "observable": {
+     "true": 25,
+     "false": 3,
+     "ambiguous": 4
+    },
+    "degree_preserving_rows": 32
+   }
+  },
+  "T1_in_range": {
+   "wrong_ahu_mapping": {
+    "rows": 24,
+    "unique_physical_simulations": 6,
+    "base_topologies": 5,
+    "distinct_physical_targets": 24,
+    "distinct_actual_to_documented_pairs": 24,
+    "distinct_leakage_groups": 24,
+    "observable": {
+     "true": 24
+    },
+    "degree_preserving_rows": 0
+   },
+   "vav_zone_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 7,
+    "distinct_physical_targets": 59,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 27,
+    "observable": {
+     "true": 14,
+     "false": 14,
+     "ambiguous": 4
+    },
+    "degree_preserving_rows": 32
+   },
+   "plant_loop_mapping": {
+    "rows": 12,
+    "unique_physical_simulations": 3,
+    "base_topologies": 3,
+    "distinct_physical_targets": 13,
+    "distinct_actual_to_documented_pairs": 13,
+    "distinct_leakage_groups": 11,
+    "observable": {
+     "true": 12
+    },
+    "degree_preserving_rows": 2
+   },
+   "sensor_mapping": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 7,
+    "distinct_physical_targets": 58,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 26,
+    "observable": {
+     "true": 22,
+     "false": 4,
+     "ambiguous": 6
+    },
+    "degree_preserving_rows": 32
+   },
+   "same_medium_branch": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 7,
+    "distinct_physical_targets": 60,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 28,
+    "observable": {
+     "true": 25,
+     "false": 2,
+     "ambiguous": 5
+    },
+    "degree_preserving_rows": 32
+   },
+   "parallel_peer_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 7,
+    "distinct_physical_targets": 57,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 26,
+    "observable": {
+     "true": 24,
+     "false": 4,
+     "ambiguous": 4
+    },
+    "degree_preserving_rows": 32
+   }
+  },
+  "T2_regime": {
+   "wrong_ahu_mapping": {
+    "rows": 19,
+    "unique_physical_simulations": 5,
+    "base_topologies": 4,
+    "distinct_physical_targets": 19,
+    "distinct_actual_to_documented_pairs": 19,
+    "distinct_leakage_groups": 19,
+    "observable": {
+     "true": 19
+    },
+    "degree_preserving_rows": 0
+   },
+   "vav_zone_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 6,
+    "distinct_physical_targets": 58,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 26,
+    "observable": {
+     "true": 9,
+     "false": 12,
+     "ambiguous": 11
+    },
+    "degree_preserving_rows": 32
+   },
+   "plant_loop_mapping": {
+    "rows": 2,
+    "unique_physical_simulations": 1,
+    "base_topologies": 1,
+    "distinct_physical_targets": 3,
+    "distinct_actual_to_documented_pairs": 3,
+    "distinct_leakage_groups": 1,
+    "observable": {
+     "true": 2
+    },
+    "degree_preserving_rows": 2
+   },
+   "sensor_mapping": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 6,
+    "distinct_physical_targets": 58,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 26,
+    "observable": {
+     "true": 24,
+     "ambiguous": 7,
+     "false": 1
+    },
+    "degree_preserving_rows": 32
+   },
+   "same_medium_branch": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 6,
+    "distinct_physical_targets": 60,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 28,
+    "observable": {
+     "true": 31,
+     "ambiguous": 1
+    },
+    "degree_preserving_rows": 32
+   },
+   "parallel_peer_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 6,
+    "distinct_physical_targets": 60,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 28,
+    "observable": {
+     "true": 23,
+     "ambiguous": 7,
+     "false": 2
+    },
+    "degree_preserving_rows": 32
+   }
+  },
+  "T3_control": {
+   "wrong_ahu_mapping": {
+    "rows": 28,
+    "unique_physical_simulations": 7,
+    "base_topologies": 6,
+    "distinct_physical_targets": 28,
+    "distinct_actual_to_documented_pairs": 28,
+    "distinct_leakage_groups": 28,
+    "observable": {
+     "true": 28
+    },
+    "degree_preserving_rows": 0
+   },
+   "vav_zone_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 7,
+    "distinct_physical_targets": 62,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 30,
+    "observable": {
+     "false": 18,
+     "true": 8,
+     "ambiguous": 6
+    },
+    "degree_preserving_rows": 32
+   },
+   "plant_loop_mapping": {
+    "rows": 10,
+    "unique_physical_simulations": 4,
+    "base_topologies": 4,
+    "distinct_physical_targets": 12,
+    "distinct_actual_to_documented_pairs": 12,
+    "distinct_leakage_groups": 10,
+    "observable": {
+     "true": 8,
+     "ambiguous": 2
+    },
+    "degree_preserving_rows": 2
+   },
+   "sensor_mapping": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 7,
+    "distinct_physical_targets": 59,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 27,
+    "observable": {
+     "true": 17,
+     "false": 6,
+     "ambiguous": 9
+    },
+    "degree_preserving_rows": 32
+   },
+   "same_medium_branch": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 7,
+    "distinct_physical_targets": 61,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 29,
+    "observable": {
+     "true": 21,
+     "false": 5,
+     "ambiguous": 6
+    },
+    "degree_preserving_rows": 32
+   },
+   "parallel_peer_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 7,
+    "distinct_physical_targets": 63,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 31,
+    "observable": {
+     "true": 20,
+     "ambiguous": 4,
+     "false": 8
+    },
+    "degree_preserving_rows": 32
+   }
+  },
+  "T4_topology": {
+   "wrong_ahu_mapping": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 4,
+    "distinct_physical_targets": 32,
+    "distinct_actual_to_documented_pairs": 32,
+    "distinct_leakage_groups": 32,
+    "observable": {
+     "true": 32
+    },
+    "degree_preserving_rows": 0
+   },
+   "vav_zone_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 4,
+    "distinct_physical_targets": 64,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 32,
+    "observable": {
+     "true": 10,
+     "false": 10,
+     "ambiguous": 12
+    },
+    "degree_preserving_rows": 32
+   },
+   "plant_loop_mapping": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 4,
+    "distinct_physical_targets": 40,
+    "distinct_actual_to_documented_pairs": 41,
+    "distinct_leakage_groups": 31,
+    "observable": {
+     "true": 30,
+     "ambiguous": 2
+    },
+    "degree_preserving_rows": 9
+   },
+   "sensor_mapping": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 4,
+    "distinct_physical_targets": 63,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 31,
+    "observable": {
+     "true": 23,
+     "ambiguous": 6,
+     "false": 3
+    },
+    "degree_preserving_rows": 32
+   },
+   "same_medium_branch": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 4,
+    "distinct_physical_targets": 61,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 29,
+    "observable": {
+     "true": 24,
+     "false": 4,
+     "ambiguous": 4
+    },
+    "degree_preserving_rows": 32
+   },
+   "parallel_peer_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 4,
+    "distinct_physical_targets": 64,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 32,
+    "observable": {
+     "true": 22,
+     "ambiguous": 6,
+     "false": 4
+    },
+    "degree_preserving_rows": 32
+   }
+  },
+  "T5_climate": {
+   "wrong_ahu_mapping": {
+    "rows": 20,
+    "unique_physical_simulations": 5,
+    "base_topologies": 4,
+    "distinct_physical_targets": 20,
+    "distinct_actual_to_documented_pairs": 20,
+    "distinct_leakage_groups": 20,
+    "observable": {
+     "true": 20
+    },
+    "degree_preserving_rows": 0
+   },
+   "vav_zone_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 7,
+    "distinct_physical_targets": 58,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 27,
+    "observable": {
+     "true": 7,
+     "false": 17,
+     "ambiguous": 8
+    },
+    "degree_preserving_rows": 32
+   },
+   "sensor_mapping": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 7,
+    "distinct_physical_targets": 60,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 28,
+    "observable": {
+     "true": 20,
+     "false": 9,
+     "ambiguous": 3
+    },
+    "degree_preserving_rows": 32
+   },
+   "same_medium_branch": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 7,
+    "distinct_physical_targets": 58,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 26,
+    "observable": {
+     "true": 22,
+     "ambiguous": 7,
+     "false": 3
+    },
+    "degree_preserving_rows": 32
+   },
+   "parallel_peer_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 7,
+    "distinct_physical_targets": 58,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 27,
+    "observable": {
+     "true": 20,
+     "false": 7,
+     "ambiguous": 5
+    },
+    "degree_preserving_rows": 32
+   }
+  },
+  "T6_compound": {
+   "wrong_ahu_mapping": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 6,
+    "distinct_physical_targets": 32,
+    "distinct_actual_to_documented_pairs": 32,
+    "distinct_leakage_groups": 32,
+    "observable": {
+     "true": 32
+    },
+    "degree_preserving_rows": 0
+   },
+   "vav_zone_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 6,
+    "distinct_physical_targets": 63,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 31,
+    "observable": {
+     "true": 11,
+     "ambiguous": 5,
+     "false": 16
+    },
+    "degree_preserving_rows": 32
+   },
+   "plant_loop_mapping": {
+    "rows": 30,
+    "unique_physical_simulations": 8,
+    "base_topologies": 6,
+    "distinct_physical_targets": 35,
+    "distinct_actual_to_documented_pairs": 36,
+    "distinct_leakage_groups": 29,
+    "observable": {
+     "true": 27,
+     "ambiguous": 3
+    },
+    "degree_preserving_rows": 6
+   },
+   "sensor_mapping": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 6,
+    "distinct_physical_targets": 59,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 27,
+    "observable": {
+     "true": 18,
+     "false": 9,
+     "ambiguous": 5
+    },
+    "degree_preserving_rows": 32
+   },
+   "same_medium_branch": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 6,
+    "distinct_physical_targets": 63,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 31,
+    "observable": {
+     "true": 20,
+     "false": 10,
+     "ambiguous": 2
+    },
+    "degree_preserving_rows": 32
+   },
+   "parallel_peer_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 6,
+    "distinct_physical_targets": 63,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 31,
+    "observable": {
+     "true": 16,
+     "false": 8,
+     "ambiguous": 8
+    },
+    "degree_preserving_rows": 32
+   }
+  },
+  "full": {
+   "wrong_ahu_mapping": {
+    "rows": 20,
+    "unique_physical_simulations": 5,
+    "base_topologies": 5,
+    "distinct_physical_targets": 20,
+    "distinct_actual_to_documented_pairs": 20,
+    "distinct_leakage_groups": 20,
+    "observable": {
+     "true": 20
+    },
+    "degree_preserving_rows": 0
+   },
+   "vav_zone_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 8,
+    "distinct_physical_targets": 59,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 27,
+    "observable": {
+     "false": 16,
+     "ambiguous": 6,
+     "true": 10
+    },
+    "degree_preserving_rows": 32
+   },
+   "plant_loop_mapping": {
+    "rows": 10,
+    "unique_physical_simulations": 3,
+    "base_topologies": 3,
+    "distinct_physical_targets": 10,
+    "distinct_actual_to_documented_pairs": 10,
+    "distinct_leakage_groups": 10,
+    "observable": {
+     "true": 10
+    },
+    "degree_preserving_rows": 0
+   },
+   "sensor_mapping": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 8,
+    "distinct_physical_targets": 59,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 27,
+    "observable": {
+     "true": 25,
+     "ambiguous": 5,
+     "false": 2
+    },
+    "degree_preserving_rows": 32
+   },
+   "same_medium_branch": {
+    "rows": 22,
+    "unique_physical_simulations": 6,
+    "base_topologies": 6,
+    "distinct_physical_targets": 40,
+    "distinct_actual_to_documented_pairs": 44,
+    "distinct_leakage_groups": 18,
+    "observable": {
+     "true": 20,
+     "false": 2
+    },
+    "degree_preserving_rows": 22
+   },
+   "parallel_peer_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 8,
+    "distinct_physical_targets": 60,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 28,
+    "observable": {
+     "true": 26,
+     "ambiguous": 3,
+     "false": 3
+    },
+    "degree_preserving_rows": 32
+   }
+  },
+  "full_x3": {
+   "wrong_ahu_mapping": {
+    "rows": 60,
+    "unique_physical_simulations": 15,
+    "base_topologies": 13,
+    "distinct_physical_targets": 60,
+    "distinct_actual_to_documented_pairs": 60,
+    "distinct_leakage_groups": 60,
+    "observable": {
+     "true": 60
+    },
+    "degree_preserving_rows": 0
+   },
+   "vav_zone_swap": {
+    "rows": 96,
+    "unique_physical_simulations": 24,
+    "base_topologies": 19,
+    "distinct_physical_targets": 181,
+    "distinct_actual_to_documented_pairs": 192,
+    "distinct_leakage_groups": 85,
+    "observable": {
+     "true": 22,
+     "ambiguous": 22,
+     "false": 52
+    },
+    "degree_preserving_rows": 96
+   },
+   "plant_loop_mapping": {
+    "rows": 7,
+    "unique_physical_simulations": 4,
+    "base_topologies": 4,
+    "distinct_physical_targets": 9,
+    "distinct_actual_to_documented_pairs": 9,
+    "distinct_leakage_groups": 7,
+    "observable": {
+     "true": 7
+    },
+    "degree_preserving_rows": 2
+   },
+   "sensor_mapping": {
+    "rows": 96,
+    "unique_physical_simulations": 24,
+    "base_topologies": 19,
+    "distinct_physical_targets": 179,
+    "distinct_actual_to_documented_pairs": 192,
+    "distinct_leakage_groups": 84,
+    "observable": {
+     "true": 66,
+     "false": 13,
+     "ambiguous": 17
+    },
+    "degree_preserving_rows": 96
+   },
+   "same_medium_branch": {
+    "rows": 65,
+    "unique_physical_simulations": 18,
+    "base_topologies": 15,
+    "distinct_physical_targets": 118,
+    "distinct_actual_to_documented_pairs": 130,
+    "distinct_leakage_groups": 54,
+    "observable": {
+     "true": 62,
+     "false": 3
+    },
+    "degree_preserving_rows": 65
+   },
+   "parallel_peer_swap": {
+    "rows": 96,
+    "unique_physical_simulations": 24,
+    "base_topologies": 19,
+    "distinct_physical_targets": 174,
+    "distinct_actual_to_documented_pairs": 192,
+    "distinct_leakage_groups": 78,
+    "observable": {
+     "true": 66,
+     "ambiguous": 18,
+     "false": 12
+    },
+    "degree_preserving_rows": 96
+   }
+  },
+  "regime": {
+   "wrong_ahu_mapping": {
+    "rows": 24,
+    "unique_physical_simulations": 6,
+    "base_topologies": 6,
+    "distinct_physical_targets": 24,
+    "distinct_actual_to_documented_pairs": 24,
+    "distinct_leakage_groups": 24,
+    "observable": {
+     "true": 24
+    },
+    "degree_preserving_rows": 0
+   },
+   "vav_zone_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 8,
+    "distinct_physical_targets": 58,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 26,
+    "observable": {
+     "false": 15,
+     "ambiguous": 8,
+     "true": 9
+    },
+    "degree_preserving_rows": 32
+   },
+   "plant_loop_mapping": {
+    "rows": 4,
+    "unique_physical_simulations": 4,
+    "base_topologies": 4,
+    "distinct_physical_targets": 7,
+    "distinct_actual_to_documented_pairs": 7,
+    "distinct_leakage_groups": 4,
+    "observable": {
+     "true": 4
+    },
+    "degree_preserving_rows": 3
+   },
+   "sensor_mapping": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 8,
+    "distinct_physical_targets": 60,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 28,
+    "observable": {
+     "true": 17,
+     "ambiguous": 9,
+     "false": 6
+    },
+    "degree_preserving_rows": 32
+   },
+   "same_medium_branch": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 8,
+    "distinct_physical_targets": 57,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 25,
+    "observable": {
+     "true": 25,
+     "false": 7
+    },
+    "degree_preserving_rows": 32
+   },
+   "parallel_peer_swap": {
+    "rows": 32,
+    "unique_physical_simulations": 8,
+    "base_topologies": 8,
+    "distinct_physical_targets": 56,
+    "distinct_actual_to_documented_pairs": 64,
+    "distinct_leakage_groups": 24,
+    "observable": {
+     "true": 22,
+     "false": 7,
+     "ambiguous": 3
+    },
+    "degree_preserving_rows": 32
+   }
+  }
+ }
+}

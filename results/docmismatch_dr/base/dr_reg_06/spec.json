@@ -1,0 +1,150 @@
+{
+ "id": "dr_reg_06",
+ "role": "train",
+ "suite": "regime",
+ "climate": "sacramento",
+ "n_ahu": 3,
+ "n_vav": 12,
+ "floors": 3,
+ "nx": 2,
+ "ny": 2,
+ "tile_w": 9.2,
+ "tile_d": 8.3,
+ "floor_h": 3.87,
+ "north_axis": 49.0,
+ "wwr": 0.39,
+ "infiltration": 0.0007,
+ "lights_wm2": 7.3,
+ "equip_wm2": 15.4,
+ "people_m2": 0.047,
+ "oa_per_area": 0.00095,
+ "zone_load_sigma": 0.27,
+ "zone_shifts": [
+  -1,
+  0,
+  1
+ ],
+ "occ": {
+  "start": 9.5,
+  "end": 20.0,
+  "night_frac": 0.24,
+  "weekend_frac": 0.16
+ },
+ "setpoints": {
+  "heat": 22.4,
+  "cool": 27.3,
+  "heat_setback": 18.5,
+  "cool_setback": 32.1
+ },
+ "min_flow_frac": 0.18,
+ "heat_sizing_factor": 1.36,
+ "cool_sizing_factor": 1.2,
+ "group_mode": "stripe",
+ "group_sizes": [
+  5,
+  4,
+  3
+ ],
+ "sat_pattern": "all_twin",
+ "ahu_sat": [
+  12.18,
+  12.03,
+  12.42
+ ],
+ "fan_dp": [
+  663.0,
+  689.0,
+  488.0
+ ],
+ "economizer": [
+  true,
+  true,
+  false
+ ],
+ "n_hw": 1,
+ "n_chw": 2,
+ "ahu_hw": [
+  0,
+  0,
+  0
+ ],
+ "ahu_chw": [
+  0,
+  0,
+  1
+ ],
+ "hw_t": [
+  68.7
+ ],
+ "hw_dt": [
+  17.4
+ ],
+ "chw_t": [
+  6.2,
+  5.6
+ ],
+ "chw_dt": [
+  6.9,
+  7.8
+ ],
+ "geometry_seed": 408974,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "sacramento",
+  "temp_offset": 0.13,
+  "solar_scale": 0.918
+ },
+ "reheat": "hydronic",
+ "electric_zones": null,
+ "sat_strategy": [
+  "constant",
+  "oa_reset",
+  "oa_reset"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 9.7,
+   "oa_high": 22.8,
+   "span": 3.43
+  },
+  {
+   "oa_low": 8.4,
+   "oa_high": 21.5,
+   "span": 3.58
+  },
+  {
+   "oa_low": 6.6,
+   "oa_high": 19.5,
+   "span": 2.37
+  }
+ ],
+ "sp_reset": [
+  false,
+  true,
+  true
+ ],
+ "econ_type": [
+  "fixed_enth",
+  "fixed_db",
+  "none"
+ ],
+ "econ_limit_db": [
+  23.1,
+  20.1,
+  22.8
+ ],
+ "econ_limit_enth": [
+  57045.0,
+  61713.0,
+  56029.0
+ ],
+ "min_oa_scale": 1.47,
+ "night_oa": 0.58,
+ "boiler_eff": 0.936,
+ "chiller_cop": 3.43,
+ "fan_eff": 0.623,
+ "sensor_level": "legacy",
+ "profile_seed": 224675,
+ "distractors": [],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

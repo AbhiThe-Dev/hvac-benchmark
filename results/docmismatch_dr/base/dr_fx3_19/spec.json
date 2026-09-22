@@ -1,0 +1,157 @@
+{
+ "id": "dr_fx3_19",
+ "role": "train",
+ "suite": "full_x3",
+ "climate": "sanfrancisco",
+ "n_ahu": 3,
+ "n_vav": 6,
+ "floors": 1,
+ "nx": 2,
+ "ny": 3,
+ "tile_w": 9.6,
+ "tile_d": 8.6,
+ "floor_h": 3.24,
+ "north_axis": 1.0,
+ "wwr": 0.18,
+ "infiltration": 0.00074,
+ "lights_wm2": 13.9,
+ "equip_wm2": 11.9,
+ "people_m2": 0.086,
+ "oa_per_area": 0.00067,
+ "zone_load_sigma": 0.28,
+ "zone_shifts": [
+  0
+ ],
+ "occ": {
+  "start": 5.9,
+  "end": 17.7,
+  "night_frac": 0.22,
+  "weekend_frac": 0.16
+ },
+ "setpoints": {
+  "heat": 19.3,
+  "cool": 24.2,
+  "heat_setback": 15.6,
+  "cool_setback": 28.1
+ },
+ "min_flow_frac": 0.34,
+ "heat_sizing_factor": 1.05,
+ "cool_sizing_factor": 1.28,
+ "group_mode": "block",
+ "group_sizes": [
+  2,
+  2,
+  2
+ ],
+ "sat_pattern": "mixed",
+ "ahu_sat": [
+  12.76,
+  12.83,
+  14.42
+ ],
+ "fan_dp": [
+  890.0,
+  494.0,
+  618.0
+ ],
+ "economizer": [
+  false,
+  true,
+  true
+ ],
+ "n_hw": 1,
+ "n_chw": 1,
+ "ahu_hw": [
+  0,
+  0,
+  0
+ ],
+ "ahu_chw": [
+  0,
+  0,
+  0
+ ],
+ "hw_t": [
+  81.9
+ ],
+ "hw_dt": [
+  18.4
+ ],
+ "chw_t": [
+  5.7
+ ],
+ "chw_dt": [
+  5.1
+ ],
+ "geometry_seed": 924270,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "sanfrancisco",
+  "temp_offset": -0.15,
+  "solar_scale": 1.015
+ },
+ "reheat": "electric",
+ "electric_zones": null,
+ "sat_strategy": [
+  "oa_reset",
+  "oa_reset",
+  "oa_reset"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 11.0,
+   "oa_high": 21.0,
+   "span": 2.65
+  },
+  {
+   "oa_low": 10.8,
+   "oa_high": 21.2,
+   "span": 1.99
+  },
+  {
+   "oa_low": 9.6,
+   "oa_high": 19.4,
+   "span": 2.15
+  }
+ ],
+ "sp_reset": [
+  true,
+  false,
+  false
+ ],
+ "econ_type": [
+  "none",
+  "fixed_enth",
+  "fixed_enth"
+ ],
+ "econ_limit_db": [
+  24.0,
+  25.0,
+  23.1
+ ],
+ "econ_limit_enth": [
+  52152.0,
+  62855.0,
+  58476.0
+ ],
+ "min_oa_scale": 1.15,
+ "night_oa": 0.0,
+ "boiler_eff": 0.929,
+ "chiller_cop": 4.22,
+ "fan_eff": 0.643,
+ "sensor_level": "wide",
+ "profile_seed": 743537,
+ "distractors": [
+  {
+   "type": "stuck_sensor",
+   "seed": 346374,
+   "window": 2
+  },
+  {
+   "type": "stuck_sensor",
+   "seed": 162632,
+   "window": 4
+  }
+ ],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

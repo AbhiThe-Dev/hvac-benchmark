@@ -1,0 +1,191 @@
+{
+ "id": "dr_t4_05",
+ "role": "test",
+ "suite": "T4_topology",
+ "climate": "oakland",
+ "n_ahu": 4,
+ "n_vav": 18,
+ "floors": 2,
+ "nx": 3,
+ "ny": 3,
+ "tile_w": 7.0,
+ "tile_d": 9.4,
+ "floor_h": 3.24,
+ "north_axis": 6.0,
+ "wwr": 0.45,
+ "infiltration": 0.00057,
+ "lights_wm2": 13.6,
+ "equip_wm2": 5.0,
+ "people_m2": 0.027,
+ "oa_per_area": 0.00065,
+ "zone_load_sigma": 0.17,
+ "zone_shifts": [
+  -1,
+  0,
+  1
+ ],
+ "occ": {
+  "start": 9.3,
+  "end": 17.4,
+  "night_frac": 0.12,
+  "weekend_frac": 0.6
+ },
+ "setpoints": {
+  "heat": 22.8,
+  "cool": 25.5,
+  "heat_setback": 17.4,
+  "cool_setback": 30.3
+ },
+ "min_flow_frac": 0.35,
+ "heat_sizing_factor": 1.38,
+ "cool_sizing_factor": 1.08,
+ "group_mode": "block",
+ "group_sizes": [
+  5,
+  3,
+  6,
+  4
+ ],
+ "sat_pattern": "all_separate",
+ "ahu_sat": [
+  13.19,
+  14.89,
+  11.59,
+  12.59
+ ],
+ "fan_dp": [
+  970.0,
+  808.0,
+  598.0,
+  865.0
+ ],
+ "economizer": [
+  true,
+  true,
+  true,
+  true
+ ],
+ "n_hw": 3,
+ "n_chw": 3,
+ "ahu_hw": [
+  0,
+  1,
+  2,
+  2
+ ],
+ "ahu_chw": [
+  0,
+  1,
+  0,
+  2
+ ],
+ "hw_t": [
+  77.7,
+  77.1,
+  64.0
+ ],
+ "hw_dt": [
+  24.2,
+  16.9,
+  17.5
+ ],
+ "chw_t": [
+  7.8,
+  8.1,
+  7.5
+ ],
+ "chw_dt": [
+  5.2,
+  6.9,
+  4.7
+ ],
+ "geometry_seed": 708050,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "oakland",
+  "temp_offset": -3.31,
+  "solar_scale": 0.973
+ },
+ "reheat": "mixed",
+ "electric_zones": [
+  false,
+  true,
+  true,
+  false,
+  true,
+  true,
+  true,
+  true,
+  false,
+  false,
+  true,
+  false,
+  true,
+  false,
+  false,
+  true,
+  true,
+  false
+ ],
+ "sat_strategy": [
+  "constant",
+  "oa_reset",
+  "constant",
+  "oa_reset"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 9.4,
+   "oa_high": 24.4,
+   "span": 1.95
+  },
+  {
+   "oa_low": 5.7,
+   "oa_high": 20.9,
+   "span": 2.49
+  },
+  {
+   "oa_low": 11.5,
+   "oa_high": 19.7,
+   "span": 2.54
+  },
+  {
+   "oa_low": 11.5,
+   "oa_high": 21.9,
+   "span": 1.85
+  }
+ ],
+ "sp_reset": [
+  false,
+  false,
+  false,
+  true
+ ],
+ "econ_type": [
+  "fixed_db",
+  "fixed_db",
+  "fixed_db",
+  "fixed_enth"
+ ],
+ "econ_limit_db": [
+  25.5,
+  24.6,
+  18.6,
+  25.8
+ ],
+ "econ_limit_enth": [
+  51282.0,
+  58165.0,
+  57080.0,
+  64020.0
+ ],
+ "min_oa_scale": 1.71,
+ "night_oa": 0.74,
+ "boiler_eff": 0.794,
+ "chiller_cop": 3.64,
+ "fan_eff": 0.6,
+ "sensor_level": "estimated",
+ "profile_seed": 348028,
+ "distractors": [],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

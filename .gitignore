@@ -24,3 +24,18 @@ __pycache__/
 /results/trajectories_troubleshooting/
 /symptom_pipeline/output/runs/
 /symptom_pipeline/output/test_runs/
+
+# doc_mismatch: large regenerable simulation/run artifacts (keep the .md/.json/.jsonl summary
+# reports and case specs that live alongside them)
+/results/docmismatch/**/*.pkl
+/results/docmismatch/**/*.npz
+/results/docmismatch/**/*.epw
+/results/docmismatch/**/*.idf
+/results/docmismatch/**/*.err
+/results/docmismatch/**/*.done
+/results/docmismatch_dr/**/*.pkl
+/results/docmismatch_dr/**/*.npz
+/results/docmismatch_dr/**/*.epw
+/results/docmismatch_dr/**/*.idf
+/results/docmismatch_dr/**/*.err
+/results/docmismatch_dr/**/*.done

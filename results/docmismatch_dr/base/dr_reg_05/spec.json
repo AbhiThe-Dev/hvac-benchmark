@@ -1,0 +1,146 @@
+{
+ "id": "dr_reg_05",
+ "role": "train",
+ "suite": "regime",
+ "climate": "golden",
+ "n_ahu": 3,
+ "n_vav": 12,
+ "floors": 2,
+ "nx": 2,
+ "ny": 3,
+ "tile_w": 8.2,
+ "tile_d": 7.5,
+ "floor_h": 3.52,
+ "north_axis": 20.0,
+ "wwr": 0.27,
+ "infiltration": 0.00029,
+ "lights_wm2": 7.1,
+ "equip_wm2": 4.7,
+ "people_m2": 0.024,
+ "oa_per_area": 0.00067,
+ "zone_load_sigma": 0.33,
+ "zone_shifts": [
+  0
+ ],
+ "occ": {
+  "start": 7.0,
+  "end": 18.4,
+  "night_frac": 0.28,
+  "weekend_frac": 0.51
+ },
+ "setpoints": {
+  "heat": 20.6,
+  "cool": 23.5,
+  "heat_setback": 14.6,
+  "cool_setback": 27.0
+ },
+ "min_flow_frac": 0.34,
+ "heat_sizing_factor": 1.17,
+ "cool_sizing_factor": 1.31,
+ "group_mode": "block",
+ "group_sizes": [
+  4,
+  3,
+  5
+ ],
+ "sat_pattern": "all_separate",
+ "ahu_sat": [
+  13.24,
+  11.84,
+  14.58
+ ],
+ "fan_dp": [
+  559.0,
+  934.0,
+  500.0
+ ],
+ "economizer": [
+  false,
+  false,
+  false
+ ],
+ "n_hw": 1,
+ "n_chw": 1,
+ "ahu_hw": [
+  0,
+  0,
+  0
+ ],
+ "ahu_chw": [
+  0,
+  0,
+  0
+ ],
+ "hw_t": [
+  72.4
+ ],
+ "hw_dt": [
+  12.0
+ ],
+ "chw_t": [
+  6.9
+ ],
+ "chw_dt": [
+  6.6
+ ],
+ "geometry_seed": 269060,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "golden",
+  "temp_offset": 2.39,
+  "solar_scale": 0.909
+ },
+ "reheat": "hydronic",
+ "electric_zones": null,
+ "sat_strategy": [
+  "oa_reset",
+  "constant",
+  "constant"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 5.9,
+   "oa_high": 24.3,
+   "span": 1.94
+  },
+  {
+   "oa_low": 5.8,
+   "oa_high": 23.6,
+   "span": 1.42
+  },
+  {
+   "oa_low": 10.5,
+   "oa_high": 24.1,
+   "span": 2.67
+  }
+ ],
+ "sp_reset": [
+  false,
+  false,
+  true
+ ],
+ "econ_type": [
+  "none",
+  "none",
+  "none"
+ ],
+ "econ_limit_db": [
+  18.6,
+  19.7,
+  24.7
+ ],
+ "econ_limit_enth": [
+  50301.0,
+  47556.0,
+  62498.0
+ ],
+ "min_oa_scale": 0.82,
+ "night_oa": 0.0,
+ "boiler_eff": 0.754,
+ "chiller_cop": 5.18,
+ "fan_eff": 0.58,
+ "sensor_level": "legacy",
+ "profile_seed": 855744,
+ "distractors": [],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

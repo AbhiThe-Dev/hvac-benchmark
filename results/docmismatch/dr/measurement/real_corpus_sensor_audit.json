@@ -1,0 +1,278 @@
+{
+  "mortar_bldg1": {
+    "n_vav": 8,
+    "present": 8,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg10": {
+    "n_vav": 16,
+    "present": 0,
+    "absent": 16,
+    "undetermined": 0
+  },
+  "mortar_bldg11": {
+    "n_vav": 394,
+    "present": 93,
+    "absent": 301,
+    "undetermined": 0
+  },
+  "mortar_bldg12": {
+    "n_vav": 98,
+    "present": 72,
+    "absent": 26,
+    "undetermined": 0
+  },
+  "mortar_bldg13": {
+    "n_vav": 24,
+    "present": 12,
+    "absent": 12,
+    "undetermined": 0
+  },
+  "mortar_bldg14": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg15": {
+    "n_vav": 129,
+    "present": 102,
+    "absent": 27,
+    "undetermined": 0
+  },
+  "mortar_bldg16": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg17": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg18": {
+    "n_vav": 144,
+    "present": 0,
+    "absent": 144,
+    "undetermined": 0
+  },
+  "mortar_bldg19": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg2": {
+    "n_vav": 25,
+    "present": 0,
+    "absent": 25,
+    "undetermined": 0
+  },
+  "mortar_bldg20": {
+    "n_vav": 13,
+    "present": 0,
+    "absent": 13,
+    "undetermined": 0
+  },
+  "mortar_bldg21": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg22": {
+    "n_vav": 2,
+    "present": 1,
+    "absent": 1,
+    "undetermined": 0
+  },
+  "mortar_bldg23": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg24": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg25": {
+    "n_vav": 2,
+    "present": 0,
+    "absent": 2,
+    "undetermined": 0
+  },
+  "mortar_bldg26": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg27": {
+    "n_vav": 17,
+    "present": 17,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg28": {
+    "n_vav": 45,
+    "present": 0,
+    "absent": 45,
+    "undetermined": 0
+  },
+  "mortar_bldg29": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg3": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg30": {
+    "n_vav": 99,
+    "present": 99,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg31": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg32": {
+    "n_vav": 107,
+    "present": 0,
+    "absent": 107,
+    "undetermined": 0
+  },
+  "mortar_bldg33": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg34": {
+    "n_vav": 39,
+    "present": 14,
+    "absent": 25,
+    "undetermined": 0
+  },
+  "mortar_bldg35": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg36": {
+    "n_vav": 43,
+    "present": 0,
+    "absent": 43,
+    "undetermined": 0
+  },
+  "mortar_bldg37": {
+    "n_vav": 283,
+    "present": 237,
+    "absent": 46,
+    "undetermined": 0
+  },
+  "mortar_bldg38": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg39": {
+    "n_vav": 18,
+    "present": 0,
+    "absent": 18,
+    "undetermined": 0
+  },
+  "mortar_bldg4": {
+    "n_vav": 28,
+    "present": 12,
+    "absent": 16,
+    "undetermined": 0
+  },
+  "mortar_bldg40": {
+    "n_vav": 87,
+    "present": 69,
+    "absent": 18,
+    "undetermined": 0
+  },
+  "mortar_bldg41": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg42": {
+    "n_vav": 13,
+    "present": 13,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg43": {
+    "n_vav": 52,
+    "present": 0,
+    "absent": 52,
+    "undetermined": 0
+  },
+  "mortar_bldg44": {
+    "n_vav": 44,
+    "present": 16,
+    "absent": 28,
+    "undetermined": 0
+  },
+  "mortar_bldg5": {
+    "n_vav": 124,
+    "present": 0,
+    "absent": 124,
+    "undetermined": 0
+  },
+  "mortar_bldg6": {
+    "n_vav": 151,
+    "present": 0,
+    "absent": 151,
+    "undetermined": 0
+  },
+  "mortar_bldg7": {
+    "n_vav": 0,
+    "present": 0,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg8": {
+    "n_vav": 24,
+    "present": 24,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "mortar_bldg9": {
+    "n_vav": 126,
+    "present": 62,
+    "absent": 64,
+    "undetermined": 0
+  },
+  "mortar_smc": {
+    "n_vav": 99,
+    "present": 99,
+    "absent": 0,
+    "undetermined": 0
+  },
+  "rtu_exp": {
+    "n_vav": 10,
+    "present": 0,
+    "absent": 10,
+    "undetermined": 0
+  }
+}

@@ -1,0 +1,162 @@
+{
+ "id": "dr_fx3_03",
+ "role": "train",
+ "suite": "full_x3",
+ "climate": "chicago_tmy3",
+ "n_ahu": 3,
+ "n_vav": 9,
+ "floors": 1,
+ "nx": 3,
+ "ny": 3,
+ "tile_w": 6.2,
+ "tile_d": 9.4,
+ "floor_h": 3.85,
+ "north_axis": 7.0,
+ "wwr": 0.4,
+ "infiltration": 0.00099,
+ "lights_wm2": 8.5,
+ "equip_wm2": 5.8,
+ "people_m2": 0.035,
+ "oa_per_area": 0.00052,
+ "zone_load_sigma": 0.13,
+ "zone_shifts": [
+  0
+ ],
+ "occ": {
+  "start": 7.3,
+  "end": 16.7,
+  "night_frac": 0.26,
+  "weekend_frac": 0.47
+ },
+ "setpoints": {
+  "heat": 19.4,
+  "cool": 21.4,
+  "heat_setback": 14.1,
+  "cool_setback": 23.5
+ },
+ "min_flow_frac": 0.47,
+ "heat_sizing_factor": 1.15,
+ "cool_sizing_factor": 1.13,
+ "group_mode": "block",
+ "group_sizes": [
+  4,
+  2,
+  3
+ ],
+ "sat_pattern": "all_twin",
+ "ahu_sat": [
+  14.81,
+  15.11,
+  14.65
+ ],
+ "fan_dp": [
+  849.0,
+  367.0,
+  432.0
+ ],
+ "economizer": [
+  true,
+  true,
+  true
+ ],
+ "n_hw": 1,
+ "n_chw": 1,
+ "ahu_hw": [
+  0,
+  0,
+  0
+ ],
+ "ahu_chw": [
+  0,
+  0,
+  0
+ ],
+ "hw_t": [
+  80.2
+ ],
+ "hw_dt": [
+  15.4
+ ],
+ "chw_t": [
+  6.7
+ ],
+ "chw_dt": [
+  5.1
+ ],
+ "geometry_seed": 654599,
+ "seed_attempt": 0,
+ "weather": {
+  "climate": "chicago_tmy3",
+  "temp_offset": 3.11,
+  "solar_scale": 1.131
+ },
+ "reheat": "hydronic",
+ "electric_zones": null,
+ "sat_strategy": [
+  "oa_reset",
+  "constant",
+  "constant"
+ ],
+ "sat_reset": [
+  {
+   "oa_low": 10.6,
+   "oa_high": 19.3,
+   "span": 3.0
+  },
+  {
+   "oa_low": 11.3,
+   "oa_high": 23.3,
+   "span": 1.16
+  },
+  {
+   "oa_low": 10.3,
+   "oa_high": 20.6,
+   "span": 2.62
+  }
+ ],
+ "sp_reset": [
+  false,
+  false,
+  true
+ ],
+ "econ_type": [
+  "fixed_enth",
+  "fixed_db",
+  "fixed_enth"
+ ],
+ "econ_limit_db": [
+  22.8,
+  21.3,
+  18.1
+ ],
+ "econ_limit_enth": [
+  45107.0,
+  49915.0,
+  54745.0
+ ],
+ "min_oa_scale": 0.59,
+ "night_oa": 0.0,
+ "boiler_eff": 0.779,
+ "chiller_cop": 3.59,
+ "fan_eff": 0.645,
+ "sensor_level": "wide",
+ "profile_seed": 916984,
+ "distractors": [
+  {
+   "type": "spikes",
+   "seed": 565538,
+   "window": null
+  },
+  {
+   "type": "dropout_burst",
+   "seed": 411496,
+   "window": null
+  },
+  {
+   "type": "flow_gain_error",
+   "seed": 605460,
+   "window": null
+  }
+ ],
+ "note": "SYNTHETIC building (EnergyPlus); not a real building; documentation errors are synthetic and not real-world verified"
+}

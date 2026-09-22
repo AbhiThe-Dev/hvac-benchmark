@@ -1,0 +1,885 @@
+{
+ "spec_file": "results/docmismatch/active/sim_spec.json",
+ "spec_sha256": "96ca79ae79ddcdffb00b1d61511c152c46a7a7428d0c07e766a99435540b299f",
+ "spec_written_utc": "2026-09-21T19:41:47Z",
+ "sim_spec_py_sha256": "0abea6596f7885368fc1d981b78c6dd49a4d2bcceeae1c8711d683607a62fbdd",
+ "status": "generated",
+ "dev_topologies": [
+  "dev_E",
+  "dev_F",
+  "dev_G",
+  "dev_H"
+ ],
+ "sealed_topologies": [
+  "seal_S1",
+  "seal_S2",
+  "seal_S3",
+  "seal_S4"
+ ],
+ "generation": {
+  "dev_E": {
+   "attempts": 1,
+   "started_utc": "2026-09-21T19:42:30Z",
+   "energyplus": {
+    "returncode": 0,
+    "severe": 0,
+    "fatal": 0,
+    "seconds": 3.8,
+    "climate": "sterling_va",
+    "ok": true,
+    "n_hours": 8760,
+    "n_series": 91
+   },
+   "checks": {
+    "ok": true,
+    "problems": [],
+    "stats": {
+     "n_series": 91,
+     "n_constant_series": 0,
+     "constant_by_signal": {},
+     "zone_temp_p01": 16.3,
+     "zone_temp_p50": 19.0,
+     "zone_temp_p99": 24.4,
+     "frac_zone_hours_outside_setback_band_pm2K": 0.0,
+     "ahu_peak_over_sum_vav_peak": [
+      0.96
+     ],
+     "ahu_flow_max_kgs": [
+      2.57
+     ],
+     "ahu_flow_min_over_max": [
+      0.52
+     ],
+     "oat_range": [
+      -16.1,
+      37.2
+     ],
+     "annual_heating_coil_share": 0.351,
+     "eplus_warnings": 29,
+     "group_mode": "stripe",
+     "sat_pattern": "single"
+    }
+   },
+   "status": "ok",
+   "wall_seconds": 7.7
+  },
+  "dev_F": {
+   "attempts": 1,
+   "started_utc": "2026-09-21T19:42:38Z",
+   "energyplus": {
+    "returncode": 0,
+    "severe": 0,
+    "fatal": 0,
+    "seconds": 5.5,
+    "climate": "sacramento",
+    "ok": true,
+    "n_hours": 8760,
+    "n_series": 121
+   },
+   "checks": {
+    "ok": true,
+    "problems": [],
+    "stats": {
+     "n_series": 121,
+     "n_constant_series": 0,
+     "constant_by_signal": {},
+     "zone_temp_p01": 16.4,
+     "zone_temp_p50": 18.9,
+     "zone_temp_p99": 25.2,
+     "frac_zone_hours_outside_setback_band_pm2K": 0.0,
+     "ahu_peak_over_sum_vav_peak": [
+      1.0,
+      0.99
+     ],
+     "ahu_flow_max_kgs": [
+      0.95,
+      0.91
+     ],
+     "ahu_flow_min_over_max": [
+      0.63,
+      0.59
+     ],
+     "oat_range": [
+      -2.0,
+      42.7
+     ],
+     "annual_heating_coil_share": 0.263,
+     "eplus_warnings": 26,
+     "group_mode": "stripe",
+     "sat_pattern": "mixed"
+    }
+   },
+   "status": "ok",
+   "wall_seconds": 10.7
+  },
+  "dev_G": {
+   "attempts": 1,
+   "started_utc": "2026-09-21T19:42:49Z",
+   "energyplus": {
+    "returncode": 0,
+    "severe": 0,
+    "fatal": 0,
+    "seconds": 5.6,
+    "climate": "sanfrancisco",
+    "ok": true,
+    "n_hours": 8760,
+    "n_series": 137
+   },
+   "checks": {
+    "ok": true,
+    "problems": [],
+    "stats": {
+     "n_series": 137,
+     "n_constant_series": 0,
+     "constant_by_signal": {},
+     "zone_temp_p01": 15.7,
+     "zone_temp_p50": 19.0,
+     "zone_temp_p99": 23.9,
+     "frac_zone_hours_outside_setback_band_pm2K": 0.0,
+     "ahu_peak_over_sum_vav_peak": [
+      1.0,
+      1.0,
+      0.99
+     ],
+     "ahu_flow_max_kgs": [
+      0.45,
+      0.36,
+      0.5
+     ],
+     "ahu_flow_min_over_max": [
+      0.39,
+      0.46,
+      0.38
+     ],
+     "oat_range": [
+      2.8,
+      32.6
+     ],
+     "annual_heating_coil_share": 0.313,
+     "eplus_warnings": 29,
+     "group_mode": "stripe",
+     "sat_pattern": "mixed"
+    }
+   },
+   "status": "ok",
+   "wall_seconds": 11.8
+  },
+  "dev_H": {
+   "attempts": 1,
+   "started_utc": "2026-09-21T19:43:00Z",
+   "energyplus": {
+    "returncode": 0,
+    "severe": 0,
+    "fatal": 0,
+    "seconds": 9.1,
+    "climate": "golden",
+    "ok": true,
+    "n_hours": 8760,
+    "n_series": 174
+   },
+   "checks": {
+    "ok": true,
+    "problems": [],
+    "stats": {
+     "n_series": 174,
+     "n_constant_series": 0,
+     "constant_by_signal": {},
+     "zone_temp_p01": 18.1,
+     "zone_temp_p50": 18.6,
+     "zone_temp_p99": 25.5,
+     "frac_zone_hours_outside_setback_band_pm2K": 0.0022,
+     "ahu_peak_over_sum_vav_peak": [
+      0.91,
+      0.96
+     ],
+     "ahu_flow_max_kgs": [
+      1.43,
+      1.64
+     ],
+     "ahu_flow_min_over_max": [
+      0.52,
+      0.59
+     ],
+     "oat_range": [
+      -24.6,
+      35.2
+     ],
+     "annual_heating_coil_share": 0.559,
+     "eplus_warnings": 44,
+     "group_mode": "block",
+     "sat_pattern": "all_twin"
+    }
+   },
+   "status": "ok",
+   "wall_seconds": 17.3
+  },
+  "seal_S1": {
+   "attempts": 1,
+   "started_utc": "2026-09-21T19:43:18Z",
+   "energyplus": {
+    "returncode": 0,
+    "severe": 0,
+    "fatal": 0,
+    "seconds": 11.6,
+    "climate": "chicago_amy2013",
+    "ok": true,
+    "n_hours": 8760,
+    "n_series": 253
+   },
+   "checks": {
+    "ok": true,
+    "problems": [],
+    "stats": {
+     "n_series": 253,
+     "n_constant_series": 0,
+     "constant_by_signal": {},
+     "zone_temp_p01": 14.2,
+     "zone_temp_p50": 18.3,
+     "zone_temp_p99": 24.1,
+     "frac_zone_hours_outside_setback_band_pm2K": 0.0128,
+     "ahu_peak_over_sum_vav_peak": [
+      0.98,
+      0.99,
+      0.98,
+      1.0
+     ],
+     "ahu_flow_max_kgs": [
+      1.92,
+      2.69,
+      1.16,
+      0.59
+     ],
+     "ahu_flow_min_over_max": [
+      0.54,
+      0.55,
+      0.58,
+      0.74
+     ],
+     "oat_range": [
+      -22.6,
+      34.8
+     ],
+     "annual_heating_coil_share": 0.545,
+     "eplus_warnings": 47,
+     "group_mode": "stripe",
+     "sat_pattern": "all_separate"
+    }
+   },
+   "status": "ok",
+   "wall_seconds": 27.4
+  },
+  "seal_S2": {
+   "attempts": 1,
+   "started_utc": "2026-09-21T19:43:45Z",
+   "energyplus": {
+    "returncode": 0,
+    "severe": 0,
+    "fatal": 0,
+    "seconds": 9.4,
+    "climate": "blue_canyon",
+    "ok": true,
+    "n_hours": 8760,
+    "n_series": 197
+   },
+   "checks": {
+    "ok": true,
+    "problems": [],
+    "stats": {
+     "n_series": 197,
+     "n_constant_series": 0,
+     "constant_by_signal": {},
+     "zone_temp_p01": 17.9,
+     "zone_temp_p50": 22.8,
+     "zone_temp_p99": 26.7,
+     "frac_zone_hours_outside_setback_band_pm2K": 0.0005,
+     "ahu_peak_over_sum_vav_peak": [
+      0.95,
+      0.98,
+      0.96
+     ],
+     "ahu_flow_max_kgs": [
+      0.88,
+      0.58,
+      1.4
+     ],
+     "ahu_flow_min_over_max": [
+      0.23,
+      0.21,
+      0.27
+     ],
+     "oat_range": [
+      -8.2,
+      32.2
+     ],
+     "annual_heating_coil_share": 0.512,
+     "eplus_warnings": 42,
+     "group_mode": "stripe",
+     "sat_pattern": "all_separate"
+    }
+   },
+   "status": "ok",
+   "wall_seconds": 19.9
+  },
+  "seal_S3": {
+   "attempts": 1,
+   "started_utc": "2026-09-21T19:44:05Z",
+   "energyplus": {
+    "returncode": 0,
+    "severe": 0,
+    "fatal": 0,
+    "seconds": 7.1,
+    "climate": "arcata",
+    "ok": true,
+    "n_hours": 8760,
+    "n_series": 183
+   },
+   "checks": {
+    "ok": true,
+    "problems": [],
+    "stats": {
+     "n_series": 183,
+     "n_constant_series": 0,
+     "constant_by_signal": {},
+     "zone_temp_p01": 15.8,
+     "zone_temp_p50": 21.8,
+     "zone_temp_p99": 26.3,
+     "frac_zone_hours_outside_setback_band_pm2K": 0.0,
+     "ahu_peak_over_sum_vav_peak": [
+      0.99,
+      0.99,
+      1.0
+     ],
+     "ahu_flow_max_kgs": [
+      1.29,
+      0.86,
+      0.38
+     ],
+     "ahu_flow_min_over_max": [
+      0.51,
+      0.5,
+      0.53
+     ],
+     "oat_range": [
+      -1.9,
+      26.7
+     ],
+     "annual_heating_coil_share": 0.626,
+     "eplus_warnings": 37,
+     "group_mode": "stripe",
+     "sat_pattern": "all_twin"
+    }
+   },
+   "status": "ok",
+   "wall_seconds": 15.3
+  },
+  "seal_S4": {
+   "attempts": 1,
+   "started_utc": "2026-09-21T19:44:20Z",
+   "energyplus": {
+    "returncode": 0,
+    "severe": 0,
+    "fatal": 0,
+    "seconds": 6.9,
+    "climate": "tampa",
+    "ok": true,
+    "n_hours": 8760,
+    "n_series": 181
+   },
+   "checks": {
+    "ok": true,
+    "problems": [],
+    "stats": {
+     "n_series": 181,
+     "n_constant_series": 0,
+     "constant_by_signal": {},
+     "zone_temp_p01": 17.2,
+     "zone_temp_p50": 23.5,
+     "zone_temp_p99": 27.5,
+     "frac_zone_hours_outside_setback_band_pm2K": 0.0002,
+     "ahu_peak_over_sum_vav_peak": [
+      0.94
+     ],
+     "ahu_flow_max_kgs": [
+      6.99
+     ],
+     "ahu_flow_min_over_max": [
+      0.28
+     ],
+     "oat_range": [
+      -1.9,
+      34.4
+     ],
+     "annual_heating_coil_share": 0.03,
+     "eplus_warnings": 43,
+     "group_mode": "block",
+     "sat_pattern": "single"
+    }
+   },
+   "status": "ok",
+   "wall_seconds": 14.6
+  }
+ },
+ "cases": {
+  "dev_extra": {
+   "file": "results/docmismatch/cases_dev_extra.jsonl",
+   "sha256": "5d907cf6a6629fadadb5b3a9c519faf41ed9df5447d7e8d48903ea048556711d",
+   "build_cases_seed": 100,
+   "n_cases": 179,
+   "by_difficulty": {
+    "hard": 117,
+    "easy": 30,
+    "clean": 32
+   },
+   "hard_by_family": {
+    "wrong_ahu_mapping": 20,
+    "vav_zone_swap": 20,
+    "plant_loop_mapping": 17,
+    "sensor_mapping": 20,
+    "same_medium_branch": 20,
+    "parallel_peer_swap": 20
+   },
+   "hard_by_observable": {
+    "true": 92,
+    "ambiguous": 12,
+    "false": 13
+   },
+   "hard_family_x_observable": {
+    "wrong_ahu_mapping|true": 20,
+    "vav_zone_swap|true": 8,
+    "vav_zone_swap|ambiguous": 3,
+    "vav_zone_swap|false": 9,
+    "plant_loop_mapping|true": 16,
+    "plant_loop_mapping|ambiguous": 1,
+    "sensor_mapping|true": 16,
+    "sensor_mapping|false": 1,
+    "sensor_mapping|ambiguous": 3,
+    "same_medium_branch|true": 16,
+    "same_medium_branch|false": 2,
+    "same_medium_branch|ambiguous": 2,
+    "parallel_peer_swap|true": 16,
+    "parallel_peer_swap|ambiguous": 3,
+    "parallel_peer_swap|false": 1
+   },
+   "hard_by_topology": {
+    "dev_F": 33,
+    "dev_H": 30,
+    "dev_G": 35,
+    "dev_E": 19
+   },
+   "degree_preserving": {
+    "False": 33,
+    "True": 84
+   },
+   "by_topology": {
+    "dev_F": 48,
+    "dev_H": 46,
+    "dev_G": 51,
+    "dev_E": 34
+   },
+   "diversity_audit": {
+    "wrong_ahu_mapping": {
+     "rows": 20,
+     "base_topologies": 3,
+     "distinct_leakage_groups": 17,
+     "observable": {
+      "true": 20
+     },
+     "candidates_proposed": 30,
+     "candidates_passing_hard_filter": 26
+    },
+    "vav_zone_swap": {
+     "rows": 20,
+     "base_topologies": 4,
+     "distinct_leakage_groups": 7,
+     "observable": {
+      "true": 8,
+      "ambiguous": 3,
+      "false": 9
+     },
+     "candidates_proposed": 111,
+     "candidates_passing_hard_filter": 100
+    },
+    "plant_loop_mapping": {
+     "rows": 17,
+     "base_topologies": 3,
+     "distinct_leakage_groups": 16,
+     "observable": {
+      "true": 16,
+      "ambiguous": 1
+     },
+     "candidates_proposed": 23,
+     "candidates_passing_hard_filter": 17
+    },
+    "sensor_mapping": {
+     "rows": 20,
+     "base_topologies": 4,
+     "distinct_leakage_groups": 14,
+     "observable": {
+      "true": 16,
+      "false": 1,
+      "ambiguous": 3
+     },
+     "candidates_proposed": 116,
+     "candidates_passing_hard_filter": 116
+    },
+    "same_medium_branch": {
+     "rows": 20,
+     "base_topologies": 4,
+     "distinct_leakage_groups": 15,
+     "observable": {
+      "true": 16,
+      "false": 2,
+      "ambiguous": 2
+     },
+     "candidates_proposed": 181,
+     "candidates_passing_hard_filter": 121
+    },
+    "parallel_peer_swap": {
+     "rows": 20,
+     "base_topologies": 4,
+     "distinct_leakage_groups": 17,
+     "observable": {
+      "true": 16,
+      "ambiguous": 3,
+      "false": 1
+     },
+     "candidates_proposed": 131,
+     "candidates_passing_hard_filter": 105
+    },
+    "easy_cross_medium_loop": {
+     "rows": 10,
+     "base_topologies": 4,
+     "distinct_leakage_groups": 10,
+     "observable": {
+      "n/a": 10
+     },
+     "candidates_proposed": 0,
+     "candidates_passing_hard_filter": 0
+    },
+    "easy_missing_link": {
+     "rows": 10,
+     "base_topologies": 4,
+     "distinct_leakage_groups": 10,
+     "observable": {
+      "n/a": 10
+     },
+     "candidates_proposed": 0,
+     "candidates_passing_hard_filter": 0
+    },
+    "easy_dual_parent": {
+     "rows": 10,
+     "base_topologies": 4,
+     "distinct_leakage_groups": 10,
+     "observable": {
+      "n/a": 10
+     },
+     "candidates_proposed": 0,
+     "candidates_passing_hard_filter": 0
+    }
+   }
+  },
+  "sealed_sim": {
+   "file": "results/docmismatch/cases_sealed_sim.jsonl",
+   "sha256": "98b479e5ee0b5c8f24b9e130b5bb9fccba829985abbe9f783ec6011af101d1cb",
+   "build_cases_seed": 200,
+   "n_cases": 182,
+   "by_difficulty": {
+    "hard": 120,
+    "easy": 30,
+    "clean": 32
+   },
+   "hard_by_family": {
+    "wrong_ahu_mapping": 20,
+    "vav_zone_swap": 20,
+    "plant_loop_mapping": 20,
+    "sensor_mapping": 20,
+    "same_medium_branch": 20,
+    "parallel_peer_swap": 20
+   },
+   "hard_by_observable": {
+    "true": 95,
+    "false": 11,
+    "ambiguous": 14
+   },
+   "hard_family_x_observable": {
+    "wrong_ahu_mapping|true": 20,
+    "vav_zone_swap|true": 14,
+    "vav_zone_swap|false": 6,
+    "plant_loop_mapping|true": 17,
+    "plant_loop_mapping|false": 1,
+    "plant_loop_mapping|ambiguous": 2,
+    "sensor_mapping|true": 14,
+    "sensor_mapping|false": 1,
+    "sensor_mapping|ambiguous": 5,
+    "same_medium_branch|true": 16,
+    "same_medium_branch|false": 2,
+    "same_medium_branch|ambiguous": 2,
+    "parallel_peer_swap|true": 14,
+    "parallel_peer_swap|ambiguous": 5,
+    "parallel_peer_swap|false": 1
+   },
+   "hard_by_topology": {
+    "seal_S2": 36,
+    "seal_S1": 41,
+    "seal_S3": 24,
+    "seal_S4": 19
+   },
+   "degree_preserving": {
+    "False": 40,
+    "True": 80
+   },
+   "by_topology": {
+    "seal_S2": 51,
+    "seal_S1": 57,
+    "seal_S3": 39,
+    "seal_S4": 35
+   },
+   "diversity_audit": {
+    "wrong_ahu_mapping": {
+     "rows": 20,
+     "base_topologies": 3,
+     "distinct_leakage_groups": 20,
+     "observable": {
+      "true": 20
+     },
+     "candidates_proposed": 96,
+     "candidates_passing_hard_filter": 80
+    },
+    "vav_zone_swap": {
+     "rows": 20,
+     "base_topologies": 4,
+     "distinct_leakage_groups": 13,
+     "observable": {
+      "true": 14,
+      "false": 6
+     },
+     "candidates_proposed": 357,
+     "candidates_passing_hard_filter": 254
+    },
+    "plant_loop_mapping": {
+     "rows": 20,
+     "base_topologies": 2,
+     "distinct_leakage_groups": 20,
+     "observable": {
+      "true": 17,
+      "false": 1,
+      "ambiguous": 2
+     },
+     "candidates_proposed": 70,
+     "candidates_passing_hard_filter": 65
+    },
+    "sensor_mapping": {
+     "rows": 20,
+     "base_topologies": 4,
+     "distinct_leakage_groups": 19,
+     "observable": {
+      "true": 14,
+      "false": 1,
+      "ambiguous": 5
+     },
+     "candidates_proposed": 369,
+     "candidates_passing_hard_filter": 355
+    },
+    "same_medium_branch": {
+     "rows": 20,
+     "base_topologies": 4,
+     "distinct_leakage_groups": 18,
+     "observable": {
+      "true": 16,
+      "false": 2,
+      "ambiguous": 2
+     },
+     "candidates_proposed": 532,
+     "candidates_passing_hard_filter": 269
+    },
+    "parallel_peer_swap": {
+     "rows": 20,
+     "base_topologies": 4,
+     "distinct_leakage_groups": 17,
+     "observable": {
+      "true": 14,
+      "ambiguous": 5,
+      "false": 1
+     },
+     "candidates_proposed": 393,
+     "candidates_passing_hard_filter": 252
+    },
+    "easy_cross_medium_loop": {
+     "rows": 10,
+     "base_topologies": 4,
+     "distinct_leakage_groups": 10,
+     "observable": {
+      "n/a": 10
+     },
+     "candidates_proposed": 0,
+     "candidates_passing_hard_filter": 0
+    },
+    "easy_missing_link": {
+     "rows": 10,
+     "base_topologies": 4,
+     "distinct_leakage_groups": 10,
+     "observable": {
+      "n/a": 10
+     },
+     "candidates_proposed": 0,
+     "candidates_passing_hard_filter": 0
+    },
+    "easy_dual_parent": {
+     "rows": 10,
+     "base_topologies": 4,
+     "distinct_leakage_groups": 10,
+     "observable": {
+      "n/a": 10
+     },
+     "candidates_proposed": 0,
+     "candidates_passing_hard_filter": 0
+    }
+   }
+  }
+ },
+ "code_sha256": {
+  "src/docmismatch/build_ext.py": "2cc5028d38a6ac6dd1b5654a881d459b55f6b6d8affce14ecb0121e613caaf03",
+  "src/docmismatch/sim_spec.py": "0abea6596f7885368fc1d981b78c6dd49a4d2bcceeae1c8711d683607a62fbdd",
+  "src/docmismatch/active/sim_data.py": "2a9c1f130cb1ccf2d3827ce0250975b4c5105bf5d5aa8150fcbbe464b0d5dd3a",
+  "scripts/19_generate_sim.py": "885912f454e87a21c8d2bd91a60f75680c6765a42029ca5442f399b1a4d61e0f",
+  "scripts/20_make_sim_cases.py": "8b43fcf1c5b8b86d54c4293ee11116a514809c05d2375f6ad694b3cca309b4d7"
+ },
+ "dev_pools": {
+  "built": [
+   "pool_dev_E_r0.pkl",
+   "pool_dev_E_r1.pkl",
+   "pool_dev_F_r0.pkl",
+   "pool_dev_F_r1.pkl",
+   "pool_dev_G_r0.pkl",
+   "pool_dev_G_r1.pkl",
+   "pool_dev_H_r0.pkl",
+   "pool_dev_H_r1.pkl"
+  ],
+  "sealed_pools_built": false
+ },
+ "climates": {
+  "dev": [
+   "sterling_va",
+   "sacramento",
+   "sanfrancisco",
+   "golden"
+  ],
+  "sealed": [
+   "chicago_amy2013",
+   "blue_canyon",
+   "arcata",
+   "tampa"
+  ],
+  "source": "vendored EPW/DDY only; nothing downloaded"
+ },
+ "total_generation_wall_seconds": 124.7,
+ "specs_by_topology": {
+  "dev_E": {
+   "role": "dev",
+   "climate": "sterling_va",
+   "n_ahu": 1,
+   "n_vav": 6,
+   "n_hw": 1,
+   "n_chw": 1,
+   "ahu_sat": [
+    13.96
+   ],
+   "sat_pattern": "single"
+  },
+  "dev_F": {
+   "role": "dev",
+   "climate": "sacramento",
+   "n_ahu": 2,
+   "n_vav": 6,
+   "n_hw": 2,
+   "n_chw": 2,
+   "ahu_sat": [
+    12.84,
+    13.06
+   ],
+   "sat_pattern": "mixed"
+  },
+  "dev_G": {
+   "role": "dev",
+   "climate": "sanfrancisco",
+   "n_ahu": 3,
+   "n_vav": 6,
+   "n_hw": 2,
+   "n_chw": 2,
+   "ahu_sat": [
+    13.75,
+    13.89,
+    12.27
+   ],
+   "sat_pattern": "mixed"
+  },
+  "dev_H": {
+   "role": "dev",
+   "climate": "golden",
+   "n_ahu": 2,
+   "n_vav": 12,
+   "n_hw": 1,
+   "n_chw": 2,
+   "ahu_sat": [
+    12.47,
+    12.2
+   ],
+   "sat_pattern": "all_twin"
+  },
+  "seal_S1": {
+   "role": "sealed",
+   "climate": "chicago_amy2013",
+   "n_ahu": 4,
+   "n_vav": 16,
+   "n_hw": 3,
+   "n_chw": 1,
+   "ahu_sat": [
+    13.14,
+    15.1,
+    11.77,
+    12.77
+   ],
+   "sat_pattern": "all_separate"
+  },
+  "seal_S2": {
+   "role": "sealed",
+   "climate": "blue_canyon",
+   "n_ahu": 3,
+   "n_vav": 12,
+   "n_hw": 3,
+   "n_chw": 1,
+   "ahu_sat": [
+    13.88,
+    12.02,
+    15.37
+   ],
+   "sat_pattern": "all_separate"
+  },
+  "seal_S3": {
+   "role": "sealed",
+   "climate": "arcata",
+   "n_ahu": 3,
+   "n_vav": 12,
+   "n_hw": 1,
+   "n_chw": 1,
+   "ahu_sat": [
+    13.36,
+    13.54,
+    13.47
+   ],
+   "sat_pattern": "all_twin"
+  },
+  "seal_S4": {
+   "role": "sealed",
+   "climate": "tampa",
+   "n_ahu": 1,
+   "n_vav": 15,
+   "n_hw": 1,
+   "n_chw": 1,
+   "ahu_sat": [
+    12.03
+   ],
+   "sat_pattern": "single"
+  }
+ }
+}
