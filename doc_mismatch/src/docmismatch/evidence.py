@@ -229,6 +229,30 @@ def _pair_errors(base: Base, ev: dict[str, np.ndarray], slot: str, o: str, m: st
     return (e0, e1, e2)
 
 
+# Masking requirement for `closure_channel` (channel 3) -- kept SEPARATE from `NEEDS`, which `pair_errors`'s own
+# masking loop iterates over in full and assumes indexes its 3-tuple; channel 3 is not part of that tuple.
+CLOSURE_CHANNEL_NEEDS: dict[str, list[tuple[str, str]]] = {"loop_branch": [("o", "flow")]}
+
+
+def closure_channel(base: Base, ev: dict, slot: str, o: str, m: str, sl: slice = slice(None),
+                     mask_uninformative: bool | None = None) -> float:
+    """4th evidence channel (PREREGISTRATION_DR.md Addendum 9), `loop_branch` only: does candidate owner `o`'s own
+    measured flow/heat still balance once member `m` is added to `o`'s other TRUE members (ground truth; see the
+    addendum's named simplifying assumption -- this is not available for slots outside the single mechanism this
+    was pre-registered for). NaN (masked) for every other slot, so `model.fit_slot_models`'s widened channel range
+    correctly never fits a channel-3 model for them."""
+    if slot != "loop_branch":
+        return float("nan")
+    if mask_uninformative is None:
+        mask_uninformative = MASK_CHANNELS
+    if mask_uninformative:
+        needs = CLOSURE_CHANNEL_NEEDS.get(slot, [])
+        if not all(informative(ev, (o if who == "o" else m), sig, sl) for who, sig in needs):
+            return float("nan")
+    others = [mm for oo, mm in base.slot_edges.get(slot, []) if oo == o and mm != m]
+    return closure_residual(ev, o, others + [m], sl, slot=slot)
+
+
 def closure_residual(ev, owner: str, members: list[str], sl: slice = slice(None), slot: str = "ahu_vav") -> float:
     """Set-level conservation error of an owner against its documented members.
     ahu_vav: AHU supply flow vs sum of VAV flows (exact mass balance).

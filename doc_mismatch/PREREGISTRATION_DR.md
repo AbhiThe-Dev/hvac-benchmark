@@ -320,3 +320,111 @@ unchanged. Because real DEV `vav_zone` data showed no consistent trend at all un
 independently by Addendum 6's unlimited-budget and 32-day-pooling checks, neither of which depends on this mechanism),
 Addenda 7 and 8's real-data conclusions are not expected to change -- but scripts 39 and 40 are re-run against the fixed
 mechanism and the numbers reported again below, rather than left standing on a mechanism now known to have a bug.
+
+## Addendum 9 (dated 2026-09-22, written BEFORE running the comparison below): a set-level conservation channel for `loop_branch`
+
+**Motivation (discussed with the user before writing this).** A cheap, unregistered measurement this session (~94
+`run_episode` calls across the 5 slots never previously checked) found `loop_branch` resolves within the 24-read budget
+only 8/20 (40%) of the time on is_wrong simulated episodes -- weaker than previously assumed, and weaker than
+`ahu_vav`/`coil_vav`/`vav_dat` (1-18 reads, established earlier). Separately, `evidence.closure_residual` -- a genuine
+mass/energy-conservation check (does an owner's own measured flow/heat match the sum of everything currently documented
+under it) -- already exists in this codebase but is wired only into the older static classifier (`features.py`) and
+`observability.py`, never into the sequential engine (`active/engine.py`) that does the live diagnosis. This addendum
+wires a derived form of it in, scoped to `loop_branch` only (not `ahu_vav`, which already resolves well and is left
+untouched to keep this comparison clean).
+
+**Mechanism (`evidence.closure_channel`, new function).** A 4th evidence channel (k=3), computed only for
+`slot == "loop_branch"`: for candidate owner `o` and tested member `m`, let `others` = every OTHER member `base.slot_edges`
+says truly belongs to `o` (ground truth, excluding `m` itself), and return `closure_residual(ev, o, others + [m], sl,
+slot="loop_branch")` -- the same relative flow/heat-balance mismatch `test_benchmark_invariants.py` already asserts is
+`< 0.05` for a owner's true, complete member set. If `o` truly supplies `m`, appending `m` to `o`'s true other members
+reproduces `o`'s true complete set, so the residual should stay small (matching that existing invariant); if `o` does
+NOT truly supply `m`, forcing `m` into `o`'s accounted-for total should inflate the mismatch. This is a non-negative
+"error, lower = more consistent" value, so it drops into the SAME `tf()`-log-transform + per-class ridge-regression
+`ChannelModel` fitting machinery as channels 0-2, unchanged (`model.fit_slot_models`'s `range(3)` -> `range(4)`; every
+other slot's channel 3 stays all-NaN and is correctly never fit, `fit_channel` already returns `None` below
+`MIN_TRAIN` rows). `engine.py` needs NO changes at all -- `_Actions`/`posterior`/`eig_all` already size every array off
+`len(models)`, not a hardcoded channel count. Masked NaN (same `NEEDS`-driven `informative()` gate as channels 0-2) when
+the owner's own flow is non-informative.
+
+**Explicitly named simplifying assumption.** `others` is read from `base.slot_edges` -- SIMULATION GROUND TRUTH, not the
+(possibly wrong) documentation -- because the active-testing pool architecture has no live "current full documented
+graph" concept to draw on for members other than the one under test. This is legitimate ONLY under this benchmark's
+existing single-error-per-episode construction (every member other than the one being tested is, by construction,
+correctly documented, so ground truth and documentation agree for `others`); it does not leak the truth of `m` itself
+(explicitly excluded from `others`). A real deployment would need this built from the DOCUMENTED graph instead --
+exactly the graph a technician's blueprint already is -- not ground truth, which does not exist outside simulation. This
+cheap check does not validate the mechanism's robustness to more than one simultaneous documentation error.
+
+**Evaluation (frozen before running): same is_wrong `loop_branch` episode generation as the unregistered measurement
+above (same topologies -- `vav_2ahu_2loops`, `dev_F`, `dev_G` -- same seeds/windows), `policy="active"`, `tau=0.95`,
+`nmax=24`, run twice: once with channel 3 excluded (reproducing the 40% baseline) and once included. Primary metric:
+fraction resolved within budget, with vs. without. Secondary: median/mean reads among resolved cases. No number from
+this run may retune anything about `closure_channel` -- reported once, as-is, whichever way it lands.
+
+**Result (2026-09-22, run once, as pre-registered above): negative.** Via `sim_kind.fit_slot` on all 8 `EXISTING`
+training topologies (channel 3 fit successfully, `beta=0.2`), then the exact same 15 is_wrong `loop_branch` episodes
+across `vav_2ahu_2loops`/`dev_F`/`dev_G` run twice with `exclude_k=frozenset({3})` vs `frozenset()`: **7/15 (47%)
+resolved before, 6/15 (40%) after -- no improvement, a small regression.** One episode
+(`dev_F|loop_branch|HWL-1>Branch-9|wrong`) flipped from a confident, correct REFUTED verdict (p=0.050) to unresolved
+(p=0.170): the new channel actively pulled belief in the wrong direction on that case, not just added neutral noise.
+Sample is small (15 episodes, one flip) so this is not strong evidence the mechanism is actively harmful, but it is
+zero evidence it helps, on the exact slot it was built for. Per this addendum's own frozen evaluation, `closure_channel`
+is NOT adopted into any default-on configuration. Left in the codebase (default OFF -- `fit_slot_models` only fits
+channel 3 when real data supports it, and nothing selects `loop_branch` channel 3 unless a caller passes `models`
+that include it) as a validated-negative result, same disposition as Addendum 8's trust weighting.
+
+## Addendum 10 (dated 2026-09-23, written BEFORE running): does futility stopping generalize past the one real building it was validated on?
+
+**Motivation (discussed with the user before writing this).** Addendum 7 validated futility stopping (`futility_window=4,
+futility_margin=0.05`, on top of Addendum 5's `exclude_struct`) exactly once, against the single real DEV building
+(ORNL `rtu_exp`, `vav_zone`, n=1200 rows from one building). Every other exercise of `diagnose_connection` this
+project has done (the walkthrough demo, this session's slot-resolution-speed checks) also only ever touched that one
+real building or hand-picked simulated examples from the 8 `EXISTING` training topologies. This codebase already has
+a SEPARATE, larger, pre-registered generalization check -- the DR study's held-out T1-T6 suites (section 4 above,
+`spec_ids()`) -- and it is ALREADY used for exactly this kind of question (`measurement_eval.run_sim_ceiling`, the
+"simulation-only ceiling" behind Addendum 5/6's numbers). Futility has simply never been run through it: `_sim_rec`
+(the per-episode runner `run_sim_ceiling` calls) has no `futility_window`/`futility_margin` parameters at all today --
+only `_real_rec` does. This addendum closes that specific, checkable gap: does the ALREADY-VALIDATED, ALREADY-FROZEN
+futility mechanism still save technician reads (without costing accuracy) on buildings/regimes it has never been run
+against, or was Addendum 7's result an artifact of the one building it was checked on?
+
+**Mechanism (`dr/measurement_eval.py`).** `_sim_rec` gains `futility_window=0, futility_margin=0.0` parameters
+(default = original bit-identical behaviour, mirroring `_real_rec`'s existing signature exactly), threaded straight
+into its `run_episode` call, with `n_read`/`futile` added to its returned record (again mirroring `_real_rec`). A new
+`run_futility_sim_ceiling(cfg, ids_by_suite, suites, variants=FUTILITY_VARIANTS)` mirrors the existing
+`run_sim_ceiling` (same T1-T6 suite iteration, same `telemetry="estimated"` convention already used for the Addendum
+5/6 ceiling) but runs the already-defined `FUTILITY_VARIANTS` (`no_futility` vs `futility`, both on top of
+`exclude_k={0,2}`) instead of the channel-exclusion `VARIANTS`. No new mechanism, no new parameters, no retuning --
+purely pointing an already-frozen mechanism at an already-built, already-used, previously-unused-for-this test
+population. Same explicit caveat as every other T1-T6 sim-ceiling check in this project: this is simulation only,
+never evidence the real-world transfer holds, only whether the mechanism's LOGIC generalizes across simulated
+regime/topology/climate shifts it has never been exercised against.
+
+**Evaluation (frozen before running): T1-T6 suites, `vav_zone`, `exclude_k={0,2}` (Addendum 5's best variant) held
+fixed in both arms, `futility_window=4, futility_margin=0.05` (Addendum 7's exact frozen values, not retuned) vs
+`futility_window=0`. Primary metric: mean/median `n_read` per episode, with vs without, per suite. Secondary: forced
+accuracy, with vs without, to confirm early stopping does not cost accuracy it would otherwise have earned. No number
+from this run may retune `futility_window`/`futility_margin` or the exclusion choice -- reported once, as-is,
+whichever way it lands, per suite.
+
+**Result (2026-09-23, run once, as pre-registered above, `scripts/42_futility_sim_generalization.py`): positive, and
+uniform.** Across all six T1-T6 suites (128 `vav_zone` episodes each, `estimated` telemetry): every single suite shows
+**mean/median `n_read` = 24.0/24 without futility vs 8.0/8 with it -- a full 16-read (67%) saving**, and
+`frac futile = 100%` in every suite. Forced accuracy moves by at most +-0.08 per suite (T1 +0.078, T2 -0.039,
+T3 -0.023, T4 -0.008, T5 +0.008, T6 -0.008) -- small, roughly zero-centered, no suite shows a concerning drop.
+**This generalizes Addendum 7's real-DEV finding (futility saves reads without costing accuracy) to five kinds of
+held-out simulated shift (regime, control, topology, climate, compound) it had never been run against.**
+
+The exact-8-reads/100%-futile uniformity was checked, not just reported: pulling a raw trajectory (channel 1 only,
+after Addendum 5's exclusion) shows belief barely moves at all over the full 24-read budget (0.500 -> 0.492) even
+though most individual reads DO register as informative (13/24) -- the remaining channel's class separation is too
+weak in this population to move the decision variable, so the entropy trend is flat from the earliest possible check
+(`n=2*futility_window=8`) in essentially every episode. Futility is not trading away real, slow-but-genuine
+convergence here (the failure mode Addendum 7's bug fix specifically guarded against) -- it is correctly and quickly
+recognizing that this evidence line was never going to resolve at all under `estimated` telemetry, a further,
+independent confirmation (on top of this session's earlier structural/statistical findings) that `vav_zone`'s
+post-exclusion evidence is weak. Low forced accuracy in BOTH arms (0.46-0.70) is consistent with this: futility is not
+costing much because there was little decision-relevant accuracy on the table for either variant to earn. Simulation
+only, `estimated` telemetry -- not a real-world re-validation of Addendum 7, a generalization check of the mechanism's
+logic, per this addendum's own caveat.

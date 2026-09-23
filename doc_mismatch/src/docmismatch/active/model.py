@@ -145,7 +145,7 @@ def _training_rows(pools: list[Pool], slot: str, k: int, slice_masks: list[np.nd
     gid = 0
     for pi, (pool, sm) in enumerate(zip(pools, slice_masks)):
         sp = pool.slots.get(slot)
-        if sp is None:
+        if sp is None or k >= sp.E.shape[1]:
             continue
         idx = np.where(sm)[0]
         for m in range(len(sp.members)):
@@ -250,7 +250,7 @@ def estimate_slice_effect(models: dict[int, "ChannelModel"], pools, slot, slice_
         slice_masks = [np.ones(p.n_slices, dtype=bool) for p in pools]
     for pool, sm in zip(pools, slice_masks):
         sp = pool.slots.get(slot)
-        if sp is None:
+        if sp is None or max(ks, default=-1) >= sp.E.shape[1]:
             continue
         idx = np.where(sm)[0]
         if len(idx) == 0:
@@ -284,9 +284,13 @@ def estimate_slice_effect(models: dict[int, "ChannelModel"], pools, slot, slice_
     return omega, float(np.clip(np.mean(rs), 0.0, 0.95)) if rs else 0.0
 
 
-def fit_slot_models(pools, slot, use_ctx, slice_masks=None, shared_pair: bool = False, slice_effect: bool = False, **fitkw) -> dict[int, ChannelModel]:
+def fit_slot_models(pools, slot, use_ctx, slice_masks=None, shared_pair: bool = False, slice_effect: bool = False,
+                     max_channel: int = 2, **fitkw) -> dict[int, ChannelModel]:
+    """max_channel: 2 = original 3 channels (default, bit-identical to before Addendum 9). 3 = also fit channel 3
+    (evidence.closure_channel, loop_branch only) -- opt-in only; PREREGISTRATION_DR.md Addendum 9 found this does
+    NOT help loop_branch's resolution rate, so no caller in this codebase passes 3 by default."""
     out = {}
-    for k in range(3):
+    for k in range(max_channel + 1):
         m = fit_channel(pools, slot, k, use_ctx, slice_masks, **fitkw)
         if m is not None:
             out[k] = m

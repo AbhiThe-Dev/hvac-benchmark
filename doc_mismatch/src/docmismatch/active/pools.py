@@ -18,7 +18,7 @@ from pathlib import Path
 import numpy as np
 
 from ..data import SLOTS, Base, load_base
-from ..evidence import make_context, make_evidence, pair_errors
+from ..evidence import closure_channel, make_context, make_evidence, pair_errors
 
 CTX_NAMES = ("oat", "swing", "load")     # outdoor-air temp (slice mean), its diurnal swing, building load fraction
 DAYS_PER_WINDOW_PICK = (0, 8, 16, 24, 32, 40)  # 6 day-slices per 6-week window (spread over weekdays)
@@ -99,14 +99,15 @@ def build_sim_pool(tid: str, rep: int) -> Pool:
         truth = np.full(len(members), -1)
         for o, m in base.slot_edges[slot]:
             truth[members.index(m)] = oi[o]
-        E = np.full((len(slices), 3, len(owners), len(members)), np.nan)
+        E = np.full((len(slices), 4, len(owners), len(members)), np.nan)
         for i, (w, d) in enumerate(slices):
             sl = slice(d * 24, (d + 1) * 24)
             ev = evs[w]
             c = make_context(base, ev, sl) if slot == "vav_zone" else None
             for a, o in enumerate(owners):
                 for b, m in enumerate(members):
-                    E[i, :, a, b] = pair_errors(base, ev, slot, o, m, sl, c)
+                    E[i, :3, a, b] = pair_errors(base, ev, slot, o, m, sl, c)
+                    E[i, 3, a, b] = closure_channel(base, ev, slot, o, m, sl)
         size = np.array([float(np.abs(base.ev[f"{o}|flow"]).max()) + 1e-9 for o in owners])
         pool.slots[slot] = SlotPool(slot, owners, members, truth, E, [base.cls(o) for o in owners], size)
     return pool

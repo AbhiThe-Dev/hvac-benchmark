@@ -46,11 +46,12 @@ def _real_rec(e, mod, beta, cfg, runkw, support, exclude_k, futility_window=0, f
                 season=e.meta["season"], family=e.meta["family"], obs=e.meta["obs"], n_read=int(r.n_read), futile=bool(r.futile))
 
 
-def _sim_rec(e, mod, beta, cfg, runkw, support, exclude_k, tag_unit):
+def _sim_rec(e, mod, beta, cfg, runkw, support, exclude_k, tag_unit, futility_window=0, futility_margin=0.0):
     w = h32(e.ep_id) % 8
     sl = np.where(e.pool.group == w)[0]
     seed = h32(e.ep_id) % 10_000
-    r = run_episode(e, mod, sl, "active", tau=2.0, nmax=cfg["nmax"], seed=seed, beta=beta, diag=True, exclude_k=exclude_k, **runkw)
+    r = run_episode(e, mod, sl, "active", tau=2.0, nmax=cfg["nmax"], seed=seed, beta=beta, diag=True, exclude_k=exclude_k,
+                    futility_window=futility_window, futility_margin=futility_margin, **runkw)
     if r is None:
         return None
     crossed, n = first_cross(r.traj, cfg["tau"])
@@ -58,7 +59,8 @@ def _sim_rec(e, mod, beta, cfg, runkw, support, exclude_k, tag_unit):
     f = features_at(r.diag, n, support) if support is not None else None
     return dict(policy="active", setting="visit", rep=0, ep=e.ep_id, slot=e.slot, wrong=bool(e.is_wrong), cluster=e.group, unit=tag_unit,
                 crossed=crossed, n=n, say_correct=say, p_stop=float(r.traj[n]), f=(f.astype(np.float32) if f is not None else None),
-                season="s%d" % SEASON_OF_WINDOW[w], family=e.meta.get("matched_to", e.meta["family"]), obs=e.meta["obs"])
+                season="s%d" % SEASON_OF_WINDOW[w], family=e.meta.get("matched_to", e.meta["family"]), obs=e.meta["obs"],
+                n_read=int(r.n_read), futile=bool(r.futile))
 
 
 def run_real_ablation(cfg: dict, variants=VARIANTS) -> dict:
@@ -231,6 +233,42 @@ def run_trust_eval(cfg: dict) -> dict:
         )
     out["_n_real_episodes"] = len(real_eps)
     out["_weights"] = {k: T.trust_weight(v) for k, v in validity.items()}
+    return out
+
+
+def run_futility_sim_ceiling(cfg: dict, ids_by_suite: dict, suites: list[str], variants=FUTILITY_VARIANTS) -> dict:
+    """Addendum 10: does Addendum 7's already-frozen futility stopping (validated once, on the single real DEV
+    building) still save technician reads without costing accuracy on the DR study's held-out T1-T6 suites -- sim
+    buildings/regimes it has never been run against? Same T1-T6/`telemetry="estimated"` convention as
+    `run_sim_ceiling`; same explicit caveat: simulation only, an upper/lower bound on generalization of the
+    MECHANISM's logic, never evidence the real-world Addendum 7 result itself changes."""
+    V = SEL.get(cfg["variant"])["runkw"]
+    train = EXISTING
+    train_pools = {t: {0: load_pool(t, 0, "legacy")} for t in train}
+    sim_kind = SimKind(cfg, topos=train, pools=train_pools, cases=cases_for(train))
+    tr_all = sim_kind.train(train)
+    mod, beta = sim_kind.fit_slot(tr_all, SLOT, None)
+    if not mod:
+        return dict(ok=False, reason="no vav_zone model")
+
+    out = {}
+    for su in suites:
+        test_ids = ids_by_suite[su]
+        test_pools = {t: {0: load_pool(t, 0, "estimated")} for t in test_ids}
+        test_cases = cases_for(test_ids)
+        eps = []
+        for t in test_ids:
+            eps += [e for e in build_sim_episodes({t: test_pools[t][0]}, [c for c in test_cases if c["topology_id"] == t]) if e.slot == SLOT]
+        rows = {}
+        for variant, kw in variants.items():
+            recs = []
+            for e in eps:
+                rec = _sim_rec(e, mod, beta, cfg, V, None, kw["exclude_k"], su,
+                                futility_window=kw["futility_window"], futility_margin=kw["futility_margin"])
+                if rec is not None:
+                    recs.append(rec)
+            rows[variant] = recs
+        out[su] = rows
     return out
 
 
