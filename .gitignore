@@ -39,3 +39,8 @@ __pycache__/
 /results/docmismatch_dr/**/*.idf
 /results/docmismatch_dr/**/*.err
 /results/docmismatch_dr/**/*.done
+
+# doc_mismatch perturbation campaigns: raw EnergyPlus outputs (~600 MB), regenerable via
+# doc_mismatch/scripts/45_run_perturbation_campaigns.py (the summary report at results/docmismatch/perturbation/ stays tracked)
+/results/docmismatch/perturbation/campaigns/
+/results/docmismatch/perturbation/feasibility/

@@ -428,3 +428,171 @@ post-exclusion evidence is weak. Low forced accuracy in BOTH arms (0.46-0.70) is
 costing much because there was little decision-relevant accuracy on the table for either variant to earn. Simulation
 only, `estimated` telemetry -- not a real-world re-validation of Addendum 7, a generalization check of the mechanism's
 logic, per this addendum's own caveat.
+
+## Addendum 11 (dated 2026-09-23, written BEFORE running scripts/43): can the current channels distinguish the candidates even in principle?
+
+**Motivation (discussed with the user before writing this).** `vav_zone` never resolves: 0/18 in-budget on sim (Addendum 6's
+neighbours), and Addendum 10 showed that with channels 0/2 excluded the belief barely moves over the full budget (0.500 ->
+0.492 in a raw trajectory). Two different explanations predict two different remedies, and nothing measured so far
+separates them: (a) the signal is structurally absent from passive operation (candidates' signatures are collinear / zones
+follow the weather), so only deliberate perturbation or new instrumentation can help; (b) the signal exists but telemetry
+noise or missing airflow signals hide it, so better data, longer windows or the airflow proxy could help. This addendum
+measures the fork directly, before any effort is spent on a remedy.
+
+**Mechanism (`dr/diagnosability.py`, `scripts/43_structural_diagnosability.py`): a MODEL-FREE diagnosability ladder --
+nothing is fitted, so it is independent of the sim-to-real calibration problem.** For each (slot, channel) the raw
+pair-consistency values `tf(e)` of `evidence.pair_errors` (masking OFF so raw separation is visible) are computed on three
+evidence levels for the same physical building and slices: `truth` (noise-free `window_truth`), `legacy` (the original
+hard-coded noise, identical to the cached legacy pools), and `estimated` (the DR study's real-DEV-estimated telemetry). Per
+level and channel: (1) AUROC of "true-owner pairs have lower error than alternative-owner pairs" (0.5 = chance) and d';
+(2) rank-1 identification -- aggregate a window's 6 day-slices (and, separately, all 48 slices), take the candidate with the
+lowest per-channel-standardised error, ties broken by expected value, compared to chance = mean(1/|candidates|); for the
+channel subsets `ch0`, `ch1`, `ch2`, `all3`. For `vav_zone`, a real column: the same metrics on the cached real ORNL DEV pool
+(`pool_real`, DEV days only; day-level aggregation), giving the sim-vs-real gap per channel. Buildings: the 8 `EXISTING`
+training topologies (train-role; each counts equally; building-cluster bootstrap CIs, 500 resamples). Slots: `vav_zone`
+(focus) plus `loop_branch`, `branch_coil`, `coil_ahu` (the other measured-weak slots) and `ahu_vav` (the strong contrast).
+Not used: any SEALED data, any T1-T6 test-suite building (the analysis may steer design decisions).
+
+**Frozen reading rules (descriptive thresholds written before running, not tuned; the raw numbers are the result):**
+STRUCTURALLY WEAK = AUROC(truth) < 0.60 (noise-free, complete data still cannot separate true from alternative pairs);
+TELEMETRY-LIMITED = AUROC(truth) >= 0.75 and AUROC(estimated) < AUROC(truth) - 0.15; INSTRUMENTATION-LIMITED (`vav_zone`
+only) = rank-1(truth, all3) - rank-1(truth, ch1 alone) >= 0.15, where ch1 is the only `vav_zone` channel computable on the
+ORNL building (Addendum 5b). Reading: STRUCTURALLY WEAK for the channels that remain -> pursue perturbation / a different
+statistic, not calibration; TELEMETRY- or INSTRUMENTATION-LIMITED -> data quality, longer windows, or an airflow proxy.
+
+**Limitations named up front.** This measures diagnosability *by these channels' statistics*: an upper bound on what they can
+do, NOT a proof that no passive statistic could do better (formal structural diagnosability would need the full physical
+model). Hourly reporting means `truth` is still hourly -- sub-hourly dynamics that a real interval-data campaign might
+expose are invisible here. The real column is one building. Simulation-only conclusions are not real-world claims.
+
+**Clarification (same day, written before scripts/43 was run):** the INSTRUMENTATION-LIMITED rule uses the *window-aggregated*
+rank-1 (one 6-day-slice visit, the technician-visit scale) as its primary measure; the fully pooled 48-slice rank-1 is
+reported alongside as a robustness read, not as a second chance to trigger the rule.
+
+**Result (2026-09-23, run once as pre-registered, `scripts/43_structural_diagnosability.py`, ~9 s):**
+*Frozen rules.* `vav_zone` (8 buildings): **STRUCTURALLY WEAK on every channel and every evidence level** -- AUROC on noise-free `truth`
+0.600 / 0.523 / 0.437 (ch0/ch1/ch2; ch0 a hair under the 0.60 line), and essentially unchanged on `legacy` (0.553/0.522/0.453) and
+`estimated` (0.582/0.522/0.435). Window-aggregated rank-1 with all three channels on noise-free, complete data is **0.143 vs chance 0.123**
+(`legacy` 0.109, `estimated` 0.125). It is **not telemetry-limited** (truth ~ estimated) and **not instrumentation-limited** (all3 0.143 vs
+ch1 alone 0.176, gap -0.033: even complete airflow signals add nothing). The only TELEMETRY-LIMITED flag is `ahu_vav` ch0 (1.000 -> 0.823),
+a channel whose true-pair error is exactly zero without noise (its `d'` at `truth` is meaningless, ~3e4; AUROC is the reliable column);
+STRUCTURALLY WEAK also for `loop_branch` ch1 (0.513) and `ahu_vav` ch1/ch2 -- channels inside slots that remain diagnosable through another
+channel. `branch_coil` and `coil_ahu` trigger no rule.
+*Per-slot diagnosability (window rank-1, all3, truth / legacy / estimated; chance):* `branch_coil` 0.962 / 0.933 / 0.937 (0.142);
+`ahu_vav` 0.960 / 0.824 / 0.768 (0.378); `loop_branch` 0.859 / 0.819 / 0.817 (0.500); `coil_ahu` 0.815 / 0.817 / 0.804 (0.378);
+`vav_zone` 0.143 / 0.109 / 0.125 (0.123). **Reading:** the sim `vav_zone` channels cannot identify a zone's box even with perfect,
+fully instrumented sensors, so neither better telemetry nor recovering airflow can fix it -- the remedy has to be a different statistic
+or deliberate perturbation. The other four slots ARE diagnosable in principle.
+
+*Exploratory observations -- NOT pre-registered, made while checking the result for artifacts; each needs its own pre-registered follow-up
+before anything is adopted:*
+(a) **Diagnosable but unresolved.** `branch_coil`/`loop_branch`/`coil_ahu` reach 0.94/0.82/0.80 top-1 accuracy from one visit yet the engine
+resolves only 55%/40%/80% of is_wrong episodes at 0.95 confidence (this session's unregistered slot-speed measurement), with calibrated
+tempering `beta` = 0.35 / 0.20 / 1.00 (`vav_zone` 0.10; `ahu_vav` 1.00). The bars differ (top-1 vs a 95%-confident verdict), but the gap
+points to calibration/tempering, masking of flat channels, or budget -- not physics -- as the lever for those slots. Untested.
+(b) **Real ORNL `vav_zone` ch2.** On the cached real DEV pool the true pair's mean tf(e) is clearly LOWER than alternatives' on ch2
+(-0.39 vs -0.12, AUROC 0.724, n=371 true-pair readings), the physically expected direction (a box's electric-reheat activity vs its
+room's temperature), while the simulation-fitted ch2 has essentially no separation (M -0.21 vs X -0.22). Addendum 5 excluded ch2 as
+"confidently worse than chance" under that sim-fitted likelihood. Caveats: one building; ch2 is finite only when reheat is active, so only
+10 of 140 (day, room) units and the 10 pooled members support its rank-1 of 1.000; per-candidate slice supports differ under pooling.
+Real ch0 (AUROC 0.513) shows nothing; real ch1 is weak-but-real (0.552).
+*Not concluded:* that no passive statistic could identify sim `vav_zone` (the ladder bounds these channels only), or that real ch2 is
+reliable beyond this one building.
+
+## Addendum 12 (dated 2026-09-23, written BEFORE running scripts/44): is the engine too cautious where the data are diagnosable?
+
+**Motivation (discussed with the user before writing this).** Addendum 11 found `branch_coil`, `loop_branch`, `coil_ahu` and `ahu_vav`
+identifiable in principle from a single visit (model-free top-1 0.96 / 0.86 / 0.82 / 0.96, chance 0.14 / 0.50 / 0.38 / 0.38), while the engine
+resolves only 55% / 40% / 80% (this session's unregistered slot-speed measurement; `ahu_vav` resolves quickly) of is_wrong episodes at 0.95
+confidence, with calibrated likelihood tempering `beta` = 0.35 / 0.20 / 1.00 / 1.00. Three levers could explain the gap: (i) the tempering `beta`
+(calibrated to keep stated confidence honest, but possibly over-conservative under leave-one-building-out transfer), (ii) masking of "flat" channels
+(the ladder ran with masking OFF; 6 of 12 unresolved `loop_branch` episodes stalled at exactly the 0.5 prior, i.e. no informative reading at all),
+(iii) the 24-read budget. Nothing so far separates them. This addendum measures each lever's effect on BOTH resolution and honesty.
+
+**Design (`scripts/44_caution_check.py`).** Slots `branch_coil`, `loop_branch`, `coil_ahu` (the diagnosable-but-unresolved ones) plus `ahu_vav` as a control.
+Leave-one-topology-out over the 8 `EXISTING` train-role topologies: for each held-out topology the likelihood (and, for calibrated variants, `beta`) is
+fitted on the OTHER seven only, exactly as the nested "inner" records do; all episodes of the held-out topology for the slot (is_wrong and matched-correct)
+are run with `policy="active"`, `tau=0.95`, one visit window chosen as everywhere else (`h32(ep_id)%8`), seed `h32(ep_id)%10000`, legacy telemetry, no
+futility, no channel exclusion. Variants (frozen): `base` = calibrated beta, masked pools, nmax 24 (today's behaviour); `beta1` = beta 1.0 (no tempering),
+masked, 24; `beta1_unmasked` = beta 1.0 with pools built with channel masking OFF (models refitted on those pools), 24; `budget72` = calibrated beta,
+masked, nmax 72. Nothing is tuned: the grid is frozen (calibrated / 1.0 only). Metrics per slot and variant: resolved fraction; accuracy among resolved
+verdicts, class-balanced over is_wrong / is_right episodes (compare with the stated 0.95); wrong-and-confident rate over all episodes; mean reads among
+resolved; per-episode flips vs `base`. Not used: SEALED data, T1-T6 suites.
+
+**Frozen reading rules (descriptive thresholds written before running).** A lever is WORTH PURSUING for a slot if it raises the resolved fraction by
+>= 0.10 absolute over `base` while accuracy among resolved stays >= 0.90 (0.95 minus a small-sample slack); it is worth pursuing overall if that holds in
+at least two of the three diagnosable slots. If the resolved fraction rises but accuracy among resolved falls below 0.90, the tempering was doing its honest
+job (the engine is not merely over-cautious) and the lever is REJECTED for that slot. A lever that changes neither is INERT.
+
+**Limitations named up front.** Small samples (tens of episodes per slot, 3-7 topologies), one simulated HVAC family, simulation only, top-1 identification
+(Addendum 11) and a 95%-confident verdict are different bars, so a gap between them is expected to be partly real caution and is not itself evidence of a bug.
+
+**Result (2026-09-23, run once as pre-registered, `scripts/44_caution_check.py`, ~1 min): no lever is worth pursuing (0 of 3 diagnosable slots); the
+hypothesis that the engine is merely over-cautious is REJECTED.** Held-out episodes (plain 0.95 rule, leave-one-topology-out; resolved / accuracy among
+resolved (class-balanced) / wrong-and-confident over all episodes):
+`branch_coil` (105 eps, 7 topologies): base 65% / 0.717 / 18.1%; `beta1` 97% / 0.715 / 28.6%; `beta1_unmasked` 75% / 0.760 / 17.1%; `budget72` 71% / 0.729 / 19.0%.
+`loop_branch` (40 eps, 5 topologies; calibrated beta 0.10-0.20): base 38% / **1.000** / **0.0%**; `beta1` and `beta1_unmasked` 100% / 0.589 / 40.0%; `budget72` identical to base.
+`coil_ahu` (44 eps; calibrated beta is already 1.00 everywhere, so no tempering to relax): base 61% / 0.671 / 15.9%; every variant inert (`beta1_unmasked` 55% / 0.719).
+`ahu_vav` (56 eps; beta ~1.0): 100% resolved in ~2.3 reads, 0.804, 19.6%; every variant inert.
+Frozen verdicts: `beta1` and `beta1_unmasked` REJECTED for `branch_coil` and `loop_branch` (accuracy among resolved < 0.90), INERT for `coil_ahu`/`ahu_vav`;
+`budget72` INERT everywhere. **Reading:** the calibrated tempering is doing exactly its honest job -- on `loop_branch` it is the reason all 15 confident verdicts are
+right; removing it resolves every episode but is wrong-and-confident 40% of the time. The masking hypothesis from Addendum 11 was wrong too: `loop_branch` is identical
+with masking off, and the episodes that "stalled at 0.5" were slowed by the tempered likelihood, not lacking informative reads. The budget is not the limit.
+**Unexpected, and worse than the earlier framing suggested:** out-of-building, the plain rule is OVERCONFIDENT on the "easy" slots -- accuracy among resolved verdicts
+is 0.72 (`branch_coil`), 0.67 (`coil_ahu`), 0.80 (`ahu_vav`) against the stated 0.95. By episode type (base): `branch_coil` right 0.606 when the doc is wrong / 0.829 when
+right; `coil_ahu` 0.941 when wrong but only **0.400 when the documentation is right** (it wrongly declares a correct blueprint wrong 60% of the time, n=10 resolved);
+`ahu_vav` 0.786 / 0.821; `loop_branch` 1.000 / 1.000. The reliability layer (abstention) exists to handle exactly this and was NOT part of this plain-rule check.
+Limitations: 40-105 episodes per slot, 5-7 topologies of one simulated family, small per-class cells, simulation only.
+
+## Addendum 13 (dated 2026-09-23, written BEFORE running the evaluation of scripts/45-46): does deliberate perturbation identify the serving box where passive data cannot?
+
+**Motivation (discussed with the user before writing this).** Addendum 11: passive `vav_zone` channels sit at chance even noise-free and fully instrumented
+(rank-1 0.143 vs chance 0.123). Under closed-loop control the zone temperature is regulated, so the link is carried by the manipulated variable (box flow /
+reheat) and buried under weather and schedule common mode -- the classic closed-loop identifiability limit, which is broken by exciting the control
+REFERENCE, not by better sensors. The test: give every zone its own pseudo-random setpoint pattern and see whose box follows which zone. This is the
+"active fault diagnosis / optimal input design" (#2) idea; it replaces the physical test `ACTUATE_OBSERVE`'s invented rates with a measured effect size.
+
+**Mechanism (`interventions.py`, run in `physics_pipeline/.venv`; `dr/perturbation.py`, numpy only).** For a base topology the model is rebuilt unchanged except that each
+zone gets a private thermostat whose COOLING and HEATING setpoints both follow `base +- 1.5 K` (base 24 / 20 C) under an independent +-1 code per zone with 2-hour
+blocks (a BAS setpoint schedule; no hardware). EnergyPlus (25.2, hourly) runs 2 undithered days followed by a 12-day campaign (288 h) in July (cooling) and,
+separately, January (heating). The input signal is the LOGGED zone setpoint `sp_cool` (what a BAS would record). For each zone `m` and candidate box `o` the score is
+`S(m,o) = max(|corr(u_m, flow_o)|, |corr(u_m, t_dis_o)|)` over the first `L` campaign hours (sign-agnostic: raising the cooling setpoint lowers flow, raising the
+heating setpoint raises discharge temperature); the predicted box is `argmax_o S`, ties counted as expected value. No fitting, no likelihood model.
+
+**Disclosure of the design-shaping feasibility check (made BEFORE this addendum; it is NOT part of the evaluation).** One noise-free campaign of `sys07_vav_reheat`,
+July, code seed 0, matched 10/10 zones once the logged setpoint (not the commanded code, which the simulator applied shifted by one hour) was used as the input and the
+sign was taken as negative-correlation; a moving-average detrend hurt (4/10) and was dropped. Those observations fixed three design choices above (logged input,
+sign-agnostic |corr|, no detrending, both setpoints shifted so both seasons respond). Seed 0 and that building/season/noise-free result are EXCLUDED from evaluation.
+
+**Evaluation (frozen before running):** buildings `sys07_vav_reheat`, `vav_2ahu_2loops`, `vav_3ahu_2loops`, `dev_E`, `dev_F`, `dev_G`, `dev_H` (train-role; each counts equally; every
+one has 10-ish zones and one VAV per zone -- chance = 1/n_vav); seasons July and January; code seeds 1, 2, 3; campaign lengths `L` in {24, 48, 96, 168, 288} h. Response
+noise applied to the logged box signals: `none`; `legacy` (flow x N(1,0.02), temperature + N(0,0.25) -- the project's original telemetry noise); `harsh` (flow x N(1,0.10),
+temperature + N(0,1.0)); 20 independent noise draws per campaign. Primary metric: rank-1 zone-to-box accuracy, mean over draws and seeds, building-cluster bootstrap 95% CI (500).
+Passive comparator: for the same building/season, an UNDITHERED run (all zones held at constant setpoints, same window) scored with the existing passive `vav_zone`
+channels through the Addendum 11 rank-1 (`all3` and `ch1`) over the same `L`. Never used: SEALED data, T1-T6 suites.
+
+**Frozen reading rules:** perturbation BREAKS THE PASSIVE LIMIT if, under `legacy` noise, mean rank-1 >= 0.90 at L = 96 h in BOTH seasons while the passive comparator stays <= 0.30. If it
+reaches 0.90 only at L > 96 the verdict is WORKS BUT NEEDS THE LONG CAMPAIGN (report the shortest L that reaches 0.90). If one season fails it is SEASON-LIMITED. If it does not reach
+0.90 at L = 288 in either season it does NOT solve the problem. `harsh` noise is reported as robustness, not a pass/fail criterion.
+
+**Limitations named up front.** (1) It identifies which box's actuator follows which zone's thermostat -- the control link -- which in this simulator coincides with the air-path link `vav_zone` encodes; a
+real building whose thermostat wiring differs from its air path would need the complementary box-override test (`ACTUATE_OBSERVE` on the zone temperature). (2) The simulator runs no faults,
+hourly reporting, one HVAC family, no occupants overriding setpoints, no real actuator saturation or BAS scan delays, and a campaign of 24 h to 12 days of continuous setpoint modulation (a comfort
+cost the sim does not price). (3) No real building data with deliberate setpoint patterns exists in this repository, so nothing here validates a real deployment. (4) A campaign occupies the
+building for hours to days but no technician labour after setup: its cost is not comparable to a sensor read and is NOT priced here.
+
+**Result (2026-09-23, run once as pre-registered; campaigns generated by `scripts/45` -- 56 EnergyPlus runs, all clean, ~2 min -- evaluated by `scripts/46`):
+frozen verdict = WORKS BUT NEEDS THE LONG CAMPAIGN; the passive limit IS broken.** Zone-to-box rank-1 accuracy under `legacy` noise, mean over 7 topologies x 3 code seeds x
+20 noise draws [building-cluster 95% CI] (chance ~0.10):
+*July (cooling):* 24 h 0.60 [0.59, 0.61]; 48 h 0.83 [0.81, 0.87]; 96 h **0.97** [0.95, 0.99]; 168 h 1.00; 288 h 1.00. *January (heating):* 24 h 0.78 [0.66, 0.89]; 48 h 0.96 [0.93, 0.99]; 96 h **0.89**
+[0.85, 0.93]; 168 h 0.95 [0.92, 0.98]; 288 h 0.98 [0.96, 0.99]. The passive `vav_zone` channels on the undithered run of the same buildings and windows stay at chance in both seasons at every
+length (all3 0.06-0.17, ch1 0.04-0.13; Addendum 11's finding, now reproduced on the campaign window). Frozen rule: July at 96 h passes (0.973 >= 0.90, passive 0.090 <= 0.30); January at 96 h is
+0.891, a hair under 0.90 -- so the criterion "both seasons at 96 h" is NOT met, and the pre-registered verdict is WORKS BUT NEEDS THE LONG CAMPAIGN: shortest L at 0.90 = 96 h (July) and 48 h (January,
+which then dips to 0.89 at 96 h before staying >= 0.95 from 168 h). The non-monotone January dip is a 3-code-seed artefact of which random sequence happened to open the campaign, not a physical effect.
+Response-signal noise is irrelevant: `none`, `legacy` and `harsh` noise agree to within ~0.02 at every length (July 96 h: 0.97 / 0.97 / 0.98), so the limit is statistical power from the number of
+independent setpoint blocks and the cross-correlation of the random codes, NOT sensor quality -- which is consistent with Addendum 11 (telemetry was never the bottleneck) and means an orthogonal/
+optimised code design could plausibly shorten the campaign (untested; this addendum evaluated only iid random codes). Per building (July 24/96/288 h): all seven reach 1.00 by 288 h; the hardest
+January case is `dev_H` (12 boxes: 0.64 / 0.79 / 0.97).
+*What this does and does not establish:* in simulation, exciting the control reference resolves in ~4-7 days what passive channels cannot resolve at all, for all zones in parallel, with no dependence on
+airflow instrumentation or telemetry quality (the response uses whichever of flow / discharge temperature the building logs). It identifies the thermostat->box control link (see Limitations (1)); it
+does not validate a real deployment; the simulator omits setpoint overrides, actuator saturation, BAS scan delays and occupant comfort cost.
