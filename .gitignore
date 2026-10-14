@@ -44,3 +44,10 @@ __pycache__/
 # doc_mismatch/scripts/45_run_perturbation_campaigns.py (the summary report at results/docmismatch/perturbation/ stays tracked)
 /results/docmismatch/perturbation/campaigns/
 /results/docmismatch/perturbation/feasibility/
+/results/docmismatch/perturbation/campaigns15/
+/results/docmismatch/perturbation/overrides/
+
+# doc_mismatch/pilot: secrets and per-visit field data (real building descriptions, uploaded photos,
+# the sqlite db) -- never belongs in git
+/doc_mismatch/pilot/.env
+/doc_mismatch/pilot/data/
