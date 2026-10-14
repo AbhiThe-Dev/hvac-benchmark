@@ -1,0 +1,1017 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Service Call Assistant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+  --bg:#F6F4F0; --surface:#FFFFFF; --surface-2:#EFEBE4; --fg:#1C2430; --muted:#646F80; --border:#DCD6CC;
+  --accent:#C2650C; --accent-fg:#FFFFFF; --good:#2F7A4F; --good-bg:#E6F2EA; --chip-bg:#FCEEDD; --chip-fg:#8A4A05;
+  --live-bg:#E7F0FA; --live-fg:#1D5A96; --warn:#B3261E; --warn-bg:#FBEAE9;
+  --font-display:system-ui,-apple-system,sans-serif; --font-body:system-ui,-apple-system,sans-serif; --font-mono:ui-monospace,"SF Mono",Menlo,monospace;
+}
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--fg); font-family:var(--font-body); margin:0}
+.wrap{max-width:560px; margin:0 auto; padding:0 16px 40px}
+header.top{position:sticky; top:0; z-index:5; background:var(--bg); border-bottom:1px solid var(--border); padding:14px 16px; margin:0 -16px 20px}
+header.top .row{max-width:560px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:12px}
+header.top h1{font-family:var(--font-display); font-size:16px; font-weight:600; margin:0}
+header.top .sub{font-size:12px; color:var(--muted); margin-top:2px}
+.live-badge{display:inline-flex; align-items:center; gap:5px; font-family:var(--font-mono); font-size:11px; font-weight:600; color:var(--live-fg); background:var(--live-bg); border-radius:999px; padding:3px 9px}
+.live-badge::before{content:""; width:6px; height:6px; border-radius:50%; background:var(--live-fg)}
+.tally{display:flex; gap:14px; font-family:var(--font-mono); font-size:13px; color:var(--muted)}
+.tally b{color:var(--fg); font-weight:600}
+.card{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:20px; margin-bottom:16px}
+.eyebrow{font-family:var(--font-mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin:0 0 8px}
+h2{font-family:var(--font-display); font-size:20px; margin:0 0 10px; line-height:1.3}
+p.lead{color:var(--muted); font-size:14px; line-height:1.5; margin:0 0 4px}
+.room-list{display:flex; flex-direction:column; gap:10px; margin:16px 0}
+.room-row{display:flex; align-items:center; justify-content:space-between; background:var(--surface-2); border-radius:10px; padding:12px 14px}
+.room-row .name{font-weight:600; font-size:14px}
+.room-row .meta{font-family:var(--font-mono); font-size:12px; color:var(--muted)}
+button.primary{font-family:var(--font-display); font-weight:600; font-size:15px; color:var(--accent-fg); background:var(--accent); border:none; border-radius:10px; padding:14px 18px; width:100%; cursor:pointer}
+button.primary:disabled{opacity:.45; cursor:not-allowed}
+button.secondary{font-family:var(--font-display); font-weight:500; font-size:14px; color:var(--fg); background:var(--surface-2); border:1px solid var(--border); border-radius:10px; padding:12px 16px; width:100%; cursor:pointer; margin-top:8px}
+.question{font-size:16px; line-height:1.5; margin:0 0 10px}
+.point-badge{display:inline-flex; align-items:center; gap:6px; font-family:var(--font-mono); font-size:12px; background:var(--surface-2); color:var(--fg); border:1px solid var(--border); border-radius:7px; padding:3px 8px; margin:2px 6px 2px 0}
+.point-badge::before{content:"⌁"; color:var(--accent)}
+.reading-note{font-size:13px; color:var(--muted); margin:0 0 14px}
+.meter{height:6px; border-radius:4px; background:var(--surface-2); overflow:hidden; margin:4px 0 2px}
+.meter > div{height:100%; background:var(--accent)}
+.meter-label{font-family:var(--font-mono); font-size:12px; color:var(--muted); margin-bottom:14px}
+.memo-chip{display:inline-flex; align-items:center; font-size:12px; font-weight:600; color:var(--chip-fg); background:var(--chip-bg); border-radius:999px; padding:4px 10px; margin-bottom:14px}
+.answers{display:flex; flex-direction:column; gap:10px; margin-top:4px}
+.answer-btn{font-family:var(--font-body); font-size:15px; font-weight:600; text-align:left; display:flex; align-items:center; justify-content:space-between; background:var(--surface); color:var(--fg); border:1.5px solid var(--border); border-radius:10px; padding:14px 16px; cursor:pointer}
+.answer-btn:hover{border-color:var(--accent)}
+.answer-btn .arrow{color:var(--accent); font-family:var(--font-mono)}
+.carry{background:var(--good-bg); border:1px solid var(--good); border-radius:12px; padding:14px 16px; margin-bottom:16px}
+.carry .eyebrow{color:var(--good)}
+.carry ul{margin:6px 0 0; padding-left:18px; font-size:13px; line-height:1.6}
+.warn-banner{background:var(--warn-bg); border:1px solid var(--warn); border-radius:12px; padding:14px 16px; margin-bottom:16px; font-size:13px; line-height:1.55; color:#5c1a15}
+.warn-banner b{color:var(--warn)}
+.conclude-badge{display:inline-flex; align-items:center; gap:8px; background:var(--good-bg); color:var(--good); font-weight:700; font-size:12px; letter-spacing:.04em; text-transform:uppercase; border-radius:999px; padding:5px 12px; margin-bottom:12px; font-family:var(--font-mono)}
+.stat-row{display:flex; gap:18px; margin:14px 0 2px; font-family:var(--font-mono); font-size:13px; color:var(--muted)}
+.stat-row b{color:var(--fg); font-size:15px; display:block; font-family:var(--font-body); font-weight:600}
+.summary-grid{display:flex; flex-direction:column; gap:10px; margin:14px 0}
+.summary-row{background:var(--surface-2); border-radius:10px; padding:12px 14px}
+.summary-row .r-name{font-weight:600; font-size:14px; margin-bottom:2px; display:flex; align-items:center; gap:8px}
+.summary-row .r-concl{font-size:13px; color:var(--muted); line-height:1.4}
+.econ-tag{font-family:var(--font-mono); font-size:10px; font-weight:700; color:var(--warn); background:var(--warn-bg); border-radius:999px; padding:2px 7px; text-transform:uppercase}
+.big-stats{display:flex; gap:12px; margin:16px 0}
+.big-stat{flex:1; background:var(--surface-2); border-radius:12px; padding:14px; text-align:center}
+.big-stat .num{font-family:var(--font-mono); font-size:26px; font-weight:600}
+.big-stat .lbl{font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; margin-top:2px}
+.context-note{font-size:13px; color:var(--muted); line-height:1.55; background:var(--surface-2); border-radius:10px; padding:12px 14px; margin-top:4px}
+.footnote{font-size:11px; color:var(--muted); line-height:1.6; text-align:center; margin-top:28px; padding-top:16px; border-top:1px solid var(--border)}
+.spinner{display:flex; justify-content:center; padding:30px; color:var(--muted); font-size:14px}
+[hidden]{display:none!important}
+
+/* ---- new: login / start-visit / confirm screens ---- */
+.text-input{width:100%; font-family:var(--font-body); font-size:15px; color:var(--fg); background:var(--surface); border:1.5px solid var(--border); border-radius:10px; padding:12px 14px; margin:4px 0 14px}
+.text-input:focus{outline:none; border-color:var(--accent)}
+.field-label{display:block; font-size:13px; font-weight:600; color:var(--fg); margin:0 0 4px}
+.checkbox-row{display:flex; align-items:center; gap:8px; font-size:14px; margin:4px 0 12px; cursor:pointer}
+.checkbox-row input{width:18px; height:18px}
+.btn-group{display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap}
+.choice-btn{flex:1; min-width:84px; font-family:var(--font-body); font-size:14px; font-weight:600; background:var(--surface); color:var(--fg); border:1.5px solid var(--border); border-radius:10px; padding:11px 10px; cursor:pointer}
+.choice-btn.selected{border-color:var(--accent); background:var(--chip-bg); color:var(--chip-fg)}
+.photo-input{display:flex; align-items:center; gap:10px; background:var(--surface-2); border:1.5px dashed var(--border); border-radius:10px; padding:12px 14px; margin:4px 0 16px; cursor:pointer; font-size:14px; color:var(--muted)}
+.photo-input.has-photo{border-style:solid; color:var(--fg)}
+.photo-thumb{width:40px; height:40px; object-fit:cover; border-radius:6px; flex-shrink:0}
+.error-text{color:var(--warn); font-size:13px; margin-top:8px}
+details{margin-bottom:12px}
+details summary{list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:" \25BE"; color:var(--muted)}
+details[open] summary::after{content:" \25B4"}
+.box-card{background:var(--surface-2); border-radius:12px; padding:14px; margin-bottom:10px}
+
+/* ---- case record: chips, picker, timer, close-out ---- */
+.chips{display:flex; flex-wrap:wrap; gap:8px; margin:4px 0 14px}
+.chip{font-family:var(--font-body); font-size:13px; font-weight:600; background:var(--surface); color:var(--fg); border:1.5px solid var(--border); border-radius:999px; padding:8px 12px; cursor:pointer}
+.chip.selected{border-color:var(--accent); background:var(--chip-bg); color:var(--chip-fg)}
+textarea.text-input{min-height:76px; resize:vertical}
+.pick-group{background:var(--surface-2); border-radius:10px; padding:10px 12px; margin:0 0 8px}
+.pick-btn{display:block; width:100%; text-align:left; font-family:var(--font-body); font-size:14px; line-height:1.4; color:var(--fg); background:var(--surface); border:1.5px solid var(--border); border-radius:9px; padding:10px 12px; margin:8px 0 0; cursor:pointer}
+.pick-btn:hover{border-color:var(--accent)}
+.timer{font-family:var(--font-mono); font-size:38px; font-weight:600; text-align:center; margin:12px 0 2px}
+.link-btn{background:none; border:none; color:var(--live-fg); text-decoration:underline; font-size:13px; cursor:pointer; padding:8px 0}
+.recorded{font-size:13px; color:var(--good); background:var(--good-bg); border-radius:8px; padding:8px 10px; margin:0 0 10px}
+.tool-says{font-size:13px; color:var(--muted); background:var(--surface-2); border-radius:8px; padding:10px 12px; margin:0 0 12px; line-height:1.5}
+.rec-pre{white-space:pre-wrap; word-break:break-word; font-family:var(--font-mono); font-size:11px; line-height:1.5; background:var(--surface-2); border-radius:10px; padding:12px}
+.ladder{background:var(--surface-2); border-radius:10px; padding:12px 14px; margin:0 0 6px}
+.ladder-title{font-family:var(--font-mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin:0 0 8px}
+.ladder-row{display:flex; gap:10px; font-size:13px; line-height:1.45; color:var(--muted); padding:3px 0}
+.ladder-row .mark{width:16px; flex-shrink:0; text-align:center; font-weight:700}
+.ladder-row.done{color:var(--fg)}
+.ladder-row.done .mark{color:var(--good)}
+.ladder-row.warn{color:var(--fg)}
+.ladder-row.warn .mark{color:var(--warn)}
+.section-head{font-family:var(--font-display); font-size:15px; font-weight:600; margin:18px 0 8px}
+
+@media (min-width: 700px){
+  .wrap{max-width:640px}
+  .box-card{padding:16px 18px}
+}
+@media (max-width: 360px){
+  .wrap{padding:0 12px 32px}
+  .card{padding:16px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="row">
+      <div>
+        <h1>Service Call Assistant</h1>
+        <div class="sub" id="subhead">Loading&hellip;</div>
+      </div>
+      <div style="display:flex; flex-direction:column; align-items:flex-end; gap:6px">
+        <span class="live-badge">LIVE ENGINE</span>
+        <div class="tally" id="tally" hidden><span><b id="t-min">0</b> min</span><span><b id="t-checks">0</b> checks</span></div>
+      </div>
+    </div>
+  </header>
+  <main id="app"><div class="spinner">Loading&hellip;</div></main>
+  <div class="footnote">
+    Simulation-tested only until now &mdash; this is the first time this tool has run on a real building. If
+    anything looks wrong or confusing, that's exactly what this week is for.
+  </div>
+</div>
+<script>
+const TOKEN_KEY = 'pilot_token', VISIT_KEY = 'pilot_visit_id';
+let token = localStorage.getItem(TOKEN_KEY);
+let visitId = localStorage.getItem(VISIT_KEY);
+let rooms = [];
+let selectedFeel = null, selectedAirflow = null;
+let photoFiles = {bas: null, equipment: null};
+let currentIntakeId = null, currentDraft = null;
+let timerHandle = null, clockSkewMs = 0, choices = null, recentCases = [], lastStep = null;
+
+const app = document.getElementById('app');
+const tally = document.getElementById('tally');
+const subhead = document.getElementById('subhead');
+
+function esc(s){ return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+async function api(path, {method, body, isForm} = {}){
+  const headers = {};
+  let fetchBody;
+  if (isForm) {
+    fetchBody = body;
+  } else if (body !== undefined) {
+    headers['Content-Type'] = 'application/json';
+    fetchBody = JSON.stringify(body);
+  }
+  if (token) headers['Authorization'] = `Bearer ${token}`;
+  const res = await fetch(path, {method: method || 'POST', headers, body: fetchBody});
+  const serverDate = res.headers.get('date');
+  if (serverDate) clockSkewMs = Date.parse(serverDate) - Date.now();
+  if (res.status === 401) {
+    localStorage.removeItem(TOKEN_KEY);
+    token = null;
+    renderLogin();
+    throw new Error('Session expired. Log in again.');
+  }
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.detail || data.error || `Request failed (${res.status}).`);
+  return data;
+}
+
+function fmtWord(w){ return w.charAt(0).toUpperCase() + w.slice(1); }
+
+function parseQuestion(text){
+  let point = null, reading = null;
+  let main = text.replace(/\s*\(control-system point: ([^)]+)\)/, (m, p) => { point = p; return ''; });
+  main = main.replace(/\s*\[([^\]]+)\]\s*$/, (m, r) => { reading = r; return ''; });
+  return { main: main.trim(), point, reading };
+}
+
+function renderTally(min, checks){
+  tally.hidden = false;
+  document.getElementById('t-min').textContent = Math.round(min);
+  document.getElementById('t-checks').textContent = checks;
+}
+
+/* ------------------------------------------------------------------ login (developer-relayed one-time code) */
+function renderLogin(){
+  subhead.textContent = 'Sign in';
+  app.innerHTML = `
+    <div class="card">
+      <p class="eyebrow">Sign in</p>
+      <h2>Request an access code</h2>
+      <p class="lead">The code won't come to you directly — it goes to the developer, who'll pass it along. Ask them for it after you request one.</p>
+      <button class="primary" id="send-btn" style="margin-top:12px">Request code</button>
+      <p class="error-text" id="login-error" hidden></p>
+    </div>`;
+  const submit = async () => {
+    const btn = document.getElementById('send-btn');
+    btn.disabled = true;
+    try {
+      await api('/api/request-code');
+      renderCodeEntry();
+    } catch (e) {
+      const err = document.getElementById('login-error');
+      err.textContent = e.message;
+      err.hidden = false;
+      btn.disabled = false;
+    }
+  };
+  document.getElementById('send-btn').onclick = submit;
+}
+
+function renderCodeEntry(){
+  subhead.textContent = 'Sign in';
+  app.innerHTML = `
+    <div class="card">
+      <p class="eyebrow">Code requested</p>
+      <h2>Enter the code</h2>
+      <p class="lead">Get it from the developer — it expires in a few minutes and works once.</p>
+      <input class="text-input" id="code" inputmode="numeric" maxlength="6" placeholder="123456" autocomplete="one-time-code" style="margin-top:12px; letter-spacing:4px; font-family:var(--font-mono); font-size:20px; text-align:center">
+      <button class="primary" id="verify-btn">Continue</button>
+      <button class="secondary" id="resend-btn">Request a new code</button>
+      <p class="error-text" id="code-error" hidden></p>
+    </div>`;
+  const submit = async () => {
+    const code = document.getElementById('code').value.trim();
+    if (!code) return;
+    const btn = document.getElementById('verify-btn');
+    btn.disabled = true;
+    try {
+      const data = await api('/api/verify-code', {body: {code}});
+      token = data.token;
+      localStorage.setItem(TOKEN_KEY, token);
+      boot();
+    } catch (e) {
+      const err = document.getElementById('code-error');
+      err.textContent = e.message;
+      err.hidden = false;
+      btn.disabled = false;
+    }
+  };
+  document.getElementById('verify-btn').onclick = submit;
+  document.getElementById('code').addEventListener('keydown', ev => { if (ev.key === 'Enter') submit(); });
+  document.getElementById('resend-btn').onclick = async () => {
+    try { await api('/api/request-code'); } catch (e) { /* cooldown or transient -- ignore, code may still be valid */ }
+  };
+}
+
+/* ------------------------------------------------------------- start visit */
+function renderStartVisit(){
+  selectedFeel = null; selectedAirflow = null; photoFiles = {bas: null, equipment: null};
+  subhead.textContent = 'New visit';
+  app.innerHTML = `
+    <div class="card">
+      <p class="eyebrow">New visit</p>
+      <h2>What's the complaint?</h2>
+      <p class="field-label">Room temperature</p>
+      <div class="btn-group" id="feel-group">
+        <button class="choice-btn" data-val="too_hot">Too hot</button>
+        <button class="choice-btn" data-val="too_cold">Too cold</button>
+        <button class="choice-btn" data-val="unsure">Not sure</button>
+      </div>
+      <p class="field-label">Air coming from the diffuser at all?</p>
+      <div class="btn-group" id="airflow-group">
+        <button class="choice-btn" data-val="yes">Yes</button>
+        <button class="choice-btn" data-val="no">No</button>
+        <button class="choice-btn" data-val="unsure">Not sure</button>
+      </div>
+      <p class="field-label">Photo of the BAS screen for this air handler</p>
+      <label class="photo-input" for="bas-input">
+        <input type="file" accept="image/*" capture="environment" id="bas-input" hidden>
+        <img class="photo-thumb" id="bas-thumb" hidden>
+        <span id="bas-text">Take or choose a photo</span>
+      </label>
+      <p class="field-label">Photo of the equipment nameplate, riser, or as-built drawing</p>
+      <label class="photo-input" for="equip-input">
+        <input type="file" accept="image/*" capture="environment" id="equip-input" hidden>
+        <img class="photo-thumb" id="equip-thumb" hidden>
+        <span id="equip-text">Take or choose a photo</span>
+      </label>
+      <button class="primary" id="extract-btn" disabled>Read photos</button>
+      <p class="error-text" id="start-error" hidden></p>
+    </div>`;
+  setupChoiceGroup('feel-group', v => selectedFeel = v);
+  setupChoiceGroup('airflow-group', v => selectedAirflow = v);
+  setupPhotoInput('bas-input', 'bas-text', 'bas-thumb', 'bas');
+  setupPhotoInput('equip-input', 'equip-text', 'equip-thumb', 'equipment');
+  document.getElementById('extract-btn').onclick = doExtract;
+}
+
+function setupChoiceGroup(groupId, onPick){
+  const group = document.getElementById(groupId);
+  group.querySelectorAll('.choice-btn').forEach(btn => {
+    btn.onclick = () => {
+      group.querySelectorAll('.choice-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      onPick(btn.dataset.val);
+    };
+  });
+}
+
+function setupPhotoInput(inputId, textId, thumbId, key){
+  document.getElementById(inputId).onchange = (ev) => {
+    const f = ev.target.files[0];
+    if (!f) return;
+    photoFiles[key] = f;
+    const label = ev.target.closest('.photo-input');
+    label.classList.add('has-photo');
+    document.getElementById(textId).textContent = f.name;
+    const thumb = document.getElementById(thumbId);
+    thumb.src = URL.createObjectURL(f);
+    thumb.hidden = false;
+    document.getElementById('extract-btn').disabled = !(photoFiles.bas && photoFiles.equipment);
+  };
+}
+
+async function doExtract(){
+  renderExtracting();
+  try {
+    const form = new FormData();
+    form.append('photo_bas', photoFiles.bas);
+    form.append('photo_equipment', photoFiles.equipment);
+    const data = await api('/api/intake/extract', {body: form, isForm: true});
+    currentIntakeId = data.intake_id;
+    currentDraft = data.draft;
+    await getChoices();
+    renderConfirm();
+  } catch (e) {
+    renderExtractError(e.message);
+  }
+}
+
+function renderExtracting(){
+  app.innerHTML = `<div class="card"><div class="spinner">Reading the photos&hellip;</div>
+    <p class="lead" style="text-align:center">Usually a few seconds &mdash; longer on a weak signal.</p></div>`;
+}
+
+function renderExtractError(message){
+  app.innerHTML = `
+    <div class="card">
+      <h2>Couldn't read those photos</h2>
+      <p class="lead">${esc(message)}</p>
+      <button class="primary" id="retry-btn">Try again</button>
+    </div>`;
+  document.getElementById('retry-btn').onclick = renderStartVisit;
+}
+
+/* ------------------------------------------------------------- confirm */
+function renderConfirm(){
+  const d = currentDraft;
+  subhead.textContent = 'Confirm what was read';
+  const notesHtml = d.notes ? `<div class="warn-banner"><b>Flagged by the reader:</b> ${esc(d.notes)}</div>` : '';
+  const boxesHtml = d.boxes.map((b, i) => `
+    <div class="box-card">
+      <label class="field-label">Box / VAV ID</label>
+      <input class="text-input" data-box="${i}" data-field="equipment_id" value="${esc(b.equipment_id)}">
+      <label class="field-label">Room / zone it serves</label>
+      <input class="text-input" data-box="${i}" data-field="serves_room" value="${esc(b.serves_room)}">
+      <label class="checkbox-row"><input type="checkbox" data-box="${i}" data-field="complaint" checked> This room has today's complaint</label>
+      <details>
+        <summary class="field-label">BAS points (optional)</summary>
+        <label class="field-label">Status</label><input class="text-input" data-box="${i}" data-point="status" value="${esc(b.points?.status)}">
+        <label class="field-label">Airflow</label><input class="text-input" data-box="${i}" data-point="airflow" value="${esc(b.points?.airflow)}">
+        <label class="field-label">Damper</label><input class="text-input" data-box="${i}" data-point="damper" value="${esc(b.points?.damper)}">
+        <label class="field-label">Reheat</label><input class="text-input" data-box="${i}" data-point="reheat" value="${esc(b.points?.reheat)}">
+        <label class="field-label">Zone temperature point</label><input class="text-input" data-box="${i}" data-field="zone_temperature_point" value="${esc(b.zone_temperature_point)}">
+      </details>
+    </div>`).join('');
+  app.innerHTML = `
+    <div class="card">
+      <p class="eyebrow">Confirm what was read</p>
+      <h2>Does this match what's in front of you?</h2>
+      <p class="lead">Edit anything that's wrong. If something important is missing, retaking a clearer photo is usually faster than typing it in.</p>
+    </div>
+    ${notesHtml}
+    <div class="card">
+      <label class="field-label">Air handler (AHU) ID</label>
+      <input class="text-input" id="ahu-id" value="${esc(d.ahu.equipment_id)}">
+      <details>
+        <summary class="field-label">AHU BAS points (optional)</summary>
+        <label class="field-label">Fan status</label><input class="text-input" id="ahu-fan" value="${esc(d.ahu.points?.fan_status)}">
+        <label class="field-label">Static pressure</label><input class="text-input" id="ahu-static" value="${esc(d.ahu.points?.static_pressure)}">
+        <label class="field-label">Economizer position</label><input class="text-input" id="ahu-eco" value="${esc(d.ahu.points?.economizer_position)}">
+      </details>
+    </div>
+    <p class="eyebrow">Boxes / rooms</p>
+    ${boxesHtml || '<p class="lead">Nothing readable was found in those photos.</p>'}
+    ${contextCardHtml()}
+    <button class="primary" id="confirm-btn" ${d.boxes.length ? '' : 'disabled'}>Looks right &mdash; start the visit</button>
+    <button class="secondary" id="back-btn">Retake photos</button>
+    <p class="error-text" id="confirm-error" hidden></p>`;
+  document.getElementById('back-btn').onclick = renderStartVisit;
+  bindChips('#ctx-suspect', true);
+  document.getElementById('confirm-btn').onclick = submitConfirm;
+}
+
+const SELECTS = {
+  source: ['ctx-source', 'How did it come in?', [['occupant', 'Occupant'], ['tenant_or_manager', 'Tenant or manager'], ['bas_alarm', 'BAS alarm'], ['routine_round', 'Found on a routine round'], ['other', 'Other']]],
+  btype: ['ctx-btype', 'Building type', [['office', 'Office'], ['retail', 'Retail'], ['school', 'School'], ['healthcare', 'Healthcare'], ['lab', 'Lab'], ['industrial', 'Industrial'], ['residential', 'Residential'], ['other', 'Other']]],
+  sys: ['ctx-sys', 'System', [['vav_hot_water_reheat', 'VAV, hot-water reheat'], ['vav_electric_reheat', 'VAV, electric reheat'], ['vav_cooling_only', 'VAV, cooling only'], ['other', 'Other'], ['unknown', 'Not sure']]],
+  age: ['ctx-age', 'Age of the equipment', [['lt5', 'Under 5 years'], ['5to10', '5 to 10'], ['10to20', '10 to 20'], ['gt20', 'Over 20'], ['unknown', 'Not sure']]],
+};
+const READING_FIELDS = [['zone_temp', 'Zone temperature'], ['zone_setpoint', 'Zone setpoint'], ['airflow', 'Airflow'], ['airflow_setpoint', 'Airflow setpoint'],
+  ['damper_position', 'Damper position'], ['duct_static', 'Duct static pressure'], ['discharge_temp', 'Discharge air temperature']];
+
+function contextCardHtml(){
+  const groups = (choices && choices.cause_groups) || {};
+  const sel = ([id, label, opts]) => `<label class="field-label">${label}</label><select class="text-input" id="${id}"><option value="">Choose&hellip;</option>${opts.map(([v, l]) => `<option value="${v}">${l}</option>`).join('')}</select>`;
+  return `
+    <div class="card">
+      <p class="eyebrow">About this call (all optional)</p>
+      <label class="field-label">The complaint, in their words</label>
+      <textarea class="text-input" id="ctx-complaint" maxlength="2000" placeholder="e.g. east corner is cold every afternoon. Please leave out names and addresses."></textarea>
+      <p class="field-label">What do you suspect so far? (before the tool says anything)</p>
+      <div class="chips" id="ctx-suspect">${chipsHtml(Object.keys(groups).map(g => [g, GROUP_LABEL[g] || groups[g]]))}</div>
+      <input class="text-input" id="ctx-suspect-text" maxlength="200" placeholder="Anything else you suspect (optional)">
+      <details>
+        <summary class="field-label">More about the building, equipment and readings</summary>
+        <div style="margin-top:8px">${Object.values(SELECTS).map(sel).join('')}
+        ${recentCases.length ? `<label class="field-label">Is this a return visit for an earlier case?</label><select class="text-input" id="ctx-prior"><option value="">No</option>${recentCases.map(c => `<option value="${c.case_id}">${esc(c.room)} &middot; ${esc((c.opened_at || '').slice(0, 10))}</option>`).join('')}</select>` : ''}
+        <p class="field-label">Readings you already have (with units)</p>
+        ${READING_FIELDS.map(([k, l]) => `<input class="text-input" id="rd-${k}" maxlength="40" placeholder="${l}" style="margin:0 0 8px">`).join('')}
+        <label class="field-label">Alarms showing</label>
+        <input class="text-input" id="ctx-alarms" maxlength="500" placeholder="e.g. none, or the alarm text"></div>
+      </details>
+    </div>`;
+}
+
+function collectContext(){
+  const c = {}, set = (k, v) => { if (v) c[k] = v; };
+  set('complaint_text', qv('#ctx-complaint'));
+  set('complaint_source', qv('#ctx-source')); set('building_type', qv('#ctx-btype')); set('system_kind', qv('#ctx-sys')); set('equipment_age_band', qv('#ctx-age'));
+  set('alarms_text', qv('#ctx-alarms')); set('own_hypotheses_text', qv('#ctx-suspect-text'));
+  const readings = {};
+  READING_FIELDS.forEach(([k]) => { const v = qv('#rd-' + k); if (v) readings[k] = v; });
+  if (Object.keys(readings).length) c.readings = readings;
+  const sus = chosen('#ctx-suspect');
+  if (sus.length) c.own_hypotheses = sus;
+  const prior = qv('#ctx-prior');
+  if (prior) c.prior_case_id = +prior;
+  return c;
+}
+
+async function submitConfirm(){
+  const d = currentDraft;
+  const val = (sel) => (document.querySelector(sel)?.value || '').trim() || null;
+  const ahu = {
+    equipment_id: val('#ahu-id'),
+    points: {fan_status: val('#ahu-fan'), static_pressure: val('#ahu-static'), economizer_position: val('#ahu-eco')},
+  };
+  const boxes = [];
+  const roomIds = [];
+  d.boxes.forEach((_, i) => {
+    const field = (name) => val(`[data-box="${i}"][data-field="${name}"]`);
+    const point = (name) => val(`[data-box="${i}"][data-point="${name}"]`);
+    const servesRoom = field('serves_room');
+    boxes.push({
+      equipment_id: field('equipment_id'), serves_room: servesRoom,
+      points: {status: point('status'), airflow: point('airflow'), damper: point('damper'), reheat: point('reheat')},
+      zone_temperature_point: field('zone_temperature_point'),
+    });
+    if (document.querySelector(`[data-box="${i}"][data-field="complaint"]`).checked) roomIds.push(servesRoom);
+  });
+  const errEl = document.getElementById('confirm-error');
+  if (!roomIds.length) {
+    errEl.textContent = "Check at least one room as today's complaint.";
+    errEl.hidden = false;
+    return;
+  }
+  const btn = document.getElementById('confirm-btn');
+  btn.disabled = true;
+  try {
+    const data = await api(`/api/intake/${currentIntakeId}/confirm`, {
+      body: {draft: {ahu, boxes, notes: d.notes || null}, room_ids: roomIds, feel: selectedFeel, airflow: selectedAirflow, context: collectContext()},
+    });
+    visitId = data.visit_id;
+    localStorage.setItem(VISIT_KEY, visitId);
+    rooms = data.rooms;
+    renderIntro(data.step);
+  } catch (e) {
+    errEl.textContent = e.message;
+    errEl.hidden = false;
+    btn.disabled = false;
+  }
+}
+
+/* ------------------------------------------------------------- the visit itself */
+function renderIntro(firstStep){
+  subhead.textContent = `${rooms[0].ahu} · ${rooms.length} complaint${rooms.length > 1 ? 's' : ''}`;
+  const plural = rooms.length > 1;
+  app.innerHTML = `
+    <div class="card">
+      <p class="eyebrow">Starting the visit</p>
+      <h2>${plural ? `${rooms.length} rooms, same air handler` : esc(rooms[0].name)}</h2>
+      <p class="lead">${plural ? `All served by ${esc(rooms[0].ahu)} — worth knowing before the first check is even chosen.` : `Served by ${esc(rooms[0].ahu)}.`}</p>
+      <div class="room-list">${rooms.map(r => `<div class="room-row"><span class="name">${esc(r.name)}</span><span class="meta">box ${esc(r.documented_box)}</span></div>`).join('')}</div>
+      <button class="primary" id="start-btn">Start the checks</button>
+    </div>
+    ${plural ? `<div class="context-note">The tool picks one check at a time — whichever narrows things down the most per minute spent — and answers for one room can save time on the next.</div>` : ''}`;
+  document.getElementById('start-btn').onclick = () => render(firstStep);
+}
+
+/* ------------------------------------------------------------- shared bits for the case record */
+const qv = (sel) => (document.querySelector(sel)?.value || '').trim() || null;
+const ts = () => new Date().toISOString();
+
+const GROUP_LABEL = {
+  documentation: 'Drawings wrong (a different box serves the room)', box_mechanical: 'Actuator, damper or linkage',
+  power_and_signal: '24 VAC power or control signal', controls: 'VAV controller (comms or setup)', sensing: 'Airflow sensor',
+  zone_inputs: 'Zone sensor, setpoint or schedule', upstream: 'Air handler, duct pressure or economizer', reheat: 'Reheat',
+  distribution: 'Duct or diffuser', capacity: 'Box or room capacity', other: 'Something else',
+};
+const FAMILY_LABEL = {'v0 check': 'Command and trace tests', 'control system': 'In the control system (BAS)', 'at the box': 'At the box',
+  'at the air handler': 'At the air handler', 'in the room': 'In the room'};
+const REASONS = [['already_known', 'Already know the answer'], ['cannot_do_now', "Can't do it right now"], ['not_relevant', "Doesn't look relevant"],
+  ['prefer_other_first', 'Want to check something else first'], ['other', 'Other']];
+const HOW_CONFIRMED = [['observed_directly', 'Saw the failed part'], ['measured', 'Measured it (meter or gauge)'], ['repair_fixed_it', 'Fixed it and the complaint went away'],
+  ['ruled_out_others', 'Ruled out the alternatives'], ['other_tech_or_vendor', 'Told by another tech or vendor'], ['not_confirmed', 'Best guess, not confirmed']];
+const REPAIRS = [['replaced_part', 'Replaced a part'], ['adjusted_or_reset', 'Adjusted or reset'], ['reconfigured_controls', 'Changed control settings'],
+  ['cleaned_or_cleared', 'Cleaned or cleared'], ['repaired_wiring', 'Repaired wiring'], ['corrected_documentation', 'Corrected the drawings'],
+  ['no_repair_needed', 'No repair needed'], ['deferred_or_referred', 'Deferred or referred out'], ['other', 'Other']];
+const PHYSICAL_METHODS = ['observed_directly', 'measured'];       // keep in step with ladder.PHYSICAL
+const BEFORE_REPAIR = [['true', 'Yes, before I repaired anything'], ['false', 'No, only after the repair']];
+const RECHECK_CHIPS = [['now_ok', "It's fine now"], ['still_wrong', 'Still wrong'], ['unsure', "Couldn't tell"]];
+const FIXED = [['yes', 'Yes, fixed'], ['partial', 'Partly'], ['no', 'No'], ['unknown', "Don't know yet"]];
+
+async function getChoices(){
+  if (!choices) { try { choices = await api('/api/choices', {method: 'GET'}); } catch (e) { choices = {cause_groups: {}, causes: []}; } }
+  return choices;
+}
+
+function chipsHtml(pairs, extraClass){
+  return pairs.map(([v, label]) => `<button type="button" class="chip ${extraClass || ''}" data-val="${esc(v)}">${esc(label)}</button>`).join('');
+}
+function bindChips(rootSel, multi, onChange){
+  document.querySelectorAll(`${rootSel} .chip`).forEach(btn => {
+    btn.onclick = () => {
+      if (!multi) document.querySelectorAll(`${rootSel} .chip`).forEach(b => { if (b !== btn) b.classList.remove('selected'); });
+      btn.classList.toggle('selected');
+      if (onChange) onChange();
+    };
+  });
+}
+function selectChips(rootSel, values){
+  document.querySelectorAll(`${rootSel} .chip`).forEach(b => b.classList.toggle('selected', values.includes(b.dataset.val)));
+}
+const chosen = (rootSel) => [...document.querySelectorAll(`${rootSel} .chip.selected`)].map(b => b.dataset.val);
+
+function pickerHtml(picker){
+  const fams = [];
+  picker.forEach((p, i) => {
+    let f = fams.find(x => x.name === p.family);
+    if (!f) { f = {name: p.family, items: []}; fams.push(f); }
+    f.items.push([p, i]);
+  });
+  return fams.map(f => `<details class="pick-group"><summary class="field-label">${esc(FAMILY_LABEL[f.name] || fmtWord(f.name))} (${f.items.length})</summary>
+    ${f.items.map(([p, i]) => `<button type="button" class="pick-btn" data-i="${i}">${esc(parseQuestion(p.text).main)}</button>`).join('')}</details>`).join('');
+}
+function bindPicker(picker, onPick){
+  app.querySelectorAll('.pick-btn').forEach(b => { b.onclick = () => onPick(picker[+b.dataset.i]); });
+}
+
+const post = (path, body) => api(path, {body: {...body, client_ts: ts()}});
+const stepCall = (path, body) => act(() => post(`/api/visits/${visitId}/${path}`, body));
+
+function checkHead(node, label){
+  return `<p class="eyebrow">Room ${node.room + 1} of ${rooms.length} &middot; ${esc(rooms[node.room].name)}${label ? ' &middot; ' + esc(label) : ''}</p>`;
+}
+function checkBody(q){
+  return `<p class="question">${esc(q.main)}</p>${q.point ? `<div class="point-badge">${esc(q.point)}</div>` : ''}${q.reading ? `<p class="reading-note">${esc(q.reading)}</p>` : ''}`;
+}
+
+/* ------------------------------------------------------------- a check, by stage: intent -> revealed -> in_progress */
+function renderCheck(node){
+  if (node.stage === 'intent') return renderIntent(node);
+  if (node.stage === 'revealed') return renderRevealed(node);
+  return renderInProgress(node);
+}
+
+function renderIntent(node){
+  app.innerHTML = `
+    <div class="card">
+      ${checkHead(node)}
+      <h2>What would you check next?</h2>
+      <p class="lead">Before the tool says anything: pick what you'd do on your own. There's no right answer, and it only takes a tap.</p>
+      <div style="margin-top:14px">${pickerHtml(node.picker)}</div>
+      <details class="pick-group"><summary class="field-label">Something not on this list</summary>
+        <input class="text-input" id="intent-text" maxlength="200" placeholder="What you'd check (no names or addresses)" style="margin-top:8px">
+        <button class="secondary" id="intent-other" style="margin-top:0">That's what I'd check</button>
+      </details>
+      <button class="secondary" id="intent-unsure">Not sure &mdash; show me the suggestion</button>
+    </div>`;
+  bindPicker(node.picker, p => stepCall('intent', {kind: 'check', check: p.name, target: p.target}));
+  document.getElementById('intent-other').onclick = () => { const t = qv('#intent-text'); if (t) stepCall('intent', {kind: 'other', text: t}); };
+  document.getElementById('intent-unsure').onclick = () => stepCall('intent', {kind: 'unsure'});
+}
+
+function renderRevealed(node){
+  const q = parseQuestion(node.text);
+  const pct = Math.round(node.p_pos * 100);
+  app.innerHTML = `
+    <div class="card">
+      ${checkHead(node, 'the tool suggests')}
+      ${checkBody(q)}
+      ${node.memo_note ? `<div class="memo-chip">SHARED ACROSS ROOMS &middot; ${esc(node.memo_note)}</div>` : ''}
+      <div class="meter"><div style="width:${pct}%"></div></div>
+      <div class="meter-label">~${pct}% likely to come back ${esc(node.words[0])} &middot; about ${node.minutes} min</div>
+      <button class="primary" id="follow-btn">Doing this check &mdash; start the timer</button>
+      <button class="secondary" id="other-btn">I'll do something else</button>
+      <button class="secondary" id="skip-btn">Skip this check</button>
+      <div id="panel"></div>
+    </div>`;
+  document.getElementById('follow-btn').onclick = () => stepCall('decision', {action: 'follow'});
+  const reasonBlock = `<p class="field-label" style="margin-top:14px">Why not the suggestion? (optional)</p><div class="chips" id="reason-chips">${chipsHtml(REASONS)}</div>`;
+  document.getElementById('other-btn').onclick = () => {
+    document.getElementById('panel').innerHTML = `${reasonBlock}
+      <p class="field-label">What are you doing instead?</p>${pickerHtml(node.picker)}
+      <details class="pick-group"><summary class="field-label">Something not on this list</summary>
+        <input class="text-input" id="ext-text" maxlength="200" placeholder="What you're checking (no names or addresses)" style="margin-top:8px">
+        <button class="secondary" id="ext-go" style="margin-top:0">Start the timer</button>
+      </details>`;
+    bindChips('#reason-chips', false);
+    const reason = () => chosen('#reason-chips')[0] || null;
+    bindPicker(node.picker, p => stepCall('decision', {action: 'substitute', check: p.name, target: p.target, reason: reason()}));
+    document.getElementById('ext-go').onclick = () => { const t = qv('#ext-text'); if (t) stepCall('decision', {action: 'external', external_text: t, reason: reason()}); };
+  };
+  document.getElementById('skip-btn').onclick = () => {
+    document.getElementById('panel').innerHTML = `${reasonBlock}<button class="secondary" id="skip-go" style="margin-top:0">Skip it</button>`;
+    bindChips('#reason-chips', false);
+    document.getElementById('skip-go').onclick = () => stepCall('decision', {action: 'skip', reason: chosen('#reason-chips')[0] || null});
+  };
+}
+
+function fmtElapsed(ms){
+  const s = Math.max(0, Math.floor(ms / 1000));
+  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+}
+
+function renderInProgress(node){
+  const q = parseQuestion(node.text);
+  const label = node.external ? 'your own check' : node.action === 'follow' ? 'following the suggestion' : 'your choice';
+  app.innerHTML = `
+    <div class="card">
+      ${checkHead(node, label)}
+      ${checkBody(q)}
+      <div class="timer" id="timer">0:00</div>
+      <p class="reading-note" style="text-align:center">Counting since you tapped start, so walking and setup are included.</p>
+      ${node.external
+        ? `<label class="field-label">What did you find?</label><textarea class="text-input" id="result-text" maxlength="200" placeholder="No names or addresses"></textarea>
+           <button class="primary" id="ext-done">Done &mdash; record it</button>`
+        : `<div class="answers">${node.words.concat(['unsure']).map(w => `<button class="answer-btn" data-word="${esc(w)}">${esc(w === 'unsure' ? "Couldn't tell" : fmtWord(w))} <span class="arrow">&rarr;</span></button>`).join('')}</div>`}
+      <details style="margin-top:14px">
+        <summary class="field-label">Add a reading, a note, or correct the time (optional)</summary>
+        ${node.external ? '' : '<label class="field-label" style="margin-top:8px">Reading, with its unit</label><input class="text-input" id="reading" maxlength="40" placeholder="e.g. 0.8 in. w.c.">'}
+        <label class="field-label">Note</label><input class="text-input" id="note" maxlength="500">
+        <label class="field-label">Minutes it really took (only if the timer is wrong)</label><input class="text-input" id="mins" inputmode="decimal" placeholder="e.g. 12">
+      </details>
+    </div>`;
+  const tick = () => { document.getElementById('timer').textContent = fmtElapsed(Date.now() + clockSkewMs - Date.parse(node.started_at)); };
+  tick();
+  timerHandle = setInterval(tick, 1000);
+  const extras = () => {
+    const m = parseFloat(qv('#mins'));
+    return {note: qv('#note'), minutes_correction: Number.isFinite(m) && m >= 0 && m <= 600 ? m : null, reading_text: qv('#reading')};
+  };
+  app.querySelectorAll('.answer-btn').forEach(btn => { btn.onclick = () => stepCall('answer', {word: btn.dataset.word, ...extras()}); });
+  const ext = document.getElementById('ext-done');
+  if (ext) ext.onclick = () => { const t = qv('#result-text'); if (t) stepCall('answer', {result_text: t, ...extras()}); };
+}
+
+function renderQuestion(node){
+  app.innerHTML = `
+    <div class="card">
+      <p class="eyebrow">Room ${node.room + 1} of ${rooms.length} &middot; ${esc(rooms[node.room].name)}</p>
+      <div class="memo-chip">NO ATTRIBUTES ON FILE &middot; the technician has to be asked this directly</div>
+      <p class="question">${esc(node.text)}</p>
+      <div class="answers">${node.words.map(w => `<button class="answer-btn" data-word="${esc(w)}">${esc(fmtWord(w))} <span class="arrow">&rarr;</span></button>`).join('')}</div>
+    </div>`;
+  app.querySelectorAll('.answer-btn').forEach(btn => { btn.onclick = () => stepCall('answer', {word: btn.dataset.word}); });
+}
+
+const ECON_WARNING = "This diagnosis involves the economizer. In this project's own pre-registered testing, economizer-related " +
+  "conclusions were wrong-and-confident about 5.9% of the time, versus 1.4–1.6% for other causes — double-check this one manually before acting on it.";
+
+function renderConclude(node){
+  if (node.visit_minutes !== undefined) renderTally(node.visit_minutes, node.visit_checks);
+  app.innerHTML = `
+    <div class="card">
+      <span class="conclude-badge">${node.hedged ? 'Explained by low static &mdash; own fault not ruled out' : node.forced ? 'Best guess &mdash; check limit reached' : 'Diagnosed'}</span>
+      <p class="eyebrow">${esc(rooms[node.room].name)}</p>
+      <h2>${esc(node.conclusion)}</h2>
+      <div class="stat-row">
+        <div><b>${Math.round(node.belief * 100)}%</b>confidence${node.hedged && node.raw_belief > node.belief ? ' (capped)' : ''}</div>
+        <div><b>${node.checks_so_far}</b>checks this room</div>
+        <div><b>${node.minutes_so_far}</b>minutes this room</div>
+      </div>
+      ${node.involves_econ_fault ? `<div class="warn-banner" style="margin-top:14px"><b>Double-check manually:</b> ${ECON_WARNING}</div>` : ''}
+      ${node.hedged ? `<div class="warn-banner" style="margin-top:14px"><b>A fault in this room is not ruled out.</b> ${esc(node.hedge_note)}${node.rule_out ? ` The most informative check at this room itself: ${esc(node.rule_out.text)} (about ${node.rule_out.minutes} min).` : ''}</div>` : ''}
+      ${node.forced ? `<p class="reading-note">No remaining check was confident enough to call this one outright, and this room hit its check limit. This is the tool's best guess at that point, not a settled conclusion.</p>` : ''}
+      ${node.has_next && node.carried_into_next && node.carried_into_next.length ? `
+        <div class="carry" style="margin-top:16px">
+          <p class="eyebrow">Carried into ${esc(node.next_room_name)}, at no extra cost</p>
+          <ul>${node.carried_into_next.map(c => `<li>${esc(c)}</li>`).join('')}</ul>
+        </div>` : ''}
+    </div>
+    <button class="primary" id="next-btn">${node.has_next ? `Continue to ${esc(node.next_room_name)}` : 'See the visit summary'}</button>
+    <button class="secondary" id="record-btn">Record what it actually was (or do it later)</button>`;
+  document.getElementById('next-btn').onclick = () => act(() => api(`/api/visits/${visitId}/advance`, {body: {from_room: node.room}}));
+  document.getElementById('record-btn').onclick = () => renderCloseout(node.case_id, rooms[node.room].name, () => render(node));
+}
+
+function renderVisitDone(d){
+  const plural = d.rooms.length > 1;
+  app.innerHTML = `
+    <div class="card">
+      <span class="conclude-badge">Visit complete</span>
+      <h2>${plural ? 'All complaints diagnosed' : 'Complaint diagnosed'}</h2>
+      <div class="big-stats">
+        <div class="big-stat"><div class="num">${Math.round(d.visit_minutes)}</div><div class="lbl">Total minutes</div></div>
+        <div class="big-stat"><div class="num">${d.visit_checks}</div><div class="lbl">Total checks</div></div>
+        <div class="big-stat"><div class="num">${d.rooms.length}</div><div class="lbl">Room${plural ? 's' : ''} closed</div></div>
+      </div>
+      <div class="summary-grid">${d.conclusions.map(c => `
+        <div class="summary-row">
+          <div class="r-name">${esc(d.rooms[c.room].name)} ${c.involves_econ_fault ? '<span class="econ-tag">verify manually</span>' : ''} ${c.hedged ? '<span class="econ-tag">own fault not ruled out</span>' : ''}</div>
+          <div class="r-concl">${esc(c.conclusion)}</div>
+          ${c.case_id ? `<button class="link-btn" data-case="${c.case_id}" data-room="${esc(d.rooms[c.room].name)}">Record what it actually was</button>` : ''}
+        </div>`).join('')}</div>
+      ${d.conclusions.some(c => c.hedged) ? `<p class="reading-note">Rooms tagged "own fault not ruled out" are explained by the air handler's low static, but nothing was measured at those rooms themselves: after the air handler is fixed, check whether they are still off.</p>` : ''}
+      <p class="reading-note">"Diagnosed" is the tool's conclusion. Once you've confirmed the cause and fixed it, record that here or from the home screen: it's what tells us whether the tool was right.</p>
+      ${plural ? `<div class="context-note">Because these rooms shared an air handler, later rooms reused readings already taken for the first instead of repeating them — that's the main reason later diagnoses came in faster.</div>` : ''}
+    </div>
+    <button class="secondary" id="restart-btn">Start another visit</button>`;
+  app.querySelectorAll('[data-case]').forEach(b => { b.onclick = () => renderCloseout(+b.dataset.case, b.dataset.room, () => renderVisitDone(d)); });
+  document.getElementById('restart-btn').onclick = () => {
+    tally.hidden = true;
+    localStorage.removeItem(VISIT_KEY);
+    visitId = null;
+    boot();
+  };
+}
+
+async function act(call){
+  app.innerHTML = '<div class="spinner">Working&hellip;</div>';
+  try {
+    const d = await call();
+    render(d.step);
+  } catch (e) {
+    app.innerHTML = `<div class="card"><h2>Something went wrong</h2><p class="lead">${esc(e.message)}</p>
+      <button class="secondary" id="err-back">Try again</button></div>`;
+    const back = document.getElementById('err-back');
+    if (back) back.onclick = () => act(() => api(`/api/visits/${visitId}`, {method: 'GET'}));
+  }
+}
+
+function render(step){
+  if (timerHandle) { clearInterval(timerHandle); timerHandle = null; }
+  lastStep = step;
+  if (step.kind === 'check') renderCheck(step);
+  else if (step.kind === 'question') renderQuestion(step);
+  else if (step.kind === 'conclude') renderConclude(step);
+  else if (step.kind === 'visit_done') renderVisitDone(step);
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+/* ------------------------------------------------------------- close-out: what it was, the repair, did it work */
+async function renderCloseout(caseId, roomName, back){
+  if (timerHandle) { clearInterval(timerHandle); timerHandle = null; }
+  app.innerHTML = '<div class="spinner">Loading&hellip;</div>';
+  let rec, ch;
+  try { [rec, ch] = await Promise.all([api(`/api/cases/${caseId}/record`, {method: 'GET'}), getChoices()]); }
+  catch (e) { app.innerHTML = `<div class="card"><h2>Couldn't load that case</h2><p class="lead">${esc(e.message)}</p><button class="secondary" id="cl-back">Back</button></div>`; document.getElementById('cl-back').onclick = back; return; }
+  const last = (k) => [...rec.events].reverse().find(e => e.kind === k);
+  const tool = last('tool_conclusion'), rc = last('root_cause'), rp = last('repair'), oc = last('outcome');
+  const label = (id) => (ch.causes.find(c => c.id === id) || {}).label || (id === 'other' ? 'Something else' : id === 'not_determined' ? "Couldn't determine" : id);
+  const byGroup = {};
+  ch.causes.forEach(c => { (byGroup[c.group] = byGroup[c.group] || []).push(c); });
+  const options = Object.keys(byGroup).map(g => `<optgroup label="${esc(GROUP_LABEL[g] || g)}">${byGroup[g].map(c => `<option value="${esc(c.id)}">${esc(c.label)}</option>`).join('')}</optgroup>`).join('');
+  const toolId = tool ? tool.payload.id : null;
+  const toolInTaxonomy = toolId && ch.causes.some(c => c.id === toolId);
+  app.innerHTML = `
+    <div class="card">
+      <p class="eyebrow">${esc(roomName)}</p>
+      <h2>What was it, and did the fix work?</h2>
+      <p class="lead">Fill in what you know now; the rest can wait. Anything left blank is asked about again from the home screen.</p>
+      ${tool ? `<div class="tool-says" style="margin-top:12px"><b>The tool concluded:</b> ${esc(tool.payload.text)}</div>` : ''}
+      <div class="ladder"><p class="ladder-title">What this record shows so far</p>
+        ${rec.ladder.lines.map(l => `<div class="ladder-row ${l.warn ? 'warn' : l.done ? 'done' : ''}"><span class="mark">${l.warn ? '!' : l.done ? '&#10003;' : '&#9675;'}</span><span>${esc(l.text)}</span></div>`).join('')}</div>
+
+      <p class="section-head">1. What the problem actually was</p>
+      ${rc ? `<div class="recorded">Recorded: ${esc(label(rc.payload.cause_id))}${rc.payload.text ? ' (' + esc(rc.payload.text) + ')' : ''}</div>` : ''}
+      <select class="text-input" id="cl-cause"><option value="">Choose&hellip;</option>${options}
+        <option value="other">Something else (describe)</option><option value="not_determined">Couldn't determine it</option></select>
+      <input class="text-input" id="cl-cause-text" maxlength="200" placeholder="Describe it (no names or addresses)" hidden>
+      <div id="cl-actual-wrap" hidden>
+        <p class="field-label">Which box actually serves this room? (optional)</p>
+        <select class="text-input" id="cl-actual"><option value="">Choose&hellip;</option>
+          ${((rec.topology && rec.topology.boxes) || []).map(b => `<option value="${esc(b)}">${esc(b)}</option>`).join('')}
+          <option value="not_listed">Something that isn't on the list</option><option value="not_sure">Not sure</option></select>
+      </div>
+      ${toolInTaxonomy ? `<button type="button" class="link-btn" id="cl-same">It was what the tool said</button>` : ''}
+      <p class="field-label">How did you confirm it?</p>
+      <div class="chips" id="cl-how">${chipsHtml(HOW_CONFIRMED)}</div>
+      <div id="cl-before-wrap" hidden>
+        <p class="field-label">Was that before you repaired anything?</p>
+        <div class="chips" id="cl-before">${chipsHtml(BEFORE_REPAIR)}</div>
+      </div>
+
+      <p class="section-head">2. What was done</p>
+      ${rp ? `<div class="recorded">Recorded: ${esc((rp.payload.actions || []).map(a => (REPAIRS.find(r => r[0] === a) || [a, a])[1]).join(', ') || rp.payload.text || '')}</div>` : ''}
+      <div class="chips" id="cl-repair">${chipsHtml(REPAIRS)}</div>
+      <input class="text-input" id="cl-repair-text" maxlength="500" placeholder="Details (optional)">
+      <label class="field-label">Date of the repair (optional)</label><input class="text-input" id="cl-repair-date" type="date">
+
+      <p class="section-head">3. Did it fix the complaint?</p>
+      ${rec.recheck.candidates.length ? `
+        <p class="field-label">Repeat the test that found it, now that it's repaired (optional)</p>
+        ${rec.recheck.candidates.map((c, i) => `
+          <div class="box-card">
+            <p class="question" style="font-size:14px; margin-bottom:6px">${esc(parseQuestion(c.text || c.check.replace(/_/g, ' ')).main)}</p>
+            <p class="reading-note" style="margin:0 0 8px">Before: ${esc(c.before_word)}${c.before_reading_text ? ' &middot; ' + esc(c.before_reading_text) : ''}</p>
+            <div class="chips" id="cl-rc-${i}">${chipsHtml(RECHECK_CHIPS)}</div>
+            <input class="text-input" id="cl-rc-read-${i}" maxlength="40" placeholder="Reading now, with unit (optional)" style="margin-bottom:0">
+          </div>`).join('')}` : ''}
+      ${oc ? `<div class="recorded">Recorded: ${esc((FIXED.find(f => f[0] === oc.payload.fixed) || [0, oc.payload.fixed])[1])}</div>` : ''}
+      <div class="chips" id="cl-fixed">${chipsHtml(FIXED)}</div>
+      <input class="text-input" id="cl-fixed-note" maxlength="500" placeholder="Anything to add (optional)">
+      <p class="reading-note">If it's fixed, the app will ask in 7 and 30 days whether it came back.</p>
+      <button class="primary" id="cl-save">Save</button>
+      <button class="secondary" id="cl-view">View everything recorded for this case</button>
+      <button class="secondary" id="cl-back">Back</button>
+      <p class="error-text" id="cl-error" hidden></p>
+    </div>`;
+  const showBefore = () => { document.getElementById('cl-before-wrap').hidden = !PHYSICAL_METHODS.includes(chosen('#cl-how')[0]); };
+  bindChips('#cl-how', false, showBefore); bindChips('#cl-before', false); bindChips('#cl-repair', true); bindChips('#cl-fixed', false);
+  rec.recheck.candidates.forEach((c, i) => {
+    bindChips(`#cl-rc-${i}`, false);
+    if (c.latest) { selectChips(`#cl-rc-${i}`, [c.latest.result]); document.getElementById(`cl-rc-read-${i}`).value = c.latest.reading_text || ''; }
+  });
+  const causeSel = document.getElementById('cl-cause');
+  causeSel.onchange = () => {
+    document.getElementById('cl-cause-text').hidden = causeSel.value !== 'other';
+    document.getElementById('cl-actual-wrap').hidden = causeSel.value !== 'documentation_wrong';       // only when the drawings were wrong
+  };
+  if (rc) {            // show what is already recorded, so a later visit to this screen only has to add what's new
+    causeSel.value = rc.payload.cause_id; causeSel.onchange();
+    document.getElementById('cl-cause-text').value = rc.payload.text || '';
+    if (rc.payload.actual_box) document.getElementById('cl-actual').value = rc.payload.actual_box;
+    if (rc.payload.how_confirmed) selectChips('#cl-how', [rc.payload.how_confirmed]);
+    const b = rc.payload.confirmed_before_repair;
+    if (b === true || b === false) selectChips('#cl-before', [String(b)]);
+    showBefore();
+  }
+  const same = document.getElementById('cl-same');
+  if (same) same.onclick = () => { causeSel.value = toolId; causeSel.onchange(); };
+  document.getElementById('cl-back').onclick = back;
+  document.getElementById('cl-view').onclick = () => renderRecord(caseId, () => renderCloseout(caseId, roomName, back));
+  document.getElementById('cl-save').onclick = async () => {
+    const err = document.getElementById('cl-error');
+    err.hidden = true;
+    const calls = [];
+    if (causeSel.value) {
+      const how = chosen('#cl-how')[0] || null;
+      const before = PHYSICAL_METHODS.includes(how) ? ({true: true, false: false}[chosen('#cl-before')[0]] ?? null) : null;
+      const actual = causeSel.value === 'documentation_wrong' ? qv('#cl-actual') : null;
+      const body = {cause_id: causeSel.value, text: qv('#cl-cause-text'), how_confirmed: how, confirmed_before_repair: before, actual_box: actual};
+      const was = rc ? rc.payload : null;
+      const same = was && was.cause_id === body.cause_id && (was.text || null) === body.text && (was.how_confirmed || null) === how &&
+        (was.actual_box || null) === actual &&
+        (was.confirmed_before_repair ?? null) === (how === 'repair_fixed_it' ? false : before);
+      if (!same) calls.push([`/api/cases/${caseId}/root_cause`, body]);       // an unchanged answer is not recorded again
+    }
+    const actions = chosen('#cl-repair'), rtext = qv('#cl-repair-text');
+    if (actions.length || rtext) calls.push([`/api/cases/${caseId}/repair`, {actions, text: rtext, repaired_on: qv('#cl-repair-date')}]);
+    const hasRepair = !!rp || actions.length > 0 || !!rtext;
+    let needRepair = false;
+    rec.recheck.candidates.forEach((c, i) => {
+      const r = chosen(`#cl-rc-${i}`)[0];
+      if (!r) return;
+      const reading = qv(`#cl-rc-read-${i}`), was = c.latest;
+      if (was && was.result === r && (was.reading_text || null) === reading) return;          // unchanged: not recorded again
+      if (!hasRepair) { needRepair = true; return; }
+      calls.push([`/api/cases/${caseId}/recheck`, {of_event_id: c.of_event_id, result: r, reading_text: reading}]);
+    });
+    if (needRepair) { err.textContent = 'Record what was done (section 2) before re-checking.'; err.hidden = false; return; }
+    if (chosen('#cl-fixed')[0]) calls.push([`/api/cases/${caseId}/outcome`, {fixed: chosen('#cl-fixed')[0], note: qv('#cl-fixed-note')}]);
+    if (!calls.length) { err.textContent = 'Nothing new to save.'; err.hidden = false; return; }
+    document.getElementById('cl-save').disabled = true;
+    try {
+      for (const [path, body] of calls) await post(path, body);
+      renderCloseout(caseId, roomName, back);
+    } catch (e) { err.textContent = e.message; err.hidden = false; document.getElementById('cl-save').disabled = false; }
+  };
+}
+
+async function renderRecord(caseId, back){
+  app.innerHTML = '<div class="spinner">Loading&hellip;</div>';
+  try {
+    const rec = await api(`/api/cases/${caseId}/record`, {method: 'GET'});
+    const c = rec.case;
+    const shown = {case: {opened_at: c.opened_at, status: c.status, complaint: c.complaint_text, complaint_source: c.complaint_source, building_type: c.building_type,
+      system_kind: c.system_kind, equipment_age_band: c.equipment_age_band, readings: c.readings_json && JSON.parse(c.readings_json), alarms: c.alarms_text,
+      your_suspicions: c.own_hypotheses_json && JSON.parse(c.own_hypotheses_json)}, events: rec.events.map(e => ({at: e.server_ts, kind: e.kind, detail: e.payload})), follow_ups: rec.followups};
+    app.innerHTML = `<div class="card"><h2>What's recorded for this case</h2>
+      <p class="lead">This is everything stored for it, in order. It has no names, employer, building name or address unless you typed one into a free-text box.</p>
+      <pre class="rec-pre" style="margin-top:12px">${esc(JSON.stringify(shown, null, 1))}</pre>
+      <button class="secondary" id="rec-back">Back</button></div>`;
+    document.getElementById('rec-back').onclick = back;
+  } catch (e) { app.innerHTML = `<div class="card"><h2>Couldn't load that</h2><p class="lead">${esc(e.message)}</p><button class="secondary" id="rec-back">Back</button></div>`; document.getElementById('rec-back').onclick = back; }
+}
+
+/* ------------------------------------------------------------- first use: notice + profile; home: waiting items + follow-ups */
+function renderNotice(notice){
+  subhead.textContent = 'Before you start';
+  app.innerHTML = `
+    <div class="card">
+      <p class="eyebrow">What this app records</p>
+      <h2>Please read this once</h2>
+      ${notice.map(n => `<p class="lead" style="margin-bottom:10px">${esc(n)}</p>`).join('')}
+      <p class="section-head">About you (no name or employer)</p>
+      <label class="field-label">Your role</label>
+      <select class="text-input" id="pf-role"><option value="">Choose&hellip;</option><option value="contractor_tech">Service / controls technician</option>
+        <option value="in_house_engineer">In-house building engineer</option><option value="other">Other</option></select>
+      <label class="field-label">Years working in HVAC</label>
+      <select class="text-input" id="pf-years"><option value="">Choose&hellip;</option><option value="lt2">Under 2</option><option value="2to5">2 to 5</option>
+        <option value="5to15">5 to 15</option><option value="gt15">Over 15</option></select>
+      <label class="field-label">Experience with VAV systems</label>
+      <select class="text-input" id="pf-vav"><option value="">Choose&hellip;</option><option value="none">None</option><option value="some">Some</option><option value="daily">I work on them regularly</option></select>
+      <label class="checkbox-row"><input type="checkbox" id="pf-ack"> I've read this and I'm happy for the app to record these call-outs</label>
+      <button class="primary" id="pf-go" disabled>Continue</button>
+      <p class="error-text" id="pf-error" hidden></p>
+    </div>`;
+  const ready = () => { document.getElementById('pf-go').disabled = !(qv('#pf-role') && qv('#pf-years') && qv('#pf-vav') && document.getElementById('pf-ack').checked); };
+  ['#pf-role', '#pf-years', '#pf-vav', '#pf-ack'].forEach(sel => { document.querySelector(sel).onchange = ready; });
+  document.getElementById('pf-go').onclick = async () => {
+    try { await api('/api/participant', {body: {role: qv('#pf-role'), years_band: qv('#pf-years'), vav_band: qv('#pf-vav'), ack: true}}); boot(); }
+    catch (e) { const er = document.getElementById('pf-error'); er.textContent = e.message; er.hidden = false; }
+  };
+}
+
+function renderHome(box){
+  subhead.textContent = 'Waiting on you';
+  const nice = {root_cause: 'what it was', repair: 'what was done', outcome: 'whether it worked'};
+  const days = (iso) => Math.max(0, Math.round((Date.now() + clockSkewMs - Date.parse(iso)) / 86400000));
+  app.innerHTML = `
+    ${box.followups.length ? `<div class="card"><p class="eyebrow">Follow-ups due</p>
+      ${box.followups.map(f => `<div class="summary-row" style="margin-top:10px"><div class="r-name">${esc(f.room)}</div>
+        <div class="r-concl">Fixed about ${f.window_days} days ago. Has the complaint come back?</div>
+        <div class="btn-group" style="margin:8px 0 0" data-fu="${f.case_id}" data-w="${f.window_days}">
+          <button class="choice-btn" data-val="no">No</button><button class="choice-btn" data-val="yes">Yes</button><button class="choice-btn" data-val="unsure">Not sure</button></div></div>`).join('')}
+      <p class="error-text" id="fu-error" hidden></p></div>` : ''}
+    ${box.awaiting.length ? `<div class="card"><p class="eyebrow">Still to record</p>
+      ${box.awaiting.map(a => `<div class="room-row" style="margin-top:10px"><span class="name">${esc(a.room)}<br><span class="meta">needs ${esc(nice[a.next_needed] || '')}</span></span>
+        <button class="chip" data-case="${a.case_id}" data-room="${esc(a.room)}">Record</button></div>`).join('')}</div>` : ''}
+    <button class="primary" id="new-visit">Start a new visit</button>`;
+  app.querySelectorAll('[data-case]').forEach(b => { b.onclick = () => renderCloseout(+b.dataset.case, b.dataset.room, () => boot()); });
+  app.querySelectorAll('[data-fu] .choice-btn').forEach(b => {
+    b.onclick = async () => {
+      const row = b.parentElement;
+      try { await post(`/api/cases/${row.dataset.fu}/followup`, {window_days: +row.dataset.w, recurred: b.dataset.val}); boot(); }
+      catch (e) { const er = document.getElementById('fu-error'); er.textContent = e.message; er.hidden = false; }
+    };
+  });
+  document.getElementById('new-visit').onclick = () => renderStartVisit();
+}
+
+/* ------------------------------------------------------------- boot */
+async function boot(){
+  if (timerHandle) { clearInterval(timerHandle); timerHandle = null; }
+  if (!token) return renderLogin();
+  if (!visitId) {
+    // a stored token must be proven still valid, not just present -- a revoked/expired one should bounce
+    // to login immediately, not silently show the new-visit form until the first real submit fails
+    try {
+      await api('/api/session', {method: 'GET'});
+    } catch (e) {
+      return;   // api() already cleared the token and called renderLogin() on a 401
+    }
+    try {
+      const p = await api('/api/participant', {method: 'GET'});
+      if (!p.active) return renderNotice(p.notice);
+      const box = await api('/api/inbox', {method: 'GET'});
+      recentCases = box.recent;
+      if (box.awaiting.length || box.followups.length) return renderHome(box);
+    } catch (e) {
+      if (!token) return;       // a 401 inside: api() already showed the login screen
+    }
+    return renderStartVisit();
+  }
+  try {
+    const data = await api(`/api/visits/${visitId}`, {method: 'GET'});
+    rooms = data.rooms;
+    subhead.textContent = `${rooms[0].ahu} · ${rooms.length} complaint${rooms.length > 1 ? 's' : ''}`;
+    render(data.step);
+  } catch (e) {
+    localStorage.removeItem(VISIT_KEY);
+    visitId = null;
+    renderStartVisit();
+  }
+}
+
+boot();
+</script>
+</body>
+</html>

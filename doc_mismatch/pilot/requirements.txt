@@ -1,0 +1,11 @@
+# Pinned to what's tested against locally (see ../../pyproject.toml / uv.lock for the full monorepo env).
+# Deliberately NOT exported from the root uv.lock: that lock also carries rdflib/networkx/matplotlib/torch
+# for unrelated parts of this repo that the pilot app never imports (confirmed via sys.modules introspection
+# after importing pilot.app) -- pinning just these keeps the Docker image small and this list self-contained.
+fastapi==0.142.2
+uvicorn[standard]==0.54.0
+python-multipart==0.0.32
+anthropic==1.11.0
+python-dotenv==1.2.4
+pillow==12.3.0
+numpy==2.5.3

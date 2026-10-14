@@ -1,0 +1,33 @@
+# fly.toml app configuration file generated for hvac-troubleshoot-pilot on 2026-10-04T23:50:05-05:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+# Required secrets (never set here -- `fly secrets set NAME=value`):
+#   ANTHROPIC_API_KEY, NOTIFY_EMAIL, SMTP_FROM_EMAIL, SMTP_APP_PASSWORD
+# Login sends a one-time code to NOTIFY_EMAIL on every request, not to whoever's asking -- the developer
+# relays it by hand each time. See pilot/auth.py.
+
+app = 'hvac-troubleshoot-pilot'
+primary_region = 'iad'
+
+[build]
+  dockerfile = 'pilot/Dockerfile'
+
+[env]
+  PILOT_DATA_DIR = '/data'
+
+[[mounts]]
+  source = 'pilot_data'
+  destination = '/data'
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = 'off'
+  auto_start_machines = true
+  min_machines_running = 1
+
+[[vm]]
+  cpu_kind = 'shared'
+  cpus = 1
+  memory_mb = 512

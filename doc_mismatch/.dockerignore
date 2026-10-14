@@ -1,0 +1,11 @@
+pilot/.env
+pilot/data/
+**/__pycache__/
+**/*.pyc
+.pytest_cache/
+tests/
+scripts/
+results/
+examples/
+PREREGISTRATION_DR.md
+*.md
