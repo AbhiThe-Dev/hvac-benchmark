@@ -1,0 +1,154 @@
+[
+  {
+    "claim_id": "H-002",
+    "status": "CONFIRMED",
+    "cause_id_blind": "NEW:element_grounded_overheat",
+    "check_id_blind": "NEW:element_ground_continuity_test",
+    "dir_blind": "1",
+    "notes": "p.14 Over Heated Water lists grounded heating element(s) and p.15 step 5 says any reading means grounded; the ECO-limited clause is the reader's addition, and I flag NEW rather than heater_output_loss because this element failure causes overheating, not output loss."
+  },
+  {
+    "claim_id": "H-006",
+    "status": "CONFIRMED",
+    "cause_id_blind": "heater_output_loss",
+    "check_id_blind": "NEW:eco_reset_click_and_continuity_test",
+    "dir_blind": "-1",
+    "notes": "p.14 lists Open ECO under No Hot Water, p.18 gives the click test (hear or feel a small click when pressing reset) and the continuity test (NOT present, replace switch), open on rise at 196 F +/-4 F, manual reset."
+  },
+  {
+    "claim_id": "H-011",
+    "status": "CONFIRMED",
+    "cause_id_blind": "heater_output_loss",
+    "check_id_blind": "NEW:inspect_control_valve_actuator",
+    "dir_blind": "NA",
+    "notes": "Problem 2 cause c (temperature control valve not opening properly) with solution to check valve actuator and linkage and replace if necessary; no observation is stated beyond proper operation."
+  },
+  {
+    "claim_id": "H-023",
+    "status": "CONFIRMED",
+    "cause_id_blind": "heater_output_loss",
+    "check_id_blind": "NEW:boiler_supply_return_dt_cold_startup",
+    "dir_blind": "-1",
+    "notes": "Insufficient hot water cause 4: check boiler supply/return during cold startup, and a difference under 20 F means clean the heat exchanger."
+  },
+  {
+    "claim_id": "H-034",
+    "status": "CONFIRMED",
+    "cause_id_blind": "heater_output_loss",
+    "check_id_blind": "NEW:element_amperage",
+    "dir_blind": "-1",
+    "notes": "Not enough Hot Water lists Defective Element(s) with Check amperage, replace element if low; the page text extraction scrambles the columns so the cause-to-action pairing rests on content fit rather than layout."
+  },
+  {
+    "claim_id": "M-003",
+    "status": "CONFIRMED",
+    "cause_id_blind": "tmv_starved_fouled",
+    "check_id_blind": "NONE",
+    "dir_blind": "NA",
+    "notes": "Problem A (unable to reach set point) cause A.3 is filters blocked by debris with remedy Clean filters, and no check or observation is given."
+  },
+  {
+    "claim_id": "M-007",
+    "status": "CONFIRMED",
+    "cause_id_blind": "tmv_setpoint_wrong",
+    "check_id_blind": "K01",
+    "dir_blind": "-1",
+    "notes": "Page 4 cause 1 says the hot supply is too low and must be at least 25 F above the set temperature; the compare step is implied by that requirement rather than stated as a check, and I mapped to K01 as the hot-supply temperature."
+  },
+  {
+    "claim_id": "M-013",
+    "status": "CONFIRMED",
+    "cause_id_blind": "NEW:recirc_piping_misplumbed",
+    "check_id_blind": "NEW:compare_piping_to_application_drawing",
+    "dir_blind": "NA",
+    "notes": "Page 3 first cause says the recirculation lines are not properly plumbed, refer to the Application drawing on page 1; the at-low-draw wording is the reader's addition."
+  },
+  {
+    "claim_id": "M-015",
+    "status": "CONFIRMED",
+    "cause_id_blind": "pump_control_fault",
+    "check_id_blind": "NONE",
+    "dir_blind": "NA",
+    "notes": "Page 3 third cause is the return pump running constantly with the remedy to install an aquastat on it; no check or observation is stated."
+  },
+  {
+    "claim_id": "M-020",
+    "status": "CONFIRMED",
+    "cause_id_blind": "NEW:tmv_below_minimum_flow",
+    "check_id_blind": "NONE",
+    "dir_blind": "NA",
+    "notes": "Page 3 Discharge temperature varies lists item e Minimum flow requirement not achieved with no remedy, and the page 1 Table 1 footnote gives 0.5 gpm for models 431-434 with recirculated tempered water and a continuously operating pump."
+  },
+  {
+    "claim_id": "M-043",
+    "status": "CONFIRMED",
+    "cause_id_blind": "tmv_setpoint_wrong",
+    "check_id_blind": "K01",
+    "dir_blind": "-1",
+    "notes": "Page 49 says to allow 5 minutes then compare the hot supply temperature with the mixed outlet set point on the Home screen, and to raise supply at least 2 F above set point if it is below."
+  },
+  {
+    "claim_id": "P-005",
+    "status": "CONFIRMED",
+    "cause_id_blind": "check_valve_failure",
+    "check_id_blind": "NONE",
+    "dir_blind": "NA",
+    "notes": "FAQ says the pressure drop can suck hot water from the cold line when cold water is used, the pump's internal check valve does not fully stop backflow, and the fix is a second check valve in series."
+  },
+  {
+    "claim_id": "P-023",
+    "status": "UNREADABLE",
+    "cause_id_blind": "check_valve_failure",
+    "check_id_blind": "NONE",
+    "dir_blind": "NA",
+    "notes": "WebFetch returned only binary PDF data with no readable text, so ids are mapped from the reader's paraphrase alone and nothing was verified."
+  },
+  {
+    "claim_id": "P-033",
+    "status": "UNREADABLE",
+    "cause_id_blind": "isolation_valve_closed",
+    "check_id_blind": "NEW:verify_supply_angle_stops_open",
+    "dir_blind": "NA",
+    "notes": "WebFetch returned only binary PDF data with no readable text, so ids are mapped from the reader's paraphrase alone and nothing was verified."
+  },
+  {
+    "claim_id": "P-037",
+    "status": "UNREADABLE",
+    "cause_id_blind": "OUT_OF_SCOPE",
+    "check_id_blind": "OUT_OF_SCOPE",
+    "dir_blind": "NA",
+    "notes": "WebFetch returned only encrypted binary PDF data, so ids are mapped from the paraphrase alone and I treated a noise-section cause as out of scope since nothing about temperature or delivery could be verified."
+  },
+  {
+    "claim_id": "P-043",
+    "status": "UNREADABLE",
+    "cause_id_blind": "pump_control_fault",
+    "check_id_blind": "K10",
+    "dir_blind": "1",
+    "notes": "WebFetch returned the PDF as a scanned image with no readable text, so ids are mapped from the reader's paraphrase alone and nothing was verified."
+  },
+  {
+    "claim_id": "S-008",
+    "status": "PARTLY",
+    "cause_id_blind": "balancing_valve_misset",
+    "check_id_blind": "K13",
+    "dir_blind": "-1",
+    "notes": "The intro says branches near the circulator or with shorter piping get higher recirculation flow than farther or longer branches, but that passage mentions no balancing valves or flow readings so the check is the reader's addition."
+  },
+  {
+    "claim_id": "S-010",
+    "status": "CONFIRMED",
+    "cause_id_blind": "NEW:heater_thermostat_imprecise_control",
+    "check_id_blind": "NONE",
+    "dir_blind": "NA",
+    "notes": "The section says many heater thermostats do not provide precise control of leaving water temperature, so the paraphrase drops the word many and the document gives no check."
+  },
+  {
+    "claim_id": "S-019",
+    "status": "PARTLY",
+    "cause_id_blind": "balancing_valve_misset",
+    "check_id_blind": "NONE",
+    "dir_blind": "NA",
+    "notes": "The Problem section has four points (multiple branches, flow takes the path of least resistance, hot water use is dynamic so that path keeps changing, manual flow control valves cannot efficiently resolve this) but does not say branches go cold or name static valves."
+  }
+]

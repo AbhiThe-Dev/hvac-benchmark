@@ -1,0 +1,19 @@
+[
+{"cause_id": "balancing_valve_misset", "rank": 1},
+{"cause_id": "pump_failed", "rank": 2},
+{"cause_id": "heater_setpoint_low", "rank": 3},
+{"cause_id": "check_valve_failure", "rank": 4},
+{"cause_id": "crossover", "rank": 5},
+{"cause_id": "tmv_starved_fouled", "rank": 6},
+{"cause_id": "fixture_branch_local", "rank": 7},
+{"cause_id": "pump_control_fault", "rank": 8},
+{"cause_id": "heater_output_loss", "rank": 9},
+{"cause_id": "insulation_loss", "rank": 10},
+{"cause_id": "tmv_setpoint_wrong", "rank": 11},
+{"cause_id": "isolation_valve_closed", "rank": 12},
+{"cause_id": "pump_undersized", "rank": 13},
+{"cause_id": "plant_sensor_offset", "rank": 14},
+{"cause_id": "demand_exceeds_capacity", "rank": 15},
+{"cause_id": "cold_pressure_problem", "rank": 16},
+{"cause_id": "dip_tube_short_circuit", "rank": 17}
+]
