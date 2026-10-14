@@ -1,0 +1,14 @@
+/private/tmp/claude-501/-Users-abhinavakula-BuildingMapping/6bed00b9-ce80-4206-812e-9b9716275a54/scratchpad/code/cbecs2012_check.py:16: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  g=df.assign(sz=pd.cut(df.SQFT,[0,5000,50000,1e12],labels=['<=5k','5-50k','>50k']))
+weighted bldgs (k) 5557.138453172111
+{1.0: 3928, 3.0: 1183, 2.0: 896, nan: 713} {2.0: 3913, 1.0: 2453, nan: 354}
+with water heating k 4422.899126477328
+central 75.7
+distributed 15.6
+both 8.7
+EMCS yes all 15.9  floor 44.8
+EMCS among central/both wh 17.3
+central/both AND EMCS, of wh 14.7
+<=5k EMCS of wh 8.5 central&EMCS of wh 6.8
+5-50k EMCS of wh 18.1 central&EMCS of wh 16.2
+>50k EMCS of wh 61.5 central&EMCS of wh 54.7

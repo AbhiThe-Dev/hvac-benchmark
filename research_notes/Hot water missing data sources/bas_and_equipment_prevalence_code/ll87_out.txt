@@ -1,0 +1,57 @@
+rows 10702 unique Audit Template ID 7837 unique BBL 7402
+Report Type
+New York City Energy Efficiency Report    10702
+Name: count, dtype: int64
+after dedupe by ATID 7837
+Type: SHW Sys 1
+Plant                             4347
+Direct Fired- Storage             1626
+Indirect Fired - Instantaneous     427
+Indirect Fired - Storage           424
+Other                              378
+Direct Fired- Instantaneous        333
+No SHW System                      289
+Heat Pump                           13
+Name: count, dtype: int64
+buildings w/ SHW sys1: 7548
+
+Share of audited bldgs (valid ctl response, has SHW) with SHW-EMS/BMS (any sys): 4.3 n= 7484
+  No Controls                    1.6%  n=7486
+  Time Based Controls            0.6%  n=7485
+  Aquastat Based Controls       29.1%  n=7488
+  Demand Based Controls          8.5%  n=7486
+  EMS/BMS Controls               4.3%  n=7484
+  Other Controls                 1.7%  n=7484
+
+Building BAS flag yes among SHW bldgs 5.4 n 7486
+Of BAS=Yes bldgs, share with SHW EMS/BMS ctl: 23.5 n 404
+Of BAS=No bldgs, share with SHW EMS/BMS ctl: 3.2 n 7082
+BAS on Heating Plant 1: 30.0 n 6788
+
+By SHW sys1 type: n, %EMS/BMS, %demand, %aquastat, %time
+                                   n  ems_bms  demand  aquastat  bldg_BAS
+Type: SHW Sys 1                                                          
+Direct Fired- Instantaneous      331      2.7    27.8      18.1      13.0
+Direct Fired- Storage           1581      2.1     8.3      25.3       5.4
+Heat Pump                         12      0.0    25.0      16.7       8.3
+Indirect Fired - Instantaneous   426      5.2    13.6      32.2       9.6
+Indirect Fired - Storage         421      4.5    11.4      22.3      15.4
+Other                            372      1.3     4.3      41.9      12.1
+Plant                           4341      5.3     6.5      30.6       2.8
+Use Type: Space Function 1
+Multifamily Housing    4336
+Other - Utility         931
+K-12 School             764
+Office                  686
+Hotel                   132
+Other                   102
+College/University       95
+Retail Store             87
+Name: count, dtype: int64
+
+Non-multifamily n 3098 | BAS 10.2 | SHW EMS/BMS 6.2 | demand 9.9 | plant/boiler-fed (Type=Plant) 37.1 | storage(direct/indirect) 44.2 | instantaneous 11.4 | heat pump 0.1
+
+Multifamily-like n 4386 | BAS 2.0 | SHW EMS/BMS 3.0 | demand 7.4 | plant/boiler-fed (Type=Plant) 72.8 | storage(direct/indirect) 14.4 | instantaneous 9.2 | heat pump 0.2
+<100k n 3999 | BAS 3.0 | SHW EMS/BMS 4.2
+100-250k n 2587 | BAS 5.3 | SHW EMS/BMS 3.8
+>250k n 898 | BAS 16.3 | SHW EMS/BMS 6.6

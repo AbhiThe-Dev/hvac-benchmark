@@ -1,0 +1,4 @@
+group,n_sample,bldgs_k,waterheated_bldgs_k,pct_waterheated,pct_waterheated_rse,pct_cen_or_both_of_wh,pct_cen_or_both_of_wh_rse,pct_poi_only_of_wh,pct_poi_only_of_wh_rse,pct_BAS_of_all,pct_BAS_of_all_rse,pct_BAS_of_wh,pct_BAS_of_wh_rse,pct_BAS_of_cen,pct_BAS_of_cen_rse,pct_cen_AND_BAS_of_wh,pct_cen_AND_BAS_of_wh_rse
+<=5k,1006,2833,1984,70.0,3,82.0,2,18.0,11,11.4,11,11.4,13,10.4,14,8.6,13
+5k-50k,1812,2726,2263,83.0,2,83.7,2,16.3,9,19.7,8,20.8,8,20.3,9,17.0,9
+>50k,3618,359,347,96.6,1,84.1,1,15.9,8,56.4,4,57.3,4,59.1,4,49.7,4
