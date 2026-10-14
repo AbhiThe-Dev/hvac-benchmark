@@ -71,3 +71,28 @@ def test_campaign_arrays_drops_the_warmup_hours():
     ev = {"Z-1|sp_cool": np.arange(T, dtype=float), "V-1|flow": np.arange(T) * 2.0, "V-1|t_dis": np.arange(T) * 3.0}
     U, Y = P.campaign_arrays(ev, ["Z-1"], ["V-1"], pre)
     assert U.shape == (1, T - pre) and Y["flow"][0, 0] == pre * 2.0
+
+
+# ---------------------------------------------------------------- Addendum 15: override dropout and signal sets
+def test_make_codes_without_dropout_is_the_original_generator():
+    old = np.random.default_rng(4).choice([-1, 1], size=(5, 40)).astype(int)
+    assert np.array_equal(P.make_codes(5, 40, 4), old)
+    assert np.array_equal(P.make_codes(5, 40, 4, dropout=0.0), old)
+
+
+def test_dropout_only_zeroes_blocks_and_keeps_the_codes_of_the_same_seed():
+    full, part = P.make_codes(6, 400, 5), P.make_codes(6, 400, 5, dropout=0.25)
+    kept = part != 0
+    assert np.array_equal(part[kept], full[kept])                           # surviving blocks carry exactly the dropout-free code
+    assert 0.20 < 1 - kept.mean() < 0.30                                    # about a quarter of the zone-blocks are overridden
+    assert np.array_equal(part, P.make_codes(6, 400, 5, dropout=0.25))      # deterministic
+    assert not np.array_equal(kept, P.make_codes(6, 400, 6, dropout=0.25) != 0)
+
+
+def test_campaign_arrays_honours_the_logged_signal_set_and_reheat_has_noise():
+    T, pre = 60, 10
+    ev = {"Z-1|sp_cool": np.arange(T, dtype=float), "V-1|flow": np.ones(T), "V-1|t_dis": 2 * np.ones(T), "V-1|reheat": 3 * np.ones(T)}
+    _, Y = P.campaign_arrays(ev, ["Z-1"], ["V-1"], pre, signals=("t_dis", "reheat"))
+    assert set(Y) == {"t_dis", "reheat"} and Y["reheat"].shape == (1, T - pre)
+    noisy = P.add_noise({"reheat": np.full((1, 500), 100.0)}, "legacy", np.random.default_rng(0))["reheat"]
+    assert 0.5 < noisy.std() < 4.0 and abs(noisy.mean() - 100) < 1.0        # multiplicative sd 0.02 -> about 2 W

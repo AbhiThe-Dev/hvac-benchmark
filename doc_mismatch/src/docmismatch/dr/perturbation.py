@@ -9,7 +9,19 @@ from __future__ import annotations
 import numpy as np
 
 SIGNALS = ("flow", "t_dis")
-NOISE = {"none": None, "legacy": dict(flow=("mul", 0.02), t_dis=("add", 0.25)), "harsh": dict(flow=("mul", 0.10), t_dis=("add", 1.0))}
+NOISE = {"none": None, "legacy": dict(flow=("mul", 0.02), t_dis=("add", 0.25), reheat=("mul", 0.02)),
+         "harsh": dict(flow=("mul", 0.10), t_dis=("add", 1.0), reheat=("mul", 0.10))}   # reheat (Addendum 15 signal-set sweep) gets flow's multiplicative noise
+
+
+def make_codes(n_zones: int, n_blocks: int, seed: int, dropout: float = 0.0) -> np.ndarray:
+    """(n_zones, n_blocks) independent +-1 campaign codes. With `dropout` > 0 (Addendum 15), each zone-block independently ignores the campaign with that probability
+    (code 0 = the zone sits at its base setpoint, a crude BAS / occupant override). The dropout mask comes from a SEPARATE stream and is applied after the codes are
+    drawn, so the +-1 codes are identical to those of the dropout-free campaign with the same seed, and dropout = 0 is bit-identical to the original generator."""
+    codes = np.random.default_rng(seed).choice([-1, 1], size=(n_zones, n_blocks)).astype(int)
+    if dropout > 0:
+        keep = np.random.default_rng([seed, 991]).random((n_zones, n_blocks)) >= dropout
+        codes = codes * keep
+    return codes
 
 
 def corr_matrix(U: np.ndarray, Y: np.ndarray) -> np.ndarray:
@@ -46,10 +58,10 @@ def add_noise(Y: dict[str, np.ndarray], level: str, rng: np.random.Generator) ->
     return out
 
 
-def campaign_arrays(ev: dict, zones: list[str], vavs: list[str], pre: int) -> tuple[np.ndarray, dict[str, np.ndarray]]:
-    """(U (M, T) logged setpoints, {signal: (O, T)}) restricted to the campaign hours (drops the `pre` undithered warm-up hours)."""
+def campaign_arrays(ev: dict, zones: list[str], vavs: list[str], pre: int, signals: tuple = SIGNALS) -> tuple[np.ndarray, dict[str, np.ndarray]]:
+    """(U (M, T) logged setpoints, {signal: (O, T)}) restricted to the campaign hours (drops the `pre` undithered warm-up hours). `signals` = the box signals the building logs."""
     U = np.stack([ev[f"{z}|sp_cool"][pre:] for z in zones])
-    Y = {s: np.stack([ev[f"{v}|{s}"][pre:] for v in vavs]) for s in SIGNALS}
+    Y = {s: np.stack([ev[f"{v}|{s}"][pre:] for v in vavs]) for s in signals}
     return U, Y
 
 
