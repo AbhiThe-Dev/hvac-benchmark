@@ -1,0 +1,35 @@
+{
+  "name": "Example office, floor 2 (made up), with attributes and a control-system point map for v1",
+  "equipment": [
+    {"id": "AHU-1", "kind": "AHU", "area": "Roof", "tag": "AHU-1", "attributes": {"static_setpoint_inwc": 1.2}},
+    {"id": "AHU-2", "kind": "AHU", "area": "Roof", "tag": "AHU-2", "attributes": {"static_setpoint_inwc": 1.2}},
+    {"id": "VAV-2-01", "kind": "VAV", "area": "Floor 2 East", "tag": "2-01", "attributes": {"reheat": "hydronic", "pressure_independent": true, "k_factor": 4005, "design_airflow_cfm": 900, "inlet_diameter_in": 8}},
+    {"id": "VAV-2-02", "kind": "VAV", "area": "Floor 2 East", "tag": "2-02", "attributes": {"reheat": "none", "pressure_independent": true, "k_factor": 2650, "design_airflow_cfm": 600, "inlet_diameter_in": 6}},
+    {"id": "VAV-2-03", "kind": "VAV", "area": "Floor 2 East", "tag": "2-03", "attributes": {"reheat": "hydronic", "pressure_independent": true, "k_factor": 4005, "design_airflow_cfm": 950, "inlet_diameter_in": 8}},
+    {"id": "VAV-2-04", "kind": "VAV", "area": "Floor 2 West", "tag": "2-04", "attributes": {"reheat": "hydronic", "pressure_independent": true, "k_factor": 5350, "design_airflow_cfm": 1200, "inlet_diameter_in": 10}},
+    {"id": "VAV-2-05", "kind": "VAV", "area": "Floor 2 West", "tag": "2-05", "attributes": {"reheat": "electric", "pressure_independent": true, "k_factor": 2650, "design_airflow_cfm": 600, "inlet_diameter_in": 6}},
+    {"id": "VAV-2-06", "kind": "VAV", "area": "Floor 2 West", "tag": "2-06"},
+    {"id": "Room-201", "kind": "Zone", "area": "Floor 2 East", "tag": "Room 201"},
+    {"id": "Room-202", "kind": "Zone", "area": "Floor 2 East", "tag": "Room 202"},
+    {"id": "Room-203", "kind": "Zone", "area": "Floor 2 East", "tag": "Room 203"},
+    {"id": "Room-204", "kind": "Zone", "area": "Floor 2 West", "tag": "Room 204"},
+    {"id": "Room-205", "kind": "Zone", "area": "Floor 2 West", "tag": "Room 205"},
+    {"id": "Room-206", "kind": "Zone", "area": "Floor 2 West", "tag": "Room 206"}
+  ],
+  "claims": {
+    "vav_zone": {"Room-201": "VAV-2-01", "Room-202": "VAV-2-02", "Room-203": "VAV-2-03", "Room-204": "VAV-2-04", "Room-205": "VAV-2-05", "Room-206": "VAV-2-06"},
+    "ahu_vav": {"VAV-2-01": "AHU-1", "VAV-2-02": "AHU-1", "VAV-2-03": "AHU-1", "VAV-2-04": "AHU-2", "VAV-2-05": "AHU-2", "VAV-2-06": "AHU-2"}
+  },
+  "control_system": {
+    "points": {
+      "AHU-1": {"fan_status": "AHU1.SF_STS", "static_pressure": "AHU1.DSP"},
+      "AHU-2": {"fan_status": "AHU2.SF_STS", "static_pressure": "AHU2.DSP"},
+      "VAV-2-01": {"status": "AHU1.V201.STATUS", "airflow": "AHU1.V201.CFM", "damper": "AHU1.V201.DMPR", "reheat": "AHU1.V201.RH_VLV"},
+      "VAV-2-02": {"status": "AHU1.V202.STATUS", "airflow": "AHU1.V202.CFM", "damper": "AHU1.V202.DMPR"},
+      "VAV-2-03": {"status": "AHU1.V203.STATUS", "airflow": "AHU1.V203.CFM", "damper": "AHU1.V203.DMPR", "reheat": "AHU1.V203.RH_VLV"},
+      "VAV-2-04": {"status": "AHU2.V204.STATUS", "airflow": "AHU2.V204.CFM", "damper": "AHU2.V204.DMPR", "reheat": "AHU2.V204.RH_VLV"},
+      "VAV-2-05": {"status": "AHU2.V205.STATUS", "airflow": "AHU2.V205.CFM", "damper": "AHU2.V205.DMPR", "reheat": "AHU2.V205.RH_STG"},
+      "Room-204": {"temperature": "AHU2.V204.ZN_T"}
+    }
+  }
+}

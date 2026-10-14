@@ -1,0 +1,172 @@
+{
+  "name": "VAV comfort call-out: upstream first, cheap BAS reads, physical confirm before 'sure'",
+  "preamble": null,
+  "root": {
+    "op": "check", "check": ["bas_static", "ahu_gauge"], "target": "ahu",
+    "why": "one 2-min AHU reading covers fan-off and low-static (~39% of calls) and is shared by every room on the AHU",
+    "pos": {
+      "op": "check", "check": ["bas_ahu_fan", "ahu_visit"], "target": "ahu",
+      "why": "static low: fan stopped/tripped, or fan running but starved?",
+      "pos": {
+        "op": "check", "check": ["bas_ahu_fan"], "target": "ahu",
+        "why": "tier switch: with BAS the fan flag also trips on 20% of low_static (~80% fan_off); with the walk-up visit only 10% (~88%)",
+        "pos": {"op": "conclude", "cause": "ahu_fan_off", "sure": false},
+        "neg": {"op": "conclude", "cause": "ahu_fan_off", "sure": false},
+        "na": {"op": "conclude", "cause": "ahu_fan_off", "sure": true}
+      },
+      "neg": {
+        "op": "check", "check": ["bas_airflow", "static_at_box"], "target": "box",
+        "why": "fan running, static low: need a second independent reading before calling low_static",
+        "pos": {"op": "conclude", "cause": "low_static", "sure": true},
+        "neg": {"op": "conclude", "cause": "low_static", "sure": false}
+      }
+    },
+    "neg": {
+      "op": "check", "check": ["bas_zone"], "target": "box",
+      "why": "biggest non-upstream cause, 2 min; no BAS means switch to the physical room/box branch",
+      "pos": {
+        "op": "check", "check": ["thermostat"], "target": "box",
+        "why": "never condemn the zone on the front end alone: verify at the wall",
+        "pos": {"op": "conclude", "cause": "zone_sensor_setpoint", "sure": true},
+        "neg": {"op": "conclude", "cause": "zone_sensor_setpoint", "sure": false}
+      },
+      "neg": {
+        "op": "check", "check": ["bas_airflow"], "target": "box",
+        "why": "does the box deliver what it is asked for",
+        "pos": {
+          "op": "check", "check": ["confirm_acts"], "target": "box",
+          "why": "airflow off: does the damper move? YES = box is alive, NO = electro-mechanical",
+          "pos": {
+            "op": "check", "check": ["flow_vs_gauge"], "target": "box",
+            "why": "box moves, air wrong: controller flow reading vs my gauge (na = pressure dependent)",
+            "pos": {"op": "conclude", "cause": "flow_sensor", "sure": true},
+            "neg": {
+              "op": "check", "check": ["max_airflow"], "target": "box",
+              "why": "max setpoint vs design",
+              "pos": {"op": "conclude", "cause": "controller_config", "sure": true},
+              "neg": {"op": "conclude", "cause": "capacity_design", "sure": false}
+            }
+          },
+          "neg": {
+            "op": "check", "check": ["manual_damper_test"], "target": "box",
+            "why": "disconnect actuator, turn the shaft by hand",
+            "pos": {"op": "conclude", "cause": "damper_mech", "sure": true},
+            "neg": {
+              "op": "check", "check": ["power_24vac"], "target": "box",
+              "why": "meter on the actuator terminals",
+              "pos": {"op": "conclude", "cause": "no_power", "sure": false},
+              "neg": {
+                "op": "check", "check": ["control_signal"], "target": "box",
+                "why": "commanded open: is there a signal at the actuator",
+                "pos": {"op": "conclude", "cause": "signal_fault", "sure": false},
+                "neg": {"op": "conclude", "cause": "actuator_fail", "sure": false}
+              }
+            }
+          }
+        },
+        "neg": {
+          "op": "check", "check": ["bas_reheat"], "target": "box",
+          "why": "BAS flow looks fine; cheap reheat read (na = no reheat, skip)",
+          "pos": {
+            "op": "check", "check": ["reheat_coil"], "target": "box",
+            "why": "look at valve/coil/element before condemning",
+            "pos": {"op": "conclude", "cause": "reheat_fail", "sure": true},
+            "neg": {"op": "escalate", "guess": "reheat_fail"}
+          },
+          "neg": {
+            "op": "check", "check": ["flow_hood"], "target": "box",
+            "why": "BAS flow can be wrong (sensor/config/leak): trust the hood at the diffuser",
+            "pos": {
+              "op": "check", "check": ["diffuser_duct"], "target": "box",
+              "why": "already in the room: look at the diffuser and duct",
+              "pos": {"op": "conclude", "cause": "duct_diffuser", "sure": true},
+              "neg": {
+                "op": "check", "check": ["flow_vs_gauge"], "target": "box",
+                "why": "BAS looks right, hood is off, room OK: sensor or config",
+                "pos": {"op": "conclude", "cause": "flow_sensor", "sure": true},
+                "neg": {
+                  "op": "check", "check": ["max_airflow"], "target": "box",
+                  "why": "max setpoint vs design",
+                  "pos": {"op": "conclude", "cause": "controller_config", "sure": true},
+                  "neg": {
+                    "op": "check", "check": ["design_load"], "target": "box",
+                    "why": "room use vs box design (na without design data)",
+                    "pos": {"op": "conclude", "cause": "capacity_design", "sure": false},
+                    "neg": {"op": "escalate", "guess": "controller_config"}
+                  }
+                }
+              }
+            },
+            "neg": {
+              "op": "check", "check": ["thermostat"], "target": "box",
+              "why": "hood normal: zone sensor that BAS missed?",
+              "pos": {"op": "conclude", "cause": "zone_sensor_setpoint", "sure": false},
+              "neg": {
+                "op": "check", "check": ["duct_trace"], "target": "box",
+                "why": "everything on the documented box is normal: is it even the right box?",
+                "pos": {"op": "escalate", "guess": "other"},
+                "neg": {"op": "find_feeder"}
+              }
+            }
+          }
+        }
+      },
+      "na": {
+        "op": "check", "check": ["flow_hood"], "target": "box",
+        "why": "TIER C (no BAS): hood at the diffuser stands in for the airflow read",
+        "pos": {
+          "op": "check", "check": ["diffuser_duct"], "target": "box",
+          "why": "in the room already: look at diffuser/duct",
+          "pos": {"op": "conclude", "cause": "duct_diffuser", "sure": false},
+          "neg": {
+            "op": "check", "check": ["confirm_acts"], "target": "box",
+            "why": "go to the box: does the damper move?",
+            "pos": {
+              "op": "check", "check": ["sensing_ports"], "target": "box",
+              "why": "box moves, air wrong: ports and tubing (na = pressure dependent)",
+              "pos": {"op": "conclude", "cause": "flow_sensor", "sure": true},
+              "neg": {
+                "op": "check", "check": ["design_load"], "target": "box",
+                "why": "room use vs box design",
+                "pos": {"op": "conclude", "cause": "capacity_design", "sure": false},
+                "neg": {"op": "conclude", "cause": "controller_config", "sure": false}
+              }
+            },
+            "neg": {
+              "op": "check", "check": ["manual_damper_test"], "target": "box",
+              "why": "disconnect actuator, turn the shaft by hand",
+              "pos": {"op": "conclude", "cause": "damper_mech", "sure": true},
+              "neg": {
+                "op": "check", "check": ["power_24vac"], "target": "box",
+                "why": "meter on the actuator terminals",
+                "pos": {"op": "conclude", "cause": "no_power", "sure": false},
+                "neg": {
+                  "op": "check", "check": ["control_signal"], "target": "box",
+                  "why": "commanded open: is there a signal at the actuator",
+                  "pos": {"op": "conclude", "cause": "signal_fault", "sure": false},
+                  "neg": {"op": "conclude", "cause": "actuator_fail", "sure": false}
+                }
+              }
+            }
+          }
+        },
+        "neg": {
+          "op": "check", "check": ["thermostat"], "target": "box",
+          "why": "hood normal: zone sensor/setpoint is the leading suspect; still in the room",
+          "pos": {"op": "conclude", "cause": "zone_sensor_setpoint", "sure": true},
+          "neg": {
+            "op": "check", "check": ["reheat_coil"], "target": "box",
+            "why": "go to the box; na = no reheat",
+            "pos": {"op": "conclude", "cause": "reheat_fail", "sure": false},
+            "neg": {
+              "op": "check", "check": ["duct_trace"], "target": "box",
+              "why": "everything normal on the documented box: is it the right box?",
+              "pos": {"op": "escalate", "guess": "other"},
+              "neg": {"op": "find_feeder"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

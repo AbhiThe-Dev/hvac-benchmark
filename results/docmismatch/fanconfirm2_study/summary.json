@@ -1,0 +1,21 @@
+{
+ "gates_ok": true,
+ "fanv": "NOT WORTH IT AS TESTED (V1, V3 failed)",
+ "fano": "NOT WORTH IT AS TESTED (V1, V3, V6 failed)",
+ "fanv_q": {
+  "V1": false,
+  "V2": true,
+  "V3": false,
+  "V4": true,
+  "V5": true
+ },
+ "fano_q": {
+  "V1": false,
+  "V2": true,
+  "V3": false,
+  "V4": true,
+  "V5": true,
+  "V6": false
+ },
+ "protocol_sha256": "b6367aa3c3dac1be9b0f3b9e27489e7c28af82da463dea16d151dd52324fe72d"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "compete_ep160",
+  "base_case": "ep160.json",
+  "symptoms": {
+    "feel": "too_cold",
+    "airflow": "yes",
+    "basis": "Description: 'Tenant called in saying it was cold in their suite.' 0:30: 'I've already verified that I have air flow'."
+  },
+  "sampling_truth": {"Zone-T212": "reheat_fail", "Zone-T117": "reheat_fail"},
+  "sampling_truth_basis": "The first-listed accepted cause of each complaint in the base case: electric element, fuse and connections at T212; a melting wire at T117 (whose own element worked). Used only to draw the answers of checks the video does not show.",
+  "ahu_state_for_sampling": "ok",
+  "technician": {
+    "scope": "From the first BAS look to the statement of each accepted cause. Excluded, decided before any run: whatever happened before 0:00 (arrival, the earlier BAS look in the description, the airflow check), walking to the units (1:30-1:45) and the repairs (4:30-5:15 and 5:45-6:15).",
+    "steps": [
+      {"n": 1, "t": "0:30-1:00", "video_min": 0.5, "what": "T212 in the BAS: heat stage on, damper 58%, discharge 62.8 F", "maps_to": "bas_reheat", "rooms": ["Zone-T212"]},
+      {"n": 2, "t": "1:00-1:30", "video_min": 0.5, "what": "T117 in the BAS (no graphic, point list): heat stage on, discharge 62 F", "maps_to": "bas_reheat", "rooms": ["Zone-T117"]},
+      {"n": 3, "t": "1:45-4:30", "video_min": 2.75, "what": "At T212: contactors, 24 V, three-phase supply, limit switch, amp draw, load-side voltage, fuse continuity (about seven measurements inside one catalogue check)", "maps_to": "reheat_coil", "rooms": ["Zone-T212"]},
+      {"n": 4, "t": "5:15-5:45", "video_min": 0.5, "what": "At T117: fuses and wiring; a burning wire found", "maps_to": "reheat_coil", "rooms": ["Zone-T117"]}
+    ],
+    "steps_primary": 4,
+    "steps_per_complaint_count": 4,
+    "video_minutes_to_diagnosis": 4.25,
+    "diagnosis_t": {"Zone-T212": "4:15", "Zone-T117": "5:45"},
+    "diagnosis_correct": true,
+    "diagnosis_basis": "The accepted causes are the technician's own findings, so he cannot lose on accuracy by construction.",
+    "verified": "Yes for T212: current restored after the fuse and wires were fixed (5:00-5:15); T117 pulling about 10 A, normal for its element (6:00)."
+  }
+}

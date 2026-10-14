@@ -1,0 +1,160 @@
+{
+  "name": "hands_on_vav_service_tree",
+  "preamble": {
+    "op": "check", "check": ["bas_static", "ahu_gauge"], "target": "ahu",
+    "pos": {
+      "op": "check", "check": ["bas_ahu_fan", "ahu_visit"], "target": "ahu",
+      "pos": {"op": "done"},
+      "neg": {"op": "done"},
+      "why": "static low: is the fan stopped or just running low? Reading is kept for every room on this AHU"
+    },
+    "neg": {"op": "done"},
+    "why": "two or more rooms on one AHU: look at the shared parent once. Static OK means the fan is running, so skip the fan read"
+  },
+  "root": {
+    "op": "check", "check": ["bas_static"], "target": "ahu",
+    "pos": {
+      "op": "check", "check": ["bas_ahu_fan"], "target": "ahu",
+      "pos": {"op": "conclude", "cause": "ahu_fan_off", "sure": true, "why": "static low and fan off/tripped: two AHU points agree"},
+      "neg": {
+        "op": "check", "check": ["static_at_box"], "target": "box",
+        "pos": {"op": "conclude", "cause": "low_static", "sure": true, "why": "my own gauge at the box inlet agrees"},
+        "neg": {"op": "conclude", "cause": "low_static", "sure": false, "why": "BAS says low, my gauge disagrees: probably supply but not confirmed"},
+        "why": "AHU static low with the fan running: gauge the box inlet myself before blaming supply"
+      },
+      "why": "static low: fan stopped, or running and just low?"
+    },
+    "neg": {
+      "op": "check", "check": ["bas_controller"], "target": "box",
+      "pos": {
+        "op": "check", "check": ["controller_leds"], "target": "box",
+        "pos": {"op": "conclude", "cause": "controller_comms", "sure": true},
+        "neg": {"op": "conclude", "cause": "controller_comms", "sure": false, "why": "BAS alarm but lights look healthy"},
+        "why": "BAS says offline or alarming: look at the lights before I believe it"
+      },
+      "neg": {
+        "op": "check", "check": ["bas_zone"], "target": "box",
+        "pos": {
+          "op": "check", "check": ["thermostat"], "target": "box",
+          "pos": {"op": "conclude", "cause": "zone_sensor_setpoint", "sure": true},
+          "neg": {"op": "conclude", "cause": "zone_sensor_setpoint", "sure": false, "why": "BAS shows a bad setpoint or schedule but the wall unit looks fine"},
+          "why": "BAS says setpoint, schedule or mode is wrong: confirm at the wall with a reference thermometer"
+        },
+        "neg": {
+          "op": "check", "check": ["flow_hood"], "target": "box",
+          "pos": {
+            "op": "check", "check": ["confirm_acts"], "target": "box",
+            "pos": {
+              "op": "check", "check": ["static_at_box"], "target": "box",
+              "pos": {
+                "op": "check", "check": ["bas_ahu_fan", "ahu_visit"], "target": "ahu",
+                "pos": {"op": "conclude", "cause": "ahu_fan_off", "sure": true},
+                "neg": {"op": "conclude", "cause": "low_static", "sure": true, "why": "inlet static low with the fan running"},
+                "why": "inlet static low: fan off or just low static?"
+              },
+              "neg": {
+                "op": "check", "check": ["override_diffuser"], "target": "box",
+                "pos": {
+                  "op": "check", "check": ["flow_vs_gauge", "sensing_ports"], "target": "box",
+                  "pos": {"op": "conclude", "cause": "flow_sensor", "sure": true, "why": "my gauge disagrees with the controller, or ports and tubes are bad"},
+                  "neg": {
+                    "op": "check", "check": ["k_factor"], "target": "box",
+                    "pos": {"op": "conclude", "cause": "controller_config", "sure": true},
+                    "neg": {
+                      "op": "check", "check": ["damper_linkage"], "target": "box",
+                      "pos": {"op": "conclude", "cause": "damper_mech", "sure": true},
+                      "neg": {
+                        "op": "check", "check": ["diffuser_duct"], "target": "box",
+                        "pos": {"op": "conclude", "cause": "duct_diffuser", "sure": true},
+                        "neg": {"op": "escalate", "guess": "controller_config", "why": "box, sensing, linkage and duct all look right: leaves config I cannot read"},
+                        "why": "box is healthy and feeds the room: last look is the flex and diffuser"
+                      },
+                      "why": "damper moves but is it reaching full open?"
+                    },
+                    "why": "K-factor against the nameplate"
+                  },
+                  "why": "box feeds the room but the diffuser airflow is off: sensor path next"
+                },
+                "neg": {
+                  "op": "check", "check": ["diffuser_duct"], "target": "box",
+                  "pos": {"op": "conclude", "cause": "duct_diffuser", "sure": true},
+                  "neg": {"op": "find_feeder"},
+                  "why": "damper moves, inlet static fine, no airflow response at this diffuser and the duct is clean: drawings are suspect"
+                },
+                "why": "does the diffuser respond when I drive this box to full cooling?"
+              },
+              "why": "damper moves, so gauge the inlet"
+            },
+            "neg": {
+              "op": "check", "check": ["power_24vac"], "target": "box",
+              "pos": {"op": "conclude", "cause": "no_power", "sure": true, "why": "meter says no 24 VAC at the actuator"},
+              "neg": {
+                "op": "check", "check": ["control_signal"], "target": "box",
+                "pos": {
+                  "op": "check", "check": ["controller_leds"], "target": "box",
+                  "pos": {"op": "conclude", "cause": "controller_comms", "sure": true},
+                  "neg": {"op": "conclude", "cause": "signal_fault", "sure": true, "why": "controller alive, powered, no signal at the actuator"},
+                  "why": "no signal: is the controller alive?"
+                },
+                "neg": {
+                  "op": "check", "check": ["manual_damper_test"], "target": "box",
+                  "pos": {"op": "conclude", "cause": "damper_mech", "sure": true},
+                  "neg": {
+                    "op": "check", "check": ["damper_linkage"], "target": "box",
+                    "pos": {"op": "conclude", "cause": "damper_mech", "sure": true},
+                    "neg": {
+                      "op": "check", "check": ["override_diffuser"], "target": "box",
+                      "pos": {"op": "escalate", "guess": "flow_sensor", "why": "diffuser airflow rose, so 'does not move' was a bad read: this is not an actuator"},
+                      "neg": {"op": "conclude", "cause": "actuator_fail", "sure": true, "why": "powered, signal present, shaft free, linkage good, no motion and no airflow response"},
+                      "why": "last cross-check before I condemn an actuator"
+                    },
+                    "why": "powered, signalled and free: is the linkage slipping?"
+                  },
+                  "why": "powered and signalled but not moving: turn the shaft by hand"
+                },
+                "why": "power is good, so is the command reaching the actuator?"
+              },
+              "why": "damper does not move: meter the actuator first"
+            },
+            "why": "airflow at the diffuser is off: does the damper move when commanded?"
+          },
+          "neg": {
+            "op": "check", "check": ["thermostat"], "target": "box",
+            "pos": {"op": "conclude", "cause": "zone_sensor_setpoint", "sure": true},
+            "neg": {
+              "op": "check", "check": ["bas_reheat", "reheat_coil"], "target": "box",
+              "pos": {
+                "op": "check", "check": ["reheat_coil"], "target": "box",
+                "pos": {"op": "conclude", "cause": "reheat_fail", "sure": true},
+                "neg": {"op": "conclude", "cause": "reheat_fail", "sure": false, "why": "BAS flags the valve, inspection shows nothing"},
+                "why": "look at the valve or element myself before condemning it"
+              },
+              "neg": {
+                "op": "check", "check": ["max_airflow"], "target": "box",
+                "pos": {"op": "conclude", "cause": "controller_config", "sure": true},
+                "neg": {
+                  "op": "check", "check": ["design_load"], "target": "box",
+                  "pos": {"op": "conclude", "cause": "capacity_design", "sure": false, "why": "a judgement call, not a measurement"},
+                  "neg": {
+                    "op": "check", "check": ["bas_hunting"], "target": "box",
+                    "pos": {"op": "conclude", "cause": "controller_config", "sure": false, "why": "hunting seen, tuning not provable"},
+                    "neg": {"op": "escalate", "guess": "controller_config", "why": "everything I can read is normal; the minimum or schedule settings are what I cannot see"},
+                    "why": "watch the loop for 5 minutes"
+                  },
+                  "why": "is the room now asking for more than the box was sized for?"
+                },
+                "why": "max airflow setpoint against design"
+              },
+              "why": "airflow is as it should be, so heat or setpoints"
+            },
+            "why": "air is arriving as expected: check the sensor against a reference"
+          },
+          "why": "my own flow hood tells me whether air reaches the room as the box should be delivering"
+        },
+        "why": "cheap BAS look at setpoint, schedule and mode"
+      },
+      "why": "is the box alive on the network? Its other points are not worth reading if it is not"
+    },
+    "why": "AHU static first (free if already read): fan off or low static explains everything downstream"
+  }
+}

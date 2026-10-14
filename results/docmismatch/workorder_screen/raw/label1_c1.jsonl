@@ -1,0 +1,150 @@
+{"sid": "S001", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "CUMMING PENTHOUSE MECH ROOM", "B": null, "C": null, "D": null}}
+{"sid": "S002", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "AHU 1", "B": null, "C": null, "D": "A-57 BELT ON AHU 1"}}
+{"sid": "S003", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "AHU 7", "B": null, "C": null, "D": "DIS / RECONNECT MOTOT - AHU 7"}}
+{"sid": "S004", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S005", "A": false, "B": false, "C": false, "D": true, "quotes": {"A": null, "B": null, "C": null, "D": "BROKEN BELT ON AHU"}}
+{"sid": "S006", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S007", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "RM 318A OFFLINE", "B": null, "C": null, "D": null}}
+{"sid": "S008", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "THERMOSTAT CHECKED IN ROOM 131B", "B": null, "C": null, "D": null}}
+{"sid": "S009", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S010", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S011", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "MECH RM - REPLACE ONE A46 ON LAUNDRY ROOM EF", "B": null, "C": null, "D": null}}
+{"sid": "S012", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "DENTAL RM 5216", "B": null, "C": null, "D": null}}
+{"sid": "S013", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "RM 441 - REPAIR THERMOSTAT", "B": null, "C": null, "D": null}}
+{"sid": "S014", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S015", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "NO HEAT ON 2ND & 3RD FLOORS", "B": null, "C": null, "D": "NO HEAT ON 2ND & 3RD FLOORS"}}
+{"sid": "S016", "A": false, "B": false, "C": false, "D": true, "quotes": {"A": null, "B": null, "C": null, "D": "ENSURE FANS ARE WORKING IN HRV UNIT"}}
+{"sid": "S017", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "MONA RM 3253", "B": null, "C": null, "D": null}}
+{"sid": "S018", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "RESET AHU-1", "B": null, "C": null, "D": "RESET AHU-1 - BLEED AIR"}}
+{"sid": "S019", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "CHEM RM 529 - AHU#3 IN ALARM", "B": null, "C": null, "D": "AHU#3 IN ALARM"}}
+{"sid": "S020", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "TUPPER 12TH FL - AHU-12", "B": null, "C": null, "D": "AHU-12 – PREHEAT COIL VALVE 1"}}
+{"sid": "S021", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "EXH FAN 654", "B": null, "C": null, "D": null}}
+{"sid": "S022", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "CHECK EF #4", "B": null, "C": null, "D": null}}
+{"sid": "S023", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "EXHAUST AHU #9", "B": null, "C": null, "D": "REPLACE (2) B81 ON EXHAUST AHU #9"}}
+{"sid": "S024", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "LSRI NORTH 1ST FL", "B": null, "C": null, "D": null}}
+{"sid": "S025", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "TUPPER RM 5A01", "B": null, "C": null, "D": null}}
+{"sid": "S026", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "FRUIT COLD ROOM 157", "B": null, "C": null, "D": null}}
+{"sid": "S027", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "EF#1 (PARKADE EXHAUST)", "B": null, "C": null, "D": null}}
+{"sid": "S028", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "TUPPER LEVEL 15 - AHU-15", "B": null, "C": null, "D": "AHU-15 - REPAIR OUTDOOR AIR DAMPER"}}
+{"sid": "S029", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "LSC OCEAN RM 5616", "B": null, "C": null, "D": null}}
+{"sid": "S030", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "LSC 4TH MECH RM - SB5", "B": null, "C": null, "D": null}}
+{"sid": "S031", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S032", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "CHEMISTRY RM 108 - REPLACE BELT ON AHU #6", "B": null, "C": null, "D": "REPLACE BELT ON AHU #6"}}
+{"sid": "S033", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "TUPPER THEATRE D", "B": null, "C": null, "D": null}}
+{"sid": "S034", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S035", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S036", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "RESET AHU 6.1 & 6.2 IN PENTHOUSE", "B": null, "C": null, "D": "RESET AHU 6.1 & 6.2"}}
+{"sid": "S037", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S038", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S039", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "ROWE 1ST  FLOOR", "B": null, "C": null, "D": null}}
+{"sid": "S040", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "HP 101 & 104", "B": null, "C": null, "D": null}}
+{"sid": "S041", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "AHU-5", "B": null, "C": null, "D": "AHU-5 OFF"}}
+{"sid": "S042", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "LMP RM 1300", "B": null, "C": null, "D": null}}
+{"sid": "S043", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "CRC RM C216", "B": null, "C": null, "D": null}}
+{"sid": "S044", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S045", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "MODIFY DUCTWORK IN 2L-A02", "B": null, "C": null, "D": null}}
+{"sid": "S046", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "LEMARCHANT RM 3320", "B": null, "C": null, "D": null}}
+{"sid": "S047", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "LSC B6009", "B": null, "C": null, "D": null}}
+{"sid": "S048", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "THE STUDENT IN ROOM 1006 HAS NO HEAT", "B": null, "C": null, "D": null}}
+{"sid": "S049", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "2ND HENDERSON MALE W/R", "B": null, "C": null, "D": null}}
+{"sid": "S050", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "LMP RM 2561", "B": null, "C": null, "D": null}}
+{"sid": "S051", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S052", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S053", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S054", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S055", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S056", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S057", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S058", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S059", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S060", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S061", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S062", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S063", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S064", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S065", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S066", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S067", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S068", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S069", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S070", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S071", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S072", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S073", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S074", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S075", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S076", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S077", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S078", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S079", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S080", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S081", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S082", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S083", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S084", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S085", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S086", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S087", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S088", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S089", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S090", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S091", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S092", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S093", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S094", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S095", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S096", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S097", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S098", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S099", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S100", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S101", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "SF-2 LOW TEMP DETECTOR ON", "B": null, "C": null, "D": "SF-2 LOW TEMP DETECTOR ON"}}
+{"sid": "S102", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "SF1 FAN FAILURE", "B": null, "C": null, "D": "SF1 FAN FAILURE"}}
+{"sid": "S103", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "RM 366: COLD AIR BLOWING THRU VENT", "B": null, "C": null, "D": null}}
+{"sid": "S104", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S105", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "AIR HANDLER #1 IN ALARM", "B": null, "C": null, "D": "AIR HANDLER #1 IN ALARM"}}
+{"sid": "S106", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "SUPPLY FAN #1 FAILURE", "B": null, "C": null, "D": "SUPPLY FAN #1 FAILURE"}}
+{"sid": "S107", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "SF #1 TEMP OUT OF RANGE", "B": null, "C": null, "D": "SF #1 TEMP OUT OF RANGE"}}
+{"sid": "S108", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "SOIL ROOM TEMP ALARM", "B": null, "C": null, "D": null}}
+{"sid": "S109", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S110", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "LOLA TILLY KITCHEN", "B": null, "C": null, "D": null}}
+{"sid": "S111", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "BARTLETT HALL 1ST FLR HALLWAY: CLEAN VENT FILTER BY STAIRWAY 100S1", "B": null, "C": null, "D": null}}
+{"sid": "S112", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "AKASOFU RM 351D", "B": null, "C": null, "D": null}}
+{"sid": "S113", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "CONSTITUTION HALL RM 201", "B": null, "C": null, "D": null}}
+{"sid": "S114", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "914.AHU2.SAT SUPPLY AIR TEMP IN ALARM", "B": null, "C": null, "D": "914.AHU2.SAT SUPPLY AIR TEMP IN ALARM"}}
+{"sid": "S115", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "FA KUAC TV MASTER CONTROL  RM", "B": null, "C": null, "D": null}}
+{"sid": "S116", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "WRRB RMS 202, 204, 206, 208", "B": null, "C": null, "D": "WRRB RMS 202, 204, 206, 208: TROUBLESHOOT, OFFICES TOO COLD"}}
+{"sid": "S117", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "POINT MIAS1 AHU2 STATUS IS IN ALARM", "B": null, "C": null, "D": "POINT MIAS1 AHU2 STATUS IS IN ALARM"}}
+{"sid": "S118", "A": false, "B": false, "C": false, "D": true, "quotes": {"A": null, "B": null, "C": null, "D": "TROUBLESHOOT AIR ON HIGH SPEED IN BUILDING"}}
+{"sid": "S119", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S120", "A": false, "B": false, "C": false, "D": true, "quotes": {"A": null, "B": null, "C": null, "D": "BUILDING WIDE TROUBLESHOOT HOT TEMPS"}}
+{"sid": "S121", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "HESS VILLAGE APT 762A", "B": null, "C": null, "D": null}}
+{"sid": "S122", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S123", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "HESS VILLAGE 754J", "B": null, "C": null, "D": null}}
+{"sid": "S124", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S125", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "OFFICES ON 2ND FLOOR", "B": null, "C": null, "D": "COLD TEMPERATURE THROUGHOUT OFFICES ON 2ND FLOOR"}}
+{"sid": "S126", "A": false, "B": false, "C": false, "D": true, "quotes": {"A": null, "B": null, "C": null, "D": "TROUBLESHOOT NO HEAT IN BUILDING"}}
+{"sid": "S127", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "CHAPMAN LOT 04H", "B": null, "C": null, "D": null}}
+{"sid": "S128", "A": false, "B": false, "C": false, "D": true, "quotes": {"A": null, "B": null, "C": null, "D": "HEATING GLYCOL PRESSURE IN ALARM W/ VALUE OF 16PSI"}}
+{"sid": "S129", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "ONLY ROOMS 102 AND 204 HAVE HEAT", "B": null, "C": null, "D": "BLDG WIDE: MOST REGISTERS IN BUILDING ARE COLD"}}
+{"sid": "S130", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "CUTLER 401: FLOOR HEATING VENT IS LEAKING IN SOUTH FACING BDRM", "B": null, "C": null, "D": null}}
+{"sid": "S131", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "IRVING II, 3RD FLOOR INT: SF1", "B": null, "C": null, "D": "REPAIR BOUNCING MIXED AIR TEMP SENSOR ON AH1"}}
+{"sid": "S132", "A": true, "B": true, "C": false, "D": true, "quotes": {"A": "IRVING I ROOM 216", "B": "THE PROBLEM HAS BEEN REPORTED TWICE AND HAS NOT BEEN FIXED YET", "C": null, "D": "REQUESTOR STATES ALSO ON ENTIRE FLOOR"}}
+{"sid": "S133", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S134", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "HESS VILLAGE 751A", "B": null, "C": null, "D": null}}
+{"sid": "S135", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "LOLA TILLY COMMONS RM 212", "B": null, "C": null, "D": null}}
+{"sid": "S136", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "702B TANANA LOOP", "B": null, "C": null, "D": null}}
+{"sid": "S137", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "AH6 START/STOP IN ALARM", "B": null, "C": null, "D": "AH6 START/STOP IN ALARM"}}
+{"sid": "S138", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "MOORE HALL 216", "B": null, "C": null, "D": null}}
+{"sid": "S139", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "UPARK: AHU3", "B": null, "C": null, "D": "AHU3, AIR HANDLER MAKING LOUD THUMPING NOISE WHILE RUNNING"}}
+{"sid": "S140", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "AKASOFU SUITE 203", "B": null, "C": null, "D": null}}
+{"sid": "S141", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "EIELSON 3RD FLR", "B": null, "C": null, "D": "EIELSON 3RD FLR: TOO COLD"}}
+{"sid": "S142", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "SF #3", "B": null, "C": null, "D": "SF #3 NOT RUNNING PROPERLY, TRIPPED OUT"}}
+{"sid": "S143", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "O'NEILL ROOM 245", "B": null, "C": null, "D": null}}
+{"sid": "S144", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "BUTROVICH RM 000U8", "B": null, "C": null, "D": "WATER PUMPS ARE DOWN, CONTROLLERS ARE NOT WORKING"}}
+{"sid": "S145", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "BUTROVICH 212B", "B": null, "C": null, "D": null}}
+{"sid": "S146", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "IRVING 1: RM 141", "B": null, "C": null, "D": null}}
+{"sid": "S147", "A": false, "B": false, "C": false, "D": true, "quotes": {"A": null, "B": null, "C": null, "D": "HEATING GLYCOL PRESSURE ALARM"}}
+{"sid": "S148", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "SECOND FLOOR OF BUILDING", "B": null, "C": null, "D": "TURN HEAT UP ON SECOND FLOOR OF BUILDING"}}
+{"sid": "S149", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "OFFICE 101H", "B": null, "C": null, "D": "ALSO COMPLAINTS BUILDING TEMP FEELS WARM AS WELL"}}
+{"sid": "S150", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "ONEILL 307", "B": null, "C": null, "D": null}}

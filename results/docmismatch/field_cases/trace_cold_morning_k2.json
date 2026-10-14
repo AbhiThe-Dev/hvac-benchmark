@@ -1,0 +1,657 @@
+{
+ "case": "cold_morning",
+ "k": 2,
+ "n_recommended": 8,
+ "n_answered_from_video": 4,
+ "coverage": 0.5,
+ "elapsed_min": 34.0,
+ "minutes_on_E": 17.0,
+ "minutes_on_U": 17.0,
+ "stop": "stalled (nothing left worth its time)",
+ "first_check": "bas_static",
+ "first_check_minutes": 2.0,
+ "technician_first_check": "bas_zone",
+ "first_check_matches": false,
+ "tech_checks_never_recommended": [],
+ "tool_checks_not_done_by_technician": [
+  "bas_airflow",
+  "bas_damper",
+  "bas_static",
+  "thermostat"
+ ],
+ "complaints": [
+  {
+   "room": "Room-206",
+   "accept": [
+    "zone_sensor_setpoint",
+    "controller_config"
+   ],
+   "prior_truth_mass": 0.12971546422669286,
+   "final_truth_mass": 0.9825909505273652,
+   "top_cause": [
+    "zone_sensor_setpoint"
+   ],
+   "top_p": 0.9803306361488928,
+   "top_in_accept": true,
+   "concluded": true,
+   "wrong_and_confident": false,
+   "prior_top": [
+    [
+     [
+      "low_static"
+     ],
+     0.5803272662653058
+    ],
+    [
+     [
+      "zone_sensor_setpoint"
+     ],
+     0.07927056147186785
+    ],
+    [
+     [
+      "controller_config"
+     ],
+     0.050444902754825
+    ]
+   ],
+   "final_top": [
+    [
+     [
+      "zone_sensor_setpoint"
+     ],
+     0.9803306361488928
+    ],
+    [
+     [
+      "low_static"
+     ],
+     0.005756598313956044
+    ],
+    [
+     [
+      "controller_config"
+     ],
+     0.0022603143784724142
+    ]
+   ]
+  },
+  {
+   "room": "Room-232",
+   "accept": [
+    "controller_config",
+    "zone_sensor_setpoint"
+   ],
+   "prior_truth_mass": 0.1466939281307102,
+   "final_truth_mass": 0.8407060838350432,
+   "top_cause": [
+    "zone_sensor_setpoint"
+   ],
+   "top_p": 0.8064913013533844,
+   "top_in_accept": true,
+   "concluded": false,
+   "wrong_and_confident": false,
+   "prior_top": [
+    [
+     [
+      "low_static"
+     ],
+     0.5803272662653056
+    ],
+    [
+     [
+      "zone_sensor_setpoint"
+     ],
+     0.08964628941321179
+    ],
+    [
+     [
+      "controller_config"
+     ],
+     0.05704763871749841
+    ]
+   ],
+   "final_top": [
+    [
+     [
+      "zone_sensor_setpoint"
+     ],
+     0.8064913013533844
+    ],
+    [
+     [
+      "controller_config"
+     ],
+     0.03421478248165874
+    ],
+    [
+     [
+      "flow_sensor"
+     ],
+     0.029326956412850345
+    ]
+   ]
+  }
+ ],
+ "ahu_posterior": {
+  "RTU-2": [
+   0.9843631258494397,
+   3.3294609564806105e-05,
+   0.015603579540995297
+  ]
+ },
+ "steps": [
+  {
+   "n": 1,
+   "kind": "ahu",
+   "who": "RTU-2",
+   "check": "bas_static",
+   "target": "RTU-2",
+   "minutes": 2.0,
+   "p_pos": 0.5892450100024758,
+   "gain": 1.1775043606138142,
+   "audience": 2,
+   "evidence": "U",
+   "outcome": "unsure",
+   "t": null,
+   "state_before": [
+    {
+     "room": "Room-206",
+     "truth_mass": 0.12971546422669286,
+     "top": [
+      [
+       [
+        "low_static"
+       ],
+       0.5803272662653058
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.07927056147186785
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.050444902754825
+      ]
+     ]
+    },
+    {
+     "room": "Room-232",
+     "truth_mass": 0.1466939281307102,
+     "top": [
+      [
+       [
+        "low_static"
+       ],
+       0.5803272662653056
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.08964628941321179
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.05704763871749841
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "kind": "complaint",
+   "who": "Room-232",
+   "check": "bas_airflow",
+   "target": "VAV-232",
+   "minutes": 2.0,
+   "p_pos": 0.590687263521248,
+   "gain": 0.3645489681112579,
+   "audience": 1,
+   "evidence": "U",
+   "outcome": "unsure",
+   "t": null,
+   "state_before": [
+    {
+     "room": "Room-206",
+     "truth_mass": 0.12971546422669286,
+     "top": [
+      [
+       [
+        "low_static"
+       ],
+       0.5803272662653058
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.07927056147186785
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.050444902754825
+      ]
+     ]
+    },
+    {
+     "room": "Room-232",
+     "truth_mass": 0.1466939281307102,
+     "top": [
+      [
+       [
+        "low_static"
+       ],
+       0.5803272662653056
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.08964628941321179
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.05704763871749841
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "kind": "ahu",
+   "who": "RTU-2",
+   "check": "bas_ahu_fan",
+   "target": "RTU-2",
+   "minutes": 2.0,
+   "p_pos": 0.1588743093401251,
+   "gain": 0.21996554786334954,
+   "audience": 2,
+   "evidence": "E",
+   "outcome": "normal",
+   "t": "10:15-10:45, 11:15",
+   "state_before": [
+    {
+     "room": "Room-206",
+     "truth_mass": 0.12971546422669286,
+     "top": [
+      [
+       [
+        "low_static"
+       ],
+       0.5803272662653058
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.07927056147186785
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.050444902754825
+      ]
+     ]
+    },
+    {
+     "room": "Room-232",
+     "truth_mass": 0.1466939281307102,
+     "top": [
+      [
+       [
+        "low_static"
+       ],
+       0.5803272662653056
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.08964628941321179
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.05704763871749841
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "kind": "complaint",
+   "who": "Room-232",
+   "check": "bas_zone",
+   "target": "VAV-232",
+   "minutes": 2.0,
+   "p_pos": 0.12178232878366228,
+   "gain": 0.23281845283699631,
+   "audience": 1,
+   "evidence": "E",
+   "outcome": "abnormal",
+   "t": "2:45-3:15",
+   "state_before": [
+    {
+     "room": "Room-206",
+     "truth_mass": 0.14838122075410712,
+     "top": [
+      [
+       [
+        "low_static"
+       ],
+       0.55195295800325
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.09067741268306546
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.05770380807104166
+      ]
+     ]
+    },
+    {
+     "room": "Room-232",
+     "truth_mass": 0.1678028465072625,
+     "top": [
+      [
+       [
+        "low_static"
+       ],
+       0.5519529580032497
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.1025461839766604
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.06525666253060208
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "kind": "complaint",
+   "who": "Room-232",
+   "check": "bas_damper",
+   "target": "VAV-232",
+   "minutes": 2.0,
+   "p_pos": 0.18478935774314625,
+   "gain": 0.29263254719497755,
+   "audience": 1,
+   "evidence": "U",
+   "outcome": "unsure",
+   "t": null,
+   "state_before": [
+    {
+     "room": "Room-206",
+     "truth_mass": 0.2502978026979058,
+     "top": [
+      [
+       [
+        "low_static"
+       ],
+       0.2479017830205084
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.15295976831538688
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.09733803438251892
+      ]
+     ]
+    },
+    {
+     "room": "Room-232",
+     "truth_mass": 0.6583259813617635,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.631533644910994
+      ],
+      [
+       [
+        "low_static"
+       ],
+       0.22661455217519916
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.02679233645076945
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "kind": "complaint",
+   "who": "Room-206",
+   "check": "bas_zone",
+   "target": "VAV-206",
+   "minutes": 2.0,
+   "p_pos": 0.15707183782077075,
+   "gain": 0.28113594252913554,
+   "audience": 1,
+   "evidence": "E",
+   "outcome": "abnormal",
+   "t": "0:00-0:30, 2:45-3:15, 5:45-6:30",
+   "state_before": [
+    {
+     "room": "Room-206",
+     "truth_mass": 0.2502978026979058,
+     "top": [
+      [
+       [
+        "low_static"
+       ],
+       0.2479017830205084
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.15295976831538688
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.09733803438251892
+      ]
+     ]
+    },
+    {
+     "room": "Room-232",
+     "truth_mass": 0.6583259813617635,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.631533644910994
+      ],
+      [
+       [
+        "low_static"
+       ],
+       0.22661455217519916
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.02679233645076945
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "kind": "complaint",
+   "who": "Room-206",
+   "check": "thermostat",
+   "target": "VAV-206",
+   "minutes": 11.0,
+   "p_pos": 0.6854178458118976,
+   "gain": 0.613267445311799,
+   "audience": 1,
+   "evidence": "E",
+   "outcome": "abnormal",
+   "t": "5:45-6:15",
+   "state_before": [
+    {
+     "room": "Room-206",
+     "truth_mass": 0.7613505362566798,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.7303653400136754
+      ],
+      [
+       [
+        "low_static"
+       ],
+       0.07891350431112301
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.03098519624300441
+      ]
+     ]
+    },
+    {
+     "room": "Room-232",
+     "truth_mass": 0.7856054051717011,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.7536330921705272
+      ],
+      [
+       [
+        "low_static"
+       ],
+       0.07812921353674289
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.03197231300117389
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "kind": "complaint",
+   "who": "Room-232",
+   "check": "thermostat",
+   "target": "VAV-232",
+   "minutes": 11.0,
+   "p_pos": 0.7516474321774446,
+   "gain": 0.4361395608822507,
+   "audience": 1,
+   "evidence": "U",
+   "outcome": "unsure",
+   "t": null,
+   "state_before": [
+    {
+     "room": "Room-206",
+     "truth_mass": 0.9825909505273652,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.9803306361488928
+      ],
+      [
+       [
+        "low_static"
+       ],
+       0.005756598313956044
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.0022603143784724142
+      ]
+     ]
+    },
+    {
+     "room": "Room-232",
+     "truth_mass": 0.8407060838350432,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.8064913013533844
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.03421478248165874
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.029326956412850345
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

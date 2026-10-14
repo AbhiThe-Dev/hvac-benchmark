@@ -1,0 +1,719 @@
+{
+ "g2": "pricing hand-checked (BAS 0.75 per read, reheat_coil 1.625 at CENTRAL, waiting added unscaled); all 30 checks classified (8 BAS, 22 physical) with a do_min",
+ "g3": [
+  {
+   "case": "cold_morning",
+   "first_mismatch": [],
+   "n_mine": 1000,
+   "n_mismatch": 0,
+   "n_stored": 1000,
+   "passed": true
+  },
+  {
+   "case": "ep160",
+   "first_mismatch": [],
+   "n_mine": 1000,
+   "n_mismatch": 0,
+   "n_stored": 1000,
+   "passed": true
+  }
+ ],
+ "predictions": [
+  {
+   "claim": "EP160, CENTRAL: label is TIE",
+   "detail": "label TIE, ratio 1.235",
+   "held": true,
+   "id": "P1"
+  },
+  {
+   "claim": "cold-morning, CENTRAL, primary truth: TIE or TECHNICIAN FASTER",
+   "detail": "label TIE, ratio 1.100",
+   "held": true,
+   "id": "P2"
+  },
+  {
+   "claim": "no case is TOOL FASTER at CENTRAL",
+   "detail": "-",
+   "held": true,
+   "id": "P3"
+  },
+  {
+   "claim": "EP160 SENSITIVE TO PACE (not TECHNICIAN FASTER at FAST, TECHNICIAN FASTER at SLOW)",
+   "detail": "FAST TIE, SLOW TECHNICIAN FASTER, SENSITIVE TO PACE",
+   "held": true,
+   "id": "P4"
+  },
+  {
+   "claim": "S1 (EP160) CENTRAL ratio >= 1.25",
+   "detail": "ratio 2.000, median 8.50 min",
+   "held": true,
+   "id": "P5"
+  },
+  {
+   "claim": "share of worlds where the tool is faster is under 50% at CENTRAL, both cases",
+   "detail": "cold-morning 0%, EP160 0%",
+   "held": true,
+   "id": "P6"
+  },
+  {
+   "claim": "tool right on every complaint in >= 90% of worlds, both cases",
+   "detail": "cold-morning 99%, EP160 99%",
+   "held": true,
+   "id": "P7"
+  },
+  {
+   "claim": "S2 cold-morning, CENTRAL: TECHNICIAN FASTER",
+   "detail": "label TECHNICIAN FASTER, ratio 2.069",
+   "held": true,
+   "id": "P8"
+  }
+ ],
+ "results": {
+  "cold_morning": {
+   "case": "cold_morning",
+   "runs": {
+    "S2_k6": {
+     "catalogue_minutes_median": 69.0,
+     "median_bas_reads": 7.0,
+     "median_physical_checks": 5.0,
+     "n": 1000,
+     "n_checks_with_fallback_surcharge": 594,
+     "p_all_correct": 0.731,
+     "robustness": "SENSITIVE TO PACE",
+     "scenarios": {
+      "CENTRAL": {
+       "S3_wait_added": {
+        "label": "TECHNICIAN FASTER",
+        "median": 15.525,
+        "p_tool_faster": 0.0,
+        "q25": 11.9375,
+        "q75": 17.8,
+        "ratio": 3.45
+       },
+       "primary": {
+        "label": "TECHNICIAN FASTER",
+        "median": 9.3125,
+        "p_tool_faster": 0.0,
+        "q25": 8.5625,
+        "q75": 9.9625,
+        "ratio": 2.069444
+       }
+      },
+      "FAST": {
+       "S3_wait_added": {
+        "label": "TECHNICIAN FASTER",
+        "median": 12.2,
+        "p_tool_faster": 0.222,
+        "q25": 8.1,
+        "q75": 12.9,
+        "ratio": 2.711111
+       },
+       "primary": {
+        "label": "TIE",
+        "median": 4.55,
+        "p_tool_faster": 0.489,
+        "q25": 4.25,
+        "q75": 4.95,
+        "ratio": 1.011111
+       }
+      },
+      "SLOW": {
+       "S3_wait_added": {
+        "label": "TECHNICIAN FASTER",
+        "median": 21.725,
+        "p_tool_faster": 0.0,
+        "q25": 16.625,
+        "q75": 24.45,
+        "ratio": 4.827778
+       },
+       "primary": {
+        "label": "TECHNICIAN FASTER",
+        "median": 15.625,
+        "p_tool_faster": 0.0,
+        "q25": 14.375,
+        "q75": 16.725,
+        "ratio": 3.472222
+       }
+      }
+     },
+     "share_worlds_with_reheat_coil": 0.0,
+     "steps_median": 11.0
+    },
+    "primary_k12": {
+     "catalogue_minutes_median": 28.0,
+     "median_bas_reads": 3.0,
+     "median_physical_checks": 2.0,
+     "n": 1000,
+     "n_checks_with_fallback_surcharge": 6,
+     "p_all_correct": 0.99,
+     "robustness": "SENSITIVE TO PACE",
+     "scenarios": {
+      "CENTRAL": {
+       "S3_wait_added": {
+        "label": "TIE",
+        "median": 4.2,
+        "p_tool_faster": 0.889,
+        "q25": 4.2,
+        "q75": 4.2,
+        "ratio": 0.933333
+       },
+       "primary": {
+        "label": "TIE",
+        "median": 4.2,
+        "p_tool_faster": 0.889,
+        "q25": 4.2,
+        "q75": 4.2,
+        "ratio": 0.933333
+       }
+      },
+      "FAST": {
+       "S3_wait_added": {
+        "label": "TOOL FASTER",
+        "median": 2.1,
+        "p_tool_faster": 0.927,
+        "q25": 2.1,
+        "q75": 2.1,
+        "ratio": 0.466667
+       },
+       "primary": {
+        "label": "TOOL FASTER",
+        "median": 2.1,
+        "p_tool_faster": 0.992,
+        "q25": 2.1,
+        "q75": 2.1,
+        "ratio": 0.466667
+       }
+      },
+      "SLOW": {
+       "S3_wait_added": {
+        "label": "TECHNICIAN FASTER",
+        "median": 7.05,
+        "p_tool_faster": 0.0,
+        "q25": 7.05,
+        "q75": 7.05,
+        "ratio": 1.566667
+       },
+       "primary": {
+        "label": "TECHNICIAN FASTER",
+        "median": 7.05,
+        "p_tool_faster": 0.0,
+        "q25": 7.05,
+        "q75": 7.05,
+        "ratio": 1.566667
+       }
+      }
+     },
+     "share_worlds_with_reheat_coil": 0.0,
+     "steps_median": 5.0
+    },
+    "primary_k2": {
+     "catalogue_minutes_median": 30.0,
+     "median_bas_reads": 4.0,
+     "median_physical_checks": 2.0,
+     "n": 1000,
+     "n_checks_with_fallback_surcharge": 10,
+     "p_all_correct": 0.985,
+     "robustness": "SENSITIVE TO PACE",
+     "scenarios": {
+      "CENTRAL": {
+       "S3_wait_added": {
+        "label": "TIE",
+        "median": 4.95,
+        "p_tool_faster": 0.002,
+        "q25": 4.95,
+        "q75": 4.95,
+        "ratio": 1.1
+       },
+       "primary": {
+        "label": "TIE",
+        "median": 4.95,
+        "p_tool_faster": 0.002,
+        "q25": 4.95,
+        "q75": 4.95,
+        "ratio": 1.1
+       }
+      },
+      "FAST": {
+       "S3_wait_added": {
+        "label": "TOOL FASTER",
+        "median": 2.6,
+        "p_tool_faster": 0.926,
+        "q25": 2.6,
+        "q75": 2.6,
+        "ratio": 0.577778
+       },
+       "primary": {
+        "label": "TOOL FASTER",
+        "median": 2.6,
+        "p_tool_faster": 0.985,
+        "q25": 2.6,
+        "q75": 2.6,
+        "ratio": 0.577778
+       }
+      },
+      "SLOW": {
+       "S3_wait_added": {
+        "label": "TECHNICIAN FASTER",
+        "median": 8.3,
+        "p_tool_faster": 0.002,
+        "q25": 8.3,
+        "q75": 8.3,
+        "ratio": 1.844444
+       },
+       "primary": {
+        "label": "TECHNICIAN FASTER",
+        "median": 8.3,
+        "p_tool_faster": 0.002,
+        "q25": 8.3,
+        "q75": 8.3,
+        "ratio": 1.844444
+       }
+      }
+     },
+     "share_worlds_with_reheat_coil": 0.0,
+     "steps_median": 6.0
+    },
+    "primary_k6": {
+     "catalogue_minutes_median": 30.0,
+     "median_bas_reads": 4.0,
+     "median_physical_checks": 2.0,
+     "n": 1000,
+     "n_checks_with_fallback_surcharge": 6,
+     "p_all_correct": 0.99,
+     "robustness": "SENSITIVE TO PACE",
+     "scenarios": {
+      "CENTRAL": {
+       "S3_wait_added": {
+        "label": "TIE",
+        "median": 4.95,
+        "p_tool_faster": 0.0,
+        "q25": 4.95,
+        "q75": 4.95,
+        "ratio": 1.1
+       },
+       "primary": {
+        "label": "TIE",
+        "median": 4.95,
+        "p_tool_faster": 0.0,
+        "q25": 4.95,
+        "q75": 4.95,
+        "ratio": 1.1
+       }
+      },
+      "FAST": {
+       "S3_wait_added": {
+        "label": "TOOL FASTER",
+        "median": 2.6,
+        "p_tool_faster": 0.927,
+        "q25": 2.6,
+        "q75": 2.6,
+        "ratio": 0.577778
+       },
+       "primary": {
+        "label": "TOOL FASTER",
+        "median": 2.6,
+        "p_tool_faster": 0.984,
+        "q25": 2.6,
+        "q75": 2.6,
+        "ratio": 0.577778
+       }
+      },
+      "SLOW": {
+       "S3_wait_added": {
+        "label": "TECHNICIAN FASTER",
+        "median": 8.3,
+        "p_tool_faster": 0.0,
+        "q25": 8.3,
+        "q75": 8.3,
+        "ratio": 1.844444
+       },
+       "primary": {
+        "label": "TECHNICIAN FASTER",
+        "median": 8.3,
+        "p_tool_faster": 0.0,
+        "q25": 8.3,
+        "q75": 8.3,
+        "ratio": 1.844444
+       }
+      }
+     },
+     "share_worlds_with_reheat_coil": 0.0,
+     "steps_median": 6.0
+    }
+   },
+   "technician_minutes": 4.5,
+   "title": "Everything HVACR: office and cubicle area too cold in the morning, Trane VAV controls"
+  },
+  "ep160": {
+   "case": "ep160",
+   "runs": {
+    "S2_k6": {
+     "catalogue_minutes_median": 14.0,
+     "median_bas_reads": 7.0,
+     "median_physical_checks": 0.0,
+     "n": 1000,
+     "n_checks_with_fallback_surcharge": 0,
+     "p_all_correct": 0.994,
+     "robustness": "SENSITIVE TO PACE",
+     "scenarios": {
+      "CENTRAL": {
+       "S1_like_for_like": {
+        "label": "TECHNICIAN FASTER",
+        "median": 8.5,
+        "p_tool_faster": 0.0,
+        "q25": 8.5,
+        "q75": 8.5,
+        "ratio": 2.0
+       },
+       "S3_wait_added": {
+        "label": "TIE",
+        "median": 5.25,
+        "p_tool_faster": 0.0,
+        "q25": 5.25,
+        "q75": 5.25,
+        "ratio": 1.235294
+       },
+       "primary": {
+        "label": "TIE",
+        "median": 5.25,
+        "p_tool_faster": 0.0,
+        "q25": 5.25,
+        "q75": 5.25,
+        "ratio": 1.235294
+       }
+      },
+      "FAST": {
+       "S1_like_for_like": {
+        "label": "TECHNICIAN FASTER",
+        "median": 6.75,
+        "p_tool_faster": 0.0,
+        "q25": 6.75,
+        "q75": 6.75,
+        "ratio": 1.588235
+       },
+       "S3_wait_added": {
+        "label": "TIE",
+        "median": 3.5,
+        "p_tool_faster": 0.824,
+        "q25": 3.5,
+        "q75": 3.5,
+        "ratio": 0.823529
+       },
+       "primary": {
+        "label": "TIE",
+        "median": 3.5,
+        "p_tool_faster": 0.824,
+        "q25": 3.5,
+        "q75": 3.5,
+        "ratio": 0.823529
+       }
+      },
+      "SLOW": {
+       "S1_like_for_like": {
+        "label": "TECHNICIAN FASTER",
+        "median": 12.0,
+        "p_tool_faster": 0.0,
+        "q25": 12.0,
+        "q75": 12.0,
+        "ratio": 2.823529
+       },
+       "S3_wait_added": {
+        "label": "TECHNICIAN FASTER",
+        "median": 8.75,
+        "p_tool_faster": 0.0,
+        "q25": 8.75,
+        "q75": 8.75,
+        "ratio": 2.058824
+       },
+       "primary": {
+        "label": "TECHNICIAN FASTER",
+        "median": 8.75,
+        "p_tool_faster": 0.0,
+        "q25": 8.75,
+        "q75": 8.75,
+        "ratio": 2.058824
+       }
+      }
+     },
+     "share_worlds_with_reheat_coil": 0.176,
+     "steps_median": 7.0
+    },
+    "primary_k12": {
+     "catalogue_minutes_median": 12.0,
+     "median_bas_reads": 6.0,
+     "median_physical_checks": 0.0,
+     "n": 1000,
+     "n_checks_with_fallback_surcharge": 0,
+     "p_all_correct": 0.995,
+     "robustness": "SENSITIVE TO PACE",
+     "scenarios": {
+      "CENTRAL": {
+       "S1_like_for_like": {
+        "label": "TECHNICIAN FASTER",
+        "median": 7.75,
+        "p_tool_faster": 0.0,
+        "q25": 7.75,
+        "q75": 7.75,
+        "ratio": 1.823529
+       },
+       "S3_wait_added": {
+        "label": "TIE",
+        "median": 4.5,
+        "p_tool_faster": 0.0,
+        "q25": 4.5,
+        "q75": 4.5,
+        "ratio": 1.058824
+       },
+       "primary": {
+        "label": "TIE",
+        "median": 4.5,
+        "p_tool_faster": 0.0,
+        "q25": 4.5,
+        "q75": 4.5,
+        "ratio": 1.058824
+       }
+      },
+      "FAST": {
+       "S1_like_for_like": {
+        "label": "TECHNICIAN FASTER",
+        "median": 6.25,
+        "p_tool_faster": 0.086,
+        "q25": 6.25,
+        "q75": 6.25,
+        "ratio": 1.470588
+       },
+       "S3_wait_added": {
+        "label": "TOOL FASTER",
+        "median": 3.0,
+        "p_tool_faster": 0.91,
+        "q25": 3.0,
+        "q75": 3.0,
+        "ratio": 0.705882
+       },
+       "primary": {
+        "label": "TOOL FASTER",
+        "median": 3.0,
+        "p_tool_faster": 0.91,
+        "q25": 3.0,
+        "q75": 3.0,
+        "ratio": 0.705882
+       }
+      },
+      "SLOW": {
+       "S1_like_for_like": {
+        "label": "TECHNICIAN FASTER",
+        "median": 10.75,
+        "p_tool_faster": 0.0,
+        "q25": 10.75,
+        "q75": 10.75,
+        "ratio": 2.529412
+       },
+       "S3_wait_added": {
+        "label": "TECHNICIAN FASTER",
+        "median": 7.5,
+        "p_tool_faster": 0.0,
+        "q25": 7.5,
+        "q75": 7.5,
+        "ratio": 1.764706
+       },
+       "primary": {
+        "label": "TECHNICIAN FASTER",
+        "median": 7.5,
+        "p_tool_faster": 0.0,
+        "q25": 7.5,
+        "q75": 7.5,
+        "ratio": 1.764706
+       }
+      }
+     },
+     "share_worlds_with_reheat_coil": 0.176,
+     "steps_median": 6.0
+    },
+    "primary_k2": {
+     "catalogue_minutes_median": 14.0,
+     "median_bas_reads": 7.0,
+     "median_physical_checks": 0.0,
+     "n": 1000,
+     "n_checks_with_fallback_surcharge": 0,
+     "p_all_correct": 0.992,
+     "robustness": "SENSITIVE TO PACE",
+     "scenarios": {
+      "CENTRAL": {
+       "S1_like_for_like": {
+        "label": "TECHNICIAN FASTER",
+        "median": 8.5,
+        "p_tool_faster": 0.0,
+        "q25": 8.5,
+        "q75": 8.5,
+        "ratio": 2.0
+       },
+       "S3_wait_added": {
+        "label": "TIE",
+        "median": 5.25,
+        "p_tool_faster": 0.003,
+        "q25": 5.25,
+        "q75": 5.25,
+        "ratio": 1.235294
+       },
+       "primary": {
+        "label": "TIE",
+        "median": 5.25,
+        "p_tool_faster": 0.003,
+        "q25": 5.25,
+        "q75": 5.25,
+        "ratio": 1.235294
+       }
+      },
+      "FAST": {
+       "S1_like_for_like": {
+        "label": "TECHNICIAN FASTER",
+        "median": 6.75,
+        "p_tool_faster": 0.0,
+        "q25": 6.75,
+        "q75": 6.75,
+        "ratio": 1.588235
+       },
+       "S3_wait_added": {
+        "label": "TIE",
+        "median": 3.5,
+        "p_tool_faster": 0.804,
+        "q25": 3.5,
+        "q75": 3.5,
+        "ratio": 0.823529
+       },
+       "primary": {
+        "label": "TIE",
+        "median": 3.5,
+        "p_tool_faster": 0.804,
+        "q25": 3.5,
+        "q75": 3.5,
+        "ratio": 0.823529
+       }
+      },
+      "SLOW": {
+       "S1_like_for_like": {
+        "label": "TECHNICIAN FASTER",
+        "median": 12.0,
+        "p_tool_faster": 0.0,
+        "q25": 12.0,
+        "q75": 12.0,
+        "ratio": 2.823529
+       },
+       "S3_wait_added": {
+        "label": "TECHNICIAN FASTER",
+        "median": 8.75,
+        "p_tool_faster": 0.002,
+        "q25": 8.75,
+        "q75": 8.75,
+        "ratio": 2.058824
+       },
+       "primary": {
+        "label": "TECHNICIAN FASTER",
+        "median": 8.75,
+        "p_tool_faster": 0.002,
+        "q25": 8.75,
+        "q75": 8.75,
+        "ratio": 2.058824
+       }
+      }
+     },
+     "share_worlds_with_reheat_coil": 0.175,
+     "steps_median": 7.0
+    },
+    "primary_k6": {
+     "catalogue_minutes_median": 14.0,
+     "median_bas_reads": 7.0,
+     "median_physical_checks": 0.0,
+     "n": 1000,
+     "n_checks_with_fallback_surcharge": 0,
+     "p_all_correct": 0.994,
+     "robustness": "SENSITIVE TO PACE",
+     "scenarios": {
+      "CENTRAL": {
+       "S1_like_for_like": {
+        "label": "TECHNICIAN FASTER",
+        "median": 8.5,
+        "p_tool_faster": 0.0,
+        "q25": 8.5,
+        "q75": 8.5,
+        "ratio": 2.0
+       },
+       "S3_wait_added": {
+        "label": "TIE",
+        "median": 5.25,
+        "p_tool_faster": 0.0,
+        "q25": 5.25,
+        "q75": 5.25,
+        "ratio": 1.235294
+       },
+       "primary": {
+        "label": "TIE",
+        "median": 5.25,
+        "p_tool_faster": 0.0,
+        "q25": 5.25,
+        "q75": 5.25,
+        "ratio": 1.235294
+       }
+      },
+      "FAST": {
+       "S1_like_for_like": {
+        "label": "TECHNICIAN FASTER",
+        "median": 6.75,
+        "p_tool_faster": 0.0,
+        "q25": 6.75,
+        "q75": 6.75,
+        "ratio": 1.588235
+       },
+       "S3_wait_added": {
+        "label": "TIE",
+        "median": 3.5,
+        "p_tool_faster": 0.824,
+        "q25": 3.5,
+        "q75": 3.5,
+        "ratio": 0.823529
+       },
+       "primary": {
+        "label": "TIE",
+        "median": 3.5,
+        "p_tool_faster": 0.824,
+        "q25": 3.5,
+        "q75": 3.5,
+        "ratio": 0.823529
+       }
+      },
+      "SLOW": {
+       "S1_like_for_like": {
+        "label": "TECHNICIAN FASTER",
+        "median": 12.0,
+        "p_tool_faster": 0.0,
+        "q25": 12.0,
+        "q75": 12.0,
+        "ratio": 2.823529
+       },
+       "S3_wait_added": {
+        "label": "TECHNICIAN FASTER",
+        "median": 8.75,
+        "p_tool_faster": 0.0,
+        "q25": 8.75,
+        "q75": 8.75,
+        "ratio": 2.058824
+       },
+       "primary": {
+        "label": "TECHNICIAN FASTER",
+        "median": 8.75,
+        "p_tool_faster": 0.0,
+        "q25": 8.75,
+        "q75": 8.75,
+        "ratio": 2.058824
+       }
+      }
+     },
+     "share_worlds_with_reheat_coil": 0.176,
+     "steps_median": 7.0
+    }
+   },
+   "technician_minutes": 4.25,
+   "title": "Nighthawk HVAC EP160: VAV electric heat not heating"
+  }
+ }
+}

@@ -1,0 +1,53 @@
+
+Visit with 2 complaints: Room-206 (drawings: 206 on RTU-2); Room-232 (drawings: 232 on RTU-2).
+
+Next check (about 2 min) (informs 2 complaints): In the control system, read the duct static pressure of RTU-2 against its setpoint: is it low?  [one reading speaks for: Room-206, Room-232]
+  about 11% likely to come back abnormal; expected to sharpen the picture by 0.56 bits over the complaints it informs
+  Room-206: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  Room-232: Zone sensor, setpoint or schedule 21% | Controller set up wrongly 13%
+  air handlers: RTU-2: fan off 0%, low static 9%
+
+Next check (about 2 min): In the control system, read the airflow setpoint and measured airflow of box 232: does the measurement miss the setpoint by more than about 10%?
+  about 36% likely to come back abnormal; expected to sharpen the picture by 0.33 bits over the complaints it informs
+  Room-206: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  Room-232: Zone sensor, setpoint or schedule 21% | Controller set up wrongly 13%
+  air handlers: RTU-2: fan off 0%, low static 9%
+
+Next check (about 2 min): In the control system, read the temperature, setpoint, occupancy schedule and mode of Room-232: is the setpoint, schedule or mode wrong for this room?
+  about 20% likely to come back abnormal; expected to sharpen the picture by 0.33 bits over the complaints it informs
+  Room-206: Zone sensor, setpoint or schedule 20% | Controller set up wrongly 13%
+  Room-232: Zone sensor, setpoint or schedule 80% | Controller set up wrongly 3%
+  air handlers: RTU-2: fan off 0%, low static 3%
+
+Next check (about 2 min): In the control system, read the temperature, setpoint, occupancy schedule and mode of Room-206: is the setpoint, schedule or mode wrong for this room?
+  about 19% likely to come back abnormal; expected to sharpen the picture by 0.31 bits over the complaints it informs
+  Room-206: Zone sensor, setpoint or schedule 79% | Controller set up wrongly 3%
+  Room-232: Zone sensor, setpoint or schedule 81% | Controller set up wrongly 3%
+  air handlers: RTU-2: fan off 0%, low static 1%
+
+Next check (about 2 min): In the control system, read the damper position of box 232 against its command: is it pinned at 100% while airflow is low, or not following its command?
+  about 9% likely to come back abnormal; expected to sharpen the picture by 0.10 bits over the complaints it informs
+  Room-206: Zone sensor, setpoint or schedule 79% | Controller set up wrongly 3%
+  Room-232: Zone sensor, setpoint or schedule 81% | Controller set up wrongly 3%
+  air handlers: RTU-2: fan off 0%, low static 1%
+
+Next check (about 11 min): In Room-206, compare the thermostat or zone sensor with a reference thermometer and check its setpoint and mode: is it off, or the setpoint or mode wrong?
+  about 74% likely to come back abnormal; expected to sharpen the picture by 0.46 bits over the complaints it informs
+  Room-206: Zone sensor, setpoint or schedule 99% | Controller set up wrongly 0%
+  Room-232: Zone sensor, setpoint or schedule 82% | Controller set up wrongly 3%
+  air handlers: RTU-2: fan off 0%, low static 0%
+
+Next check (about 11 min): In Room-232, compare the thermostat or zone sensor with a reference thermometer and check its setpoint and mode: is it off, or the setpoint or mode wrong?
+  about 76% likely to come back abnormal; expected to sharpen the picture by 0.41 bits over the complaints it informs
+  Room-206: Zone sensor, setpoint or schedule 99% | Controller set up wrongly 0%
+  Room-232: Zone sensor, setpoint or schedule 82% | Controller set up wrongly 3%
+  air handlers: RTU-2: fan off 0%, low static 0%
+
+No further check is worth its time.
+  Room-206: Zone sensor, setpoint or schedule 99% | Controller set up wrongly 0% | Flow sensor reads wrong 0%
+  Room-232: Zone sensor, setpoint or schedule 82% | Controller set up wrongly 3% | Flow sensor reads wrong 3%
+  air handlers: RTU-2: fan off 0%, low static 0%
+
+So far: 7 checks, about 32 minutes for the whole visit.
+  Note: The confidence figures assume every check reads as reliably as the catalogue's rates say; those rates are placeholders (only override_room's come from a simulation). If the checks in your building are less reliable, the real confidence is lower (in v0's simulations, worse checks made the tool confidently wrong about three to four times as often; v1 has not been measured yet).
+  Note: The joint model assumes each air handler is faulty with probability f in the visit's window, that a room on a faulty air handler complains with a stated probability, and that the drawings' air handler for every box is right; all of these are placeholders, not measurements.

@@ -1,0 +1,1001 @@
+draw,steps,minutes,first_check,all_correct,any_wrong_and_confident,all_concluded,checks
+0,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+1,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+2,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+3,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+4,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+5,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+6,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+7,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+8,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+9,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+10,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+11,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+12,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+13,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+14,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+15,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+16,7,23.0,bas_static,0,1,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow
+17,10,43.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow bas_damper reheat_coil
+18,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+19,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+20,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+21,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+22,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+23,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+24,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+25,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+26,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+27,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+28,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+29,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+30,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+31,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+32,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+33,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+34,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+35,7,23.0,bas_static,0,1,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow
+36,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+37,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+38,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+39,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+40,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+41,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+42,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+43,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+44,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+45,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+46,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+47,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+48,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+49,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+50,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+51,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+52,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+53,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+54,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+55,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+56,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+57,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+58,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+59,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+60,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+61,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+62,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+63,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+64,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+65,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+66,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+67,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+68,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+69,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+70,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+71,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+72,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+73,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+74,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+75,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+76,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+77,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+78,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+79,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+80,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+81,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+82,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+83,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+84,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+85,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+86,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+87,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+88,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+89,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+90,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+91,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+92,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+93,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+94,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+95,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+96,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+97,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+98,11,48.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper confirm_acts bas_airflow bas_hunting reheat_coil
+99,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+100,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+101,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+102,15,68.0,bas_static,1,0,1,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_damper bas_hunting bas_hunting bas_controller bas_controller reheat_coil reheat_coil
+103,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+104,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+105,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+106,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+107,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+108,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+109,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+110,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+111,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+112,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+113,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+114,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+115,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+116,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+117,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+118,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+119,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+120,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+121,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+122,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+123,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+124,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+125,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+126,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+127,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+128,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+129,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+130,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+131,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+132,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+133,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+134,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+135,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+136,12,44.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller confirm_acts reheat_coil
+137,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+138,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+139,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+140,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+141,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+142,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+143,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+144,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+145,10,34.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_damper bas_zone bas_damper bas_reheat bas_zone reheat_coil
+146,10,34.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_damper bas_zone bas_damper bas_reheat bas_zone reheat_coil
+147,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+148,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+149,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+150,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+151,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+152,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+153,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+154,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+155,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+156,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+157,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+158,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+159,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+160,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+161,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+162,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+163,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+164,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+165,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+166,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+167,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+168,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+169,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+170,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+171,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+172,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+173,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+174,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+175,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+176,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+177,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+178,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+179,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+180,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+181,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+182,13,68.0,bas_static,1,0,1,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil reheat_coil
+183,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+184,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+185,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+186,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+187,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+188,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+189,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+190,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+191,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+192,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+193,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+194,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+195,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+196,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+197,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+198,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+199,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+200,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+201,7,14.0,bas_static,0,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_damper bas_zone bas_damper
+202,12,52.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting sensing_ports confirm_acts reheat_coil
+203,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+204,11,45.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper confirm_acts sensing_ports reheat_coil
+205,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+206,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+207,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+208,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+209,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+210,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+211,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+212,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+213,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+214,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+215,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+216,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+217,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+218,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+219,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+220,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+221,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+222,11,48.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper confirm_acts bas_airflow bas_hunting reheat_coil
+223,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+224,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+225,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+226,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+227,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+228,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+229,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+230,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+231,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+232,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+233,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+234,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+235,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+236,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+237,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+238,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+239,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+240,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+241,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+242,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+243,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+244,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+245,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+246,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+247,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+248,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+249,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+250,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+251,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+252,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+253,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+254,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+255,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+256,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+257,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+258,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+259,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+260,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+261,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+262,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+263,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+264,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+265,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+266,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+267,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+268,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+269,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+270,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+271,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+272,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+273,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+274,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+275,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+276,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+277,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+278,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+279,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+280,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+281,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+282,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+283,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+284,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+285,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+286,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+287,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+288,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+289,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+290,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+291,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+292,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+293,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+294,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+295,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+296,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+297,15,68.0,bas_static,1,0,1,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_damper bas_hunting bas_hunting bas_controller bas_controller reheat_coil reheat_coil
+298,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+299,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+300,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+301,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+302,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+303,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+304,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+305,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+306,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+307,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+308,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+309,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+310,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+311,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+312,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+313,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+314,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+315,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+316,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+317,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+318,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+319,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+320,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+321,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+322,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+323,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+324,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+325,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+326,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+327,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+328,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+329,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+330,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+331,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+332,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+333,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+334,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+335,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+336,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+337,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+338,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+339,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+340,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+341,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+342,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+343,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+344,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+345,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+346,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+347,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+348,12,56.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow bas_damper confirm_acts sensing_ports reheat_coil
+349,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+350,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+351,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+352,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+353,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+354,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+355,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+356,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+357,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+358,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+359,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+360,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+361,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+362,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+363,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+364,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+365,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+366,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+367,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+368,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+369,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+370,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+371,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+372,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+373,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+374,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+375,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+376,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+377,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+378,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+379,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+380,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+381,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+382,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+383,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+384,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+385,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+386,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+387,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+388,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+389,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+390,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+391,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+392,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+393,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+394,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+395,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+396,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+397,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+398,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+399,12,44.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller confirm_acts reheat_coil
+400,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+401,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+402,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+403,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+404,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+405,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+406,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+407,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+408,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+409,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+410,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+411,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+412,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+413,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+414,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+415,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+416,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+417,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+418,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+419,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+420,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+421,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+422,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+423,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+424,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+425,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+426,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+427,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+428,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+429,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+430,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+431,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+432,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+433,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+434,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+435,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+436,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+437,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+438,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+439,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+440,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+441,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+442,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+443,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+444,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+445,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+446,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+447,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+448,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+449,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+450,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+451,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+452,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+453,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+454,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+455,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+456,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+457,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+458,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+459,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+460,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+461,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+462,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+463,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+464,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+465,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+466,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+467,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+468,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+469,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+470,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+471,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+472,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+473,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+474,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+475,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+476,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+477,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+478,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+479,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+480,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+481,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+482,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+483,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+484,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+485,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+486,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+487,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+488,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+489,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+490,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+491,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+492,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+493,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+494,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+495,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+496,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+497,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+498,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+499,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+500,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+501,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+502,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+503,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+504,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+505,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+506,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+507,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+508,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+509,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+510,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+511,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+512,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+513,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+514,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+515,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+516,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+517,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+518,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+519,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+520,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+521,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+522,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+523,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+524,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+525,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+526,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+527,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+528,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+529,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+530,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+531,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+532,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+533,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+534,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+535,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+536,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+537,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+538,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+539,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+540,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+541,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+542,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+543,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+544,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+545,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+546,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+547,10,43.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow bas_damper reheat_coil
+548,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+549,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+550,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+551,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+552,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+553,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+554,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+555,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+556,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+557,10,43.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow bas_damper reheat_coil
+558,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+559,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+560,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+561,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+562,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+563,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+564,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+565,7,23.0,bas_static,0,1,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow
+566,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+567,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+568,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+569,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+570,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+571,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+572,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+573,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+574,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+575,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+576,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+577,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+578,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+579,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+580,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+581,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+582,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+583,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+584,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+585,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+586,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+587,11,68.0,bas_static,1,0,1,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat thermostat bas_airflow bas_airflow reheat_coil reheat_coil
+588,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+589,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+590,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+591,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+592,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+593,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+594,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+595,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+596,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+597,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+598,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+599,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+600,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+601,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+602,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+603,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+604,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+605,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+606,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+607,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+608,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+609,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+610,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+611,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+612,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+613,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+614,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+615,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+616,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+617,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+618,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+619,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+620,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+621,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+622,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+623,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+624,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+625,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+626,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+627,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+628,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+629,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+630,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+631,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+632,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+633,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+634,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+635,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+636,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+637,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+638,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+639,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+640,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+641,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+642,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+643,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+644,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+645,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+646,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+647,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+648,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+649,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+650,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+651,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+652,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+653,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+654,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+655,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+656,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+657,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+658,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+659,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+660,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+661,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+662,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+663,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+664,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+665,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+666,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+667,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+668,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+669,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+670,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+671,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+672,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+673,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+674,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+675,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+676,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+677,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+678,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+679,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+680,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+681,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+682,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+683,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+684,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+685,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+686,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+687,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+688,11,45.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper confirm_acts sensing_ports reheat_coil
+689,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+690,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+691,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+692,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+693,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+694,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+695,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+696,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+697,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+698,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+699,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+700,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+701,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+702,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+703,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+704,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+705,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+706,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+707,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+708,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+709,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+710,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+711,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+712,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+713,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+714,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+715,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+716,10,43.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow bas_damper reheat_coil
+717,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+718,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+719,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+720,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+721,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+722,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+723,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+724,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+725,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+726,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+727,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+728,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+729,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+730,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+731,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+732,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+733,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+734,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+735,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+736,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+737,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+738,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+739,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+740,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+741,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+742,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+743,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+744,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+745,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+746,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+747,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+748,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+749,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+750,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+751,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+752,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+753,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+754,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+755,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+756,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+757,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+758,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+759,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+760,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+761,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+762,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+763,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+764,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+765,7,23.0,bas_static,0,1,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow
+766,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+767,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+768,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+769,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+770,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+771,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+772,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+773,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+774,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+775,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+776,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+777,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+778,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+779,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+780,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+781,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+782,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+783,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+784,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+785,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+786,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+787,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+788,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+789,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+790,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+791,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+792,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+793,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+794,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+795,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+796,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+797,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+798,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+799,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+800,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+801,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+802,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+803,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+804,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+805,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+806,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+807,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+808,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+809,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+810,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+811,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+812,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+813,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+814,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+815,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+816,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+817,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+818,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+819,11,48.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper confirm_acts bas_airflow bas_hunting reheat_coil
+820,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+821,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+822,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+823,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+824,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+825,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+826,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+827,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+828,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+829,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+830,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+831,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+832,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+833,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+834,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+835,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+836,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+837,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+838,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+839,11,68.0,bas_static,1,0,1,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat thermostat bas_airflow bas_airflow reheat_coil reheat_coil
+840,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+841,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+842,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+843,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+844,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+845,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+846,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+847,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+848,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+849,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+850,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+851,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+852,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+853,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+854,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+855,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+856,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+857,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+858,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+859,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+860,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+861,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+862,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+863,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+864,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+865,13,68.0,bas_static,1,0,1,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil reheat_coil
+866,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+867,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+868,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+869,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+870,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+871,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+872,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+873,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+874,12,44.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller confirm_acts reheat_coil
+875,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+876,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+877,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+878,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+879,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+880,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+881,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+882,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+883,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+884,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+885,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+886,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+887,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+888,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+889,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+890,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+891,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+892,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+893,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+894,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+895,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+896,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+897,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+898,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+899,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+900,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+901,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+902,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+903,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+904,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+905,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+906,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+907,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+908,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+909,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+910,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+911,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+912,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+913,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+914,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+915,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+916,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+917,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+918,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+919,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+920,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+921,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+922,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+923,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+924,10,34.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper bas_damper reheat_coil
+925,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+926,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+927,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+928,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+929,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+930,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+931,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+932,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+933,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+934,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+935,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+936,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+937,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+938,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+939,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+940,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+941,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+942,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+943,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+944,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+945,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+946,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+947,8,16.0,bas_static,1,0,0,bas_static bas_airflow bas_airflow bas_reheat bas_reheat bas_zone bas_zone bas_damper
+948,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+949,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+950,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+951,15,68.0,bas_static,1,0,1,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_damper bas_hunting bas_hunting bas_controller bas_controller reheat_coil reheat_coil
+952,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+953,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+954,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+955,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+956,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+957,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+958,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+959,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+960,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+961,12,44.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller confirm_acts reheat_coil
+962,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+963,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+964,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+965,7,23.0,bas_static,0,1,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow
+966,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+967,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+968,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+969,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+970,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+971,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+972,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+973,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+974,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+975,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+976,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+977,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+978,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+979,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+980,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow bas_damper bas_hunting bas_controller reheat_coil
+981,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+982,9,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone thermostat bas_airflow bas_airflow reheat_coil
+983,13,66.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper confirm_acts bas_airflow bas_damper bas_hunting reheat_coil reheat_coil
+984,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+985,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+986,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+987,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+988,12,44.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller confirm_acts reheat_coil
+989,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+990,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+991,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+992,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil
+993,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+994,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+995,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+996,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+997,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+998,7,14.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_airflow
+999,11,41.0,bas_static,1,0,0,bas_static bas_reheat bas_reheat bas_zone bas_zone bas_airflow bas_damper bas_airflow bas_hunting bas_controller reheat_coil

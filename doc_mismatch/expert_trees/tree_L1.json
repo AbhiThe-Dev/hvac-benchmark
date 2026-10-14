@@ -1,0 +1,176 @@
+{
+  "name": "BAS-first VAV comfort tree",
+  "preamble": {
+    "op": "check", "check": ["bas_static", "ahu_gauge"], "target": "ahu",
+    "why": "2+ complaints on one AHU: read the shared parent first. Low duct static covers both fan off and low static.",
+    "pos": {
+      "op": "check", "check": ["bas_ahu_fan", "ahu_visit"], "target": "ahu",
+      "why": "static is low: read the fan so fan off is split from low static",
+      "pos": {"op": "done"},
+      "neg": {"op": "done"}
+    },
+    "neg": {"op": "done"}
+  },
+  "root": {
+    "op": "check", "check": ["bas_static"], "target": "ahu",
+    "why": "2 min at the laptop, shared across complaints. Skipped in tier C (the 17 min walk is not worth it up front).",
+    "pos": {
+      "op": "check", "check": ["bas_ahu_fan"], "target": "ahu",
+      "why": "static low: is the fan actually off or tripped?",
+      "pos": {"op": "conclude", "cause": "ahu_fan_off", "sure": true},
+      "neg": {
+        "op": "check", "check": ["bas_damper"], "target": "box",
+        "why": "fan running, static low: is this box starved (pinned at 100% with low airflow)?",
+        "pos": {"op": "conclude", "cause": "low_static", "sure": true},
+        "neg": {"op": "conclude", "cause": "low_static", "sure": false}
+      }
+    },
+    "neg": {
+      "op": "check", "check": ["bas_controller"], "target": "box",
+      "why": "if the controller is offline, every other BAS reading is stale, so check it first",
+      "pos": {"op": "conclude", "cause": "controller_comms", "sure": true},
+      "neg": {
+        "op": "check", "check": ["bas_zone"], "target": "box",
+        "why": "setpoint, schedule or mode is the cheapest and most common cause",
+        "pos": {"op": "conclude", "cause": "zone_sensor_setpoint", "sure": true},
+        "neg": {
+          "op": "check", "check": ["bas_airflow"], "target": "box",
+          "why": "does the box deliver its setpoint? No na: in tier C this falls through to the room-first path.",
+          "pos": {
+            "op": "check", "check": ["confirm_acts"], "target": "box",
+            "why": "box misses its setpoint with AHU, controller and zone fine: walk to it. pos = damper moves.",
+            "neg": {
+              "op": "check", "check": ["power_24vac"], "target": "box",
+              "why": "damper will not move: power first (4 min once there)",
+              "pos": {"op": "conclude", "cause": "no_power", "sure": true},
+              "neg": {
+                "op": "check", "check": ["control_signal"], "target": "box",
+                "why": "24 VAC present: is a command reaching the actuator?",
+                "pos": {"op": "conclude", "cause": "signal_fault", "sure": true},
+                "neg": {
+                  "op": "check", "check": ["manual_damper_test"], "target": "box",
+                  "why": "power and signal present, no motion: is the blade stuck?",
+                  "pos": {"op": "conclude", "cause": "damper_mech", "sure": true},
+                  "neg": {
+                    "op": "check", "check": ["damper_linkage"], "target": "box",
+                    "why": "shaft is free: linkage slipping or disconnected, or a dead actuator",
+                    "pos": {"op": "conclude", "cause": "damper_mech", "sure": true},
+                    "neg": {"op": "conclude", "cause": "actuator_fail", "sure": true}
+                  }
+                }
+              }
+            },
+            "pos": {
+              "op": "check", "check": ["static_at_box"], "target": "box",
+              "why": "damper moves but airflow is short: is the inlet starved locally (leak or blockage)?",
+              "pos": {"op": "conclude", "cause": "low_static", "sure": true},
+              "neg": {
+                "op": "check", "check": ["flow_vs_gauge"], "target": "box",
+                "why": "inlet static fine: does the controller's pressure reading match a gauge?",
+                "pos": {"op": "conclude", "cause": "flow_sensor", "sure": true},
+                "neg": {
+                  "op": "check", "check": ["max_airflow"], "target": "box",
+                  "why": "is the max airflow setpoint off the design value?",
+                  "pos": {"op": "conclude", "cause": "controller_config", "sure": true},
+                  "neg": {
+                    "op": "check", "check": ["bas_hunting"], "target": "box",
+                    "why": "5 min watch for loop tuning (damper and airflow swinging)",
+                    "pos": {"op": "conclude", "cause": "controller_config", "sure": true},
+                    "neg": {
+                      "op": "check", "check": ["damper_linkage"], "target": "box",
+                      "why": "damper moves but may not reach full travel",
+                      "pos": {"op": "conclude", "cause": "damper_mech", "sure": true},
+                      "neg": {"op": "escalate", "guess": "actuator_fail"}
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "neg": {
+            "op": "check", "check": ["bas_reheat"], "target": "box",
+            "why": "box hits its setpoint: heat called but valve or stage not responding? na (no reheat) falls through.",
+            "pos": {"op": "conclude", "cause": "reheat_fail", "sure": true},
+            "neg": {
+              "op": "check", "check": ["flow_hood"], "target": "box",
+              "why": "the room is where the box's claim meets reality. In tier C this is the first physical check.",
+              "pos": {
+                "op": "check", "check": ["diffuser_duct"], "target": "box",
+                "why": "in the room already (10 min): look at the diffuser and the duct behind it",
+                "pos": {"op": "conclude", "cause": "duct_diffuser", "sure": true},
+                "neg": {
+                  "op": "check", "check": ["override_diffuser"], "target": "box",
+                  "why": "drive the documented box to full cooling. pos = diffuser airflow rises, so it feeds this room and the air path is open.",
+                  "pos": {
+                    "op": "check", "check": ["flow_vs_gauge", "sensing_ports"], "target": "box",
+                    "why": "box feeds the room but the hood disagrees: the sensor is suspect (gauge check on BAS tiers, port inspection in C)",
+                    "pos": {"op": "conclude", "cause": "flow_sensor", "sure": true},
+                    "neg": {
+                      "op": "check", "check": ["k_factor"], "target": "box",
+                      "why": "K-factor against the nameplate (n/a in C, falls through)",
+                      "pos": {"op": "conclude", "cause": "controller_config", "sure": true},
+                      "neg": {"op": "conclude", "cause": "duct_diffuser", "sure": false}
+                    }
+                  },
+                  "neg": {
+                    "op": "check", "check": ["confirm_acts"], "target": "box",
+                    "why": "no airflow response: before blaming the drawings, does the documented box move at all?",
+                    "pos": {
+                      "op": "check", "check": ["static_at_box"], "target": "box",
+                      "why": "box moves: is the inlet starved?",
+                      "pos": {
+                        "op": "check", "check": ["bas_ahu_fan", "ahu_visit"], "target": "ahu",
+                        "why": "starved inlet: split fan off from low static",
+                        "pos": {"op": "conclude", "cause": "ahu_fan_off", "sure": true},
+                        "neg": {"op": "conclude", "cause": "low_static", "sure": true}
+                      },
+                      "neg": {"op": "find_feeder"}
+                    },
+                    "neg": {
+                      "op": "check", "check": ["power_24vac"], "target": "box",
+                      "why": "tier C mechanical chain (BAS tiers rarely get here): power first",
+                      "pos": {"op": "conclude", "cause": "no_power", "sure": true},
+                      "neg": {
+                        "op": "check", "check": ["controller_leds"], "target": "box",
+                        "why": "power fine: is the controller dead or off the network?",
+                        "pos": {"op": "conclude", "cause": "controller_comms", "sure": true},
+                        "neg": {
+                          "op": "check", "check": ["manual_damper_test"], "target": "box",
+                          "why": "is the blade stuck?",
+                          "pos": {"op": "conclude", "cause": "damper_mech", "sure": true},
+                          "neg": {"op": "conclude", "cause": "actuator_fail", "sure": false}
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "neg": {
+                "op": "check", "check": ["thermostat"], "target": "box",
+                "why": "airflow is as expected: sensor calibration, setpoint and mode (the BAS reads cannot catch a drifted sensor)",
+                "pos": {"op": "conclude", "cause": "zone_sensor_setpoint", "sure": true},
+                "neg": {
+                  "op": "check", "check": ["max_airflow"], "target": "box",
+                  "why": "box delivers what it is set to: are the setpoints right? (n/a in C)",
+                  "pos": {"op": "conclude", "cause": "controller_config", "sure": true},
+                  "neg": {
+                    "op": "check", "check": ["design_load"], "target": "box",
+                    "why": "room use against box design airflow",
+                    "pos": {"op": "conclude", "cause": "capacity_design", "sure": true},
+                    "neg": {
+                      "op": "check", "check": ["reheat_coil"], "target": "box",
+                      "why": "last physical check (16 min); the BAS reheat read already missed it where a BAS exists",
+                      "pos": {"op": "conclude", "cause": "reheat_fail", "sure": true},
+                      "neg": {"op": "escalate", "guess": "controller_config"}
+                    },
+                    "na": {"op": "conclude", "cause": "capacity_design", "sure": false}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

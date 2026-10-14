@@ -1,0 +1,83 @@
+{
+  "id": "cold_morning",
+  "title": "Everything HVACR: office and cubicle area too cold in the morning, Trane VAV controls",
+  "source": {
+    "video": "https://www.youtube.com/watch?v=QW2BUsT085k",
+    "transcript": "session scratchpad captions/QW2BUsT085k/transcript.txt (auto-captions, unedited; not in the repo)",
+    "call_window": "1:00-16:00 of 16:06 (the first 45 s is a summary clip of the end of the call)"
+  },
+  "encoding_notes": [
+    "Written AFTER the transcript was read, so the encoder knew the outcome. Mitigation: every catalogue check is classified below before the tool is run, so nothing can be steered by what the tool recommends.",
+    "Evidence rule: a check is answered only when the narration or on-screen reading shows the quantity the check asks about, by any route (BAS or at the device). Anything else is 'unsure' (the time is spent, nothing is learned). No answer is inferred from the final diagnosis.",
+    "Complaint = the two box tags in the work order (206 and 232), encoded as Room-206 and Room-232 with documented boxes VAV-206 and VAV-232. Whether the work order meant rooms or box tags is not stated in the video.",
+    "The mislabel: the unit labelled 206 on the back of the stack is the box the BAS calls room 250 (3:30-5:30). It is encoded as: VAV-206 has no point map (so every BAS read of it costs the catalogue's +8-minute fallback, the nearest the tool has to 'find it in the device list'), VAV-250 is in the equipment list because the BAS device list showed it. Both readings of the mismatch (the label is wrong, or the BAS name is wrong) lead to this same encoding.",
+    "The technician guessed that rooftop 2 serves the upstairs (10:15-10:45); both boxes are encoded as documented on RTU-2 for that reason only. Nothing in the video documents it.",
+    "Padding: the video says 'multiple spaces but only 2 areas too cold' but not how many. The runner adds k non-complaining rooms on RTU-2 (k = 2, 6, 12; 6 is primary). They are invented, and the shared-cause belief depends on k."
+  ],
+  "tier_items": ["equipment_list", "claims", "bas_access", "point_map"],
+  "tier_label": "T3-noattr (BAS access + point map, no documented attributes): nothing in the video shows a design value being consulted",
+  "context": {"bas_access": "yes", "instrument": "no", "occupant": "no"},
+  "building": {
+    "name": "Cold-morning call (encoded from video; padding added by the runner)",
+    "equipment": [
+      {"id": "RTU-1", "kind": "AHU", "area": "Roof"},
+      {"id": "RTU-2", "kind": "AHU", "area": "Roof"},
+      {"id": "VAV-206", "kind": "VAV", "area": "Floor 2", "tag": "206"},
+      {"id": "VAV-232", "kind": "VAV", "area": "Floor 2", "tag": "232"},
+      {"id": "VAV-250", "kind": "VAV", "area": "Floor 2", "tag": "250"},
+      {"id": "Room-206", "kind": "Zone", "area": "Floor 2"},
+      {"id": "Room-232", "kind": "Zone", "area": "Floor 2"}
+    ],
+    "claims": {
+      "vav_zone": {"Room-206": "VAV-206", "Room-232": "VAV-232"},
+      "ahu_vav": {"VAV-206": "RTU-2", "VAV-232": "RTU-2", "VAV-250": "RTU-2"}
+    },
+    "control_system": {"points": {
+      "RTU-1": {"fan_status": "RTU1.FAN", "static_pressure": "RTU1.SP"},
+      "RTU-2": {"fan_status": "RTU2.FAN", "static_pressure": "RTU2.SP"},
+      "VAV-232": {"status": "V232.STS", "airflow": "V232.CFM", "damper": "V232.DMPR", "reheat": "V232.RH"},
+      "VAV-250": {"status": "V250.STS", "airflow": "V250.CFM", "damper": "V250.DMPR", "reheat": "V250.RH"},
+      "Room-206": {"temperature": "R206.ZNT"},
+      "Room-232": {"temperature": "R232.ZNT"}
+    }}
+  },
+  "padding": {"area": "Floor 2", "ahu": "RTU-2", "default_k": 6, "levels": [2, 6, 12]},
+  "complaints": [
+    {"room": "Room-206", "doc_box": "VAV-206", "reheat": "yes",
+     "truth_accept": ["zone_sensor_setpoint", "controller_config"],
+     "truth_basis": "Local setpoint point out of service (0:00-0:30); unoccupied heating setpoint 63.1 raised to 66 (2:45-3:15); occupant thermostat at 74-75 with a 1.5 degree differential, so heating until 72.5 (5:45-6:30, 9:15-10:00); max/min temperature limits clamped the setpoint (6:00-7:15). Box has modulating electric heat (8:30)."},
+    {"room": "Room-232", "doc_box": "VAV-232", "reheat": "no",
+     "truth_accept": ["controller_config", "zone_sensor_setpoint"],
+     "truth_basis": "Centre-of-building box, reheat type none, straight VAV, with a nonzero heating airflow setpoint that keeps cool air coming when heat is called (7:45-8:30); same area schedule and unoccupied setpoint (2:45-3:15)."}
+  ],
+  "ahu_facts_outside_catalogue": [
+    "Rooftop discharge setpoint on a reset at 59 and 62 against a typical 55 (10:15-10:30, 11:45-12:00, 13:30)",
+    "Economizers disabled on the rooftop, reason unknown (11:15, 14:15)",
+    "Outdoor-air sensor reading about 65 against an estimated 45-50, probably in the sun (3:15, 10:30)",
+    "Morning and daytime warm-up setpoints (12:30, 14:30)"
+  ],
+  "answers": [
+    {"scope": "complaint", "room": "Room-206", "check": "bas_zone", "outcome": "abnormal", "t": "0:00-0:30, 2:45-3:15, 5:45-6:30",
+     "basis": "Area read shows unoccupied heating setpoint 63.1 (changed to 66); box page shows setpoint 71, local setpoint 77, thermostat dial 74.75, and a local-setpoint point out of service."},
+    {"scope": "complaint", "room": "Room-206", "check": "thermostat", "outcome": "abnormal", "t": "5:45-6:15",
+     "basis": "Same quantity (thermostat setting) read through the BAS, not at the room: dial at 74.75, space temperature 72, box in heat mode."},
+    {"scope": "complaint", "room": "Room-206", "check": "bas_controller", "outcome": "normal", "t": "4:45-5:15",
+     "basis": "'the thermostat didn't have an error code or anything on it so I don't think I dropped the stat'; the device was found in the wireless device list."},
+    {"scope": "complaint", "room": "Room-232", "check": "bas_zone", "outcome": "abnormal", "t": "2:45-3:15",
+     "basis": "The area-level read (second-floor area: schedule, unoccupied heating setpoint 63.1 changed to 66) covers this zone too."},
+    {"scope": "ahu", "ahu": "RTU-2", "check": "bas_ahu_fan", "outcome": "normal", "t": "10:15-10:45, 11:15",
+     "basis": "The rooftop is running and controlling its discharge to setpoint (62 and 59); no fan fault is raised."}
+  ],
+  "answers_not_shown": "Every other (check, complaint) pair is 'unsure'. Near misses recorded on purpose: bas_airflow (airflow setpoints opened at 6:00 but no values said), bas_reheat (box has no readable discharge sensor, 5:45 and 7:30, so not evaluable), bas_static (no static reading), k_factor and max_airflow (no design value to compare with), ask_occupant (no occupant contact), ahu_visit (the rooftop was read in the BAS, not visited).",
+  "technician_sequence": [
+    {"t": "2:30-3:15", "did": "Read the area schedule and unoccupied heating setpoint and zone temperature in the BAS", "maps_to": "bas_zone"},
+    {"t": "3:15-5:15", "did": "Look for boxes 206 and 232 in the BAS, find neither, open the device list and check the rotary address on the thermostat; unit labelled 206 is room 250", "maps_to": null, "gap": "BAS device-list lookup to confirm which box is which"},
+    {"t": "5:15-6:45", "did": "Box 250: read space temperature, setpoints, thermostat dial and limits", "maps_to": "bas_zone"},
+    {"t": "6:45-7:30", "did": "Edit setpoints and limits (a repair, not a check)", "maps_to": null, "gap": "repair action"},
+    {"t": "7:45-8:45", "did": "Read reheat type and minimum heating airflow on both boxes", "maps_to": null, "gap": "heating minimum-airflow setpoint on a box without reheat"},
+    {"t": "10:15-10:45", "did": "Rooftops: confirm they are running and on a discharge reset", "maps_to": "bas_ahu_fan"},
+    {"t": "10:45-14:30", "did": "Rooftop discharge reset, economizer state, outdoor sensor, warm-up setpoints", "maps_to": null, "gap": "AHU discharge reset, economizer, outdoor-air sensor"}
+  ],
+  "technician_first_check": "bas_zone",
+  "video_minutes_for_reference": {"call_total": 15.1, "locate_the_boxes": 2.0, "box_work": 3.75, "rooftop": 4.25}
+}

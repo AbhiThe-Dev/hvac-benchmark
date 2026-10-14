@@ -1,0 +1,616 @@
+sid,description
+S001,CUMMING PENTHOUSE MECH ROOM HWS NEEDS TO BE BLED AT UNIT HEATER
+S002,FORREST - REPLACE ( 1 ) A-57 BELT ON AHU 1
+S003,DALPLEX - DIS / RECONNECT MOTOT - AHU 7
+S004,CHANGE BELT A-36
+S005,"BROKEN BELT ON AHU, GERARD HALL"
+S006,HUSSMANN-FAN BURNT OUT
+S007,RM 318A OFFLINE
+S008,HENRY HICKS - THERMOSTAT CHECKED IN ROOM 131B - SPINS
+S009,RH -ASSIST INSTRUMENT SHOP WITH A/C CONTROLS IN STUDENT SERVICES
+S010,CALIBRATE CT FOR HEAT RECOVERY PUMP
+S011,GERARD HALL - MECH RM - REPLACE ONE A46 ON LAUNDRY ROOM EF
+S012,DENTAL RM 5216 - INVESTIGATE VENTILATION NOISE
+S013,COMP SCI - RM 441 - REPAIR THERMOSTAT
+S014,LSC BIO - REPLACE BELT A-30
+S015,CHEMISTRY NO HEAT ON 2ND & 3RD FLOORS
+S016,DALPLEX - REPLACE TOL & ENSURE FANS ARE WORKING IN HRV UNIT
+S017,MONA RM 3253 - ROOM TOO HOT
+S018,FORREST - RESET AHU-1 - BLEED AIR
+S019,CHEM RM 529 - AHU#3 IN ALARM
+S020,TUPPER 12TH FL - AHU-12 – PREHEAT COIL VALVE 1
+S021,EXH FAN 654
+S022,BS COMP SCI- CHECK EF #4
+S023,MCCAIN - REPLACE (2) B81 ON EXHAUST AHU #9
+S024,LSRI NORTH 1ST FL - INVESTIGATE VENTILATION NOISE
+S025,TUPPER RM 5A01 - ROOM TOO HOT
+S026,COX INST. - FRUIT COLD ROOM 157 TEMPERATURE TOO HIGH
+S027,INVESTIGATE NEW VFD FOR EF#1 (PARKADE EXHAUST)
+S028,TUPPER LEVEL 15 - AHU-15 - REPAIR OUTDOOR AIR DAMPER
+S029,LSC OCEAN RM 5616 - HVAC - TOO WARM
+S030,LSC 4TH MECH RM - SB5- REPLACE BELTS (3)- C-120
+S031,METRO BURNER-6420 COBURG ROAD- NO HEAT
+S032,CHEMISTRY RM 108 - REPLACE BELT ON AHU #6 1 X A-37
+S033,TUPPER THEATRE D - DISCONNECT UNIT HEATER
+S034,FAN BELT-QUARTERLY-MAINTENANCE-MONA CAMPBELL
+S035,1435 SEYMOUR ST - CHECK ELECTRICAL CONNECTORS ON HW HEATER
+S036,DENTAL ORAL SURGERY - RESET AHU 6.1 & 6.2 IN PENTHOUSE
+S037,TUPPER- REPAIR/REPLACE GUARD- SEE TIM #115
+S038,ROWE - RESET HEAT PUMP
+S039,ROWE 1ST  FLOOR - HEATPUMP OFFLINE - COMMUNICATION FAILURE
+S040,MONA CHECK HP 101 & 104
+S041,SHIRREFF - AHU-5 OFF
+S042,LMP RM 1300- AC IS BROKEN
+S043,CRC RM C216 - ROOM TOO COLD
+S044,HANCOCK - HEATING ISSUES
+S045,RIVIT- TUPPER- MODIFY DUCTWORK IN 2L-A02
+S046,LEMARCHANT RM 3320 - RESET AC UNIT
+S047,LSC B6009- VENTS BLOWING HOT AND COLD SIMULTANEOUSLY
+S048,GRAD STUDIES - THE STUDENT IN ROOM 1006 HAS NO HEAT
+S049,EXTRA CLEANING 2ND HENDERSON MALE W/R TO ADDRESS ODOR
+S050,LMP RM 2561-CHECK THERMOSTAT IN OFFICE
+S051,GENERAL MATERIAL CONDITION: WORK PERFORMED ON EQUIPMENT OR A PROPERTY
+S052,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S053,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S054,GENERAL MATERIAL CONDITION: WORK PERFORMED ON EQUIPMENT OR A PROPERTY
+S055,HVAC: LEAK
+S056,HVAC: UNIT NOT COOLING/HEATING PROPERLY
+S057,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S058,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S059,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S060,HVAC: UNIT NOT COOLING/HEATING PROPERLY
+S061,HVAC: SOOT OR SMELL FROM UNIT OR VENTS
+S062,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S063,HVAC: LEAK
+S064,BMS: AIR FLOW/PRESSURE  OUT OF RANGE
+S065,BMS: AIR FLOW/PRESSURE  OUT OF RANGE
+S066,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S067,"BMS CONSOLE ALARM. ENTER THE BSO INVESTIGATION DATA AND DESCRIPTION OF THE PROBLEM IN THE NOTES OF THE WORK ORDER. BEFORE MARKING THE BSO PHASE WORK DONE, CONFIRM ALARM HAS CLEARED, DOCUMENT THE CLEARED ALARM IN THE NOTES AND ATTACH A SCREEN SHOT."
+S068,HVAC: LEAK
+S069,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S070,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S071,BMS: AIR FLOW/PRESSURE  OUT OF RANGE
+S072,GENERAL MATERIAL CONDITION: WORK PERFORMED ON EQUIPMENT OR A PROPERTY
+S073,GENERAL INVESTIGATION: PROVIDE INVESTIGATION SERVICES
+S074,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S075,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S076,BMS: AIR FLOW/PRESSURE  OUT OF RANGE
+S077,GENERAL MATERIAL CONDITION: WORK PERFORMED ON EQUIPMENT OR A PROPERTY
+S078,BMS: AIR FLOW/PRESSURE  OUT OF RANGE
+S079,HVAC: UNIT NOT COOLING/HEATING PROPERLY
+S080,GENERAL INVESTIGATION: PROVIDE INVESTIGATION SERVICES
+S081,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S082,"BMS CONSOLE ALARM. ENTER THE BSO INVESTIGATION DATA AND DESCRIPTION OF THE PROBLEM IN THE NOTES OF THE WORK ORDER. BEFORE MARKING THE BSO PHASE WORK DONE, CONFIRM ALARM HAS CLEARED, DOCUMENT THE CLEARED ALARM IN THE NOTES AND ATTACH A SCREEN SHOT."
+S083,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S084,HVAC: LEAK
+S085,"BMS CONSOLE ALARM. ENTER THE BSO INVESTIGATION DATA AND DESCRIPTION OF THE PROBLEM IN THE NOTES OF THE WORK ORDER. BEFORE MARKING THE BSO PHASE WORK DONE, CONFIRM ALARM HAS CLEARED, DOCUMENT THE CLEARED ALARM IN THE NOTES AND ATTACH A SCREEN SHOT."
+S086,GENERAL MATERIAL CONDITION: WORK PERFORMED ON EQUIPMENT OR A PROPERTY
+S087,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S088,GENERAL INVESTIGATION: PROVIDE INVESTIGATION SERVICES
+S089,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S090,HVAC: LEAK
+S091,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S092,BMS: AIR FLOW/PRESSURE  OUT OF RANGE
+S093,HVAC: LEAK
+S094,HVAC: LEAK
+S095,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S096,GENERAL MATERIAL CONDITION: WORK PERFORMED ON EQUIPMENT OR A PROPERTY
+S097,HVAC: UNIT NOT COOLING/HEATING PROPERLY
+S098,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S099,BMS: TEMPERATURE/HUMIDITY OUT OF RANGE
+S100,GENERAL MATERIAL CONDITION: WORK PERFORMED ON EQUIPMENT OR A PROPERTY
+S101,SB: SF-2 LOW TEMP DETECTOR ON
+S102,SB: SF1 FAN FAILURE
+S103,SB: RM 366: COLD AIR BLOWING THRU VENT
+S104,SB: STATIC PRESSURE SENSOR FAILURE
+S105,SB: AIR HANDLER #1 IN ALARM
+S106,SB: SUPPLY FAN #1 FAILURE
+S107,SB: SF #1 TEMP OUT OF RANGE
+S108,SB: SOIL ROOM TEMP ALARM
+S109,SB: CHECK HEAT
+S110,LOLA TILLY KITCHEN: REPAIR EXHAUST FANS NOT WORKING LOCATED OVER THE GRILL AND OVER THE DISH MACHINE.
+S111,BARTLETT HALL 1ST FLR HALLWAY: CLEAN VENT FILTER BY STAIRWAY 100S1
+S112,"AKASOFU RM 351D: OFFICE IS CHILLY, UNABLE TO ADJUST THERMOSTAT LOCALLY."
+S113,"CONSTITUTION HALL RM 201: TOO HOT, 80 DEGREES IN ALUMNI OFFICE."
+S114,"STANDBY: ARCTIC HEALTH: 914.AHU2.SAT SUPPLY AIR TEMP IN ALARM._x000D_
+_x000D_
+NO COMPLETION NEEDED."
+S115,FA KUAC TV MASTER CONTROL  RM: RESPOND TO SCREECHING NOISE COMING FROM CEILING. NOTIFIED DAVE HERRINGTON.
+S116,"WRRB RMS 202, 204, 206, 208: TROUBLESHOOT, OFFICES TOO COLD."
+S117,"STANDBY: MIRL: POINT MIAS1 AHU2 STATUS IS IN ALARM._x000D_
+**COMPLETION NEEDED TO TROUBLESHOOT ALARM POINT FOR AHU2**"
+S118,NERLAND HALL: TROUBLESHOOT AIR ON HIGH SPEED IN BUILDING.
+S119,"CUTLER PARKING LOTS: INSTALL HEATER IN BREAKER PANELS._x000D_
+_x000D_
+**BILLABLE**"
+S120,PATTY CENTER: BUILDING WIDE TROUBLESHOOT HOT TEMPS.
+S121,HESS VILLAGE APT 762A: WEATHERIZE MAIN DOOR THAT IS LETTING IN COLD AIR.
+S122,"STANDBY: 202 HARWOOD: NO HEAT._x000D_
+**COMPLETION NEEDED TO CLEAN UP AND CHECK SYSTEM**"
+S123,HESS VILLAGE 754J: INVESTIGATE/REPAIR OVEN. UPPER HEATER NOT WORKING.
+S124,"UPARK BLDNG: TROUBLESHOOT COLD TEMPERATURE._x000D_
+_x000D_
+**VOICEMAIL**"
+S125,FORESTRY BLDG: TROUBLESHOOT COLD TEMPERATURE THROUGHOUT OFFICES ON 2ND FLOOR.
+S126,ETTM: TROUBLESHOOT NO HEAT IN BUILDING. CLINTON SNYDER NOTIFIED.
+S127,CHAPMAN LOT 04H: TROUBLESHOOT 1ST ROW OF HEAD-BOLT HEATERS CLOSEST TO BUILDING NOT WORKING.
+S128,"STANDBY: BIRD: HEATING GLYCOL PRESSURE IN ALARM W/ VALUE OF 16PSI._x000D_
+**NO COMPLETION NEEDED**"
+S129,CTC (604 BARNETTE) BLDG WIDE: MOST REGISTERS IN BUILDING ARE COLD.  TESTED VARIOUS ROOMS ON ALL FOUR FLOORS AND ONLY ROOMS 102 AND 204 HAVE HEAT.
+S130,CUTLER 401: FLOOR HEATING VENT IS LEAKING IN SOUTH FACING BDRM.
+S131,"IRVING II, 3RD FLOOR INT: SF1, TROUBLESHOOT AND REPAIR BOUNCING MIXED AIR TEMP SENSOR ON AH1, MOST LIKELY A SHORT TO GROUND.  IF FAN SHUTDOWN IS REQUIRED NOTICE MOST BE GIVEN TO USERS AND SCHEDULED. AH1 SUPPLYS TO 133B CLEAN ROOM."
+S132,IRVING I ROOM 216: TROUBLESHOOT COLD TEMPERATURES IN ROOM AND REQUESTOR STATES ALSO ON ENTIRE FLOOR. REQUESTOR STATES THE PROBLEM HAS BEEN REPORTED TWICE AND HAS NOT BEEN FIXED YET.
+S133,PRESIDENTS HOUSE: ADJUST PROGRAMMING OF TSTATS. AFTER ADJUSTMENT FOLLOW UP WITH CARRIE CROUSE -8036
+S134,HESS VILLAGE 751A:RESIDENT SAYING THEY HAVE NO HEAT FOR DAYS NOW IT ONLY GETS TO 65
+S135,"LOLA TILLY COMMONS RM 212: ROOM TOO HOT, OVER 80 DEGREES. NOTIFIED HOST ROOM."
+S136,"702B TANANA LOOP: NO HEAT._x000D_
+_x000D_
+NO COMPLETION NEEDED."
+S137,"STANDBY: LIBRARY: AH6 START/STOP IN ALARM W/ VALVE OF ON._x000D_
+**NO COMPLETION NEEDED**"
+S138,MOORE HALL 216: REPAIR WINDOW AS NEEDED. ALASKA WINDOW NOT WORKING PROPERLY (VENTILATING VS. CLEANING VS. OPEN)
+S139,"UPARK: AHU3, AIR HANDLER MAKING LOUD THUMPING NOISE WHILE RUNNING. TROUBLESHOOT AND REPAIR AS NEEDED."
+S140,AKASOFU SUITE 203: INVESTIGATE AND REPAIR AS NEEDED COLD TEMPS
+S141,EIELSON 3RD FLR: TOO COLD. TURN ON HEAT. NOTIFIED MIKE.
+S142,"GRUENING: SF #3 NOT RUNNING PROPERLY, TRIPPED OUT."
+S143,O'NEILL ROOM 245: ROOM IS TOO COLD.
+S144,"BUTROVICH RM 000U8: WATER PUMPS ARE DOWN, CONTROLLERS ARE NOT WORKING. GVEA HAD A POWER SURGE THIS MORNING. NOTIFIED CLINTON._x000D_
+_x000D_
+**BILLABLE**"
+S145,BUTROVICH 212B: ROOM REPORTING VERY COLD TEMPS; CALL-IN FROM DAWN LIGHTHALL. NEED TO TROUBLESHOOT
+S146,IRVING 1: RM 141: COLD AIR BLOWING IN ROOM
+S147,"STANDBY: VIROLOGY: HEATING GLYCOL PRESSURE ALARM. _x000D_
+NO COMPLETION NEEDED."
+S148,ONEILL: TURN HEAT UP ON SECOND FLOOR OF BUILDING.
+S149,"WOOD CENTER: OFFICE 101H IS WARM, ALSO COMPLAINTS BUILDING TEMP FEELS WARM AS WELL. NOTIFIED DUSTIN."
+S150,"ONEILL 307: THE ROOM NEEDS MORE HEAT. IT HAS BEEN MUCH COLDER THAN USUAL, FOR OVER A WEEK."
+S151,For Electrician - Stairwell heater fan motor not working. Motor did not come on when thermostat was turned all the way up. No Bar code for this Unit.
+S152,"Room BI 544, server equipment room, very warm, fans seems to off. (ongoing issue as this seems to happen a few times a year)    Thanks,"
+S153,"Please issue this request to the zone 5 electrician. Tenants in 150, 152, etc. have an issue with their circuit tripping out. When more than one office requires a space heater for example, it trips the circuit for all of the offices in that area."
+S154,"On the exhaust ducts there is a fair amount of frost build up, when warm enough it is melting and dripping water on some of the storage below.  Could Brent and Yeshi move or drape tarps over them to prevent water damage."
+S155,"Jan 12, 2015 - Room 716: Cold air blowing from one of the vents (bottom vent in the living room). Could not get it to stop - TC"
+S156,"Need to order damper actuators that have failed on ahu 1&2,  please give to Kent. thanks."
+S157,This request is for Architectural to install caulking around the vents
+S158,"Additional Sub Request: 321216    rooms KNA   129  130,  131, 132, 133,  HVAC and  Fans blowing is  blowing  allot of dust in rooms in this area,.  we did a test and had several of the rooms cleaned more frequently and Yes  the fans are  depositing  a good deal of   dirt and dust on the desks daily.  complaints from the users that the fans have become much louder  as well.      complaints for the  grad students  from coaches, and from the academic student adviser.     cheers Calum  Macdonald    my cel 403-689-8453"
+S159,Room is too cold for guests. Room 131A & 131B as well.  Would like someone to come weekends in the afternoon or anytime during in the day Mon-Fri.
+S160,"Attn: Electrician John Holmes, EXFAN10 overloads tripping after 5 min run time."
+S161,ROOM VERY HOT
+S162,"Room 413 - room is too cold for guest, the fan will not stop running and the thermostat screen is partially burnt out (fan symbol does not display)"
+S163,"Air conditioning not working in Admin room 200 A, B & C     Gity: 220 6639"
+S164,Additional Sub Request: 334640    AHU #2 in O'Brian shut down on Friday or Saturday with no alarm.  Dan and Ted to check first thing Monday morning.
+S165,Thermostat is set to 20 degrees and the room is sitting at 25 degrees.  Could you please check into this.  Thank you
+S166,"Temperature is too hot in the whole apartment. The thermostat does not go below 25°C without hissing loudly. With the external temperature getting colder and our room temperature staying hot, soon opening the window will not be an option as this will freeze the pipes and cause them to burst."
+S167,Aft Shift  Tim was called to Unit 120 for no heat.
+S168,A Student called to report it is cold in this classroom.
+S169,"High Priority-Block week-sh215 is very hot and the class is in there for 8 hours a day this week, please adjust heat.Thank you.Jane"
+S170,Additional Sub Request: 365245    heater in my room makes a really loud clicking noise. it has gotten worse since winter break.  goes off at all hours of the day. keeps me up at night.
+S171,"Atten:Imran Ali, Jeff Sinclair, EllisDon requires exhaust fan 3 to be shutdown on Sat Apr 2nd at 7AM until Fri Apr 8th at 3:30pm to allow for tie-in of new duct to new fan on roof. Exhaust air to be  shutdown for the weekend (apr 2-3) and bringing controls back online starting Apr 4th. Controls need to have the fan set to be off starting at 7am on Sat Apr 2nd. For more information please contact Botting Jason Kelleher 403-807-9744 or EllisDon Charles Benard 403-370-2237.  UCALG 50 62090 18901 00000 MOD110105 10005494 39070"
+S172,"sh268-the thermostat is hanging by a wire, please attach to the wall. It looks like 2 screws have been removed.  Thanks, Jane"
+S173,The rubber flex has come off the duct work for the new bio safety cabinet for the 5th floor pharmacy.  See Randy for details.
+S174,Good morning at EN F 320Z a cover of the (Sensor or Thermostat) is missing .Thank you have a good day.
+S175,Additional Sub Request: 415921    As reported by Doug - SE EF1 (barcode 607342)is making a lot of mechanical noise and needs to be repaired.
+S176,too cold.  Not sure where the thermostat is for this room.
+S177,522 room is too hot
+S178,Please turn OFF vent above my desk 3D03-11.  The cold air is blowing on my head and wrists.  Thank you.
+S179,"REASON FOR SUB-REQUEST: (Assign To: ZONE 3) Please forward to HVAC to repair/replace the zone valve so the heat normalizes in the room UCALG-15-54436-66060-15673-RES000600 Parent Request WR#: 452039  Guest reported the room is very hot, sent housekeeping to adjust the thermostat but it is not working."
+S180,The foyer area at the main entrance (north entrance facing Cascade Hall) is too hot. Also the north east stairwell has the same problem.    Thanks.
+S181,Apartment is very hot
+S182,Find out what Ahu feeds supply and exhaust air to G801 contruction project. Ted Wiewiorka to attend.
+S183,Attn zone 4 B/O: Please mop the rest of the area around the heating pumps and air compressor.
+S184,REASON FOR SUB-REQUEST: (Assign To: ZONE 3) Please forward to HVAC to investigate and repair the issue with the heat and assure the system is working properly UCALG-15-54461-66060-15394-RES000100 Parent Request WR#: 522248  The heater is not working properly - the room temperature is 16 degrees.
+S185,"Good Afternoon,    SB 605D has been super-hot for a few days now. We have tried adjusting the heat and closing the vents to no avail. Kindly investigate as soon as possible.    Thanks!  Marni Farrant"
+S186,I have to send the information for you that the heat is OK now.   just now I change the temperature in the house it work again.  thank you
+S187,"The Nat Christie Lab is ""I need to wear my jacket indoors"" cold  :)     Can you please adjust the temperature.  Thank you!"
+S188,"all offices stifling hot .  large group of offices in The  Deans  area Kinesiology      142, 143 144 140      checked  offices  and air  is coming out of  ceiling air vents ( some have small ribbons)  nd the ceiling  air  coming in is reading  26.6 and 27 C  in most of the offices      offices 135  and 139  are  running 25.5"
+S189,REASON FOR SUB-REQUEST: (Assign To: HVAC) Please forward to HVAC to repair the issue with the thermostat and make sure the system is working properly UCALG-15-54436-66050-15673-RES000600 Parent Request WR#: 581536  Thermostat in hallway between Hotel Alma and Dining Centre broke off.
+S190,Air handling unit 3 in Science A for the workshops is not working properly it turned off and on this morning at around 8 am and now it has shutdown again I did not see a notice of work for the unit so I assume that there is an issue with the unit.
+S191,AHU 13 - Replace Supply Air Humidity Sensor as per PM's
+S192,Additional Sub Request: 613151    Room too cold. Heater not working*
+S193,This room is way too cold all the time. Please fix the heating
+S194,Could we please have the temperature in Rooms 138B and 138C turned down 2 degrees
+S195,Chilled water three way valve on AHU4 is leaking from the packing.
+S196,Replace thermostat in room GD 10.
+S197,Humidifier EHU-3 that serves room 123A is in alarm.  Paul to check.
+S198,"Sample room is way to hot, risk of destroying sample. The ambient temperature is too hot, and we are concerned it could cause the -80 freezers to overheat and fail.      Please address as soon as possible.    Kindly,    David"
+S199,"The heating is not working, no matter what we set it at it remains the same temperature. It is currently set to heat at 33 degrees but it is only 19 degrees in the common area and colder in the bedrooms."
+S200,AHU # 8 has failed please repair. Please sent to zone 5.
+S201,FOOD STORES--MECH RM REFRIG EXHAUST & SUPPLY FAN SYSTEM DOWN
+S202,BUS N 12 TOO WARM IN COMPUTER LAB  PER PROF KAITLYN @9:05A **
+S203,KEDZIE RM 524 COLD 523 HOT 526 COLD
+S204,NATURAL SCI EXHAUST FAN 3 WONT RUN-CLAYTON
+S205,DUFFY CABLE HOLDING GLASS PLAQUES @ LOBBY CURTAIN WALL-FASTENER
+S206,RADIOLOGY- RM ALSO HAS DIRTY FILTERS ON WATER LINE FOR A/C
+S207,SHAW KITCHEN EXHAUST FAN MELINK ALARM # 2 PER ADAM
+S208,UNION AIR HANDLER 7 OFF ON FREEZE STAT.
+S209,"WELLS C226, SERVER ROOM AIR CONDITIONER SERVICE."
+S210,"CASE HV4 & 5 WILL NOT RUN, TRIPPED ON FREEZE STAT. CO 8:15A"
+S211,LANDON BSMT SW MECH RM HV 5 FREE STAT TRIPPED - PER MONITOR RM
+S212,"PWR.PLT.-HV#4 CHECK VALVE S/B OPEN BUT, NOT HEATING"
+S213,E.FEE RM C-10D BASEMENT THERMOSTAT IS HANGING
+S214,"VET MED SUPPLY FAN 10, 13, 14 & 15 WILL NOT RUN."
+S215,"COMM ARTS-HVAC 1&2 HAVE HIGH DISCHARGE, CHK OUTSIDE AIR FLOW"
+S216,BAKER HVAC 1 SUPPLY FAN IN ALARM PER NICK/MR  CO 8:11A
+S217,BESSEY HVAC 2 HAS SHUT DOWN DUE TO SOFT WARE FREEZE STAT
+S218,"FEE HALL, B510B OFFICE IS COLD, CHECK HEAT"
+S219,"STUDENT SERV, RM. B15 INSPECT DUCT WORK ON HVAC#1 (SEE TASKS)"
+S220,"ADMIN-MECH RM #B1, HVAC#6, RETURN FAN W/N/R.     BEN"
+S221,HOLDEN W 253 HVAC OVER TEMP ALARMS
+S222,"ADMIN.-STE.#249 & RM.#226, TOO WARM."
+S223,"LIFE SCI, BOTT NURSING - MODULE #2 CHECK EVAP. VALVE (IN ALARM)"
+S224,"HENRY CTR RM B103 TOO COLD, TSTAT SET AT 80 DEGREES, BLOWING"
+S225,MUNN-AIR LEAK ON EAST SIDE UNIT HEATER
+S226,"CLINICAL CTR D WING, MRI DEPT, ENTIRE WING TOO COLD"
+S227,NISBET; RM 215 - THERMOSTAT DOES NOT APPEAR TO BE WORKING
+S228,LIFE SCIENCE B426 - EXTREMELY LOUD FAN IN ROOM
+S229,UNION HVAC#3 MECH RM 403 TRIPPED ON FREEZE STAT
+S230,SNYDER ON ROOF - HVAC EXHAUST FAN #10 IS IN HAND / PUT TO AUTO
+S231,BRESLIN-MECH RM 502 HVAC 10&13-MECH RM 403 HVAC 6&9 IN HAND/AUTO
+S232,OLIN HEALTH 104A - TEMP TOO HIGH / FLASHING AT 99 DEGREES
+S233,"ENG, PENTHOUSE ""A"" - HVAC#1 - STEAM LEAK IN HEATING COILD"
+S234,VET MED; RM G127C - TEMP HAS FALLEN 5* BELOW SETPOINT ALARM
+S235,"MUNN, VISITING TEAM LOCKER RM #12, VERY HOT, NEED RESOLVED"
+S236,EPPLEY-RM#109 VERY HOT IN COMP. RM. (SEE SHERRY DAVIS RM#332)
+S237,FOOD SC-RM 221 TOO HOT  MONITOR RM CAN'T HELP
+S238,PLANT BIO HVAC 6 WILL NOT RUN.
+S239,PLANT SCI G.H.E.R. HEAT PUMP WORKED ON THINGS PUT IN MANUAL(TASK
+S240,PSYCOLOGY--VORTEX DAMPERS STUCK
+S241,WELLS A213 TOO WARM--GETS WARMER EACH DAY
+S242,NAT'L SC-RM 111 NO HEAT
+S243,LAW RMS 300B & 343 TOO HOT
+S244,"PLANT BIO.-RM.#A322, TOO HOT."
+S245,ENERGY AUTOMOTIVE ADDIT 2 NEITHER SUPPLY FAN 7 OR 9 ARE RUNNING
+S246,ADMIN AIS 10 BLDG AC DOWN. PER JD/MR COOLING TWR #3 (TASK)
+S247,EPPLY RM 7 TOO HOT REDING 95
+S248,BRODY CAFE N DINING RM TOO HOT
+S249,CIPS 107 TOO COLD.
+S250,GILTNER RM 115C CHANGE FILTERS ON HVAC #4
+S251,032//RM 6-160B//ROOM IS WARM CHECK VAV
+S252,042//RM350//COLD AIR BLOWING OUT FROM VENT//SUP004>>
+S253,066-SUP007 FREEZE STAT ALARM
+S254,334//EXH004//KEEPS TRIPPING
+S255,"208//KITCHEN B50// PLEASE CHECK TEMP, TOO WARM"
+S256,074//6TH FLR B WING MENS RESTROOM//INSTALL EXHAUST FAN
+S257,165//EXH003// REPAIR DAMPERS
+S258,265//RM4128//HUMIDITY IS TOO HIGH
+S259,147-EXH005 / STATUS ALARM
+S260,125// 72// CHILL-BEAM HI ROOM TEMP ALARM
+S261,"144 / 12-227 / REHEAT LEAKING, VALVED UP BY MECHS"
+S262,046//RM-237//CONF. RM IS TOO HOT
+S263,110//FIX ELECTRICAL FOR FAN COIL UNIT 10
+S264,BOYNTON EXHAUST DENTAL (INCREASE AIR CHANGES)
+S265,180//HUMID25// NEEDS NEW DRAIN VALVE
+S266,217-UNHT018//REPLACE DEFECTIVE FAN MOTOR
+S267,478/FRESTAT TRIPPED
+S268,073//REPLACE HEAT TIMER ACCUATOR
+S269,070//RM W372//ROOM IS COLD SITTING AT 66 DEG
+S270,074//3-100// SUP004// CLASSROOM VERY CHILLY
+S271,074//RMD408//OCCUPANT BROKE T-STAT OFF WALL & OFFICE IS HOT
+S272,186-AHU001.DAT - AHU001-DA TEMP
+S273,142//RM 7-220//CLOSE THE CEILING VENT DAMPER
+S274,035// 101D// FCU001//COMPUTER LAB HOT >>>
+S275,060/11/AC NOT WORKING
+S276,216//RM 5//SUP001//HIGH DAT AND VALVE IS LEAKING
+S277,273//REPLACE BAD MOTOR ON UNHT004
+S278,069// 300//SUP011// CONFERENCE RM TOO COLD>>>
+S279,"056//RM 111B, 220& 220A&B//ROOMS ARE  FREEZING, INVESTIGATE"
+S280,074//SUP073// START-STOP ALARM
+S281,053-SUP001 FRZ STAT
+S282,105//ALARM GOING OFF IN AHU 007//RETURN LOW DUCT AIR PRESSURE
+S283,110/EQUIPMENT COMMUNICATION FAILURES (ABOUT 30)
+S284,202// RM 1014 MAIN OFFICE IS COLD
+S285,142//RM 6-312//SPACE IS COLD
+S286,186-LAB 142A ZN-T
+S287,BLDG 371// VET MED SUP 014 ALARM
+S288,031// BASEMENT EXPERIENCING HIGH TEMPERATURES OF UPTO 90F>>
+S289,"147-SUP004 / REPLACE FILTERS - 15-24X24X2, 5-24X12X2"
+S290,369/NORTH END TOO HOT--FITTER - ASAP
+S291,155//RM 350//ROOM IS WARM
+S292,035-SUP002 OVERHEATING
+S293,187//REPLACE DUG OUT HEATER ELEMENTS
+S294,183// SUP001 LOW STATIC PRESSURE
+S295,249//RM 3-157//INVESTIGATE ROTTEN SMELL>>.
+S296,218// 310//PNEUMATIC DAMPER ACTUATOR NOT WORKING PROPERLY>>>
+S297,143//UNIT HEATER 005//NEEDS A NEW MOTOR
+S298,174// RM 126A TEMP IS REAL HOT
+S299,215/23D/THERMOSTAT HISSES
+S300,203//RM 130//TOO COLD} >>>
+S301,Change filters
+S302,PA328-the exhaust fan for their stove wasn’t working
+S303,Pressure sensor is reading unreliable.  Make WO for controls  
+S304,Fan in elevator is making loud noise. Called Kone at 11:45 am Nov.6/18 Ref# 13132465
+S305,Install and pipe exhaust fan in penthouse. For mechanical “tony”
+S306,there is a burning smell (smells like plastic or a wire burning) in the heater on the south side main entrance of CK
+S307,We are getting complaints from students attending classes in the leadership wing (CB 132 and CB 136) of it being too cool. They adjusted the temperature controls as best they could with no change in temperature. Unsure if its due to the cold snap out
+S308,Too cold
+S309,Make WO for myself to change filters.
+S310,Do we need to install freeze protection temperature sensors at top of fly tower. If smoke dampers open in winter and we are not aware of this the sprinkler heads will freeze
+S311,WA 545 - thermostat is not working properly.  Temperature is set at 72 degrees but the room is super hot.
+S312,Leak on valve body of control valve servicing VAV3-19.  1/2” connections and located in ceiling space in Galway directly outside room 350.  Called out Saturday around 6:00pm
+S313,"We are aware that today is very cold outside, but I wanted to place that work order yesterday. Temperature set in room LI220.9, is also for office 200.4.1, but even though it was set at +23 yesterday, it did not change the room temperature of office "
+S314,Change filters
+S315,One of the cold rooms on the 2nd floor of RIC (the one on the left when  facing the rooms) is going in to alarm fairly regularly.  This cold room was  dropped to 2C over a month ago and held perfectly at 2C until a day or two  ago when it started goi
+S316,KI 930.7 - apartment is having heating issues.  We have taken temperature tests with a heat gun throughout the entire apartment and the floor temperatures range from 16.5 to 21.6 even with thermostats turned to max of 24 degrees . The residents find 
+S317,Thermostat in vestibule not working properly. Need controls to take a look at thermostat.
+S318,"We need air on in the Owl kitchen on Sunday, March 17th from 8 am until 10 pm. Thanks!"
+S319,"Good morning,    The gals in CB 319 say the air conditioning keeps kicking in. Freezing in there.    Thanks"
+S320,Room is really hot to work in. Please check. 
+S321,Scheduled Maintenance Add filters and screens for summer position 
+S322,I need Brad Buckshaw to check the inward directional airflow for the following CL2 labs. It should take a few minutes to do each lab. He knows that I am putting this work order in as I talked to him yesterday afternoon. It would be great to have this
+S323,I need Brad Buckshaw to check the inward directional airflow for the following CL2 labs. It should take a few minutes to do each lab. He knows that I am putting this work order in as I talked to him yesterday afternoon. It would be great to have this
+S324,CK EF 023 in the washroom inside fast break is not working the motor is no longer good and needs to be replaced left the unit powered off and open
+S325,thermostat air line ruptured (controls)
+S326,Communication failure on NAE
+S327,FC618 ZN2T temperature sensor out of range (controls)
+S328,Raelyn has noticed that the her office has been colder than other offices in her area. She suspects the air-flow and/or thermostat might not be working properly.
+S329,Can we get someone to check out the temperature/air flow in ED 558. There are EMBA classes in there all day and the room is very hot a stuffy.
+S330,Install a valve and gauge on the expansion tanks at library.
+S331,"Office is too hot (thermostat is set to 20, but the office is much warmer)."
+S332,Replace pneumatic diaphragm on education dhw converter (controls)
+S333,EBI sever is not sending alarms to heating plant.
+S334,CB 232 is sitting at 23. They have tried to lower the temperature about an hour ago and the instructor has advised the room is still very warm. 
+S335,fans not running - very warm
+S336,cant control temperature very hot in there
+S337,"Please adjust the fan schedule for the Dr. John Archer Library. They will have ongoing service during Fall and Winter final exam periods. The dates for Fall  2019 are Sunday, December 8, 2019 to Friday, December 20, 2019 inclusive until 2:00 A.M with"
+S338,"Check for preheat coil HRC-01, appears to be air locked....see drawing. (Mech)"
+S339,supply fan 1 vibrates
+S340,Too hot
+S341,At the ramp between Uc and Cw Remove the capped piece of duct and move cap to tee we have to do this at a low traffic time say reading week or a Friday afternoon. For Mechanical.
+S342,Htg Plt call feb 4 at 4:45am unknown alarm it was Kisik 444.1 in low alarm I advised them to call security to check room while I was still online 445.2 next door came into low alarm I advised again and waited till both returned to normal and 2 other 
+S343,Growth chamber 'B' is over-heating
+S344,Too cold
+S345,Thermostat reported not working
+S346,ED AHU 002 SF 002- Fan is making a loud banging sound.  Possible alignment or bearings issue?
+S347,Report from security that the building is extremely negative pressured.
+S348,Change filters for air balancing. ( Prevent Mtc.)
+S349,"Area is too hot, no air seems to be moving"
+S350,Need the bems(controls) to check why a thermostat isn't working at all for fc 2 005
+S351,TROUBLE/AC FAIL
+S352,VENTILATION
+S353,CORRECT AIR CONDITIONING PROBLEM - COLD
+S354,ENVIRO. RM 228B - C.R.F. -  FLAGGING HIGH TEMP ALARM - MEDPLEX Z
+S355,HEATER - NOISE
+S356,COLD/NO HEAT (CSP)
+S357,HEATER NOT WORKING - TERRILL WEST END ROOM 102 - DAVIS ZONE
+S358,"REPLACE BELTS ON AHU1,2 IN PENTHOUSE - HSRF - MEDPLEX ZONE"
+S359,HEAT - INSUFFICIENT (CONTROLS)
+S360,HEAT - EXCESSIVE
+S361,AIR HANDLER - REPAIR MARCHE
+S362,L+L C264 DUST BLOWING OUT OF VENTS WO405868
+S363,NO HEAT JOHNSON HOUSE RM 202 - DAVIS ZONE
+S364,L&L E 370 SUITE IS TOO COLD
+S365,COLD - COOK A111 - DAVIS ZONE  SR280984
+S366,BAILEY HOWE - DUAL DUCT AHU NOT RUNNING - DAVIS ZONE SR281096
+S367,THERMOSTATS -  NOT WORKING MEMORIAL LOUNGE 338
+S368,AC IN PERKINS 104 AND 104B MPT WORKING - DAVIS ZONE SR293109
+S369,TRINITY A/C REMOVAL 2016
+S370,REMOVE AC
+S371,THERMOSTATS - DAMAGED/NOT WORKING 353
+S372,COLD - TODAY PLEASE  HILLS 115 - MEDPLEX ZONE
+S373,MLS AHU 1  LOW TEMP LOCKOUT
+S374,HUMIDIFER ISSUES  C.R.F. 261 - MEDPLEX ZONE
+S375,THERMOSTATS - DAMAGED/NOT WORKING
+S376,HEAT - EXCESSIVE
+S377,THERMOSTATS - DAMAGED/NOT WORKING HILLS 021 - MEDPLEX ZONE
+S378,VENTILATION
+S379,440 COLLEGE RM 306 COOLING ALARM
+S380,254 COLCHESTER AVE REPORTING ISSUE
+S381,EXCESSIVE HEAT CLASSROOM
+S382,"AC WINDOW UNIT - OTHER PROBLEM (NOISY, ETC) (WARRANTY)"
+S383,REDSTONE DINING AHU2 STEAM LEAK AT BYPASS VALVE
+S384,EF-2 NOISE  IRA ALLEN CHAPEL - DAVIS ZONE  SR333510
+S385,INSTALL SHOP COMPUTER ROOM AC UNIT
+S386,FREEZER ALARM ERROR
+S387,AC AIR HUMID
+S388,A/C LEAK
+S389,FREEZER FARM AHU 1&2 DRAIN TRAP ALARM
+S390,COLD
+S391,HEATER MAKES SO MANY LOUD CLICKING AND BANGING NOISE
+S392,VOTEY AHU1 DUAL DUCT SF1 AND SF2 VFD ALARM
+S393,CONTROLLER ISSUE VAV BOX
+S394,"KALKIN COMMS ARE DOWN FOR AHU1, AHU3, AHU4"
+S395,HEAT - EXCESSIVE  MORRILL 205 - DAVIS ZONE
+S396,AC  NON-WINDOW UNIT - CENTRAL LEAKING 222 C.R.F- MEDPLEX ZONE
+S397,STAFFORD AC-2 DISCHARD AIR TEMP 39.44
+S398,HEAT EXCESSIVE
+S399,HEAT INSUFFICIENT - HOWE LIBRARY [ASSISTANT DEANS OFFICE]
+S400,UPGRADE FOR COMMONS
+S401,FOOD room 228 is warm and stuffy. -- 7-9-13 The air handler is struggling a bit but is dropping discharge air temps.  Per James Woody
+S402,The thermostat is not responding to buttons being pushed in room 103 RH.
+S403,Repair East Reznor Unit Heater at TGE.  Problem was found during fall seasonal maintenance. (Task Comments)
+S404,It is too cold in room 134 ARCH.
+S405,After hours - exhaust fan 2 was in alarm at KEIM.  (General Comments)
+S406,ARCH room 207 (within 210 suite) is freezing cold this morning and is reading 54.  (General Comments)
+S407,"HARH room 618 is too hot, the stat won't adjust. (General comments)"
+S408,In Oldfather classroom 209 the metal floor vent/grate in the northwest corner is broken and is half wedged inside the vent. It is a safety hazard.
+S409,The Secondary exhaust fan system is not working in ANSC D116. (General comments)
+S410,On air handler 2 the return fan won't stay running after the fire alarm inspection.
+S411,After Hours - The VFD on the supply fan for air handler #1 is not working. DX units are all in alarm. (General Comments)
+S412,NH AH5 RFAN failed to start
+S413,Lost communication with FiCom after the generator test.
+S414,After hours - AHG3/PPG FLACKY JEMS COMMUNICATION FROM ENTIRE BUILDING MULTIPLE OPERATOR CALL AND JEMS ALARMS  (General comments)
+S415,After hours - KRH.AH.HARWARE.PMC HAS COMM ERRORS AND WILL NOT REPROGRAM (General comments)
+S416,After Hours - Greenhouse C1 exhaust fan tripped and needed to be reset. (General comments)
+S417,"Thermostat not working, blank and its cold in there in RH 117. (Maybe room 118, they were not sure).  (General Comments)"
+S418,ENTO room 7B is too hot.  The heat pump in 7B ENTO is continually blowing out hot  air.  --  7A heat pump should be in cooling and it is in heating. Per James Woody. (General comments)
+S419,After Hours - Low temp auto alarm for stairwell lobbies RMF201 and RMF401.  (General Comments)
+S420,"19PG, 2nd, 3rd,4th NW floor and 1st, 2nd SW floors are too cold."
+S421,HENZ-204. Too hot.
+S422,"LAW-245 is too hot.  Also, check 246 it is stuffy and doesn't seem to be any air flowing.  Additionally, room 213 is hot as well."
+S423,ARCW room 244 is like a sauna. (General comments)
+S424,MABL room 256 is too warm.
+S425,CHWB-PCW for room 12C has lost pressure. (General Comments)
+S426,At FMP in Cathy Leazer's office 221 the thermostat can only be changed to 68 or 75 degrees. Nothing in-between. (General comments)
+S427,"Baseboard heaters haven't kicked in yet in RVB offices 119, 121 and the floor heaters in the Great Hall."
+S428,DENT: it is cold in the south stair tower. The heater in there may not be working. (General Comments)
+S429,"BEAD, BEAD.STEAM.PHW_N.PR has lost pressure. (General comments)"
+S430,"RVB on the Visitors side, Room 111 is really cold.  It is 62 degrees and we are expecting visitors tomorrow."
+S431,After Hours - Comm failure with monitor: [AHG4.BLDG.CONTROL.MONITOR]
+S432,BSC AH1 RFAN is reporting failed to start (General comments)
+S433,"CCUP, AH1 SFAN 2 and AH2 SFAN 1 failed to start. (General comments)"
+S434,Black gunk coming out of the air vents near the checkout desk in the BESY basement library. (General Comments)
+S435,"JH, AH7 EFAN1_S failed to start. (General comments)"
+S436,At LLN room 130 in the commons area the thermostat screen is blank and the room is a little warm. (General comments)
+S437,"Thermostat will not go down, it will flash and go up though. important to equipment in room not to get overheated. (General comments)"
+S438,Room E145 is too hot. (General Comments)
+S439,"Hello, the thermostat in #118 is malfunctioning.  It is a cold in there.  Thermostat says 100 degree. (General comments)"
+S440,"CCUP Office 102 A/C not working correctly.    Thanks,  Charles 2-0365"
+S441,"I hesitate to complain about heat in the winter, but our suite of offices on the first floor is running about 77° this morning. Can we get bring it closer to 70°? (General comments)"
+S442,JH AH8 PH.TP temperature sensor has failed high end (General Comments)
+S443,BSC room 112 is blowing cold air. They tried adjusting the thermostat. The temperature is not known. (General comments)
+S444,"OTHM in 114L, this is within the 114 suite, the associate Deans office 114L the thermostat is set at 65 and it is 77 degrees in there. Sometimes it gets up to 80 degrees. (General comments)"
+S445,After hours - ANSC.RM_A204E.COOLER.MONITOR(General comments)
+S446,Office is too cold. (General Comments)
+S447,ANDN - Loss of communication with FiCom     (General comments)
+S448,"Priority Code 2  Urgent  PPG A-3  Mobile temp sensor is not working, reading 120, which it is not   We have set it to read off of the fixed sensor until repaired (General Comments)"
+S449,"No apparent air flow in ANDR 334, very stuffy. (General Comments)"
+S450,CEMA.AH1.PR_SWITCH.MONITOR Check for duct static pressure issues. Lost AH1 at CEMA. (General Comments)
+S451,FAC: COIL REPLACEMENT
+S452,"SRH 1: 1.109 BENSON LATIN AMERICAN LIBRARY, HVAC PRESSURE"
+S453,JGB:  6.218BB OFFICE TOO HOT IN THE AM
+S454,CML: 1.308 TOO WARM IN CLASSROOM
+S455,L04: HVAC LINES FREEZING
+S456,GSB: 2.124 / NO A/C POWER TO OUR SCREEN
+S457,MBB: RM 4.202 (NEED FILTER REPLACED)
+S458,RLM: 5.114 / CLASSROOM IS TOO WARM
+S459,"MNC: AHU 2, COLD DECK PRESSURE IS IN LOW ALARM"
+S460,*EAS: 3.206 - TOO WARM
+S461,UTA: 5.454E A/C LOW AIR FLOW ALARM
+S462,*SZB: 422 - TOO WARM
+S463,ECJ: 1.225 - TOO COLD
+S464,"SEA: 1.440 NO AIR FLOW, TOO HOT"
+S465,"MAI: 2110 / TOO WARM, CURRENTLY 79 DEGREES, SWITCH TO COOLING"
+S466,"BUR: 116 / TOO WARM, REPORTED THAT A/C IS BROKEN"
+S467,LCH-100: TOO WARM - DOWNSTAIRS IS BLOWING HEAT
+S468,CMA: TOO WARM IN CMA 7.136B
+S469,BE1-1.202: A/C UNITS NOT WORKING - TOO HOT IN ROOM
+S470,"GRE: 3.108, 3.303 - SHUT OFF AHU 7/29-8/1/2017"
+S471,"*  PAI-4.30 / TOO COLD, T-STAT NOT FUNCTIONING."
+S472,*SEA: 1.214D IS TOO COLD
+S473,*UTC: 1.130 - TOO COLD
+S474,EME: 1.802B / HEATER NOT WORKING
+S475,TNH: TOO COLD
+S476,TMM: ENTIRE BLDG / TOO COLD
+S477,"*ARC 1.310 TOO HOT, ANIMALS, NEEDS TO BE AT 70"
+S478,CBA: 3.302 - TOO WARM
+S479,LBJ: REPLACE AC/2 AIR HANDLER FAN PILLOW BEARINGS
+S480,PAI: 3.40 VENTS ARE COVERED & EXTREMELY DIRTY
+S481,REPAIR AC IN SERVER ROOM
+S482,*BUR-106A-A2   AHU-B4 CHW CONTROL VALVE BROKEN.  FAILED OPEN.
+S483,GOL:AHU1 & 3 WITH CD TEMP. 74.4 DEG. OVER ALARM HIGH 65.0 DEG. 1
+S484,*PAI: TOO HOT - NO A/C THROUGHOUT BUILDING
+S485,DFA: 2.4 - TOO WARM
+S486,*ETC: AHU CMD ON SATATUS OFF IN ALARM
+S487,SSB-2.107 & 2.114 / 2.107 TOO HOT & 2.114 TOO COLD
+S488,"CCJ 1.310 SOUTH, REPLACE STAT"
+S489,"TNH: 3.130E, 3.130F, 3.130J, 3.130K - TOO COLD"
+S490,*SEA-3.312E / THIS LAB IS NOW EXTREMELY TOO COLD
+S491,ECJ: B.200 INVESTIGATE CAUSE & ELIMINATE HVAC CONDENSATE LEAK
+S492,GSB: ROOF - VENTS & FANS MAKING NOISE
+S493,GRE: OUTDOOR LEISURE & EVENT POOLS / LOWER TEMPS
+S494,SSW: 2.204 TOO WARM
+S495,ERC-2.006 / INSTRUMENT AIR PRESSURE ALARM ON AHU32
+S496,ECJ 1.324: CLASSROOM IS TOO HOT
+S497,NHB: BASEMENT DD AHU-6 SUPPLY SUPERVISORY ACT 01-03-0280
+S498,"RLM-12.202 / QUITE CHILLY, PLS CHECK AC/HEATING & T-STAT"
+S499,JGB: AHU 1 H: REPLACE DUCT STATIC SENSOR
+S500,LTH: WARM START TRBL
+S501,THIS IS A COMPUTER LAB. IT IS EXTREMELY WARM. ENERGY DEPT. SAID FOR ME TO SEND WORK ORDER REQUEST BECAUSE THERE MAY BE A PROBLEM WITH THE FAN COIL UNITS.
+S502,BEN-BUILDING EMERGENCY: RD OFFICE (C160A) IS EXTREMELY HOT. PLEASE INVESTIGATE.
+S503,ROOM 004 IN BASEMENT OF SCOTT HALL IS VERY WARM.  COULD SOMEONE PLEASE CHECK THE TEMPERATURE. **OPEN PER TAH PATRICK MOORMAN 6/19/15**
+S504,ROOM 130F IN BERT COOPER LAB IS TO COLD
+S505,105-4 - APARTMENT IS TOO HOT.
+S506,THE TEMPERATURE IN ROOM 102S HAS BEEN RATHER WARM THE LAST FEW DAYS.
+S507,WENTZ - CHECK AIR HANDLER IN BASEMENT. SOUNDS LIKE IT IS MAKING A RUMBLING NOISE **OPENED PER EVE. OPS 11/30/15**
+S508,038-005A 38-5: URGENT: A/C HAS MOLDED BOARDS AROUND IT OUTSIDE. D.C.D. 3/7
+S509,VILLD-BUILDING VILLD-4TH FLOOR LOUNGE: URGENT: MARKER ROLLED UNDER A/C CLOSET DOOR. D.C.D. 5/3
+S510,"WCOM-BUILDING EMERGENCY:  WCOM:  ROOMS 315,316, 317:  THE A/C UNITS IN THESE ROOMS WILL NOT GO OFF STANDBY.  PLEASE INSPECT AND REPAIR.  CHEERLEADER CAMP MOVING IN TODAY D:C:D: 6/2/2016"
+S511,026-004A 26-4: URGENT: A/C MAJOR DRIP. D.C.D. 6/24 HEALTH AND FALL RISK  DEAR FRIENDS - PLEASE ADDRESS ACTIVE LEAKING IN AC UNIT. LOTS OF WATER ACCUMULATION TO WALL AND FLOORS + DRIPPING DOWN TO BREEZEWAY AND APARTMENT BELOW. **VERY  [SEE WO EXTRA DESC]
+S512,BEN-C209 URGENT: BEN-C209:  THE THERMOSTAT'S MOTION SENSOR HAS NOT BEEN CONFIGURED TO SHUT OFF WHEN THERE IS NOBODY IN THE ROOM.  PLEASE SEND SOMEONE TO RESOLVE THIS ISSUE.  D:C:D: 9/1/2016
+S513,0069NRC - LAB 113 IS TOO HOT
+S514,"WE NEED THE AIR LEFT ON IN WLLD 326 UNTIL 7:30PM TONIGHT, APRIL 11TH, FOR A CLASS.  THANKS!"
+S515,017-002A 017-002:URGENT:  PRIORITY ESCALATED:  A/C STOPPED WORKING.  IT WOULD APPEAR AS THOUGH THERE IS NO POWER TO IT. **OPENED PER RESLIFE CALLBACK 8/29/17 - DOESN'T WORK AGAIN **
+S516,PLEASE REPLACE THE THERMOSTATS TO TO STANDARD MECHANICAL THERMOSTATS. THE CURRENT ONES KEEP HAVING PROBLEMS.THANK YOU PER DOUG AARON  THE THERMOSTATS ARE MOUNTED ON THE WEST SIDE OF THE PILLAR CLOSEST TO THE WEST WALL (OPPOSITE THE KI [SEE WO EXTRA DESC]
+S517,073-010A 73-10: URGENT: A/C FILTER CHANGE LIGHT IS BLINKING. D.C.D. 9/4
+S518,WCOM-0418B URGENT: WCOM-418: RESIDENTS REPORTED THAT THERE THERMOSTAT TOUCH SCREEN RARELY RESPONDS TO TOUCH AND WHEN IT DOES IT IS DIFFICULT TO ADJUST TEMPERATURE. THEY THE ROOM HAS BEEN GETTING WARMER DESPITE TURNING THE TEMPERATURE DOWN. D.C.D. 12/15
+S519,0053LSW - WATER FLOODING AND DRIPPING INTO 514D LSW FROM CEILING. HVAC TO REPAIR STEAM LEAK
+S520,0042HBRC 140AA - PLEASE HAVE SOMEONE CHECK THE TEMPERATURE IN THIS LAB. IT IS 80 DEG. CONTACT DR. TRENNA BLAGDEN IN HBRC OFFICE 130G FOR ACCESS INTO LAB
+S521,0012JB - 201 - ATTN: MIKE BEHRENDS - CHECK OUT SHAFT ON 2ND FLOOR AIR HANDLER THE COUPLING ON SHAFT IS OUT OF LINE AND IS MAKING A SQUEAKING NOISE. **OPENED PER MIKE BEHRENDS FOR E/P ASSISTANCE*
+S522,SET POINT IS CURRENTLY 72 F. - OPENED PER MICAH MCDONALD
+S523,AIR CONDITIONING HAS BEEN SHUTTING OFF ON TUESDAY EVENINGS AFTER 5:00PM. THERE ARE CLASSES SCHEDULED IN THE ROOM ON TUESDAYS UNTIL 8:30 PM. PLEASE SCHEDULE THE AIR TO CONTINUE RUNNING ON TUESDAY EVENINGS UNTIL THE SEMESTER ENDS. THANK YOU!
+S524,"5-16-18 MCKAYLA 744-2143 0264 WCOM 5TH FLOOR, AC NOT WORKING CALLED EVE OPS"
+S525,DR. ESTELA ARRESE REPORTS: COLD ROOM NRC D-WING 153 SHOULD BE 21C. HOWEVER THE CURRENT TEMPERATURE IS 17C. AIR SEEMS TO BE BLOWING TOO MUCH AND ROOM IS TOO COLD. PLEASE CONSIDER THIS URGENT.
+S526,012-012A 12-12: URGENT: A/C NOT WORKING WELL. D.C.D. 6/22
+S527,CASNR-BUILDING CASNR-3RD FLOOR: URGENT: A/C IS NOT WORKING. D.C.D. 6/25 RESLIFE CALL BACK 6/26 A/C IS STILL NOT WORKING
+S528,"DINESH  405-303-8805  WEST APARTMENTS S-80 APT 4  AC LEAKING  CALLED RES LIFE, KENNETH"
+S529,"* AFTER HOURS REQUEST * BRANDON THOMPSON 405-821-4228 EAST BENNETT E232 PORTABLE AC LEAKING GIVEN TO RES LIFE, HEATHER"
+S530,PATCH-406A PATCH-406A: URGENT: FAN (CEILING?) IS MAKING A LOUD NOISE. D.C.D. 9/25
+S531,CHECK AHU LAR 6 SUPPLY IS 48 AND THE HEATING VALVE SHOWS 100% OPEN ZONE 4 VET-MED MECHANICAL
+S532,MAU-4 IN LOW LIMIT ALARM.
+S533,BEN-BUILDING EMERGENCY: BEN - BUILDING:  IT IS 58 DEGREES IN BENNETT HALL AND GCA STAFF CANNOT WORK AS IT IS TOO COLD.  D:C:D: 1/2/2019
+S534,"IN N MURRAY RMS 118 THRU 135, TEMPERATURES NEED TO BE SET TO A COMFORTABLE LEVEL WHILE GRAD STUDENTS INTERVIEW RESEARCH PARTICIPANTS ON SAT, 1/19/19 FROM 8:00 AM- 2:00 PM AND ON MON, 1/21/19 FROM 8:00-3:00 PM."
+S535,EDMOND LOW LIBRARY AHU 17 HAS A FAN FAIL AND THE VFD IS NOT RUNNING AND THIS IS A 24/7 UNIT. OPEN ELECTRICIANS.
+S536,EMMA W/ RES LIFE FACILITY 405-744-8510   BENNETT WEST 332B  AC NOT TURNING ON EVENING OP RICHARD
+S537,073-003A 73-3: EMERGENCY: WATER IS LEAKING FROM THE STOVE EXHAUST FAN. D.C.D. 8/13 EMMA CALLED BACK AND SAID WATER IS POURING OUT AND CANNOT STOP IT
+S538,URGENT BLDG 36 165 FGB OFFICES 160A 170A AND 160  THESE ROOMS DO NOT HAVE AIR THIS MORNING PLEASE CHECK AND SEND TECH.
+S539,"I NEED TO SCHEDULE LIGHTS AND HVAC FOR THE FIRST FLOOR TO INCLUDE ROOM 170, HALLWAYS, RESTROOMS, AND THE GALLERY FROM 5PM - 8PM ON 11/25 FOR A STUDENT EVENT. THANKS!"
+S540,"VAITHI RADSADIRAN 405-762-3799  103-3 WILLIAMS  HEATER NOT WORKING EVE OPS,	MARTY"
+S541,0069 NRC - AHU C5 (AH 11) A-WING IS IN FAN FAIL. PLEASE ASSIGN TO CSG FOR REVIEW.
+S542,PARK-BUILDING EMERGENCY:  PARK -  THE BUILDING IS EXTREMELY HOT ESPECIALLY THE SECOND FLOOR. DCD: 1/17/2020
+S543,THE HVAC AIR SUPPLY DUCT WORK IS VERY LOUD AND OFFICE OCCUPANTS ARE COMPLAINING THAT THIS MAKES CONFERENCE CALLS AND OFFICE COMMUNICATION VERY DISRUPTIVE. CAN FM CHECK THE DUCT WORK FOR OBSTRUCTIONS OR MAKE ADJUSTMENTS TO SUPPLY AIR TO MINIMIZE THE NOISE.
+S544,AHU-1 & AHU-2 NOT RESPONDING TO TOD SCHEDULE OF 0600. UNITS CAME ON AT 0620. DOES EM NEED TO ADJUST SCHEDULE FOR LAG TIME OR IS THERE AN ISSUE? (JC X3945)
+S545,PLEASE OPEN A WORK ORDER TO Z4 VET TO REPAIR AHU 28
+S546,REPLACE THE FLEX DUCT
+S547,0040 LIB - AHU'S 10 AND 11 ARE IN FREEZE ALARM.
+S548,OUR AIR IS OFF....PLEASE HELP......THANK YOU :)
+S549,"NORTH DINING, B&B. REPAIR OR REPLACE THE MOTOR. SEE CRAIG FOR QUESTIONS"
+S550,( ELECTORAL DEPARTMENT) AHU #2 R/A DRIVE FAULT .
+S551,Requesting shop support for annual BSL-3 performance verification.
+S552,PhillipsHall.AHU-PH-1.SE6166/HighCoolingSupplyAirTemp.Alarm.
+S553,order a larger temporary dehumidifier for rare book room. Att. Anthony Scarofile
+S554,"Rhodes, Bldg CW high temp alarm. CW temp=60, vlv=100% open, low flow from campus lsc."
+S555,Attn: Kevin Guy please check filters in heat recovery unit 2. Minimal exhaust coming from this unit
+S556,Building_Chill_Water_Alarms.Building_CW_Pump_Status_Alarm
+S557,Cold room 354C temp rising
+S558,Classroom 132 space is to warm please adjust
+S559,ClinicalProgramsCenter.AC-1.ME812u/ReturnFlowHi.Alarm
+S560,balance the air flow in the office Attn Steve Clark
+S561,"BiotechnologyBuilding.Lab.GeneralExhaust.SE6166/LGX3.Fail.Alarm. Unit shows off, should be on."
+S562,Vent are stuck open in one green house and one green house vents are stuck closed.
+S563,"Classroom is very hot, class is about to start, see details"
+S564,NC-10: Low T.C. Air Alarm
+S565,"Louvers for exhaust fan have fallen off, rain and cold are an issue"
+S566,rm E103 fish room room is at 90 should be 81 degrees.
+S567,ACR E201B The heat in our townhouse apartment isn¿t working. The heating system is digital.
+S568,AHU4 has burnt MMC and wiring to motor. Possible bad motor as well.
+S569,Please repair east cold room in vivarium (B88G) - not maintaining temp.  Attn: Doug K.
+S570,Heater is not working in office of 157
+S571,Replace seized fan motor on Unit heater 098-0017-1024
+S572,"2nd floor Point 6 alarm system is in comm/batt alarm, please investigate."
+S573,HumanEcologyBuilding.BCM.1stFloor/HEB.VLC.AHU5005.DISCHARGE.AIR.TEMP.ALARM
+S574,The CW coil has split need to be repaired and filled
+S575,BeebeHall.AC-1.ME812u/Compressor1Fail.Alarm. DX unit not cooling. Okay until Tuesday.
+S576,"WMF office air conditioner is not working, please investigate and repair."
+S577,Dimock Lab. Per (ram525): All EGCs in the building are overheating.
+S578,"Olin Hall, Bsmt reheat low temperature alarm."
+S579,There is a heating unit that is cracked open and leaking
+S580,Room B94 temp running to warm
+S581,No humidity in room 4123 Research is being affected
+S582,NewmanLab.BCM/Temperature.ControlAir.Alarm
+S583,The room is extremely cold and staff are very uncomfortable when they have meetings.
+S584,Please re-install temp. sensor on West wall. please route to control shop.
+S585,StimsonHall.AHU1.Me812u/AHU1.Fail.Alarm   Repetitious unknown safety tripping fan off.
+S586,ACR LR8 Main Lounge Broken/ not working - air conditioning  Building Occupied for the summer
+S587,CarlBeckerHouse.AH2-12.M4106/AH2-12.SupFanVsd.Alarm
+S588,Physical Science. Devices offline / unresponsive.
+S589,Repair thermostat OR show user which thermostat to use. The room needs to be ~75F
+S590,"One of the main heat pumps is failing, B0064"
+S591,"Schoelkopf Hall, bathroom fan failure alarm."
+S592,sheet metal trades to install an access door to get to OA damper
+S593,Kimball B11 is very cold. Please check the heat and turn up if possible.
+S594,Ceiling mounted Fan Coil (0120) serving room W105 has bad bearings/belt. Please repair.
+S595,Damper has failed on EF1
+S596,Replace heating system pot feeder and add another
+S597,Damper motor leaking oil and control air outside C2109 in main hospital corridor.  Please repair.
+S598,"EmersonHall.HV1.SE6104a/Freezestat.Alarm. Unit is off, should be on."
+S599,"NewmanLab.NC-73 offline, returning no data"
+S600,Cooling/AC not working in Small Conference Room (NWC)

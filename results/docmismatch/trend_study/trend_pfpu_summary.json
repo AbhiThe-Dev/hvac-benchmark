@@ -1,0 +1,25 @@
+{
+ "gate_ga1": true,
+ "windows_24h": {
+  "damper_stuck": 0.9833333333333332,
+  "airflow_bias": 0.9833333333333333,
+  "pi2_unstable": 0.8444711538461539,
+  "reheat_valve": 0.1850861378205128
+ },
+ "windows_4h": {
+  "damper_stuck": 0.9166666666666666,
+  "airflow_bias": 0.9166666666666666,
+  "pi2_unstable": 0.6953224776500638,
+  "reheat_valve": 0.11820522030651341
+ },
+ "snapshot": {
+  "damper_stuck": 0.9998371647509579,
+  "airflow_bias": 1.0,
+  "pi2_unstable": 0.2734408258833546,
+  "reheat_valve": 0.0789857386121754
+ },
+ "false_alarm": {
+  "air": 0.0,
+  "rh": 0.0
+ }
+}

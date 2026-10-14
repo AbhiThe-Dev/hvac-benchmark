@@ -1,0 +1,25 @@
+{
+ "gates_ok": true,
+ "soft": "NO GAIN",
+ "joint": "NO GAIN",
+ "soft_q": {
+  "Q1": true,
+  "Q2": false,
+  "Q3": true,
+  "Q4": false,
+  "Q5": true,
+  "Q6": true,
+  "Q7": true,
+  "Q8": true
+ },
+ "joint_q": {
+  "Q1": true,
+  "Q2": false,
+  "Q3": true,
+  "Q4": false,
+  "Q5": true,
+  "Q6": false,
+  "Q7": true
+ },
+ "protocol_sha256": "b85941a4e8b65ae4b360c89757811908bcec21c3051cd0a440c3ddfdf58d71bc"
+}

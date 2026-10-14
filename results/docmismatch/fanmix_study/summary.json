@@ -1,0 +1,19 @@
+{
+ "gates_ok": true,
+ "fan": "TRADES (a neutrality or harm check failed)",
+ "low2": "NO GAIN",
+ "predictions": {
+  "P1": true,
+  "P2": true,
+  "P3": true,
+  "P4": false,
+  "P5": false,
+  "P6": true,
+  "P7": false,
+  "P8": true,
+  "P9": true,
+  "P10": true,
+  "P11": false
+ },
+ "protocol_sha256": "690e51edcc8c0abd17ec83a44b938ba7b3e577ec96a63e3c46ca83c820f866c5"
+}

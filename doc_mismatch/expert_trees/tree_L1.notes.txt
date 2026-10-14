@@ -1,0 +1,16 @@
+Judgement calls, and what the format could not express:
+- **BAS front end first.** Static (then fan), controller, zone, airflow, reheat, all at the laptop for 2 min each, before any walk. The preamble reads the shared AHU once when 2 or more complaints sit on it.
+- **Tier C fall-through.** BAS-only checks have no `na`, so tier C skips them and starts at `flow_hood` in the room. I never pay the 17 to 19 min AHU walk up front in C. It is only paid when the inlet static is low at the box, to split fan off from low static.
+- **Preamble readings in C.** The tree cannot know the preamble already paid for the AHU. So a C run on a multi-complaint AHU still does the room and box checks before it uses the free AHU reading.
+- **How I set `sure`.**
+  - `sure:true` when a direct reading or measurement condemns the part.
+  - `sure:false` for conclusions from elimination or an uncorroborated single reading.
+  - I trust BAS status (controller, zone, reheat) without a confirming walk, as a controls tech would.
+  - `escalate` is only used at true dead ends.
+- **Drawings wrong.** `find_feeder` is only reached when the box looks healthy on BAS and the diffuser airflow does not respond to the override. `confirm_acts` and `static_at_box` must also be normal. I left out `duct_trace` (25 min) to stay near 70 nodes, so a hidden duct fault could be sent to `find_feeder` and come back "not found".
+- **Tier B.** `design_load` is n/a, so the tree concludes `capacity_design` unsure by elimination. `max_airflow` costs 12 min there.
+- **Not expressed.**
+  - The tree cannot see which place the tech is already at, so it cannot reorder to avoid walking.
+  - It cannot branch on whether the box has reheat or is pressure-independent, other than by `na` or neg fall-through.
+  - It cannot loop back after a `find_feeder` "not found".
+  - The tree is 71 nodes.

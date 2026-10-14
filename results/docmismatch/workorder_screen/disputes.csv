@@ -1,0 +1,117 @@
+sid,kind,labeller1,labeller2,labeller1_quote,labeller2_quote,description
+S002,D,True,False,A-57 BELT ON AHU 1,,FORREST - REPLACE ( 1 ) A-57 BELT ON AHU 1
+S003,D,True,False,DIS / RECONNECT MOTOT - AHU 7,,DALPLEX - DIS / RECONNECT MOTOT - AHU 7
+S005,D,True,False,BROKEN BELT ON AHU,,"BROKEN BELT ON AHU, GERARD HALL"
+S009,A,False,True,,STUDENT SERVICES,RH -ASSIST INSTRUMENT SHOP WITH A/C CONTROLS IN STUDENT SERVICES
+S016,D,True,False,ENSURE FANS ARE WORKING IN HRV UNIT,,DALPLEX - REPLACE TOL & ENSURE FANS ARE WORKING IN HRV UNIT
+S018,D,True,False,RESET AHU-1 - BLEED AIR,,FORREST - RESET AHU-1 - BLEED AIR
+S019,D,True,False,AHU#3 IN ALARM,,CHEM RM 529 - AHU#3 IN ALARM
+S020,D,True,False,AHU-12 – PREHEAT COIL VALVE 1,,TUPPER 12TH FL - AHU-12 – PREHEAT COIL VALVE 1
+S023,D,True,False,REPLACE (2) B81 ON EXHAUST AHU #9,,MCCAIN - REPLACE (2) B81 ON EXHAUST AHU #9
+S028,D,True,False,AHU-15 - REPAIR OUTDOOR AIR DAMPER,,TUPPER LEVEL 15 - AHU-15 - REPAIR OUTDOOR AIR DAMPER
+S032,D,True,False,REPLACE BELT ON AHU #6,,CHEMISTRY RM 108 - REPLACE BELT ON AHU #6 1 X A-37
+S036,D,True,False,RESET AHU 6.1 & 6.2,,DENTAL ORAL SURGERY - RESET AHU 6.1 & 6.2 IN PENTHOUSE
+S041,D,True,False,AHU-5 OFF,,SHIRREFF - AHU-5 OFF
+S101,D,True,False,SF-2 LOW TEMP DETECTOR ON,,SB: SF-2 LOW TEMP DETECTOR ON
+S102,D,True,False,SF1 FAN FAILURE,,SB: SF1 FAN FAILURE
+S105,D,True,False,AIR HANDLER #1 IN ALARM,,SB: AIR HANDLER #1 IN ALARM
+S106,D,True,False,SUPPLY FAN #1 FAILURE,,SB: SUPPLY FAN #1 FAILURE
+S107,D,True,False,SF #1 TEMP OUT OF RANGE,,SB: SF #1 TEMP OUT OF RANGE
+S114,D,True,False,914.AHU2.SAT SUPPLY AIR TEMP IN ALARM,,"STANDBY: ARCTIC HEALTH: 914.AHU2.SAT SUPPLY AIR TEMP IN ALARM._x000D_
+_x000D_
+NO COMPLETION NEEDED."
+S117,D,True,False,POINT MIAS1 AHU2 STATUS IS IN ALARM,,"STANDBY: MIRL: POINT MIAS1 AHU2 STATUS IS IN ALARM._x000D_
+**COMPLETION NEEDED TO TROUBLESHOOT ALARM POINT FOR AHU2**"
+S122,B,False,True,,COMPLETION NEEDED TO CLEAN UP AND CHECK SYSTEM,"STANDBY: 202 HARWOOD: NO HEAT._x000D_
+**COMPLETION NEEDED TO CLEAN UP AND CHECK SYSTEM**"
+S128,D,True,False,HEATING GLYCOL PRESSURE IN ALARM W/ VALUE OF 16PSI,,"STANDBY: BIRD: HEATING GLYCOL PRESSURE IN ALARM W/ VALUE OF 16PSI._x000D_
+**NO COMPLETION NEEDED**"
+S131,D,True,False,REPAIR BOUNCING MIXED AIR TEMP SENSOR ON AH1,,"IRVING II, 3RD FLOOR INT: SF1, TROUBLESHOOT AND REPAIR BOUNCING MIXED AIR TEMP SENSOR ON AH1, MOST LIKELY A SHORT TO GROUND.  IF FAN SHUTDOWN IS REQUIRED NOTICE MOST BE GIVEN TO USERS AND SCHEDULED. AH1 SUPPLYS TO 133B CLEAN ROOM."
+S136,A,True,False,702B TANANA LOOP,,"702B TANANA LOOP: NO HEAT._x000D_
+_x000D_
+NO COMPLETION NEEDED."
+S137,D,True,False,AH6 START/STOP IN ALARM,,"STANDBY: LIBRARY: AH6 START/STOP IN ALARM W/ VALVE OF ON._x000D_
+**NO COMPLETION NEEDED**"
+S139,D,True,False,"AHU3, AIR HANDLER MAKING LOUD THUMPING NOISE WHILE RUNNING",,"UPARK: AHU3, AIR HANDLER MAKING LOUD THUMPING NOISE WHILE RUNNING. TROUBLESHOOT AND REPAIR AS NEEDED."
+S142,D,True,False,"SF #3 NOT RUNNING PROPERLY, TRIPPED OUT",,"GRUENING: SF #3 NOT RUNNING PROPERLY, TRIPPED OUT."
+S144,D,True,False,"WATER PUMPS ARE DOWN, CONTROLLERS ARE NOT WORKING",,"BUTROVICH RM 000U8: WATER PUMPS ARE DOWN, CONTROLLERS ARE NOT WORKING. GVEA HAD A POWER SURGE THIS MORNING. NOTIFIED CLINTON._x000D_
+_x000D_
+**BILLABLE**"
+S147,D,True,False,HEATING GLYCOL PRESSURE ALARM,,"STANDBY: VIROLOGY: HEATING GLYCOL PRESSURE ALARM. _x000D_
+NO COMPLETION NEEDED."
+S151,A,False,True,,Stairwell heater fan motor,For Electrician - Stairwell heater fan motor not working. Motor did not come on when thermostat was turned all the way up. No Bar code for this Unit.
+S155,B,False,True,,Could not get it to stop,"Jan 12, 2015 - Room 716: Cold air blowing from one of the vents (bottom vent in the living room). Could not get it to stop - TC"
+S156,D,True,False,damper actuators that have failed on ahu 1&2,,"Need to order damper actuators that have failed on ahu 1&2,  please give to Kent. thanks."
+S158,B,False,True,,we did a test and had several of the rooms cleaned more frequently,"Additional Sub Request: 321216    rooms KNA   129  130,  131, 132, 133,  HVAC and  Fans blowing is  blowing  allot of dust in rooms in this area,.  we did a test and had several of the rooms cleaned more frequently and Yes  the fans are  depositing  a good deal of   dirt and dust on the desks daily.  complaints from the users that the fans have become much louder  as well.      complaints for the  grad students  from coaches, and from the academic student adviser.     cheers Calum  Macdonald    my cel 403-689-8453"
+S164,D,True,False,AHU #2 in O'Brian shut down on Friday or Saturday with no alarm.,,Additional Sub Request: 334640    AHU #2 in O'Brian shut down on Friday or Saturday with no alarm.  Dan and Ted to check first thing Monday morning.
+S179,A,True,False,UCALG-15-54436-66060-15673-RES000600,,"REASON FOR SUB-REQUEST: (Assign To: ZONE 3) Please forward to HVAC to repair/replace the zone valve so the heat normalizes in the room UCALG-15-54436-66060-15673-RES000600 Parent Request WR#: 452039  Guest reported the room is very hot, sent housekeeping to adjust the thermostat but it is not working."
+S184,A,True,False,UCALG-15-54461-66060-15394-RES000100,,REASON FOR SUB-REQUEST: (Assign To: ZONE 3) Please forward to HVAC to investigate and repair the issue with the heat and assure the system is working properly UCALG-15-54461-66060-15394-RES000100 Parent Request WR#: 522248  The heater is not working properly - the room temperature is 16 degrees.
+S185,B,False,True,,We have tried adjusting the heat and closing the vents to no avail,"Good Afternoon,    SB 605D has been super-hot for a few days now. We have tried adjusting the heat and closing the vents to no avail. Kindly investigate as soon as possible.    Thanks!  Marni Farrant"
+S191,D,True,False,AHU 13 - Replace Supply Air Humidity Sensor,,AHU 13 - Replace Supply Air Humidity Sensor as per PM's
+S195,D,True,False,Chilled water three way valve on AHU4 is leaking from the packing.,,Chilled water three way valve on AHU4 is leaking from the packing.
+S198,A,False,True,,Sample room,"Sample room is way to hot, risk of destroying sample. The ambient temperature is too hot, and we are concerned it could cause the -80 freezers to overheat and fail.      Please address as soon as possible.    Kindly,    David"
+S200,D,True,False,AHU # 8 has failed please repair.,,AHU # 8 has failed please repair. Please sent to zone 5.
+S206,A,False,True,,RADIOLOGY- RM,RADIOLOGY- RM ALSO HAS DIRTY FILTERS ON WATER LINE FOR A/C
+S208,D,True,False,UNION AIR HANDLER 7 OFF ON FREEZE STAT.,,UNION AIR HANDLER 7 OFF ON FREEZE STAT.
+S210,D,True,False,"CASE HV4 & 5 WILL NOT RUN, TRIPPED ON FREEZE STAT.",,"CASE HV4 & 5 WILL NOT RUN, TRIPPED ON FREEZE STAT. CO 8:15A"
+S211,D,True,False,HV 5 FREE STAT TRIPPED,,LANDON BSMT SW MECH RM HV 5 FREE STAT TRIPPED - PER MONITOR RM
+S212,D,True,False,"HV#4 CHECK VALVE S/B OPEN BUT, NOT HEATING",,"PWR.PLT.-HV#4 CHECK VALVE S/B OPEN BUT, NOT HEATING"
+S214,D,True,False,"VET MED SUPPLY FAN 10, 13, 14 & 15 WILL NOT RUN.",,"VET MED SUPPLY FAN 10, 13, 14 & 15 WILL NOT RUN."
+S215,D,True,False,HVAC 1&2 HAVE HIGH DISCHARGE,,"COMM ARTS-HVAC 1&2 HAVE HIGH DISCHARGE, CHK OUTSIDE AIR FLOW"
+S216,D,True,False,BAKER HVAC 1 SUPPLY FAN IN ALARM,,BAKER HVAC 1 SUPPLY FAN IN ALARM PER NICK/MR  CO 8:11A
+S217,D,True,False,BESSEY HVAC 2 HAS SHUT DOWN DUE TO SOFT WARE FREEZE STAT,,BESSEY HVAC 2 HAS SHUT DOWN DUE TO SOFT WARE FREEZE STAT
+S220,D,True,False,"HVAC#6, RETURN FAN W/N/R.",,"ADMIN-MECH RM #B1, HVAC#6, RETURN FAN W/N/R.     BEN"
+S229,D,True,False,UNION HVAC#3 MECH RM 403 TRIPPED ON FREEZE STAT,,UNION HVAC#3 MECH RM 403 TRIPPED ON FREEZE STAT
+S231,D,True,False,HVAC 10&13-MECH RM 403 HVAC 6&9 IN HAND/AUTO,,BRESLIN-MECH RM 502 HVAC 10&13-MECH RM 403 HVAC 6&9 IN HAND/AUTO
+S233,D,True,False,HVAC#1 - STEAM LEAK IN HEATING COILD,,"ENG, PENTHOUSE ""A"" - HVAC#1 - STEAM LEAK IN HEATING COILD"
+S237,B,False,True,,MONITOR RM CAN'T HELP,FOOD SC-RM 221 TOO HOT  MONITOR RM CAN'T HELP
+S238,D,True,False,PLANT BIO HVAC 6 WILL NOT RUN.,,PLANT BIO HVAC 6 WILL NOT RUN.
+S245,D,True,False,NEITHER SUPPLY FAN 7 OR 9 ARE RUNNING,,ENERGY AUTOMOTIVE ADDIT 2 NEITHER SUPPLY FAN 7 OR 9 ARE RUNNING
+S248,D,False,True,,CAFE N DINING RM,BRODY CAFE N DINING RM TOO HOT
+S252,D,True,False,COLD AIR BLOWING OUT FROM VENT//SUP004,,042//RM350//COLD AIR BLOWING OUT FROM VENT//SUP004>>
+S253,D,True,False,066-SUP007 FREEZE STAT ALARM,,066-SUP007 FREEZE STAT ALARM
+S270,D,True,False,SUP004// CLASSROOM VERY CHILLY,,074//3-100// SUP004// CLASSROOM VERY CHILLY
+S272,D,True,False,186-AHU001.DAT - AHU001-DA TEMP,,186-AHU001.DAT - AHU001-DA TEMP
+S276,D,True,False,SUP001//HIGH DAT AND VALVE IS LEAKING,,216//RM 5//SUP001//HIGH DAT AND VALVE IS LEAKING
+S278,D,True,False,SUP011// CONFERENCE RM TOO COLD,,069// 300//SUP011// CONFERENCE RM TOO COLD>>>
+S280,D,True,False,SUP073// START-STOP ALARM,,074//SUP073// START-STOP ALARM
+S281,D,True,False,053-SUP001 FRZ STAT,,053-SUP001 FRZ STAT
+S282,D,True,False,ALARM GOING OFF IN AHU 007,,105//ALARM GOING OFF IN AHU 007//RETURN LOW DUCT AIR PRESSURE
+S283,D,True,False,EQUIPMENT COMMUNICATION FAILURES (ABOUT 30),,110/EQUIPMENT COMMUNICATION FAILURES (ABOUT 30)
+S287,D,True,False,VET MED SUP 014 ALARM,,BLDG 371// VET MED SUP 014 ALARM
+S292,D,True,False,035-SUP002 OVERHEATING,,035-SUP002 OVERHEATING
+S293,A,False,True,,DUG OUT HEATER,187//REPLACE DUG OUT HEATER ELEMENTS
+S294,D,True,False,SUP001 LOW STATIC PRESSURE,,183// SUP001 LOW STATIC PRESSURE
+S304,A,False,True,,Fan in elevator,Fan in elevator is making loud noise. Called Kone at 11:45 am Nov.6/18 Ref# 13132465
+S316,B,False,True,,We have taken temperature tests with a heat gun throughout the entire apartment,KI 930.7 - apartment is having heating issues.  We have taken temperature tests with a heat gun throughout the entire apartment and the floor temperatures range from 16.5 to 21.6 even with thermostats turned to max of 24 degrees . The residents find 
+S317,A,False,True,,Thermostat in vestibule,Thermostat in vestibule not working properly. Need controls to take a look at thermostat.
+S324,B,False,True,,left the unit powered off and open,CK EF 023 in the washroom inside fast break is not working the motor is no longer good and needs to be replaced left the unit powered off and open
+S328,A,False,True,,Raelyn has noticed that the her office,Raelyn has noticed that the her office has been colder than other offices in her area. She suspects the air-flow and/or thermostat might not be working properly.
+S330,A,False,True,,the expansion tanks at library,Install a valve and gauge on the expansion tanks at library.
+S332,A,False,True,,education dhw converter,Replace pneumatic diaphragm on education dhw converter (controls)
+S342,B,False,True,,I advised them to call security to check room while I was still online,Htg Plt call feb 4 at 4:45am unknown alarm it was Kisik 444.1 in low alarm I advised them to call security to check room while I was still online 445.2 next door came into low alarm I advised again and waited till both returned to normal and 2 other 
+S361,A,False,True,,AIR HANDLER - REPAIR MARCHE,AIR HANDLER - REPAIR MARCHE
+S366,A,False,True,,BAILEY HOWE - DUAL DUCT AHU,BAILEY HOWE - DUAL DUCT AHU NOT RUNNING - DAVIS ZONE SR281096
+S401,B,False,True,,7-9-13 The air handler is struggling a bit but is dropping discharge air temps.,FOOD room 228 is warm and stuffy. -- 7-9-13 The air handler is struggling a bit but is dropping discharge air temps.  Per James Woody
+S410,B,True,False,after the fire alarm inspection,,On air handler 2 the return fan won't stay running after the fire alarm inspection.
+S413,B,True,False,after the generator test,,Lost communication with FiCom after the generator test.
+S414,A,True,False,AHG3/PPG,,After hours - AHG3/PPG FLACKY JEMS COMMUNICATION FROM ENTIRE BUILDING MULTIPLE OPERATOR CALL AND JEMS ALARMS  (General comments)
+S414,B,False,True,,MULTIPLE OPERATOR CALL AND JEMS ALARMS,After hours - AHG3/PPG FLACKY JEMS COMMUNICATION FROM ENTIRE BUILDING MULTIPLE OPERATOR CALL AND JEMS ALARMS  (General comments)
+S415,B,False,True,,WILL NOT REPROGRAM,After hours - KRH.AH.HARWARE.PMC HAS COMM ERRORS AND WILL NOT REPROGRAM (General comments)
+S416,B,False,True,,needed to be reset,After Hours - Greenhouse C1 exhaust fan tripped and needed to be reset. (General comments)
+S418,B,False,True,,7A heat pump should be in cooling and it is in heating. Per James Woody.,ENTO room 7B is too hot.  The heat pump in 7B ENTO is continually blowing out hot  air.  --  7A heat pump should be in cooling and it is in heating. Per James Woody. (General comments)
+S429,D,False,True,,BEAD.STEAM.PHW_N.PR has lost pressure,"BEAD, BEAD.STEAM.PHW_N.PR has lost pressure. (General comments)"
+S448,B,False,True,,We have set it to read off of the fixed sensor until repaired,"Priority Code 2  Urgent  PPG A-3  Mobile temp sensor is not working, reading 120, which it is not   We have set it to read off of the fixed sensor until repaired (General Comments)"
+S524,D,False,True,,"WCOM 5TH FLOOR, AC NOT WORKING","5-16-18 MCKAYLA 744-2143 0264 WCOM 5TH FLOOR, AC NOT WORKING CALLED EVE OPS"
+S527,B,False,True,,RESLIFE CALL BACK 6/26 A/C IS STILL NOT WORKING,CASNR-BUILDING CASNR-3RD FLOOR: URGENT: A/C IS NOT WORKING. D.C.D. 6/25 RESLIFE CALL BACK 6/26 A/C IS STILL NOT WORKING
+S527,D,False,True,,CASNR-3RD FLOOR: URGENT: A/C IS NOT WORKING,CASNR-BUILDING CASNR-3RD FLOOR: URGENT: A/C IS NOT WORKING. D.C.D. 6/25 RESLIFE CALL BACK 6/26 A/C IS STILL NOT WORKING
+S532,D,False,True,,MAU-4 IN LOW LIMIT ALARM,MAU-4 IN LOW LIMIT ALARM.
+S549,A,True,False,"NORTH DINING, B&B",,"NORTH DINING, B&B. REPAIR OR REPLACE THE MOTOR. SEE CRAIG FOR QUESTIONS"
+S551,A,True,False,annual BSL-3 performance verification,,Requesting shop support for annual BSL-3 performance verification.
+S555,D,False,True,,heat recovery unit 2. Minimal exhaust coming from this unit,Attn: Kevin Guy please check filters in heat recovery unit 2. Minimal exhaust coming from this unit
+S561,D,False,True,,Lab.GeneralExhaust.SE6166/LGX3.Fail.Alarm,"BiotechnologyBuilding.Lab.GeneralExhaust.SE6166/LGX3.Fail.Alarm. Unit shows off, should be on."
+S564,D,False,True,,Low T.C. Air Alarm,NC-10: Low T.C. Air Alarm
+S582,D,False,True,,Temperature.ControlAir.Alarm,NewmanLab.BCM/Temperature.ControlAir.Alarm
+S590,A,True,False,B0064,,"One of the main heat pumps is failing, B0064"
+S596,D,False,True,,heating system pot feeder,Replace heating system pot feeder and add another
+S598,D,False,True,,HV1.SE6104a/Freezestat.Alarm,"EmersonHall.HV1.SE6104a/Freezestat.Alarm. Unit is off, should be on."

@@ -1,0 +1,71 @@
+{
+  "id": "ep160",
+  "title": "Nighthawk HVAC EP160: VAV electric heat not heating",
+  "source": {
+    "video": "https://www.youtube.com/watch?v=avYHEiu140A",
+    "transcript": "session scratchpad captions/avYHEiu140A/transcript.txt (auto-captions, unedited; not in the repo)",
+    "call_window": "0:00-6:30 of 7:18; the video starts mid-call ('I've already verified that I have air flow')"
+  },
+  "encoding_notes": [
+    "Written AFTER the transcript was read, so the encoder knew the outcome. Mitigation: every catalogue check is classified below before the tool is run.",
+    "Evidence rule: a check is answered only when the narration or on-screen reading shows the quantity the check asks about, by any route. Anything else is 'unsure'. No answer is inferred from the final diagnosis.",
+    "The description says one tenant complaint about one suite served by two boxes (T117, T212). The tool takes one room per complaint, so the two boxes are encoded as two complaints (Zone-T212, Zone-T117). The video never names rooms.",
+    "The video never says which air handler serves either box. AHU-1 is a placeholder for both; the technician never reads an air handler. Zone and AHU point maps are assumed present (the premise of the tier), not shown.",
+    "T117 had no BAS graphic but a point list (1:00-1:15); it is encoded as mapped.",
+    "Padding: k non-complaining rooms on AHU-1 (k = 2, 6, 12; 6 is primary), invented, and the shared-cause belief depends on k."
+  ],
+  "tier_items": ["equipment_list", "claims", "bas_access", "point_map"],
+  "tier_label": "T3-noattr (BAS access + point map, no documented attributes)",
+  "context": {"bas_access": "yes", "instrument": "no", "occupant": "no"},
+  "building": {
+    "name": "EP160 call (encoded from video; padding added by the runner)",
+    "equipment": [
+      {"id": "AHU-1", "kind": "AHU", "area": "Roof"},
+      {"id": "VAV-T212", "kind": "VAV", "area": "Suite", "tag": "T212"},
+      {"id": "VAV-T117", "kind": "VAV", "area": "Suite", "tag": "T117"},
+      {"id": "Zone-T212", "kind": "Zone", "area": "Suite"},
+      {"id": "Zone-T117", "kind": "Zone", "area": "Suite"}
+    ],
+    "claims": {
+      "vav_zone": {"Zone-T212": "VAV-T212", "Zone-T117": "VAV-T117"},
+      "ahu_vav": {"VAV-T212": "AHU-1", "VAV-T117": "AHU-1"}
+    },
+    "control_system": {"points": {
+      "AHU-1": {"fan_status": "AHU1.FAN", "static_pressure": "AHU1.SP"},
+      "VAV-T212": {"status": "T212.STS", "airflow": "T212.CFM", "damper": "T212.DMPR", "reheat": "T212.RH"},
+      "VAV-T117": {"status": "T117.STS", "airflow": "T117.CFM", "damper": "T117.DMPR", "reheat": "T117.RH"},
+      "Zone-T212": {"temperature": "Z212.ZNT"},
+      "Zone-T117": {"temperature": "Z117.ZNT"}
+    }}
+  },
+  "padding": {"area": "Suite", "ahu": "AHU-1", "default_k": 6, "levels": [2, 6, 12]},
+  "complaints": [
+    {"room": "Zone-T212", "doc_box": "VAV-T212", "reheat": "yes",
+     "truth_accept": ["reheat_fail"],
+     "truth_basis": "Electric heat: contactors open, high limit tripped, 14 A on one circuit and none on the other, about 100 V on the load side, one 25 A 600 V fuse dead, burnt wires (2:00-5:15)."},
+    {"room": "Zone-T117", "doc_box": "VAV-T117", "reheat": "yes",
+     "truth_accept": ["reheat_fail", "other"],
+     "truth_basis": "Single small heating circuit working (about 70 F discharge, 10 A on a 15 A fuse) but a melting wire found and repaired; the suite was cold mainly because the other box was down (5:15-6:30). No clean single first-order cause: reheat_fail (the wire) or other (a sibling's failure) are both accepted."}
+  ],
+  "ahu_facts_outside_catalogue": [],
+  "answers": [
+    {"scope": "complaint", "room": "Zone-T212", "check": "bas_reheat", "outcome": "abnormal", "t": "0:30-1:00",
+     "basis": "Heat stage on, calling for heat, discharge 62.8 F: 'so it's not coming on'."},
+    {"scope": "complaint", "room": "Zone-T212", "check": "reheat_coil", "outcome": "abnormal", "t": "3:15-5:15",
+     "basis": "Electric element and connections inspected: 'pretty burnt up', limit tripped, one circuit with no current, dead fuse, wires repaired."},
+    {"scope": "complaint", "room": "Zone-T117", "check": "bas_reheat", "outcome": "abnormal", "t": "1:00-1:30",
+     "basis": "Heating stage one on, discharge 62 F: 'definitely not running'. (At about 1:30 the discharge later bumps up; the first reading is used.)"},
+    {"scope": "complaint", "room": "Zone-T117", "check": "reheat_coil", "outcome": "abnormal", "t": "5:15-6:15",
+     "basis": "Connections inspected: a burning, melting wire found and repaired, although the single element itself worked."}
+  ],
+  "answers_not_shown": "Every other (check, complaint) pair is 'unsure'. Near misses recorded on purpose: bas_airflow ('I've already verified that I have air flow' is said before the recording and gives no setpoint comparison), bas_damper (position 58% read but no command to compare), power_24vac (24 V measured at the heater-control transformer and controller, not at an actuator), controller_leds, bas_controller (no explicit status said), bas_ahu_fan and bas_static (no air handler is read), bas_zone (no zone temperature or setpoint read).",
+  "technician_sequence": [
+    {"t": "before 0:00", "did": "Complaint taken, BAS checked, airflow verified (stated in the description and at 0:30; not shown)", "maps_to": null, "gap": "not shown"},
+    {"t": "0:15-1:00", "did": "T212 in the BAS: heat stage on, damper 58%, discharge 62.8", "maps_to": "bas_reheat"},
+    {"t": "1:00-1:30", "did": "T117 (no graphic, point list): heat stage on, discharge 62", "maps_to": "bas_reheat"},
+    {"t": "1:45-5:15", "did": "At T212: contactors, 24 V, supply voltage, limit switch, amp draw, fuses, wires", "maps_to": "reheat_coil"},
+    {"t": "5:15-6:30", "did": "At T117: fuses, wires, amp draw", "maps_to": "reheat_coil"}
+  ],
+  "technician_first_check": "bas_reheat",
+  "video_minutes_for_reference": {"video_total": 6.5, "bas_phase": 1.5, "box_T212": 3.5, "box_T117": 1.25}
+}

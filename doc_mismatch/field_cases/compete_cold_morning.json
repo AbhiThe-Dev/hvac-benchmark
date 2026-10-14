@@ -1,0 +1,28 @@
+{
+  "id": "compete_cold_morning",
+  "base_case": "cold_morning.json",
+  "symptoms": {
+    "feel": "too_cold",
+    "airflow": null,
+    "basis": "Work order as stated at 1:00-1:15: two boxes 'running a little cold in the morning, they do okay mid afternoon'. No statement about airflow at the diffuser, so none is declared."
+  },
+  "sampling_truth": {"Room-206": "zone_sensor_setpoint", "Room-232": "controller_config"},
+  "sampling_truth_basis": "The first-listed cause of each complaint in the base case's truth_accept (the narrative's main finding): Room-206 an occupant thermostat dial and clamped setpoint limits; Room-232 a heating airflow setpoint on a box without reheat. Used only to draw the answers of checks the video does not show.",
+  "ahu_state_for_sampling": "ok",
+  "technician": {
+    "scope": "From the first diagnostic action to the statement of each accepted cause. Excluded, decided before any run: set-up (connecting, logging in and stating hypotheses, 1:00-2:30), the repair edits (6:45-7:30) and the rooftop exploration after both causes were stated (10:15-14:30).",
+    "steps": [
+      {"n": 1, "t": "2:30-3:15", "video_min": 0.75, "what": "Read the area's schedule, unoccupied heating setpoint and zone temperature in the BAS (one read that speaks for both rooms)", "maps_to": "bas_zone", "rooms": ["Room-206", "Room-232"]},
+      {"n": 2, "t": "3:15-5:15", "video_min": 2.0, "what": "Look for boxes 206 and 232 in the BAS, find neither, open the device list and check the rotary address; the unit labelled 206 is room 250", "maps_to": null, "rooms": ["Room-206", "Room-232"]},
+      {"n": 3, "t": "5:15-6:30", "video_min": 1.25, "what": "Box 250: space temperature, setpoints, thermostat dial and limits", "maps_to": "bas_zone", "rooms": ["Room-206"]},
+      {"n": 4, "t": "7:45-8:15", "video_min": 0.5, "what": "Centre box: reheat type and heating minimum airflow", "maps_to": null, "rooms": ["Room-232"]}
+    ],
+    "steps_primary": 4,
+    "steps_per_complaint_count": 5,
+    "video_minutes_to_diagnosis": 4.5,
+    "diagnosis_t": {"Room-206": "6:15", "Room-232": "8:15"},
+    "diagnosis_correct": true,
+    "diagnosis_basis": "The accepted causes are the technician's own findings, so he cannot lose on accuracy by construction.",
+    "verified": "No: 'they'll probably call tomorrow and say they're too hot' (15:00)."
+  }
+}

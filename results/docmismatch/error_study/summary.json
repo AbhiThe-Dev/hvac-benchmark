@@ -1,0 +1,314 @@
+{
+ "gates": {
+  "g1": {
+   "W0": true,
+   "W1": true
+  },
+  "g2": true,
+  "g3": true
+ },
+ "part1": {
+  "W0": {
+   "tot": {
+    "mixed": 74,
+    "misled": 53,
+    "box-identity": 23,
+    "not taken": 1
+   },
+   "by_seg": {
+    "own fault, no shared cause": {
+     "mixed": 43,
+     "misled": 18,
+     "box-identity": 13,
+     "not taken": 1
+    },
+    "own fault, faulty handler": {
+     "misled": 33,
+     "box-identity": 8,
+     "mixed": 10
+    },
+    "own fault, healthy handler": {
+     "box-identity": 2,
+     "mixed": 7,
+     "misled": 1
+    },
+    "shared": {
+     "mixed": 14,
+     "misled": 1
+    }
+   }
+  },
+  "W1": {
+   "tot": {
+    "mixed": 137,
+    "misled": 91,
+    "box-identity": 44
+   },
+   "by_seg": {
+    "own fault, no shared cause": {
+     "mixed": 84,
+     "misled": 43,
+     "box-identity": 29
+    },
+    "own fault, faulty handler": {
+     "misled": 32,
+     "box-identity": 10,
+     "mixed": 9
+    },
+    "own fault, healthy handler": {
+     "mixed": 11,
+     "misled": 8,
+     "box-identity": 3
+    },
+    "shared": {
+     "mixed": 33,
+     "misled": 8,
+     "box-identity": 2
+    }
+   }
+  }
+ },
+ "part2": {
+  "3 min, control system|W0|pair 1: capacity_design/controller_config (check specific to controller_config)": {
+   "acc": 75.16666666666667,
+   "gain": 0.3333333333333326,
+   "ci": [
+    -1.5000000000000009,
+    2.166666666666666
+   ],
+   "dmin": -9.95,
+   "dwc": 0.16666666666666774
+  },
+  "3 min, control system|W0|pair 2: actuator_fail/no_power (check specific to no_power)": {
+   "acc": 75.33333333333333,
+   "gain": 0.5000000000000001,
+   "ci": [
+    -0.33333333333333326,
+    1.3333333333333337
+   ],
+   "dmin": -0.33,
+   "dwc": 0.16666666666666774
+  },
+  "3 min, control system|W0|pair 3: controller_config/flow_sensor (check specific to flow_sensor)": {
+   "acc": 72.33333333333334,
+   "gain": -2.5000000000000004,
+   "ci": [
+    -4.333333333333335,
+    -0.6666666666666669
+   ],
+   "dmin": -1.76,
+   "dwc": 0.16666666666666774
+  },
+  "3 min, control system|W0|pair 4: controller_comms/signal_fault (check specific to controller_comms)": {
+   "acc": 75.5,
+   "gain": 0.6666666666666665,
+   "ci": [
+    -0.3333333333333336,
+    1.666666666666667
+   ],
+   "dmin": -2.38,
+   "dwc": 0.0
+  },
+  "3 min, control system|W0|pair 5: controller_comms/no_power (check specific to no_power)": {
+   "acc": 75.33333333333333,
+   "gain": 0.5000000000000001,
+   "ci": [
+    -0.33333333333333326,
+    1.3333333333333337
+   ],
+   "dmin": -0.33,
+   "dwc": 0.16666666666666774
+  },
+  "3 min, control system|W0|all five together": {
+   "acc": 73.16666666666667,
+   "gain": -1.6666666666666676,
+   "ci": [
+    -4.833333333333334,
+    1.4999999999999993
+   ],
+   "dmin": -14.41,
+   "dwc": -0.16666666666666635
+  },
+  "3 min, control system|W1|pair 1: capacity_design/controller_config (check specific to controller_config)": {
+   "acc": 55.166666666666664,
+   "gain": 0.5000000000000001,
+   "ci": [
+    -1.6666666666666663,
+    2.666666666666667
+   ],
+   "dmin": -11.4,
+   "dwc": 1.3333333333333335
+  },
+  "3 min, control system|W1|pair 2: actuator_fail/no_power (check specific to no_power)": {
+   "acc": 54.833333333333336,
+   "gain": 0.1666666666666667,
+   "ci": [
+    -0.6666666666666665,
+    1.1666666666666665
+   ],
+   "dmin": 0.18,
+   "dwc": 0.5000000000000004
+  },
+  "3 min, control system|W1|pair 3: controller_config/flow_sensor (check specific to flow_sensor)": {
+   "acc": 53.833333333333336,
+   "gain": -0.8333333333333335,
+   "ci": [
+    -2.833333333333333,
+    1.1666666666666665
+   ],
+   "dmin": -4.51,
+   "dwc": 1.833333333333334
+  },
+  "3 min, control system|W1|pair 4: controller_comms/signal_fault (check specific to controller_comms)": {
+   "acc": 54.166666666666664,
+   "gain": -0.5,
+   "ci": [
+    -1.6666666666666665,
+    0.6666666666666667
+   ],
+   "dmin": -3.64,
+   "dwc": 0.16666666666666774
+  },
+  "3 min, control system|W1|pair 5: controller_comms/no_power (check specific to no_power)": {
+   "acc": 54.833333333333336,
+   "gain": 0.1666666666666667,
+   "ci": [
+    -0.6666666666666665,
+    1.1666666666666665
+   ],
+   "dmin": 0.18,
+   "dwc": 0.5000000000000004
+  },
+  "3 min, control system|W1|all five together": {
+   "acc": 55.166666666666664,
+   "gain": 0.5000000000000002,
+   "ci": [
+    -2.333333333333333,
+    3.333333333333334
+   ],
+   "dmin": -13.14,
+   "dwc": 1.6666666666666676
+  },
+  "10 min, at the box|W0|pair 1: capacity_design/controller_config (check specific to controller_config)": {
+   "acc": 76.5,
+   "gain": 1.6666666666666665,
+   "ci": [
+    -0.16666666666666707,
+    3.5
+   ],
+   "dmin": -4.44,
+   "dwc": 0.0
+  },
+  "10 min, at the box|W0|pair 2: actuator_fail/no_power (check specific to no_power)": {
+   "acc": 75.33333333333333,
+   "gain": 0.5000000000000001,
+   "ci": [
+    -0.33333333333333326,
+    1.3333333333333337
+   ],
+   "dmin": -0.26,
+   "dwc": 0.16666666666666774
+  },
+  "10 min, at the box|W0|pair 3: controller_config/flow_sensor (check specific to flow_sensor)": {
+   "acc": 75.16666666666667,
+   "gain": 0.33333333333333326,
+   "ci": [
+    -0.5000000000000003,
+    1.333333333333333
+   ],
+   "dmin": -2.58,
+   "dwc": 0.16666666666666774
+  },
+  "10 min, at the box|W0|pair 4: controller_comms/signal_fault (check specific to controller_comms)": {
+   "acc": 75.83333333333333,
+   "gain": 1.0,
+   "ci": [
+    0.16666666666666663,
+    2.0
+   ],
+   "dmin": -0.31,
+   "dwc": 0.0
+  },
+  "10 min, at the box|W0|pair 5: controller_comms/no_power (check specific to no_power)": {
+   "acc": 75.33333333333333,
+   "gain": 0.5000000000000001,
+   "ci": [
+    -0.33333333333333326,
+    1.3333333333333337
+   ],
+   "dmin": -0.26,
+   "dwc": 0.16666666666666774
+  },
+  "10 min, at the box|W0|all five together": {
+   "acc": 77.0,
+   "gain": 2.166666666666666,
+   "ci": [
+    -0.6666666666666674,
+    5.166666666666668
+   ],
+   "dmin": -5.45,
+   "dwc": -0.16666666666666635
+  },
+  "10 min, at the box|W1|pair 1: capacity_design/controller_config (check specific to controller_config)": {
+   "acc": 55.833333333333336,
+   "gain": 1.166666666666667,
+   "ci": [
+    -0.8333333333333335,
+    3.333333333333333
+   ],
+   "dmin": -4.57,
+   "dwc": 1.1666666666666672
+  },
+  "10 min, at the box|W1|pair 2: actuator_fail/no_power (check specific to no_power)": {
+   "acc": 54.833333333333336,
+   "gain": 0.1666666666666667,
+   "ci": [
+    -0.6666666666666665,
+    1.1666666666666665
+   ],
+   "dmin": -0.16,
+   "dwc": 0.5000000000000004
+  },
+  "10 min, at the box|W1|pair 3: controller_config/flow_sensor (check specific to flow_sensor)": {
+   "acc": 54.333333333333336,
+   "gain": -0.3333333333333335,
+   "ci": [
+    -1.6666666666666665,
+    0.9999999999999999
+   ],
+   "dmin": -0.89,
+   "dwc": 0.8333333333333331
+  },
+  "10 min, at the box|W1|pair 4: controller_comms/signal_fault (check specific to controller_comms)": {
+   "acc": 54.50000000000001,
+   "gain": -0.16666666666666674,
+   "ci": [
+    -1.166666666666667,
+    0.9999999999999999
+   ],
+   "dmin": -0.38,
+   "dwc": 0.16666666666666774
+  },
+  "10 min, at the box|W1|pair 5: controller_comms/no_power (check specific to no_power)": {
+   "acc": 54.833333333333336,
+   "gain": 0.1666666666666667,
+   "ci": [
+    -0.6666666666666665,
+    1.1666666666666665
+   ],
+   "dmin": -0.16,
+   "dwc": 0.5000000000000004
+  },
+  "10 min, at the box|W1|all five together": {
+   "acc": 56.333333333333336,
+   "gain": 1.666666666666667,
+   "ci": [
+    -0.8333333333333337,
+    4.333333333333333
+   ],
+   "dmin": -2.99,
+   "dwc": 1.5
+  }
+ },
+ "protocol_sha256": "363c8b49c7178b052e3e8e8f3bf46e3e80957d9055195864e995df01cef442ef"
+}

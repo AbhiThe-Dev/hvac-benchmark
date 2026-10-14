@@ -1,0 +1,432 @@
+UniversityID,kind,SystemCode,SystemDescription,orders,orders_with_description
+1,,,Unclassified,290,290
+1,PPM,B10,Superstructure,6,6
+1,PPM,B20,Exterior Enclosure,972,972
+1,PPM,B30,Roofing,527,527
+1,PPM,C10,Interior Construction,589,588
+1,PPM,C20,Stairs,462,462
+1,PPM,C30,Interior Finishes,140,140
+1,PPM,D10,Conveying,768,768
+1,PPM,D20,Plumbing,12235,12232
+1,PPM,D30,HVAC,12501,12500
+1,PPM,D40,Fire Protection,16332,16330
+1,PPM,D50,Electrical,11067,11061
+1,PPM,D90,General,2589,2589
+1,PPM,E10,Equipment,1855,1855
+1,PPM,E20,Furnishings,258,256
+1,PPM,G20,Site Improvements,7,7
+1,PPM,G30,Site Mechanical Utilities,74,74
+1,UPM,A10,Foundations,6,6
+1,UPM,B10,Superstructure,24,24
+1,UPM,B20,Exterior Enclosure,316,316
+1,UPM,B30,Roofing,279,279
+1,UPM,C10,Interior Construction,7902,7902
+1,UPM,C20,Stairs,309,309
+1,UPM,C30,Interior Finishes,5131,5130
+1,UPM,D10,Conveying,487,487
+1,UPM,D20,Plumbing,18297,18292
+1,UPM,D30,HVAC,19136,19129
+1,UPM,D40,Fire Protection,1361,1361
+1,UPM,D50,Electrical,20734,20728
+1,UPM,E10,Equipment,1932,1932
+1,UPM,E20,Furnishings,1122,1122
+1,UPM,F10,Special Construction,21,21
+1,UPM,G20,Site Improvements,513,512
+1,UPM,G30,Site Mechanical Utilities,11,11
+10,,,Unclassified,7492,7354
+10,PPM,A10,Foundations,2,2
+10,PPM,B10,Superstructure,6,6
+10,PPM,B20,Exterior Enclosure,15001,15001
+10,PPM,B30,Roofing,1512,1512
+10,PPM,C10,Interior Construction,2235,2235
+10,PPM,C20,Stairs,47,47
+10,PPM,C30,Interior Finishes,717,717
+10,PPM,D10,Conveying,8991,8991
+10,PPM,D20,Plumbing,55624,55618
+10,PPM,D30,HVAC,201549,201515
+10,PPM,D40,Fire Protection,198819,198797
+10,PPM,D50,Electrical,348175,348175
+10,PPM,D90,General,6616,6616
+10,PPM,E10,Equipment,19353,19352
+10,PPM,E20,Furnishings,226,226
+10,PPM,F10,Special Construction,99,99
+10,PPM,F20,Selective Building Demolition,1,1
+10,PPM,G10,Site Preparation,2,2
+10,PPM,G20,Site Improvements,92,92
+10,PPM,G30,Site Mechanical Utilities,1,1
+10,PPM,G40,Site Electrical Utilities,5,5
+10,UPM,B10,Superstructure,12,12
+10,UPM,B20,Exterior Enclosure,2338,2338
+10,UPM,B30,Roofing,296,296
+10,UPM,C10,Interior Construction,12170,12170
+10,UPM,C20,Stairs,194,194
+10,UPM,C30,Interior Finishes,5088,5088
+10,UPM,D10,Conveying,263,263
+10,UPM,D20,Plumbing,22637,22635
+10,UPM,D30,HVAC,22416,22416
+10,UPM,D40,Fire Protection,6790,6767
+10,UPM,D50,Electrical,35036,35036
+10,UPM,D90,General,1,1
+10,UPM,E10,Equipment,6712,6712
+10,UPM,E20,Furnishings,1173,1173
+10,UPM,F10,Special Construction,241,241
+10,UPM,F20,Selective Building Demolition,5,5
+10,UPM,G20,Site Improvements,62,62
+10,UPM,G30,Site Mechanical Utilities,1,1
+10,UPM,G40,Site Electrical Utilities,5,5
+10,UPM,g20,Site Improvements,1,1
+11,,,Unclassified,119,119
+11,PPM,,Unclassified,12784,12784
+11,PPM,A10,Foundations,6,6
+11,PPM,B10,Superstructure,12,12
+11,PPM,B20,Exterior Enclosure,2999,2998
+11,PPM,B30,Roofing,3124,3124
+11,PPM,C10,Interior Construction,20708,20708
+11,PPM,C20,Stairs,519,519
+11,PPM,C30,Interior Finishes,22607,22607
+11,PPM,D10,Conveying,13501,13501
+11,PPM,D20,Plumbing,34906,34895
+11,PPM,D30,HVAC,163846,163845
+11,PPM,D40,Fire Protection,6663,6663
+11,PPM,D50,Electrical,32633,32630
+11,PPM,D90,General,7656,7656
+11,PPM,D90,Unclassified,1,1
+11,PPM,E10,Equipment,19667,19667
+11,PPM,E20,Furnishings,3012,3012
+11,PPM,F10,Special Construction,884,884
+11,PPM,F20,Selective Building Demolition,880,880
+11,PPM,G10,Site Preparation,9,9
+11,PPM,G20,Site Improvements,6819,6819
+11,PPM,G30,Site Mechanical Utilities,881,881
+11,PPM,G40,Site Electrical Utilities,140,140
+11,UPM,,Unclassified,7475,7472
+11,UPM,B10,Superstructure,2,2
+11,UPM,B20,Exterior Enclosure,2650,2650
+11,UPM,B30,Roofing,2170,2170
+11,UPM,C10,Interior Construction,13527,13527
+11,UPM,C20,Stairs,187,187
+11,UPM,C30,Interior Finishes,5294,5294
+11,UPM,D10,Conveying,1279,1279
+11,UPM,D20,Plumbing,32756,32753
+11,UPM,D30,HVAC,27248,27248
+11,UPM,D40,Fire Protection,3903,3903
+11,UPM,D50,Electrical,20142,20142
+11,UPM,E10,Equipment,10966,10966
+11,UPM,E20,Furnishings,556,556
+11,UPM,F10,Special Construction,523,523
+11,UPM,F20,Selective Building Demolition,462,462
+11,UPM,G10,Site Preparation,9,9
+11,UPM,G20,Site Improvements,1122,1122
+11,UPM,G30,Site Mechanical Utilities,226,226
+11,UPM,G40,Site Electrical Utilities,22,22
+12,,,Unclassified,13364,13025
+12,PPM,,,1,0
+12,PPM,A10,Foundations,1,1
+12,PPM,B10,Superstructure,230,230
+12,PPM,B20,Exterior Enclosure,2526,2526
+12,PPM,B30,Roofing,391,391
+12,PPM,C10,Interior Construction,9893,9893
+12,PPM,C20,Stairs,398,398
+12,PPM,C30,Interior Finishes,10645,10645
+12,PPM,D10,Conveying,833,833
+12,PPM,D20,Plumbing,10186,10186
+12,PPM,D30,HVAC,19213,19213
+12,PPM,D40,Fire Protection,1450,1450
+12,PPM,D50,Electrical,18848,18848
+12,PPM,D90,General,2546,2546
+12,PPM,E10,Equipment,7365,7365
+12,PPM,E20,Furnishings,15233,15233
+12,PPM,F10,Special Construction,967,967
+12,PPM,F20,Selective Building Demolition,2403,2403
+12,PPM,G10,Site Preparation,66,66
+12,PPM,G20,Site Improvements,1526,1526
+12,PPM,G30,Site Mechanical Utilities,591,591
+12,PPM,G40,Site Electrical Utilities,98,98
+12,PPM,G90,Other Site Construction,2,2
+12,UPM,,,3,0
+12,UPM,A10,Foundations,26,26
+12,UPM,B10,Superstructure,309,309
+12,UPM,B20,Exterior Enclosure,15387,15387
+12,UPM,B30,Roofing,6455,6455
+12,UPM,C10,Interior Construction,34597,34597
+12,UPM,C20,Stairs,3131,3131
+12,UPM,C30,Interior Finishes,19470,19470
+12,UPM,D10,Conveying,1018,1018
+12,UPM,D20,Plumbing,78938,78938
+12,UPM,D30,HVAC,119662,119662
+12,UPM,D40,Fire Protection,12256,12256
+12,UPM,D50,Electrical,51207,51207
+12,UPM,D90,General,12475,12475
+12,UPM,E10,Equipment,20420,20420
+12,UPM,E20,Furnishings,12355,12355
+12,UPM,F10,Special Construction,2731,2731
+12,UPM,F20,Selective Building Demolition,1554,1554
+12,UPM,G10,Site Preparation,228,228
+12,UPM,G20,Site Improvements,4394,4388
+12,UPM,G30,Site Mechanical Utilities,1308,1308
+12,UPM,G40,Site Electrical Utilities,1756,1756
+12,UPM,G90,Other Site Construction,6,6
+2,,,Unclassified,245,245
+2,PPM,B10,Superstructure,243,243
+2,PPM,B20,Exterior Enclosure,506,506
+2,PPM,B30,Roofing,589,589
+2,PPM,C10,Interior Construction,413,413
+2,PPM,C30,Interior Finishes,1267,1267
+2,PPM,D10,Conveying,683,683
+2,PPM,D20,Plumbing,5543,5543
+2,PPM,D30,HVAC,9807,9807
+2,PPM,D40,Fire Protection,1249,1249
+2,PPM,D50,Electrical,4534,4534
+2,PPM,D90,General,1134,1134
+2,PPM,E10,Equipment,5629,5629
+2,PPM,E20,Equipment,2,2
+2,PPM,E20,Furnishings,11,11
+2,PPM,G10,Site Preparation,52,52
+2,PPM,G20,Site Improvements,34,34
+2,UPM,B20,Exterior Enclosure,96,96
+2,UPM,B30,Roofing,589,589
+2,UPM,C10,Interior Construction,3211,3211
+2,UPM,C30,Interior Finishes,790,790
+2,UPM,D10,Conveying,801,801
+2,UPM,D20,Plumbing,10440,10440
+2,UPM,D30,HVAC,10225,10225
+2,UPM,D40,Fire Protection,787,787
+2,UPM,D50,Electrical,4663,4663
+2,UPM,E10,Equipment,2051,2051
+2,UPM,E20,Furnishings,156,156
+2,UPM,F10,Special Construction,48,48
+2,UPM,G10,Site Preparation,6,6
+2,UPM,G20,Site Improvements,245,245
+3,,,Unclassified,7198,7198
+3,PPM,,Unclassified,17,17
+3,PPM,A10,Foundations,16,16
+3,PPM,B10,Superstructure,60,60
+3,PPM,B20,Exterior Enclosure,1113,1113
+3,PPM,B30,Roofing,622,622
+3,PPM,C10,Interior Construction,12057,12057
+3,PPM,C20,Stairs,708,708
+3,PPM,C30,Interior Finishes,5834,5834
+3,PPM,D10,Conveying,485,485
+3,PPM,D20,Plumbing,26453,26453
+3,PPM,D30,HVAC,49232,49232
+3,PPM,D40,Fire Protection,8529,8529
+3,PPM,D50,Electrical,28131,28131
+3,PPM,D90,General,1312,1312
+3,PPM,E10,Equipment,21360,21360
+3,PPM,E20,Furnishings,2786,2786
+3,PPM,F10,Special Construction,35,35
+3,PPM,F20,Selective Building Demolition,133,133
+3,PPM,G10,Site Preparation,2,2
+3,PPM,G20,Site Improvements,471,471
+3,PPM,G30,Site Mechanical Utilities,48,48
+3,PPM,G40,Site Electrical Utilities,185,185
+3,UPM,B10,Superstructure,13,13
+3,UPM,B20,Exterior Enclosure,169,169
+3,UPM,B30,Roofing,37,37
+3,UPM,C10,Interior Construction,6251,6251
+3,UPM,C20,Stairs,231,231
+3,UPM,C30,Interior Finishes,1182,1182
+3,UPM,D10,Conveying,64,64
+3,UPM,D20,Plumbing,12019,12019
+3,UPM,D30,HVAC,9224,9224
+3,UPM,D40,Fire Protection,862,862
+3,UPM,D50,Electrical,8902,8902
+3,UPM,E10,Equipment,3598,3598
+3,UPM,E20,Furnishings,475,475
+3,UPM,F10,Special Construction,5,5
+3,UPM,F20,Selective Building Demolition,15,15
+3,UPM,G20,Site Improvements,150,150
+3,UPM,G30,Site Mechanical Utilities,6,6
+3,UPM,G40,Site Electrical Utilities,48,48
+4,PPM,B20,Exterior Enclosure,1809,1809
+4,PPM,B30,Roofing,4539,4539
+4,PPM,C10,Interior Construction,9,9
+4,PPM,C30,Interior Finishes,1,1
+4,PPM,D10,Conveying,9397,9397
+4,PPM,D20,Plumbing,11272,11272
+4,PPM,D30,HVAC,16037,16037
+4,PPM,D40,Fire Protection,23278,23278
+4,PPM,D50,Electrical,22000,22000
+4,PPM,D90,General,4165,4165
+4,PPM,E10,Equipment,5222,5222
+4,PPM,E20,Furnishings,61,61
+4,UPM,B20,Exterior Enclosure,1974,1974
+4,UPM,B30,Roofing,485,485
+4,UPM,C10,Interior Construction,21825,21822
+4,UPM,C20,Stairs,279,279
+4,UPM,C30,Interior Finishes,8288,8285
+4,UPM,D10,Conveying,5017,5015
+4,UPM,D20,Plumbing,36110,36102
+4,UPM,D30,HVAC,18945,18935
+4,UPM,D40,Fire Protection,2001,2001
+4,UPM,D50,Electrical,32384,32371
+4,UPM,E10,Equipment,6746,6744
+4,UPM,E20,Furnishings,6164,6163
+4,UPM,F10,Special Construction,62,62
+4,UPM,F20,Selective Building Demolition,9,9
+4,UPM,G20,Site Improvements,2089,2089
+5,PPM,B20,Exterior Enclosure,7335,7335
+5,PPM,B30,Roofing,6235,6218
+5,PPM,C10,Interior Construction,689,689
+5,PPM,C30,Interior Finishes,65,64
+5,PPM,D10,Conveying,304,304
+5,PPM,D20,Plumbing,46143,46134
+5,PPM,D30,HVAC,127383,127367
+5,PPM,D40,Fire Protection,32346,32342
+5,PPM,D50,Electrical,11264,11258
+5,PPM,D90,General,23,23
+5,PPM,E10,Equipment,136,136
+5,PPM,E20,Furnishings,1881,1878
+5,UPM,B20,Exterior Enclosure,3342,3342
+5,UPM,B30,Roofing,2607,2606
+5,UPM,C10,Interior Construction,25285,25266
+5,UPM,C20,Stairs,29,29
+5,UPM,C30,Interior Finishes,6272,6270
+5,UPM,D10,Conveying,587,587
+5,UPM,D20,Plumbing,62857,62853
+5,UPM,D30,HVAC,94049,94039
+5,UPM,D40,Fire Protection,2973,2973
+5,UPM,D50,Electrical,22639,22622
+5,UPM,D90,General,1,1
+5,UPM,E10,Equipment,8195,8195
+5,UPM,E20,Furnishings,1482,1481
+5,UPM,F20,Selective Building Demolition,19,19
+5,UPM,G20,Site Improvements,1,1
+5,UPM,G30,Site Mechanical Utilities,108,108
+6,,,Unclassified,1990,1988
+6,PPM,B20,Exterior Enclosure,282,282
+6,PPM,B30,Roofing,54,54
+6,PPM,C10,Interior Construction,46,46
+6,PPM,C30,Interior Finishes,28,28
+6,PPM,D10,Conveying,84,84
+6,PPM,D20,Plumbing,35794,35788
+6,PPM,D30,HVAC,78118,78111
+6,PPM,D40,Fire Protection,9073,9073
+6,PPM,D50,Electrical,4527,4527
+6,PPM,D90,General,1732,1723
+6,PPM,E10,Equipment,27076,27075
+6,PPM,E20,Furnishings,22,22
+6,UPM,A10,Foundations,4,4
+6,UPM,B20,Exterior Enclosure,3877,3874
+6,UPM,B30,Roofing,388,388
+6,UPM,C10,Interior Construction,12622,12615
+6,UPM,C20,Stairs,199,199
+6,UPM,C30,Interior Finishes,8139,8135
+6,UPM,D10,Conveying,27,27
+6,UPM,D20,Plumbing,29255,29244
+6,UPM,D30,HVAC,38628,38615
+6,UPM,D40,Fire Protection,4286,4286
+6,UPM,D50,Electrical,25730,25721
+6,UPM,E10,Equipment,8883,8878
+6,UPM,E20,Furnishings,9231,9230
+6,UPM,F10,Special Construction,167,167
+6,UPM,F20,Selective Building Demolition,10,10
+6,UPM,G20,Site Improvements,60,60
+6,UPM,G30,Site Mechanical Utilities,1,1
+7,,,Unclassified,300,299
+7,PPM,B10,Superstructure,6,6
+7,PPM,B20,Exterior Enclosure,36,36
+7,PPM,B30,Roofing,1,1
+7,PPM,C10,Interior Construction,12,12
+7,PPM,C30,Interior Finishes,2,2
+7,PPM,D10,Conveying,54,54
+7,PPM,D20,Plumbing,2256,2256
+7,PPM,D30,HVAC,4197,4196
+7,PPM,D40,Fire Protection,1154,1154
+7,PPM,D50,Electrical,355,355
+7,PPM,D90,General,747,747
+7,PPM,E10,Equipment,654,654
+7,PPM,E20,Furnishings,7,7
+7,UPM,B20,Exterior Enclosure,35,35
+7,UPM,C10,Interior Construction,3679,3550
+7,UPM,C20,Stairs,14,13
+7,UPM,C30,Interior Finishes,963,962
+7,UPM,D10,Conveying,391,389
+7,UPM,D20,Plumbing,2046,2043
+7,UPM,D30,HVAC,1851,1834
+7,UPM,D40,Fire Protection,380,380
+7,UPM,D50,Electrical,4383,4371
+7,UPM,E10,Equipment,449,446
+7,UPM,E20,Furnishings,1065,1064
+7,UPM,G20,Site Improvements,81,81
+7,UPM,G30,Site Mechanical Utilities,2,2
+8,,,Unclassified,6323,6300
+8,PPM,B20,Exterior Enclosure,50,50
+8,PPM,B30,Roofing,19,19
+8,PPM,C10,Interior Construction,121,121
+8,PPM,C20,Stairs,8,8
+8,PPM,C30,Interior Finishes,117,117
+8,PPM,D10,Conveying,10,10
+8,PPM,D20,Plumbing,602,602
+8,PPM,D30,HVAC,1237,1237
+8,PPM,D40,Fire Protection,291,291
+8,PPM,D50,Electrical,857,857
+8,PPM,D90,General,518,518
+8,PPM,E10,Equipment,528,528
+8,PPM,E20,Furnishings,222,222
+8,PPM,F10,Special Construction,1,1
+8,PPM,F20,Selective Building Demolition,12,12
+8,PPM,G10,Site Preparation,78,78
+8,PPM,G20,Site Improvements,219,219
+8,PPM,G30,Site Mechanical Utilities,25,25
+8,PPM,G40,Site Electrical Utilities,5,5
+8,UPM,A10,Foundations,10,10
+8,UPM,B10,Superstructure,2,2
+8,UPM,B20,Exterior Enclosure,3919,3919
+8,UPM,B30,Roofing,416,416
+8,UPM,C10,Interior Construction,5540,5540
+8,UPM,C20,Stairs,308,308
+8,UPM,C30,Interior Finishes,3609,3609
+8,UPM,D10,Conveying,1005,1005
+8,UPM,D20,Plumbing,16337,16337
+8,UPM,D30,HVAC,21492,21492
+8,UPM,D40,Fire Protection,5189,5189
+8,UPM,D50,Electrical,29462,29462
+8,UPM,D90,General,305,305
+8,UPM,E10,Equipment,6551,6551
+8,UPM,E20,Furnishings,4332,4331
+8,UPM,F10,Special Construction,119,119
+8,UPM,F20,Selective Building Demolition,147,147
+8,UPM,G10,Site Preparation,155,155
+8,UPM,G20,Site Improvements,344,344
+8,UPM,G30,Site Mechanical Utilities,123,123
+8,UPM,G40,Site Electrical Utilities,292,292
+9,,,Unclassified,254,251
+9,PPM,A10,Foundations,33,33
+9,PPM,B10,Superstructure,26,26
+9,PPM,B20,Exterior Enclosure,1679,1679
+9,PPM,B30,Roofing,2197,2197
+9,PPM,C10,Interior Construction,6764,6764
+9,PPM,C20,Stairs,296,296
+9,PPM,C30,Interior Finishes,3882,3882
+9,PPM,D10,Conveying,2847,2847
+9,PPM,D20,Plumbing,21346,21346
+9,PPM,D30,HVAC,41856,41856
+9,PPM,D40,Fire Protection,9453,9453
+9,PPM,D50,Electrical,44148,44148
+9,PPM,D90,General,10146,10146
+9,PPM,E10,Equipment,3623,3623
+9,PPM,E20,Furnishings,1566,1566
+9,PPM,F10,Special Construction,153,153
+9,PPM,F20,Selective Building Demolition,142,142
+9,PPM,G20,Site Improvements,38,38
+9,PPM,G30,Site Mechanical Utilities,58,58
+9,PPM,G40,Site Electrical Utilities,1170,1170
+9,UPM,A10,Foundations,3,3
+9,UPM,B10,Superstructure,3,3
+9,UPM,B20,Exterior Enclosure,928,928
+9,UPM,B30,Roofing,563,563
+9,UPM,C10,Interior Construction,2162,2162
+9,UPM,C20,Stairs,77,77
+9,UPM,C30,Interior Finishes,1213,1213
+9,UPM,D10,Conveying,711,711
+9,UPM,D20,Plumbing,9656,9656
+9,UPM,D30,HVAC,12406,12405
+9,UPM,D40,Fire Protection,2982,2982
+9,UPM,D50,Electrical,7095,7095
+9,UPM,E10,Equipment,1201,1201
+9,UPM,E20,Furnishings,98,98
+9,UPM,F10,Special Construction,151,151
+9,UPM,F20,Selective Building Demolition,15,15
+9,UPM,G20,Site Improvements,4,4
+9,UPM,G40,Site Electrical Utilities,23,23

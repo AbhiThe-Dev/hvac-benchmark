@@ -1,0 +1,89 @@
+
+Visit with 2 complaints: Zone-T212 (drawings: T212 on AHU-1); Zone-T117 (drawings: T117 on AHU-1).
+
+Next check (about 2 min) (informs 2 complaints): In the control system, read the duct static pressure of AHU-1 against its setpoint: is it low?  [one reading speaks for: Zone-T212, Zone-T117]
+  about 11% likely to come back abnormal; expected to sharpen the picture by 0.56 bits over the complaints it informs
+  Zone-T212: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  Zone-T117: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  air handlers: AHU-1: fan off 0%, low static 9%
+
+Next check (about 2 min): In the control system, read the airflow setpoint and measured airflow of box T212: does the measurement miss the setpoint by more than about 10%?
+  about 35% likely to come back abnormal; expected to sharpen the picture by 0.35 bits over the complaints it informs
+  Zone-T212: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  Zone-T117: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  air handlers: AHU-1: fan off 0%, low static 9%
+
+Next check (about 2 min): In the control system, read the airflow setpoint and measured airflow of box T117: does the measurement miss the setpoint by more than about 10%?
+  about 35% likely to come back abnormal; expected to sharpen the picture by 0.35 bits over the complaints it informs
+  Zone-T212: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  Zone-T117: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  air handlers: AHU-1: fan off 0%, low static 9%
+
+Next check (about 2 min): In the control system, read the temperature, setpoint, occupancy schedule and mode of Zone-T212: is the setpoint, schedule or mode wrong for this room?
+  about 18% likely to come back abnormal; expected to sharpen the picture by 0.31 bits over the complaints it informs
+  Zone-T212: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  Zone-T117: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  air handlers: AHU-1: fan off 0%, low static 9%
+
+Next check (about 2 min): In the control system, read the temperature, setpoint, occupancy schedule and mode of Zone-T117: is the setpoint, schedule or mode wrong for this room?
+  about 18% likely to come back abnormal; expected to sharpen the picture by 0.31 bits over the complaints it informs
+  Zone-T212: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  Zone-T117: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  air handlers: AHU-1: fan off 0%, low static 9%
+
+Next check (about 2 min): In the control system, read the damper position of box T212 against its command: is it pinned at 100% while airflow is low, or not following its command?
+  about 24% likely to come back abnormal; expected to sharpen the picture by 0.24 bits over the complaints it informs
+  Zone-T212: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  Zone-T117: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  air handlers: AHU-1: fan off 0%, low static 9%
+
+Next check (about 2 min): In the control system, read the damper position of box T117 against its command: is it pinned at 100% while airflow is low, or not following its command?
+  about 24% likely to come back abnormal; expected to sharpen the picture by 0.24 bits over the complaints it informs
+  Zone-T212: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  Zone-T117: Zone sensor, setpoint or schedule 19% | Controller set up wrongly 12%
+  air handlers: AHU-1: fan off 0%, low static 9%
+
+Next check (about 2 min): In the control system, read the reheat command and valve or stage position of box T212: is heat called for but the valve or stage not responding?
+  about 14% likely to come back abnormal; expected to sharpen the picture by 0.17 bits over the complaints it informs
+  Zone-T212: Reheat not working 46% | Zone sensor, setpoint or schedule 27%
+  Zone-T117: Zone sensor, setpoint or schedule 20% | Controller set up wrongly 13%
+  air handlers: AHU-1: fan off 0%, low static 4%
+
+Next check (about 2 min): In the control system, read the reheat command and valve or stage position of box T117: is heat called for but the valve or stage not responding?
+  about 14% likely to come back abnormal; expected to sharpen the picture by 0.17 bits over the complaints it informs
+  Zone-T212: Reheat not working 47% | Zone sensor, setpoint or schedule 28%
+  Zone-T117: Reheat not working 47% | Zone sensor, setpoint or schedule 28%
+  air handlers: AHU-1: fan off 0%, low static 1%
+
+Next check (about 11 min): In Zone-T212, compare the thermostat or zone sensor with a reference thermometer and check its setpoint and mode: is it off, or the setpoint or mode wrong?
+  about 29% likely to come back abnormal; expected to sharpen the picture by 0.55 bits over the complaints it informs
+  Zone-T212: Reheat not working 47% | Zone sensor, setpoint or schedule 28%
+  Zone-T117: Reheat not working 47% | Zone sensor, setpoint or schedule 28%
+  air handlers: AHU-1: fan off 0%, low static 1%
+
+Next check (about 11 min): In Zone-T117, compare the thermostat or zone sensor with a reference thermometer and check its setpoint and mode: is it off, or the setpoint or mode wrong?
+  about 29% likely to come back abnormal; expected to sharpen the picture by 0.55 bits over the complaints it informs
+  Zone-T212: Reheat not working 47% | Zone sensor, setpoint or schedule 28%
+  Zone-T117: Reheat not working 47% | Zone sensor, setpoint or schedule 28%
+  air handlers: AHU-1: fan off 0%, low static 1%
+
+Next check (about 16 min): At box T212, inspect the reheat coil and valve (or electric element and connections): is the valve stuck or leaking, the coil fouled, or a connection damaged?
+  about 38% likely to come back abnormal; expected to sharpen the picture by 0.45 bits over the complaints it informs
+  Zone-T212: Reheat not working 94% | Zone sensor, setpoint or schedule 3%
+  Zone-T117: Reheat not working 48% | Zone sensor, setpoint or schedule 28%
+  air handlers: AHU-1: fan off 0%, low static 0%
+
+Next check (about 16 min): At box T117, inspect the reheat coil and valve (or electric element and connections): is the valve stuck or leaking, the coil fouled, or a connection damaged?
+  about 38% likely to come back abnormal; expected to sharpen the picture by 0.44 bits over the complaints it informs
+  Zone-T212: Reheat not working 94% | Zone sensor, setpoint or schedule 3%
+  Zone-T117: Reheat not working 94% | Zone sensor, setpoint or schedule 3%
+  air handlers: AHU-1: fan off 0%, low static 0%
+
+No further check is worth its time.
+  Zone-T212: Reheat not working 94% | Zone sensor, setpoint or schedule 3% | Controller set up wrongly 0%
+  Zone-T117: Reheat not working 94% | Zone sensor, setpoint or schedule 3% | Controller set up wrongly 0%
+  air handlers: AHU-1: fan off 0%, low static 0%
+
+So far: 13 checks, about 72 minutes for the whole visit.
+  Note: The confidence figures assume every check reads as reliably as the catalogue's rates say; those rates are placeholders (only override_room's come from a simulation). If the checks in your building are less reliable, the real confidence is lower (in v0's simulations, worse checks made the tool confidently wrong about three to four times as often; v1 has not been measured yet).
+  Note: The joint model assumes each air handler is faulty with probability f in the visit's window, that a room on a faulty air handler complains with a stated probability, and that the drawings' air handler for every box is right; all of these are placeholders, not measurements.

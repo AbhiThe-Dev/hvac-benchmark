@@ -1,0 +1,1001 @@
+draw,steps,minutes,first_check,all_correct,any_wrong_and_confident,all_concluded,checks
+0,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+1,14,69.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts power_24vac manual_damper_test control_signal controller_leds
+2,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+3,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+4,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+5,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+6,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+7,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+8,11,72.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor
+9,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+10,10,59.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports
+11,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+12,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+13,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+14,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+15,13,80.0,bas_static,1,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting sensing_ports k_factor override_diffuser
+16,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+17,15,114.0,bas_static,1,0,0,bas_static bas_airflow bas_zone thermostat bas_damper bas_controller bas_zone thermostat confirm_acts ahu_gauge sensing_ports k_factor override_diffuser bas_hunting diffuser_duct
+18,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+19,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+20,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+21,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+22,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+23,11,72.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor
+24,13,66.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal override_diffuser thermostat
+25,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+26,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+27,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+28,12,61.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal thermostat
+29,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+30,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+31,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+32,10,59.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports
+33,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+34,13,79.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting override_diffuser sensing_ports k_factor
+35,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+36,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+37,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+38,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+39,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+40,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+41,19,133.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts power_24vac manual_damper_test control_signal duct_trace diffuser_duct bas_hunting sensing_ports k_factor controller_leds
+42,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+43,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+44,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+45,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+46,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+47,11,72.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor
+48,14,106.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+49,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+50,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+51,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+52,11,50.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts power_24vac manual_damper_test control_signal thermostat bas_controller
+53,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+54,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+55,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+56,12,56.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts controller_leds power_24vac control_signal
+57,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+58,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+59,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+60,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+61,13,72.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts bas_controller manual_damper_test power_24vac control_signal override_diffuser
+62,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+63,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+64,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+65,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+66,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+67,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+68,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+69,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+70,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+71,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+72,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+73,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+74,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+75,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+76,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+77,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+78,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+79,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+80,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+81,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+82,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+83,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+84,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+85,12,93.0,bas_static,1,0,0,bas_static bas_airflow bas_zone thermostat bas_damper confirm_acts ahu_gauge bas_hunting sensing_ports k_factor override_diffuser max_airflow
+86,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+87,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+88,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+89,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+90,12,77.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting sensing_ports k_factor
+91,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+92,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+93,11,66.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting sensing_ports
+94,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+95,12,77.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting sensing_ports k_factor
+96,11,72.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor
+97,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+98,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+99,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+100,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+101,13,80.0,bas_static,1,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting sensing_ports k_factor override_diffuser
+102,14,106.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+103,13,85.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser manual_damper_test
+104,12,84.0,bas_static,1,0,0,bas_static bas_airflow bas_zone thermostat bas_damper bas_controller bas_zone thermostat confirm_acts ahu_gauge sensing_ports k_factor
+105,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+106,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+107,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+108,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+109,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+110,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+111,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+112,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser
+113,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+114,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+115,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+116,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+117,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+118,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser
+119,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+120,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+121,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+122,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+123,11,55.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser bas_hunting
+124,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser
+125,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+126,8,41.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat
+127,15,94.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser duct_trace controller_leds control_signal power_24vac diffuser_duct
+128,10,59.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports
+129,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+130,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+131,13,80.0,bas_static,0,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting override_diffuser confirm_acts duct_trace
+132,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+133,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+134,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting sensing_ports k_factor
+135,11,70.0,bas_static,0,0,0,bas_static bas_airflow bas_zone thermostat bas_damper bas_controller bas_zone thermostat confirm_acts ahu_gauge bas_airflow
+136,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+137,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+138,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+139,15,89.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts bas_controller manual_damper_test power_24vac control_signal override_diffuser sensing_ports bas_hunting
+140,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+141,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+142,16,97.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal override_diffuser thermostat bas_hunting sensing_ports k_factor
+143,11,50.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts power_24vac manual_damper_test control_signal thermostat bas_controller
+144,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+145,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+146,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+147,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+148,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser
+149,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+150,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+151,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+152,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+153,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+154,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+155,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+156,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+157,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+158,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+159,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+160,13,85.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser manual_damper_test
+161,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+162,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+163,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+164,11,72.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor
+165,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+166,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+167,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+168,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+169,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+170,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+171,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+172,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+173,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+174,11,72.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor
+175,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+176,10,56.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports
+177,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+178,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+179,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+180,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+181,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+182,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+183,14,91.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser duct_trace controller_leds diffuser_duct bas_hunting
+184,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+185,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+186,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+187,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+188,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+189,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+190,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+191,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+192,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+193,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+194,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+195,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+196,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+197,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+198,14,79.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts bas_controller manual_damper_test power_24vac control_signal override_diffuser bas_hunting
+199,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+200,11,66.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting sensing_ports
+201,16,97.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal override_diffuser thermostat bas_hunting sensing_ports k_factor
+202,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+203,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+204,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+205,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+206,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+207,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+208,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+209,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+210,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+211,13,79.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting override_diffuser sensing_ports k_factor
+212,16,106.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts power_24vac manual_damper_test control_signal duct_trace diffuser_duct bas_hunting
+213,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+214,15,89.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts bas_controller manual_damper_test power_24vac control_signal override_diffuser sensing_ports bas_hunting
+215,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+216,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+217,10,56.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports
+218,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+219,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+220,10,59.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports
+221,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+222,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+223,12,81.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct
+224,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+225,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+226,16,97.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal override_diffuser thermostat bas_hunting sensing_ports k_factor
+227,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+228,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+229,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+230,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+231,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+232,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+233,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+234,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+235,11,66.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting sensing_ports
+236,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+237,10,59.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports
+238,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+239,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+240,10,56.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports
+241,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+242,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+243,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+244,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+245,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+246,10,64.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports
+247,13,85.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser manual_damper_test
+248,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+249,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+250,14,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting override_diffuser controller_leds power_24vac k_factor
+251,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+252,16,97.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal override_diffuser thermostat bas_hunting sensing_ports k_factor
+253,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+254,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+255,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+256,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+257,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+258,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+259,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+260,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+261,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+262,13,80.0,bas_static,0,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting override_diffuser confirm_acts duct_trace
+263,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+264,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+265,14,104.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports
+266,10,56.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports
+267,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+268,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+269,14,106.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+270,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+271,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+272,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+273,12,84.0,bas_static,1,0,0,bas_static bas_airflow bas_zone thermostat bas_damper bas_controller bas_zone thermostat confirm_acts ahu_gauge sensing_ports k_factor
+274,12,84.0,bas_static,1,0,0,bas_static bas_airflow bas_zone thermostat bas_damper bas_controller bas_zone thermostat confirm_acts ahu_gauge sensing_ports k_factor
+275,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+276,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+277,16,107.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller controller_leds power_24vac duct_trace control_signal
+278,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+279,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+280,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+281,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+282,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+283,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+284,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+285,11,72.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor
+286,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+287,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+288,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+289,14,106.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+290,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+291,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+292,13,90.0,bas_static,1,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat confirm_acts override_diffuser sensing_ports bas_hunting bas_airflow ahu_gauge
+293,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting sensing_ports k_factor
+294,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+295,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+296,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+297,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+298,14,96.0,bas_static,0,0,0,bas_static bas_airflow bas_zone thermostat bas_damper bas_controller bas_zone thermostat confirm_acts ahu_gauge sensing_ports k_factor override_diffuser bas_hunting
+299,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+300,11,50.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts power_24vac manual_damper_test control_signal thermostat bas_controller
+301,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+302,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+303,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+304,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+305,11,67.0,bas_static,0,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting sensing_ports
+306,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+307,14,106.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+308,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+309,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+310,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+311,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+312,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+313,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+314,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+315,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+316,13,85.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser manual_damper_test
+317,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+318,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+319,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+320,9,43.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat
+321,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+322,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+323,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+324,11,50.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts power_24vac manual_damper_test control_signal thermostat bas_controller
+325,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+326,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+327,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+328,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+329,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+330,13,85.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser manual_damper_test
+331,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+332,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+333,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+334,17,101.0,bas_static,0,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting override_diffuser confirm_acts power_24vac control_signal manual_damper_test duct_trace controller_leds
+335,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+336,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+337,7,32.0,bas_static,1,0,1,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat
+338,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+339,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+340,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+341,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+342,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+343,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+344,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+345,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+346,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+347,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+348,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+349,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+350,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+351,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+352,11,55.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser bas_hunting
+353,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+354,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+355,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+356,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+357,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+358,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+359,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+360,11,66.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting sensing_ports
+361,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+362,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+363,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+364,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+365,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+366,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+367,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+368,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+369,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+370,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+371,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+372,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+373,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+374,16,97.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal override_diffuser thermostat bas_hunting sensing_ports k_factor
+375,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+376,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+377,10,59.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports
+378,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+379,12,81.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct
+380,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+381,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+382,11,55.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser bas_hunting
+383,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+384,11,62.0,bas_static,1,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting override_diffuser
+385,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+386,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+387,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+388,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+389,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+390,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+391,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+392,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+393,11,72.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor
+394,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+395,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+396,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+397,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+398,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+399,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+400,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+401,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+402,12,93.0,bas_static,0,0,0,bas_static bas_airflow bas_zone thermostat bas_damper confirm_acts ahu_gauge bas_hunting sensing_ports k_factor override_diffuser max_airflow
+403,11,55.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser bas_hunting
+404,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+405,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+406,12,84.0,bas_static,1,0,0,bas_static bas_airflow bas_zone thermostat bas_damper bas_controller bas_zone thermostat confirm_acts ahu_gauge sensing_ports k_factor
+407,14,96.0,bas_static,1,0,0,bas_static bas_airflow bas_zone thermostat bas_damper bas_controller bas_zone thermostat confirm_acts ahu_gauge sensing_ports k_factor override_diffuser bas_hunting
+408,16,115.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser duct_trace controller_leds diffuser_duct bas_hunting sensing_ports k_factor
+409,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser
+410,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+411,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+412,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+413,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+414,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+415,11,72.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor
+416,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+417,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+418,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+419,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+420,12,77.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting sensing_ports k_factor
+421,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+422,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+423,14,106.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+424,19,133.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts power_24vac manual_damper_test control_signal duct_trace diffuser_duct bas_hunting sensing_ports k_factor controller_leds
+425,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+426,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+427,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+428,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+429,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+430,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+431,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+432,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+433,8,52.0,bas_static,0,0,0,bas_static bas_airflow bas_zone thermostat bas_damper confirm_acts ahu_gauge bas_hunting
+434,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+435,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+436,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+437,14,106.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+438,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+439,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+440,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+441,12,65.0,bas_static,1,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller confirm_acts override_diffuser bas_hunting
+442,10,59.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports
+443,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+444,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+445,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+446,11,55.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser bas_hunting
+447,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+448,12,75.0,bas_static,1,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting sensing_ports k_factor
+449,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+450,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+451,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+452,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+453,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+454,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+455,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+456,11,55.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser bas_hunting
+457,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+458,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+459,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+460,11,72.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor
+461,11,55.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser bas_hunting
+462,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+463,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+464,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+465,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+466,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+467,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+468,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+469,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+470,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+471,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+472,11,66.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting sensing_ports
+473,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+474,11,66.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting sensing_ports
+475,12,77.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting sensing_ports k_factor
+476,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+477,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+478,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+479,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+480,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+481,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+482,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+483,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+484,11,72.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor
+485,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+486,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+487,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+488,18,140.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace override_diffuser override_diffuser override_diffuser override_diffuser override_diffuser override_diffuser override_diffuser
+489,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+490,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+491,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+492,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+493,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+494,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+495,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+496,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+497,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+498,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+499,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+500,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+501,14,106.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+502,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+503,14,106.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+504,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+505,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser
+506,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting sensing_ports k_factor
+507,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+508,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+509,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+510,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+511,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+512,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+513,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+514,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+515,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+516,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+517,16,97.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal override_diffuser thermostat bas_hunting sensing_ports k_factor
+518,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+519,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+520,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+521,12,81.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct
+522,16,115.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser duct_trace controller_leds diffuser_duct bas_hunting sensing_ports k_factor
+523,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+524,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+525,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+526,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+527,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+528,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+529,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+530,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+531,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+532,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+533,8,41.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat
+534,19,133.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts power_24vac manual_damper_test control_signal duct_trace diffuser_duct bas_hunting sensing_ports k_factor controller_leds
+535,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+536,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+537,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+538,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting sensing_ports k_factor
+539,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+540,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+541,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+542,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+543,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+544,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+545,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+546,12,81.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct
+547,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+548,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+549,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+550,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+551,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+552,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+553,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+554,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+555,7,32.0,bas_static,1,0,1,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat
+556,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+557,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+558,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+559,11,62.0,bas_static,1,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting override_diffuser
+560,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+561,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+562,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+563,19,155.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace override_diffuser override_diffuser override_diffuser override_diffuser override_diffuser override_diffuser override_diffuser duct_trace
+564,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+565,16,97.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal override_diffuser thermostat bas_hunting sensing_ports k_factor
+566,14,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting override_diffuser controller_leds power_24vac k_factor
+567,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+568,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+569,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+570,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+571,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting sensing_ports k_factor
+572,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+573,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+574,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+575,14,69.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts power_24vac manual_damper_test control_signal controller_leds
+576,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+577,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+578,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+579,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+580,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+581,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+582,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+583,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+584,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+585,14,106.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+586,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+587,11,68.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports
+588,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+589,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+590,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+591,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting sensing_ports k_factor
+592,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+593,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+594,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+595,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+596,14,106.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+597,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+598,11,72.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor
+599,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+600,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+601,11,62.0,bas_static,1,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting override_diffuser
+602,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+603,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+604,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+605,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+606,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+607,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+608,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+609,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+610,12,84.0,bas_static,1,0,0,bas_static bas_airflow bas_zone thermostat bas_damper bas_controller bas_zone thermostat confirm_acts ahu_gauge sensing_ports k_factor
+611,12,81.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct
+612,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+613,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+614,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+615,12,61.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal thermostat
+616,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+617,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+618,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+619,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+620,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+621,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+622,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+623,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+624,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+625,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+626,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+627,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+628,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+629,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+630,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+631,13,79.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser bas_hunting sensing_ports k_factor
+632,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+633,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+634,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+635,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+636,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+637,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+638,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+639,11,66.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting sensing_ports
+640,8,34.0,bas_static,1,0,0,bas_static bas_airflow bas_zone thermostat bas_damper bas_controller bas_zone thermostat
+641,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+642,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+643,10,59.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports
+644,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+645,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+646,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+647,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+648,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser
+649,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+650,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+651,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+652,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+653,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+654,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+655,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+656,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+657,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+658,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser
+659,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+660,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+661,19,155.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace override_diffuser override_diffuser duct_trace override_diffuser override_diffuser override_diffuser override_diffuser override_diffuser
+662,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+663,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+664,14,96.0,bas_static,0,0,0,bas_static bas_airflow bas_zone thermostat bas_damper bas_controller bas_zone thermostat confirm_acts ahu_gauge sensing_ports k_factor override_diffuser bas_hunting
+665,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+666,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+667,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser
+668,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+669,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+670,16,97.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal override_diffuser thermostat bas_hunting sensing_ports k_factor
+671,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+672,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+673,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+674,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+675,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+676,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+677,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+678,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+679,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+680,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+681,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+682,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+683,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+684,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+685,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+686,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+687,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+688,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+689,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+690,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+691,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+692,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+693,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+694,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+695,12,61.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal thermostat
+696,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+697,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+698,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+699,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+700,11,72.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor
+701,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+702,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+703,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+704,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+705,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+706,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+707,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+708,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+709,14,106.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+710,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+711,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+712,13,80.0,bas_static,0,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting override_diffuser confirm_acts duct_trace
+713,8,52.0,bas_static,0,0,0,bas_static bas_airflow bas_zone thermostat bas_damper confirm_acts ahu_gauge bas_hunting
+714,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+715,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+716,11,50.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts power_24vac manual_damper_test control_signal thermostat bas_controller
+717,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+718,11,62.0,bas_static,1,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting override_diffuser
+719,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+720,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+721,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+722,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+723,14,91.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser duct_trace controller_leds diffuser_duct bas_hunting
+724,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+725,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+726,13,80.0,bas_static,1,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting sensing_ports k_factor override_diffuser
+727,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+728,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+729,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+730,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+731,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+732,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+733,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+734,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+735,14,106.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+736,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+737,11,55.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser bas_hunting
+738,12,81.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct
+739,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+740,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+741,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+742,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+743,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+744,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+745,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+746,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+747,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+748,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+749,12,75.0,bas_static,1,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting sensing_ports k_factor
+750,14,106.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+751,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+752,13,80.0,bas_static,0,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting override_diffuser confirm_acts duct_trace
+753,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+754,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+755,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+756,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+757,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+758,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser
+759,11,50.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts power_24vac manual_damper_test control_signal thermostat bas_controller
+760,11,66.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting sensing_ports
+761,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+762,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+763,16,106.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts power_24vac manual_damper_test control_signal duct_trace diffuser_duct bas_hunting
+764,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+765,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+766,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+767,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+768,14,96.0,bas_static,1,0,0,bas_static bas_airflow bas_zone thermostat bas_damper bas_controller bas_zone thermostat confirm_acts ahu_gauge sensing_ports k_factor override_diffuser bas_hunting
+769,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+770,11,55.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser bas_hunting
+771,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+772,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+773,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+774,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+775,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+776,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+777,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+778,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+779,14,82.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting override_diffuser sensing_ports k_factor controller_leds
+780,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+781,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+782,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+783,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+784,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+785,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+786,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+787,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+788,20,170.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace override_diffuser override_diffuser override_diffuser duct_trace override_diffuser override_diffuser duct_trace override_diffuser override_diffuser
+789,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+790,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+791,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+792,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+793,11,66.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting sensing_ports
+794,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+795,16,97.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal override_diffuser thermostat bas_hunting sensing_ports k_factor
+796,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+797,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+798,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+799,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+800,10,64.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports
+801,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+802,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+803,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+804,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+805,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+806,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+807,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+808,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser
+809,14,106.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+810,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+811,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+812,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+813,13,72.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts bas_controller manual_damper_test power_24vac control_signal override_diffuser
+814,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+815,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+816,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+817,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+818,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+819,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+820,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+821,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+822,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+823,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+824,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+825,13,80.0,bas_static,1,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting sensing_ports k_factor override_diffuser
+826,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+827,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+828,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+829,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+830,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+831,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+832,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+833,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+834,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+835,10,59.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports
+836,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+837,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+838,16,97.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal override_diffuser thermostat bas_hunting sensing_ports k_factor
+839,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+840,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+841,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+842,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+843,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+844,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+845,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+846,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+847,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+848,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+849,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+850,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser
+851,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+852,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+853,13,80.0,bas_static,0,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting override_diffuser confirm_acts duct_trace
+854,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+855,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+856,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+857,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+858,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+859,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser
+860,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+861,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+862,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+863,14,96.0,bas_static,1,0,0,bas_static bas_airflow bas_zone thermostat bas_damper bas_controller bas_zone thermostat confirm_acts ahu_gauge sensing_ports k_factor override_diffuser bas_hunting
+864,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+865,18,125.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting override_diffuser controller_leds power_24vac k_factor control_signal sensing_ports duct_trace diffuser_duct
+866,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+867,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+868,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+869,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+870,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+871,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+872,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+873,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+874,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+875,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+876,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+877,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+878,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+879,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+880,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+881,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+882,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+883,11,66.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts thermostat thermostat bas_hunting sensing_ports
+884,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+885,13,66.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal override_diffuser thermostat
+886,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+887,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+888,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+889,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+890,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+891,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+892,16,115.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller confirm_acts override_diffuser duct_trace controller_leds diffuser_duct bas_hunting sensing_ports k_factor
+893,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+894,12,61.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac manual_damper_test control_signal thermostat
+895,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+896,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+897,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+898,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+899,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+900,6,30.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat
+901,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+902,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+903,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+904,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+905,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+906,15,112.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+907,11,50.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts power_24vac manual_damper_test control_signal thermostat bas_controller
+908,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+909,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+910,10,59.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports
+911,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+912,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+913,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+914,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+915,11,62.0,bas_static,1,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting override_diffuser
+916,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+917,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+918,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+919,10,59.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports
+920,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+921,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+922,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+923,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+924,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+925,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+926,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+927,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+928,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+929,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+930,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+931,14,106.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace k_factor
+932,11,63.0,bas_static,0,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat confirm_acts override_diffuser sensing_ports bas_hunting
+933,11,68.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports
+934,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+935,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting sensing_ports k_factor override_diffuser
+936,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+937,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+938,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+939,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+940,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+941,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+942,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+943,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+944,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+945,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+946,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+947,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+948,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+949,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+950,21,190.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting diffuser_duct bas_controller duct_trace override_diffuser override_diffuser override_diffuser override_diffuser override_diffuser override_diffuser duct_trace override_diffuser
+951,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+952,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+953,13,88.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting
+954,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+955,12,74.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+956,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+957,10,59.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports
+958,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+959,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+960,11,63.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+961,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+962,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+963,11,69.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting sensing_ports
+964,11,63.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser sensing_ports bas_hunting
+965,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+966,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+967,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+968,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+969,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+970,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+971,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+972,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+973,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+974,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+975,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+976,8,34.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat thermostat
+977,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+978,17,100.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller confirm_acts controller_leds power_24vac control_signal override_diffuser thermostat thermostat bas_hunting sensing_ports manual_damper_test k_factor
+979,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+980,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+981,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+982,11,62.0,bas_static,1,0,0,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat diffuser_duct bas_controller bas_hunting override_diffuser
+983,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+984,10,47.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts power_24vac thermostat
+985,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+986,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+987,12,77.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper confirm_acts override_diffuser bas_hunting sensing_ports k_factor
+988,15,112.0,bas_static,1,0,1,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser confirm_acts duct_trace diffuser_duct bas_hunting sensing_ports k_factor
+989,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+990,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+991,9,48.0,bas_static,0,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper confirm_acts thermostat thermostat bas_hunting
+992,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+993,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+994,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting
+995,10,52.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting
+996,12,76.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow thermostat thermostat bas_damper bas_controller override_diffuser bas_hunting sensing_ports k_factor
+997,14,106.0,bas_static,1,0,1,bas_static bas_airflow bas_zone bas_zone bas_damper thermostat thermostat confirm_acts override_diffuser ahu_gauge bas_hunting sensing_ports k_factor max_airflow
+998,11,67.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor
+999,12,74.0,bas_static,1,0,0,bas_static bas_zone bas_zone bas_airflow bas_damper bas_controller thermostat confirm_acts thermostat sensing_ports k_factor bas_hunting

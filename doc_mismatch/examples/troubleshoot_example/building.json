@@ -1,0 +1,23 @@
+{
+  "name": "Example office, floor 2 (made up)",
+  "equipment": [
+    {"id": "AHU-1", "kind": "AHU", "area": "Roof", "tag": "AHU-1"},
+    {"id": "AHU-2", "kind": "AHU", "area": "Roof", "tag": "AHU-2"},
+    {"id": "VAV-2-01", "kind": "VAV", "area": "Floor 2 East", "tag": "2-01"},
+    {"id": "VAV-2-02", "kind": "VAV", "area": "Floor 2 East", "tag": "2-02"},
+    {"id": "VAV-2-03", "kind": "VAV", "area": "Floor 2 East", "tag": "2-03"},
+    {"id": "VAV-2-04", "kind": "VAV", "area": "Floor 2 West", "tag": "2-04"},
+    {"id": "VAV-2-05", "kind": "VAV", "area": "Floor 2 West", "tag": "2-05"},
+    {"id": "VAV-2-06", "kind": "VAV", "area": "Floor 2 West", "tag": "2-06"},
+    {"id": "Room-201", "kind": "Zone", "area": "Floor 2 East", "tag": "Room 201"},
+    {"id": "Room-202", "kind": "Zone", "area": "Floor 2 East", "tag": "Room 202"},
+    {"id": "Room-203", "kind": "Zone", "area": "Floor 2 East", "tag": "Room 203"},
+    {"id": "Room-204", "kind": "Zone", "area": "Floor 2 West", "tag": "Room 204"},
+    {"id": "Room-205", "kind": "Zone", "area": "Floor 2 West", "tag": "Room 205"},
+    {"id": "Room-206", "kind": "Zone", "area": "Floor 2 West", "tag": "Room 206"}
+  ],
+  "claims": {
+    "vav_zone": {"Room-201": "VAV-2-01", "Room-202": "VAV-2-02", "Room-203": "VAV-2-03", "Room-204": "VAV-2-04", "Room-205": "VAV-2-05", "Room-206": "VAV-2-06"},
+    "ahu_vav": {"VAV-2-01": "AHU-1", "VAV-2-02": "AHU-1", "VAV-2-03": "AHU-1", "VAV-2-04": "AHU-2", "VAV-2-05": "AHU-2", "VAV-2-06": "AHU-2"}
+  }
+}

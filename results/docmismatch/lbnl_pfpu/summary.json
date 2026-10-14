@@ -1,0 +1,12 @@
+{
+ "hits": {
+  "damper_stuck|bas_airflow": 0.9998371647509579,
+  "airflow_bias|bas_airflow": 1.0,
+  "pi2_unstable|bas_airflow": 0.2734408258833546,
+  "reheat_valve|bas_reheat": 0.0789857386121754
+ },
+ "false_alarm": {
+  "bas_airflow": 0.001335674755214985,
+  "bas_reheat": 0.0
+ }
+}

@@ -13,6 +13,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from docmismatch import evidence as EV  # noqa: E402
+from docmismatch.active import selection as SEL  # noqa: E402
 from docmismatch.active.engine import run_episode  # noqa: E402
 from docmismatch.active.nested import build_sim_episodes  # noqa: E402
 from docmismatch.active.readiness import SimKind, h32  # noqa: E402
@@ -46,6 +47,7 @@ def row(e, r, building):
 def compute(t0):
     cfg = make_cfg(("active",))
     cfg["sim_reps"] = [0]
+    runkw = SEL.get(cfg["variant"])["runkw"]
     cases_all = cases_for(EXISTING)
     pools = {True: build_pools(True), False: build_pools(False)}
     print(f"pools built {time.time() - t0:.0f}s", flush=True)
@@ -74,7 +76,7 @@ def compute(t0):
                 if e.ep_id in eps_u:
                     specs["beta1_unmasked"] = (eps_u[e.ep_id], mod_u, 1.0, 24)
                 for v, (ee, mod, b, nmax) in specs.items():
-                    r = run_episode(ee, mod, sl, "active", tau=2.0, nmax=nmax, seed=seed, beta=b, diag=True)
+                    r = run_episode(ee, mod, sl, "active", tau=2.0, nmax=nmax, seed=seed, beta=b, diag=True, **runkw)   # Addendum 14 erratum: the frozen variant's run options
                     if r is not None:
                         rows[(slot, v)].append(row(ee, r, h))
             print(f"  {slot:12s} held-out {h:18s} eps={len(eps_m):3d} beta_cal={beta_cal:.2f} {time.time() - t0:.0f}s", flush=True)

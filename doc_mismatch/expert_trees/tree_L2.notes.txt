@@ -1,0 +1,11 @@
+Judgement calls and limits of the format:
+1. **BAS use.** I use the BAS only as cheap triage (AHU static, controller, zone), then confirm with my own meter, gauge or eyes. `sure:true` needs a direct physical finding or two independent agreeing points. A BAS-only call, or a BAS reading my physical check contradicts, is `sure:false`.
+2. **Physical order.** After the BAS triage I go to the room with the flow hood, because it measures actual air against what the box should deliver. Hood off sends me to the box. Hood fine sends me to thermal and settings causes: thermostat, reheat, max airflow, capacity, hunting.
+3. **AHU reading.** I read static first and only read the fan if static is low, since a stopped fan means low static. With two or more rooms on an AHU the preamble reads it once. In Tier C that is about 17 to 21 minutes, but a single complaint only goes to the AHU if the static at the box inlet is low.
+4. **Not representable.** I can't carry information between branches other than the AHU cache. When a BAS reading and my physical confirm disagree I end in a hedged `sure:false` or escalate leaf, because continuing would need a duplicate of the whole tree.
+5. **Cached-reading assumptions.** Tier C complaints skip the root's `bas_static` even when the preamble already read the AHU by gauge. Repeated confirms (`controller_leds`, `reheat_coil`) are assumed cached or free.
+6. **Drawings wrong.** I only call `find_feeder` by exclusion: the damper moves, inlet static is fine, there is no airflow response at the diffuser when I drive the box to full cooling, and the duct and diffuser are clean.
+7. **Unused checks.** I skip `bas_airflow` and `bas_damper`, because the flow reading comes from the same sensor that might be the fault. I skip `override_room` and `duct_trace` because they cost 25 to 38 minutes.
+8. **Always `sure:false`.** `capacity_design` is a judgement call and hunting can't be proven.
+9. **Escalation guess.** The final escalate guess is `controller_config`: it is the thing I can't read in Tier C, and the minimum and schedule settings are not covered by `max_airflow`.
+10. **Size and cap.** The tree has 64 nodes. The longest path is 11 checks in Tier A/B (a bit under 12), and a hood-off path can reach 12 checks.

@@ -1,0 +1,161 @@
+{
+ "visits": [
+  {
+   "id": "v01",
+   "event": 933,
+   "kind": "single"
+  },
+  {
+   "id": "v02",
+   "event": 9,
+   "kind": "shared"
+  },
+  {
+   "id": "v03",
+   "event": 514,
+   "kind": "shared"
+  },
+  {
+   "id": "v04",
+   "event": 409,
+   "kind": "multi"
+  },
+  {
+   "id": "v05",
+   "event": 243,
+   "kind": "single"
+  },
+  {
+   "id": "v06",
+   "event": 425,
+   "kind": "multi"
+  },
+  {
+   "id": "v07",
+   "event": 832,
+   "kind": "shared"
+  },
+  {
+   "id": "v08",
+   "event": 448,
+   "kind": "single"
+  },
+  {
+   "id": "v09",
+   "event": 908,
+   "kind": "multi"
+  },
+  {
+   "id": "v10",
+   "event": 64,
+   "kind": "single"
+  },
+  {
+   "id": "v11",
+   "event": 901,
+   "kind": "multi"
+  },
+  {
+   "id": "v12",
+   "event": 771,
+   "kind": "multi"
+  },
+  {
+   "id": "v13",
+   "event": 680,
+   "kind": "shared"
+  },
+  {
+   "id": "v14",
+   "event": 942,
+   "kind": "single"
+  },
+  {
+   "id": "v15",
+   "event": 597,
+   "kind": "multi"
+  },
+  {
+   "id": "v16",
+   "event": 834,
+   "kind": "multi"
+  },
+  {
+   "id": "v17",
+   "event": 774,
+   "kind": "single"
+  },
+  {
+   "id": "v18",
+   "event": 665,
+   "kind": "multi"
+  },
+  {
+   "id": "v19",
+   "event": 383,
+   "kind": "shared"
+  },
+  {
+   "id": "v20",
+   "event": 550,
+   "kind": "shared"
+  },
+  {
+   "id": "v21",
+   "event": 465,
+   "kind": "single"
+  },
+  {
+   "id": "v22",
+   "event": 607,
+   "kind": "single"
+  },
+  {
+   "id": "v23",
+   "event": 211,
+   "kind": "shared"
+  },
+  {
+   "id": "v24",
+   "event": 705,
+   "kind": "single"
+  },
+  {
+   "id": "v25",
+   "event": 268,
+   "kind": "single"
+  },
+  {
+   "id": "v26",
+   "event": 785,
+   "kind": "shared"
+  },
+  {
+   "id": "v27",
+   "event": 427,
+   "kind": "shared"
+  },
+  {
+   "id": "v28",
+   "event": 170,
+   "kind": "multi"
+  },
+  {
+   "id": "v29",
+   "event": 142,
+   "kind": "multi"
+  },
+  {
+   "id": "v30",
+   "event": 321,
+   "kind": "shared"
+  }
+ ],
+ "shares": {
+  "single": 0.5787878787878787,
+  "multi": 0.25757575757575757,
+  "shared": 0.16363636363636364
+ },
+ "per_kind": 10,
+ "seed": 33
+}

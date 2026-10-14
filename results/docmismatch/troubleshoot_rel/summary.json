@@ -1,0 +1,1078 @@
+{
+ "breakdown": {
+  "0.0": [
+   {
+    "cause": "low_static",
+    "concluded_wrong": 0.010127531882970742,
+    "exact": 0.923668417104276,
+    "n": 5332,
+    "top_wrong": [
+     [
+      "capacity_design",
+      184
+     ],
+     [
+      "controller_config",
+      84
+     ],
+     [
+      "ahu_fan_off",
+      75
+     ]
+    ]
+   },
+   {
+    "cause": "ahu_fan_off",
+    "concluded_wrong": 0.032113341204250294,
+    "exact": 0.8840613931523023,
+    "n": 4235,
+    "top_wrong": [
+     [
+      "low_static",
+      291
+     ],
+     [
+      "capacity_design",
+      140
+     ],
+     [
+      "controller_config",
+      22
+     ]
+    ]
+   },
+   {
+    "cause": "zone_sensor_setpoint",
+    "concluded_wrong": 0.012522361359570662,
+    "exact": 0.9364937388193202,
+    "n": 2236,
+    "top_wrong": [
+     [
+      "low_static",
+      37
+     ],
+     [
+      "other",
+      28
+     ],
+     [
+      "capacity_design",
+      25
+     ]
+    ]
+   },
+   {
+    "cause": "controller_config",
+    "concluded_wrong": 0.0204369274136716,
+    "exact": 0.6363636363636364,
+    "n": 1419,
+    "top_wrong": [
+     [
+      "capacity_design",
+      207
+     ],
+     [
+      "other",
+      103
+     ],
+     [
+      "duct_diffuser",
+      52
+     ]
+    ]
+   },
+   {
+    "cause": "flow_sensor",
+    "concluded_wrong": 0.01634241245136187,
+    "exact": 0.8731517509727627,
+    "n": 1285,
+    "top_wrong": [
+     [
+      "controller_config",
+      54
+     ],
+     [
+      "low_static",
+      27
+     ],
+     [
+      "other",
+      22
+     ]
+    ]
+   },
+   {
+    "cause": "duct_diffuser",
+    "concluded_wrong": 0.011342155009451797,
+    "exact": 0.7703213610586012,
+    "n": 1058,
+    "top_wrong": [
+     [
+      "other",
+      62
+     ],
+     [
+      "controller_config",
+      61
+     ],
+     [
+      "capacity_design",
+      43
+     ]
+    ]
+   },
+   {
+    "cause": "wrong box",
+    "concluded_wrong": 0.020607375271149676,
+    "exact": 0.7744034707158352,
+    "n": 922,
+    "top_wrong": [
+     [
+      "reheat_fail",
+      30
+     ],
+     [
+      "zone_sensor_setpoint",
+      28
+     ],
+     [
+      "controller_config",
+      27
+     ]
+    ]
+   },
+   {
+    "cause": "capacity_design",
+    "concluded_wrong": 0.020833333333333332,
+    "exact": 0.5870098039215687,
+    "n": 816,
+    "top_wrong": [
+     [
+      "other",
+      121
+     ],
+     [
+      "controller_config",
+      94
+     ],
+     [
+      "flow_sensor",
+      32
+     ]
+    ]
+   },
+   {
+    "cause": "other",
+    "concluded_wrong": 0.024147727272727272,
+    "exact": 0.609375,
+    "n": 704,
+    "top_wrong": [
+     [
+      "controller_config",
+      73
+     ],
+     [
+      "capacity_design",
+      54
+     ],
+     [
+      "duct_diffuser",
+      38
+     ]
+    ]
+   },
+   {
+    "cause": "reheat_fail",
+    "concluded_wrong": 0.009230769230769232,
+    "exact": 0.8292307692307692,
+    "n": 650,
+    "top_wrong": [
+     [
+      "other",
+      49
+     ],
+     [
+      "zone_sensor_setpoint",
+      26
+     ],
+     [
+      "low_static",
+      10
+     ]
+    ]
+   },
+   {
+    "cause": "damper_mech",
+    "concluded_wrong": 0.005128205128205128,
+    "exact": 0.8478632478632478,
+    "n": 585,
+    "top_wrong": [
+     [
+      "actuator_fail",
+      37
+     ],
+     [
+      "capacity_design",
+      23
+     ],
+     [
+      "low_static",
+      6
+     ]
+    ]
+   },
+   {
+    "cause": "actuator_fail",
+    "concluded_wrong": 0.012259194395796848,
+    "exact": 0.7985989492119089,
+    "n": 571,
+    "top_wrong": [
+     [
+      "damper_mech",
+      29
+     ],
+     [
+      "signal_fault",
+      17
+     ],
+     [
+      "capacity_design",
+      15
+     ]
+    ]
+   },
+   {
+    "cause": "controller_comms",
+    "concluded_wrong": 0.009868421052631578,
+    "exact": 0.7236842105263158,
+    "n": 304,
+    "top_wrong": [
+     [
+      "no_power",
+      27
+     ],
+     [
+      "actuator_fail",
+      25
+     ],
+     [
+      "signal_fault",
+      15
+     ]
+    ]
+   },
+   {
+    "cause": "no_power",
+    "concluded_wrong": 0.007905138339920948,
+    "exact": 0.8260869565217391,
+    "n": 253,
+    "top_wrong": [
+     [
+      "actuator_fail",
+      17
+     ],
+     [
+      "capacity_design",
+      8
+     ],
+     [
+      "controller_comms",
+      7
+     ]
+    ]
+   },
+   {
+    "cause": "signal_fault",
+    "concluded_wrong": 0.026455026455026454,
+    "exact": 0.7354497354497355,
+    "n": 189,
+    "top_wrong": [
+     [
+      "controller_comms",
+      17
+     ],
+     [
+      "actuator_fail",
+      12
+     ],
+     [
+      "capacity_design",
+      5
+     ]
+    ]
+   },
+   {
+    "cause": "unlisted",
+    "concluded_wrong": 0.019230769230769232,
+    "exact": 0.28846153846153844,
+    "n": 104,
+    "top_wrong": [
+     [
+      "wrong box",
+      53
+     ],
+     [
+      "reheat_fail",
+      7
+     ],
+     [
+      "other",
+      6
+     ]
+    ]
+   }
+  ],
+  "0.5": [
+   {
+    "cause": "low_static",
+    "concluded_wrong": 0.006564141035258815,
+    "exact": 0.9259189797449362,
+    "n": 5332,
+    "top_wrong": [
+     [
+      "capacity_design",
+      232
+     ],
+     [
+      "ahu_fan_off",
+      84
+     ],
+     [
+      "controller_config",
+      49
+     ]
+    ]
+   },
+   {
+    "cause": "ahu_fan_off",
+    "concluded_wrong": 0.02550177095631641,
+    "exact": 0.9015348288075561,
+    "n": 4235,
+    "top_wrong": [
+     [
+      "low_static",
+      220
+     ],
+     [
+      "capacity_design",
+      167
+     ],
+     [
+      "controller_config",
+      18
+     ]
+    ]
+   },
+   {
+    "cause": "zone_sensor_setpoint",
+    "concluded_wrong": 0.011627906976744186,
+    "exact": 0.971824686940966,
+    "n": 2236,
+    "top_wrong": [
+     [
+      "low_static",
+      33
+     ],
+     [
+      "other",
+      10
+     ],
+     [
+      "controller_config",
+      8
+     ]
+    ]
+   },
+   {
+    "cause": "controller_config",
+    "concluded_wrong": 0.015503875968992248,
+    "exact": 0.733615221987315,
+    "n": 1419,
+    "top_wrong": [
+     [
+      "capacity_design",
+      153
+     ],
+     [
+      "other",
+      95
+     ],
+     [
+      "duct_diffuser",
+      36
+     ]
+    ]
+   },
+   {
+    "cause": "flow_sensor",
+    "concluded_wrong": 0.014785992217898832,
+    "exact": 0.9206225680933852,
+    "n": 1285,
+    "top_wrong": [
+     [
+      "controller_config",
+      28
+     ],
+     [
+      "low_static",
+      27
+     ],
+     [
+      "other",
+      16
+     ]
+    ]
+   },
+   {
+    "cause": "duct_diffuser",
+    "concluded_wrong": 0.008506616257088847,
+    "exact": 0.8969754253308129,
+    "n": 1058,
+    "top_wrong": [
+     [
+      "controller_config",
+      31
+     ],
+     [
+      "other",
+      22
+     ],
+     [
+      "capacity_design",
+      20
+     ]
+    ]
+   },
+   {
+    "cause": "wrong box",
+    "concluded_wrong": 0.016268980477223426,
+    "exact": 0.868763557483731,
+    "n": 922,
+    "top_wrong": [
+     [
+      "low_static",
+      21
+     ],
+     [
+      "unlisted",
+      17
+     ],
+     [
+      "zone_sensor_setpoint",
+      17
+     ]
+    ]
+   },
+   {
+    "cause": "capacity_design",
+    "concluded_wrong": 0.0196078431372549,
+    "exact": 0.6519607843137255,
+    "n": 816,
+    "top_wrong": [
+     [
+      "other",
+      140
+     ],
+     [
+      "controller_config",
+      69
+     ],
+     [
+      "low_static",
+      17
+     ]
+    ]
+   },
+   {
+    "cause": "other",
+    "concluded_wrong": 0.017045454545454544,
+    "exact": 0.7826704545454546,
+    "n": 704,
+    "top_wrong": [
+     [
+      "controller_config",
+      42
+     ],
+     [
+      "capacity_design",
+      30
+     ],
+     [
+      "zone_sensor_setpoint",
+      28
+     ]
+    ]
+   },
+   {
+    "cause": "reheat_fail",
+    "concluded_wrong": 0.007692307692307693,
+    "exact": 0.943076923076923,
+    "n": 650,
+    "top_wrong": [
+     [
+      "other",
+      19
+     ],
+     [
+      "low_static",
+      10
+     ],
+     [
+      "flow_sensor",
+      3
+     ]
+    ]
+   },
+   {
+    "cause": "damper_mech",
+    "concluded_wrong": 0.003418803418803419,
+    "exact": 0.9230769230769231,
+    "n": 585,
+    "top_wrong": [
+     [
+      "actuator_fail",
+      19
+     ],
+     [
+      "capacity_design",
+      16
+     ],
+     [
+      "low_static",
+      5
+     ]
+    ]
+   },
+   {
+    "cause": "actuator_fail",
+    "concluded_wrong": 0.010507880910683012,
+    "exact": 0.9106830122591943,
+    "n": 571,
+    "top_wrong": [
+     [
+      "damper_mech",
+      13
+     ],
+     [
+      "low_static",
+      9
+     ],
+     [
+      "signal_fault",
+      8
+     ]
+    ]
+   },
+   {
+    "cause": "controller_comms",
+    "concluded_wrong": 0.009868421052631578,
+    "exact": 0.8618421052631579,
+    "n": 304,
+    "top_wrong": [
+     [
+      "no_power",
+      16
+     ],
+     [
+      "actuator_fail",
+      10
+     ],
+     [
+      "signal_fault",
+      5
+     ]
+    ]
+   },
+   {
+    "cause": "no_power",
+    "concluded_wrong": 0.007905138339920948,
+    "exact": 0.9130434782608695,
+    "n": 253,
+    "top_wrong": [
+     [
+      "actuator_fail",
+      8
+     ],
+     [
+      "capacity_design",
+      6
+     ],
+     [
+      "low_static",
+      4
+     ]
+    ]
+   },
+   {
+    "cause": "signal_fault",
+    "concluded_wrong": 0.021164021164021163,
+    "exact": 0.8518518518518519,
+    "n": 189,
+    "top_wrong": [
+     [
+      "controller_comms",
+      8
+     ],
+     [
+      "actuator_fail",
+      6
+     ],
+     [
+      "low_static",
+      5
+     ]
+    ]
+   },
+   {
+    "cause": "unlisted",
+    "concluded_wrong": 0.009615384615384616,
+    "exact": 0.375,
+    "n": 104,
+    "top_wrong": [
+     [
+      "wrong box",
+      52
+     ],
+     [
+      "reheat_fail",
+      5
+     ],
+     [
+      "other",
+      4
+     ]
+    ]
+   }
+  ],
+  "1.0": [
+   {
+    "cause": "low_static",
+    "concluded_wrong": 0.0009377344336084021,
+    "exact": 0.904913728432108,
+    "n": 5332,
+    "top_wrong": [
+     [
+      "capacity_design",
+      286
+     ],
+     [
+      "ahu_fan_off",
+      217
+     ],
+     [
+      "controller_config",
+      4
+     ]
+    ]
+   },
+   {
+    "cause": "ahu_fan_off",
+    "concluded_wrong": 0.01912632821723731,
+    "exact": 0.917827626918536,
+    "n": 4235,
+    "top_wrong": [
+     [
+      "capacity_design",
+      194
+     ],
+     [
+      "low_static",
+      151
+     ],
+     [
+      "controller_config",
+      3
+     ]
+    ]
+   },
+   {
+    "cause": "zone_sensor_setpoint",
+    "concluded_wrong": 0.012075134168157423,
+    "exact": 0.9838998211091234,
+    "n": 2236,
+    "top_wrong": [
+     [
+      "low_static",
+      33
+     ],
+     [
+      "ahu_fan_off",
+      3
+     ]
+    ]
+   },
+   {
+    "cause": "controller_config",
+    "concluded_wrong": 0.014799154334038054,
+    "exact": 0.8329809725158562,
+    "n": 1419,
+    "top_wrong": [
+     [
+      "capacity_design",
+      113
+     ],
+     [
+      "other",
+      89
+     ],
+     [
+      "low_static",
+      30
+     ]
+    ]
+   },
+   {
+    "cause": "flow_sensor",
+    "concluded_wrong": 0.013229571984435798,
+    "exact": 0.977431906614786,
+    "n": 1285,
+    "top_wrong": [
+     [
+      "low_static",
+      26
+     ],
+     [
+      "ahu_fan_off",
+      3
+     ]
+    ]
+   },
+   {
+    "cause": "duct_diffuser",
+    "concluded_wrong": 0.008506616257088847,
+    "exact": 0.9810964083175804,
+    "n": 1058,
+    "top_wrong": [
+     [
+      "low_static",
+      17
+     ],
+     [
+      "ahu_fan_off",
+      3
+     ]
+    ]
+   },
+   {
+    "cause": "wrong box",
+    "concluded_wrong": 0.01193058568329718,
+    "exact": 0.972885032537961,
+    "n": 922,
+    "top_wrong": [
+     [
+      "low_static",
+      21
+     ],
+     [
+      "ahu_fan_off",
+      3
+     ],
+     [
+      "zone_sensor_setpoint",
+      1
+     ]
+    ]
+   },
+   {
+    "cause": "capacity_design",
+    "concluded_wrong": 0.013480392156862746,
+    "exact": 0.7156862745098039,
+    "n": 816,
+    "top_wrong": [
+     [
+      "other",
+      173
+     ],
+     [
+      "controller_config",
+      38
+     ],
+     [
+      "low_static",
+      17
+     ]
+    ]
+   },
+   {
+    "cause": "other",
+    "concluded_wrong": 0.014204545454545454,
+    "exact": 0.9815340909090909,
+    "n": 704,
+    "top_wrong": [
+     [
+      "low_static",
+      11
+     ],
+     [
+      "ahu_fan_off",
+      2
+     ]
+    ]
+   },
+   {
+    "cause": "reheat_fail",
+    "concluded_wrong": 0.009230769230769232,
+    "exact": 0.9830769230769231,
+    "n": 650,
+    "top_wrong": [
+     [
+      "low_static",
+      10
+     ],
+     [
+      "ahu_fan_off",
+      1
+     ]
+    ]
+   },
+   {
+    "cause": "damper_mech",
+    "concluded_wrong": 0.006837606837606838,
+    "exact": 0.9897435897435898,
+    "n": 585,
+    "top_wrong": [
+     [
+      "low_static",
+      6
+     ]
+    ]
+   },
+   {
+    "cause": "actuator_fail",
+    "concluded_wrong": 0.012259194395796848,
+    "exact": 0.9842381786339754,
+    "n": 571,
+    "top_wrong": [
+     [
+      "low_static",
+      9
+     ]
+    ]
+   },
+   {
+    "cause": "controller_comms",
+    "concluded_wrong": 0.009868421052631578,
+    "exact": 0.9868421052631579,
+    "n": 304,
+    "top_wrong": [
+     [
+      "low_static",
+      4
+     ]
+    ]
+   },
+   {
+    "cause": "no_power",
+    "concluded_wrong": 0.007905138339920948,
+    "exact": 0.9841897233201581,
+    "n": 253,
+    "top_wrong": [
+     [
+      "low_static",
+      4
+     ]
+    ]
+   },
+   {
+    "cause": "signal_fault",
+    "concluded_wrong": 0.026455026455026454,
+    "exact": 0.9735449735449735,
+    "n": 189,
+    "top_wrong": [
+     [
+      "low_static",
+      5
+     ]
+    ]
+   },
+   {
+    "cause": "unlisted",
+    "concluded_wrong": 0.009615384615384616,
+    "exact": 0.47115384615384615,
+    "n": 104,
+    "top_wrong": [
+     [
+      "wrong box",
+      53
+     ],
+     [
+      "ahu_fan_off",
+      1
+     ],
+     [
+      "low_static",
+      1
+     ]
+    ]
+   }
+  ]
+ },
+ "cell_means": {
+  "b0.0|tau0.75": {
+   "accuracy": 0.7595134356384357,
+   "checks": 9.622777777777777,
+   "concluded": 0.7282217140883807,
+   "minutes": 53.175444444444445,
+   "wrong_confident": 0.10997947237947238
+  },
+  "b0.0|tau0.8": {
+   "accuracy": 0.7740794489461157,
+   "checks": 10.129222222222221,
+   "concluded": 0.6889326075159408,
+   "minutes": 55.88022222222222,
+   "wrong_confident": 0.08351434368101035
+  },
+  "b0.0|tau0.85": {
+   "accuracy": 0.7788452778702778,
+   "checks": 10.43888888888889,
+   "concluded": 0.6087308318224984,
+   "minutes": 57.563333333333325,
+   "wrong_confident": 0.061721258062924736
+  },
+  "b0.0|tau0.9": {
+   "accuracy": 0.7909825014491682,
+   "checks": 11.01688888888889,
+   "concluded": 0.43745597673931,
+   "minutes": 62.397222222222226,
+   "wrong_confident": 0.01917789648622982
+  },
+  "b0.0|tau0.95": {
+   "accuracy": 0.7921007995091327,
+   "checks": 11.202000000000002,
+   "concluded": 0.30993249451166116,
+   "minutes": 63.14,
+   "wrong_confident": 0.008275335158668493
+  },
+  "b0.5|tau0.75": {
+   "accuracy": 0.844886198986199,
+   "checks": 9.478111111111112,
+   "concluded": 0.7545345956512622,
+   "minutes": 52.46455555555556,
+   "wrong_confident": 0.059766015157681825
+  },
+  "b0.5|tau0.8": {
+   "accuracy": 0.8572086518419852,
+   "checks": 9.904555555555554,
+   "concluded": 0.7309151471984805,
+   "minutes": 54.61033333333334,
+   "wrong_confident": 0.04310136252636253
+  },
+  "b0.5|tau0.85": {
+   "accuracy": 0.859607593640927,
+   "checks": 10.162666666666668,
+   "concluded": 0.6578630736547404,
+   "minutes": 55.926,
+   "wrong_confident": 0.03250569029735696
+  },
+  "b0.5|tau0.9": {
+   "accuracy": 0.8666650010483343,
+   "checks": 10.586444444444446,
+   "concluded": 0.501753790345457,
+   "minutes": 59.74966666666666,
+   "wrong_confident": 0.01099937315770649
+  },
+  "b0.5|tau0.95": {
+   "accuracy": 0.8671713943463943,
+   "checks": 10.779555555555556,
+   "concluded": 0.3621941768108434,
+   "minutes": 60.641666666666666,
+   "wrong_confident": 0.005569030044030044
+  },
+  "b1.0|tau0.75": {
+   "accuracy": 0.9271108983608983,
+   "checks": 9.366111111111111,
+   "concluded": 0.784458367866701,
+   "minutes": 51.99444444444445,
+   "wrong_confident": 0.010259796993130324
+  },
+  "b1.0|tau0.8": {
+   "accuracy": 0.9323270901937568,
+   "checks": 9.703555555555557,
+   "concluded": 0.7758215512882178,
+   "minutes": 53.53666666666667,
+   "wrong_confident": 0.005157185407185407
+  },
+  "b1.0|tau0.85": {
+   "accuracy": 0.9324233864900532,
+   "checks": 9.908666666666667,
+   "concluded": 0.7068457937124604,
+   "minutes": 54.471666666666664,
+   "wrong_confident": 0.004948010323010323
+  },
+  "b1.0|tau0.9": {
+   "accuracy": 0.9325344976011642,
+   "checks": 10.178333333333333,
+   "concluded": 0.5753635466385466,
+   "minutes": 57.28422222222222,
+   "wrong_confident": 0.0046767982017982025
+  },
+  "b1.0|tau0.95": {
+   "accuracy": 0.930218784918785,
+   "checks": 10.407666666666668,
+   "concluded": 0.42541135191968527,
+   "minutes": 58.629222222222225,
+   "wrong_confident": 0.0038920218670218665
+  }
+ },
+ "gates": {
+  "G1": {
+   "detail": "first 50 events of every cell match Addendum 30's stored kinds",
+   "passed": true
+  },
+  "G2": {
+   "detail": "b = 0 reproduces Addendum 41's R0 cells exactly for 9 cells x 20 variants",
+   "passed": true
+  },
+  "G3": {
+   "detail": "the answer table is deterministic and independent of question order; the sharpened oracle at b = 0 answers exactly as TableOracle",
+   "passed": true
+  },
+  "G4": {
+   "detail": "sharpening is the identity at 0, stays in [0, 1], moves toward 0 or 1 and never across 0.5, is binary at 1.0, and gives bas_ahu_fan's 0.92 hit rate 0.96 at b = 0.5",
+   "passed": true
+  },
+  "G5": {
+   "detail": "3 cells reproduce exactly on a second run (one worker against many) with the same seed",
+   "passed": true
+  }
+ },
+ "lowest_passing_tau": {
+  "0.0": null,
+  "0.5": null,
+  "1.0": 0.75
+ },
+ "predictions": {
+  "P1": {
+   "detail": "accuracy 0.792 at b=0, 0.867 at 0.5, 0.930 at 1.0 (rise +0.138)",
+   "held": true
+  },
+  "P2": {
+   "detail": "accuracy at b=1.0 is 0.930",
+   "held": true
+  },
+  "P3": {
+   "detail": "0.792 < 0.867 < 0.930",
+   "held": true
+  },
+  "P4": {
+   "detail": "wrong-and-confident 0.0083 at b=0, 0.0039 at b=1.0",
+   "held": true
+  },
+  "P5": {
+   "detail": "minutes 63.1 at b=0, 58.6 at b=1.0 (-7%)",
+   "held": false
+  },
+  "P6": {
+   "detail": "b=1.0, tau 0.85: safety regressions in 0 of 9 cells (TRADES)",
+   "held": true
+  },
+  "P7": {
+   "detail": "b=0.5, tau 0.85: safety regressions in 8 of 9 cells (UNSAFE)",
+   "held": true
+  },
+  "P8": {
+   "detail": "accuracy gain at b=1.0: single +0.165, shared +0.021",
+   "held": true
+  }
+ }
+}

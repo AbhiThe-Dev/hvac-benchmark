@@ -1,0 +1,397 @@
+[
+ {
+  "case": "compete_cold_morning",
+  "title": "Everything HVACR: office and cubicle area too cold in the morning, Trane VAV controls",
+  "technician": {
+   "steps": 4,
+   "steps_per_complaint": 5,
+   "video_minutes": 4.5,
+   "correct": true,
+   "verified": "No: 'they'll probably call tomorrow and say they're too hot' (15:00)."
+  },
+  "runs": {
+   "model_k2": {
+    "n": 1000,
+    "steps_median": 11.0,
+    "steps_q25": 10.0,
+    "steps_q75": 12.0,
+    "steps_mean": 11.281,
+    "ratio_median_to_technician": 2.75,
+    "p_steps_le_technician": 0.017,
+    "p_steps_lt_technician": 0.017,
+    "p_all_correct": 0.716,
+    "per_complaint_correct": [
+     0.98,
+     0.716
+    ],
+    "p_wrong_and_confident": 0.02,
+    "p_all_concluded": 0.093,
+    "minutes_median": 63.0,
+    "first_check": {
+     "bas_static": 1000
+    },
+    "checks_most_asked": {
+     "bas_airflow": 1000,
+     "bas_static": 1000,
+     "bas_zone": 983,
+     "thermostat": 983,
+     "bas_damper": 964,
+     "bas_controller": 817,
+     "bas_hunting": 728,
+     "confirm_acts": 669
+    },
+    "mean_checks_answered_by_video": 2.978,
+    "mean_checks_answered_by_world": 8.303,
+    "verdict": "TECHNICIAN FEWER STEPS",
+    "ratio_per_complaint_count": 2.2
+   },
+   "model_k6": {
+    "n": 1000,
+    "steps_median": 11.0,
+    "steps_q25": 11.0,
+    "steps_q75": 12.0,
+    "steps_mean": 11.495,
+    "ratio_median_to_technician": 2.75,
+    "p_steps_le_technician": 0.0,
+    "p_steps_lt_technician": 0.0,
+    "p_all_correct": 0.731,
+    "per_complaint_correct": [
+     1.0,
+     0.731
+    ],
+    "p_wrong_and_confident": 0.0,
+    "p_all_concluded": 0.072,
+    "minutes_median": 69.0,
+    "first_check": {
+     "bas_static": 1000
+    },
+    "checks_most_asked": {
+     "bas_airflow": 1000,
+     "bas_static": 1000,
+     "bas_zone": 1000,
+     "thermostat": 1000,
+     "bas_damper": 981,
+     "bas_controller": 830,
+     "bas_hunting": 740,
+     "confirm_acts": 688
+    },
+    "mean_checks_answered_by_video": 2.996,
+    "mean_checks_answered_by_world": 8.499,
+    "verdict": "TECHNICIAN FEWER STEPS",
+    "ratio_per_complaint_count": 2.2
+   },
+   "model_k12": {
+    "n": 1000,
+    "steps_median": 10.0,
+    "steps_q25": 10.0,
+    "steps_q75": 11.0,
+    "steps_mean": 10.435,
+    "ratio_median_to_technician": 2.5,
+    "p_steps_le_technician": 0.0,
+    "p_steps_lt_technician": 0.0,
+    "p_all_correct": 0.732,
+    "per_complaint_correct": [
+     1.0,
+     0.732
+    ],
+    "p_wrong_and_confident": 0.0,
+    "p_all_concluded": 0.071,
+    "minutes_median": 65.0,
+    "first_check": {
+     "bas_zone": 1000
+    },
+    "checks_most_asked": {
+     "bas_airflow": 1000,
+     "bas_zone": 1000,
+     "thermostat": 1000,
+     "bas_damper": 979,
+     "bas_controller": 830,
+     "bas_hunting": 740,
+     "confirm_acts": 688,
+     "sensing_ports": 658
+    },
+    "mean_checks_answered_by_video": 3.0,
+    "mean_checks_answered_by_world": 7.435,
+    "verdict": "TECHNICIAN FEWER STEPS",
+    "ratio_per_complaint_count": 2.0
+   },
+   "normal_k6": {
+    "steps": 21,
+    "minutes": 158.0,
+    "first": "bas_static",
+    "checks": [
+     "bas_static",
+     "bas_zone",
+     "bas_zone",
+     "bas_airflow",
+     "thermostat",
+     "thermostat",
+     "bas_damper",
+     "bas_controller",
+     "override_diffuser",
+     "confirm_acts",
+     "power_24vac",
+     "manual_damper_test",
+     "control_signal",
+     "duct_trace",
+     "override_diffuser",
+     "override_diffuser",
+     "override_diffuser",
+     "override_diffuser",
+     "override_diffuser",
+     "override_diffuser",
+     "override_diffuser"
+    ],
+    "all_correct": false,
+    "any_wc": false,
+    "complaints": [
+     {
+      "room": "Room-206",
+      "top": "zone_sensor_setpoint",
+      "top_p": 0.9828203099773293,
+      "correct": true,
+      "concluded": true,
+      "wrong_and_confident": false
+     },
+     {
+      "room": "Room-232",
+      "top": "unlisted",
+      "top_p": 0.33900680832118935,
+      "correct": false,
+      "concluded": false,
+      "wrong_and_confident": false
+     }
+    ],
+    "n_E": 3
+   },
+   "unsure_k6": {
+    "steps": 7,
+    "minutes": 32.0,
+    "first": "bas_static",
+    "checks": [
+     "bas_static",
+     "bas_airflow",
+     "bas_zone",
+     "bas_zone",
+     "bas_damper",
+     "thermostat",
+     "thermostat"
+    ],
+    "all_correct": true,
+    "any_wc": false,
+    "complaints": [
+     {
+      "room": "Room-206",
+      "top": "zone_sensor_setpoint",
+      "top_p": 0.9823284046331449,
+      "correct": true,
+      "concluded": true,
+      "wrong_and_confident": false
+     },
+     {
+      "room": "Room-232",
+      "top": "zone_sensor_setpoint",
+      "top_p": 0.8169147734189922,
+      "correct": true,
+      "concluded": false,
+      "wrong_and_confident": false
+     }
+    ],
+    "n_E": 3
+   }
+  }
+ },
+ {
+  "case": "compete_ep160",
+  "title": "Nighthawk HVAC EP160: VAV electric heat not heating",
+  "technician": {
+   "steps": 4,
+   "steps_per_complaint": 4,
+   "video_minutes": 4.25,
+   "correct": true,
+   "verified": "Yes for T212: current restored after the fuse and wires were fixed (5:00-5:15); T117 pulling about 10 A, normal for its element (6:00)."
+  },
+  "runs": {
+   "model_k2": {
+    "n": 1000,
+    "steps_median": 7.0,
+    "steps_q25": 7.0,
+    "steps_q75": 7.0,
+    "steps_mean": 7.618,
+    "ratio_median_to_technician": 1.75,
+    "p_steps_le_technician": 0.002,
+    "p_steps_lt_technician": 0.002,
+    "p_all_correct": 0.992,
+    "per_complaint_correct": [
+     0.995,
+     0.994
+    ],
+    "p_wrong_and_confident": 0.008,
+    "p_all_concluded": 0.011,
+    "minutes_median": 14.0,
+    "first_check": {
+     "bas_static": 1000
+    },
+    "checks_most_asked": {
+     "bas_airflow": 1000,
+     "bas_static": 1000,
+     "bas_reheat": 997,
+     "bas_zone": 997,
+     "reheat_coil": 175,
+     "bas_damper": 108,
+     "thermostat": 100,
+     "bas_hunting": 80
+    },
+    "mean_checks_answered_by_video": 2.179,
+    "mean_checks_answered_by_world": 5.439,
+    "verdict": "TECHNICIAN FEWER STEPS",
+    "ratio_per_complaint_count": 1.75
+   },
+   "model_k6": {
+    "n": 1000,
+    "steps_median": 7.0,
+    "steps_q25": 7.0,
+    "steps_q75": 7.0,
+    "steps_mean": 7.572,
+    "ratio_median_to_technician": 1.75,
+    "p_steps_le_technician": 0.0,
+    "p_steps_lt_technician": 0.0,
+    "p_all_correct": 0.994,
+    "per_complaint_correct": [
+     0.997,
+     0.996
+    ],
+    "p_wrong_and_confident": 0.005,
+    "p_all_concluded": 0.007,
+    "minutes_median": 14.0,
+    "first_check": {
+     "bas_static": 1000
+    },
+    "checks_most_asked": {
+     "bas_airflow": 1000,
+     "bas_reheat": 1000,
+     "bas_static": 1000,
+     "bas_zone": 1000,
+     "reheat_coil": 176,
+     "bas_damper": 111,
+     "thermostat": 100,
+     "bas_hunting": 78
+    },
+    "mean_checks_answered_by_video": 2.183,
+    "mean_checks_answered_by_world": 5.389,
+    "verdict": "TECHNICIAN FEWER STEPS",
+    "ratio_per_complaint_count": 1.75
+   },
+   "model_k12": {
+    "n": 1000,
+    "steps_median": 6.0,
+    "steps_q25": 6.0,
+    "steps_q75": 6.0,
+    "steps_mean": 6.556,
+    "ratio_median_to_technician": 1.5,
+    "p_steps_le_technician": 0.0,
+    "p_steps_lt_technician": 0.0,
+    "p_all_correct": 0.995,
+    "per_complaint_correct": [
+     0.998,
+     0.997
+    ],
+    "p_wrong_and_confident": 0.005,
+    "p_all_concluded": 0.007,
+    "minutes_median": 12.0,
+    "first_check": {
+     "bas_reheat": 1000
+    },
+    "checks_most_asked": {
+     "bas_airflow": 1000,
+     "bas_reheat": 1000,
+     "bas_zone": 1000,
+     "reheat_coil": 176,
+     "thermostat": 100,
+     "bas_damper": 88,
+     "bas_hunting": 81,
+     "bas_controller": 76
+    },
+    "mean_checks_answered_by_video": 2.184,
+    "mean_checks_answered_by_world": 4.372,
+    "verdict": "TECHNICIAN FEWER STEPS",
+    "ratio_per_complaint_count": 1.5
+   },
+   "normal_k6": {
+    "steps": 7,
+    "minutes": 14.0,
+    "first": "bas_static",
+    "checks": [
+     "bas_static",
+     "bas_reheat",
+     "bas_reheat",
+     "bas_zone",
+     "bas_zone",
+     "bas_airflow",
+     "bas_airflow"
+    ],
+    "all_correct": true,
+    "any_wc": false,
+    "complaints": [
+     {
+      "room": "Zone-T212",
+      "top": "reheat_fail",
+      "top_p": 0.87172948035971,
+      "correct": true,
+      "concluded": false,
+      "wrong_and_confident": false
+     },
+     {
+      "room": "Zone-T117",
+      "top": "reheat_fail",
+      "top_p": 0.87172948035971,
+      "correct": true,
+      "concluded": false,
+      "wrong_and_confident": false
+     }
+    ],
+    "n_E": 2
+   },
+   "unsure_k6": {
+    "steps": 12,
+    "minutes": 56.0,
+    "first": "bas_static",
+    "checks": [
+     "bas_static",
+     "bas_airflow",
+     "bas_airflow",
+     "bas_reheat",
+     "bas_reheat",
+     "bas_zone",
+     "bas_zone",
+     "thermostat",
+     "thermostat",
+     "bas_damper",
+     "bas_damper",
+     "reheat_coil"
+    ],
+    "all_correct": true,
+    "any_wc": false,
+    "complaints": [
+     {
+      "room": "Zone-T212",
+      "top": "reheat_fail",
+      "top_p": 0.9820834837365425,
+      "correct": true,
+      "concluded": true,
+      "wrong_and_confident": false
+     },
+     {
+      "room": "Zone-T117",
+      "top": "reheat_fail",
+      "top_p": 0.7475387888133105,
+      "correct": true,
+      "concluded": false,
+      "wrong_and_confident": false
+     }
+    ],
+    "n_E": 3
+   }
+  }
+ }
+]

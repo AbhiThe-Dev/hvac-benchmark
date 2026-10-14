@@ -1,0 +1,16 @@
+{
+ "gates_ok": true,
+ "confirm": "NOT WORTH IT AS TESTED (C1, C3 failed)",
+ "hedge": "NOT WORTH IT AS TESTED (H1 failed)",
+ "predictions": {
+  "C1": false,
+  "C2": true,
+  "C3": false,
+  "C4": true,
+  "C5": true,
+  "L1": true,
+  "L2": true,
+  "H1": false
+ },
+ "protocol_sha256": "4ee06216d24cd396c0036636edf3d4367201773cc33bc5c70ec9ca65aba77188"
+}

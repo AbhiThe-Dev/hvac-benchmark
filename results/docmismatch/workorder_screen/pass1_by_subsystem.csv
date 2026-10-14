@@ -1,0 +1,297 @@
+kind,SystemCode,SystemDescription,SubsystemCode,SubsystemDescription,orders,orders_with_description
+,,Unclassified,,Unclassified,37575,37069
+PPM,,,,,1,0
+PPM,,Unclassified,,Unclassified,12801,12801
+PPM,A10,Foundations,A1010,Foundations,33,33
+PPM,A10,Foundations,A1010,Standard Foundations,1,1
+PPM,A10,Foundations,A1030,Slab on Grade,14,14
+PPM,A10,Foundations,A1099,,10,10
+PPM,B10,Superstructure,B1010,Floor Construction,245,245
+PPM,B10,Superstructure,B1010,Superstructure,26,26
+PPM,B10,Superstructure,B1020,Roof Construction,63,63
+PPM,B10,Superstructure,B1099,General,255,255
+PPM,B20,Exterior Enclosure,B2010,Exterior Enclosure,148,148
+PPM,B20,Exterior Enclosure,B2010,Exterior Walls,2053,2053
+PPM,B20,Exterior Enclosure,B2020,Exterior Enclosure,558,558
+PPM,B20,Exterior Enclosure,B2020,Exterior Windows,2178,2178
+PPM,B20,Exterior Enclosure,B2030,Exterior Doors,27768,27768
+PPM,B20,Exterior Enclosure,B2030,Exterior Enclosure,951,951
+PPM,B20,Exterior Enclosure,B2099,Exterior Enclosure,22,22
+PPM,B20,Exterior Enclosure,B2099,General,630,629
+PPM,B30,Roofing,B3010,Roof Converings,4078,4078
+PPM,B30,Roofing,B3010,Roofing,1966,1966
+PPM,B30,Roofing,B3020,Roof Openings,351,351
+PPM,B30,Roofing,B3020,Roofing,64,64
+PPM,B30,Roofing,B3099,General,13184,13167
+PPM,B30,Roofing,B3099,Roofing,167,167
+PPM,C10,Interior Construction,C1010,Interior Construction,44,44
+PPM,C10,Interior Construction,C1010,Patritions,641,641
+PPM,C10,Interior Construction,C1020,Interior Construction,6278,6278
+PPM,C10,Interior Construction,C1020,Interior Doors,40477,40476
+PPM,C10,Interior Construction,C1030,Fittings,43,43
+PPM,C10,Interior Construction,C1030,Interior Construction,30,30
+PPM,C10,Interior Construction,C1040,Interior Construction,411,411
+PPM,C10,Interior Construction,C1040,Interior Windows,5452,5452
+PPM,C10,Interior Construction,C1099,General,159,159
+PPM,C10,Interior Construction,C1099,Interior Construction,1,1
+PPM,C20,Stairs,C2010,Stair Construction,974,974
+PPM,C20,Stairs,C2010,Stairs,117,117
+PPM,C20,Stairs,C2020,Stair Finishes,710,710
+PPM,C20,Stairs,C2020,Stairs,179,179
+PPM,C20,Stairs,C2099,General,458,458
+PPM,C30,Interior Finishes,C3002,Interior Finishes,1,1
+PPM,C30,Interior Finishes,C3010,Interior Finishes,1740,1740
+PPM,C30,Interior Finishes,C3010,Wall Finishes,24533,24533
+PPM,C30,Interior Finishes,C3020,Floor Finishes,6687,6687
+PPM,C30,Interior Finishes,C3020,Interior Finishes,819,819
+PPM,C30,Interior Finishes,C3030,Ceiling Finishes,7092,7092
+PPM,C30,Interior Finishes,C3030,Interior Finishes,1262,1262
+PPM,C30,Interior Finishes,C3099,General,3111,3110
+PPM,C30,Interior Finishes,C3099,Interior Finishes,60,60
+PPM,D10,Conveying,D1010,Conveying,2739,2739
+PPM,D10,Conveying,D1010,Elevators & Lifts,34307,34307
+PPM,D10,Conveying,D1020,Conveying,94,94
+PPM,D10,Conveying,D1020,Escalators & Moving Walks,259,259
+PPM,D10,Conveying,D1090,Conveying,4,4
+PPM,D10,Conveying,D1090,Other Conveying Systems,166,166
+PPM,D10,Conveying,D1099,Conveying,10,10
+PPM,D10,Conveying,D1099,General,378,378
+PPM,D20,Plumbing,D2001,Plumbing,1,1
+PPM,D20,Plumbing,D2010,Plumbing,10612,10612
+PPM,D20,Plumbing,D2010,Plumbing Fixtures,63791,63791
+PPM,D20,Plumbing,D2020,Domestic Water Distribution,96848,96841
+PPM,D20,Plumbing,D2020,Plumbing,5894,5894
+PPM,D20,Plumbing,D2030,Plumbing,1068,1068
+PPM,D20,Plumbing,D2030,Sanitary Waste,10471,10471
+PPM,D20,Plumbing,D2040,Plumbing,1006,1006
+PPM,D20,Plumbing,D2040,Rain Water Drainage,17483,17481
+PPM,D20,Plumbing,D2090,Other Plumbing Systems,37147,37144
+PPM,D20,Plumbing,D2090,Plumbing,2577,2577
+PPM,D20,Plumbing,D2099,General,15274,15251
+PPM,D20,Plumbing,D2099,Plumbing,188,188
+PPM,D30,HVAC,D3002,HVAC,5,5
+PPM,D30,HVAC,D3010,Energy Supply,808,808
+PPM,D30,HVAC,D3010,HVAC,83,83
+PPM,D30,HVAC,D3020,HVAC,5050,5050
+PPM,D30,HVAC,D3020,Heat Generation Systems,71386,71383
+PPM,D30,HVAC,D3030,Cooling Generation Systems,30958,30951
+PPM,D30,HVAC,D3030,HVAC,3469,3469
+PPM,D30,HVAC,D3040,Distribution Systems,294562,294540
+PPM,D30,HVAC,D3040,HVAC,15350,15350
+PPM,D30,HVAC,D3050,HVAC,4700,4700
+PPM,D30,HVAC,D3050,Terminal & Package Units,130414,130403
+PPM,D30,HVAC,D3060,Controls and Instrumentation,13615,13614
+PPM,D30,HVAC,D3060,HVAC,9394,9394
+PPM,D30,HVAC,D3070,HVAC,1523,1523
+PPM,D30,HVAC,D3070,Systems Testing & Balancing,109021,109021
+PPM,D30,HVAC,D3090,HVAC,2166,2166
+PPM,D30,HVAC,D3090,Other HVAC Systems & Equipment,23520,23519
+PPM,D30,HVAC,D3099,General,8836,8821
+PPM,D30,HVAC,D3099,HVAC,116,116
+PPM,D40,Fire Protection,D4010,Fire Protection,6262,6262
+PPM,D40,Fire Protection,D4010,Sprinklers,241913,241906
+PPM,D40,Fire Protection,D4020,Standpipes,4555,4555
+PPM,D40,Fire Protection,D4030,Fire Protection,3131,3131
+PPM,D40,Fire Protection,D4030,Fire Protection Specialities,45155,45155
+PPM,D40,Fire Protection,D4090,Fire Protection,29,29
+PPM,D40,Fire Protection,D4090,Other Fire Protection Systems,911,911
+PPM,D40,Fire Protection,D4099,Fire Protection,31,31
+PPM,D40,Fire Protection,D4099,General,6650,6629
+PPM,D50,Electrical,D5010,Electrical,928,928
+PPM,D50,Electrical,D5010,Electrical Service & Distribution,31184,31184
+PPM,D50,Electrical,D5020,Electrical,31868,31868
+PPM,D50,Electrical,D5020,Lighting and Branch Wiring,342382,342374
+PPM,D50,Electrical,D5030,Communications & Security,67592,67591
+PPM,D50,Electrical,D5030,Electrical,1490,1490
+PPM,D50,Electrical,D5090,Electrical,9198,9198
+PPM,D50,Electrical,D5090,Other Electrical Systems,35576,35576
+PPM,D50,Electrical,D5099,Electrical,664,664
+PPM,D50,Electrical,D5099,General,5657,5651
+PPM,D90,General,D9090,General,10146,10146
+PPM,D90,General,D9090,Inspection,29038,29029
+PPM,D90,Unclassified,,Unclassified,1,1
+PPM,E10,Equipment,E1010,Commercial Equipment,29758,29757
+PPM,E10,Equipment,E1010,Equipment,917,917
+PPM,E10,Equipment,E1020,Equipment,1642,1642
+PPM,E10,Equipment,E1020,Institutional Equipment,45029,45028
+PPM,E10,Equipment,E1030,Equipment,33,33
+PPM,E10,Equipment,E1030,Vehicular Equipment,22265,22265
+PPM,E10,Equipment,E1090,Equipment,1031,1031
+PPM,E10,Equipment,E1090,Other Equipment,11328,11328
+PPM,E10,Equipment,E1099,General,465,465
+PPM,E20,Equipment,E2010,Fixed Furnishings,2,2
+PPM,E20,Furnishings,E2010,Fixed Furnishings,18308,18305
+PPM,E20,Furnishings,E2010,Furnishings,1566,1566
+PPM,E20,Furnishings,E2020,Movable Furnishings,5158,5158
+PPM,E20,Furnishings,E2099,General,253,251
+PPM,F10,Special Construction,F1010,Special Structures,17,17
+PPM,F10,Special Construction,F1020,Integrated Construction,523,523
+PPM,F10,Special Construction,F1030,Special Construction,12,12
+PPM,F10,Special Construction,F1030,Special Construction Systems,11,11
+PPM,F10,Special Construction,F1040,Special Construction,141,141
+PPM,F10,Special Construction,F1040,Special Facilities,1435,1435
+PPM,F20,Selective Building Demolition,F2010,Building Elements Demolition,81,81
+PPM,F20,Selective Building Demolition,F2010,Selective Building Demolition,1,1
+PPM,F20,Selective Building Demolition,F2020,Hazardous Components Abatement,3348,3348
+PPM,F20,Selective Building Demolition,F2020,Selective Building Demolition,141,141
+PPM,G10,Site Preparation,G1010,Site Clearing,60,60
+PPM,G10,Site Preparation,G1020,Site Demolition and Relocations,4,4
+PPM,G10,Site Preparation,G1030,Site Earthwork,5,5
+PPM,G10,Site Preparation,G1040,Hazardous Waste Remediation,140,140
+PPM,G20,Site Improvements,G2010,Roadways,137,137
+PPM,G20,Site Improvements,G2020,Parking Lots,217,217
+PPM,G20,Site Improvements,G2020,Site Improvements,4,4
+PPM,G20,Site Improvements,G2030,Pedestrian Paving,291,291
+PPM,G20,Site Improvements,G2030,Site Improvements,10,10
+PPM,G20,Site Improvements,G2040,Site Development,136,136
+PPM,G20,Site Improvements,G2040,Site Improvements,7,7
+PPM,G20,Site Improvements,G2050,Landscaping,8387,8387
+PPM,G20,Site Improvements,G2050,Site Improvements,17,17
+PPM,G30,Site Mechanical Utilities,G3010,Site Mechanical Utilities,12,12
+PPM,G30,Site Mechanical Utilities,G3010,Water Supply,885,885
+PPM,G30,Site Mechanical Utilities,G3020,Sanitary Sewer,33,33
+PPM,G30,Site Mechanical Utilities,G3020,Site Mechanical Utilities,46,46
+PPM,G30,Site Mechanical Utilities,G3030,Storm Sewer,701,701
+PPM,G30,Site Mechanical Utilities,G3060,Fuel Distribution,1,1
+PPM,G40,Site Electrical Utilities,G4020,Site Electrical Utilities,1170,1170
+PPM,G40,Site Electrical Utilities,G4020,Site Lighting,433,433
+PPM,G90,Other Site Construction,G9090,Other Site Systems & Equipment,2,2
+UPM,,,,,3,0
+UPM,,Unclassified,,Unclassified,7475,7472
+UPM,A10,Foundations,A1010,Foundations,3,3
+UPM,A10,Foundations,A1010,Standard Foundations,40,40
+UPM,A10,Foundations,A1030,Slab on Grade,4,4
+UPM,A10,Foundations,A1099,,2,2
+UPM,B10,Superstructure,B1010,Floor Construction,335,335
+UPM,B10,Superstructure,B1010,Superstructure,3,3
+UPM,B10,Superstructure,B1020,Roof Construction,27,27
+UPM,B20,Exterior Enclosure,B2010,Exterior Enclosure,43,43
+UPM,B20,Exterior Enclosure,B2010,Exterior Walls,1966,1966
+UPM,B20,Exterior Enclosure,B2020,Exterior Enclosure,311,311
+UPM,B20,Exterior Enclosure,B2020,Exterior Windows,12314,12311
+UPM,B20,Exterior Enclosure,B2030,Exterior Doors,19627,19627
+UPM,B20,Exterior Enclosure,B2030,Exterior Enclosure,572,572
+UPM,B20,Exterior Enclosure,B2099,Exterior Enclosure,2,2
+UPM,B20,Exterior Enclosure,B2099,General,196,196
+UPM,B30,Roofing,B3010,Roof Converings,12158,12158
+UPM,B30,Roofing,B3010,Roofing,550,550
+UPM,B30,Roofing,B3020,Roof Openings,658,658
+UPM,B30,Roofing,B3020,Roofing,13,13
+UPM,B30,Roofing,B3099,General,906,905
+UPM,C10,Interior Construction,C1010,Interior Construction,2,2
+UPM,C10,Interior Construction,C1010,Patritions,559,559
+UPM,C10,Interior Construction,C1020,Interior Construction,2145,2145
+UPM,C10,Interior Construction,C1020,Interior Doors,130277,130119
+UPM,C10,Interior Construction,C1030,Fittings,224,224
+UPM,C10,Interior Construction,C1040,Interior Construction,15,15
+UPM,C10,Interior Construction,C1040,Interior Windows,15387,15387
+UPM,C10,Interior Construction,C1099,General,162,162
+UPM,C20,Stairs,C2010,Stair Construction,3660,3659
+UPM,C20,Stairs,C2010,Stairs,16,16
+UPM,C20,Stairs,C2020,Stair Finishes,1215,1215
+UPM,C20,Stairs,C2020,Stairs,61,61
+UPM,C20,Stairs,C2099,General,6,6
+UPM,C30,Interior Finishes,C3010,Interior Finishes,185,185
+UPM,C30,Interior Finishes,C3010,Wall Finishes,24643,24637
+UPM,C30,Interior Finishes,C3020,Floor Finishes,9851,9851
+UPM,C30,Interior Finishes,C3020,Interior Finishes,148,148
+UPM,C30,Interior Finishes,C3030,Ceiling Finishes,24969,24968
+UPM,C30,Interior Finishes,C3030,Interior Finishes,680,680
+UPM,C30,Interior Finishes,C3099,General,4763,4759
+UPM,C30,Interior Finishes,C3099,Interior Finishes,200,200
+UPM,D10,Conveying,D1010,Conveying,681,681
+UPM,D10,Conveying,D1010,Elevators & Lifts,10322,10318
+UPM,D10,Conveying,D1020,Escalators & Moving Walks,4,4
+UPM,D10,Conveying,D1090,Other Conveying Systems,303,303
+UPM,D10,Conveying,D1099,Conveying,30,30
+UPM,D10,Conveying,D1099,General,310,310
+UPM,D20,Plumbing,D2001,Plumbing,6,6
+UPM,D20,Plumbing,D2010,Plumbing,4542,4542
+UPM,D20,Plumbing,D2010,Plumbing Fixtures,194021,194015
+UPM,D20,Plumbing,D2020,Domestic Water Distribution,65584,65575
+UPM,D20,Plumbing,D2020,Plumbing,3589,3589
+UPM,D20,Plumbing,D2030,Plumbing,715,715
+UPM,D20,Plumbing,D2030,Sanitary Waste,34038,34035
+UPM,D20,Plumbing,D2040,Plumbing,122,122
+UPM,D20,Plumbing,D2040,Rain Water Drainage,7361,7360
+UPM,D20,Plumbing,D2090,Other Plumbing Systems,10823,10823
+UPM,D20,Plumbing,D2090,Plumbing,291,291
+UPM,D20,Plumbing,D2099,General,9865,9848
+UPM,D20,Plumbing,D2099,Plumbing,391,391
+UPM,D30,HVAC,D3010,Energy Supply,184,184
+UPM,D30,HVAC,D3010,HVAC,2,2
+UPM,D30,HVAC,D3020,HVAC,1123,1123
+UPM,D30,HVAC,D3020,Heat Generation Systems,61095,61095
+UPM,D30,HVAC,D3030,Cooling Generation Systems,24417,24417
+UPM,D30,HVAC,D3030,HVAC,597,597
+UPM,D30,HVAC,D3040,Distribution Systems,88140,88121
+UPM,D30,HVAC,D3040,HVAC,1960,1960
+UPM,D30,HVAC,D3050,HVAC,777,777
+UPM,D30,HVAC,D3050,Terminal & Package Units,56876,56874
+UPM,D30,HVAC,D3060,Controls and Instrumentation,122926,122925
+UPM,D30,HVAC,D3060,HVAC,7150,7149
+UPM,D30,HVAC,D3070,HVAC,348,348
+UPM,D30,HVAC,D3070,Systems Testing & Balancing,5215,5215
+UPM,D30,HVAC,D3090,HVAC,280,280
+UPM,D30,HVAC,D3090,Other HVAC Systems & Equipment,6533,6533
+UPM,D30,HVAC,D3099,General,17490,17455
+UPM,D30,HVAC,D3099,HVAC,169,169
+UPM,D40,Fire Protection,D4010,Fire Protection,2918,2918
+UPM,D40,Fire Protection,D4010,Sprinklers,33711,33707
+UPM,D40,Fire Protection,D4020,Standpipes,99,99
+UPM,D40,Fire Protection,D4030,Fire Protection,41,41
+UPM,D40,Fire Protection,D4030,Fire Protection Specialities,5671,5671
+UPM,D40,Fire Protection,D4090,Fire Protection,5,5
+UPM,D40,Fire Protection,D4090,Other Fire Protection Systems,280,280
+UPM,D40,Fire Protection,D4099,Fire Protection,18,18
+UPM,D40,Fire Protection,D4099,General,1027,1008
+UPM,D50,Electrical,D5010,Electrical,670,670
+UPM,D50,Electrical,D5010,Electrical Service & Distribution,18768,18762
+UPM,D50,Electrical,D5020,Electrical,2114,2114
+UPM,D50,Electrical,D5020,Lighting and Branch Wiring,164239,164207
+UPM,D50,Electrical,D5030,Communications & Security,53981,53978
+UPM,D50,Electrical,D5030,Electrical,3813,3813
+UPM,D50,Electrical,D5090,Electrical,117,117
+UPM,D50,Electrical,D5090,Other Electrical Systems,6796,6796
+UPM,D50,Electrical,D5099,Electrical,381,381
+UPM,D50,Electrical,D5099,General,11498,11482
+UPM,D90,General,D9090,Inspection,12782,12782
+UPM,E10,Equipment,E1010,Commercial Equipment,50846,50844
+UPM,E10,Equipment,E1010,Equipment,623,623
+UPM,E10,Equipment,E1020,Equipment,531,531
+UPM,E10,Equipment,E1020,Institutional Equipment,15153,15149
+UPM,E10,Equipment,E1030,Equipment,2,2
+UPM,E10,Equipment,E1030,Vehicular Equipment,3734,3734
+UPM,E10,Equipment,E1090,Equipment,45,45
+UPM,E10,Equipment,E1090,Other Equipment,4266,4264
+UPM,E10,Equipment,E1099,General,2504,2502
+UPM,E20,Furnishings,E2010,Fixed Furnishings,35189,35185
+UPM,E20,Furnishings,E2010,Furnishings,98,98
+UPM,E20,Furnishings,E2020,Movable Furnishings,2816,2815
+UPM,E20,Furnishings,E2099,General,106,106
+UPM,F10,Special Construction,F1010,Special Structures,5,5
+UPM,F10,Special Construction,F1020,Integrated Construction,1809,1809
+UPM,F10,Special Construction,F1030,Special Construction,1,1
+UPM,F10,Special Construction,F1030,Special Construction Systems,28,28
+UPM,F10,Special Construction,F1040,Special Construction,150,150
+UPM,F10,Special Construction,F1040,Special Facilities,2075,2075
+UPM,F20,Selective Building Demolition,F2010,Building Elements Demolition,3,3
+UPM,F20,Selective Building Demolition,F2020,Hazardous Components Abatement,2218,2218
+UPM,F20,Selective Building Demolition,F2020,Selective Building Demolition,15,15
+UPM,G10,Site Preparation,G1010,Site Clearing,168,168
+UPM,G10,Site Preparation,G1030,Site Earthwork,93,93
+UPM,G10,Site Preparation,G1040,Hazardous Waste Remediation,137,137
+UPM,G20,Site Improvements,G2010,Roadways,225,225
+UPM,G20,Site Improvements,G2020,Parking Lots,296,296
+UPM,G20,Site Improvements,G2030,Pedestrian Paving,1080,1080
+UPM,G20,Site Improvements,G2030,Site Improvements,3,3
+UPM,G20,Site Improvements,G2040,Site Development,276,276
+UPM,G20,Site Improvements,G2040,Site Improvements,1,1
+UPM,G20,Site Improvements,G2050,Landscaping,7184,7177
+UPM,G30,Site Mechanical Utilities,G3010,Water Supply,698,698
+UPM,G30,Site Mechanical Utilities,G3020,Sanitary Sewer,200,200
+UPM,G30,Site Mechanical Utilities,G3030,Storm Sewer,888,888
+UPM,G40,Site Electrical Utilities,G4020,Site Electrical Utilities,23,23
+UPM,G40,Site Electrical Utilities,G4020,Site Lighting,2123,2123
+UPM,G90,Other Site Construction,G9090,Other Site Systems & Equipment,6,6
+UPM,g20,Site Improvements,g2050,Landscaping,1,1

@@ -1,0 +1,912 @@
+{
+ "case": "ep160",
+ "k": 12,
+ "n_recommended": 12,
+ "n_answered_from_video": 4,
+ "coverage": 0.3333333333333333,
+ "elapsed_min": 70.0,
+ "minutes_on_E": 36.0,
+ "minutes_on_U": 34.0,
+ "stop": "stalled (nothing left worth its time)",
+ "first_check": "bas_zone",
+ "first_check_minutes": 2.0,
+ "technician_first_check": "bas_reheat",
+ "first_check_matches": false,
+ "tech_checks_never_recommended": [],
+ "tool_checks_not_done_by_technician": [
+  "bas_airflow",
+  "bas_damper",
+  "bas_zone",
+  "thermostat"
+ ],
+ "complaints": [
+  {
+   "room": "Zone-T212",
+   "accept": [
+    "reheat_fail"
+   ],
+   "prior_truth_mass": 0.09245161462157761,
+   "final_truth_mass": 0.9448983656368113,
+   "top_cause": [
+    "reheat_fail"
+   ],
+   "top_p": 0.9448983656368113,
+   "top_in_accept": true,
+   "concluded": false,
+   "wrong_and_confident": false,
+   "prior_top": [
+    [
+     [
+      "zone_sensor_setpoint"
+     ],
+     0.20339355216747074
+    ],
+    [
+     [
+      "controller_config"
+     ],
+     0.12943226047020864
+    ],
+    [
+     [
+      "flow_sensor"
+     ],
+     0.11094193754589313
+    ]
+   ],
+   "final_top": [
+    [
+     [
+      "reheat_fail"
+     ],
+     0.9448983656368113
+    ],
+    [
+     [
+      "zone_sensor_setpoint"
+     ],
+     0.029564819973702892
+    ],
+    [
+     [
+      "controller_config"
+     ],
+     0.004703494086725461
+    ]
+   ]
+  },
+  {
+   "room": "Zone-T117",
+   "accept": [
+    "reheat_fail",
+    "other"
+   ],
+   "prior_truth_mass": 0.15716774485668195,
+   "final_truth_mass": 0.947250112680174,
+   "top_cause": [
+    "reheat_fail"
+   ],
+   "top_p": 0.9448983656368113,
+   "top_in_accept": true,
+   "concluded": false,
+   "wrong_and_confident": false,
+   "prior_top": [
+    [
+     [
+      "zone_sensor_setpoint"
+     ],
+     0.20339355216747074
+    ],
+    [
+     [
+      "controller_config"
+     ],
+     0.12943226047020864
+    ],
+    [
+     [
+      "flow_sensor"
+     ],
+     0.11094193754589313
+    ]
+   ],
+   "final_top": [
+    [
+     [
+      "reheat_fail"
+     ],
+     0.9448983656368113
+    ],
+    [
+     [
+      "zone_sensor_setpoint"
+     ],
+     0.029564819973702892
+    ],
+    [
+     [
+      "controller_config"
+     ],
+     0.004703494086725461
+    ]
+   ]
+  }
+ ],
+ "ahu_posterior": {
+  "AHU-1": [
+   0.9999934951549354,
+   1.284948528928434e-14,
+   6.504845051585194e-06
+  ]
+ },
+ "steps": [
+  {
+   "n": 1,
+   "kind": "complaint",
+   "who": "Zone-T212",
+   "check": "bas_zone",
+   "target": "VAV-T212",
+   "minutes": 2.0,
+   "p_pos": 0.19237548651722958,
+   "gain": 0.3134376765627511,
+   "audience": 1,
+   "evidence": "U",
+   "outcome": "unsure",
+   "t": null,
+   "state_before": [
+    {
+     "room": "Zone-T212",
+     "truth_mass": 0.09245161462157761,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.20339355216747074
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.12943226047020864
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.11094193754589313
+      ]
+     ]
+    },
+    {
+     "room": "Zone-T117",
+     "truth_mass": 0.15716774485668195,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.20339355216747074
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.12943226047020864
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.11094193754589313
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "kind": "complaint",
+   "who": "Zone-T117",
+   "check": "bas_zone",
+   "target": "VAV-T117",
+   "minutes": 2.0,
+   "p_pos": 0.19237548651722958,
+   "gain": 0.3134376765627511,
+   "audience": 1,
+   "evidence": "U",
+   "outcome": "unsure",
+   "t": null,
+   "state_before": [
+    {
+     "room": "Zone-T212",
+     "truth_mass": 0.09245161462157761,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.20339355216747074
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.12943226047020864
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.11094193754589313
+      ]
+     ]
+    },
+    {
+     "room": "Zone-T117",
+     "truth_mass": 0.15716774485668195,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.20339355216747074
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.12943226047020864
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.11094193754589313
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "kind": "complaint",
+   "who": "Zone-T212",
+   "check": "bas_airflow",
+   "target": "VAV-T212",
+   "minutes": 2.0,
+   "p_pos": 0.307359003871022,
+   "gain": 0.283559051064719,
+   "audience": 1,
+   "evidence": "U",
+   "outcome": "unsure",
+   "t": null,
+   "state_before": [
+    {
+     "room": "Zone-T212",
+     "truth_mass": 0.09245161462157761,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.20339355216747074
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.12943226047020864
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.11094193754589313
+      ]
+     ]
+    },
+    {
+     "room": "Zone-T117",
+     "truth_mass": 0.15716774485668195,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.20339355216747074
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.12943226047020864
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.11094193754589313
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "kind": "complaint",
+   "who": "Zone-T117",
+   "check": "bas_airflow",
+   "target": "VAV-T117",
+   "minutes": 2.0,
+   "p_pos": 0.307359003871022,
+   "gain": 0.283559051064719,
+   "audience": 1,
+   "evidence": "U",
+   "outcome": "unsure",
+   "t": null,
+   "state_before": [
+    {
+     "room": "Zone-T212",
+     "truth_mass": 0.09245161462157761,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.20339355216747074
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.12943226047020864
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.11094193754589313
+      ]
+     ]
+    },
+    {
+     "room": "Zone-T117",
+     "truth_mass": 0.15716774485668195,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.20339355216747074
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.12943226047020864
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.11094193754589313
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "kind": "complaint",
+   "who": "Zone-T212",
+   "check": "bas_damper",
+   "target": "VAV-T212",
+   "minutes": 2.0,
+   "p_pos": 0.21623132537089534,
+   "gain": 0.21183599246018847,
+   "audience": 1,
+   "evidence": "U",
+   "outcome": "unsure",
+   "t": null,
+   "state_before": [
+    {
+     "room": "Zone-T212",
+     "truth_mass": 0.09245161462157761,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.20339355216747074
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.12943226047020864
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.11094193754589313
+      ]
+     ]
+    },
+    {
+     "room": "Zone-T117",
+     "truth_mass": 0.15716774485668195,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.20339355216747074
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.12943226047020864
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.11094193754589313
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "kind": "complaint",
+   "who": "Zone-T117",
+   "check": "bas_damper",
+   "target": "VAV-T117",
+   "minutes": 2.0,
+   "p_pos": 0.21623132537089534,
+   "gain": 0.21183599246018847,
+   "audience": 1,
+   "evidence": "U",
+   "outcome": "unsure",
+   "t": null,
+   "state_before": [
+    {
+     "room": "Zone-T212",
+     "truth_mass": 0.09245161462157761,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.20339355216747074
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.12943226047020864
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.11094193754589313
+      ]
+     ]
+    },
+    {
+     "room": "Zone-T117",
+     "truth_mass": 0.15716774485668195,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.20339355216747074
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.12943226047020864
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.11094193754589313
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "kind": "complaint",
+   "who": "Zone-T212",
+   "check": "bas_reheat",
+   "target": "VAV-T212",
+   "minutes": 2.0,
+   "p_pos": 0.14522516306022498,
+   "gain": 0.17435029023587756,
+   "audience": 1,
+   "evidence": "E",
+   "outcome": "abnormal",
+   "t": "0:30-1:00",
+   "state_before": [
+    {
+     "room": "Zone-T212",
+     "truth_mass": 0.09245161462157761,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.20339355216747074
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.12943226047020864
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.11094193754589313
+      ]
+     ]
+    },
+    {
+     "room": "Zone-T117",
+     "truth_mass": 0.15716774485668195,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.20339355216747074
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.12943226047020864
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.11094193754589313
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "kind": "complaint",
+   "who": "Zone-T117",
+   "check": "bas_reheat",
+   "target": "VAV-T117",
+   "minutes": 2.0,
+   "p_pos": 0.1453175990807182,
+   "gain": 0.1743903148638175,
+   "audience": 1,
+   "evidence": "E",
+   "outcome": "abnormal",
+   "t": "1:00-1:30",
+   "state_before": [
+    {
+     "room": "Zone-T212",
+     "truth_mass": 0.4774565888242689,
+     "top": [
+      [
+       [
+        "reheat_fail"
+       ],
+       0.4774565888242689
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.2801078654435711
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.04456261495693176
+      ]
+     ]
+    },
+    {
+     "room": "Zone-T117",
+     "truth_mass": 0.15732030916235037,
+     "top": [
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.20359098832774755
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.12955790166311207
+      ],
+      [
+       [
+        "flow_sensor"
+       ],
+       0.11104962999695321
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "kind": "complaint",
+   "who": "Zone-T212",
+   "check": "thermostat",
+   "target": "VAV-T212",
+   "minutes": 11.0,
+   "p_pos": 0.2937752357121658,
+   "gain": 0.5547518065620833,
+   "audience": 1,
+   "evidence": "U",
+   "outcome": "unsure",
+   "t": null,
+   "state_before": [
+    {
+     "room": "Zone-T212",
+     "truth_mass": 0.47761605742979196,
+     "top": [
+      [
+       [
+        "reheat_fail"
+       ],
+       0.47761605742979196
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.2802014203588113
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.044577498693447244
+      ]
+     ]
+    },
+    {
+     "room": "Zone-T117",
+     "truth_mass": 0.4999048067765156,
+     "top": [
+      [
+       [
+        "reheat_fail"
+       ],
+       0.47761605742979196
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.2802014203588113
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.044577498693447244
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "kind": "complaint",
+   "who": "Zone-T117",
+   "check": "thermostat",
+   "target": "VAV-T117",
+   "minutes": 11.0,
+   "p_pos": 0.2937752357121658,
+   "gain": 0.5547518065620833,
+   "audience": 1,
+   "evidence": "U",
+   "outcome": "unsure",
+   "t": null,
+   "state_before": [
+    {
+     "room": "Zone-T212",
+     "truth_mass": 0.47761605742979196,
+     "top": [
+      [
+       [
+        "reheat_fail"
+       ],
+       0.47761605742979196
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.2802014203588113
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.044577498693447244
+      ]
+     ]
+    },
+    {
+     "room": "Zone-T117",
+     "truth_mass": 0.4999048067765156,
+     "top": [
+      [
+       [
+        "reheat_fail"
+       ],
+       0.47761605742979196
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.2802014203588113
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.044577498693447244
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "kind": "complaint",
+   "who": "Zone-T212",
+   "check": "reheat_coil",
+   "target": "VAV-T212",
+   "minutes": 16.0,
+   "p_pos": 0.379107400775152,
+   "gain": 0.44343251565481356,
+   "audience": 1,
+   "evidence": "E",
+   "outcome": "abnormal",
+   "t": "3:15-5:15",
+   "state_before": [
+    {
+     "room": "Zone-T212",
+     "truth_mass": 0.47761605742979196,
+     "top": [
+      [
+       [
+        "reheat_fail"
+       ],
+       0.47761605742979196
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.2802014203588113
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.044577498693447244
+      ]
+     ]
+    },
+    {
+     "room": "Zone-T117",
+     "truth_mass": 0.4999048067765156,
+     "top": [
+      [
+       [
+        "reheat_fail"
+       ],
+       0.47761605742979196
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.2802014203588113
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.044577498693447244
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "kind": "complaint",
+   "who": "Zone-T117",
+   "check": "reheat_coil",
+   "target": "VAV-T117",
+   "minutes": 16.0,
+   "p_pos": 0.3791605265724021,
+   "gain": 0.4433630228408849,
+   "audience": 1,
+   "evidence": "E",
+   "outcome": "abnormal",
+   "t": "5:15-6:15",
+   "state_before": [
+    {
+     "room": "Zone-T212",
+     "truth_mass": 0.9448827491626801,
+     "top": [
+      [
+       [
+        "reheat_fail"
+       ],
+       0.9448827491626801
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.02956433135157896
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.004703416351387562
+      ]
+     ]
+    },
+    {
+     "room": "Zone-T117",
+     "truth_mass": 0.4999831236795039,
+     "top": [
+      [
+       [
+        "reheat_fail"
+       ],
+       0.47769088249634134
+      ],
+      [
+       [
+        "zone_sensor_setpoint"
+       ],
+       0.2802453177311869
+      ],
+      [
+       [
+        "controller_config"
+       ],
+       0.04458448236632519
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

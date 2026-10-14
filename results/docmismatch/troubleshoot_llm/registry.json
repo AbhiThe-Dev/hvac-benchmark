@@ -1,0 +1,302 @@
+{
+ "S01": {
+  "visit": "v21",
+  "tier": "T3",
+  "event": 465
+ },
+ "S02": {
+  "visit": "v18",
+  "tier": "T2",
+  "event": 665
+ },
+ "S03": {
+  "visit": "v25",
+  "tier": "T2",
+  "event": 268
+ },
+ "S04": {
+  "visit": "v11",
+  "tier": "T2",
+  "event": 901
+ },
+ "S05": {
+  "visit": "v07",
+  "tier": "T2",
+  "event": 832
+ },
+ "S06": {
+  "visit": "v30",
+  "tier": "T3",
+  "event": 321
+ },
+ "S07": {
+  "visit": "v17",
+  "tier": "T3",
+  "event": 774
+ },
+ "S08": {
+  "visit": "v09",
+  "tier": "T2",
+  "event": 908
+ },
+ "S09": {
+  "visit": "v05",
+  "tier": "T2",
+  "event": 243
+ },
+ "S10": {
+  "visit": "v28",
+  "tier": "T3",
+  "event": 170
+ },
+ "S11": {
+  "visit": "v15",
+  "tier": "T2",
+  "event": 597
+ },
+ "S12": {
+  "visit": "v29",
+  "tier": "T3",
+  "event": 142
+ },
+ "S13": {
+  "visit": "v22",
+  "tier": "T2",
+  "event": 607
+ },
+ "S14": {
+  "visit": "v29",
+  "tier": "T2",
+  "event": 142
+ },
+ "S15": {
+  "visit": "v08",
+  "tier": "T2",
+  "event": 448
+ },
+ "S16": {
+  "visit": "v04",
+  "tier": "T3",
+  "event": 409
+ },
+ "S17": {
+  "visit": "v03",
+  "tier": "T3",
+  "event": 514
+ },
+ "S18": {
+  "visit": "v14",
+  "tier": "T2",
+  "event": 942
+ },
+ "S19": {
+  "visit": "v01",
+  "tier": "T2",
+  "event": 933
+ },
+ "S20": {
+  "visit": "v15",
+  "tier": "T3",
+  "event": 597
+ },
+ "S21": {
+  "visit": "v14",
+  "tier": "T3",
+  "event": 942
+ },
+ "S22": {
+  "visit": "v25",
+  "tier": "T3",
+  "event": 268
+ },
+ "S23": {
+  "visit": "v09",
+  "tier": "T3",
+  "event": 908
+ },
+ "S24": {
+  "visit": "v21",
+  "tier": "T2",
+  "event": 465
+ },
+ "S25": {
+  "visit": "v12",
+  "tier": "T3",
+  "event": 771
+ },
+ "S26": {
+  "visit": "v02",
+  "tier": "T3",
+  "event": 9
+ },
+ "S27": {
+  "visit": "v26",
+  "tier": "T3",
+  "event": 785
+ },
+ "S28": {
+  "visit": "v06",
+  "tier": "T3",
+  "event": 425
+ },
+ "S29": {
+  "visit": "v19",
+  "tier": "T2",
+  "event": 383
+ },
+ "S30": {
+  "visit": "v03",
+  "tier": "T2",
+  "event": 514
+ },
+ "S31": {
+  "visit": "v28",
+  "tier": "T2",
+  "event": 170
+ },
+ "S32": {
+  "visit": "v26",
+  "tier": "T2",
+  "event": 785
+ },
+ "S33": {
+  "visit": "v20",
+  "tier": "T2",
+  "event": 550
+ },
+ "S34": {
+  "visit": "v27",
+  "tier": "T3",
+  "event": 427
+ },
+ "S35": {
+  "visit": "v23",
+  "tier": "T3",
+  "event": 211
+ },
+ "S36": {
+  "visit": "v16",
+  "tier": "T3",
+  "event": 834
+ },
+ "S37": {
+  "visit": "v01",
+  "tier": "T3",
+  "event": 933
+ },
+ "S38": {
+  "visit": "v12",
+  "tier": "T2",
+  "event": 771
+ },
+ "S39": {
+  "visit": "v10",
+  "tier": "T3",
+  "event": 64
+ },
+ "S40": {
+  "visit": "v10",
+  "tier": "T2",
+  "event": 64
+ },
+ "S41": {
+  "visit": "v05",
+  "tier": "T3",
+  "event": 243
+ },
+ "S42": {
+  "visit": "v20",
+  "tier": "T3",
+  "event": 550
+ },
+ "S43": {
+  "visit": "v07",
+  "tier": "T3",
+  "event": 832
+ },
+ "S44": {
+  "visit": "v19",
+  "tier": "T3",
+  "event": 383
+ },
+ "S45": {
+  "visit": "v30",
+  "tier": "T2",
+  "event": 321
+ },
+ "S46": {
+  "visit": "v06",
+  "tier": "T2",
+  "event": 425
+ },
+ "S47": {
+  "visit": "v18",
+  "tier": "T3",
+  "event": 665
+ },
+ "S48": {
+  "visit": "v13",
+  "tier": "T2",
+  "event": 680
+ },
+ "S49": {
+  "visit": "v17",
+  "tier": "T2",
+  "event": 774
+ },
+ "S50": {
+  "visit": "v24",
+  "tier": "T2",
+  "event": 705
+ },
+ "S51": {
+  "visit": "v04",
+  "tier": "T2",
+  "event": 409
+ },
+ "S52": {
+  "visit": "v16",
+  "tier": "T2",
+  "event": 834
+ },
+ "S53": {
+  "visit": "v23",
+  "tier": "T2",
+  "event": 211
+ },
+ "S54": {
+  "visit": "v24",
+  "tier": "T3",
+  "event": 705
+ },
+ "S55": {
+  "visit": "v22",
+  "tier": "T3",
+  "event": 607
+ },
+ "S56": {
+  "visit": "v11",
+  "tier": "T3",
+  "event": 901
+ },
+ "S57": {
+  "visit": "v08",
+  "tier": "T3",
+  "event": 448
+ },
+ "S58": {
+  "visit": "v13",
+  "tier": "T3",
+  "event": 680
+ },
+ "S59": {
+  "visit": "v27",
+  "tier": "T2",
+  "event": 427
+ },
+ "S60": {
+  "visit": "v02",
+  "tier": "T2",
+  "event": 9
+ }
+}

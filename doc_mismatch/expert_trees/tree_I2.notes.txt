@@ -1,0 +1,12 @@
+Judgement calls:
+- **AHU first, no preamble.** One `bas_static` reading (or `ahu_gauge` in Tier C) covers about 39% of calls and is cached for every room on that AHU. A preamble would add nothing, so it is `null`. In Tier C a single complaint pays 17 min for the gauge. I accepted that for a simple tree.
+- **Fan off versus low static.** In Tier A/B a static-low plus fan-flag pair is only about 80% fan_off, because low_static also trips the BAS fan flag 20% of the time. So I call it `sure:false`. In Tier C the walk-up visit trips on low_static only 10% of the time (about 88% fan_off), so the `bas_ahu_fan`-then-`na` node makes that one `sure:true`. This relies on `na` behaving as described.
+- **Low_static** needs a second independent reading (`bas_airflow`, or `static_at_box` in Tier C) before `sure`, at about 90%.
+- **Zone sensor.** `bas_zone` is only about 79% on its own, so a `sure` call needs the thermostat at the wall.
+- **Sure threshold** is about 85% posterior. Rare electrical causes (no_power, signal_fault, actuator_fail) stay `sure:false`. Only damper_mech (manual test), reheat (coil inspection), flow_sensor, config and duct_diffuser reach `sure:true`.
+- **Wrong box** is only tested at the end, with `duct_trace`, once everything on the documented box is normal. Its YES means the drawings are right, so NO goes to `find_feeder`.
+- **Escalate** is used only where the best guess is under about 30%. Elsewhere I name the leading cause with `sure:false`.
+- **Tier C** is a separate subtree reached through `na` on `bas_zone`. Tier A/B and Tier C share the check lists otherwise, and `na` on `flow_vs_gauge`, `bas_reheat` or `sensing_ports` means no pressure-independent sensor or no reheat on that box.
+- **Not expressible:** I can't use the number of complaints on an AHU to raise the fan_off prior. The roughly 5% of upstream faults that `bas_static` misses are not rechecked.
+- **Tier B:** `max_airflow` costs 12 min and `design_load` is `na`, so those branches fall through to the neg path.
+- **Size:** about 69 nodes.

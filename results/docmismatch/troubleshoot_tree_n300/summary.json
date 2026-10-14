@@ -1,0 +1,490 @@
+{
+ "gates": {
+  "G1 neutral world": {
+   "passed": true,
+   "detail": "the neutral world is exactly the existing generator and table; every mix is a proper distribution"
+  },
+  "G2 answer table": {
+   "passed": true,
+   "detail": "answers are order-independent, equal TableOracle's in the neutral world, and a stuck sensor is a property of the visit"
+  },
+  "G3 trees": {
+   "passed": true,
+   "detail": "1800 random-answer visits over 5 trees x 3 tiers ran to the end; most checks on one complaint 12 (limit 12)"
+  },
+  "G4 fair accounting": {
+   "passed": true,
+   "detail": "2520 (arm, visit) pairs: every reported minute total equals the independent accountant's"
+  },
+  "G5 tool unchanged": {
+   "passed": true,
+   "detail": "72 (cell, tier, policy) arrays equal Addendum 41's stored tau-0.95 arrays exactly (over the visits run)"
+  },
+  "G6 events": {
+   "passed": true,
+   "detail": "first 50 events of every cell match Addendum 30's stored kinds"
+  },
+  "G7 reproducibility": {
+   "passed": true,
+   "detail": "3 worlds reproduce exactly on a second run (one worker against many)"
+  }
+ },
+ "predictions": {
+  "P1": {
+   "held": false,
+   "detail": "minutes: E 63.5 against the tool's 63.7 (-0%)"
+  },
+  "P10": {
+   "held": true,
+   "detail": "value verdict against E at the registered cost box: DEPENDS ON THE COSTS in 14 of 18 cells"
+  },
+  "P11": {
+   "held": false,
+   "detail": "the tool at min_rate 0.08, primary cell: 7.9 min / 0.517 against E's 61.8 / 0.530"
+  },
+  "P12": {
+   "held": true,
+   "detail": "knowledge helps a tree: best informed tree (tree_I2) 0.506, E 0.431"
+  },
+  "P13": {
+   "held": true,
+   "detail": "adaptivity beyond knowledge: tool 0.689, best informed tree 0.506"
+  },
+  "P14": {
+   "held": false,
+   "detail": "declared and wrong: best informed tree 0.1058, E 0.2115"
+  },
+  "P2": {
+   "held": true,
+   "detail": "accuracy: tool 0.689, E 0.431"
+  },
+  "P3": {
+   "held": false,
+   "detail": "declared: E 0.551, tool 0.287"
+  },
+  "P4": {
+   "held": true,
+   "detail": "declared and wrong: E 0.2115, tool 0.0210"
+  },
+  "P5": {
+   "held": false,
+   "detail": "flat checklist 0.395 / 63 min -> E 0.431 / 63 -> tool 0.689 / 64"
+  },
+  "P6": {
+   "held": false,
+   "detail": "blind-tree accuracies: tree_E 0.431, tree_Ed 0.431, tree_L1 0.444, tree_L2 0.427"
+  },
+  "P7": {
+   "held": true,
+   "detail": "Verdict 1 against E: 8 of 18 cells with a material tool advantage (MIXED)"
+  },
+  "P8": {
+   "held": true,
+   "detail": "tool's accuracy lead over E: primary cell +0.307, sigma-1.0 jitter worlds +0.241"
+  },
+  "P9": {
+   "held": true,
+   "detail": "economizer world declared-and-wrong: tool 0.0110, E 0.1295"
+  }
+ },
+ "verdicts": {
+  "gap_E": [
+   8,
+   "MIXED"
+  ],
+  "stress_E": [
+   14,
+   0,
+   26,
+   "ERODES"
+  ],
+  "gap_blind": [
+   0,
+   "ALREADY CLOSE"
+  ],
+  "stress_blind": [
+   0,
+   0,
+   26,
+   "DOES NOT SURVIVE"
+  ],
+  "gap_informed": [
+   0,
+   "ALREADY CLOSE"
+  ],
+  "stress_informed": [
+   2,
+   0,
+   26,
+   "DOES NOT SURVIVE"
+  ],
+  "gap_all_trees": [
+   0,
+   "ALREADY CLOSE"
+  ],
+  "stress_all_trees": [
+   0,
+   0,
+   26,
+   "DOES NOT SURVIVE"
+  ],
+  "value_base_tree_E": {
+   "TOOL AHEAD": 4,
+   "DEPENDS ON THE COSTS": 14,
+   "TOOL BEHIND": 0
+  },
+  "value_stress_tree_E": {
+   "TOOL AHEAD": 2,
+   "DEPENDS ON THE COSTS": 24,
+   "TOOL BEHIND": 0
+  },
+  "value_base_tree_I2": {
+   "TOOL AHEAD": 0,
+   "DEPENDS ON THE COSTS": 18,
+   "TOOL BEHIND": 0
+  },
+  "value_stress_tree_I2": {
+   "TOOL AHEAD": 0,
+   "DEPENDS ON THE COSTS": 26,
+   "TOOL BEHIND": 0
+  },
+  "value_base_E": {
+   "TOOL AHEAD": 4,
+   "DEPENDS ON THE COSTS": 14,
+   "TOOL BEHIND": 0
+  },
+  "value_stress_E": {
+   "TOOL AHEAD": 2,
+   "DEPENDS ON THE COSTS": 24,
+   "TOOL BEHIND": 0
+  },
+  "commercial": "PARTIAL",
+  "commercial_informed": "NOT MATERIAL"
+ },
+ "headline": {
+  "T3-noattr|tool_joint": {
+   "visits": 5400,
+   "mean_min": 63.7037037037037,
+   "median_min": 53.0,
+   "checks": 11.398333333333333,
+   "accuracy": 0.6887259044967378,
+   "right_declared": 0.392693329041603,
+   "wrong_declared": 0.030095759233926128,
+   "undeclared": 0.5772109117244709,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 27.68166089965398
+  },
+  "T3-noattr|tool_ticket_memo2": {
+   "visits": 5400,
+   "mean_min": 61.14074074074074,
+   "median_min": 52.0,
+   "checks": 11.062222222222223,
+   "accuracy": 0.6811904785029785,
+   "right_declared": 0.46680614790375796,
+   "wrong_declared": 0.036291944958557976,
+   "undeclared": 0.49690190713768406,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 26.56795686810976
+  },
+  "T3-noattr|tree_E": {
+   "visits": 5400,
+   "mean_min": 63.4787037037037,
+   "median_min": 47.0,
+   "checks": 10.867037037037036,
+   "accuracy": 0.4311373192137082,
+   "right_declared": 0.4058099299911483,
+   "wrong_declared": 0.22797135269976665,
+   "undeclared": 0.36621871730908506,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 27.583889917115958
+  },
+  "T3-noattr|tree_Ed": {
+   "visits": 5400,
+   "mean_min": 58.605185185185185,
+   "median_min": 43.0,
+   "checks": 10.47425925925926,
+   "accuracy": 0.4311373192137082,
+   "right_declared": 0.442182344894182,
+   "wrong_declared": 0.33411120946326545,
+   "undeclared": 0.22370644564255251,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 25.466162388347954
+  },
+  "T3-noattr|tree_L1": {
+   "visits": 5400,
+   "mean_min": 40.17407407407408,
+   "median_min": 35.0,
+   "checks": 8.967037037037038,
+   "accuracy": 0.443939138279416,
+   "right_declared": 0.4412971755049489,
+   "wrong_declared": 0.31077492556530134,
+   "undeclared": 0.24792789892974973,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 17.457149754566668
+  },
+  "T3-noattr|tree_L2": {
+   "visits": 5400,
+   "mean_min": 60.31722222222222,
+   "median_min": 46.0,
+   "checks": 9.532222222222222,
+   "accuracy": 0.4265300782036894,
+   "right_declared": 0.4730023336283898,
+   "wrong_declared": 0.21083125452643436,
+   "undeclared": 0.31616641184517585,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 26.210107025026154
+  },
+  "T3-noattr|tree_I2": {
+   "visits": 5400,
+   "mean_min": 47.85148148148148,
+   "median_min": 35.0,
+   "checks": 8.357407407407408,
+   "accuracy": 0.5059259760301427,
+   "right_declared": 0.28172527560955984,
+   "wrong_declared": 0.09986320109439124,
+   "undeclared": 0.6184115232960489,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 20.79327271264183
+  },
+  "T3-noattr|fast_parent": {
+   "visits": 5400,
+   "mean_min": 62.614814814814814,
+   "median_min": 27.0,
+   "checks": 9.858518518518519,
+   "accuracy": 0.3954873493276271,
+   "right_declared": 0.49754566669349,
+   "wrong_declared": 0.50245433330651,
+   "undeclared": 0.0,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 27.208497626136637
+  },
+  "T3-noattr|no_check": {
+   "visits": 5400,
+   "mean_min": 0.0,
+   "median_min": 0.0,
+   "checks": 0.0,
+   "accuracy": 0.2878655462336018,
+   "right_declared": 0.0,
+   "wrong_declared": 0.0,
+   "undeclared": 1.0,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 0.0
+  },
+  "T3|tool_joint": {
+   "visits": 5400,
+   "mean_min": 59.846111111111114,
+   "median_min": 50.0,
+   "checks": 12.075555555555555,
+   "accuracy": 0.6930705547024992,
+   "right_declared": 0.4011426732115555,
+   "wrong_declared": 0.032509857568198276,
+   "undeclared": 0.5663474692202463,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 26.005391486279873
+  },
+  "T3|tool_ticket_memo2": {
+   "visits": 5400,
+   "mean_min": 55.30111111111111,
+   "median_min": 49.0,
+   "checks": 11.515185185185185,
+   "accuracy": 0.6831386707428373,
+   "right_declared": 0.47461173251790456,
+   "wrong_declared": 0.03765993401464553,
+   "undeclared": 0.4877283334674499,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 24.03041763901183
+  },
+  "T3|tree_E": {
+   "visits": 5400,
+   "mean_min": 61.89537037037037,
+   "median_min": 45.0,
+   "checks": 11.24462962962963,
+   "accuracy": 0.4468301469620914,
+   "right_declared": 0.41136235615997424,
+   "wrong_declared": 0.22813229258871812,
+   "undeclared": 0.3605053512513076,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 26.895871891848394
+  },
+  "T3|tree_Ed": {
+   "visits": 5400,
+   "mean_min": 57.17,
+   "median_min": 42.0,
+   "checks": 10.831296296296296,
+   "accuracy": 0.4468301469620914,
+   "right_declared": 0.45449424639896996,
+   "wrong_declared": 0.34561841152329603,
+   "undeclared": 0.19988734207773395,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 24.84252031866098
+  },
+  "T3|tree_L1": {
+   "visits": 5400,
+   "mean_min": 39.302592592592596,
+   "median_min": 33.0,
+   "checks": 9.214814814814815,
+   "accuracy": 0.44898131934937485,
+   "right_declared": 0.4474933612295808,
+   "wrong_declared": 0.31833910034602075,
+   "undeclared": 0.2341675384243985,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 17.078458195863846
+  },
+  "T3|tree_L2": {
+   "visits": 5400,
+   "mean_min": 57.14703703703704,
+   "median_min": 44.0,
+   "checks": 9.728148148148149,
+   "accuracy": 0.4370984938415494,
+   "right_declared": 0.4730023336283898,
+   "wrong_declared": 0.21083125452643436,
+   "undeclared": 0.31616641184517585,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 24.83254204554599
+  },
+  "T3|tree_I2": {
+   "visits": 5400,
+   "mean_min": 45.617037037037036,
+   "median_min": 33.0,
+   "checks": 8.46425925925926,
+   "accuracy": 0.5117610730319063,
+   "right_declared": 0.28172527560955984,
+   "wrong_declared": 0.09986320109439124,
+   "undeclared": 0.6184115232960489,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 19.82232236259757
+  },
+  "T3|fast_parent": {
+   "visits": 5400,
+   "mean_min": 59.22555555555556,
+   "median_min": 23.0,
+   "checks": 9.812407407407408,
+   "accuracy": 0.4143746950066395,
+   "right_declared": 0.5093747485314235,
+   "wrong_declared": 0.4906252514685765,
+   "undeclared": 0.0,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 25.735736702341676
+  },
+  "T3|no_check": {
+   "visits": 5400,
+   "mean_min": 0.0,
+   "median_min": 0.0,
+   "checks": 0.0,
+   "accuracy": 0.2878655462336018,
+   "right_declared": 0.0,
+   "wrong_declared": 0.0,
+   "undeclared": 1.0,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 0.0
+  },
+  "T2|tool_joint": {
+   "visits": 5400,
+   "mean_min": 67.17407407407407,
+   "median_min": 57.0,
+   "checks": 7.509444444444444,
+   "accuracy": 0.6286357605871495,
+   "right_declared": 0.0571336605777742,
+   "wrong_declared": 0.006920415224913495,
+   "undeclared": 0.9359459241973123,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 29.189667659129316
+  },
+  "T2|tool_ticket_memo2": {
+   "visits": 5400,
+   "mean_min": 68.76629629629629,
+   "median_min": 59.0,
+   "checks": 7.8096296296296295,
+   "accuracy": 0.6295270776034665,
+   "right_declared": 0.15844532067272873,
+   "wrong_declared": 0.015933049006196187,
+   "undeclared": 0.825621630321075,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 29.881548241731714
+  },
+  "T2|tree_E": {
+   "visits": 5400,
+   "mean_min": 89.94962962962963,
+   "median_min": 72.0,
+   "checks": 9.25851851851852,
+   "accuracy": 0.4507147477008588,
+   "right_declared": 0.4589200933451356,
+   "wrong_declared": 0.28365655427697756,
+   "undeclared": 0.2574233523778869,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 39.08650519031142
+  },
+  "T2|tree_Ed": {
+   "visits": 5400,
+   "mean_min": 89.94962962962963,
+   "median_min": 72.0,
+   "checks": 9.25851851851852,
+   "accuracy": 0.4507147477008588,
+   "right_declared": 0.4957753279150237,
+   "wrong_declared": 0.36308038947453125,
+   "undeclared": 0.141144282610445,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 39.08650519031142
+  },
+  "T2|tree_L1": {
+   "visits": 5400,
+   "mean_min": 61.281851851851854,
+   "median_min": 44.0,
+   "checks": 6.179074074074074,
+   "accuracy": 0.44547968646579755,
+   "right_declared": 0.345940291301199,
+   "wrong_declared": 0.1758268286794882,
+   "undeclared": 0.4782328800193128,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 26.629274965800274
+  },
+  "T2|tree_L2": {
+   "visits": 5400,
+   "mean_min": 72.2825925925926,
+   "median_min": 55.0,
+   "checks": 7.182777777777778,
+   "accuracy": 0.4812452054118721,
+   "right_declared": 0.5195139615353666,
+   "wrong_declared": 0.2072905769695019,
+   "undeclared": 0.2731954614951316,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 31.40951154743703
+  },
+  "T2|tree_I2": {
+   "visits": 5400,
+   "mean_min": 86.38018518518518,
+   "median_min": 67.0,
+   "checks": 7.4003703703703705,
+   "accuracy": 0.5222391841697397,
+   "right_declared": 0.2892089804458035,
+   "wrong_declared": 0.08916069847911805,
+   "undeclared": 0.6216303210750784,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 37.53544701054156
+  },
+  "T2|fast_parent": {
+   "visits": 5400,
+   "mean_min": 87.01055555555556,
+   "median_min": 50.0,
+   "checks": 9.171111111111111,
+   "accuracy": 0.4401958419666753,
+   "right_declared": 0.5436549448780881,
+   "wrong_declared": 0.456345055121912,
+   "undeclared": 0.0,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 37.80936670153697
+  },
+  "T2|no_check": {
+   "visits": 5400,
+   "mean_min": 0.0,
+   "median_min": 0.0,
+   "checks": 0.0,
+   "accuracy": 0.2878655462336018,
+   "right_declared": 0.0,
+   "wrong_declared": 0.0,
+   "undeclared": 1.0,
+   "n_compl": 2.301296296296296,
+   "min_per_complaint": 0.0
+  }
+ }
+}

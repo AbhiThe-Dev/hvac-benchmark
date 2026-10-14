@@ -1,0 +1,150 @@
+{"sid": "S451", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S452", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "SRH 1: 1.109 BENSON LATIN AMERICAN LIBRARY", "B": null, "C": null, "D": null}}
+{"sid": "S453", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "6.218BB OFFICE TOO HOT IN THE AM", "B": null, "C": null, "D": null}}
+{"sid": "S454", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "1.308 TOO WARM IN CLASSROOM", "B": null, "C": null, "D": null}}
+{"sid": "S455", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S456", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "GSB: 2.124", "B": null, "C": null, "D": null}}
+{"sid": "S457", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "RM 4.202", "B": null, "C": null, "D": null}}
+{"sid": "S458", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "RLM: 5.114 / CLASSROOM IS TOO WARM", "B": null, "C": null, "D": null}}
+{"sid": "S459", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "AHU 2", "B": null, "C": null, "D": "AHU 2, COLD DECK PRESSURE IS IN LOW ALARM"}}
+{"sid": "S460", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "EAS: 3.206 - TOO WARM", "B": null, "C": null, "D": null}}
+{"sid": "S461", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "UTA: 5.454E A/C LOW AIR FLOW ALARM", "B": null, "C": null, "D": null}}
+{"sid": "S462", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "SZB: 422 - TOO WARM", "B": null, "C": null, "D": null}}
+{"sid": "S463", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "ECJ: 1.225 - TOO COLD", "B": null, "C": null, "D": null}}
+{"sid": "S464", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "SEA: 1.440 NO AIR FLOW", "B": null, "C": null, "D": null}}
+{"sid": "S465", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "MAI: 2110", "B": null, "C": null, "D": null}}
+{"sid": "S466", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "BUR: 116", "B": null, "C": null, "D": null}}
+{"sid": "S467", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "LCH-100", "B": null, "C": null, "D": null}}
+{"sid": "S468", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "TOO WARM IN CMA 7.136B", "B": null, "C": null, "D": null}}
+{"sid": "S469", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "BE1-1.202", "B": null, "C": null, "D": null}}
+{"sid": "S470", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "GRE: 3.108, 3.303", "B": null, "C": null, "D": "3.108, 3.303 - SHUT OFF AHU"}}
+{"sid": "S471", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "PAI-4.30 / TOO COLD", "B": null, "C": null, "D": null}}
+{"sid": "S472", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "SEA: 1.214D IS TOO COLD", "B": null, "C": null, "D": null}}
+{"sid": "S473", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "UTC: 1.130 - TOO COLD", "B": null, "C": null, "D": null}}
+{"sid": "S474", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "EME: 1.802B / HEATER NOT WORKING", "B": null, "C": null, "D": null}}
+{"sid": "S475", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S476", "A": false, "B": false, "C": false, "D": true, "quotes": {"A": null, "B": null, "C": null, "D": "ENTIRE BLDG / TOO COLD"}}
+{"sid": "S477", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "ARC 1.310 TOO HOT", "B": null, "C": null, "D": null}}
+{"sid": "S478", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "CBA: 3.302 - TOO WARM", "B": null, "C": null, "D": null}}
+{"sid": "S479", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "AC/2 AIR HANDLER", "B": null, "C": null, "D": "REPLACE AC/2 AIR HANDLER FAN PILLOW BEARINGS"}}
+{"sid": "S480", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "PAI: 3.40 VENTS ARE COVERED", "B": null, "C": null, "D": null}}
+{"sid": "S481", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "REPAIR AC IN SERVER ROOM", "B": null, "C": null, "D": null}}
+{"sid": "S482", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "BUR-106A-A2", "B": null, "C": null, "D": "AHU-B4 CHW CONTROL VALVE BROKEN."}}
+{"sid": "S483", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "GOL:AHU1 & 3", "B": null, "C": null, "D": "AHU1 & 3 WITH CD TEMP. 74.4 DEG. OVER ALARM HIGH 65.0 DEG."}}
+{"sid": "S484", "A": false, "B": false, "C": false, "D": true, "quotes": {"A": null, "B": null, "C": null, "D": "NO A/C THROUGHOUT BUILDING"}}
+{"sid": "S485", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "DFA: 2.4 - TOO WARM", "B": null, "C": null, "D": null}}
+{"sid": "S486", "A": false, "B": false, "C": false, "D": true, "quotes": {"A": null, "B": null, "C": null, "D": "AHU CMD ON SATATUS OFF IN ALARM"}}
+{"sid": "S487", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "SSB-2.107 & 2.114", "B": null, "C": null, "D": "2.107 TOO HOT & 2.114 TOO COLD"}}
+{"sid": "S488", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "CCJ 1.310 SOUTH", "B": null, "C": null, "D": null}}
+{"sid": "S489", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "TNH: 3.130E, 3.130F, 3.130J, 3.130K", "B": null, "C": null, "D": "3.130E, 3.130F, 3.130J, 3.130K - TOO COLD"}}
+{"sid": "S490", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "SEA-3.312E / THIS LAB IS NOW EXTREMELY TOO COLD", "B": null, "C": null, "D": null}}
+{"sid": "S491", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "ECJ: B.200", "B": null, "C": null, "D": null}}
+{"sid": "S492", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "GSB: ROOF - VENTS & FANS MAKING NOISE", "B": null, "C": null, "D": null}}
+{"sid": "S493", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "OUTDOOR LEISURE & EVENT POOLS", "B": null, "C": null, "D": "OUTDOOR LEISURE & EVENT POOLS / LOWER TEMPS"}}
+{"sid": "S494", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "SSW: 2.204 TOO WARM", "B": null, "C": null, "D": null}}
+{"sid": "S495", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "ERC-2.006 / INSTRUMENT AIR PRESSURE ALARM ON AHU32", "B": null, "C": null, "D": "INSTRUMENT AIR PRESSURE ALARM ON AHU32"}}
+{"sid": "S496", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "ECJ 1.324: CLASSROOM IS TOO HOT", "B": null, "C": null, "D": null}}
+{"sid": "S497", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "BASEMENT DD AHU-6", "B": null, "C": null, "D": "AHU-6 SUPPLY SUPERVISORY"}}
+{"sid": "S498", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "RLM-12.202 / QUITE CHILLY", "B": null, "C": null, "D": null}}
+{"sid": "S499", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "AHU 1 H", "B": null, "C": null, "D": "AHU 1 H: REPLACE DUCT STATIC SENSOR"}}
+{"sid": "S500", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S501", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S502", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "RD OFFICE (C160A) IS EXTREMELY HOT", "B": null, "C": null, "D": null}}
+{"sid": "S503", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "ROOM 004 IN BASEMENT OF SCOTT HALL IS VERY WARM", "B": null, "C": null, "D": null}}
+{"sid": "S504", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "ROOM 130F IN BERT COOPER LAB IS TO COLD", "B": null, "C": null, "D": null}}
+{"sid": "S505", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "105-4 - APARTMENT IS TOO HOT.", "B": null, "C": null, "D": null}}
+{"sid": "S506", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "THE TEMPERATURE IN ROOM 102S", "B": null, "C": null, "D": null}}
+{"sid": "S507", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "CHECK AIR HANDLER IN BASEMENT", "B": null, "C": null, "D": "CHECK AIR HANDLER IN BASEMENT"}}
+{"sid": "S508", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "038-005A 38-5", "B": null, "C": null, "D": null}}
+{"sid": "S509", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "VILLD-4TH FLOOR LOUNGE", "B": null, "C": null, "D": null}}
+{"sid": "S510", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "ROOMS 315,316, 317", "B": null, "C": null, "D": "THE A/C UNITS IN THESE ROOMS WILL NOT GO OFF STANDBY"}}
+{"sid": "S511", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "026-004A 26-4", "B": null, "C": null, "D": "DRIPPING DOWN TO BREEZEWAY AND APARTMENT BELOW"}}
+{"sid": "S512", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "BEN-C209", "B": null, "C": null, "D": null}}
+{"sid": "S513", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "LAB 113 IS TOO HOT", "B": null, "C": null, "D": null}}
+{"sid": "S514", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "WLLD 326", "B": null, "C": null, "D": null}}
+{"sid": "S515", "A": true, "B": true, "C": false, "D": false, "quotes": {"A": "017-002A 017-002", "B": "OPENED PER RESLIFE CALLBACK 8/29/17 - DOESN'T WORK AGAIN", "C": null, "D": null}}
+{"sid": "S516", "A": false, "B": true, "C": false, "D": false, "quotes": {"A": null, "B": "THE CURRENT ONES KEEP HAVING PROBLEMS", "C": null, "D": null}}
+{"sid": "S517", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "073-010A 73-10", "B": null, "C": null, "D": null}}
+{"sid": "S518", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "WCOM-0418B URGENT: WCOM-418", "B": null, "C": null, "D": null}}
+{"sid": "S519", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "DRIPPING INTO 514D LSW FROM CEILING", "B": null, "C": null, "D": null}}
+{"sid": "S520", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "0042HBRC 140AA", "B": null, "C": null, "D": null}}
+{"sid": "S521", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "2ND FLOOR AIR HANDLER", "B": null, "C": null, "D": "CHECK OUT SHAFT ON 2ND FLOOR AIR HANDLER"}}
+{"sid": "S522", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S523", "A": false, "B": true, "C": false, "D": false, "quotes": {"A": null, "B": "AIR CONDITIONING HAS BEEN SHUTTING OFF ON TUESDAY EVENINGS AFTER 5:00PM", "C": null, "D": null}}
+{"sid": "S524", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "0264 WCOM 5TH FLOOR, AC NOT WORKING", "B": null, "C": null, "D": null}}
+{"sid": "S525", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "COLD ROOM NRC D-WING 153", "B": null, "C": null, "D": null}}
+{"sid": "S526", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "012-012A 12-12", "B": null, "C": null, "D": null}}
+{"sid": "S527", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "CASNR-3RD FLOOR: URGENT: A/C IS NOT WORKING", "B": null, "C": null, "D": null}}
+{"sid": "S528", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "WEST APARTMENTS S-80 APT 4", "B": null, "C": null, "D": null}}
+{"sid": "S529", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "EAST BENNETT E232 PORTABLE AC LEAKING", "B": null, "C": null, "D": null}}
+{"sid": "S530", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "PATCH-406A", "B": null, "C": null, "D": null}}
+{"sid": "S531", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "AHU LAR 6", "B": null, "C": null, "D": "CHECK AHU LAR 6 SUPPLY IS 48"}}
+{"sid": "S532", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "MAU-4 IN LOW LIMIT ALARM.", "B": null, "C": null, "D": null}}
+{"sid": "S533", "A": false, "B": false, "C": false, "D": true, "quotes": {"A": null, "B": null, "C": null, "D": "IT IS 58 DEGREES IN BENNETT HALL AND GCA STAFF CANNOT WORK"}}
+{"sid": "S534", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "IN N MURRAY RMS 118 THRU 135", "B": null, "C": null, "D": "RMS 118 THRU 135, TEMPERATURES NEED TO BE SET TO A COMFORTABLE LEVEL"}}
+{"sid": "S535", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "EDMOND LOW LIBRARY AHU 17", "B": null, "C": null, "D": "AHU 17 HAS A FAN FAIL AND THE VFD IS NOT RUNNING"}}
+{"sid": "S536", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "BENNETT WEST 332B", "B": null, "C": null, "D": null}}
+{"sid": "S537", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "073-003A 73-3", "B": null, "C": null, "D": null}}
+{"sid": "S538", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "FGB OFFICES 160A 170A AND 160", "B": null, "C": null, "D": "THESE ROOMS DO NOT HAVE AIR THIS MORNING"}}
+{"sid": "S539", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "THE FIRST FLOOR TO INCLUDE ROOM 170", "B": null, "C": null, "D": "ROOM 170, HALLWAYS, RESTROOMS, AND THE GALLERY"}}
+{"sid": "S540", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "103-3 WILLIAMS", "B": null, "C": null, "D": null}}
+{"sid": "S541", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "AHU C5 (AH 11) A-WING", "B": null, "C": null, "D": "AHU C5 (AH 11) A-WING IS IN FAN FAIL."}}
+{"sid": "S542", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "ESPECIALLY THE SECOND FLOOR", "B": null, "C": null, "D": "THE BUILDING IS EXTREMELY HOT ESPECIALLY THE SECOND FLOOR"}}
+{"sid": "S543", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S544", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "AHU-1 & AHU-2", "B": null, "C": null, "D": "AHU-1 & AHU-2 NOT RESPONDING TO TOD SCHEDULE OF 0600."}}
+{"sid": "S545", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "REPAIR AHU 28", "B": null, "C": null, "D": "REPAIR AHU 28"}}
+{"sid": "S546", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S547", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "AHU'S 10 AND 11", "B": null, "C": null, "D": "AHU'S 10 AND 11 ARE IN FREEZE ALARM."}}
+{"sid": "S548", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S549", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "NORTH DINING, B&B", "B": null, "C": null, "D": null}}
+{"sid": "S550", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "AHU #2 R/A DRIVE FAULT", "B": null, "C": null, "D": "AHU #2 R/A DRIVE FAULT"}}
+{"sid": "S551", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "annual BSL-3 performance verification", "B": null, "C": null, "D": null}}
+{"sid": "S552", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "PhillipsHall.AHU-PH-1.SE6166/HighCoolingSupplyAirTemp.Alarm.", "B": null, "C": null, "D": "PhillipsHall.AHU-PH-1.SE6166/HighCoolingSupplyAirTemp.Alarm."}}
+{"sid": "S553", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "rare book room", "B": null, "C": null, "D": null}}
+{"sid": "S554", "A": false, "B": false, "C": false, "D": true, "quotes": {"A": null, "B": null, "C": null, "D": "Bldg CW high temp alarm"}}
+{"sid": "S555", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "heat recovery unit 2", "B": null, "C": null, "D": null}}
+{"sid": "S556", "A": false, "B": false, "C": false, "D": true, "quotes": {"A": null, "B": null, "C": null, "D": "Building_Chill_Water_Alarms.Building_CW_Pump_Status_Alarm"}}
+{"sid": "S557", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "Cold room 354C temp rising", "B": null, "C": null, "D": null}}
+{"sid": "S558", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "Classroom 132 space is to warm", "B": null, "C": null, "D": null}}
+{"sid": "S559", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "ClinicalProgramsCenter.AC-1.ME812u/ReturnFlowHi.Alarm", "B": null, "C": null, "D": null}}
+{"sid": "S560", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S561", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "BiotechnologyBuilding.Lab.GeneralExhaust.SE6166/LGX3.Fail.Alarm.", "B": null, "C": null, "D": null}}
+{"sid": "S562", "A": false, "B": false, "C": false, "D": true, "quotes": {"A": null, "B": null, "C": null, "D": "stuck open in one green house and one green house vents are stuck closed"}}
+{"sid": "S563", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S564", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "NC-10: Low T.C. Air Alarm", "B": null, "C": null, "D": null}}
+{"sid": "S565", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S566", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "rm E103 fish room", "B": null, "C": null, "D": null}}
+{"sid": "S567", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "ACR E201B", "B": null, "C": null, "D": null}}
+{"sid": "S568", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "AHU4 has burnt MMC", "B": null, "C": null, "D": "AHU4 has burnt MMC and wiring to motor."}}
+{"sid": "S569", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "east cold room in vivarium (B88G)", "B": null, "C": null, "D": null}}
+{"sid": "S570", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "office of 157", "B": null, "C": null, "D": null}}
+{"sid": "S571", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "Unit heater 098-0017-1024", "B": null, "C": null, "D": null}}
+{"sid": "S572", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "2nd floor Point 6 alarm system", "B": null, "C": null, "D": null}}
+{"sid": "S573", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "HumanEcologyBuilding.BCM.1stFloor/HEB.VLC.AHU5005.DISCHARGE.AIR.TEMP.ALARM", "B": null, "C": null, "D": "HumanEcologyBuilding.BCM.1stFloor/HEB.VLC.AHU5005.DISCHARGE.AIR.TEMP.ALARM"}}
+{"sid": "S574", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S575", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "BeebeHall.AC-1.ME812u/Compressor1Fail.Alarm.", "B": null, "C": null, "D": null}}
+{"sid": "S576", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "WMF office air conditioner is not working", "B": null, "C": null, "D": null}}
+{"sid": "S577", "A": false, "B": false, "C": false, "D": true, "quotes": {"A": null, "B": null, "C": null, "D": "All EGCs in the building are overheating."}}
+{"sid": "S578", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "Bsmt reheat low temperature alarm.", "B": null, "C": null, "D": null}}
+{"sid": "S579", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S580", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "Room B94 temp running to warm", "B": null, "C": null, "D": null}}
+{"sid": "S581", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "No humidity in room 4123", "B": null, "C": null, "D": null}}
+{"sid": "S582", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S583", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S584", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S585", "A": true, "B": true, "C": false, "D": true, "quotes": {"A": "StimsonHall.AHU1.Me812u/AHU1.Fail.Alarm", "B": "Repetitious unknown safety tripping fan off.", "C": null, "D": "StimsonHall.AHU1.Me812u/AHU1.Fail.Alarm"}}
+{"sid": "S586", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "ACR LR8 Main Lounge", "B": null, "C": null, "D": null}}
+{"sid": "S587", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "CarlBeckerHouse.AH2-12.M4106/AH2-12.SupFanVsd.Alarm", "B": null, "C": null, "D": "CarlBeckerHouse.AH2-12.M4106/AH2-12.SupFanVsd.Alarm"}}
+{"sid": "S588", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S589", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S590", "A": true, "B": false, "C": false, "D": true, "quotes": {"A": "B0064", "B": null, "C": null, "D": "One of the main heat pumps is failing"}}
+{"sid": "S591", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S592", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S593", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "Kimball B11 is very cold.", "B": null, "C": null, "D": null}}
+{"sid": "S594", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "Fan Coil (0120) serving room W105", "B": null, "C": null, "D": null}}
+{"sid": "S595", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "Damper has failed on EF1", "B": null, "C": null, "D": null}}
+{"sid": "S596", "A": false, "B": false, "C": false, "D": false, "quotes": {"A": null, "B": null, "C": null, "D": null}}
+{"sid": "S597", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "outside C2109 in main hospital corridor", "B": null, "C": null, "D": null}}
+{"sid": "S598", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "EmersonHall.HV1.SE6104a/Freezestat.Alarm.", "B": null, "C": null, "D": null}}
+{"sid": "S599", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "NewmanLab.NC-73 offline", "B": null, "C": null, "D": null}}
+{"sid": "S600", "A": true, "B": false, "C": false, "D": false, "quotes": {"A": "Small Conference Room (NWC)", "B": null, "C": null, "D": null}}

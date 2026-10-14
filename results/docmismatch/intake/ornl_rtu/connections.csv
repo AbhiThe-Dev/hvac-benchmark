@@ -1,0 +1,21 @@
+owner_id,member_id,slot,verified,true_owner,source
+RTU-1,VAV-102,ahu_vav,unknown,,dataset point naming
+VAV-102,Zone-102,vav_zone,unknown,,dataset point naming
+RTU-1,VAV-103,ahu_vav,unknown,,dataset point naming
+VAV-103,Zone-103,vav_zone,unknown,,dataset point naming
+RTU-1,VAV-104,ahu_vav,unknown,,dataset point naming
+VAV-104,Zone-104,vav_zone,unknown,,dataset point naming
+RTU-1,VAV-105,ahu_vav,unknown,,dataset point naming
+VAV-105,Zone-105,vav_zone,unknown,,dataset point naming
+RTU-1,VAV-106,ahu_vav,unknown,,dataset point naming
+VAV-106,Zone-106,vav_zone,unknown,,dataset point naming
+RTU-1,VAV-202,ahu_vav,unknown,,dataset point naming
+VAV-202,Zone-202,vav_zone,unknown,,dataset point naming
+RTU-1,VAV-203,ahu_vav,unknown,,dataset point naming
+VAV-203,Zone-203,vav_zone,unknown,,dataset point naming
+RTU-1,VAV-204,ahu_vav,unknown,,dataset point naming
+VAV-204,Zone-204,vav_zone,unknown,,dataset point naming
+RTU-1,VAV-205,ahu_vav,unknown,,dataset point naming
+VAV-205,Zone-205,vav_zone,unknown,,dataset point naming
+RTU-1,VAV-206,ahu_vav,unknown,,dataset point naming
+VAV-206,Zone-206,vav_zone,unknown,,dataset point naming

@@ -1,0 +1,45 @@
+{
+  "id": "pace_table",
+  "purpose": "Addendum 40: price the tool's checks at the technicians' own observed pace, so the tool and the technician can be compared in working time. Frozen before any pace-priced number exists.",
+  "unit": "minutes of working time: doing the check. Travel (access) and waiting are excluded for both competitors, because the videos cut them.",
+  "observations": {
+    "bas_read": [
+      {"video": "ep160", "t": "0:30-1:00", "minutes": 0.5, "what": "T212 in the BAS: heat stage, damper position, discharge temperature"},
+      {"video": "ep160", "t": "1:00-1:30", "minutes": 0.5, "what": "T117 in the BAS (no graphic, point list): heat stage, discharge temperature"},
+      {"video": "cold_morning", "t": "2:30-3:15", "minutes": 0.75, "what": "Area schedule, unoccupied heating setpoint and zone temperature (speaks for two rooms)"},
+      {"video": "cold_morning", "t": "5:15-6:30", "minutes": 1.25, "what": "Box 250: space temperature, setpoints, thermostat dial and limits"}
+    ],
+    "physical_box_inspection": [
+      {"video": "ep160", "t": "1:45-4:30", "minutes": 2.75, "what": "T212 electric heat: contactors, 24 V, supply voltage, limit, amps, load-side voltage, fuse continuity"},
+      {"video": "ep160", "t": "5:15-5:45", "minutes": 0.5, "what": "T117 electric heat: fuses and wiring"}
+    ]
+  },
+  "families": {
+    "rule": "A catalogue check is in the 'bas' family if its place is 'bas' (the bas_* reads); every other check is in the 'physical' family. Mechanical, no judgement.",
+    "reference_checks": {"bas": {"check": "bas_zone / bas_reheat / any bas_* read", "catalogue_do_min": 2.0}, "physical": {"check": "reheat_coil", "catalogue_do_min": 10.0}},
+    "pricing": "time of a check = family ratio x that check's catalogue do_min (access and wait_min excluded). The ratio = the technician's observed minutes / the reference check's catalogue do_min."
+  },
+  "scenarios": {
+    "FAST":    {"bas_minutes_per_read": 0.5,  "physical_minutes_per_reheat_coil": 0.5,   "ratio_bas": 0.25,  "ratio_physical": 0.05,   "basis": "the shortest observation in each family"},
+    "CENTRAL": {"bas_minutes_per_read": 0.75, "physical_minutes_per_reheat_coil": 1.625, "ratio_bas": 0.375, "ratio_physical": 0.1625, "basis": "the mean of the observations in each family (primary)"},
+    "SLOW":    {"bas_minutes_per_read": 1.25, "physical_minutes_per_reheat_coil": 2.75,  "ratio_bas": 0.625, "ratio_physical": 0.275,  "basis": "the longest observation in each family"}
+  },
+  "primary_scenario": "CENTRAL",
+  "technician_minutes_to_diagnosis": {"cold_morning": 4.5, "ep160": 4.25, "source": "compete_cold_morning.json and compete_ep160.json (video minutes, set-up, repair and walking excluded; includes his two steps with no catalogue counterpart in the cold-morning call)"},
+  "tool_endpoint": {
+    "primary": "the tool's stop (every complaint concluded, or nothing left worth its time)",
+    "S1_like_for_like_EP160_only": "tool stop + the technician's physical confirmation of 3.25 minutes (2.75 + 0.5), added when the tool's session contains no reheat_coil on a complaint; the technician's own endpoint is a physical finding, the tool's usually is not"
+  },
+  "worlds": {
+    "n": 1000, "policy": "model", "padding_primary_k": 6, "padding_levels": [2, 6, 12],
+    "sampling_truth_primary": {"cold_morning": {"Room-206": "zone_sensor_setpoint", "Room-232": "zone_sensor_setpoint"}, "ep160": {"Zone-T212": "reheat_fail", "Zone-T117": "reheat_fail"}},
+    "sampling_truth_primary_basis": "Addendum 39 found that its frozen sampling truth for Room-232 (controller_config) contradicted the video's fixed answer for that room (bas_zone abnormal), so the world contradicted itself. Primary here uses a truth consistent with the fixed answers. This was chosen AFTER seeing Addendum 39's exploratory result, which is disclosed; Addendum 39's own truth is reported as sensitivity S2.",
+    "S2_addendum39_truth": {"cold_morning": {"Room-206": "zone_sensor_setpoint", "Room-232": "controller_config"}, "ep160": {"Zone-T212": "reheat_fail", "Zone-T117": "reheat_fail"}}
+  },
+  "decision": {
+    "TECHNICIAN_FASTER": "median(tool time) / technician time >= 1.25",
+    "TOOL_FASTER": "median(tool time) / technician time <= 0.8 AND the tool is right on every complaint in at least 90% of worlds",
+    "TIE": "otherwise",
+    "robustness": "ROBUST if the label is the same in FAST, CENTRAL and SLOW; otherwise SENSITIVE TO PACE"
+  }
+}

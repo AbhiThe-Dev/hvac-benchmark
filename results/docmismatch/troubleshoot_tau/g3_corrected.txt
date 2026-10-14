@@ -1,0 +1,5 @@
+E2's own stream (cell index 0, primary world parameters): min_rate 0.003: 78.1 min / 82.3% | E2's 78.1 / 82.3%: REPRODUCED | sweep code path identical to the old one: True
+E2's own stream (cell index 0, primary world parameters): min_rate 0.02: 58.3 min / 80.4% | E2's 58.3 / 80.4%: REPRODUCED | sweep code path identical to the old one: True
+the primary cell's own stream (cell index 6); what G3 used: min_rate 0.003: 75.5 min / 82.9% | E2's 78.1 / 82.3%: differs | sweep code path identical to the old one: True
+the primary cell's own stream (cell index 6); what G3 used: min_rate 0.02: 56.6 min / 81.0% | E2's 58.3 / 80.4%: differs | sweep code path identical to the old one: True
+corrected G3 (plumbing reproduces E2 exactly on E2's stream; new path identical to the old): PASS
