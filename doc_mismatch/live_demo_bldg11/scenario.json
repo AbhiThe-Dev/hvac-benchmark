@@ -1,0 +1,80 @@
+{
+  "title": "Hot afternoon, six complaints, two air handlers",
+  "feel": "too warm",
+  "note": "SCRIPTED. The layout and point map are real (Mortar bldg11); which rooms complain, their causes and the answers to each check are invented for this demo. Each ingredient has a real precedent (see README.md), the combination does not.",
+  "ahu_truth": {
+    "AHU06": "low_static",
+    "AHU05": "ok"
+  },
+  "context": {
+    "bas_access": "yes",
+    "instrument": "yes",
+    "occupant": "no",
+    "reheat": "yes"
+  },
+  "complaints": [
+    {
+      "room": "RM2303",
+      "truth": "low_static",
+      "story": "Floor 2 office, on AHU06: starved by low duct static"
+    },
+    {
+      "room": "RM4511",
+      "truth": "actuator_fail",
+      "story": "Floor 4 office, on AHU05: damper actuator has failed"
+    },
+    {
+      "room": "RM4311",
+      "truth": "low_static",
+      "story": "Floor 4 office, on AHU06: starved by low duct static"
+    },
+    {
+      "room": "RM5502",
+      "truth": "wrong:VAVRM5503",
+      "story": "Floor 5 office, on AHU05: the drawings name the wrong box; the room is really fed by VAVRM5503"
+    },
+    {
+      "room": "RM5312",
+      "truth": "low_static",
+      "story": "Floor 5 office, on AHU06: starved by low duct static"
+    },
+    {
+      "room": "RM6302",
+      "truth": "low_static",
+      "story": "Floor 6 office, on AHU06: starved by low duct static"
+    }
+  ],
+  "model": {
+    "shipped": {
+      "label": "Shipped settings",
+      "r_low": null
+    },
+    "adjusted": {
+      "label": "Large-handler setting",
+      "r_low": 0.1,
+      "hidden": true
+    },
+    "mixed": {
+      "label": "Mixed severity (general)",
+      "r_low": null,
+      "low_mix": [
+        [
+          0.05,
+          0.25
+        ],
+        [
+          0.15,
+          0.25
+        ],
+        [
+          0.5,
+          0.25
+        ],
+        [
+          0.9,
+          0.25
+        ]
+      ]
+    }
+  }
+}

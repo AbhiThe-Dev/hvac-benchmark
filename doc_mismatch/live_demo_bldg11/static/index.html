@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Service Call Assistant (bldg11 scenario)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F4F0; --surface:#FFFFFF; --surface-2:#EFEBE4; --fg:#1C2430; --muted:#646F80; --border:#DCD6CC;
+  --accent:#C2650C; --accent-fg:#FFFFFF; --good:#2F7A4F; --good-bg:#E6F2EA; --bad:#A33A2A; --bad-bg:#F8E9E5; --chip-bg:#FCEEDD; --chip-fg:#8A4A05;
+  --live-bg:#E7F0FA; --live-fg:#1D5A96; --script-bg:#EEE9F8; --script-fg:#5A3F9A;
+  --font-display:"IBM Plex Sans",system-ui,sans-serif; --font-body:"IBM Plex Sans",system-ui,sans-serif; --font-mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--fg); font-family:var(--font-body); margin:0}
+.wrap{max-width:600px; margin:0 auto; padding:0 16px 40px}
+header.top{position:sticky; top:0; z-index:5; background:var(--bg); border-bottom:1px solid var(--border); padding:14px 16px; margin:0 -16px 20px}
+header.top .row{max-width:600px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:12px}
+header.top h1{font-family:var(--font-display); font-size:16px; font-weight:600; margin:0}
+header.top .sub{font-size:12px; color:var(--muted); margin-top:2px}
+.badges{display:flex; flex-direction:column; align-items:flex-end; gap:6px}
+.badge-row{display:flex; gap:6px}
+.live-badge,.script-badge{display:inline-flex; align-items:center; gap:5px; font-family:var(--font-mono); font-size:11px; font-weight:600; border-radius:999px; padding:3px 9px}
+.live-badge{color:var(--live-fg); background:var(--live-bg)}
+.live-badge::before{content:""; width:6px; height:6px; border-radius:50%; background:var(--live-fg)}
+.script-badge{color:var(--script-fg); background:var(--script-bg)}
+.tally{display:flex; gap:14px; font-family:var(--font-mono); font-size:13px; color:var(--muted)}
+.tally b{color:var(--fg); font-weight:600}
+.card{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:20px; margin-bottom:16px}
+.eyebrow{font-family:var(--font-mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin:0 0 8px}
+h2{font-family:var(--font-display); font-size:20px; margin:0 0 10px; line-height:1.3}
+p.lead{color:var(--muted); font-size:14px; line-height:1.5; margin:0 0 4px}
+.room-list{display:flex; flex-direction:column; gap:8px; margin:16px 0}
+.room-row{display:flex; align-items:center; justify-content:space-between; gap:10px; background:var(--surface-2); border-radius:10px; padding:11px 14px}
+.room-row .name{font-weight:600; font-size:14px}
+.room-row .meta{font-family:var(--font-mono); font-size:12px; color:var(--muted); text-align:right}
+button.primary{font-family:var(--font-display); font-weight:600; font-size:15px; color:var(--accent-fg); background:var(--accent); border:none; border-radius:10px; padding:14px 18px; width:100%; cursor:pointer}
+button.secondary{font-family:var(--font-display); font-weight:500; font-size:14px; color:var(--fg); background:var(--surface-2); border:1px solid var(--border); border-radius:10px; padding:12px 16px; width:100%; cursor:pointer; margin-top:8px}
+.question{font-size:16px; line-height:1.5; margin:0 0 10px}
+.point-badge{display:inline-flex; align-items:center; gap:6px; font-family:var(--font-mono); font-size:12px; background:var(--surface-2); color:var(--fg); border:1px solid var(--border); border-radius:7px; padding:3px 8px; margin:2px 6px 2px 0; word-break:break-all}
+.point-badge::before{content:"⌁"; color:var(--accent)}
+.reading-note{font-size:13px; color:var(--muted); margin:0 0 14px}
+.meter{height:6px; border-radius:4px; background:var(--surface-2); overflow:hidden; margin:4px 0 2px}
+.meter > div{height:100%; background:var(--accent)}
+.meter-label{font-family:var(--font-mono); font-size:12px; color:var(--muted); margin-bottom:14px}
+.memo-chip{display:inline-flex; align-items:center; font-size:12px; font-weight:600; color:var(--chip-fg); background:var(--chip-bg); border-radius:999px; padding:4px 10px; margin-bottom:14px}
+.answers{display:flex; flex-direction:column; gap:10px; margin-top:4px}
+.answer-btn{font-family:var(--font-body); font-size:15px; font-weight:600; text-align:left; display:flex; align-items:center; justify-content:space-between; background:var(--surface); color:var(--fg); border:1.5px solid var(--border); border-radius:10px; padding:14px 16px; cursor:pointer}
+.answer-btn:hover{border-color:var(--accent)}
+.answer-btn.scripted{border-color:var(--script-fg); background:var(--script-bg)}
+.answer-btn .arrow{color:var(--accent); font-family:var(--font-mono)}
+.answer-btn .tag{font-family:var(--font-mono); font-size:11px; color:var(--script-fg); font-weight:600; margin-left:10px}
+.carry{background:var(--good-bg); border:1px solid var(--good); border-radius:12px; padding:14px 16px; margin-bottom:16px}
+.carry .eyebrow{color:var(--good)}
+.carry ul{margin:6px 0 0; padding-left:18px; font-size:13px; line-height:1.6}
+.conclude-badge{display:inline-flex; align-items:center; gap:8px; background:var(--good-bg); color:var(--good); font-weight:700; font-size:12px; letter-spacing:.04em; text-transform:uppercase; border-radius:999px; padding:5px 12px; margin-bottom:12px; font-family:var(--font-mono)}
+.conclude-badge.guess{background:var(--chip-bg); color:var(--chip-fg)}
+.stat-row{display:flex; gap:18px; margin:14px 0 2px; font-family:var(--font-mono); font-size:13px; color:var(--muted)}
+.stat-row b{color:var(--fg); font-size:15px; display:block; font-family:var(--font-body); font-weight:600}
+.ranked{margin:14px 0 4px; font-size:13px; color:var(--muted); line-height:1.7}
+.ranked b{color:var(--fg); font-family:var(--font-mono); font-weight:600}
+.shortlist{margin-top:14px; border:1px solid var(--chip-fg); background:var(--chip-bg); border-radius:10px; padding:10px 12px; font-size:13px; line-height:1.55}
+.shortlist .lab{font-family:var(--font-mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; display:block; margin-bottom:2px; color:var(--chip-fg)}
+.shortlist .next{margin-top:6px; color:var(--muted)} .shortlist .mono{font-family:var(--font-mono); font-size:12px}
+.truth{margin-top:14px; border-radius:10px; padding:10px 12px; font-size:13px; line-height:1.5; background:var(--script-bg); color:var(--fg)}
+.truth.ok{background:var(--good-bg)} .truth.no{background:var(--bad-bg)}
+.truth .lab{font-family:var(--font-mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; display:block; margin-bottom:2px}
+.summary-grid{display:flex; flex-direction:column; gap:10px; margin:14px 0}
+.summary-row{background:var(--surface-2); border-radius:10px; padding:12px 14px}
+.summary-row .r-name{font-weight:600; font-size:14px; margin-bottom:2px; display:flex; justify-content:space-between; gap:8px}
+.summary-row .r-name .m{font-family:var(--font-mono); font-size:11px; font-weight:600}
+.summary-row .r-name .m.ok{color:var(--good)} .summary-row .r-name .m.no{color:var(--bad)}
+.summary-row .r-concl{font-size:13px; color:var(--muted); line-height:1.4}
+.big-stats{display:flex; gap:12px; margin:16px 0}
+.big-stat{flex:1; background:var(--surface-2); border-radius:12px; padding:14px; text-align:center}
+.big-stat .num{font-family:var(--font-mono); font-size:26px; font-weight:600}
+.big-stat .lbl{font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; margin-top:2px}
+.context-note{font-size:13px; color:var(--muted); line-height:1.55; background:var(--surface-2); border-radius:10px; padding:12px 14px; margin-top:8px}
+.context-note b{color:var(--fg)}
+.model-pick{display:flex; gap:8px; margin:6px 0 4px}
+.model-pick button{flex:1; font-family:var(--font-body); font-size:13px; font-weight:600; background:var(--surface); color:var(--fg); border:1.5px solid var(--border); border-radius:10px; padding:10px 8px; cursor:pointer}
+.model-pick button.on{border-color:var(--accent); background:var(--chip-bg)}
+.model-note{font-size:12px; color:var(--muted); line-height:1.55; margin:6px 0 14px}
+.model-note b{color:var(--fg); font-family:var(--font-mono)}
+label.hint-toggle{display:flex; align-items:center; gap:6px; font-size:12px; color:var(--muted); cursor:pointer}
+details{margin-top:12px; font-size:13px; color:var(--muted); line-height:1.55}
+details summary{cursor:pointer; font-weight:600; color:var(--fg)}
+details ul{margin:6px 0 0; padding-left:18px}
+table.trace{width:100%; border-collapse:collapse; font-size:12px; margin:6px 0 2px}
+table.trace td{padding:3px 6px; border-bottom:1px solid var(--border); vertical-align:top}
+table.trace td.min{font-family:var(--font-mono); text-align:right; color:var(--muted); white-space:nowrap}
+table.trace tr.room td{font-weight:600; background:var(--surface-2); padding-top:6px}
+.sh{color:var(--good); font-weight:600}
+.footnote{font-size:11px; color:var(--muted); line-height:1.6; text-align:center; margin-top:28px; padding-top:16px; border-top:1px solid var(--border)}
+.spinner{display:flex; justify-content:center; padding:30px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="row">
+      <div>
+        <h1>Service Call Assistant</h1>
+        <div class="sub" id="subhead">Connecting&hellip;</div>
+      </div>
+      <div class="badges">
+        <div class="badge-row"><span class="live-badge">LIVE ENGINE</span><span class="script-badge">SCRIPTED SCENARIO</span></div>
+        <div class="tally" id="tally" hidden><span><b id="t-min">0</b> min</span><span><b id="t-checks">0</b> checks</span></div>
+        <label class="hint-toggle"><input type="checkbox" id="hint-box" checked> show scenario answers</label>
+      </div>
+    </div>
+  </header>
+  <main id="app"><div class="spinner">Loading&hellip;</div></main>
+  <div class="footnote">Real: the layout and the control-system point map of Mortar bldg11 (two of its air handlers). Scripted: which rooms complain, their causes, and every answer. Every number the tool prints rests on placeholder rates.</div>
+</div>
+<script>
+let rooms = [], info = null, model = 'mixed', showHints = true;
+const app = document.getElementById('app');
+const tally = document.getElementById('tally');
+document.getElementById('hint-box').onchange = e => { showHints = e.target.checked; if (lastStep && lastStep.kind === 'check') renderCheck(lastStep); };
+
+async function api(path, body){
+  const res = await fetch(path, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body || {})});
+  const data = await res.json();
+  if (data.error) throw new Error(data.error);
+  return data;
+}
+const fmtWord = w => w.charAt(0).toUpperCase() + w.slice(1);
+const pct = x => (x * 100 < 0.1 && x > 0) ? '<0.1%' : (x * 100).toFixed(x < 0.1 ? 1 : 0) + '%';
+
+function parseQuestion(text){
+  let point = null, reading = null;
+  let main = text.replace(/\s*\(control-system point: ([^)]+)\)/, (m, p) => { point = p; return ''; });
+  main = main.replace(/\s*\[([^\]]+)\]\s*$/, (m, r) => { reading = r; return ''; });
+  return { main: main.trim(), point, reading };
+}
+function renderTally(min, checks){
+  tally.hidden = false;
+  document.getElementById('t-min').textContent = Math.round(min);
+  document.getElementById('t-checks').textContent = checks;
+}
+
+let firstStep = null, lastStep = null;
+
+function modelNote(){
+  const p = info.prior[info.fault_ahu];
+  const fam = {shipped: "The joint model exactly as shipped. It assumes about half of the rooms on a handler with low static pressure complain, so every <i>silent</i> room counts against a shared fault.",
+               mixed: "The same model, but instead of one fixed share it considers four (5%, 15%, 50% or 90% of a handler's rooms affected) and lets the complaints pick. Nothing is tuned to this building. In the 100-visit tests it raised accuracy by about 24 points here and on a second layout with a 67-room handler; on small handlers it was neutral for this routine."}[model];
+  return `${fam}<br>Before any check, the model puts <b>${pct(p.low_static)}</b> on low static pressure at ${info.fault_ahu}, the handler with four of the six complaints.`;
+}
+
+function renderIntro(){
+  const cov = info.coverage;
+  app.innerHTML = `
+    <div class="card">
+      <p class="eyebrow">Incoming visit &middot; Mortar bldg11</p>
+      <h2>${info.title}</h2>
+      <p class="lead">Six rooms are reported too warm. ${info.ahus.map(a => `${a} feeds ${cov[a].boxes} boxes`).join(', ')}. The complaints arrive in this order:</p>
+      <div class="room-list">${rooms.map(r => `<div class="room-row"><span class="name">${r.name}</span><span class="meta">${r.ahu} &middot; doc'd box ${r.documented_box}</span></div>`).join('')}</div>
+      <p class="eyebrow" style="margin-top:6px">Model setting</p>
+      <div class="model-pick">${info.models.map(m => `<button data-m="${m.key}" class="${m.key === model ? 'on' : ''}">${m.label}</button>`).join('')}</div>
+      <div class="model-note">${modelNote()}</div>
+      <button class="primary" id="start-btn">Start the visit</button>
+      <button class="secondary" id="auto-btn">Watch it run with the scenario's answers</button>
+      <details><summary>What is real and what is scripted</summary>
+        <ul>
+          <li><b>Real:</b> the equipment list, which box serves which room, which air handler feeds which box, and which control-system points exist (airflow, damper command, reheat command, zone temperature on ${info.ahus.map(a => `${cov[a].boxes_with_airflow_damper_reheat} of ${a}'s ${cov[a].boxes} boxes`).join(' and ')}; duct static on each handler).</li>
+          <li><b>Not in the real map, so not offered cheaply:</b> a fan-status point, a controller-status point, and any airflow <i>setpoint</i> point (the tool asks you to read it on the controller page). No attributes (reheat type, design airflow, K-factor, static setpoint): the T3-noattr profile.</li>
+          <li><b>Scripted:</b> which rooms complain, their causes, and the answer to every check. The scenario answer is the catalogue's own most-likely reading under the scripted cause, so this walk-through cannot show the tool being fooled by a noisy reading.</li>
+        </ul>
+      </details>
+      <details><summary>Presenter notes (spoilers)</summary>
+        <ul>${rooms.map(r => `<li><b>${r.name}:</b> ${r.story}</li>`).join('')}</ul>
+      </details>
+    </div>
+  `;
+  app.querySelectorAll('.model-pick button').forEach(b => b.onclick = async () => { model = b.dataset.m; await boot(); });
+  document.getElementById('start-btn').onclick = () => render(firstStep);
+  document.getElementById('auto-btn').onclick = runAuto;
+}
+
+async function boot(){
+  tally.hidden = true;
+  const d = await api('/api/start', {model});
+  rooms = d.rooms; info = d; firstStep = d.step;
+  document.getElementById('subhead').textContent = `bldg11 · ${d.ahus.join(' + ')} · ${rooms.length} complaints`;
+  renderIntro();
+}
+
+function answerButtons(words, scripted){
+  return words.map(w => {
+    const s = showHints && scripted === w;
+    return `<button class="answer-btn ${s ? 'scripted' : ''}" data-word="${w}">${fmtWord(w)}${s ? '<span class="tag">SCENARIO</span>' : ''} <span class="arrow">&rarr;</span></button>`;
+  }).join('');
+}
+
+function renderCheck(node){
+  lastStep = node;
+  const q = parseQuestion(node.text);
+  const p = Math.round(node.p_pos * 100);
+  app.innerHTML = `
+    <div class="card">
+      <p class="eyebrow">Room ${node.room + 1} of ${rooms.length} &middot; ${rooms[node.room].name} &middot; ${rooms[node.room].ahu}</p>
+      <p class="question">${q.main}</p>
+      ${q.point ? `<div class="point-badge">${q.point}</div>` : ''}
+      ${q.reading ? `<p class="reading-note">${q.reading}</p>` : ''}
+      ${node.memo_note ? `<div class="memo-chip">SHARED ACROSS ROOMS &middot; ${node.memo_note}</div>` : ''}
+      <div class="meter"><div style="width:${p}%"></div></div>
+      <div class="meter-label">~${p}% likely to come back ${node.words[0]} &middot; about ${node.minutes} min</div>
+      <div class="answers">${answerButtons(node.words, node.scenario_answer)}</div>
+    </div>
+  `;
+  bindAnswers();
+}
+
+function renderQuestion(node){
+  lastStep = node;
+  app.innerHTML = `
+    <div class="card">
+      <p class="eyebrow">Room ${node.room + 1} of ${rooms.length} &middot; ${rooms[node.room].name}</p>
+      <div class="memo-chip">the technician has to be asked this directly</div>
+      <p class="question">${node.text}</p>
+      <div class="answers">${answerButtons(node.words, node.scenario_answer)}</div>
+    </div>
+  `;
+  bindAnswers();
+}
+function bindAnswers(){ app.querySelectorAll('.answer-btn').forEach(btn => { btn.onclick = () => act(() => api('/api/answer', {word: btn.dataset.word})); }); }
+
+function renderConclude(node){
+  lastStep = node;
+  renderTally(node.visit_minutes, node.visit_checks);
+  app.innerHTML = `
+    <div class="card">
+      <span class="conclude-badge ${node.forced ? 'guess' : ''}">${node.forced ? 'Best guess &mdash; not concluded' : 'Diagnosed'}</span>
+      <p class="eyebrow">${rooms[node.room].name} &middot; ${rooms[node.room].ahu}</p>
+      <h2>${node.conclusion}</h2>
+      <div class="stat-row">
+        <div><b>${Math.round(node.belief * 100)}%</b>confidence</div>
+        <div><b>${node.checks_so_far}</b>checks this room</div>
+        <div><b>${node.minutes_so_far}</b>minutes this room</div>
+      </div>
+      <div class="ranked">${node.ranked.map(r => `<div><b>${Math.round(r.p * 100)}%</b> ${r.text}</div>`).join('')}</div>
+      ${node.forced ? `<p class="reading-note">No remaining check was worth its time and the belief is below the conclusion threshold. This is the tool's best guess, not a settled conclusion.</p>` : ''}
+      ${node.shortlist ? `<div class="shortlist"><span class="lab">Most likely, in short</span>
+          ${node.shortlist.candidates.map((c, i) => `<div>${i ? 'or' : ''} <b>${c.text}</b> (${Math.round(c.p * 100)}%)</div>`).join('')}
+          ${node.shortlist.next ? `<div class="next">To be more sure: ${node.shortlist.next.text} <span class="mono">(about ${node.shortlist.next.minutes} min)</span></div>` : `<div class="next">No available check would change this.</div>`}
+        </div>` : ''}
+      <div class="truth ${node.matches_script ? 'ok' : 'no'}"><span class="lab">Scripted truth &middot; ${node.matches_script ? 'the tool agrees' : 'the tool disagrees'}</span>${node.scripted_truth}</div>
+      ${node.has_next && node.carried_into_next && node.carried_into_next.length ? `
+        <div class="carry" style="margin-top:16px">
+          <p class="eyebrow">Carried into ${node.next_room_name}, at no extra cost</p>
+          <ul>${node.carried_into_next.map(c => `<li>${c}</li>`).join('')}</ul>
+        </div>` : ''}
+    </div>
+    <button class="primary" id="next-btn">${node.has_next ? `Continue to ${node.next_room_name}` : 'See the visit summary'}</button>
+  `;
+  document.getElementById('next-btn').onclick = () => act(() => api('/api/advance'));
+}
+
+function renderVisitDone(d){
+  lastStep = d;
+  app.innerHTML = `
+    <div class="card">
+      <span class="conclude-badge">Visit complete</span>
+      <h2>${d.matches} of ${d.rooms.length} diagnoses match the script</h2>
+      <div class="big-stats">
+        <div class="big-stat"><div class="num">${Math.round(d.visit_minutes)}</div><div class="lbl">Total minutes</div></div>
+        <div class="big-stat"><div class="num">${d.visit_checks}</div><div class="lbl">Total checks</div></div>
+        <div class="big-stat"><div class="num">${d.rooms.length}</div><div class="lbl">Rooms</div></div>
+      </div>
+      <div class="summary-grid">${d.conclusions.map(c => `<div class="summary-row"><div class="r-name"><span>${d.rooms[c.room].name}</span><span class="m ${c.matches_script ? 'ok' : 'no'}">${c.matches_script ? 'MATCHES SCRIPT' : 'DIFFERS FROM SCRIPT'}${c.forced ? ' &middot; BEST GUESS' : ''}</span></div><div class="r-concl">${c.conclusion}</div></div>`).join('')}</div>
+      <div class="context-note">Model setting: <b>${info.models.find(m => m.key === d.model).label}</b>. Minutes are the tool's placeholder minutes, not measured time. With the scenario's own answers this walk-through cannot show the tool being fooled; a simulation of many noisy visits is what measures accuracy.</div>
+    </div>
+    <button class="secondary" id="restart-btn">Run the visit again</button>
+  `;
+  document.getElementById('restart-btn').onclick = boot;
+}
+
+async function runAuto(){
+  app.innerHTML = '<div class="spinner">Running&hellip;</div>';
+  const d = await api('/api/autoplay', {model});
+  const done = d.done;
+  let cur = -1, rows = '';
+  d.trace.forEach(t => {
+    if (t.room !== cur){ cur = t.room; rows += `<tr class="room"><td colspan="3">${d.rooms[cur].name} &middot; ${d.rooms[cur].ahu}</td></tr>`; }
+    rows += t.check ? `<tr><td>${t.check.replace(/_/g, ' ')}${t.shared ? ' <span class="sh">shared</span>' : ''}</td><td>${t.answer}</td><td class="min">${t.minutes} min</td></tr>`
+                    : `<tr><td>asked: ${t.question}</td><td>${t.answer}</td><td class="min"></td></tr>`;
+  });
+  app.innerHTML = `
+    <div class="card">
+      <span class="conclude-badge">Scenario run</span>
+      <h2>${done.matches} of ${done.rooms.length} diagnoses match the script &middot; ${Math.round(done.visit_minutes)} min, ${done.visit_checks} checks</h2>
+      <p class="reading-note">Model setting: ${info.models.find(m => m.key === model).label}. Every check answered with the scenario's answer.</p>
+      <table class="trace">${rows}</table>
+      <div class="summary-grid">${done.conclusions.map(c => `<div class="summary-row"><div class="r-name"><span>${done.rooms[c.room].name}</span><span class="m ${c.matches_script ? 'ok' : 'no'}">${c.matches_script ? 'MATCHES SCRIPT' : 'DIFFERS FROM SCRIPT'}${c.forced ? ' &middot; BEST GUESS' : ''}</span></div><div class="r-concl">${c.conclusion}</div></div>`).join('')}</div>
+    </div>
+    <button class="secondary" id="back-btn">Back</button>
+  `;
+  document.getElementById('back-btn').onclick = boot;
+}
+
+async function act(call){
+  app.innerHTML = '<div class="spinner">Working&hellip;</div>';
+  try { const d = await call(); render(d.step); }
+  catch (e) { app.innerHTML = `<div class="card"><h2>Something went wrong</h2><p class="lead">${e.message}</p></div>`; }
+}
+function render(step){
+  if (step.kind === 'check') renderCheck(step);
+  else if (step.kind === 'question') renderQuestion(step);
+  else if (step.kind === 'conclude') renderConclude(step);
+  else if (step.kind === 'visit_done') renderVisitDone(step);
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+boot().catch(e => { app.innerHTML = `<div class="card"><h2>Couldn't reach the server</h2><p class="lead">${e.message}</p></div>`; });
+</script>
+</body>
+</html>
