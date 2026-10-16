@@ -1,0 +1,359 @@
+{
+ "01_belimo_actuator.jpg#linkage": {
+  "photo": "01_belimo_actuator.jpg",
+  "check": "damper_linkage",
+  "expect": "help",
+  "parts": [
+   {
+    "name": "shaft clamp",
+    "box": [
+     610,
+     65,
+     850,
+     290
+    ]
+   },
+   {
+    "name": "position scale",
+    "box": [
+     700,
+     190,
+     915,
+     350
+    ]
+   },
+   {
+    "name": "actuator body",
+    "box": [
+     80,
+     60,
+     945,
+     915
+    ]
+   }
+  ]
+ },
+ "01_belimo_actuator.jpg#power": {
+  "photo": "01_belimo_actuator.jpg",
+  "check": "power_24vac",
+  "expect": [
+   "stop",
+   "retake"
+  ],
+  "parts": []
+ },
+ "02_damper_install.jpg": {
+  "check": "damper_linkage",
+  "expect": "retake",
+  "parts": []
+ },
+ "03_control_board.jpg": {
+  "check": "controller_leds",
+  "expect": [
+   "help",
+   "stop"
+  ],
+  "parts": [
+   {
+    "name": "circuit board",
+    "box": [
+     380,
+     300,
+     710,
+     600
+    ]
+   },
+   {
+    "name": "status lights",
+    "box": [
+     440,
+     515,
+     480,
+     570
+    ]
+   },
+   {
+    "name": "terminal strip",
+    "box": [
+     605,
+     315,
+     665,
+     445
+    ]
+   }
+  ]
+ },
+ "04_thermostat_open.jpg": {
+  "check": "thermostat",
+  "expect": "help",
+  "parts": [
+   {
+    "name": "terminal screws",
+    "box": [
+     380,
+     300,
+     650,
+     590
+    ]
+   },
+   {
+    "name": "red light",
+    "box": [
+     840,
+     205,
+     885,
+     260
+    ]
+   },
+   {
+    "name": "rating label",
+    "box": [
+     70,
+     195,
+     300,
+     450
+    ]
+   }
+  ]
+ },
+ "05_thermostat_clean.jpg": {
+  "check": "thermostat",
+  "expect": "help",
+  "parts": [
+   {
+    "name": "thermostat",
+    "box": [
+     270,
+     220,
+     715,
+     530
+    ]
+   },
+   {
+    "name": "display",
+    "box": [
+     330,
+     265,
+     665,
+     460
+    ]
+   },
+   {
+    "name": "buttons",
+    "box": [
+     345,
+     470,
+     665,
+     505
+    ]
+   }
+  ]
+ },
+ "05_thermostat_clean.jpg#wrong": {
+  "photo": "05_thermostat_clean.jpg",
+  "check": "power_24vac",
+  "expect": "retake",
+  "parts": []
+ },
+ "06_ahu_pic1.jpg": {
+  "check": "ahu_visit",
+  "expect": "help",
+  "parts": [
+   {
+    "name": "gauge on stand",
+    "box": [
+     555,
+     440,
+     600,
+     505
+    ]
+   },
+   {
+    "name": "electrical switch box",
+    "box": [
+     715,
+     495,
+     768,
+     570
+    ]
+   },
+   {
+    "name": "small control boxes",
+    "box": [
+     445,
+     425,
+     525,
+     470
+    ]
+   },
+   {
+    "name": "sight glass",
+    "box": [
+     283,
+     450,
+     320,
+     497
+    ]
+   },
+   {
+    "name": "top actuator",
+    "box": [
+     260,
+     70,
+     330,
+     125
+    ]
+   }
+  ]
+ },
+ "06_ahu_pic1.jpg#wrong": {
+  "photo": "06_ahu_pic1.jpg",
+  "check": "sensing_ports",
+  "expect": "retake",
+  "parts": []
+ },
+ "07_ahu_brisbane.jpg": {
+  "check": "ahu_visit",
+  "expect": "help",
+  "parts": [
+   {
+    "name": "drive on the unit",
+    "box": [
+     320,
+     480,
+     380,
+     595
+    ]
+   },
+   {
+    "name": "left unit",
+    "box": [
+     190,
+     500,
+     475,
+     770
+    ]
+   },
+   {
+    "name": "right unit",
+    "box": [
+     530,
+     465,
+     780,
+     750
+    ]
+   }
+  ]
+ },
+ "08_rooftop_units.jpg": {
+  "check": "ahu_economizer_test",
+  "expect": [
+   "help",
+   "retake"
+  ],
+  "parts": [
+   {
+    "name": "outside-air damper blades",
+    "box": [
+     663,
+     534,
+     809,
+     719
+    ]
+   },
+   {
+    "name": "air hood",
+    "box": [
+     656,
+     380,
+     925,
+     545
+    ]
+   },
+   {
+    "name": "whole unit",
+    "box": [
+     75,
+     305,
+     925,
+     905
+    ]
+   }
+  ]
+ },
+ "09_ceiling_diffuser.jpg": {
+  "check": "diffuser_duct",
+  "expect": [
+   "help",
+   "retake"
+  ],
+  "parts": [
+   {
+    "name": "round diffuser left",
+    "box": [
+     45,
+     340,
+     165,
+     420
+    ]
+   },
+   {
+    "name": "round diffuser top",
+    "box": [
+     525,
+     300,
+     595,
+     345
+    ]
+   },
+   {
+    "name": "linear diffuser strip",
+    "box": [
+     0,
+     380,
+     520,
+     800
+    ]
+   }
+  ]
+ },
+ "10_exposed_breaker.jpg": {
+  "check": "power_24vac",
+  "expect": "stop",
+  "parts": [
+   {
+    "name": "breaker",
+    "box": [
+     160,
+     406,
+     312,
+     601
+    ]
+   },
+   {
+    "name": "red wires",
+    "box": [
+     163,
+     550,
+     510,
+     780
+    ]
+   }
+  ]
+ },
+ "11_exposed_switches.jpg": {
+  "check": "power_24vac",
+  "expect": "stop",
+  "parts": [
+   {
+    "name": "open wall box",
+    "box": [
+     217,
+     51,
+     695,
+     442
+    ]
+   }
+  ]
+ }
+}

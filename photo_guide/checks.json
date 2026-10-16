@@ -1,0 +1,266 @@
+[
+  {
+    "name": "power_24vac",
+    "family": "at the box",
+    "place": "box",
+    "text": "At the VAV box, measure the voltage at the actuator terminals: is it missing or outside 22 to 26 VAC?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": {
+      "quantity": "AC voltage at the actuator",
+      "unit": "V",
+      "normal_low": 22.0,
+      "normal_high": 26.0
+    },
+    "hazards": [
+      "electric"
+    ],
+    "photo_hint": "Open-door view of the whole VAV box, with the round actuator motor and the small wire terminals both visible."
+  },
+  {
+    "name": "control_signal",
+    "family": "at the box",
+    "place": "box",
+    "text": "With the VAV box commanded open, measure the control signal at its actuator input: is it missing (under about 2 V on a 0-10 V actuator)?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": {
+      "quantity": "DC control signal with an open command",
+      "unit": "V",
+      "normal_low": 2.0,
+      "normal_high": null
+    },
+    "hazards": [
+      "electric"
+    ],
+    "photo_hint": "The actuator motor and the controller it is wired to, close enough that you can see the wire terminals."
+  },
+  {
+    "name": "manual_damper_test",
+    "family": "at the box",
+    "place": "box",
+    "text": "At the VAV box, disconnect the actuator and turn the damper shaft by hand: is the damper stuck or binding?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": null,
+    "hazards": [
+      "moving",
+      "electric"
+    ],
+    "photo_hint": "The actuator on the side of the box and the metal shaft it turns, plus the small release button or lever if you can see one."
+  },
+  {
+    "name": "damper_linkage",
+    "family": "at the box",
+    "place": "box",
+    "text": "At the VAV box, inspect the damper linkage, seals and stops: is the linkage loose or slipping, or the damper not reaching fully open or fully closed?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": null,
+    "hazards": [
+      "moving"
+    ],
+    "photo_hint": "The actuator, the shaft and the arm or clamp that connects them to the damper, from the side."
+  },
+  {
+    "name": "controller_leds",
+    "family": "at the box",
+    "place": "box",
+    "text": "At the VAV box, look at the controller status lights and event log: is it dead, showing a fault, or off the network?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": null,
+    "hazards": [
+      "height",
+      "electric"
+    ],
+    "photo_hint": "The small controller circuit board with its blinking lights, with the wiring and the label next to it."
+  },
+  {
+    "name": "sensing_ports",
+    "family": "at the box",
+    "place": "box",
+    "text": "At the VAV box, inspect the flow-sensing ports and tubing: are ports clogged, or tubes kinked, loose or swapped (high and low)?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": null,
+    "hazards": [],
+    "photo_hint": "The round air-inlet of the box where the small plastic tubes and the little pressure sensor connect."
+  },
+  {
+    "name": "flow_vs_gauge",
+    "family": "at the box",
+    "place": "box",
+    "text": "At the VAV box, compare the controller's pressure reading with a gauge on its flow taps: do they disagree by more than about 10%?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": {
+      "quantity": "controller differential pressure",
+      "unit": "in. w.c."
+    },
+    "hazards": [],
+    "photo_hint": "The controller and the small tubes or taps on the box inlet, and the gauge if you have one."
+  },
+  {
+    "name": "k_factor",
+    "family": "at the box",
+    "place": "box",
+    "text": "Compare the K-factor programmed in the controller of the VAV box with the value on its nameplate or submittal: do they differ?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": {
+      "quantity": "K-factor",
+      "unit": ""
+    },
+    "hazards": [],
+    "photo_hint": "The label or sticker on the box (nameplate), close enough to read the numbers."
+  },
+  {
+    "name": "static_at_box",
+    "family": "at the box",
+    "place": "box",
+    "text": "At the VAV box, measure the static pressure at the inlet: is it below the minimum for its size (about 0.25 to 0.5 in. w.c.)?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": {
+      "quantity": "inlet static pressure",
+      "unit": "in. w.c.",
+      "normal_low": 0.25,
+      "normal_high": null
+    },
+    "hazards": [],
+    "photo_hint": "The round inlet of the box where the air comes in, with a few feet of the duct in front of it."
+  },
+  {
+    "name": "reheat_coil",
+    "family": "at the box",
+    "place": "box",
+    "text": "At the VAV box, inspect the reheat coil and valve (or electric element and connections): is the valve stuck or leaking, the coil fouled, or a connection damaged?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": null,
+    "hazards": [
+      "hot",
+      "electric"
+    ],
+    "photo_hint": "The heating coil or electric heater section on the outlet side of the box, with the pipes, valve or wiring."
+  },
+  {
+    "name": "ahu_visit",
+    "family": "at the air handler",
+    "place": "ahu",
+    "text": "Go to the air handler: is the supply fan stopped, tripped or in fault?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": null,
+    "hazards": [
+      "height",
+      "moving",
+      "electric"
+    ],
+    "photo_hint": "The front of the air handler showing its main fan section, status lights, and any display or door label."
+  },
+  {
+    "name": "ahu_gauge",
+    "family": "at the air handler",
+    "place": "ahu",
+    "text": "At the air handler, read the duct static pressure gauge against its setpoint: is it low?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": {
+      "quantity": "duct static pressure",
+      "unit": "in. w.c."
+    },
+    "hazards": [
+      "height"
+    ],
+    "photo_hint": "The pressure gauge or display on or near the air handler, close enough to read it."
+  },
+  {
+    "name": "ahu_economizer_test",
+    "family": "at the air handler",
+    "place": "ahu",
+    "text": "At the air handler, override the outdoor-air damper open and watch it respond: is it stuck near its minimum, or slow or failing to modulate?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": null,
+    "hazards": [
+      "height",
+      "moving",
+      "electric"
+    ],
+    "photo_hint": "The outside-air damper section of the air handler or rooftop unit, showing the damper blades and the actuator."
+  },
+  {
+    "name": "diffuser_duct",
+    "family": "in the room",
+    "place": "room",
+    "text": "Look at the diffuser in the room and the duct behind it: is the diffuser blocked or closed, or the duct crushed, disconnected or leaking?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": null,
+    "hazards": [
+      "height"
+    ],
+    "photo_hint": "The ceiling vent (diffuser) and, if reachable, the flexible duct above it."
+  },
+  {
+    "name": "thermostat",
+    "family": "in the room",
+    "place": "room",
+    "text": "In the room, compare the thermostat or zone sensor with a reference thermometer and check its setpoint and mode: is it off, or the setpoint or mode wrong?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": null,
+    "hazards": [],
+    "photo_hint": "The wall thermostat or room sensor with its screen or dial visible."
+  },
+  {
+    "name": "flow_hood",
+    "family": "in the room",
+    "place": "room",
+    "text": "Measure airflow at the diffuser in the room with a flow hood: is it well off what the VAV box should be delivering right now?",
+    "words": [
+      "abnormal",
+      "normal"
+    ],
+    "reading": {
+      "quantity": "airflow at the diffuser",
+      "unit": "cfm"
+    },
+    "hazards": [
+      "height"
+    ],
+    "photo_hint": "The ceiling vent (diffuser) you will put the flow hood on, and the space around it."
+  }
+]

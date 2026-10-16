@@ -1,0 +1,7 @@
+.env
+out/
+eval/photos/
+eval/results/
+__pycache__/
+.pytest_cache/
+eval/results_old_gridprompt/

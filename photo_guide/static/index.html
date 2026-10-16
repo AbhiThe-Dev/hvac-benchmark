@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Photo Guide</title>
+<style>
+  :root {
+    --bg: #f6f5f1; --card: #ffffff; --ink: #1c1c1a; --muted: #5d5d57; --line: #dcdad2;
+    --accent: #e85d00; --accent-ink: #ffffff; --ok: #1e7a3c; --warn-bg: #fff3d6; --warn-line: #e6b422; --stop-bg: #fde4e1; --stop-line: #c62828;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151513; --card: #1f1f1c; --ink: #f1f0ea; --muted: #a5a49b; --line: #36352f;
+      --accent: #ff7a1f; --accent-ink: #151513; --ok: #5fcf85; --warn-bg: #3a3014; --warn-line: #b8901c; --stop-bg: #3e1b18; --stop-line: #ef6b62;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 1.35rem; margin: 4px 0 2px; }
+  h2 { font-size: 1.1rem; margin: 0 0 8px; }
+  .sub { color: var(--muted); margin: 0 0 16px; font-size: .95rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 14px; }
+  label { display: block; font-weight: 600; margin-bottom: 6px; }
+  select, textarea { width: 100%; font: inherit; padding: 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+  textarea { min-height: 64px; resize: vertical; }
+  button { font: inherit; font-weight: 600; min-height: 52px; padding: 0 20px; border-radius: 12px; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  button:disabled { opacity: .45; cursor: default; }
+  .row { display: flex; gap: 10px; }
+  .row > button { flex: 1; }
+  .hint { color: var(--muted); font-size: .93rem; margin: 6px 0 0; }
+  .safety { background: var(--warn-bg); border: 1px solid var(--warn-line); border-radius: 12px; padding: 12px 14px; margin: 12px 0; font-size: .95rem; }
+  .safety b { display: block; margin-bottom: 4px; }
+  .safety ul { margin: 4px 0 0; padding-left: 20px; }
+  .stop { background: var(--stop-bg); border: 2px solid var(--stop-line); border-radius: 12px; padding: 14px; font-weight: 600; }
+  .photo { width: 100%; display: block; border-radius: 12px; border: 1px solid var(--line); background: #000; }
+  .thumb { max-height: 220px; width: auto; max-width: 100%; display: block; margin: 10px 0 0; border-radius: 10px; }
+  .big { font-size: 1.3rem; line-height: 1.35; font-weight: 600; margin: 14px 0 6px; }
+  .look { background: var(--bg); border-radius: 10px; padding: 10px 12px; margin: 8px 0; font-size: .97rem; }
+  .meta { color: var(--muted); font-size: .9rem; }
+  .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--bg); border: 1px solid var(--line); font-size: .85rem; margin: 0 6px 6px 0; }
+  details { margin: 8px 0; } summary { cursor: pointer; font-weight: 600; min-height: 32px; }
+  .dots { display: flex; gap: 6px; justify-content: center; margin: 10px 0 0; }
+  .dots i { width: 9px; height: 9px; border-radius: 50%; background: var(--line); } .dots i.on { background: var(--accent); }
+  .link { background: none; border: none; min-height: 40px; color: var(--muted); text-decoration: underline; font-weight: 500; padding: 0 4px; }
+  .hidden { display: none !important; }
+  .spin { display: inline-block; width: 18px; height: 18px; border: 3px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: s 0.8s linear infinite; vertical-align: -3px; margin-right: 8px; }
+  @keyframes s { to { transform: rotate(360deg); } }
+  .err { color: var(--stop-line); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Photo Guide</h1>
+  <p class="sub">Take a photo of what you are checking. You get the steps, drawn on your photo.</p>
+
+  <!-- 1. pick + photo -->
+  <section id="s-start">
+    <div class="card">
+      <label for="check">What check are you doing?</label>
+      <select id="check"></select>
+      <p class="big" id="check-text" style="font-size:1.05rem;margin:10px 0 0"></p>
+      <p class="hint" id="photo-hint"></p>
+      <div class="safety" id="safety-pre"></div>
+    </div>
+    <div class="card">
+      <label for="file">Take a photo</label>
+      <input id="file" type="file" accept="image/*" capture="environment" class="hidden">
+      <div class="row"><button class="primary" id="take">Take or choose a photo</button></div>
+      <img id="thumb" class="thumb hidden" alt="Your photo">
+      <label for="note" style="margin-top:14px">Anything we should know? (optional)</label>
+      <textarea id="note" maxlength="300" placeholder="e.g. the cover is already off, the light is dim"></textarea>
+      <div class="row" style="margin-top:14px"><button class="primary" id="go" disabled>Show me the steps</button></div>
+      <p class="err hidden" id="err"></p>
+    </div>
+  </section>
+
+  <!-- 2. waiting -->
+  <section id="s-wait" class="hidden card"><span class="spin"></span>Looking at your photo… this takes about 10 seconds.</section>
+
+  <!-- 3. result -->
+  <section id="s-result" class="hidden"></section>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let checks = [], photoFile = null, run = null, stepIdx = 0;
+
+function esc(s) { return String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+function show(id) { for (const s of ["s-start", "s-wait", "s-result"]) $(s).classList.toggle("hidden", s !== id); window.scrollTo(0, 0); }
+function safetyHtml(lines, title = "Before you start") { return `<b>${title}</b><ul>${lines.map((l) => `<li>${esc(l)}</li>`).join("")}</ul>`; }
+function cur() { return checks.find((c) => c.name === $("check").value); }
+
+async function init() {
+  checks = await (await fetch("/api/checks")).json();
+  $("check").innerHTML = checks.map((c) => `<option value="${esc(c.name)}">${esc(c.text)}</option>`).join("");
+  $("check").addEventListener("change", paintCheck);
+  paintCheck();
+}
+function paintCheck() {
+  const c = cur();
+  $("check-text").textContent = c.text;
+  $("photo-hint").textContent = "Photo tip: " + c.photo_hint;
+  $("safety-pre").innerHTML = safetyHtml(c.safety);
+}
+
+$("take").onclick = () => $("file").click();
+$("file").onchange = () => {
+  photoFile = $("file").files[0] || null;
+  $("go").disabled = !photoFile;
+  $("thumb").classList.toggle("hidden", !photoFile);
+  if (photoFile) $("thumb").src = URL.createObjectURL(photoFile);
+};
+
+$("go").onclick = async () => {
+  $("err").classList.add("hidden");
+  show("s-wait");
+  const fd = new FormData();
+  fd.append("check", $("check").value);
+  fd.append("note", $("note").value);
+  fd.append("photo", photoFile);
+  try {
+    const r = await fetch("/api/guide", { method: "POST", body: fd });
+    if (!r.ok) throw new Error((await r.json().catch(() => ({}))).detail || `error ${r.status}`);
+    run = await r.json();
+    stepIdx = -1;               // -1 = the safety read-through before step 1
+    renderResult();
+  } catch (e) {
+    show("s-start");
+    $("err").textContent = "Something went wrong: " + e.message;
+    $("err").classList.remove("hidden");
+  }
+};
+
+async function send(kind, step, value = "") {
+  try { await fetch("/api/feedback", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ run_id: run.run_id, kind, step, value }) }); } catch (_) {}
+}
+
+function again(label = "Try another photo") { return `<button class="link" onclick="restart()">${label}</button>`; }
+function restart() { $("file").value = ""; photoFile = null; $("go").disabled = true; $("thumb").classList.add("hidden"); show("s-start"); }
+
+function renderResult() {
+  const g = run.guidance, el = $("s-result");
+  show("s-result");
+  if (g.stop) {
+    el.innerHTML = `<div class="stop">STOP. ${esc(g.stop_reason || "This does not look safe to continue.")}<br><br>Do not continue. Ask a qualified HVAC technician.</div>` + again("Start over");
+    return;
+  }
+  if (!g.can_help) {
+    el.innerHTML = `<div class="card"><h2>I need a different photo</h2><p>${esc(g.retake_hint)}</p><div class="row"><button class="primary" onclick="restart()">Take another photo</button></div></div>`;
+    return;
+  }
+  if (stepIdx === -1) {
+    el.innerHTML = `<div class="card"><h2>${esc(run.check.text)}</h2>
+      <img class="photo" src="${run.overview}" alt="Your photo with the steps marked">
+      <p class="meta">${esc(g.what_i_see)}</p>
+      ${g.tools_needed.length ? `<p><b>You need:</b></p><div>${g.tools_needed.map((t) => `<span class="pill">${esc(t)}</span>`).join("")}</div>` : ""}
+      <div class="safety">${safetyHtml(run.safety, "Please read first")}</div>
+      <div class="row"><button class="primary" onclick="stepIdx=0;renderResult()">I've read it. Start step 1</button></div>
+      <p class="meta" style="text-align:center">${g.steps.length} steps</p>${again()}</div>`;
+    return;
+  }
+  if (stepIdx >= g.steps.length) {
+    el.innerHTML = `<div class="card"><h2>What did you find?</h2>
+      <div class="look"><b>Normal:</b> ${esc(g.normal_looks_like)}</div>
+      <div class="look"><b>Not normal:</b> ${esc(g.abnormal_looks_like)}</div>
+      <div class="row" style="margin-top:12px"><button class="primary" onclick="answer('normal')">Normal</button><button class="primary" onclick="answer('abnormal')">Not normal</button></div>
+      <div class="row" style="margin-top:10px"><button onclick="stepIdx=${g.steps.length - 1};renderResult()">Back</button></div></div>`;
+    return;
+  }
+  const s = g.steps[stepIdx], n = g.steps.length;
+  el.innerHTML = `<div class="card">
+    <p class="meta">Step ${stepIdx + 1} of ${n}</p>
+    <img class="photo" src="${run.step_images[stepIdx]}" alt="Step ${stepIdx + 1} marked on your photo">
+    ${s.target ? "" : `<p class="meta">This step is not marked on the photo.</p>`}
+    <p class="big">${esc(s.instruction)}</p>
+    ${s.look_for ? `<div class="look"><b>You should see:</b> ${esc(s.look_for)}</div>` : ""}
+    ${s.if_stuck ? `<details><summary>I can't find it</summary><p>${esc(s.if_stuck)}</p></details>` : ""}
+    <div class="row" style="margin-top:12px">
+      <button ${stepIdx === 0 ? "disabled" : ""} onclick="stepIdx--;renderResult()">Back</button>
+      <button class="primary" onclick="stepIdx++;renderResult()">${stepIdx === n - 1 ? "Done" : "Next"}</button>
+    </div>
+    <div class="dots">${g.steps.map((_, i) => `<i class="${i === stepIdx ? "on" : ""}"></i>`).join("")}</div>
+    <div style="text-align:center;margin-top:8px">
+      ${s.target ? `<button class="link" id="fb-place" onclick="flag('placement', this)">The mark is on the wrong thing</button>` : ""}
+      <button class="link" onclick="flag('unclear', this)">This step is confusing</button>
+    </div></div>`;
+}
+function flag(kind, btn) { send(kind, stepIdx + 1); btn.textContent = "Thanks, noted"; btn.disabled = true; }
+function answer(word) {
+  send("answer", null, word);
+  $("s-result").innerHTML = `<div class="card"><h2>Recorded: ${word === "normal" ? "Normal" : "Not normal"}</h2><p class="meta">(Prototype: this is only saved on this computer.)</p>${again("Do another check")}</div>`;
+}
+init();
+</script>
+</body>
+</html>
